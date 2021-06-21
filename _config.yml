@@ -4,7 +4,7 @@
 title: Weekly Mountain, Paper, and Work #Bay Jekyll Theme
 description: >- # this means to ignore newlines until "baseurl:"
   Bay is a minimal Jekyll Theme.
-baseurl: "/bay" # the subpath of the site #"/bay"
+baseurl: "" # the subpath of the site #"/bay"
 url: "https://hyoo14.github.io" #"https://eliottvincent.github.io" # the base hostname & protocol for the site
 og_image: /assets/img/profile-pic.jpg #/assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
