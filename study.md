@@ -4,5 +4,5 @@ title: Study
 slug: /study
 ---
 
-This is an example of a "Studies" page, displaying a list of posts.
+This is an example of a "Study" page, displaying a list of posts.
 <br />
