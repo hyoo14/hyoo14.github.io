@@ -1,7 +1,7 @@
 ---
-layout: studies
-title: Studies
-slug: /studies
+layout: study
+title: Study
+slug: /study
 ---
 
 This is an example of a "Studies" page, displaying a list of posts.
