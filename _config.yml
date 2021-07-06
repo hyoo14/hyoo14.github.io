@@ -9,6 +9,8 @@ url: "https://hyoo14.github.io" #"https://eliottvincent.github.io" # the base ho
 og_image: /assets/img/profile-pic.jpg #/assets/img/profile-pic.jpg
 google_analytics: "UA-121636368-3"
 
+#category_list: [ mountain, study ] #카테고리위해 추가
+
 header:
   pages:
     - name: Home
