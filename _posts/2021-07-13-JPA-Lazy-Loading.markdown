@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JPA how to make DTO"
+title:  "JPA Lazy Loading"
 date:   2021-07-13 16:45:10 +0900
 categories: study
 ---
