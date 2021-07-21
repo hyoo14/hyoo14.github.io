@@ -1,25 +1,41 @@
 ---
 layout: post
-title:  "study page!"
-date:   2021-07-06 16:07:10 +0900
+title: Why we use SPRING / JPA
+date: '2021-07-06 16:07:10 +0900'
 categories: study
+published: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Backend 개발을 하면서 사내 사정으로 다소 늦게? 스프링부트 JPA를 사용하게 되었다.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+스프링부트 JPA를 사용하는 것은 사실 개발하는 회사들에서는 너무나 당연한 것이지만, 당위성을 설명하기 위해서는 정리가 좀 필요했다. 
 
-Jekyll also offers powerful support for code snippets:
+그래서 미약하게나마 정리를 조금 해보았다. 
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+우선, SQL 중심적인 개발의 문제점을 조금 살펴보면
+-CRUD 무한 반복, 지루한 코드(sql)
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+-필드 추가 시 한땀 한땀 다 추가해야함(query에)
+
+-객체와 관계형 데이터베이스의 차이에서 오는 문제점들(상속, 연관관계 등)->반복 늘어나고 번잡해짐(join하고 join하고 ….) 
+
+-자바 컬렉션에서 조회하면? 걍 .get 하면 됨. 부모타입으로 조회 후 다형성 활용 가능(sql 중심은 이게 안 됨)
+
+-객체 연관관계는 한방향, 테이블 연관관계는 양방향.(포린 키로) <-객체지향스럽지 못 함.
+
+-db에 넣는 순간 테이블 폼에 맞게 다 바꿔줘야 함.
+
+-상황에 따라 동일한 회원 조회 여러벌 생성(Member만,  member와 team까지 등)
+
+
+SPRING /JPA (ORM)의 경우
+-객체 관계 매핑. 객체는 객체대로, 관계형 db는 db대로. ORM프레임워크가 중간에서 매핑
+
+-대중적 언어 모두 ORM기술 존재하며 사용되고 있음
+
+
+정리를 하다보니 ORM 사용의 당위성을 설명하는 것이 된 것 같지만..
+
+간략하게 이러한 이유들이 있음을 한번 포스팅 해보고 싶었다.
+
+시간 날 때마다 업데이트할 예정
