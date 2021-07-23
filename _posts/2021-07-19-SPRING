@@ -1,0 +1,35 @@
+---
+layout: post
+title: SPRING?
+date: '2021-07-19 19:40:10 +0900'
+categories: study
+published: true
+---
+SPRING?
+
+스프링이 뭔지 한 번 짚고 넘어가야할 것 같아 포스트를 작성하게 되었습니다.
+
+스프링이란 크게는 스프링부트, 스프링프레임워크 등을 포함하는 스프링 생태계로 볼 수 있고
+작게는 빈을 관리하는 스프링 컨테이너(DI or IOC 컨테이너) 기술이라고 볼 수 있습니다.
+
+스프링의 핵심은 자바나 코트린 기반의 프레임 워크로 객체지향적 개발을 가능하게 도와주는 것입니다.
+
+기존의 쿼리 기반의 개발은 테이블에 종속되기 때문에 객체지향과는 거리가 멀어져 버리고, 자연히 개발 속도가 저하되는 등의 단점이 있죠.
+
+그런데 스프링을 사용하여 개발하면 이러한 단점들을 보완해줄 수 있는 것입니다.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
