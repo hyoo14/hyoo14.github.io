@@ -1,0 +1,14 @@
+I"�<p>CROSS ENTROPY</p>
+
+<p>현재는 백엔드 개발이 메인 업무이지만 전공도 복기해두어야 한다는 생각에 nlp관련 글도 포스팅해보려고 합니다.
+그래서 이렇게 뜬금없게 cross entropy에 대한 포스트를 올리게 되었습니다.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+:ET

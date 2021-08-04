@@ -27,22 +27,22 @@
       
 
   <!-- Primary Meta Tags -->
-  <title>Weekly Mountain, Paper, and Work | Study</title>
-  <meta name="title" content="Weekly Mountain, Paper, and Work | Study"/>
+  <title>Weekly Mountain, Paper, and Work | AI CONCEPTS NOTE</title>
+  <meta name="title" content="Weekly Mountain, Paper, and Work | AI CONCEPTS NOTE"/>
   <meta name="description" content="Bay is a minimal Jekyll Theme."/>
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:site_name" content="Weekly Mountain, Paper, and Work | Study"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://localhost:4000/study"/>
-  <meta property="og:title" content="Weekly Mountain, Paper, and Work | Study"/>
+  <meta property="og:site_name" content="Weekly Mountain, Paper, and Work | AI CONCEPTS NOTE"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://localhost:4000/_nlp/study/2021/08/04/AI-CONCEPTS-NOTE"/>
+  <meta property="og:title" content="Weekly Mountain, Paper, and Work | AI CONCEPTS NOTE"/>
   <meta property="og:description" content="Bay is a minimal Jekyll Theme."/>
   <meta property="og:image" content="http://localhost:4000/assets/img/profile-pic.jpg"/>
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:url" content="http://localhost:4000/study"/>
-  <meta property="twitter:title" content="Weekly Mountain, Paper, and Work | Study"/>
+  <meta property="twitter:url" content="http://localhost:4000/_nlp/study/2021/08/04/AI-CONCEPTS-NOTE"/>
+  <meta property="twitter:title" content="Weekly Mountain, Paper, and Work | AI CONCEPTS NOTE"/>
   <meta property="twitter:description" content="Bay is a minimal Jekyll Theme."/>
   <meta property="twitter:image" content="http://localhost:4000/assets/img/profile-pic.jpg"/>
   
@@ -51,7 +51,7 @@
   
 
   <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"/>
-  <link rel="canonical" href="http://localhost:4000/study"/>
+  <link rel="canonical" href="http://localhost:4000/_nlp/study/2021/08/04/AI-CONCEPTS-NOTE"/>
   <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon"/>
 
   <!-- Google Analytics -->
@@ -110,156 +110,73 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="blog">
-          <h1 class="page-heading">Study</h1>
-          <p>This is an example of a “Study” page, displaying a list of posts.
-<br /></p>
+        <div class="post">
 
-
-          <p class="blog-post-list">
-            
-
-              
-              	
-                <span class="blog-post-date">8/4/21</span>
-                <a href="/_nlp/study/2021/08/04/AI-CONCEPTS-NOTE" class="blog-post-title">
-                  AI CONCEPTS NOTE
-                  _NLPstudy
-                </a>
-                <br />
-                
-
-              
+          <header class="post-header">
 
             
 
-              
-              	
-                <span class="blog-post-date">7/27/21</span>
-                <a href="/study/2021/07/27/SPRING-SINGLETON" class="blog-post-title">
-                  SPRING:SINGLETON
-                  study
-                </a>
-                <br />
-                
-
-              
+            <h1 class="post-title">
+            
+              AI CONCEPTS NOTE
+            
+            </h1>
 
             
+            <p class="post-meta"><span class="post-date">August 4, 2021
+            </span></p>
+          </header>
 
-              
-              	
-                <span class="blog-post-date">7/21/21</span>
-                <a href="/_nlp/study/2021/07/21/CROSS-ENTROPY" class="blog-post-title">
-                  CROSS ENTROPY
-                  _NLPstudy
-                </a>
-                <br />
-                
+          <article class="post-content">
+            <p>한번 정리하고 넘어가고 싶어서 개념들 서술해봅니다.</p>
 
-              
+<p>-2-</p>
 
-            
+<p>랭기지모델 학습 - 단어 분포 모사. 마코브 어썸션 도입하여 더 낮은 엔그램으로 근사</p>
 
-              
-              	
-                <span class="blog-post-date">7/19/21</span>
-                <a href="/study/2021/07/19/SPRING" class="blog-post-title">
-                  SPRING?
-                  study
-                </a>
-                <br />
-                
+<p>좋은 모델 : 언어분포 잘 모사. 잘 정의된 테스트셋에 높은 확률 반환</p>
 
-              
+<p>펄플렉시티: 몇개중에 헷갈리고 있냐. 작을 수록 좋은 것</p>
 
-            
+<p>뉴럴랭기지 모델은 제너럴라이즈가 잘 된다는 것이 장점, 등장하지 않은 단어들도 처리 가능</p>
 
-              
-              	
-                <span class="blog-post-date">7/16/21</span>
-                <a href="/study/2021/07/16/JPA-Fetch-Join" class="blog-post-title">
-                  JPA Fetch Join
-                  study
-                </a>
-                <br />
-                
+<p>엔트로피 불확실성 나타냄. 자주 일어나는 사건은 낮은 정보량. 드물게 발생하면 높은 정보량 가짐.
+불확실성은 1/등장확률 에 비례하고, 정보량에 반비례
+확률 낮은 것일 수록 정보량 많은 것, 불확실성 큰 것
+정보량은 마이너스 로그 확률. 확률 높아질수록 정보량 낮아짐. 0가까워질수록 높아짐</p>
 
-              
+<p>엔트로피 높을수록 플랫 디스트리뷰션, 낮을수록 샤프한 디스트리뷰션</p>
 
-            
+<p>크로스엔트로피는 퍼플렉시티의 로그취한 값.
+퍼플렉시티 작게하는 것이 목적으로 이는 크로스엔트로피 익스퍼넨셜 미니마이즈.
+즉, 크로스엔트로피 미니마이즈로 볼 수 있음</p>
 
-              
-              	
-                <span class="blog-post-date">7/13/21</span>
-                <a href="/study/2021/07/13/JPA-Lazy-Loading" class="blog-post-title">
-                  JPA Lazy Loading
-                  study
-                </a>
-                <br />
-                
+<p>클래시피케이션이니까 크로스엔트로피 쓴다고 봐도 되고
+두 분포 차이 미니마이즈니까 크로스엔트로피 미니마이즈.
+아키르릴후드 맥시마이즈 할꺼니까 네거티브 라이클리후드 마니마이즈 하는 건데 이게 크로스엔트로피 미니마이즈와 같음.</p>
 
-              
+<p>크로스엔트로피 로그 취하면 퍼플렉시티.
+퍼플렉시티 익스퍼넨셜 취하면 크로스엔트로피임.</p>
 
-            
+<p>seq2seq의 many to many는 many to one 과 one to many 로 이해하는 것이 좋음</p>
 
-              
-              	
-                <span class="blog-post-date">7/9/21</span>
-                <a href="/study/2021/07/09/JPA-how-to-make-DTO" class="blog-post-title">
-                  JPA how to make DTO
-                  study
-                </a>
-                <br />
-                
+<p>non-auto-regessive-현재 상태가 앞 뒤 문맥에 의해 정해짐
+auto-regressive- 과거상태 의존</p>
 
-              
+<p>티처포싱 안 하면 many2many 개수 안 맞을 수도. eos먼저 뜨면
+티처포싱 안 하면 이전 출력에 따라 현재 스테이트 달라짐 mle 이상해짐
+mle다르게 수식 적용
+그래서 실제 정답을 넣으줌. 그래서 학습이랑 테스트(추론) 다로 2개 짜야함
+티처포싱 성능 저하될 수 있으나 기본적 성능 좋아서 걍 쓰면 되지만.. 왜 저하되냐면 순서까지도 기억해주는 오버피팅이 되기때문. 그래서 보통 반반티처포싱 등 사용</p>
 
-            
+<p>fluent한 문장 골라내는 일이나 다음단어 뽑아내는 일은 언어모델로 사실 같음.</p>
 
-              
-              	
 
-              
+          </article>
 
-            
+          
 
-              
-              	
-                <span class="blog-post-date">7/6/21</span>
-                <a href="/study/2021/07/06/weekly-study-page" class="blog-post-title">
-                  Why we use SPRING / JPA
-                  study
-                </a>
-                <br />
-                
-
-              
-
-            
-
-              
-              	
-
-              
-
-            
-
-              
-              	
-
-              
-
-            
-
-              
-              	
-
-              
-
-            
-          </p>
-        </div>
+      </div>
       </div>
     </div>
 

@@ -1,0 +1,18 @@
+I"�<p>벼르고 벼르던 한라산 돈내코 코스에 다녀왔습니다.
+시작 위치가 특별하여 신비로운 분위기를 느끼며 등반을 시작할 수 있었습니다.</p>
+
+<p>충훈탑-&gt;밀림입구-&gt;썩은물통-&gt;적송지대-&gt;살채기도-&gt;바위-&gt;평궤대피소-&gt;갈림길-&gt;남벽분기점</p>
+
+<p>코스는 다소 비좁은 감이 있었습니다.
+발을 잘못 디디면 물에 빠지기도 하고 난이도가 조금 있었습니다.
+이로써 주요 코스는 다 돌아보게되어 기쁩니다.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+:ET
