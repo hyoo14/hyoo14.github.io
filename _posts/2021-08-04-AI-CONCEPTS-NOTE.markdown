@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "AI CONCEPTS NOTE"
-date:   2021-08-04 11:52:10 +0900
+title: AI CONCEPTS NOTE
+date: '2021-08-04 11:52:10 +0900'
 categories: _NLP study
+published: true
 ---
 
 
@@ -52,8 +53,59 @@ mle다르게 수식 적용
 fluent한 문장 골라내는 일이나 다음단어 뽑아내는 일은 언어모델로 사실 같음.
 
 
+-4-
+seq to seq 도 auto encoder와 비슷
+autoencoder - 특징 추출 하는 것.(차원축소(latent space:잠재 feature의 공간?) 및 복원을 통해)
+
+decoder는 conditional language model이라고 볼 수 있음-인코더로부터 문장을 압축한 context vector를 바탕으로 문장생성
+(conditional? 조건부 확률 느낌?)
+
+classification(단어선택), discrete value 예측하는 거니까 크로스엔트로피 쓰면 됨. (소프트맥스 결과값에)
+MLE중이니까 negative log likelihood 미니마이즈해야히니까 크로스엔트로피.
+디코더가 컨디셔널랭기지 모델이니깐 퍼플렉시티 미니마이즈 해야하는 것. 그니깐 크로스엔트로피 익스포넨셜
+이 코르스엔트로피니깐. 크로스엔트로피 쓰면 
+결국 ground truth 분포와 모델 분포 삳이의 차이를 최소화하기 위함
+(Ground-truth는 학습하고자 하는 데이터의 원본 혹은 실제 값)
+
+어텐션?
+키-벨류 펑션으로 미분가능함
+파이선의 딕셔너리= {K:v1, K2:v2} ,,, d[K] 벨류리턴 - (딕셔너리설명)
+기존 딕셔너리 key-value 펑션과 달리 query와 key의 "유사도"에 따라 value 반환!(weighted sum으로)
+->lstm hidden state한계인 부족정보를 직접 encoder에서 조회해서 예측에 필요한 정보 얻어오는 것.
+정보를 잘 얻어오기(이 과정이 attention) 위해 query 잘 만들어내는 과정을 학습 
+
+attention은 QKV.
+Q:현재 time-step의 decoder의 output
+K: 각 time-step 별 encoder의 output
+V: 각 time-step 별 encoder의 output
+q와 k의 유사도 계산(encoder output token들)
+유사도를 각각 encoder output toekn들에 곱해주고 더해서 현재 context vector 만들어줌.
+쿼리 날린 decoder 히든스테이트와 context vector를 컨캣해줘서 새로운 히든스테이트를 얻음(이것이 반영 된 것)
+근데 유사도 구할 때 유사도 팍팍 안 구해짐. 그래서 linear transform(linear layer 통과시킴) 후에 유사도 얻어옴.
+그래서 우리는 linear transform을 학습해서 유사도를 잘 받아오게 학습해야함. 이것도 잘 학습해야함
+
+비유해보면 "오리역에서 가장 편하게 밥먹는 집 어디야?" -> "오리역 가정식 백반집"(쿼리 바꾸는 거 학습한 것)
+마음속의 상태(state)를 잘 반영하면서 좋은 쿼리를 만들기 위함임.
+어텐션은 "쿼리를 잘 만들어내는(변환) 과정" 배우는 것이다. 여기서 batch matrix multiplication(BMM) 사용(행렬들 곱)
+닷프로덕트가 코싸인시뮬러리티와 비슷. 소프트맥스까지 쒸우면 유사도라고 볼 수 있음
+
+<PAD> 위치에 weight가 가지 않도록 하는 안전장치 추가->이것이 마스킹
+
+
+input feeding? 샘플링과정서 손실되는 정보 최소화, 티쳐포싱으로 인한 학습/추론 사이의 괴리 최소화
+인풋피딩? 아웃풋 히든스테이트를을 다음 인풋 히든스테이트에 컨캣
+
+auto-regressive : 과거 자신의 상태를 참조하여 현재 자신의 상태를 업데이트. 시퀀스에서 이전 단어 보고
+다음 단어 예측하는 것.
+
+teacher forcing 통해 auto-regressive task에 대한 sequential modeling 가능. 하지만 training mode 와 inference mode의 괴리
+(discrepancy) 생김
+
+(dilde : ~ (물결표) )
+
+pytorch ignite로 procedure 짜놓을 수 있음(lightening도 가능)
+
 
 {% highlight ruby %}
 
 {% endhighlight %}
-
