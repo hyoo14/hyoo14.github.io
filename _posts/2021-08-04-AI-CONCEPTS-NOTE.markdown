@@ -308,6 +308,102 @@ residual connection으로 transformer깊게 쌓을 수 있음
 셀프어텐션통해 이전 레이어 정보를 인코딩/디코딩, 어텐션 통해 디코더 정보 얻어옴
 
 
+-9-
+
+멀티링구얼 기계번역?
+
+인코더-디코더 구조의 모델들은 페러렐 코퍼스가 필요.
+
+패러렐코퍼스 수집 비용이 매우 비쌈.
+한정된 패러렐 코퍼스로 학습할 경우 인코더는 컨텍스트 임베딩 성능이 떨어지고
+디코더는 제한된 성능의 언어모델이 될 수 밖에 없음
+
+그래서 나온 해결방안이 앙상블.
+패러렐 부족->디코더 성능 저하.
+
+그래서 모노링구얼 코퍼스로 학습한 별도 언어모델을 디코더에 앙상블로 결합
+
+shallow fusion: seq2seq lm을 interpolation,
+
+deep fusion: 디코더와 lm의 히든 레이어 결과를 concat
+: lm 상태에 따라 gate를 열고 닫아 정보의 흐름을 컨트롤
+
+
+백트렌슬레이션.
+
+이것도 모티브는 페러렐 코퍼스로 인한 디코더의 generation성능 떨어짐.
+그래서.풍부한 모노링구얼 코퍼스를 통해 추가로 디코더를 학습시켜보는 것
+
+정답과 입력값을 거꾸로 해보는 것.
+정답 -> 모델 -> 입력 이런 구조
+
+근데 정답 자체가 노이즈가 낀 것이어서 이게 너무 많으면 문제일 수도 있음
+
+
+카피트렌슬레이션.
+그냥 y 넣고 y 나오게 해주는 것.
+정답 -> 모델 -> 정답
+이것도 성능이 좀 나옴.
+
+
+노이즈드 빔백 트렌슬레이션.
+모델로부터 생성된 노이즈가 문제인데
+
+아예 노이즈를 다양하게 섞어서 생성한 문장을 synthetic source sentece로 활용.
+하지만 여전히 성능의 개선의 여지가 남음
+
+그래서 나온 것이 tagged back translation
+-신테틱 줄 때는 이거 bt라고 태그로 알려줌.
+이렇게 했더니 슈도코퍼스의 비율에 상관없이 학습 가능
+bleu 엄청 개선됨
+
+->디코더의 언어모델의 성능을 향상시키는 것이 주 목적!(슈도코퍼스를 활용하여)
+
+
+강화학습?
+
+gan은 nlg 에서 feedforward는 되지만 backward가 안 되서(one-hot에서 softmax로 갈 수 없음)
+못 씀
+
+ppl이 bleu 보다 번역의 질을 잘 반영하지 못 함.(학습때 ppl씀..)
+
+--> rl 통해 bleu에 대ㅐㅎ 미분 없이 학습 가능. 또한 샘플링 기반 방식이므로 티처포싱없이 학습 가능
+
+
+
+rl: agent, environment, state, action, reward 로 구성
+
+markov process: 이전상태 영향 받은 상태 이동. lm도 여기에 해당
+markov decision process: 이전상태와 행해진 액션에 영향을 받는 것.
+(policy, valuefunction, action-value function이 있음)
+value base방식과 policy base 방식이 있음
+
+policy gradient의 q함수가 미분될 필요가 없음.
+따라서 보상함수로 미분 불가능ㅎ나 매우 족잡한(bleu) 함수를 사용할 수 있음
+근데 reward함수 잘 짜야함. 평균점수 대비 보상을 준다던지 등
+
+nlg에서 :
+state: 조건으로 주어진 입력 문장 토큰들, 이전까지 생성된 토큰들
+action:  현재 타임스텝에서 생성할 토큰을 고르는 것
+reward: 완성된 생성문장과 실제 정답과의 유사도 bleu 
+
+nlg는 에피소드가 짧은 장점이 있음, 그래서 actor-critic 같은 고급 알고리즘을 구사할 필요성이 매우 낮음
+단점으로는 단어를 고르는 것이 action이므로 action space가 vocab으로 매우 크다
+
+rl 장점? bleu로 optimize, (PG는 미분필요없이 bleu로 최적화 가능)
+티처포싱 없애도됨. nlg는 autoregressive task이므로 티처포싱으로 학습. 그래서 학습과 추론 사이 괴리감 생김
+근데 rl은 샘플링기반 학습이므로 학습과 추론 방법에 차이 없음
+
+
+minimum risk training-policy gradient nlg버전
+리스크redefine-q함수를 y가 아닌 s서 샘플링.(subset으로 좀 더 작은 범위)
+몬테카를로로 구해줌
+마이너스 리스크 미니마이즈 플러스 리워드 맥시마이즈 결국 같은거임
+
+샘플링과 라이크리후드 차이
+수식 잘 이해하고 코드로 옮기는 방법이 이득임
+
+nllloss-negative log likelihood loss
 
 
 
