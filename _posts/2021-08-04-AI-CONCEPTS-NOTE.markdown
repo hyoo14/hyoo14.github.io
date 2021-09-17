@@ -405,6 +405,40 @@ minimum risk training-policy gradient nlg버전
 
 nllloss-negative log likelihood loss
 
+ 
+-10-
+
+티처포싱으로 인한 괴리.
+인퍼런스는 regressive한데, 티처포싱은 regressive하지 않게 정답 넣고 학습시키므로..
+
+이 괴리를 없애는 다른 방법-dual learning
+
+거의 모든 분야에서 듀얼러닝은 가능.
+
+반대로도 학습을 하는 것. 동시에. 이것이 듀얼러닝. 이렇게 하면 더 잘될 수 있따는 아이디어
+근데 음성인식 경우 인식된 텍스트에서 음성으로 복구는 사실 어려움
+이미지 분류도 역방향은 사실 어렵
+그래서 기계번역에서의 듀얼러닝이 유의미함(정보손실이 거의 없으므로)
+
+사이클gan이 일종의 듀얼러닝을 한 것. pair 없이 두 도메인 이미지 사이의 변환 방법을 배운 것.
+
+기계번역에서도 각 언어의 문장들만 접한 상태에서 두 언어 사이의 번역 방법을 배워보는? 접근방식
+
+
+mrt(강화학습 적용)은 샘플링 기반 방식이라서 매우 비효율적
+
+mle 방식 위에서 regularization을 통해 문제를 풀 수는 없을까?
+이 방법이 바로 dual supervised learning
+
+scale(lambda)값 줘서 정방향 역방향 다 커버하는 objective function 이용
+
+시간은 오래걸림.. 메모리도 많이 사용.. 그래서 성능향상은 이뤄짐! 강화학습 샘플링 기반보다 효율적
+bayes theorem을 통해 유도된 매우 간단한고 직과넞ㄱ인 regularization term임.
+
+
+pytorch autoGrad - 파이토치는 그때 그때 computation graph 생성. 필요에 따라 detach()로 back-prop 통제
+
+학습시, bos, eos 모두 있어야함.
 
 
 
