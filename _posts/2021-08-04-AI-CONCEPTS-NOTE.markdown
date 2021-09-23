@@ -439,6 +439,13 @@ bayes theorem을 통해 유도된 매우 간단한고 직과넞ㄱ인 regulariza
 pytorch autoGrad - 파이토치는 그때 그때 computation graph 생성. 필요에 따라 detach()로 back-prop 통제
 
 학습시, bos, eos 모두 있어야함.
+  
+gan- mode collapse 문제가 있음 : 비슷한 이미지만 만들어내는 문제
+Wasserstein loss(와서스테인 로스) 사용해서 해결 - 분포의 다름 체크하는..
+cycle gan과 비슷한 dual learning.
+
+back translation의 경우도 수학적으로 괜찮은 녀석임(정당성 o) 
+
 
 
 
