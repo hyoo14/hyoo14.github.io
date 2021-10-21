@@ -30,4 +30,16 @@ sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev
 
 설치 후 install 됨.
 
+사용법:
+import pdftotext
+filename = ".pdf"
+with open(filename, "rb") as f:
+    pdf = pdftotext.PDF(f)
+
+for page in pdf:
+    print(page)
+
+
+KIFRS 기준서 다운로드.. 너무 많...
+bert 모델부터 볼까...
 
