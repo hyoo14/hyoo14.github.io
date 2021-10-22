@@ -43,3 +43,12 @@ for page in pdf:
 KIFRS 기준서 다운로드.. 너무 많...
 bert 모델부터 볼까...
 
+
+
+2021년 10월 22일
+
+
+dataset, tokenizer, data loader 부분 보기
+
+근데 pretrain 내용은 
+https://beomi.github.io/2020/02/26/Train-BERT-from-scratch-on-colab-TPU-Tensorflow-ver/ 이거 보고 하는 것이 좋은 듯..
