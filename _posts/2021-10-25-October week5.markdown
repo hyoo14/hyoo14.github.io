@@ -13,48 +13,32 @@ categories: study
 10월 마지막주:
 -KIFRS 기준서 다운로드(OR KGAAP)
 -BERT pretrain(https://beomi.github.io/2020/02/26/Train-BERT-from-scratch-on-colab-TPU-Tensorflow-ver/)
--ATTENTION 논문 복습?
+-ATTENTION 논문 복습? ->BERT논문 복습
 
 {% endhighlight %}
 
 2021년 10월 25일 월요일
 
 버트모델 테스트
+-GCP 버킷만들기
+-AttributeError: module 'tensorflow._api.v2.train' has no attribute 'Optimizer' 오류발생
+   :텐서플로우버전이 2로 되어서 그런듯 --이슈과 확실히 있음.. 다른 튜토리얼 추가로 참고해야하나..?
+   :코랩에서 %tensorflow_version 1.15 로 버전 선택 가능 ->이슈 해결 (https://colab.research.google.com/notebooks/tensorflow_version.ipynb#scrollTo=-XbfkU7BeziQ)
+-Not connected to TPU runtime
+   :런타임 tpu로 안 하니 당연히 뜸 -> 런타임 tpu로 변경. 잘됨
+-AuthorizationError: Error fetching credentials
+   :런타임 리셋? -> 잘됨
+-코랩에서 파일 읽기
+   :구글 드라이브
+   from google.colab import drive
+   drive.mount('/gdrive')
+   (https://colab.research.google.com/github/StillWork/ds-lab/blob/master/tip_colab_%ED%8C%8C%EC%9D%BC%EC%A0%80%EC%9E%A5%EB%B0%8F%EC%97%85%EB%A1%9C%EB%93%9C_colab.ipynb#scrollTo=zpL1IQforS1I)
+-파이썬 파일 출력
+   :참.. 기억력이 안 좋다 나는
+    f = open("새파일.txt", 'w')
+    f.close()
+   (https://wikidocs.net/26)
+-매우 적은 데이터로 프리-트레이닝 테스트 진행
 
-2021년 10월 21일
+BERT논문 오랜만에 읽는 중.
 
-버트학습 -> 재무교과서 x(pdf 파일 제공 찾기 어려움) -> KIFRS 기준서 & 해설서 OR KGAAP 기준서 & 해설서
-
-PDF 읽기 -> pdftotext
-
-근데 pip install 이 안 됨..
-
-https://pythonq.com/so/python/362057 사이트 참고
-
-sudo apt-get update
-sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev
-
-설치 후 install 됨.
-
-사용법:
-import pdftotext
-filename = ".pdf"
-with open(filename, "rb") as f:
-    pdf = pdftotext.PDF(f)
-
-for page in pdf:
-    print(page)
-
-
-KIFRS 기준서 다운로드.. 너무 많...
-bert 모델부터 볼까...
-
-
-
-2021년 10월 22일
-
-
-dataset, tokenizer, data loader 부분 보기
-
-근데 pretrain 내용은 
-https://beomi.github.io/2020/02/26/Train-BERT-from-scratch-on-colab-TPU-Tensorflow-ver/ 이거 보고 하는 것이 좋은 듯..
