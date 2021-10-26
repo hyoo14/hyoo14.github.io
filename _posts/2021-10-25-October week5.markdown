@@ -13,6 +13,7 @@ categories: study
 10월 마지막주:
 -KIFRS 기준서 다운로드(OR KGAAP)
 -BERT pretrain(https://beomi.github.io/2020/02/26/Train-BERT-from-scratch-on-colab-TPU-Tensorflow-ver/)
+-->fine tuning?(화요일 추가)
 -ATTENTION 논문 복습? ->BERT논문 복습
 
 {% endhighlight %}
@@ -40,5 +41,18 @@ categories: study
    (https://wikidocs.net/26)
 -매우 적은 데이터로 프리-트레이닝 테스트 진행
 
+-코렙 끊김 방지
+   :개발자모드 콘솔에서 아래 실행
+   function ConnectButton(){
+    console.log("Connect pushed"); 
+    document.querySelector("#top-toolbar > colab-connect-button").shadowRoot.querySelector("#connect").click() 
+   }
+   setInterval(ConnectButton,60000);
+
 BERT논문 오랜만에 읽는 중.
+
+2021년 10월 26일 화요일
+버트모델 테스트 이어서..
+-체크포인트 읽어와서 다시 트레인
+   :걍 처음부터 다 돌리면 알아서 리로드해서 트레이닝 시작함. (단 전처리도 다시하는.. ->전처리도 저장해놓으면 편할텐데)
 
