@@ -75,6 +75,14 @@ BERT논문 오랜만에 읽는 중.
 버트모델 파인튜닝  
 -아래 링크 참고하여 시도  
 (https://towardsdatascience.com/pre-training-bert-from-scratch-with-cloud-tpu-6e2f71028379) 요거 참고..(여기서 다음 포스트 참고)  
+다음 포스트 -> (https://towardsdatascience.com/fine-tuning-bert-with-keras-and-tf-module-ed24ea91cff2)  
+
+-파인튜닝용 데이터 확보  
+
+-tag를 숫자로 변경하여 트레이닝  
+
+-일단 트레이닝 되긴 했는데.. 아무래도 파인튜닝용 데이터도 적어서.. 결과..  
+
 
 
 
