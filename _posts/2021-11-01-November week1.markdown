@@ -17,6 +17,8 @@ categories: study
 모델링  
 -BERT Finetuning   
 
+CODE  
+
 REC-SYS  
 
 기타  
@@ -33,6 +35,7 @@ REC-SYS
 -데이터확보_서울시음식점  
 -cp949라서 좀 읽는 방식이 다름.. encoding='cp949' 추가해줘야함.  
 -좀 달라져서 파인튜닝은 내일 해봐야할 듯..  
+CODE  
 REC_SYS  
 기타  
 
