@@ -22,13 +22,13 @@ categories: study
 {% endhighlight %}
 
 2021년 11월 08일 월요일  
-*논문
-**Attention Is All You Need 복습
-*모델링
-*REC-SYS
-*CODE
-*기타
-**app
+*논문  
+**Attention Is All You Need 복습  
+*모델링  
+*REC-SYS  
+*CODE  
+*기타  
+**app  
 
 
 
