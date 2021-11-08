@@ -28,6 +28,7 @@ categories: study
 *REC-SYS
 *CODE
 *기타
+**app
 
 
 
