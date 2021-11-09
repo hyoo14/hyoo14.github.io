@@ -30,9 +30,21 @@ categories: study
 **app  
 *모델링  
 **CLNER 발굴?  
+*REC-SYS  
+*이웃기반 CF  
 o  
 
+2021년 11월 09일 화요일  
+o  
+
+*논문  
+**CLNER 읽기 시작  
+*모델링  
 *REC-SYS  
+*CODE  
+*기타  -eng, app  
+
+
 
 
 
