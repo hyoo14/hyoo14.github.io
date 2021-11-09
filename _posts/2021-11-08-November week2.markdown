@@ -35,14 +35,23 @@ categories: study
 o  
 
 2021년 11월 09일 화요일  
-o  
-
 *논문  
 **CLNER 읽기 시작  
 *모델링  
-*REC-SYS  
+**kifrs 자료 & kgaap 자료 수집  
+***http://www.kasb.or.kr/fe/accstd/NR_list.do;jsessionid=C4765A34282A020F46705B8B70A2C789?sortCd=K-IFRS&divCd=01 여기가 삼일 보다 다운받기 쉬움  
+**fasttext 돌려봐야지.. gensim?  
+***pdf file일단 text로 refine  
+***돌려봤는데 뭔가 vocab에 문제가 있음.. unseen 처리 못 하는 것이야 생각했던 거지만 뭔가 token 이상하게 짤린 듯? 내일 체크해봐야..
 *CODE  
+**h-r array02  
 *기타  -eng, app  
+o  
+
+
+
+*REC-SYS  
+
 
 
 
