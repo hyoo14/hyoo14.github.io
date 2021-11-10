@@ -46,11 +46,29 @@ o
 *CODE  
 **h-r array02  
 *기타  -eng, app  
+*REC-SYS  
+**모델기반 associate rule mining  
+o  
+
+2021년 11월 10일 수요일  
+*논문  
+**experiments 전까지..  
+*모델링  
+**gensim fastext 학습에 맞는 형태로 바꿔줌. 문장을 token 단위의 list로 주어야함  
+**근데 띄워쓰기만 해줄 경우 아무래도 임베딩 퀄리티가 떨어져서.. 전처리 해줘야함  
+*CODE  
+**h-r array03 푸는중.. 좀 어렵네  
+*기타  -eng, app  
 o  
 
 
 
 *REC-SYS  
+
+
+
+
+
 
 
 
