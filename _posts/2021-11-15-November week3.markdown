@@ -27,9 +27,14 @@ categories: study
 **binary search 문제 recap.  
 ***더 간단한 풀이가 있었음  
 ****거의 근접했으나 못 푼 것은 나의 실력의 문제ㅠㅠ  
-o  
 *논문 복습 및 보강 with nlp 자료  
+**컨셉노트랑 transformer 자료 보는 중  
 *모델링  
+**CL이용, seq(we) -> title & seq+POS -> title & seq+NE -> title  
+***seq -> title acc will improved.  
+o  
+
+
 *REC-SYS  
 
 *기타  -eng, app  
