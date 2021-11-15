@@ -78,17 +78,21 @@ o
 o  
 *모델링  
 
-2021년 11월 11일 목요일  
+2021년 11월 12일 금요일  
 *논문  
 **다 읽고 정리  
 *CODE  
 **어제 문제 결국 답을 봄.. 어렵고도 쉬운 array문제였음  
 *기타  -eng, app  
+*모델링  
+**OWL  
+*REC-SYS  
+**implicit, explicit feedback  
+***정성, 정량평가 느낌  
 
 o  
 
-*모델링  
-*REC-SYS  
+
 
 
 
