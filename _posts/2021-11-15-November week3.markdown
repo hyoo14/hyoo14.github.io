@@ -32,12 +32,26 @@ categories: study
 *모델링  
 **CL이용, seq(we) -> title & seq+POS -> title & seq+NE -> title  
 ***seq -> title acc will improved.  
+*REC-SYS  
+**Bayesian Personal Rank  
+*기타  -eng, app  
 o  
 
 
+2021년 11월 16일 화요일  
+*논문 복습 및 보강 with nlp 자료  
+**bert note etc  
+*모델링  
+**soy nlp 전처리용으로 사용  
+***word extractor 학습 및 save
+***이걸로 전처리한 코퍼스로 학습 진행 및 저장  
 *REC-SYS  
-
+**bpr 및 mf trial  
+o  
+*CODE  
 *기타  -eng, app  
+
+
 
 
 
