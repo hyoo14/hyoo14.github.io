@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2021-11-12-Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"
+title:  "Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"
 date:   2021-11-12 16:30:10 +0900
 categories: study
 ---

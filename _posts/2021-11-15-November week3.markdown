@@ -47,9 +47,11 @@ o
 ***이걸로 전처리한 코퍼스로 학습 진행 및 저장  
 *REC-SYS  
 **bpr 및 mf trial  
-o  
 *CODE  
+**bfs writing 1  
 *기타  -eng, app  
+o  
+
 
 
 
