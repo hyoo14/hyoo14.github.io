@@ -52,6 +52,20 @@ o
 *기타  -eng, app  
 o  
 
+2021년 11월 17일 수요일  
+*REC-SYS  
+**하이브리드 모델  
+*논문 복습 및 보강 with nlp 자료  
+**ocr? chatbot?  
+***ocr start->time line 만들어야..  
+o  
+
+
+*모델링  
+
+*CODE  
+*기타  -eng, app  
+
 
 
 
