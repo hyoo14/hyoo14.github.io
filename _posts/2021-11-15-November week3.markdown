@@ -58,13 +58,25 @@ o
 *논문 복습 및 보강 with nlp 자료  
 **ocr? chatbot?  
 ***ocr start->time line 만들어야..  
+*모델링  
+**timeline  
+*CODE  
+**air  
+*기타  -eng, app  
 o  
 
-
-*모델링  
-
+2021년 11월 18일 목요일  
+*논문 복습 및 보강 with nlp 자료 & 모델링  
+**previous framework 정리  
 *CODE  
+**chess  
 *기타  -eng, app  
+
+o  
+*REC-SYS  
+
+
+
 
 
 
