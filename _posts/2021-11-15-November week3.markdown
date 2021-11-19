@@ -79,8 +79,10 @@ o
 *논문 복습 및 보강 with nlp 자료 & 모델링  
 **craft, east for ocr  
 *기타  -eng, app  
-o  
 *CODE  
+**bfs post  
+o  
+
 *REC-SYS  
 
 
