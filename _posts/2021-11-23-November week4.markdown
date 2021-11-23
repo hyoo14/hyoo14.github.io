@@ -22,12 +22,16 @@ categories: study
 
 2021년 11월 23일 화요일  
 
+*기타  -eng, app  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+**intent(text) classification - fasttext and 1d cnn, ner -bilstm crf, long term - rules  
+
 o  
 
-*논문 복습 및 보강 with nlp 자료 및 모델링  
+
 *REC-SYS  
 *CODE  
-*기타  -eng, app  
+
 
 
 
