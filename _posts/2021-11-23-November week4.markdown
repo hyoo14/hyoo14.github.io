@@ -25,12 +25,14 @@ categories: study
 *기타  -eng, app  
 *논문 복습 및 보강 with nlp 자료 및 모델링  
 **intent(text) classification - fasttext and 1d cnn, ner -bilstm crf, long term - rules  
+*CODE  
+**bfs 2개  
 
 o  
 
 
 *REC-SYS  
-*CODE  
+
 
 
 
