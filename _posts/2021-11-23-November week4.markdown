@@ -27,11 +27,24 @@ categories: study
 **intent(text) classification - fasttext and 1d cnn, ner -bilstm crf, long term - rules  
 *CODE  
 **bfs 2개  
+*REC-SYS  
+**LARS-Location Aware Rec Sys  
 
 o  
 
 
+2021년 11월 24일 수요일  
+*기타  -eng, app  
+*CODE  
+o  
+
+*논문 복습 및 보강 with nlp 자료 및 모델링  
 *REC-SYS  
+
+
+
+
+
 
 
 
