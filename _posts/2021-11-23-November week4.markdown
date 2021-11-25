@@ -45,10 +45,12 @@ o
 
 2021년 11월 24일 금요일  
 *기타  -eng, app  
-o  
 *논문 복습 및 보강 with nlp 자료 및 모델링  
-*REC-SYS  
 *CODE  
+o  
+
+*REC-SYS  
+
 
 
 
