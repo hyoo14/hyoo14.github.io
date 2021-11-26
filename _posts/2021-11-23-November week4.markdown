@@ -43,13 +43,26 @@ o
 
 o  
 
-2021년 11월 24일 금요일  
+2021년 11월 25일 목요일  
 *기타  -eng, app  
 *논문 복습 및 보강 with nlp 자료 및 모델링  
+**concepts  
 *CODE  
+**md file update  
+*REC-SYS  
+**netflix datasets  
 o  
 
+
+
+2021년 11월 25일 금요일  
+*기타  -eng, app  
+**writing temp  
+o  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
 *REC-SYS  
+*CODE  
+
 
 
 
