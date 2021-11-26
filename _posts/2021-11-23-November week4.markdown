@@ -58,10 +58,16 @@ o
 2021년 11월 25일 금요일  
 *기타  -eng, app  
 **writing temp  
-o  
 *논문 복습 및 보강 with nlp 자료 및 모델링  
+**concepts  
 *REC-SYS  
+**netflix datsets load success  
 *CODE  
+**format  
+o  
+
+
+
 
 
 
