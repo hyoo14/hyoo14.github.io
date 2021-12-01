@@ -21,13 +21,37 @@ categories: study
 {% endhighlight %}
 
 2021년 11월 29일 월요일  
-
-o  
-
-*논문 복습 및 보강 with nlp 자료 및 모델링  
-*REC-SYS  
 *CODE  
 *기타  -eng, app  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+o  
+
+
+*REC-SYS  
+
+
+2021년 11월 30일 화요일  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+**lstm, 1dcnn  
+*CODE  
+**linked list, class, typedef class  
+*기타  -eng, app  
+o  
+
+
+
+2021년 12월 01일 수요일  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+**lstm, 1dcnn, bert classification  
+*CODE  
+**fibonacci, permutation, combination, linked list  
+*기타  -eng, app  
+o  
+
+
+
+
+
 
 
 
