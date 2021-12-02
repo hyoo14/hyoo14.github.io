@@ -48,6 +48,15 @@ o
 *기타  -eng, app  
 o  
 
+2021년 12월 02일 목요일  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+**regulation L1(||w||), L2(||w^2||), es, dropout, BN, LN  
+*CODE  
+binary search  
+*기타  -eng, app  
+o  
+
+
 
 
 
