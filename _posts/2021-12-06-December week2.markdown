@@ -21,9 +21,15 @@ categories: study
 {% endhighlight %}
 
 2021년 12월 06일 월요일  
-
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+*기타  -eng, app  
 o  
 
+*REC-SYS  
+*CODE  
+
+
+2021년 12월 07일 화요일  
 *논문 복습 및 보강 with nlp 자료 및 모델링  
 *REC-SYS  
 *CODE  
