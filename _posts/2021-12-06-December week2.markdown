@@ -34,6 +34,15 @@ o
 *REC-SYS  
 *CODE  
 *기타  -eng, app  
+o
+
+2021년 12월 08일 수요일  
+*논문 복습 및 보강 with nlp 자료 및 모델링  
+*REC-SYS  
+*CODE  
+*기타  -eng, app  
+o
+
 
 
 
