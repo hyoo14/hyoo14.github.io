@@ -44,9 +44,12 @@ o
 o
 
 2021년 12월 09일 목요일  
-o
 *논문 복습 및 보강 with nlp 자료 및 모델링  
+**BUY IT AGAIN PAPER  
 *REC-SYS  
+**neural CF  
+o
+
 *CODE  
 *기타  -eng, app  
 
