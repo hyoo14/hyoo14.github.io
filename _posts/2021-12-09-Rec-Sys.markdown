@@ -153,3 +153,7 @@ REC
 **gmf, mlp 컨캣해서 최종 레이어 태움  
 
 
+*Factorization Machine  
+**SVM + Factorization  
+***sparse data처리, linear complexity라 빠름, general prediction해줌  
+

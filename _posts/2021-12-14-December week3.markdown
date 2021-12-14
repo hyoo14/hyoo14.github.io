@@ -39,11 +39,12 @@ o
 **nlp 1  
 *기타  -eng, app  
 **eng listening  
-
+*REC-SYS  
+**Factorization Machine  
 o 
 
 *modeling  
-*REC-SYS  
+
 *CODE  
 
 
