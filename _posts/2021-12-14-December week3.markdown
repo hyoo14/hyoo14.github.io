@@ -44,9 +44,14 @@ o
 o 
 
 *modeling  
-
 *CODE  
 
+
+2021년 12월 15일 수요일  
+*modeling  
+**text detection-craft learning  
+*CODE  
+**binaryseach-codility  
 
 
 
