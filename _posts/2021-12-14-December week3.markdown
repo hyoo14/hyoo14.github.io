@@ -52,6 +52,27 @@ o
 **text detection-craft learning  
 *CODE  
 **binaryseach-codility  
+*ml&nlp  
+**nlp 1  
+*기타  -eng, app  
+**eng listening  
+*REC-SYS  
+**Factorization Machine code  
+o
+
+
+2021년 12월 16일 목요일  
+*ml&nlp  
+**nlp bart  
+*기타  -eng, app  
+**eng listening  
+*REC-SYS  
+**factorization machine code trial  
+o
+*modeling  
+*CODE  
+
+
 
 
 
