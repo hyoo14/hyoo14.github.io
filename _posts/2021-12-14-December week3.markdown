@@ -68,9 +68,18 @@ o
 **eng listening  
 *REC-SYS  
 **factorization machine code trial  
-o
 *modeling  
+**craft  
 *CODE  
+**binary search  
+o
+
+2021년 12월 17일 금요일  
+covid test  
+
+
+
+
 
 
 
