@@ -78,7 +78,13 @@ o
 covid test  
 
 
-
+2021년 12월 18일 토요일  
+*etc  
+**eng  
+*code  
+**binary_serach  
+*modeling  
+**crnn  
 
 
 
