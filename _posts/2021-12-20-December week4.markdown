@@ -22,13 +22,19 @@ categories: study
 {% endhighlight %}
 
 2021년 12월 20일 월요일  
-
-o
-*ml&nlp  
-*modeling  
-*REC-SYS  
-*CODE  
 *etc  -eng, app  
+*modeling  
+**craft+crnn , with evaluation p0.65,r0.27  
+*ml&nlp  
+**statistics  
+*CODE  
+**binary search ing  
+o
+
+
+*REC-SYS  
+
+
 
 
 
