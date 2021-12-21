@@ -157,3 +157,12 @@ REC
 **SVM + Factorization  
 ***sparse data처리, linear complexity라 빠름, general prediction해줌  
 
+
+*Wide&Deep Learning fore Rec-sys 211220  
+**wide - memorization with 과거 데이터 feature 추출된 걸로(Linear 모델, feature vector로 이루어짐)  
+***item들 보고  
+**deep - generalization with unseen(DNN using embeddings)  
+***new combination 해봄  
+**wide + deep 으로 상호보완  
+
+

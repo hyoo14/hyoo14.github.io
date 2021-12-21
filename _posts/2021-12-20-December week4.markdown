@@ -29,11 +29,21 @@ categories: study
 **statistics  
 *CODE  
 **binary search ing  
+*REC-SYS  
+**wide and deep rec-sys  
 o
 
 
-*REC-SYS  
 
+
+2021년 12월 20일 월요일  
+
+o
+*ml&nlp  
+*modeling  
+*REC-SYS  
+*CODE  
+*etc  -eng, app  
 
 
 
