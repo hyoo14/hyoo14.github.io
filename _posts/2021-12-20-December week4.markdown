@@ -31,19 +31,32 @@ categories: study
 **binary search ing  
 *REC-SYS  
 **wide and deep rec-sys  
-o
+o  
 
-
-
-
-2021년 12월 20일 월요일  
-
-o
+2021년 12월 21일 화요일  
+*CODE  
+**binary search  
 *ml&nlp  
+**bern, bin distribution  
+*etc  -eng, app  
+**eng  
+o  
 *modeling  
 *REC-SYS  
-*CODE  
+
+2021년 12월 22일 수요일  
 *etc  -eng, app  
+**eng  
+
+*REC-SYS  
+**wide and deep learning for rec-sys code  
+o  
+*ml&nlp  
+*modeling  
+
+*CODE  
+
+
 
 
 
