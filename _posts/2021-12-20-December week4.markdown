@@ -47,14 +47,17 @@ o
 2021년 12월 22일 수요일  
 *etc  -eng, app  
 **eng  
-
 *REC-SYS  
 **wide and deep learning for rec-sys code  
-o  
 *ml&nlp  
+**gpt3  
 *modeling  
-
+**data is too big 358gb -> need solution  
 *CODE  
+**binary search  
+o  
+
+
 
 
 
