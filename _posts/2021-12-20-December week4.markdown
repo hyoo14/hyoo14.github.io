@@ -57,6 +57,17 @@ o
 **binary search  
 o  
 
+2021년 12월 23일 목요일  
+*CODE  
+**dictionary  
+o  
+*ml&nlp  
+*modeling  
+*REC-SYS  
+*etc  -eng, app  
+
+
+
 
 
 
