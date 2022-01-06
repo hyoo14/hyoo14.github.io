@@ -29,6 +29,26 @@ categories: study
 **predict model mlp  
 o  
 
+2022년 01월 04일 화요일  
+
+*CODE  
+
+*ml&nlp  
+**predict model mlp  
+o  
+
+
+2022년 01월 05일 수요일  
+
+*ml&nlp  
+**predict model mlp  
+o  
+
+2022년 01월 06일 목요일  
+
+*ml&nlp  
+**predict model mlp  
+o  
 
 
 
