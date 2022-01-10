@@ -58,12 +58,6 @@ o
 *rec-sys  
 o  
 
-2022년 01월 08일 금요일  
-
-*ml&nlp  
-**predict model mlp  
-*rec-sys  
-o  
 
 
 
