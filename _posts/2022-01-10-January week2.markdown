@@ -30,6 +30,12 @@ categories: study
 **predict model mlp  
 o  
 
+2022년 01월 11일 화요일  
+
+*ml&nlp  
+**predict model mlp  
+o  
+
 
 
 
