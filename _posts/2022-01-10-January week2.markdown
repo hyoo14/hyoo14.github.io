@@ -42,6 +42,18 @@ o
 **predict model mlp  
 o  
 
+2022년 01월 12일 목요일  
+
+*ml&nlp  
+**predict model mlp  
+o  
+
+2022년 01월 13일 금요일  
+
+*ml&nlp  
+**predict model mlp  
+o  
+
 
 
 
