@@ -30,6 +30,15 @@ categories: study
 **models  
 o  
 
+2022년 01월 18일 화요일  
+
+*CODE  
+**organized tests  
+
+*ml&nlp  
+**models  
+o  
+
 
 
 
