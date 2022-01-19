@@ -40,6 +40,17 @@ o
 o  
 
 
+2022년 01월 18일 수요일  
+
+*CODE  
+**organized tests  
+
+*ml&nlp  
+**models  
+o  
+
+
+
 
 
 
