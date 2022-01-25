@@ -30,6 +30,13 @@ categories: study
 **models  
 o  
 
+2022년 01월 25일 화요일  
+
+o  
+*CODE  
+*ml
+*nlp  
+
 
 
 
