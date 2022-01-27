@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "January week3"
-date:   2022-01-17 20:49:10 +0900
+title:  "January week4"
+date:   2022-01-24 20:49:10 +0900
 categories: study
 ---
 
@@ -10,7 +10,7 @@ categories: study
 
 {% highlight ruby %}
 
-01월 셋째 주:  
+01월 넷째 주:  
 *ml&nlp  
 *modeling  
 *REC-SYS  
