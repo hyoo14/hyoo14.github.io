@@ -29,6 +29,10 @@ o
 *nlp&modeling-ner sota, bert implement  
 **본격적으로.. 주말에도?  
 
+2022년 02월 03일 목요일  
+
+o  
+
 
 
 
