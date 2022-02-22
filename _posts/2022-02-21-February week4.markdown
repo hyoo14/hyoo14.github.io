@@ -26,9 +26,18 @@ categories: study
 2022년 02월 21일 월요일  
 *python  
 *book  
-o  
 *ml  
 *eng  
+o  
+
+2022년 02월 22일 화요일  
+
+*eng  
+o  
+*python  
+*book  
+*ml  
+
 
 
 
