@@ -31,7 +31,14 @@ categories: study
 o  
 
 2022년 02월 22일 화요일  
+*eng  
+*python  
+*book  
+*ml  
+o  
 
+
+2022년 02월 23일 수요일  
 *eng  
 o  
 *python  
