@@ -40,10 +40,19 @@ o
 
 2022년 02월 23일 수요일  
 *eng  
+*python  
+*book  
+*ml  
+o  
+
+2022년 02월 24일 목요일  
+*eng  
 o  
 *python  
 *book  
 *ml  
+
+
 
 
 
