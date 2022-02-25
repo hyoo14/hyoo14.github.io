@@ -59,3 +59,24 @@ Pythonic한 코딩을 위한 정리
 **임포트를 적을 때는 표준라이브러리 모듈, 서드 파티 모듈, 사용자가 직접 만든 모듈 선서로 섹션을 나눠라, 그리고 알파벳 순서로 임포트하라  
 
 
+# f-string 사용하라  
+*기존의 c style tuple or dictionary과 format 보다 간결하고, 명확하게 표현됨  
+**비교  
+{% highlight ruby %}
+key, value = 'my_values', 1.234  
+f_string = f'{key:<10}={value:.2f}'  
+c_tuple = '%-10s = %.2f' % (key, value)  
+c_dict = '%(key)-10s = %(value).2f' %{'key': key, 'value': value}  
+str_args = '{:<10} = {:.2f}'.format(key, value)  
+{% endhighlight %}
+
+**사용예  
+{% highlight ruby %}
+key, value = 'my_values', 1.234  
+places, number = 3, 1.23456  
+formatted = f'{key} = {value}'  
+formatted = f'내가 고른 숫자는 {number:.{places}f}' #하드코딩 대신 변수를 사용해 형식 문자열 안에 파라미터화함  
+{% endhighlight %}
+
+
+
