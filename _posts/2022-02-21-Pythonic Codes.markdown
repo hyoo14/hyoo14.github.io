@@ -97,7 +97,7 @@ Pythonic한 코딩을 위한 정리
 **반드시 상대적 경로를 임포트해야 한다면 from . import foo처럼 사용  
 **임포트를 적을 때는 표준라이브러리 모듈, 서드 파티 모듈, 사용자가 직접 만든 모듈 선서로 섹션을 나눠라, 그리고 알파벳 순서로 임포트하라  
 
-# f-string 사용하라
+# f-string 사용하라 (better way 04)  
 
 *기존의 c style tuple or dictionary과 format 보다 간결하고, 명확하게 표현됨  
 **비교  
@@ -116,3 +116,35 @@ places, number = 3, 1.23456
 formatted = f'{key} = {value}'  
 formatted = f'내가 고른 숫자는 {number:.{places}f}' #하드코딩 대신 변수를 사용해 형식 문자열 안에 파라미터화함  
 {% endhighlight %}
+
+
+# range 보다는 enumerate를 사용하라(yield에 대하여, betterway 07, 220322)
+
+*yield는 generator를 만드는데 사용됨  
+**결과값 반환할 때 return대신 사용하는 return과는 다소 다른 방식  
+***return list("ABC") vs yield "A" \n yield "B" \n yield "C"  
+***결과를 여러번 나누어서 제공  
+***return은 list를 반환하고 yield는 generator를 반환  
+
+*그렇다면 generator는 무엇인가?  
+**데이터 접근할 때 순차적으로 접근 가능하게 함  
+**리스트라면 전부 접근해야해서 예를들어, 만개의 데이터가 들어있는 리스트라면  
+처리시간 1초에 필요 메모리 1mb라 가정했을 때, 10000초와 10gb(10000mb)가 필요함  
+**하지만 제너레이터는 순차적으로 하나씩 가져올 수 있어서 가져올 때마다 1초와 1mb로 처리  
+**메모리 부족하거나 한번에 보여주지 않아도 될 때에 유용(그래서lazy iterator라고 불리기도)  
+**이론적으로 무한데이터도 만들 수 있음  
+**yield from을 쓰면 리스트를 바로 제너레이터로 변환할 수 있음  
+***yield from ["A", "B", "C"] 이런식으로  
+**리스트 표현식처럼 제너레이터 표현식도 있음  
+***abc = (ch for ch in "ABC") 이런식  
+
+*위와 비슷한 맥락에서 for i in range(len(something_list)): 대신  
+it = enumerate(something_list)  
+next(it)  
+이렇게 쓸 수 있고 이 enumerate는 lazy generator(yield 사용 후 만들어지는)로 이루어져 있음  
+**깔끔하게 for i, something in enumerate(something_list): 이렇게 짤 수 있음  
+**enumerate에 두번째 파라미터를 지정해줘서 시작도 지정할 수 있음  
+***for i, something in enumerate(something_list, 1): 이런식으로..  
+
+
+
