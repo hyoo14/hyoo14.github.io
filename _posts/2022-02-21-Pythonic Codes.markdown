@@ -147,4 +147,12 @@ next(it)
 ***for i, something in enumerate(something_list, 1): 이런식으로..  
 
 
+# mutable과 imutable 자료구조(220323 wednesday)
+*가역적 비가역적.. 변하는 자료구조와 안 변하는 자료구조  
+**가역적인 것은 대부분의 자료구조들 list, dictionary, set  
+**비가역적인 것은 tuple.  
+***숫자형, 문자형 지정 변수도 비가역적..  
+***비가역적 자료구조들은 변하지 않음 -> 예를 들어, x=3이고 y=x라 했을 때 y += 1을 해도 x는 유지됨  
+**mutable은 call-by-reference, immutable은 call-by-value로 볼 수 있음  
+**참고문헌: https://ledgku.tistory.com/54  
 
