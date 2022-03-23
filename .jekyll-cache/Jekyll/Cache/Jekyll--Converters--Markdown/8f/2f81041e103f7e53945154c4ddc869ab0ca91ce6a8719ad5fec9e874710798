@@ -1,0 +1,20 @@
+I"�
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">짧은</span> <span class="err">요약</span> <span class="p">:</span>
+
+<span class="no">NLP</span> <span class="err">일부</span> <span class="err">컨셉노트</span>  </code></pre></figure>
+
+<h1 id="nlps">NLPs</h1>
+
+<p><em>BART(Bidirectional and Auto-Regressive Transformers)<br />
+<strong>NLU와 NLG 모두 잘 하는 모델 없을까? 에서 시작<br />
+**encoder, decoder 모두 사용한 pretrain<br />
+***기존의 bert는 encoder만 씀, 그래서 mask 이외 노이즈 추가 어렵..<br />
+**</strong>다양 노이즈 추가 가능<br />
+**다양한 목적에 맞게 사용 가능<br />
+**</em>프리트레인 성능 올라감. 복잡 테스크로 트레인하니까 모델이 갖는 정보가 더 많?<br />
+<em>*NLU에서는 마지막 디코더에 소프트맥스나 클래시피케이션 레이어 추가해서 파인튜닝<br />
+**일반 NLG 그냥 학습하면 됨<br />
+**NLG MT의 경우 인코더에 다른 언어 들어올 수 있음<br />
+**</em>이 경우 Randomly Initialized Encoder를 커널로 넣어줌. 이렇게 학습함</p>
+
+:ET

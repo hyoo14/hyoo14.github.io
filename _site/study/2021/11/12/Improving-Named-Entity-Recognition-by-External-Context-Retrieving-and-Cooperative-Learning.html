@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  
+
+  
+    
+      
+      
+
+  <!-- Primary Meta Tags -->
+  <title>Weekly Mountain, Paper, and Work | Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning</title>
+  <meta name="title" content="Weekly Mountain, Paper, and Work | Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"/>
+  <meta name="description" content="Bay is a minimal Jekyll Theme."/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="Weekly Mountain, Paper, and Work | Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://localhost:4000/study/2021/11/12/Improving-Named-Entity-Recognition-by-External-Context-Retrieving-and-Cooperative-Learning"/>
+  <meta property="og:title" content="Weekly Mountain, Paper, and Work | Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"/>
+  <meta property="og:description" content="Bay is a minimal Jekyll Theme."/>
+  <meta property="og:image" content="http://localhost:4000/assets/img/profile-pic.jpg"/>
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="http://localhost:4000/study/2021/11/12/Improving-Named-Entity-Recognition-by-External-Context-Retrieving-and-Cooperative-Learning"/>
+  <meta property="twitter:title" content="Weekly Mountain, Paper, and Work | Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"/>
+  <meta property="twitter:description" content="Bay is a minimal Jekyll Theme."/>
+  <meta property="twitter:image" content="http://localhost:4000/assets/img/profile-pic.jpg"/>
+  
+    <meta property="twitter:creator" content="@YourTwitterUsername"/>
+    <meta property="twitter:site" content="@YourTwitterUsername"/>
+  
+
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"/>
+  <link rel="canonical" href="http://localhost:4000/study/2021/11/12/Improving-Named-Entity-Recognition-by-External-Context-Retrieving-and-Cooperative-Learning"/>
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico" type="image/x-icon"/>
+
+  <!-- Google Analytics -->
+  <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', "UA-121636368-3", "auto");
+    ga('send', "pageview");
+  </script>
+  <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+</head>
+
+
+  <body>
+    <header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" href="http://localhost:4000/">
+      <img src="http://localhost:4000/assets/img/title.png" alt="Weekly Mountain, Paper, and Work" />
+    </a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon"></a>
+
+      <div class="menu">
+        
+          
+          
+          <a class="page-link" href="http://localhost:4000/">
+            Home
+          </a>
+        
+          
+          
+          <a class="page-link" href="http://localhost:4000/work">
+            Work
+          </a>
+        
+          
+          
+          <a class="page-link" href="http://localhost:4000/mountain">
+            Mountain
+          </a>
+        
+          
+          
+          <a class="page-link" href="http://localhost:4000/study">
+            Study
+          </a>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+          <header class="post-header">
+
+            
+
+            <h1 class="post-title">
+            
+              Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning
+            
+            </h1>
+
+            
+            <p class="post-meta"><span class="post-date">November 12, 2021
+            </span></p>
+          </header>
+
+          <article class="post-content">
+            
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">짧은</span> <span class="err">요약</span> <span class="p">:</span>
+
+<span class="n">labeling</span><span class="err">을</span> <span class="err">위한</span> <span class="n">sequence</span> <span class="err">뿐만</span> <span class="err">아니라</span>  
+<span class="err">검색을</span> <span class="err">통한</span> <span class="n">external</span> <span class="n">text</span><span class="err">를</span> <span class="err">같이</span> <span class="n">input</span><span class="err">으로</span> <span class="err">사용</span>  
+<span class="no">CL</span><span class="p">(</span><span class="no">Collaborative</span> <span class="no">Learning</span><span class="p">)</span><span class="err">으로</span> <span class="err">성능을</span> <span class="err">향상</span>  
+<span class="o">-&gt;</span><span class="n">external</span> <span class="n">text</span><span class="err">가</span> <span class="err">없을</span> <span class="err">때의</span> <span class="err">성능도</span> <span class="err">향상</span>  </code></pre></figure>
+
+<p>*문장 포함 문서가 있으면 당연히 NER 성능이 향상<br />
+**하지만 문장 찾기가 쉽진 않음<br />
+**트위터 등 소셜미디어나 이커머스 등서 찾기 힘듬<br />
+**그래서 서치엔진으로 찾음</p>
+
+<p><em>검색 결과를 Re-Rank 해줌<br />
+**의미적 유사도로 Re-Rank!<br />
+**</em>BERTScore 씀</p>
+
+<p>*모델의 흐름?<br />
+** (input sentence + external contexts) -&gt; pretrained embedding -&gt; CRF -&gt; output</p>
+
+<p><em>CL?<br />
+**input 2개로 학습<br />
+**L2 distance 거리 작게 해서 2 인풋에 대한 각각의 아웃풋 차이가 적게끔 해줌<br />
+**KL divergence 를 통해 아웃풋 분포 차이 적게 해줌<br />
+**</em>궁극적으로 external texts가 없을 때의 모델의 성능도 향상<br />
+** 참고로, CL 안 쓸 경우 외부 context 길고 잠재의미 사전에 몰라서 매우 느림.</p>
+
+<p>*negative log-likelihood 줄이게 학습 진행<br />
+*CRF서 loss function 어려워서 KL씀<br />
+*backpropagate 안 하므로 KL이 cross-entropy와 같음</p>
+
+<p>*Re-Rankg 때 Roberta-Large 씀<br />
+*바이오는 Bio-BERT, 다른 도메인은 XLM-RoBERTa</p>
+
+<p>*AdanW 옵티마이저 씀</p>
+
+<p>**여러 비교군들과 실험해본 결과 8개 중 5개에서 SOTA 찍음</p>
+
+
+          </article>
+
+          
+
+      </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h4>CONTACT</h4>
+
+        <div class="social-links">
+          
+            <div class="social-link contact-links">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/email.png"
+                alt="email"
+              />
+              <a href="mailto:yourmail@domain.com" id="email-link">
+                
+                  yourmail@domain.com
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link contact-links">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/wechat.png"
+                alt="wechat"
+              />
+              <a href="#" id="wechat-link">
+                
+                  YourWeChatUsername
+                
+              </a>
+            </div>
+
+          
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h4>FOLLOW</h4>
+
+        <div class="social-links follow-links">
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/twitter.png"
+                alt="twitter"
+              />
+              <a href="http://twitter.com/YourTwitterUsername">
+                
+                  Twitter
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/facebook.png"
+                alt="facebook"
+              />
+              <a href="http://facebook.com/YourFacebookUsername">
+                
+                  Facebook
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/linkedin.png"
+                alt="linkedin"
+              />
+              <a href="http://linkedin.com/in/YourLinkedInUsername">
+                
+                  LinkedIn
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/github.png"
+                alt="github"
+              />
+              <a href="http://github.com/YourGitHubUsername">
+                
+                  GitHub
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/dribbble.png"
+                alt="dribbble"
+              />
+              <a href="https://dribbble.com/YourDribbbleUsername">
+                
+                  Dribbble
+                
+              </a>
+            </div>
+
+          
+            <div class="social-link">
+
+              
+              <img
+                src="http://localhost:4000/assets/img/icons/rss.png"
+                alt="rss"
+              />
+              <a href="/feed.xml">
+                
+                  RSS
+                
+              </a>
+            </div>
+
+          
+        </div>
+      </div>
+
+      
+        <div class="footer-col footer-col-3 powered-by">
+          <p>
+            powered by <a href="https://github.com/eliottvincent/bay">Bay</a> | 2022
+          </p>
+        </div>
+      
+    </div>
+  </div>
+</footer>
+
+
+  
+
+  
+    
+    
+
+
+  <div id="wechat-widget">
+    <p>
+      Find me on WeChat with the ID <strong>YourWeChatUsername</strong>, or scan my QR code:
+    </p>
+
+    <img src="http://localhost:4000/assets/img/wechat-qr-code.png" alt="QR code" id="qr-code" />
+  </div>
+
+
+
+
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/cash-4.1.5.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/assets/js/site.js"></script>
+
+  </body>
+</html>

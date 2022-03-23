@@ -1,0 +1,144 @@
+I"�
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">짧은</span> <span class="err">요약</span> <span class="p">:</span>
+
+<span class="err">추천</span> <span class="err">알고리즘</span> <span class="err">대략적인</span> <span class="err">컨셉노트</span>  </code></pre></figure>
+
+<h1 id="추천-알고리즘">추천 알고리즘</h1>
+
+<p>REC<br />
+*이웃기반 (유저-아이템) CF<br />
+**구현 간단 model base CF보다 계산 적고 새유저-아이템에 대해 안정적<br />
+**대신 콜드스타트문제와 데이터 많아질수록 계산량 문제, 롱테일 이코노미문제(소수 아이템 쏠림 현상)의 단점이 있음</p>
+
+<p>*자카드 유사도<br />
+**교집합/합집합 -&gt;얼마나 많은 아이템이 겹치는지 판단<br />
+*피어슨 유사도<br />
+**코사인 유사도와 유사. 정규화가 추가됨. 1은 양의상관관계, -1은 음의상관관계, 0은 상관관계 없음</p>
+
+<p>*content based rec sys</p>
+
+<p>**유저 과거 경험 중 비슷 아이템 현재 추천<br />
+**장-다른유저데이터 없어도 되고 아이템범위 넓고 추천 이유 제시할 수 있음<br />
+**단-적절 피처 찾기 어렵고 새로운유저 추천 어렵고 선호 특성만 반복 추천<br />
+**피처추출 중요_클러스터링 tfidf dl등</p>
+
+<p>**user profile-사용자가 가진 컨텐츠 등으로부터 특성 뽑음<br />
+**스케일차이 있다변 코사인 유사도<br />
+**그렇지 않다면 유클리디언 거리-&gt;knn알고리즘이 이거 씀: 가까운 거리 k개 택-&gt;우세종 택<br />
+**거리로 맨헤탄 마나로브 도 있음</p>
+
+<p>*협업필터링<br />
+**많은 사람의 의견으로 추천<br />
+**비슷한 호감을 낸 집단 꺼 보고 추천<br />
+**이웃기반(아이템기반, 유저기반)<br />
+**모델기반(딥러닝이 여기 해당)<br />
+**하이브리드(컨텐츠 합친 거)</p>
+
+<p>*모델기반<br />
+**이웃은 고전. 모델이 딥러닝에 가깝.<br />
+**특징 학습. 기존 행렬보다 압축. <br />
+**모델 이미 학습되서 계산시간 적겠지<br />
+**오버피팅 방지 가능. 스파스 채우므로..<br />
+**연관성분석, SVD, clustering, bayes, svm, regression, deep learning</p>
+
+<p>*latent factor model<br />
+**잠재된.. 의미.. 기존 특성들을 레이턴트 펙터인 벡터로 간략화<br />
+**유저와 아이템을 같은 차원화</p>
+
+<p>*matrix factorization<br />
+**Singular Value Decomposition<br />
+**우리가 가진 유저아이템 레이팅 매트릭스를 분해하겠다. 분해해서 얻은 벡터값을 레이턴트 벡터로 보는 것<br />
+**AA^T와 A^TA를 각각 고유값 분해로 leftSV, rSV얻음(각각 유저, 아이템 대표) 중간성분 시그바는 레이턴트팩터 중요도로 복원 때 씀<br />
+**노이즈 제거, 데이터축소</p>
+
+<p>*matrix factorization?<br />
+**레이턴트 팩터 모델 구현하는 방법.<br />
+**레이팅메트릭스 분해<br />
+**유저-무비 를 유저-레이턴트 x 레이톤트-무비 로 분해<br />
+**분해한 두개가 기존 유저-무비와 유사하게 학습<br />
+**관측값으로 학습</p>
+
+<p>**SGD , ALS 써서 학습<br />
+**스파스니까 에러텀 써서 제너럴하게 학습 유도<br />
+**오버피팅 피하기 위한..</p>
+
+<p>**ALS Xu Yu 둘다 모를 때 둘 중 하나 고정<br />
+**쿼드러틱 최적화<br />
+**병렬처리 장점, 임플리싯 피브백에 유리</p>
+
+<p><em>*피드백<br />
+**</em>implicit 머무는 시간, 클릭시간<br />
+***explicit 설문조사, 평가</p>
+
+<p>**프로파일링- 각종 정보들 아이템화?</p>
+
+<dl>
+  <dt>*advanced mf-bayesian personalized ranking from implicit feedback(BPR)</dt>
+  <dd>**랭킹 맞추는 문제 풀기<br />
+**임플리싯 피드백 잘 다룸<br />
+**핵심은 mf에 적용 knn도 사용&lt;-bpr opt적용<br />
+**사후확률 기반 최적화bpr opt gd보다 좋음</dd>
+  <dd>
+    <p>**likelihood function과 모델파라미터에대한 prior probability를 사용한 베이지안 문제로 볼 수 있음<br />
+**post ~ likelihood * prior(정규분포)<br />
+**미분가능이니 gd이지만 sgd 보다는 learn bpr제안. triples 학습하는 부트스트랩 기반 sgd. 랜덤하게 triples 선택</p>
+  </dd>
+</dl>
+
+<p>*하이브리드-<br />
+**컨텐츠베이스+콜래보레이티브필터링+도메인놀리지/컨텍스트</p>
+
+<p><em>*아이템중 비슷+이웃과비교,잠재특성 반영 비슷 추천+도메인지식,사용자특징반영<br />
+**</em>ex)웨이티드 앙상블-여러 추천 결과 앙상블<br />
+***믹스드(다 보여쥼),스위치(사용자가 폰이냐 컴이냐에 따라 다르게), 피처컴비네이션(다양 피처 조합), 메타레벨(여러 모델 조합하는데 첫 모델이 다음 모델 인풋 서로서로 학습)</p>
+
+<p>*context-aware recsys<br />
+**기존 유저/아이템 제공 explicit and 유저 클릭 같은 implicit 사용<br />
+**컨텍스트, 유저사용 이용.. 유저아이템과 관련이 있는 처한 상황의 특징적 정보- 시간, 위치 정보</p>
+
+<p>**뉴스-기존:유저 성향과 컨텐츠 유사도<br />
+**문맥: 월요일이라면 날씨 등 보여줌<br />
+**—&gt; 시간을 보네.<br />
+**+날씨, 메타정보(판매자정보, 키워드, 테그 등)<br />
+**접속기기 평점이벤트 등 explicit으로 implicit얻음</p>
+
+<p>**적절 컨텍스트로 초기 필터링도 가능<br />
+**ab test, 도메인지식 적용</p>
+
+<p>**pre-filtering, post-filtering<br />
+**daily, weekly 정보도 포함<br />
+**스태틱, 다이나막 * 풀리, 파셜리, 언 옵져버블<br />
+**컨텍스트 보고 미리-프리, 추천 후에-포스트<br />
+**컨텍스트 정보는 똑같<br />
+**너무 스페시픽한 것은 제너럴라이즈 해서 사용</p>
+
+<p>**콘텍스튜얼 모델링- 고차원 매트릭스 사용</p>
+
+<p>*lars-location aware rec sys<br />
+**위치기반</p>
+
+<p>*neural cf:<br />
+**-linear MF 의 선형성 보완하는 뉴럴네트워크사용</p>
+
+<p>**input: one hot<br />
+**embedding layer 거쳐서 덴스<br />
+**유저 아이템 레이턴트 두개 컨캣해서 통과<br />
+**output: 상관계수 0-1</p>
+
+<p>**베르누이분포 사용 loss는 cross entropy<br />
+**학습 sgd</p>
+
+<p>**gmf, mlp 컨캣해서 최종 레이어 태움</p>
+
+<p><em>Factorization Machine<br />
+**SVM + Factorization<br />
+**</em>sparse data처리, linear complexity라 빠름, general prediction해줌</p>
+
+<p><em>Wide&amp;Deep Learning fore Rec-sys 211220<br />
+**wide - memorization with 과거 데이터 feature 추출된 걸로(Linear 모델, feature vector로 이루어짐)<br />
+**</em>item들 보고<br />
+<em>*deep - generalization with unseen(DNN using embeddings)<br />
+**</em>new combination 해봄<br />
+**wide + deep 으로 상호보완</p>
+
+:ET

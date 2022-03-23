@@ -1,0 +1,54 @@
+I"7
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mi">12</span><span class="err">월</span> <span class="err">셋째</span> <span class="err">주</span><span class="p">:</span>  
+<span class="o">*</span><span class="n">ml</span><span class="o">&amp;</span><span class="n">nlp</span>  
+<span class="o">*</span><span class="n">modeling</span>  
+<span class="o">*</span><span class="no">REC</span><span class="o">-</span><span class="no">SYS</span>  
+<span class="o">*</span><span class="no">CODE</span>  
+<span class="o">*</span><span class="n">etc</span>  <span class="o">-</span><span class="n">eng</span><span class="p">,</span> <span class="n">app</span>  </code></pre></figure>
+
+<p>2021년 12월 20일 월요일<br />
+*etc  -eng, app<br />
+*modeling<br />
+**craft+crnn , with evaluation p0.65,r0.27<br />
+*ml&amp;nlp<br />
+**statistics<br />
+*CODE<br />
+**binary search ing<br />
+*REC-SYS<br />
+**wide and deep rec-sys<br />
+o</p>
+
+<p>2021년 12월 21일 화요일<br />
+*CODE<br />
+**binary search<br />
+*ml&amp;nlp<br />
+**bern, bin distribution<br />
+*etc  -eng, app<br />
+**eng<br />
+o<br />
+*modeling<br />
+*REC-SYS</p>
+
+<p>2021년 12월 22일 수요일<br />
+*etc  -eng, app<br />
+**eng<br />
+*REC-SYS<br />
+**wide and deep learning for rec-sys code<br />
+*ml&amp;nlp<br />
+**gpt3<br />
+*modeling<br />
+**data is too big 358gb -&gt; need solution<br />
+*CODE<br />
+**binary search<br />
+o</p>
+
+<p>2021년 12월 23일 목요일<br />
+*CODE<br />
+**dictionary<br />
+o<br />
+*ml&amp;nlp<br />
+*modeling<br />
+*REC-SYS<br />
+*etc  -eng, app</p>
+
+:ET

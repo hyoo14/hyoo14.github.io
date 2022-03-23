@@ -1,0 +1,39 @@
+I"�
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">짧은</span> <span class="err">요약</span> <span class="p">:</span>
+
+<span class="err">정리를</span> <span class="err">위해</span> <span class="err">시작해보았습니다</span><span class="o">.</span></code></pre></figure>
+
+<p>2021년 10월 21일</p>
+
+<p>버트학습 -&gt; 재무교과서 x(pdf 파일 제공 찾기 어려움) -&gt; KIFRS 기준서 &amp; 해설서 OR KGAAP 기준서 &amp; 해설서</p>
+
+<p>PDF 읽기 -&gt; pdftotext</p>
+
+<p>근데 pip install 이 안 됨..</p>
+
+<p>https://pythonq.com/so/python/362057 사이트 참고</p>
+
+<p>sudo apt-get update
+sudo apt-get install build-essential libpoppler-cpp-dev pkg-config python-dev</p>
+
+<p>설치 후 install 됨.</p>
+
+<p>사용법:
+import pdftotext
+filename = “.pdf”
+with open(filename, “rb”) as f:
+    pdf = pdftotext.PDF(f)</p>
+
+<p>for page in pdf:
+    print(page)</p>
+
+<p>KIFRS 기준서 다운로드.. 너무 많…
+bert 모델부터 볼까…</p>
+
+<p>2021년 10월 22일</p>
+
+<p>dataset, tokenizer, data loader 부분 보기</p>
+
+<p>근데 pretrain 내용은 
+https://beomi.github.io/2020/02/26/Train-BERT-from-scratch-on-colab-TPU-Tensorflow-ver/ 이거 보고 하는 것이 좋은 듯..</p>
+:ET

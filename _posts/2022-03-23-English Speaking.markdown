@@ -12,7 +12,6 @@ For improving speaking skill
 
 {% endhighlight %}
 
-{% highlight ruby %}
 
 
 # Introduction

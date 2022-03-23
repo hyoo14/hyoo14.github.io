@@ -13,9 +13,6 @@ For improving writing skill
 {% endhighlight %}
 
 
-
-{% highlight ruby %}
-
 # Introduction
 This passage introduces ..  
 However, lecturer effectively challenges ..  

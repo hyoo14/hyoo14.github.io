@@ -1,0 +1,12 @@
+I"�
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">짧은</span> <span class="err">요약</span> <span class="p">:</span>
+
+<span class="n">gMLP</span><span class="p">(</span><span class="n">gated</span> <span class="no">Multi</span> <span class="no">Layer</span> <span class="no">Perceptron</span><span class="p">)</span><span class="err">으로</span> <span class="n">transformer</span> <span class="err">만큼의</span> <span class="err">성능을</span> <span class="err">확인</span> <span class="p">(</span><span class="no">Vision</span><span class="err">과</span> <span class="no">NLP</span> <span class="err">모두에서</span><span class="p">)</span></code></pre></figure>
+
+<p>-transformer는 spatial interaction 지나치게 많음.</p>
+
+<p>-대안으로 gMLP(채널 projection &amp; 공간 projection - static parameterization으로) 제안</p>
+
+<p>-self-attention 대신 SGU(Spatial Gating Unit) 사용</p>
+
+:ET
