@@ -156,3 +156,22 @@ next(it)
 **mutable은 call-by-reference, immutable은 call-by-value로 볼 수 있음  
 **참고문헌: https://ledgku.tistory.com/54  
 
+
+# 복잡한 식을 쓰는 대신 도우미 함수를 작성하라(Better way 5, 220324 thursday)
+*if/else 조건식으로 간결하게 표현도 가능한 경우 있음  
+**사용예  
+{% highlight ruby %}
+red_str = my_values.get('빨강', [""])  
+red = int(red_str[0]) if red_str[0] else 0  
+{% endhighlight %}
+
+*하지만 두세번만 반복되는 경우에도 함수 따로 만드는 것 권장  
+**사용예  
+{% highlight ruby %}
+def get_first_int(values, key, efault=0):  
+    found = values.get(key, [""])  
+    if found[0]:  
+        return int(found[0])  
+    return default  
+{% endhighlight %}
+
