@@ -175,3 +175,17 @@ def get_first_int(values, key, efault=0):
     return default  
 {% endhighlight %}
 
+# 인덱스 대신 언패킹해라(Better way 6, 220324 thursday)
+*지양하는 사용예  
+{% highlight ruby %}
+listA = [("korean", "kimchi"), ("italian","pasta")]
+for i in range(len(listA)):
+    print(listA[i])
+{% endhighlight %}
+
+*지향하는 사용예  
+{% highlight ruby %}
+listA = [("korean", "kimchi"), ("italian","pasta")]
+for (national, food) in listA:
+    print( (national, food) )
+{% endhighlight %}
