@@ -43,9 +43,19 @@ o
 Thursday, March 24, 2022  
 *python  
 *book  
-o  
 *eng speak  
 *eng write  
+o  
+
+Friday, March 25, 2022  
+
+o  
+*python  
+*book  
+*eng speak  
+*eng write  
+
+
 
 
 
