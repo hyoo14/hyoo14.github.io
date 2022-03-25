@@ -175,6 +175,7 @@ def get_first_int(values, key, efault=0):
     return default  
 {% endhighlight %}
 
+
 # 인덱스 대신 언패킹해라(Better way 6, 220324 thursday)
 *지양하는 사용예  
 {% highlight ruby %}
@@ -189,3 +190,33 @@ listA = [("korean", "kimchi"), ("italian","pasta")]
 for (national, food) in listA:
     print( (national, food) )
 {% endhighlight %}
+
+
+# Better way 8,9,10(Friday, 220325 )
+*zip을 사용하라  
+**(참고)리스트 컴프리헨션 사용하면 새로운 리스트 만들기 편함  
+***counts = [len(n) for n in names] #names = ['Zelenskyy', '우크라이나'] #결과=[9,5]  
+**두개 리스트 접근할 때 zip 편함  
+***사용예  
+{% highlight ruby %}
+for name, count in zip(names, counts):
+    print(f'{name}: {count}')
+
+{% endhighlight %}
+****다만 길이가 다를 경우에는 작은 길이까지만 고려해줌  
+****이 경우, zip_longest를 사용하면 짧은 경우에는 None을 넣어줌  
+
+
+*loop 이후에 else블록 사용하지 말아라  
+*월러스 연산자 ( := ) 사용해서 대입 반복 피하라  
+**월러스 연산자는 대입연산자로 대입 해줌.. 이후 조건 체크 바로 해줄 수 있어서 편함  
+***사용예  
+{% highlight ruby %}
+while fresh_fruit := pick_fruit(): #fresh_fruit에 값 넣어줌, 만약 없으면 break됨  
+
+
+if (count := fresh_fruit.get('레몬', 0) ) >= 2: #카운트에 개수 세서 넣어줌. 뒤에 조건문 붙여줘서 한줄로 편하게 처리  
+
+
+{% endhighlight %}
+
