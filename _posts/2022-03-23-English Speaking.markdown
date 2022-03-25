@@ -17,14 +17,14 @@ For improving speaking skill
 # Introduction
 I personally think ~is better.  
 or  
-I agrre(disagrre) tith the following statement.  
+I agree(disagree) that the following statement.  
 There are some reasons.  
 
 
 # Body
 First, ..  
-(The first reasons is that~.)  
-To be specific,(What I means is)(This is because) ~  
+(The first reason is that~.)  
+To be specific,(What I mean is)(This is because) ~  
 
 
 Second, ..  
