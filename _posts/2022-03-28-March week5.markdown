@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "March week5"
+date:   2022-03-28 11:17:10 +0900
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+
+March week5:  
+*eng speak  
+*eng write  
+*python  
+*book  
+
+
+
+{% endhighlight %}
+
+Monday, March 28, 2022  
+
+o  
+*eng speak  
+*eng write  
+*python  
+*book  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
