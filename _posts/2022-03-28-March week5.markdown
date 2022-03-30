@@ -13,20 +13,27 @@ categories: study
 March week5:  
 *eng speak  
 *eng write  
-*python  
-*book  
+(*python  )
+(*book  )
 
 
 
 {% endhighlight %}
 
 Monday, March 28, 2022  
-
-o  
 *eng speak  
 *eng write  
-*python  
-*book  
+o  
+
+Tuesday, March 29, 2022  
+*eng speak  
+*eng write  
+o  
+
+Wednesday, March 30, 2022  
+*eng speak  
+*eng write  
+o  
 
 
 
