@@ -16,6 +16,300 @@ categories: study
 
 
 {% endhighlight %}
+# day 2  
+*1. virtually  
+**in effect, essentially, almost, nearly, almost totally - 사실상, 거의  
+***Jane's decision to resign was virtually an admission of guilt.  
+
+
+*2. unprecedented  
+**unlike anything in the past, unique, novel, new - 전례 없는, 새로운  
+***To receive a patent, an invetion's design and purpose must be unprecedented.  
+
+
+*3. grow accustomed to  
+**become used to, become familiar with - ~에 익숙해지다  
+***While living in Seoul, Tom grew accustomed to traffic jams.  
+
+
+*4. intrigue  
+**interest, fascinate, attract - 흥미를 끌다  
+***The discovery of a new planet that is similar to the Earth intrigued scientists.  
+
+
+*5. implausible  
+**unlikely, unbelievable, improbable - 믿기 어려운  
+***As implausible as it seems, a snake and a hamster in a Tokyo zoo have become friends.  
+
+
+*6. decline  
+**weakening, decay - 쇠퇴, 쇠락  
+***The decline of the Roman Empire began in the 4th century.  
+**decrease, lessen, fall - 줄다, 검소하다  
+***The singer's popularity has been declining since the scandal.  
+**refuse, reject - 거절하다  
+***Daniel declined to go to the movie theater with Lisa despite her repeated invitations.  
+
+
+*7. contemporary  
+**modern, present-day, current - 현대의  
+***The Internet is an essential tool for doing business in contemporary society.  
+**coexisting, concurrent - 동시대의  
+***Van Gogh and Gauguin were contemporary artists and good frends.  
+
+
+*8. allocate  
+**distribute, allot, designate, earmark - 할당하다, 배정하다  
+***The plan allocates $24 million to City Opera for a new theater downtown.  
+
+
+*9. drastically  
+**severely, strikingly, extemely - 극심하게  
+***The National Weather Service issued a warning when the weather changed drastically.  
+
+
+*10. heterogeneous  
+**varied, assorted, mixed - 잡다한, 혼성의  
+***English includes words from a heterogeneous collection of other languages.  
+
+
+*11. conspicuous  
+**noticeable, clearly visible, prominent, obvious - 뚜렷한  
+***Sharon's addiction to alcohol became conspicuous as she lost conrol of her drinking habit.  
+
+
+*12. prolific  
+**fertile, fruitful, productive, abundant - 다산의, 풍부한  
+***Rabbits are prolific breeders, with females able to produce hundreds of babies.  
+
+
+*13. fluctuation  
+**change, variation, variance - 변동  
+***Even minor temperature fluctuations can be dangerous to tropical fish  
+
+
+*14. encourage  
+**promote, prompt, motivate - 촉진하다  
+***Many studies show that exercise encourages the growth of new brain cells.  
+**cheer up, hearten - 격려하다  
+***The patients at the hospital were encouraged by the movie star's visit.  
+
+
+*15. abrupt  
+**sudden, sharp, unexpected - 갑작스러운  
+***The airbag was wrongly released when the car made an abrupt stop.  
+
+
+*16. evaluate  
+**judge, assess, gauge, appraise - 평가하다  
+***Judges use several criteria to evaluate Olymic gymnasts' performances.  
+
+
+*17. comprehensive  
+**thorough, complete, exhuastive - 종합적인  
+***Before entering a foreign market, firms conduct a comprehensive study of the country.  
+
+
+*18. engrave  
+**carve, incise, etch - 새기다  
+***Julie can engrave designs in all kinds of materials, such as wood, leather, and metal.  
+
+
+*19. slight  
+**minor, small, trivial, mild - 하찮은, 경미한  
+***A proofreader will often make slight changes to the final draft of a novel.  
+
+
+*20. monotonous  
+**unvaried, boring, tedious, dull - 단조로운, 지루한  
+***Eric quit his job on the assembly line because his tasks were so monotonous.  
+
+
+*21. regard  
+**consider, think of, see - 생각하다, 간주하다  
+***Despite the depth and complexity of comic books, soem people regard them as childish.  
+**attention, notice - 관심  
+***The professor gave little regard to student concerns about the exam's being too difficult.  
+
+
+*22. obsession with  
+**fixation on, preoccupation with - ~에 대한 집착  
+***Some teenagers have an obsession with the Internet and social media.  
+
+
+*23. optimize  
+**make the best use of - 최대한 잘 활용하다  
+***The international community should optimize the use of non-renewable fossil fule resources.  
+
+
+*24. supplant  
+**replace, substitute, displace, supersede - 대체하다  
+***3D printers are expected to supplant traditional manufacturing methods.  
+
+
+*25. colossal  
+**enormous, monstrous, gigantic - 거대한, 엄청난  
+***The government paid a colossal sum for accidnets regardless of the cause.  
+
+
+*26. diffuse  
+**spread, distribute, scatter - 퍼뜨리다  
+***The stove diffused its warmth all over the house.  
+
+
+*27.  mecahnics  
+**procedure - 방법  
+***In the course, students will learn about the mechanics of good writing.  
+
+
+*28. susceptible to  
+**likely to get, vulnerable to, pron to - ~에 걸리기 쉬운, 영향받기 쉬운  
+***Thanks to her healthy immune system, Mrs. Ferguson was not susceptible to the flu.  
+
+
+*29. emanate  
+**emerge, spring, originate - (빛, 향기 등이) 나다  
+***When an unpleasant odor emanates from a pipe, it could indicate a gas leak.  
+
+
+*30. conventionally  
+**customarily, traditionally - 관례적으로  
+***Americans convertionally have a three-day breaqk from work and school on Thanksgiving.  
+
+
+*31. expansive  
+**large, broad, wide, extensive - 넓은, 광대한  
+***The expansive lawns in Central Park are popular among visitors.  
+
+
+*32. soradically  
+**occasionally, at intervals, infrequently - 이따금씩  
+***The Sun  sporadically emits bursts of energy known as solar storms.  
+
+
+*33. comparative  
+**relative - 상대적인  
+***Next to economy-class passengers, those seated in the business-class section travel in comparative comfort.  
+
+
+*34. stamp out  
+**eliminate, eradicate, extirpate - 근절하다  
+***Medical researchers are working hard to stamp out caner.  
+
+
+*35. stagnation  
+**low growth, downturn - 침체  
+***The recent unemployment problem is due to stagnation in the economy.  
+
+
+*36. innate  
+**inborn, natural, native - 선천적인  
+***There are some innate differences between men and women.  
+
+
+*37. obsolete  
+**out of date, outdated, unused, out of use - 쓸모없게 된, 쓰이지 않는  
+***The page has now become obsolete because of advances in mobile communications.  
+
+
+*38. specify  
+**state, define, stipulate - 명시하다  
+***The menu specified that all of the restaurant's dishes were prepared with organic ingredients.  
+
+
+*39. endure  
+**tolerate, survive, suffer, persevere - 견디다  
+***The first European clonists in North America endured many hardships.  
+**last, continue, persist - 지속하다  
+***Charles Darwin's reputation as a visionary has endured through the years.  
+
+
+*40. conceivable  
+**imaginable, thinkable, possible - 생각할 수 있는  
+***Volunteers are triying every conceivable method to control the wildfire.  
+
+
+*41. sufficiently  
+**adequately, amply, satisfactorily - 충분히  
+***Teachers must sufficiently prepare their students to move up to the next grade level.  
+
+
+*42. entail  
+**involve, cause - 수반하다, 일으키다  
+***Building the Panama Canal was dangerous, so it entailed a serious risk for the workers.  
+**require, demand - 필요로 하다  
+***Farming has always entailed long hours of labor.  
+
+
+*43. depict  
+**picture, portray, represent - 묘사하다  
+***The people depicted in the painting are former senators.  
+
+
+*44. integration  
+**union, unification - 통합  
+***Race relations in America changed with the integration of white and black schools.  
+
+
+*45. stockpile  
+**store up, save, reserve - 비축하다  
+***Squirrels stockpile food under the ground during the winter.  
+
+
+*46. capture  
+**seize, catch, trap, grab - 붙잡다  
+***The spy was captured in a small town after hiding there for many years.  
+
+
+*47. landscape  
+**scenery, scene, view - 풍경  
+***Even tough it was dark, a giant moon lit the road so brightly that we could see the landscape clearly.  
+
+
+*48. elaborately  
+**with great detail - 정교하게  
+***Because the new law is very complicated, the senator explained it elaborately.  
+
+
+*49. autonomous  
+**independent, self-determining - 자율적인  
+***Many college students become autonomous for the first time in their lives.  
+
+
+*50. boom  
+**flourish, thrive, prosper, rapidly expand - 갑자기 번창하다  
+***During the Civil War, the American economy boomed.  
+
+
+*51. spremacy  
+**dominance, predominance, ascendancy - 우위  
+***In the 1920s, Henry Ford lost the battle for supremacy in the automobile industry to General Motors.  
+
+
+*52. ravage  
+**destory, demolish, devastate, ruin - 파괴하다  
+***The large hurricane that ravaged the city of New Orleans caused extensive flooding.  
+
+
+*53. authority  
+**expert, master, specialist - 권위자, 대가  
+***The keynote speaker of the seminar was an authority on cultural anthropology.  
+
+
+*54. plug  
+**fill up, stuff, pack - 메우다, 채우다  
+***The townspeople plugged the old, unused well with concrete so no one would fall in accidentally.  
+
+
+*55. discrepancy  
+**inconsistency, disparity, dissimilarity - 불일치  
+***Check your tax forms to ensure there is no discrepancy between your reported and actual income.  
+
+
+*56. elucidate  
+**clarify, explain, make clear - 명료하게 설명하다  
+***Dr. Magness further elucidated the topic of his lecture on mink faring through a series of examples.  
+
 
 # day 1
 *1. exploit  
@@ -23,7 +317,7 @@ categories: study
 ***Human rights activists have led protests against companies that exploit child labor.  
 
 
-*2. account for
+*2. account for  
 **explain, justifiy, give a reason for - 설명하다  
 ***The suspect couldn't account for his whereabouts las night.  
 **make up, compricse, constitute - 차지하다  
