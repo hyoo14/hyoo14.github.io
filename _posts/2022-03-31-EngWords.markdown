@@ -13,7 +13,8 @@ categories: study
 
 *For improving english skill  
 
-
+*day2-implausible, conspicuous, susceptible to, obsolete, conceivable, discrepancy  
+*day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
 # day 2  
@@ -182,7 +183,7 @@ categories: study
 ***The expansive lawns in Central Park are popular among visitors.  
 
 
-*32. soradically  
+*32. sporadically  
 **occasionally, at intervals, infrequently - 이따금씩  
 ***The Sun  sporadically emits bursts of energy known as solar storms.  
 
