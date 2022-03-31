@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "Eng Words"
+date:   2022-03-31 13:27:10 +0900
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+
+
+*For improving english skill  
+
+
+
+{% endhighlight %}
+
+# day 1
+*1. exploit  
+**utilize, use, make use of, take advantage of - 이용하다  
+***Human rights activists have led protests against companies that exploit child labor.  
+
+
+*2. account for
+**explain, justifiy, give a reason for - 설명하다  
+***The suspect couldn't account for his whereabouts las night.  
+**make up, compricse, constitute - 차지하다  
+***Coffee exports account for nearly 60 percent of Ethiopia's ross national product  
+**cause - 원인이 되다  
+***Unsafe working conditions at the construction site accounted for a number of serious injuries.  
+
+
+*3. particular  
+**specific, special - 특정한, 특별한  
+***Galileo tried to disprove one particular statement of Aristotle's.  
+
+
+*4. prominent  
+**noticeable, conspicuous, outstanding, remarkable - 눈에 띄는  
+***Mt. Fuji is a prominent natural landmark in Japan.  
+**important, leading, notable - 중요한  
+***William Shaespeare is one of the most prominent figures in the history of English literature.  
+
+
+*5. replenish  
+**refill, restore, renew - 보충하다  
+***The travelers replenished their supplies of water before crossing the desert  
+
+
+*6. indigenous  
+**native, aboriginal - 토착의  
+***The government ignored environmental complaints by indigenous groups.  
+
+
+*7. pinpoint  
+**locate exactly, clearly idenifiey - 정확히 찾아내다  
+***With GPS technology, it is possible to pinpoint a person's position anywhere on the planet.  
+**precise, exact accurate - 정확한  
+***After years of training, baseball pitchers develop pinpoint control of the ball  
+
+
+*8. annihilate  
+**destroy, completely remove, exterminate - 전멸시키다  
+***An asteroid impact 65.5 million years ago neraly annihilated all living things on the planet.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
