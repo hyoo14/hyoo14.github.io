@@ -19,9 +19,295 @@ categories: study
 {% endhighlight %}
 # day 3  
 *1. simultaneous  
-**concurrent, happening at the same time, synchronous  
+**concurrent, happening at the same time, synchronous - 동시의    
 ***Ther was a flash of lightning and a simultaneous roll of thunder  
 
+
+*2. vast  
+**extensive, immense, great, huge, enormous - 광대한, 거대한  
+***The continent the pilgrims had begun settling upon was unimaginably vast.
+
+
+*3. reluctant  
+**unwilling, disinclined, loath - 꺼리는  
+***The archaeologists were reluctant to disturb the fragile pottery at the ancient site.  
+
+
+*4. conjecture  
+**speculation, guess, supposition - 추측  
+***The existence of intelligent life elsewhere in the universe is dismissed as conjecture by most scientists.  
+
+
+*5. embed  
+**fix, insert, implant, root  
+***The story of the American Dream has been embedded deeply in American culture.  
+
+
+*6. vow  
+**pledge, promise, oath - 서약, 맹세  
+***After the couple recited their vows, they were declared married.  
+
+
+*7. counter  
+**oppose, act against, refute - 반박하다  
+***The two lawyers used different interpretations of the same data to counter each other's conclusions.  
+
+
+*8. apparent  
+**clear, evident, obvious - 분명한  
+***It was apparent to all that Henry had not rehearsed his speech.  
+**seeming, exterior, superficial - 외관상의  
+***The apparent cause of the car accident was faulty brakes, but investigators were considering other possibilities.  
+
+
+*9. bombard  
+**strike, assail, attack - 폭격하다, 공격하다  
+***Warplanes bombarded the city until it was demolished.  
+
+
+*10. reveal  
+**make known, show, unveil, nucover, expose - 밝히다, 드러내다  
+***Merill revealed that the compnay will concentrate on sales of its digital video cameras.  
+
+
+*11. sturdy  
+**well-built, strong, robust, stalwart - 튼튼한  
+***The school purchased sturdy desks and chairs that are expected to last several years.  
+
+
+*12. traditionally  
+**typically - 통상적으로, 관습적으로  
+***In the early 20th century, girls and boys were traditionally taught separately.  
+
+
+*13. correspondingly  
+**similarly, likewise - 그에 상응하여  
+***Oil prices went down, so the cost of airline tickets has correspondingly decreased.  
+
+
+*14. trigger  
+**cause, generate, initiate, start, stimulate, activate - 일으키다  
+***News of the court's decision triggered riots and fires in L.A.  
+
+
+*15. vigorous  
+**strong and healthy, strong, energetic - 강건한, 활기찬  
+***Despite the man's advanced age, he remained physically vigorous.  
+**forceful - 강력한  
+***The police officer was known for his vigorous enforcement of drinking and driving laws.  
+
+
+*16. spontaneous  
+**voluntary, unprompted - 자발적인  
+***Sarah's successful jump at the cheerleading contest brought a spontaneous cheer from the crowd.  
+**automatic, unplanned, involuntary - 무의식적인, 저절로 움직이는  
+***When Cindy heared the good news, a spontaneous smile appeared on her face.  
+
+
+*17. miniature  
+**small, tiny, diminutive - 소형의  
+***One museum in San Diego contains the world's largest collection of miniature trains.  
+
+
+*18. commission  
+**order, hire - 의뢰하다  
+***In the past, it was common for countries to commission artists to create portraits of the king and queen.  
+
+
+*19. remarkable  
+**extraordinary, incredible, notable, significant - 놀라운, 주목할 만한  
+***Charles Dickens had remarkable mental and physical energy.  
+
+
+*20. effort  
+**attempt, endeavor, exertion - 노력  
+***The effort to increase wages brought about hundreads of strikes in the 1850s.  
+
+
+*21. manifestation  
+**indication, sign, symptom, evidence - 징후  
+***Eating disorders can be a manifestation of low self-esteem in adolescent girls.  
+
+
+*22. prior  
+**previous, former, earlier - 이전의  
+***Unlike the prior administration, the current one supports universal health care.  
+
+
+*23. cast about  
+**seek, search, hunt - 찾아다니다  
+***Unsure how to increase the company's profits, George cast about for solutions from his colleagues.  
+
+
+*24. rigorous  
+**strict, severe, demanding, precise - 엄격한  
+***Athletes should follow a rigorous training schedule to be competitive.  
+**harsh - 혹독한  
+***The rigorous climate of the Arctic makes it inhospitable to humans.  
+
+
+*25. compulsory  
+**obligatory, forced, required, necessary - 의무적인, 강제적인  
+***In Britain, education is compulsory between the ages of 5 and 16.  
+
+
+*26. subsidiary  
+**less important, auxiliary, subordinate - 부수적인  
+***The CEO said that the rest of the details for the merger were subsidiary and could be discussed at a later time.  
+
+
+*27. status  
+**standing, prestige, importance - 지위, 위신  
+***Donald's father was the town doctor, so he was a man of high status in the community.
+
+
+*28. emphasize  
+**stress, highlight, underline - 강조하다  
+***The president emphasized the need for the entire country to be on high alert against terrorism.  
+
+
+*29. largely  
+**generally, mostly, mainly - 대부분  
+***Korea's citizens are largely of Korean descent, although there is a sizeable foreign population as well.
+
+
+*30. experimental  
+**trial, tentative - 시험적인  
+***Vaccines go through an experimental phase to make sure that they are safe before being released.  
+
+
+*31. drain  
+**withdraw liquid gradually, remember water - 물을 빼내다  
+***The sink should be drained after each use.  
+
+
+*32. denote  
+**indicate, signify, represent - 나타내다, 표시하다  
+***A raised head and flattened neck denote that a cobra is about to strike.  
+
+
+*33. repudiate  
+**reject, disclaim - 거부하다  
+***Martin Luther King Jr. Repudiated violence as a means to solve problems.  
+
+
+*34. contradictory  
+**inconsistent, paradoxical, conflicting - 모순되는  
+***The soldiers were puzzled by the general's contradictory behavior.  
+
+
+*35. propagate  
+**multiply, reproduce - 번식하다, 증식시키다  
+***Many sigle-cell organisms propagate by dividing into two identical copies.  
+
+
+*36. ensure  
+**guarantee, assure, warrant - 보장하다  
+***Stricter security regulations have been put in place at airports to ensure the safety of travelers.  
+
+
+*37. pore  
+**hole - 작은 구멍  
+***Plants have pores on their leaves so that they can breathe.  
+**stare, gaze - 자세히 보다, 응시하다  
+***The copy editor had to pore over the report in order to find the tiny mistake.  
+
+
+*38. alternate  
+**take turns, rotate, interchange - 번갈아 일어나다  
+***Good luck and misfortune alternate with each otehr throughout our lives.  
+
+
+*39. devastating  
+**destructive, ruinous - 파괴적인  
+***During World War II, Stalingrad suffered a devastating defeat, with some 1.5 million people losing their lives.
+
+
+*40. mingle with  
+**associate with, mix with, consort with - ~와 어울리다  
+***Company morale improves when managers mingle with staff at social events.  
+
+
+*41. continued  
+**ongoing, constant, incessant, ceaseless - 계속적인  
+***The continued success of the company depends on its ability to adapt to the changing economy.  
+
+
+*42. attempt  
+**try, seek, endeavor - 시도하다  
+***In Thomas More's Utopia, the characters attempt to create an ideal world.  
+
+
+*43. subterfuge  
+**trick, deception - 속임수  
+***The magician's act seemed real, but it was just a subterfuge.  
+
+
+*44. convert  
+**change, transform - 바꾸다  
+***The workers at the factory perform dangerous tasks to convert raw iron ore into finished steel.  
+
+
+*45. contention  
+**debate, argument, disagreement - 논쟁  
+***Contentions among evolutionists involve how the human species evolved.  
+
+
+*46. migrate  
+**move around, travel - 이주하다  
+***The five tribes agreed to migrate beyond the Mississippi in order to establish a new home.  
+
+
+*47. succession  
+**sequence, series - 연속  
+***Melody is the succession of sounds.  
+
+
+*48. tentativeness  
+**hesitation, indecision - 망설임  
+***Tentativeness is often shown by young children in unfamiliar situations.  
+
+
+*49. fragmentary  
+**incomplete, fractional, partial - 단편적인  
+***The trauma victim had only fragmentary memories of the accident.  
+
+
+*50. legendary  
+**famous - 유명한, 전설적인  
+***ㅇLed Zeppelin's guitarist Jimmy Page became legendary for his unique playing style.  
+**mythical - 전설상의  
+***Dragons are legendary creatures that are featured prominently in the folklore of many cultures.  
+
+
+*51. setback  
+**defeat, reverse - 패배  
+***Despite early setbacks, George Washington led the Continental Army to victory against the British.  
+
+
+*52. fine-tune  
+**adjust slightly - 미세하게 조정하다  
+***Software companies use feedback from customers to fine-tune programs for better performance.  
+
+
+*53. enthusiastic  
+**eager, ardent, zealous - 열광적인  
+***The citizenry was enthusiastic about the decision to cut taxes by 10 percent.  
+
+
+*54. loose  
+**not strict, relaxed, slack - 느슨한  
+***The office dress code was loose and allowed employees to wear jeans and T-shirts.  
+
+
+*55. portrait  
+**picture - 초상화  
+***Art students study how to draw portraits that capture the subject's personality.  
+
+
+*56. terminology  
+**vocabulary, jargon, language - 전문용어  
+***Science articles that are meant for a general audience should avid complex terminology.  
 
 
 
