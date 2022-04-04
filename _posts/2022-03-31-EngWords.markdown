@@ -17,6 +17,15 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day 3  
+*1. simultaneous  
+**concurrent, happening at the same time, synchronous  
+***Ther was a flash of lightning and a simultaneous roll of thunder  
+
+
+
+
+
 # day 2  
 *1. virtually  
 **in effect, essentially, almost, nearly, almost totally - 사실상, 거의  
