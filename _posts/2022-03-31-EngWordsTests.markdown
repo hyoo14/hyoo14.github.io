@@ -42,6 +42,43 @@ categories: study
 *19. remarkable  
 *20. effort  
 *21. manifestation  
+*22. prior  
+*23. cast about  
+*24. rigorous  
+*25. compulsory  
+*26. subsidiary  
+*27. status  
+*28. emphasize  
+*29. largely  
+*30. experimental  
+*31. drain  
+*32. denote  
+*33. repudiate  
+*34. contradictory  
+*35. propagate  
+*36. ensure  
+*37. pore  
+*38. alternate  
+*39. devastating  
+*40. mingle with  
+*41. continued  
+*42. attempt  
+*43. subterfuge  
+*44. convert  
+*45. contention  
+*46. migrate  
+*47. succession  
+*48. tentativeness  
+*49. fragmentary  
+*50. legendary  
+*51. setback  
+*52. fine-tune  
+*53. enthusiastic  
+*54. loose  
+*55. portrait  
+*56. terminology  
+
+
 
 *1. concurrent, happening at the same time, synchronous
 *2. extensive, immense, great, huge, enormous  
@@ -67,168 +104,56 @@ categories: study
 *19. extraordinary, incredible, notable, significant  
 *20. attempt, endeavor, exertion  
 *21. indication, sign, symptom, evidence  
-
-
-
-
-
-*22. prior  
 *22. previous, former, earlier  
-*23. cast about  
-*23. seek, search, hunt - 찾아다니다  
-*24. rigorous  
-*24. *strict, severe, demanding, precise - 엄격한  
-*24. *harsh - 혹독한  
+*23. seek, search, hunt   
+*24. strict, severe, demanding, precise  
+*24. harsh  
+*25. obligatory, forced, required, necessary  
+*26. less important, auxiliary, subordinate    
+*27. standing, prestige, importance  
+*28. stress, highlight, underline  
+*29. generally, mostly, mainly  
+*30. trial, tentative  
+*31. withdraw liquid gradually, remove water  
+*32. indicate, signify, represent  
+*33. reject, disclaim  
+*34. inconsistent, paradoxical, conflicting   
+*35. multiply, reproduce  
+*36. guarantee, assure, warrant  
+*37. hole  
+*37. stare, gaze   
+*38. take turns, rotate, interchange  
+*39. destructive, ruinous  
+*40. associate with, mix with, consort with  
+*41. ongoing, constant, incessant, ceaseless  
+*42. try, seek, endeavor  
+*43. trick, deception    
+*44. change, transform  
+*45. debate, argument, disagreement  
+*46. move around, travel   
+*47. sequence, series   
+*48. hesitation, indecision   
+*49. incomplete, fractional, partial    
+*50. famous  
+*50. mythical   
+*51. defeat, reverse    
+*52. adjust slightly   
+*53. eager, ardent, zealous    
+*54. not strict, relaxed, slack   
+*55. picture  
+*56. vocabulary, jargon, language  
 
 
-*25. compulsory  
-*25. *obligatory, forced, required, necessary - 의무적인, 강제적인  
-
-*26. subsidiary  
-*26. *less important, auxiliary, subordinate - 부수적인  
-
-*27. status  
-*27. *standing, prestige, importance - 지위, 위신  
-
-*28. emphasize  
-*28. *stress, highlight, underline - 강조하다  
-
-*29. largely  
-*29. *generally, mostly, mainly - 대부분  
-
-*30. experimental  
-*30. *trial, tentative - 시험적인  
-
-*31. drain  
-*31. withdraw liquid gradually, remove water - 물을 빼내다  
-
-*32. denote  
-**indicate, signify, represent - 나타내다, 표시하다  
-***A raised head and flattened neck denote that a cobra is about to strike.  
 
 
-*33. repudiate  
-**reject, disclaim - 거부하다  
-***Martin Luther King Jr. Repudiated violence as a means to solve problems.  
 
 
-*34. contradictory  
-**inconsistent, paradoxical, conflicting - 모순되는  
-***The soldiers were puzzled by the general's contradictory behavior.  
 
 
-*35. propagate  
-**multiply, reproduce - 번식하다, 증식시키다  
-***Many sigle-cell organisms propagate by dividing into two identical copies.  
 
 
-*36. ensure  
-**guarantee, assure, warrant - 보장하다  
-***Stricter security regulations have been put in place at airports to ensure the safety of travelers.  
 
 
-*37. pore  
-**hole - 작은 구멍  
-***Plants have pores on their leaves so that they can breathe.  
-**stare, gaze - 자세히 보다, 응시하다  
-***The copy editor had to pore over the report in order to find the tiny mistake.  
-
-
-*38. alternate  
-**take turns, rotate, interchange - 번갈아 일어나다  
-***Good luck and misfortune alternate with each otehr throughout our lives.  
-
-
-*39. devastating  
-**destructive, ruinous - 파괴적인  
-***During World War II, Stalingrad suffered a devastating defeat, with some 1.5 million people losing their lives.
-
-
-*40. mingle with  
-**associate with, mix with, consort with - ~와 어울리다  
-***Company morale improves when managers mingle with staff at social events.  
-
-
-*41. continued  
-**ongoing, constant, incessant, ceaseless - 계속적인  
-***The continued success of the company depends on its ability to adapt to the changing economy.  
-
-
-*42. attempt  
-**try, seek, endeavor - 시도하다  
-***In Thomas More's Utopia, the characters attempt to create an ideal world.  
-
-
-*43. subterfuge  
-**trick, deception - 속임수  
-***The magician's act seemed real, but it was just a subterfuge.  
-
-
-*44. convert  
-**change, transform - 바꾸다  
-***The workers at the factory perform dangerous tasks to convert raw iron ore into finished steel.  
-
-
-*45. contention  
-**debate, argument, disagreement - 논쟁  
-***Contentions among evolutionists involve how the human species evolved.  
-
-
-*46. migrate  
-**move around, travel - 이주하다  
-***The five tribes agreed to migrate beyond the Mississippi in order to establish a new home.  
-
-
-*47. succession  
-**sequence, series - 연속  
-***Melody is the succession of sounds.  
-
-
-*48. tentativeness  
-**hesitation, indecision - 망설임  
-***Tentativeness is often shown by young children in unfamiliar situations.  
-
-
-*49. fragmentary  
-**incomplete, fractional, partial - 단편적인  
-***The trauma victim had only fragmentary memories of the accident.  
-
-
-*50. legendary  
-**famous - 유명한, 전설적인  
-***ㅇLed Zeppelin's guitarist Jimmy Page became legendary for his unique playing style.  
-**mythical - 전설상의  
-***Dragons are legendary creatures that are featured prominently in the folklore of many cultures.  
-
-
-*51. setback  
-**defeat, reverse - 패배  
-***Despite early setbacks, George Washington led the Continental Army to victory against the British.  
-
-
-*52. fine-tune  
-**adjust slightly - 미세하게 조정하다  
-***Software companies use feedback from customers to fine-tune programs for better performance.  
-
-
-*53. enthusiastic  
-**eager, ardent, zealous - 열광적인  
-***The citizenry was enthusiastic about the decision to cut taxes by 10 percent.  
-
-
-*54. loose  
-**not strict, relaxed, slack - 느슨한  
-***The office dress code was loose and allowed employees to wear jeans and T-shirts.  
-
-
-*55. portrait  
-**picture - 초상화  
-***Art students study how to draw portraits that capture the subject's personality.  
-
-
-*56. terminology  
-**vocabulary, jargon, language - 전문용어  
-***Science articles that are meant for a general audience should avid complex terminology.  
 
 
 
