@@ -18,6 +18,128 @@ categories: study
 
 {% endhighlight %}
 
+#day4  
+*1. readily  
+*2. advocate  
+*3. utterly  
+*4. abound  
+*5. formidable  
+*6. enormous  
+*7. disband  
+*8. alleged  
+*9. renowned  
+*10. versatile  
+*11. prohibitive  
+*12. option  
+*13. inherent  
+*14.justify  
+*15. provoke  
+*16. impermeable  
+*17. momentous  
+*18. forestall  
+*19. therefore  
+*20. persuade  
+*21. proximity  
+*22. dependable  
+*23. ensuring  
+*24. apreciably  
+*25. obligate  
+*26. wholesale  
+*27. dweller  
+*28. tacit  
+*29. resolve  
+*30. merit  
+*31. notion  
+*32. synthesize  
+*33. spectrum  
+*34. stream  
+*35. rupture  
+*36. presuppose  
+*37. well-to-do  
+*38. appeal  
+*39. accurately  
+*40. fastidious  
+*41. contraction  
+*42. stimulus  
+*43. track  
+*44. tame  
+*45. install  
+*46. chronicle  
+*47. novel  
+*48. isolated  
+*49. exposed  
+*50. intermingled  
+*51. succulent  
+*52. homogeneous  
+*53. era  
+*54. threat  
+*55. foul  
+*56. prey  
+*57. practically  
+
+
+*1. easily, effortlessly, quickly  
+*1. willingly, without reluctance  
+*2. promote, speak in favor of, argue in support of  
+*2. proponent, supporter, upholder  
+*3. completely, totally  
+*4. overflow, teem, be plentiful, be numerous   
+*5. impressive  
+*5. difficult to handle  
+*6. huge, very large, great, immense, vast, tremendous  
+*7. dismiss, disperse, break up   
+*8. supposed, assumed  
+*9. famous, celebrated, prominent, eminent  
+*10. adaptable, flexible    
+*11. unaffordable, extreme, exorbitant  
+*12. choice, selection  
+*13. innate, built-in, essential, congenital  
+*14. rightfully, justifiably, lawfully  
+*15. incite, bring about, give rise to  
+*16. impenetrable, impervious  
+*17. significant, major, meaningful, substantial  
+*18. prevent, hinder, avert  
+*19. consequently, as a result, thus, hence  
+*20. convince, induce  
+*21. closeness, nearness  
+*22. reliable, trustworthy  
+*23. subsequent, following, succeeding  
+*24. noticeably, significantly, considerably  
+*25. force, coerce, compel, constrain  
+*26. extensive, mass  
+*26. completely  
+*27. inhabitant, resident, occupant  
+*28. implicit, implied, unspoken  
+*29. settle, find a solution for, solve  
+*30. value, worth, virtue  
+*31. concept, general idea, opinion, view  
+*32. integrate, combine, coalesce  
+*33. range, scope, extent  
+*34. flow, current  
+*35. burst, break apart, split, tear  
+*35. breach, discord  
+*36. assume, suppose, presume  
+*37. wealthy, affluent, rich  
+*38. plead, request, ask, beg  
+*39. correctly, precisely, exactly  
+*40. demanding, choosy  
+*41. reduction, diminution  
+*42. impetus, motivation, incentive, incitement  
+*43. follow, chase, monitor  
+*44. domesticate, train  
+*45. put in place, set up, position  
+*46. record, history  
+*47. new, innovative, unusual  
+*48. remote, solitary, secluded  
+*49. visible, revealed, uncovered  
+*50. mixed, combined, blended  
+*51. juicy, pulpy  
+*52. unvarying, akin  
+*53. period, epoch, age  
+*54. intention to harm, menace  
+*55. pollute, contaminate  
+*56. victim  
+*57. nearly  
 
 
 # day 3  
