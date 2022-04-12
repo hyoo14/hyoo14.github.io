@@ -17,6 +17,138 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day5(220412)
+*1. compelling  
+*2. ultimately  
+*3. bulk  
+*4. imcompatible  
+*5. substantially  
+*6. seek  
+*7. unanticipated  
+*8. merge  
+*8-1. emerge  
+*9. encounter  
+*10. residue  
+*11. circumstance  
+*12. astonishing  
+*13. intermittently  
+*14. application  
+*15. predominant  
+*16. remote  
+*17. inordinate  
+*18. lauch  
+*19. trend  
+*20. embodiment  
+*21. colonize  
+*22. affect  
+*23. speculation  
+*24. compound  
+*25. fascinating  
+*26. constellation  
+*27. unconsolidated  
+*28. outstanding  
+*29. outcome  
+*30. document  
+*31. intrinsically  
+*32. disputatious  
+*33. diverse  
+*34. eerie  
+*35. tenuous  
+*36. eradicate  
+*37. prone to  
+*38. lodge  
+*39. gather mementum  
+*40. viable  
+*41. impediment  
+*42. arid  
+*42-1. acrid  
+*43. credible  
+*44. vacate  
+*45. cushion  
+*46. peculiar  
+*47. attributable to  
+*48. enact  
+*49. stratified  
+*50. with regard to  
+*51. turbulent  
+*52. appraisal  
+*53. erroneous  
+*54. proponent  
+*55. absolute  
+*56. gratify  
+
+
+*1. convincing, persuasive, cogent  
+*2. eventually, finally, in the end, lsatly  
+*3. mass, large quantity, great quantity  
+*3. majority, main part  
+*3. huge, enormous  
+*4. in conflict, discrepant, contradictory  
+*5. significantly, considerably  
+*5. largely, mainly  
+*6. look for, search for, pursue  
+*6. attempt, try, essay  
+*7. not expected, unforeseen  
+*8. combine, blend, fuse  
+*8-1. appear, loom  
+*9. meet, experience, confront, face  
+*10. remains, remnant, remainder  
+*11. condition, situation  
+*12. incredible, amazing, startling, astounding  
+*13. occasionally, periodically, from time to time  
+*14. use, utilization, employment  
+*15. principal, main, primary, leading  
+*16. distant, secluded, removed  
+*16. faint, slim  
+*17. excessive, exorbitant, undue  
+*18. start, begin, initiate, commence  
+*19. tendency, inclination, direction  
+*20. concrete example, epitome  
+*21. inhabit, populate  
+*21. conquer  
+*22. influence, impact, act on  
+*22. pretend, assume  
+*23. supposition, conjecture, surmise  
+*24. add to, intesify, worsen  
+*24. mixture, blend  
+*25. extremly attractive, captivating, enthralling  
+*26. collection, combination, group  
+*27. loose, incoherent  
+*28. excellent, remarkable, prominent  
+*28. unpaid  
+*29. result, consequence, conclusion  
+*30. record, report, paper  
+*30. verify, support  
+*31. fundamentally, essentially  
+*32. contetious, argumetative, quarrelsome  
+*33. varied, various, manifold, dissimilar  
+*34. odd, strange  
+*35. weak, insubstantial  
+*36. remove, root up, extirpate, eliminate  
+*37. susceptible to, likely to get  
+*38. embed, implant  
+*39. make progress, gain impetus  
+*40. able to survive  
+*41. obstacle, obstruction, barrier  
+*42. dry, barren, sterile, waterless  
+*42-1. pungent  
+*43. believable, reliable, plausible  
+*44. abandon, evacuate, void  
+*45. protect, buffer  
+*46. unique, distinc, particular  
+*46. strange, unusual, odd  
+*47. caused by, ascribable to  
+*48. make into law, establish, pass, adopt  
+*48. stage, perform  
+*49. layered  
+*50. in terms of, with respect to, concerning  
+*51. violent, agitated, tumultuous  
+*52. evaluation, assessment, estimation  
+*53. wrong, incorrect, mistaken, false  
+*54. supporter, advocate, adherent, parisan  
+*55. unqualified, complete, utter  
+*56. satisfy, please  
+
 
 #day4  
 *1. readily  
