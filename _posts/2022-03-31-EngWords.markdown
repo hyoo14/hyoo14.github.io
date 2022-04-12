@@ -40,10 +40,12 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *3. bulk  
 *3. mass, large quantity, great quantity  
 *3. majority, main part  
+*3. huge, enormous  
 **Buying its supplies in bulk, the department store chain was able to sell for less than its competitors.  
 **Although the bulk of the movies was boring, parts of it were funny.  
 **큰규모, 대량  
 **대부분  
+**부피가 큰  
 
 
 *4. imcompatible  
@@ -82,9 +84,320 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 **합치다, 융합하다  
 
 
+*8-1. emerge  
+*8-1. appear, loom  
+**나타나다  
+
+
 *9. encounter  
 *9. meet, experience, confront, face  
 **Bill encountered many obtacles that delayed the publication of his book.  
+**마주치다, 부닥치다  
+
+
+*10. residue  
+*10. remains, remnant, remainder  
+**Chalky residue on the sole of Vincent's shoe proved that he had recently visited the murder scene.  
+**잔여물  
+
+
+*11. circumstance  
+*11. condition, situation  
+**There are no circumstances under which rare books are allowed out of the library.  
+**상황  
+
+
+*12. astonishing  
+*12. incredible, amazing, startling, astounding  
+**Estonia's geography is astonishing because of its unusual and diverse mix of landscapes.  
+**놀라운, 눈부신  
+
+
+*13. intermittently  
+*13. occasionally, periodically, from time to time  
+**In eastern North America, it rains intermittently throughtout the year.  
+**간헐적으로  
+
+
+*14. application  
+*14. use, utilization, employment  
+**A microcomputer has a wide range of applications for mobile businesses.  
+**응용, 이용  
+
+
+*15. predominant  
+*15. principal, main, primary, leading  
+**Blue is the predominant color in Van Gogh's Starry Night.  
+**주된, 주요한  
+
+
+*16. remote  
+*16. distant, secluded, removed  
+*16. faint, slim  
+**While Watson was smoking, George would sit in a remote corner  
+**멀리 떨어진  
+**희박한  
+
+*17. inordinate  
+*17. excessive, exorbitant, undue  
+**The use of inordinate amounts of pesticide and synthetic fertilizer on crops is against the law.  
+**과도한   
+
+
+*18. lauch  
+*18. start, begin, initiate, commence  
+**The government is planning to launch a major forestry campaign.  
+**시작하다  
+
+
+*19. trend  
+*19. tendency, inclination, direction  
+**The current trend is towards more part-time employment.  
+**경향, 추세  
+
+
+*20. embodiment  
+*20. concrete example, epitome  
+**The dimigod Herculues from Greek mythology is the embodiment of masculinity.  
+**전형, 구체화된 것  
+
+
+*21. colonize  
+*21. inhabit, populate  
+*21. conquer  
+**Fire ants colonize grasslands whereas carpenter ants tend to live in wooded areas.  
+**The Spanish were the first Europeans to colonize America.  
+**서식하다  
+**식민지화하다  
+
+
+*22. affect  
+*22. influence, impact, act on  
+*22. pretend, assume  
+**The scientists are currently studying how climate affects marine animal populations.  
+**영향을 미치다  
+**~인 척하다  
+
+
+*23. speculation  
+*23. supposition, conjecture, surmise  
+**There was much speculation in the office as to who the new employee would be.  
+**추측  
+
+
+*24. compound  
+*24. add to, intesify, worsen  
+*24. mixture, blend  
+**The doctor said that scratching an insert bite would only compound the itchiness.  
+**더하다, 악화시키다
+**혼합물    
+
+
+*25. fascinating  
+*25. extremly attractive, captivating, enthralling  
+**Jackson Pollock's paintings are characterized by fascinating combinations of colors and shapes.  
+**매혹적인  
+
+
+*26. constellation  
+*26. collection, combination, group  
+**Jerusalem is a city that is known for its constellation of cultures.  
+**모임, 무리  
+
+
+*27. unconsolidated  
+*27. loose, incoherent  
+**Erosion rates are highest in places with unconsolidated soil.  
+**굳지 않은  
+
+
+*28. outstanding  
+*28. excellent, remarkable, prominent  
+*28. unpaid  
+**The writer's speech was so outstanding that years later people still quote from it.
+**Susan has quite a few outstanding debts this month.  
+**뛰어난  
+**미지불의, 처리되지 않은  
+
+
+*29. outcome  
+*29. result, consequence, conclusion  
+**The researchers were surprised by the outcome of the psychology experiment.  
+**결과  
+
+
+*30. document  
+*30. record, report, paper  
+*30. verify, support  
+**The archaeologists found ancient documents in a cave in the desert.  
+**문서, 기록  
+**입증하다  
+
+
+*31. intrinsically  
+*31. fundamentally, essentially  
+**Unlike money, gold and diamonds are considered to be intrinsically valuable.  
+**본질적으로  
+
+
+*32. disputatious  
+*32. contetious, argumetative, quarrelsome  
+**The disagreement got heated quickly because both people involved were highly disputatious.  
+**논쟁을 좋아하는  
+
+
+*33. diverse  
+*33. varied, various, manifold, dissimilar  
+**Russell's genius lies in getting people of diverse backgrounds to work together.  
+**다양한, 다른  
+
+
+*34. eerie  
+*34. odd, strange  
+**The book 1984 was an eerie prediction of the future.  
+**기묘한  
+
+
+*35. tenuous  
+*35. weak, insubstantial  
+**Germany provided a tenuous jstification for its invacion of Poland in 1939.  
+**빈약한  
+
+
+*36. eradicate  
+*36. remove, root up, extirpate, eliminate  
+**The US spend $50 billion per year trying to eradicate drug use.  
+**근절하다  
+
+
+*37. prone to  
+*37. susceptible to, likely to get  
+**Young children are prone to illness because their immune systems are not well developed.  
+**~하기 쉬운  
+
+
+*38. lodge  
+*38. embed, implant  
+**The meteor flew in from outer space and lodged in the rock.  
+**박히다  
+
+
+*39. gather mementum  
+*39. make progress, gain impetus  
+**Business at the new book shop was slow at first, but soon it started to gather mementum.  
+**탄력이 붙다  
+
+
+*40. viable  
+*40. able to survive  
+**A fetus is considered viable after it has endured 20 weeks inside the womb.  
+**생존 가능한  
+
+
+*41. impediment  
+*41. obstacle, obstruction, barrier  
+**If Ben puts his mind to something, no impediment can stop him from reaching his goals.  
+**장애물  
+
+
+*42. arid  
+*42. dry, barren, sterile, waterless  
+**To perform a construction project in an arid desert, a great amount of water is needed.  
+**메마른  
+
+
+*42-1. acrid  
+*42-1. pungent  
+**매운, 콕 쏘는 듯한  
+
+
+*43. credible  
+*43. believable, reliable, plausible  
+**Internet websites are not always credible sources of information.  
+**믿을 수 있는  
+
+
+*44. vacate  
+*44. abandon, evacuate, void  
+**The typhoon forced residents to vacate the area near the coast.  
+**떠나다, 비우다  
+
+
+*45. cushion  
+*45. protect, buffer  
+**Exercise shoes have a layer of foam that cushions the foot from the impact of running.  
+**보호하다, 충격을 완화하다  
+
+
+*46. peculiar  
+*46. unique, distinc, particular  
+*46. strange, unusual, odd  
+**The idiomatic expression is peculiar to the British dialect of the English language.  
+**The zoologists were puzzled by the animal's peculiar behavior.  
+
+
+*47. attributable to  
+*47. caused by, ascribable to  
+**The World Health Organization stated that 12 percent of global deaths is attributable to smoking.  
+**~에 기인하는  
+
+
+*48. enact  
+*48. make into law, establish, pass, adopt  
+*48. stage, perform  
+**The civil rights movement pressured Congress to enact a new law in 1964.  
+**제정하다  
+**상연하다  
+
+
+*49. stratified  
+*49. layered  
+**Stratified rock helps geologists determine the age of geological deposits.  
+**층으로 이루어진  
+
+
+*50. with regard to  
+*50. in terms of, with respect to, concerning  
+**Stricter regulations with regard to genetically modified foods are being considered.  
+**~에 관하여  
+
+
+*51. turbulent  
+*51. violent, agitated, tumultuous  
+**The increase in civil wars around the world is a sign of our turbulent times.  
+**격동하는  
+
+
+*52. appraisal  
+*52. evaluation, assessment, estimation  
+**Employees are given formal appraisals every six months.  
+**평가  
+
+
+*53. erroneous  
+*53. wrong, incorrect, mistaken, false  
+**All of team agreed that it was an erroneous conclusion.  
+**잘못된  
+
+
+*54. proponent  
+*54. supporter, advocate, adherent, parisan  
+**Huxley's grandfather was a famous biologist and proponent of Darwin's theories.  
+**지지자   
+
+
+*55. absolute  
+*55. unqualified, complete, utter  
+**Mr. Jones developed a worldwide reputation as an absolute expert in his field of study.  
+**an unqualified success(절대적인 성공)  
+**절대적인, 완전한  
+
+*56. gratify  
+*56. satisfy, please  
+**With its new and unique sound, Beethoven's symphoney gratified audiences in Vienna.  
+**만족시키다, 기쁘게 하다  
+
+
 
 
 # day 4    
