@@ -19,6 +19,12 @@ Monday, April 11, 2022
 o  
 
 
+Monday, April 12, 2022  
+*eng speak  
+*eng write  
+o  
+
+
 {% highlight ruby %}
 
 April week1:  
