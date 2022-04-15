@@ -52,8 +52,8 @@ that purport to instruct viewers about reality can actually give rise to misconc
 In this regard, I argue that films that teach us about real life are not the best ones.  
 
 
-  
-
+<br/>
+<br/>
 
   
 일부 사람들은 우리에게 실제 세상에 대해 가르쳐주는 영화를 보는 것이 가장 좋다고 생각한다.
@@ -82,7 +82,10 @@ In this regard, I argue that films that teach us about real life are not the bes
 요약하자면, 실제 삶에 기반을 두지 않는 영화는 우리의 스트레스 수준을 낮출 수 있고, 현실에 대해 관객들을 가르치려는 취지의 영화들조차도 실제로는 오해를 일으킬 수 있다.
 이러한 점에서, 나는 우리에게 삶에 대해 가르쳐주는 영화가 최고의 영화는 아니라고 주장한다.
 
-
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 # 2  
@@ -100,11 +103,9 @@ This counters the reading passage's claim that Hohokam society collapsed from an
 
 Finally, the lecturer asserts that there isn't any clear proof that the Hohokam people revolted against their rulers. Experts haven't discovered any special tombstones or dwellings that would suggest there was a ruling class in Hohokam society. Moreover, this theory is based on oral history, which is not a reliable source of information. This refutes the reading passage's claim that the Hohokam civilization disintegrated due to internal conflict.  
 
-
-
-
-
-
+<br/>
+<br/>
+<br/>
 
 강의자는 주장한다 호호캄 문명의 붕괴에 대한 이론들은 굳건한 증거들이 부족하다고  
 이것은 반박한다 읽기 자료의 주장을 호호캄 문화의 비통합이 설명될 수 있다는  
