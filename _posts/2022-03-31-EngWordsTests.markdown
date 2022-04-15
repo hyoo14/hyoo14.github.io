@@ -17,6 +17,144 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day6(220415)
+*1. disperse  
+*2. adjacent  
+*3. sequence  
+*4. detect  
+*4-1. defect  
+*5. flexible  
+*6. surpass  
+*7. invariable  
+*8. dramatic  
+*9. master  
+*10. assimilate  
+*11. overwhelming  
+*12. curious  
+*13. alteration  
+*13-1. altercation  
+*14. consequence  
+*15. deceive  
+*16. ample  
+*17. resilient  
+*18. detach  
+*19. account  
+*20. equilibrium  
+*21. surmise  
+*22. unsuitable  
+*23. imaginative  
+*24. imposing  
+*25. vitality  
+*26. vehicle  
+*27. hitherto  
+*28. plague  
+*29. domain  
+*30. indifferent  
+*31. champion  
+*32. deteriorate  
+*33. assault  
+*34. appropriate  
+*35. adept  
+*35-1. adapt  
+*36. indeed  
+*37. pursuit  
+*38. incite  
+*39. guarantee  
+*40. prosperity  
+*41. primarily  
+*42. erupt  
+*43. trace  
+*44. prestigious  
+*45. shape  
+*46. inflict  
+*47. portion  
+*48. coincidence  
+*49. propel  
+*50. thoroughly  
+*51. contemplate  
+*52. unethical  
+*53. replica  
+*54. hasty  
+*55. representative  
+*56. range  
+
+
+
+
+*1. scatter, dissipate, spread, sisseminate  
+*2. nearby, neighboring, adjoining  
+*3. progression, series, string, succession  
+*3. order  
+*4. discover, find, identify, recognize, sense  
+*4-1. shortcoming, blemish  
+*5. pliable, bendable, adaptable, adjustable  
+*6. exceed, outrun, be higher than, excel  
+*7. constant, consistent, unchanging  
+*8. striking, signmificant, impressive  
+*9. learn thoroughly, learn, acquire  
+*9. control, manage  
+*10. absorb, take in, digest  
+*10. accommodate, adjust  
+*11. powerful, enormous, compelling, tremendous  
+*12. inquisitive, questioning, inquiring  
+*12. strange, mysterious, extraordinary  
+*13. change, modification  
+*13-1. argument, contention  
+*14. result, effect, ramification, outcome  
+*14. importance, significance  
+*15. mislead, delude, cheat  
+*16. sizable, large, spacious, vast  
+*16. plentiful, abundant, more than enough  
+*17. quick to recover, easy to recover  
+*18. separate, disconnect, disengage  
+*18. unconcern, indifference  
+*19. description, report, narrative  
+*20. balance, symmetry  
+*21. infer, guess, speculate, suspect  
+*22. inappropriate, unfit, improper  
+*23. creative, inventive, original  
+*24. impressive, striking  
+*25. energy, liveliness, vigor  
+*26. means, medium, instrument  
+*27. previously, so far, until now  
+*28. cause a problem for, bother, annoy  
+*28. epidemic, infection  
+*29. area, field  
+*30. uninterested, unconcerned, careless  
+*31. support, promote, advocate, endorse  
+*32. get worse, degenerate  
+*33. attack, aggress, assail  
+*34. suitable, proper, applicable  
+*35. skilful, proficeint, deft, adroit  
+*35-1. adjust, accommodate  
+*36. in truth, in fact  
+*37. interest, pastime, hobby  
+*37. search, quest  
+*38. stimulate, provoke, inflame, spur  
+*39. ensure, secure, warrant  
+*40. economic well-being, wealth, fortune  
+*41. mostly, mainly, chiefly  
+*41. originally, at first, initially  
+*42. explode, burst, blow up  
+*43. evidence, vestige, imprint, mark  
+*43. track down, trail  
+*44. highly regarded, esteemed, respected  
+*45. affect, form, influence  
+*46. cause, administer, exact  
+*47. part, segment, fragment  
+*48. chance happening  
+*49. push, force, drive, impel  
+*50. completely, entirely  
+*51. consider, ponder  
+*52. improper, immoral  
+*53. reproduce, copy, duplicate  
+*54. hurried, rushed  
+*55. indicative, typical, exemplary  
+*55. delegate  
+*56. scope, spectrum, extent  
+
+
+
 # day5(220412)
 *1. compelling  
 *2. ultimately  
