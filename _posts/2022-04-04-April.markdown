@@ -7,7 +7,7 @@ categories: study
 
 {% highlight ruby %}
 
-April week2:  
+April week3:  
 *eng speak  
 *eng write  
 
