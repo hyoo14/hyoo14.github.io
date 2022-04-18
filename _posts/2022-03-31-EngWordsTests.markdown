@@ -17,6 +17,144 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day7(220418)
+*1. considerable  
+*2. dominate  
+*2-1. dominance  
+*3. ratio  
+*4. duplicate  
+*5. barely  
+*6. strew  
+*7. legitimately  
+*7-1. legitimate  
+*8. encapsulate  
+*9. relatively  
+*10. hazard  
+*11. paramount  
+*12. unwieldy  
+*13. subsequent  
+*14. striking  
+*15. extended  
+*16. ephemeral  
+*17. rigid  
+*18. chief  
+*19. severity  
+*20. typical of  
+*21. enable  
+*22. empirical  
+*23. controversy  
+*24. accomplish  
+*25. set  
+*26. lag  
+*27. exude  
+*28. interplay  
+*29. precede  
+*30. manipulation  
+*31. dry  
+*32. assist with  
+*33. acute  
+*34. article  
+*35. scrutiny  
+*36. recompense  
+*37. relfect  
+*38. immeasurably  
+*39. rudiments  
+*40. mortality  
+*40-1. mortal  
+*41. awkward  
+*42. constrain  
+*43. turmoil  
+*44. property  
+*45. fuel  
+*46. majestic  
+*47. preeminent  
+*48. crude  
+*49. variety  
+*50. typically  
+*51. supplementary  
+*52. reduce  
+*53. subject  
+*54. flee  
+
+
+
+
+*1. substantial, a large amout of, large  
+*1. meaningful, significant  
+*2. control, govern, rule  
+*2. be widespread in  
+*2-1. ascendancy, supremacy  
+*3. proportion, rate, percentage  
+*4. copy, reproduce, imitate  
+*4. repeat  
+*5. hardly, scarcely, almost not  
+*5. just, only just  
+*6. scatter, spinkle, disperse  
+*7. properly, lawfully, legally  
+*7-1. reasonable, logical  
+*8. summarize, sum up, condense  
+*9. comparatively, by comparison  
+*10. risk, danger, peril, jeopardy  
+*11. supreme, prime, chief  
+*12. difficult to manage, awkward  
+*12. awkward  
+*13. succceding, following, later, following in time   
+*14. noticeable, remarkable, attention-getting  
+*15. long-lasting, prolnged  
+*16. short-lived, living for a short time, temporary  
+*17. strict, exact, severe, rigorous  
+*17. stiff, hard, firm  
+*18. major, main, primary, principal  
+*18. leader, head  
+*19. seriousness  
+*20. characteristic of, representative of  
+*21. allow, permit, facilitate  
+*22. based on observation, experimental  
+*23. dispute, debate, disagreement, contention  
+*24. achieve, execute, work out, put through  
+*25. fixed, settled  
+*25. situate, place, put  
+*26. delay
+*26. linger, dawdle    
+*27. give off, release, emit  
+*28. interaction, reciprocity  
+*29. come before, entecede, forerun  
+*30. deliberate alteration  
+*31. arid, rainless, parched  
+*32. help with, aid, support  
+*33. severe, intense, extreme  
+*33. keen, sharp  
+*34. object, item, thing  
+*35. close observation, examination, inspection  
+*36. repayment, compensation  
+*37. show, indicate, display, demonstrate  
+*37. meditate, think, consider, ponder  
+*38. greatly, extremely  
+*39. basics, elements, fundamentals  
+*40. death  
+*40-1. lethal, fatal  
+*41. clumsy, unskillful  
+*42. oblige, bind, force, pressure  
+*42. inhibit, restrain, restrict  
+*43. unrest, agitation, stir  
+*44. characteristic, character, quality  
+*44. estate, possession, havings  
+*45. give energy to, encourage  
+*46. magnificent, grand, august  
+*47. outstanding, distinguished, foremost  
+*48. rough, primitive, raw, unrefined  
+*49. diversity, multiplicity  
+*49. type, species, sort, kind  
+*50. usually, normally, ordinarily  
+*51. additional, extra   
+*52. decrease, diminish, cut  
+*53. participant  
+*53. expose  
+*54. run away from, escape, abscond  
+
+
+
+
 # day6(220415)
 *1. disperse  
 *2. adjacent  
