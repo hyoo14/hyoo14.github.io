@@ -99,3 +99,68 @@ Second, he describes high levels of hemoglobin.
 Hemoglobin is a substance in the blood that helps transport  oxygen to cells. He mentions the example of a bloodworm. It has high levels of hemoglobin, so it can store a backup supply of oxygen.  
 
 These examples demonstrate how aquatic insects survive underwater.  
+
+
+-------------------------------------------------  
+22.04.18 Monday  
+-------------------------------------------------  
+
+
+-------------------------------------------------  
+
+According to the reading, a student wrote a letter to the school newspaper suggesting that the library change its policy on lending out art books.   
+The man does not think it is a good idea for two reasons.   
+
+
+First, he says that shortening the lending period is unrealistic. This is because students need more than one week to finish assignments. It takes a long time to read, take notes, and double-check things.   
+
+
+Second, he mentions that leaving ID cards is not practical. This is because students need their cards for other purposes, such as for accessing study roms and dining halls.   
+
+
+For these reasons, he believes it is not a great idea.  
+
+
+-------------------------------------------------  
+
+
+According to the reading, restoration ecology is the practice of actively restoring damaged ecosystems.  
+The professor uses two examples to explain restoration ecology.  
+
+
+First, he describes how cover crops are planted to prevent erosion.  
+Quickly growing annual grasses fix themselves into the soil and prevent it from eroding.  
+Cover crops also slow raindrops before they hit the ground and loosen the soil.  
+
+
+Second, he describes how controlled prairie fires are used to restore native plants.  
+The fires burn away dead plants and invasive species which compete with native plants for light and resources.  
+The fires also darken the earth, so it absorbs more sunlight and helps plants grow.  
+
+
+These examples demonstrate restoration ecology.  
+
+
+
+-------------------------------------------------   
+
+
+The professor describes the benefits of flooding to ancient farmers by giving two examples.  
+
+
+First, she describes how flooding provided a water resource.  
+In desert climates, people had to find ways to use floodwater to farm.  
+For instance, Mesopotamian farmer built canals from the rivers, which bought water to their fields, and they made dams to store water.  
+
+
+Second, she describes how flooding made the land rich.  
+When rivers flood, mud containing nutrients washes into field and enriches the soil.  
+For example, the soil of Egypt was poor in nutrients, but when the Nile flooded, rich mud was carried onto shore, and it made growing lots of crops possible.  
+
+
+These examples demonstrate two ways flooding benefited ancient farmers.  
+
+
+-------------------------------------------------    
+
+
