@@ -34,6 +34,248 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day 7  
+*1. considerable  
+*1. substantial, a large amout of, large  
+*1. meaningful, significant  
+**Plankton is gaining considerable interest among marine scientists.  
+**For Pavlov, winning the Nobel Prize was a considerable achievement.  
+**상당한  
+**중요한  
+
+
+*2. dominate  
+*2. control, govern, rule  
+*2. be widespread in  
+**The Spartans were a strong military force that dominated Ancient Greece.  
+**Pro-gun attitudes dominate many states in the US.  
+**지배하다  
+**압도적으로 우세하다  
+
+
+*2-1. dominance  
+*2-1. ascendancy, supremacy  
+**우위, 우세  
+
+
+*3. ratio  
+*3. proportion, rate, percentage  
+**The ratio of women in the workforce is higher than ever.  
+**비율  
+
+
+*4. duplicate  
+*4. copy, reproduce, imitate  
+*4. repeat  
+**It is considered stealing to illegally duplicate a copyrighted work without permission.  
+**Thebaseball team won the championship last year, and they duplicated that success this year.  
+**복제하다  
+**되풀이하다  
+
+
+*5. barely  
+*5. hardly, scarcely, almost not  
+*5. just, only just  
+**There has been barely any evidence that taking zinc helps prevent colds.  
+**We arrived barely in time to see the begining of the performance.  
+
+
+*6. strew  
+*6. scatter, spinkle, disperse  
+**The tsunami strewed debris over several miles of shoreline.  
+**흘뿌리다  
+
+
+*7. legitimately  
+*7. properly, lawfully, legally  
+**The president was elected legitimately through a nationwide vote.  
+**합법적으로, 정당하게  
+
+
+*7-1. legitimate  
+*7-1. reasonable, logical  
+**합리적인, 합법적인  
+
+
+*8. encapsulate  
+*8. summarize, sum up, condense  
+**The paper includes a concluding paragraph that encapsulates the main points.  
+**요약하다  
+
+*9. relatively  
+*9. comparatively, by comparison  
+**Roses have a relatively stronger fragrance than sunflowers.  
+**비교적으로  
+
+
+*10. hazard  
+*10. risk, danger, peril, jeopardy  
+**Reduced regulation created hazards to public health and safety.  
+**위험  
+
+
+*11. paramount  
+*11. supreme, prime, chief  
+**The company's paramount concern was its declining sales.  
+**최고의, 중요한  
+
+
+*12. unwieldy  
+*12. difficult to manage, awkward  
+*12. awkward  
+**Heavy vehicles such as trucks and tractors can be unwidely to operate.  
+**다루기 힘든  
+**(어색한 말고)다루기힘든(도 됨)  
+
+
+*13. subsequent  
+*13. succceding, following, later, following in time   
+**The first earthquake was strong, but luckily the subsequent ones were weak.  
+**그 다음의  
+
+
+*14. striking  
+*14. noticeable, remarkable, attention-getting  
+**There was a striking difference in the building's appearance after the renovation.  
+**현저한  
+
+
+*15. extended  
+*15. long-lasting, prolnged  
+**Images of Venus indidate that the planet may have had extended periods of geological activity.  
+**장기간에 걸친  
+
+
+*16. ephemeral  
+*16. short-lived, living for a short time, temporary  
+**A mayfly is an ephemeral insect that has a lifespan of less than 48 hours.  
+**단명하는, 덧없는  
+
+
+*17. rigid  
+*17. strict, exact, severe, rigorous  
+*17. stiff, hard, firm  
+**The rules at the military boot camp are so rigid that many drop out on the first day.  
+**When Ted heard the news, his whole body went rigid with shock.  
+**엄격한  
+**굳은, 경직된  
+
+
+*18. chief  
+*18. major, main, primary, principal  
+*18. leader, head  
+**Victorian writer Alfred Lord Tnennyson was a chief influence on the poet T.S. Eliot.  
+**주요한  
+**조직의 장  
+
+
+*19. severity  
+*19. seriousness  
+**The effects of black widow spider bites vary widely in severity, from mild skin irritation to death.  
+**심함  
+
+
+*20. typical of  
+*20. characteristic of, representative of  
+**Family-owned stores were typical of nineteenth-century American commercial establishments.  
+**~을 대표하는  
+
+
+*21. enable  
+*21. allow, permit, facilitate  
+**Smartphones enable people to share information with others easily.  
+**가능하게 하다  
+
+
+*22. empirical  
+*22. based on observation, experimental  
+**The scientists studied the rats' movements in order to gain empirical evidence about their behavior.  
+**실험상의, 실험에 의한  
+
+
+*23. controversy  
+*23. dispute, debate, disagreement, contention  
+**How to distribute education funding is a controversy in many school districts.  
+**논쟁  
+
+
+*24. accomplish  
+*24. achieve, execute, work out, put through  
+**To accomplish its plan for a new building, the community center must raise a lot of money.  
+**성취하다  
+
+
+*25. set  
+*25. fixed, settled  
+*25. situate, place, put  
+**Doctors recommend sticking to a set sleeping schedule in order to get good rest.  
+**The movers will set the furniture inside the house.  
+**고정된  
+**놓다  
+
+
+*26. lag  
+*26. delay
+*26. linger, dawdle    
+**There is a slight lag between the transmission and reception of an electronic signal.  
+**지연  
+**꾸물거리다  
+
+
+*27. exude  
+*27. give off, release, emit  
+**Human skin exudes sweat as a colling mechanism.  
+**발산하다  
+
+
+*28. interplay  
+*28. interaction, reciprocity  
+**The interplay of supply and demand helps determine the price of goods.  
+**상호작용  
+
+
+*29. precede  
+*29. come before, entecede, forerun  
+**A recovery in airline stocks typically precedes a rebound in the economy.  
+**~에 앞서다  
+
+
+*30. manipulation  
+*30. deliberate alteration  
+**The manipulation of people's personal information without consent is a criminal offense.  
+**조작  
+
+
+*31. dry  
+*31. arid, rainless, parched  
+**Mars has a very dry environment, although some frozen water lies below the surface.  
+**건조한  
+
+
+*32. assist with  
+*32. help with, aid, support  
+**Financial advisors assist with managing and increasing their client' personal wealth.  
+**~을 돕다  
+
+
+*33. acute  
+*33. severe, intense, extreme  
+*33. keen, sharp  
+**The Environmental Protection Agency has documented many cases of acute injury and death from fires.  
+**극심한  
+**예리한  
+
+
+*34. article  
+*34. object, item, thing  
+**Every single article in the museum is more than a thousand years old.  
+**물품  
+
+
+
+
+
+**For Pavlov, wining the Nobel Prize 
 # day 6  
 *1. disperse  
 *1. scatter, dissipate, spread, sisseminate  
