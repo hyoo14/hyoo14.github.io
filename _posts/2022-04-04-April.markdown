@@ -24,11 +24,17 @@ Tuesday, April 19, 2022
 o  
 *eng write  
 
+
 Wednesday, April 20, 2022  
 *eng speak  
 *eng write  
 o  
 
+
+Thursday, April 21, 2022  
+*eng speak  
+*eng write  
+o  
 
 {% highlight ruby %}
 
