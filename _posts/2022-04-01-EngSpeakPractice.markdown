@@ -101,12 +101,29 @@ Hemoglobin is a substance in the blood that helps transport  oxygen to cells. He
 These examples demonstrate how aquatic insects survive underwater.  
 
 
--------------------------------------------------  
-22.04.18 Monday  
--------------------------------------------------  
+-------------------------------------------------    
+22.04.18 Monday    
+-------------------------------------------------    
 
 
--------------------------------------------------  
+I agree with the statement that elementary school teachers should encourage their students to use computers.   
+
+
+First, computers are good learning tools for students.   
+To be specific, there are interesting materials available to learners these days.   
+They can easily access these useful resources with computers.     
+
+
+Second, the ability to use a computer is an essential life skill.   
+For example, communications now frequently occur through computers.  
+Consequently, students will need to use computers in school and work thrughout their lives.   
+
+
+For these reasons, I think elementary school teachers should help students learn to use computers.  
+
+
+-------------------------------------------------    
+  
 
 According to the reading, a student wrote a letter to the school newspaper suggesting that the library change its policy on lending out art books.   
 The man does not think it is a good idea for two reasons.   
@@ -162,5 +179,87 @@ These examples demonstrate two ways flooding benefited ancient farmers.
 
 
 -------------------------------------------------    
+
+
+
+-------------------------------------------------    
+22.04.21 Thursday    
+-------------------------------------------------    
+
+
+I believe that television has a negative influence on people.  
+
+
+First of all, there are too many violent programs on televisions.  
+Watching thousands of images of killing is not good for people.  
+These increase people’s aggression and anger.  
+The number of crimes in our society is related to all the violence that television feeds people.  
+
+
+Moreover, television is mindless entertainment.  
+Most programs do not serve any educational purpose and encourage passiveness.  
+As a result, people become less active.  
+Some would even argue they become unquestioning robots.  
+
+
+-------------------------------------------------    
+
+
+According to the reading, the university has changed the dormitory visitation policy, allowing visitors to stay in a resident’s room only until 11 p.m. on weekdays.  
+The woman thinks it is a good idea for two reasons.  
+
+
+First, she says that when visitors stay late, some residents find it difficult to get enough sleep.  
+They can get only 5 hours sleep with the old policy, but 7 hours with the new policy.  
+
+
+Second, she mentions that many visitors sleep over without permission when they stay late.  
+This makes dorm residents feel uncomfortable and feel like their privacy is violated.  
+
+
+
+
+-------------------------------------------------    
+
+
+According to the reading, the halo effect is a cognitive bias wherein the evaluation of a specific attribute affects unrelated traits.  
+The professor describes two examples to explain the halo effect.  
+
+
+First, he describes the connection between beauty and perceived intelligence.  
+In a study, participants were asked to read a paragraph and then shown different photos of the supposed author.  
+Half of them were shown a photo of an attractive person and half were shown a photo of an unattractive person.  
+When they were asked to rate the paragraph, the participants who were shown the more attractive photo gave higher scores.  
+
+
+Second, he describes the connection between attractiveness and sentencing outcomes in criminal trials.  
+Photos of defendants in the cases were rated on attractiveness, and then the ratings were compared with the outcomes of the cases.  
+Attractive people received shorter sentences.  
+
+
+
+-------------------------------------------------    
+
+
+The professor explains how animals in the Arctic have evolved by giving two examples.  
+
+
+First, she describes the reindeer, which has developed long legs.  
+The animal’s long legs keep its body above the ground, which helps it maintain its temperature.  
+In addition, the animal’s legs feature hooves with a sharp rim so they can slice through snow and dig into ice.  
+
+
+Second, she describes the sea lion, which has a layer of fat called blubber underneath their skin.  
+The blubber provides a barrier between the internal organs of the animal and the cold water.  
+Moreover, the animal’s blood vessels don’t travel to the outer parts of its body, and this prevents heat loss.  
+
+
+-------------------------------------------------    
+
+
+
+
+
+
 
 
