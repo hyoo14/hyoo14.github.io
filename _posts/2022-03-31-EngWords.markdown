@@ -206,9 +206,227 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 **~의 반감을 사다, 대항하다  
 
 
+*26. yearn  
+*26. long, desire, crave, pine  
+*26. sympathize, feel, compassion  
+**After more than a decade of war, everyone in the two countries yearned for peace.  
+**yearn over the poor
+**갈망하다  
+**동정하다  
 
 
+*27. permit  
+*27. allow, let, approve  
+**Visitors to national parks are not permitted to have campfires during the dry season.  
+**허락하다  
 
+
+*28. scarcity  
+*28. lack, shortage, insufficiency, deficiency  
+**A scarcity of fish damaged the seaside town's economy.  
+**부족  
+
+
+*29. renounce  
+*29. give up, reject, relinquish  
+**Monks renounce material possessions and live a very simple life  
+**포가하다, 버리다  
+
+
+*30. keep in check  
+*30. limit, control, restrict, restrain  
+**If government spending is not kept in check, ecnomic problems will result.  
+**제어하다, 억제하다  
+
+
+*31. subsistence  
+*31. survival, existence, living  
+**Early humans relied on hunting as their primary menas of subsistence.  
+**생존  
+
+
+*32. annually  
+*32. each year, yearly, every year  
+**Interest on the bank loan is usually calculated annually.  
+**매년  
+
+
+*33. emerge  
+*33. appear, loom, spring up, come out, develop  
+**Every 17 years, cicadas emerge by the millions in North America.  
+**나타나다  
+
+
+*34. customary  
+*34. habitual, traditional, typical, accustomed  
+**It is customary to burn an American flag when it becomes torn.  
+**습관적인, 관례적인  
+
+
+*35. widely  
+*35. extensively, broadly  
+**Franz Schubert's compositions did not become widely known until many years after his death.  
+**널리  
+
+
+*36. assign  
+*36. specify, designate, appoint  
+**The teacher assigned a seat to each student.  
+**지정하다  
+
+
+*37. equivocal  
+*37. ambiguous, vague, obscure, uncertain  
+**The president was criticized for gibing equivocal responses about his immigration policy during an interview.  
+**모호한  
+
+
+*38. release  
+*38. free, liberate, loose  
+*38. emit, give off, discharge, exude  
+**Johnson will be released from prison tomorrow.  
+**The buring of fossil fuels releases poisonous gases into the air.  
+**석방하다  
+**방출하다  
+
+
+*39. essentially  
+*39. basically, fundamentally, primarily  
+**Although Kelly is essentially content with her single life, she does occasionally consider starting a family.  
+**기본적으로, 본질적으로  
+
+
+*40. oversee  
+*40. supervise, control, superintend  
+**It is the job of the manager to oversee factory workers.  
+**감독하다  
+
+
+*41. rapidly  
+*41. quickly, fast  
+**Theodore's health declined rapidly, and in 1933, he died of cancer.  
+**급속히, 빨리  
+
+
+*42. acknowledge  
+*42. recognize, admit, accept  
+*42. appreciation, gratitude  
+**The professor acknowledged the unrealistic deadline for the assignmnent and changed it.  
+**인정하다  
+**감사  
+
+
+*43. rough  
+*43. uneven, rugged, bumpy, coarse  
+**The merchants completed the trip over the rough mountain road.  
+**울퉁불퉁한, 거친  
+
+
+*44. preclude  
+*44. prevent, stop, hinder  
+*44. rule out, exclude  
+**According to Adam Smith, the feudal system precluded economic progress.  
+**Sherlock Holmes always said that once you preclude all impossibilities, whatever is left is the answer.  
+**막다  
+**배제하다  
+
+
+*45. portable  
+*45. able to be carried, mobile, movable  
+**Engineers are developing new portable medical devices that can be taken wherever you go.  
+**휴대용의  
+
+
+*46. presumable  
+*46. probable, likely, possible  
+**An undetected gas leak was the presumable cause of the explosion.  
+**그럴듯한, 있음직한  
+
+
+*47. calculatedly  
+*47. deliberately, intentionally, knowingly  
+**Spaces in the seminar have been calculatedly limited to facilitate more intimate discussions.  
+**계획적으로  
+
+
+*48. deviation  
+*48. departure, divergence, aberration  
+**Jenny is a talented skater and her poor performance in the competition was a deviation from the norm.  
+**일탈  
+
+
+*48-1. devotion  
+*48-1. dedication, commitment  
+**헌신  
+
+
+*49. hairline  
+*49. slight, thin  
+**The contractor noted that the hairline cracks in the wall needed to be repaired before they got bigger.  
+**아주 가느다란  
+
+
+*50. formulate  
+*50. develop, devise, forge  
+*50. state, specify, express  
+**The marketing department is formulating a plan to attract more clients.  
+**The speaker formulated his ideas in clear and concise language that the audience understood easily.  
+**고안하다, 발전시키다  
+**명확히 말하다  
+
+
+*51. astute  
+*51. insightful, shrewd, clever, sharp  
+**The professor was impressed with Daniel's astute observations about the poem.  
+**통찰력 있는, 영악한  
+
+
+*52. reliable  
+*52. dependable, trustworthy, credible  
+**Jane wanted to know if there was someone reliable in her life  
+**신뢰할 수 있는  
+
+
+*53. take precedence over  
+*53. be more important than, come before  
+**In a hospital embergency room, patients with severe trauma take precedence over people with minor injuries.  
+**~보다 우선하다  
+
+
+*54. allusion  
+*54. reference, mention, implication, suggestion  
+**During his presentation, the speaker made an allusion to one of the scenes in Shakespeares Macbeth.
+**언급, 임시  
+
+
+*54-1. delusion  
+*54-2. illusion  
+**망상  
+**환상, 착각  
+
+
+*55. locomotion  
+*55. movement, motion  
+**The invetion of the airplane took human locomotion to a higher level.  
+**이동 능력  
+
+
+*56. principally  
+*56. mainly  
+**Edgar Allen Poe principally wrote poems and short stories, although he did produce one play.  
+**주로  
+
+
+*57. rebellion  
+*57. uprising, revolt  
+**The rebellion of British colonists in North America led to the formation of the United States.  
+**반란  
+
+
+*58. revive  
+*58. recover  
+**The economy revived following an extended period of increased consumer spending.  
+**회복하다, 소생하다  
 
 
 
