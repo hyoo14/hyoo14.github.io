@@ -17,6 +17,148 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+# day8(220422)  
+
+
+*1. furthermore  
+*2. proliferate  
+*3. assess  
+*3-1. access  
+*4. spur  
+*5. electic  
+*6. crucial  
+*7. intricate  
+*8. palatial  
+*9. potent  
+*9-1. potency  
+*10. extract  
+*11. course through  
+*12. criterion  
+*13. enjoy  
+*14. inadvertently  
+*15. peril  
+*16. arduous  
+*17. feat  
+*18. friction  
+*19. materialize  
+*19-1. material  
+*20. regulate  
+*21. demise  
+*22. frankly  
+*23. immensely  
+*24. deem  
+*25. consumption  
+*26. suspend  
+*27. prevent  
+*28. authentic  
+*29. redundant  
+*30. profuse  
+*31. ornament  
+*32. demolish  
+*33. voracious  
+*33-1. veracious  
+*34. as well as  
+*35. extreme  
+*36. reform  
+*37. determinant  
+*38. inclination  
+*39. inflation  
+*40. routine  
+*41. accessible  
+*42. constituent  
+*43. insolent  
+*44. to be sure  
+*45. broadly  
+*46. echo  
+*47. shoddy  
+*48. gear  
+*49. absorb  
+*50. whereby  
+*51. assemble  
+*52. liberate  
+*53. rational  
+*54. resistance  
+*54-1. resist  
+*55. indefinite period  
+*56. ardent  
+*57. extinct  
+*58. be accompanied by  
+*59. overestimated  
+
+
+
+*1. in addition, moreover  
+*2. multiply, become numerous, increase in number  
+*3. evaluate, estimate, judge, appraise  
+*3-1. approach, admission  
+*4. stimulus, incitement, incentive  
+*4. stimulate, prompt  
+*5. diverse, various, manifold  
+*6. decisive, important, essential, vital, acute  
+*7. complex, complicated, elaborate, tangled  
+*8. magnificent, grand, majestic, splendid  
+*9. powerful, strong, influential  
+*9-1. efficacy  
+*10. draw, derive, remove  
+*11. run through  
+*12. standard, measure, norm  
+*13. experience  
+*14. unintentionally, accidentally, unwittingly  
+*15. danger, jeopardy, hazard  
+*16. difficult, strenuous, laborious  
+*17. achievement, accomplishment, exploit  
+*18. conflict, clash, discord, strife  
+*19. appear, emerge, loom  
+*19-1. substance, matter  
+*20. adjust, control  
+*21. end, fall, collapse, downfall  
+*22. honestly, openly, truthfully, candidly  
+*23. extremely, excessively, enormously, incredibly  
+*24. consider, regard, believe  
+*25. use, utilization  
+*26. hang, dangle, swing  
+*26. defer, postpone  
+*27. preclude, avoid, impede, avert  
+*28. genuine, true, real  
+*29. superfluous, unnexcessary, wordy, repetitious  
+*30. abundant, plentiful, copious, lavish  
+*31. decorate, adorn, embellish  
+*32. destroy, wreck  
+*33. insatiable, greedy, gluttonous  
+*33-1. truthful, honest  
+*34. in addition to, not to mention  
+*35. intense, severe, excessive  
+*36. betterment  
+*36. amend, improve, ameliorate  
+*37. cause, factor  
+*38. tendency, trend, preference, taste  
+*39. expansion, swelling, enlargement  
+*40 ordinary, normal, conventional  
+*41. reachable, able to be reached, obtainable  
+*42. component, elemental  
+*42. voter, elector  
+*43. impertinent, impudent, rude  
+*44. certainly, definitely, surely  
+*45. generally, mostly  
+*46. reflect, resound, resonate  
+*46. imitate, repeat, reiterate  
+*47. inferior, poor  
+*48. adjust, adapt, change  
+*48. equipment, tool  
+*49. take in, imbibe, soak up  
+*50. through which, by which  
+*51. gather together, bring together, collect  
+*52. free, relese, loosen  
+*53. logical, sensible, reasonable  
+*54. opposition, objection, refusal to accept  
+*54-1. refrain from, abstain from  
+*55. a period whose end has not been determined  
+*56. entusiastic, passinate, fervent  
+*57. having died out, defunct  
+*58. occur togheter with  
+*59. bigger than actual value  
+
+
 # day7(220418)
 *1. considerable  
 *2. dominate  
