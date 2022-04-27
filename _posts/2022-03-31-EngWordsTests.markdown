@@ -17,6 +17,147 @@ categories: study
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+
+#day9(220427)  
+
+
+*1. initiate  
+*2. tremendous  
+*2-1. tremulous  
+*3. breakthrough  
+*4. cope with  
+*5. inducement  
+*6. irreversible  
+*7. comprise  
+*8. culmination  
+*8-1. culminate  
+*9. allegiance  
+*10. notable  
+*11. idiosyncrasy  
+*12. minute  
+*13. markedly  
+*14. phenomenon  
+*15. disseminate  
+*16. current  
+*17. detrimental  
+*18. presume  
+*19 anarchy  
+*20. snake  
+*21. sophisticated  
+*22. derive  
+*23. sole  
+*24. embellish  
+*25. antagonize  
+*26. yearn  
+*27. permit  
+*28. scarcity  
+*29. renounce  
+*30. keep in check  
+*31. subsistence  
+*32. annually  
+*33. emerge  
+*34. customary  
+*35. widely  
+*36. assign  
+*37. equivocal  
+*38. release  
+*39. essentially  
+*40. oversee  
+*41. rapidly  
+*42. acknowledge  
+*43. rough  
+*44. preclude  
+*45. portable  
+*46. presumable  
+*47. calculatedly  
+*48. deviation  
+*48-1. devotion  
+*49. hairline  
+*50. formulate  
+*51. astute  
+*52. reliable  
+*53. take precedence over  
+*54. allusion  
+*54-1. delusion  
+*55. locomotion  
+*56. principally  
+*57. rebellion  
+*58. revive  
+
+
+
+*1. start, begin, originate, commence  
+*2. great, large, gigantic, huge  
+*2-1. trembling, vibrating  
+*3. advance, progress 
+*4. deal with, manage, handle  
+*5. incentive, incitement, lure  
+*6. irreparable, irrevocable, irremediable  
+*7. include, encompass  
+*7. consist of, be made up of, be composed of  
+*8. high point, apex, pinnacle  
+*8-1. end, finish, terminate  
+*9. loyalty, fidelity, commitment, dedication  
+*10. remarkable, outstanding, important  
+*11. peculiarity, eccentricity, oddity  
+*12. tiny, very small, diminutive   
+*13. significantly, noticeably, considerably, substantially  
+*14. occurrence, incident  
+*15. spread, disperse, distribute  
+*16. present, existing  
+*17. harmful, injurious, damaging, pernicious  
+*18. believe, accept as true  
+*19 disorder, chaos, disorganization  
+*20. wind, meander, curve, twist  
+*21. complex, highly developed  
+*21. cultured, refined  
+*22. originate, trace, obtain, gain  
+*23. only, single, solitary  
+*24. decorate, make attractive, adorn, beautify, ornament  
+*25. anger, aggravate, counteract  
+*26. long, desire, crave, pine  
+*26. sympathize, feel, compassion  
+*27. allow, let, approve  
+*28. lack, shortage, insufficiency, deficiency  
+*29. give up, reject, relinquish  
+*30. limit, control, restrict, restrain  
+*31. survival, existence, living  
+*32. each year, yearly, every year  
+*33. appear, loom, spring up, come out, develop  
+*34. habitual, traditional, typical, accustomed  
+*35. extensively, broadly  
+*36. specify, designate, appoint  
+*37. ambiguous, vague, obscure, uncertain  
+*38. free, liberate, loose  
+*38. emit, give off, discharge, exude  
+*39. basically, fundamentally, primarily  
+*40. supervise, control, superintend  
+*41. quickly, fast  
+*42. recognize, admit, accept  
+*42. appreciation, gratitude  
+*43. uneven, rugged, bumpy, coarse  
+*44. prevent, stop, hinder  
+*44. rule out, exclude  
+*45. able to be carried, mobile, movable  
+*46. probable, likely, possible  
+*47. deliberately, intentionally, knowingly  
+*48. departure, divergence, aberration  
+*48-1. dedication, commitment  
+*49. slight, thin  
+*50. develop, devise, forge  
+*50. state, specify, express  
+*51. insightful, shrewd, clever, sharp  
+*52. dependable, trustworthy, credible  
+*53. be more important than, come before  
+*54. reference, mention, implication, suggestion  
+*54-2. illusion  
+*55. movement, motion  
+*56. mainly  
+*57. uprising, revolt  
+*58. recover  
+
+
+
 # day8(220422)  
 
 
