@@ -111,12 +111,12 @@ I agree with the statement that elementary school teachers should encourage thei
 
 First, computers are good learning tools for students.   
 To be specific, there are interesting materials available to learners these days.   
-They can easily access these useful resources with computers.     
+~~They can easily access these useful resources with computers.~~     
 
 
 Second, the ability to use a computer is an essential life skill.   
-For example, communications now frequently occur through computers.  
-Consequently, students will need to use computers in school and work thrughout their lives.   
+For example, ~~communications now frequently occur through computers.~~   
+~~Consequently,~~ students will need to use computers in school and work thrughout their lives.   
 
 
 For these reasons, I think elementary school teachers should help students learn to use computers.  
