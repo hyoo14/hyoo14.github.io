@@ -14,7 +14,7 @@ categories: study
 *For improving english skill  
 *day9-tremulous breakthrough inducement irreversible comprise culmination culminate allegiance  
     idiosyncrasy minute markedly dissemiate(v) detrimental(v) presume anarchy derive sole embellish  
-    antagonize yearn renounce(v) keep-in-check subsistence(v) emerge(v) equivocal(v) oversee presumable  
+    antagonize yearn(vv) renounce(v) keep-in-check subsistence(v) emerge(v) equivocal(v) oversee presumable  
     calculatedly deviation(v) hairline formulate astute(v) reliable take-precedence-over allusion(v) delusion rebellion  
 
     -commence trembling lure irreparable irrevocable irremediable encompass pinnacle fidelity commitment peculiarity  
@@ -56,7 +56,11 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+
+
 # day 9  
+
+
 *1. initiate  
 *1. start, begin, originate, commence  
 **The governemtn has initiated several new welfare policies to assistn the poor.  
