@@ -129,6 +129,66 @@ Finally, the lecturer asserts that there isn't any clear proof that the Hohokam 
 <br/>
 <br/>
 
+
+# 3  
+
+
+Some people think that friends do not have a significant impact on children's lives.  
+However, in my opinion, friends wield the most influence, as they spend most of their time together and exert tremendous peer pressure.  
+
+
+To begin with, teenagers spend the majority of their time with friends.  
+As young people become older, they spend more time socializaing and studying with their friends.  
+For example, when I was in high school, I spent all day with my friends at school, and then we would study together for the college entrance exam after school.  
+And we often went to grab a bite together during study breaks or after studying.  
+Since I did not have many chances to talk to my parents, I consulted with my friends whenever I had problems and followed their advice.  
+This was because I thought they understood me better than my parents did, as we spent so much time together.  
+
+
+On top of that, teenagers are susceptible to peer pressure.  
+As they enter adolescence, they want to win more recognition from their friends and to be popular.  
+Often they engage in behavior that they feel will impress their friends.  
+For instance, one of my old friends was a good student and athlete, but when he became a high school student, he began to get into trouble.  
+The main reason was the group of people that he hung out with.  
+Because of peer pressure, he started skipping classes and drinking alcohol.  
+The incredible pressure that teenagers feel to be accepted into a social group can be an overwhelming force.  
+
+
+To sum up, adolescents devote the bulk of their time to friends, and pressure from one's peers is powerful.  
+In this regard, I strongly believe that friends are the foremost influence on young people.  
+
+<br/>
+<br/>
+<br/>
+
+어떤 사람들은 생각한다 친구들은 상당한 영향이 없다고 아이들의 삶에  
+그러나 내 생각에는 친구들은 가장 큰 영향을 행사한다, 그들이 대부분의 시간을 함께 보내고 것처럼 함께 그리고 엄청난 또래압박을 가하기 때문이다  
+
+
+시작하면서, 10대들은 보낸다 대부분의 그들의 시간을 친구들과 함께  
+어린 사람들이 나이가 들면서, 그들은 더 많은 시간을 보낸다 친구들과 어울리고 공부하는데 그들의 친구들과 함께.  
+예를 들어, 내가 고등학생 이었을 때, 나는 하루 종일 보냈다 나의 친구들과 학교에서, 그리고 우리는 함께 공부하곤 했다 대학교 입학 시험을 위해서 방과후에.  
+그리고 우리는 종종 간식을 먹으러 함께 갔다 공부쉬는시간 동안 또는 학습 후에.  
+내가 나의 부모님들과 이야기할 많은 기회가 없었기 때문에, 나는 상담했다 나의 친구들과 내가 문제들이 있을 때마다 그리고 그들의 조언을 따랐다.  
+이것은 왜냐하면 나는 생각했다 그들이 나를 잘 이해했다고 나의 부모님들이 했던 것 보다, 우리가 함께 매우 많은 시간을 보냈기 때문에  
+
+
+게다가, 10대들은 동료 압력이 민감하다  
+그들이 청소년기에 진입하면서, 그들은 원한다 얻기를 더 많은 인정을 그들의 친구들로부터 그리고 유명해지기를.  
+종종 그들은 가담한다 행동 그들의 느낌이 그들의 친구들에게 인상을 준다고 느끼는.  
+예를 들어, 내 오래된 친구들 중 하나는 좋은 학생이었고 운동선수였다 하지만 그가 고등학생이 되었을 때, 그는 시작했다 문제를 일으키기.  
+주요한 원인은 사람들이 있는 그룹이었다 그가 어울리는   
+또래 압박 때문에, 그는 시작했다 수업 빠지기를 그리고 술 마시기를.  
+놀라운 또래 압력 10대들이 사회적 집단에 받아들여지기 위해  느끼는 저항할 수 없는 힘이 될 수 있다  
+
+
+요약하자면,  미성년자들은 매우 많은 그들의 시간을 친구들에게 쏟는다, 그리고 누군가의 또래로부터 오는 압박감은 강력하다.  
+이것들을 고려할 때, 나는 강하게 믿는다 친구들은 매우 큰  영향이다 어린 사람들에게  
+
+<br/>
+<br/>
+<br/>
+
 # 1
 
 일부 사람들은 우리에게 실제 세상에 대해 가르쳐주는 영화를 보는 것이 가장 좋다고 생각한다.  
@@ -218,6 +278,54 @@ Moreover, this theory is based on oral history, which is not reliable source of 
 This refutes the reading passage’s claim that the Hohokam civilization disintegrated due to internal conflict.   
 
 
+
+<br/>
+<br/>
+<br/>
+
+# 3
+
+
+어떤 사람들은 생각한다 친구들은 상당한 영향이 없다고 아이들의 삶에  
+Some people think that friends do not have a significant impact on childrens’ lives.  
+그러나 내 생각에는 친구들은 가장 큰 영향을 행사한다, 그들이 대부분의 시간을 함께 보내고 것처럼 함께 그리고 엄청난 또래압박을 가하기 때문이다  
+However, in my opinion, friends wield the most influence, as they spend most of their time together and exert tremedous peer pressure.   
+
+
+시작하면서, 10대들은 보낸다 대부분의 그들의 시간을 친구들과 함께  
+To begin with, teenagers spend the majority of their time with their firends.  
+어린 사람들이 나이가 들면서, 그들은 더 많은 시간을 보낸다 친구들과 어울리고 공부하는데 그들의 친구들과 함께.  
+As young people become older, they spend even more time socializing and studying with their friends.  
+예를 들어, 내가 고등학생 이었을 때, 나는 하루 종일 보냈다 나의 친구들과 학교에서, 그리고 우리는 함께 공부하곤 했다 대학교 입학 시험을 위해서 방과후에.  
+For example, when I was ina high school, I spent all day with my friends at school, and we would study together for the college entrance exam after school.  
+그리고 우리는 종종 간식을 먹으러 함께 갔다 공부쉬는시간 동안 또는 학습 후에.  
+And we often went to grab a bite together during study breaks or after study.  
+내가 나의 부모님들과 이야기할 많은 기회가 없었기 때문에, 나는 상담했다 나의 친구들과 내가 문제들이 있을 때마다 그리고 그들의 조언을 따랐다.  
+Since I did not have many chances to talk to my parents, I consulted with my friends whenever I had problems and followed their advice.  
+이것은 왜냐하면 나는 생각했다 그들이 나를 잘 이해했다고 나의 부모님들이 했던 것 보다, 우리가 함께 매우 많은 시간을 보냈기 때문에  
+This wasis because I thought they understood me better than my parents did, as we spent so much time together.  
+
+
+게다가, 10대들은 동료 압력이 민감하다  
+On top of that, teenagers are susceptible to peer pressure.  
+그들이 청소년기에 진입하면서, 그들은 원한다 얻기를 더 많은 인정을 그들의 친구들로부터 그리고 유명해지기를.  
+As they enter adolescence, they want to win more recognition from their friends and to be popular.  
+종종 그들은 가담한다 행동 그들의 느낌이 그들의 친구들에게 인상을 준다고 느끼는.  
+Often they engage in behavior that they feel will impress their friends.  
+예를 들어, 내 오래된 친구들 중 하나는 좋은 학생이었고 운동선수였다 하지만 그가 고등학생이 되었을 때, 그는 시작했다 문제를 일으키기.  
+For instance, one of my old friends was a good student and athlete, but when he became a high school student, he began to get into trouble.  
+주요한 원인은 사람들이 있는 그룹이었다 그가 어울리는   
+The main reason was the group of people that he hung out with.  
+또래 압박 때문에, 그는 시작했다 수업 빠지기를 그리고 술 마시기를.  
+Because of peer presure, he started skipping classes and drinking alcohol.  
+놀라운 또래 압력 10대들이 사회적 집단에 받아들여지기 위해  느끼는 저항할 수 없는 힘이 될 수 있다  
+The incredible pressure that teenagers feel to be accepted into a social group can be an overwhelming force.  
+
+
+요약하자면,  미성년자들은 매우 많은 그들의 시간을 친구들에게 쏟는다, 그리고 누군가의 또래로부터 오는 압박감은 강력하다.  
+To sum up, adolescents devote the bulk of their time to friends, and pressure from one’s peers is powerful.  
+이것들을 고려할 때, 나는 강하게 믿는다 친구들은 매우 큰  영향이다 어린 사람들에게  
+In this regard, I strongly believe that friends are the foremost influence on young people.  
 
 
 
