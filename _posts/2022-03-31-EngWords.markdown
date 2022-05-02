@@ -58,6 +58,415 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 {% endhighlight %}
 
 
+
+# day 11  
+
+
+*1. plausible  
+*1. possible, believable, likely, probable  
+**The story seemed plausible, but witnesses said it was untrue.  
+**그럴듯한  
+
+
+*2. transform  
+*2. convert, change, alter  
+**Generators transform physical energy into electrical energy.  
+**변형시키다, 바꾸다  
+
+
+*3. counterpart  
+*3. complement, equivalent  
+**Medieval religious books often included beautiful illustrations as a counterpart to the written text.  
+**한 쪽, 동등한 것  
+
+
+*4. nevertheless  
+*4. in spite of that, however, still, yet, nonetheless  
+**Beagles make excellent pets. Nevertheless, they can become unruly without proper training.  
+**그럼에도 불구하고  
+
+
+*5. pronounced  
+*5. notable, striking, marked, significant, noticeable, distinct, strong  
+**The development of agricultural pesticides led to a pronounced increase in crop yields.  
+**현저한  
+
+
+*6. celebrated  
+*6. famous, renowned, well-known  
+**General Sherman's march to the sea was probably the most celebrated military coampaign in US history.  
+**유명한  
+
+
+*7. exceedingly  
+*7. highly, extremely, excessively, hugely  
+**Prior to the 2008 economic crisis, real estate prices had become exceedingly expensive.  
+**대단히  
+
+
+*8. chancy  
+*8. risky, perilous, dangerous  
+**Climbing Mt. Everest is chancy, as many people die on the mountain every year.  
+**위험한  
+
+
+*9. vertical  
+*9. upright, up-and-down, erect  
+**The three vertical bands of the French flag symbolize liberty, equality, and brotherhood.  
+**수직의  
+
+
+*10. persist  
+*10. continue, last, endure, remain  
+**Fears persisted even after weather forecasters declared that the hurricane would not come ashore.  
+**지속되다  
+
+
+*11. magnitude  
+*11. extent, size, degree, measure, amount  
+**The magnitude of an earthquake is measured on the Richter scale.  
+**규모, 정도  
+
+
+*12. discern  
+*12. identify, detect, distinguish  
+**A leader must be able to discern the best course of action for the group.  
+**파악하다, 알아내다  
+
+
+*12-1. discerning  
+*12-1. astute, perceptive  
+**통찰력 있는  
+
+
+*13. generate  
+*13. produce, create  
+**To generate enough electricity for the countryside, the mayor had 200 wind turbines built.  
+**만들어 내다  
+
+
+*14. eccentric  
+*14. unusual, bizarre, peculiar, odd  
+**Vaudeville actors typically wore eccentric costumes on statge.  
+**별난, 특이한  
+
+
+*15. alternative  
+*15. substitutive, different  
+*15. substitute, choice, option  
+**The city encouraged people to take alternative means of transportation to help reduce traffic congestion.  
+**Applesauce can be a good non-dairy alternative for eggs when baking.  
+**대안이 되는, 다른  
+**대안  
+
+
+*16. stratege  
+*16. plan, method, scheme  
+**The strategy of some predators is to camouflage themselves and wait perfectly still for hours.  
+**전략, 방법  
+
+
+*17. refine  
+*17. improve, perfect  
+**The writing tutor suggested ways for the student to refine his essay and garner a better grade.  
+**개선하다  
+
+
+
+*18. precious  
+*18. valuable, dear, priceless  
+**The colonies were forced into providing precious metals to the mother country.  
+**귀중한  
+
+
+*19. subtle  
+*19. hard to recognize, hardly perceived, slight  
+**The signs of dishonesty are so subtle that they often go undetected.  
+**미묘한, 감지하기 어려운  
+
+
+*20. conducive to  
+*20. favorable to, helpful for, beneficail to  
+**Energetic teachers and fun lessons are conducive to student learning.   
+**~에 도움이 되는  
+
+
+*21. preoccupied with  
+*21. concentrated on, absorbed in, immersed in  
+**The crock made his getaway while officials were preoccupied with the fire he started.  
+**~에 몰두한  
+
+
+*22. swift  
+*22. quick, speedy, fleet  
+**With a swift movement, Maggie stood upright.  
+**재빠른  
+
+
+*23. menace  
+*23. threaten, intimidate, frighten  
+**The thief menaced the neighborhood for weeks before being caught.  
+**위협하다  
+
+
+*24. akin to  
+*24. similar to, like  
+**Ukrainians are culturally and racially akin to Russians.  
+**~과 유사한  
+
+
+*25. expend  
+*25. use, use up, spend, consume  
+**Athletes expend more energy in hot and humid weather, so they are likely to feel tired more quciekly.  
+**쓰다  
+
+
+*25-1. expand  
+*25-1. enlarge, increase  
+**확장하다  
+
+
+*26. belittle  
+*26. disregard, underestimate  
+**Jane did not realize that she was belittling her colleagues by constantly interrupting them.  
+**경시하다  
+
+
+*27. commend  
+*27. admire, praise, compliment  
+**The general commended the soldiers for their bravery during the battle.  
+**칭찬하다  
+
+
+*27-1. command  
+*27-1. order, dictate  
+**명령  
+
+
+*28. sue  
+*28. take a strong legal action against, charge  
+**The company sued its supplier for breach of contract.  
+**고소하다  
+
+
+*29. innovation  
+*29. new development, novelty, new idea  
+**Built-in cameras and web browsing capabilities are amazing innovations in cellular phone technology.  
+**혁신, 새로 도입한 것  
+
+
+*30. fragmentation  
+*30. destruction, disintegration, disruption  
+**The Cultural Revolution in China caused a fragmentation of societal ideals.  
+**붕괴, 분열  
+
+
+*31. mainly  
+*31. principally, generally, primarily, cheifly  
+**In California, rain occurs mainly during the winter months.  
+**주로  
+
+
+*32. sufficient  
+*32. enough, adequate, ample  
+**For most healthy adults, a few days of rest is sufficient to get over a cold.  
+**충분한  
+
+
+*33. abnormally  
+*33. unusually, oddly, exceptionally, atypically  
+**An abnormally rapid heart rate may indicate a serious health problem.  
+**이례적으로, 이상하게  
+
+
+*34. barrier  
+*34. bar, obstacle, obstruction  
+**The mountains form a natural barrier between the two countries.  
+**a bar to effective communication  
+**장벽, 장애물  
+
+
+
+*35. gigantic  
+*35. huge, immense, colossal  
+**The gigantic thunderstorm in Japan was much more serious than anyone had anticipated.  
+**거대한  
+
+
+*36. reproduce  
+*36. copy, duplicate, imitate  
+*36. breed, multiply, propagate  
+**The director sometimes reproduces others' styles as homage to their work.  
+**All living organisms need to reproduce to keep their species alive.  
+**복제하다, 모사하다  
+**번식하다  
+
+
+*37. allow  
+*37. enable, permit, let  
+**Farmers allowed firefighters to use water from their ponds to put out the wildfire.  
+**허락하다  
+
+
+*38. penetrate  
+*38. pierce, go through, enter  
+**A large iceberg penetrated the Titanic's steel frame and caused the ship to sink.  
+**꿰뚫다  
+
+
+*39. device  
+*39. mechanism, apparatus, appliance  
+**The smartphone is one of the most useful devices for communication.  
+**장치, 기구  
+
+
+*40. divergent  
+*40. varying, different, dissimilar  
+**In the debate, the political candidates discussed their divergent views.  
+**다른, 갈라지는  
+
+
+*41. flaw  
+*41. defect, fault, blemish, shrtcoming  
+**In the play Cyrano De Bergerac, the protagonist's most obvious flaw is his grotesque nose.  
+**결점  
+
+
+*42. buffer  
+*42. protect, cushion  
+**Installing thick windwos in your home will buffer against the cold weather.  
+**완화하다, 보호하다  
+
+
+*43. refute  
+*43. disprove, rebut, prove false  
+**Galileo refuted the theory that the Earth was at the center of the universe.  
+**논박하다  
+
+
+*44. domestic  
+*44. household, home, family  
+**If both the husband and wife work, they should share the domestic chores.  
+**가정의  
+
+
+*44-1. domesticate  
+*44-1. tame, train  
+**길들이다, 사육하다  
+
+
+*45. on the spur of the moment  
+*45. without planning, on impulse  
+**On the spur of the moment, Lucy and Henry drove to the beach to enjoy the unexpectedly warm day.  
+**충동적으로  
+
+
+*46. temperate  
+*46. moderate, mild, clement  
+**Fruits such as apples and pears grow in theperate climates.  
+**온화한  
+
+
+*47. consistent with  
+*47. in agreement with, congruent with  
+**Erica chose a major that was consistent with her goal of being a doctor.  
+**~과 일치하는  
+
+
+*48. splendor  
+*48. magnificence, grandeur, majesty  
+**The splendor of the massive statues on Easter Island impressed early European explorers.  
+**장려함, 화려함  
+
+
+*49. prosper  
+*49. succeed, flourish, thrive  
+**Careful planning and good opportunities can help a business prosper.  
+**번창하다, 성공하다  
+
+
+*50. brew  
+*50. develop, loom, be on the way  
+**Meteorologists use radar and satellite imaging to determine whether a typhoon is brewing.  
+**일어나려고 하다  
+
+
+*51. persevere  
+*51. continue, carry on, persist  
+**Despite his injury, the marathon runner persevered until the end of the race.  
+**인내하며 계속하다  
+
+
+*51-1. preserve  
+*51-1. protect, conserve  
+**보호하다, 보존하다  
+
+
+*52. bias  
+*52. prejudice  
+**Some nutiritionists have a strong bias against genetically modified food.  
+**편견  
+
+
+*53. administer  
+*53. manage, supervise, conduct  
+*53. give, provide  
+**An external consultant has been hired to administer the large goernmental grant.  
+**It's crucial to double-check the dosage of the medication before you administer it.  
+**관리하다  
+**주다, 투여하다  
+
+
+*54. groundless  
+*54. unfounded, baseless  
+**Although Sarah knew her fear of the dark was grounless, she still used a nightlight.  
+**근거 없는  
+
+
+*55. arouse  
+*55. stimulate, provoke, incite  
+*55. awake  
+**The strange sight in the distance aroused Watson's curiosity, so he moved closer to get a better look.  
+**arouse Jane from sleep  
+**자극하다  
+**잠에서 깨우다  
+
+
+*56. occupy  
+*56. engross, engage, absorb  
+**Basic needs, such as food and shelter, occupied the minds of early humans.  
+**(주의-마음을) 끌다  
+
+
+*57. virtual  
+*57. amlost complete  
+**A further reduction in the size of the Arctic ice cap is a virtual certainty.  
+**거의 ~과 다름없는, 사실상의  
+
+
+*58. unexplored  
+*58. uncovered  
+**The student wrote a paper on some of the unexplored aspects of social media.  
+**다루어지지 않은, 논의되지 않은  
+
+
+*59. tuned to  
+*59. in agreement with  
+**An employee who is tuned to the goals of management is more likely to be promoted.  
+**~과 일치된  
+
+
+
+
+
+
+
+
+
+
+
+
+
 # day 10  
 
 

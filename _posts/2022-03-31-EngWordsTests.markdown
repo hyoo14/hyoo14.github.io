@@ -23,54 +23,24 @@ categories: study
 
 
 *1. modify  
-*1. change, alter, adjust, adapt  
-**Many software settings can be modified to improve the performance of a computer.   
-**바꾸다, 조정하다.  
-
-
 *2. initially  
-*2. at first, originally, primarily  
-**Ben initially supported Roger’s plan, but later opposed it.  
-**처음에  
-
-
 *3. critical  
+*4. luminous  
+*5. facilitate  
+*6. refinement  
+*7. attribute  
+
+
+*1. change, alter, adjust, adapt  
+*2. at first, originally, primarily  
 *3. important, crucial, essential  
 *3. dangerous, risky  
-**Air traffic controllers must make critical decisions every day that affect the lives of many people.  
-**The patient's adverse reaction to the medicine caused his heart rate to drop to a critical level.  
-**중요한  
-**위독한, 위험한  
-
-
-*4. luminous  
 *4. brilliant, bright, shining, glowing  
 *4. clear, explicit  
-**The luminous object that appeared over Europe in AD 1066 was Halley's Comet.  
-**a concise and luminous explanation  
-**빛나는  
-**명쾌한  
-
-
-*5. facilitate  
 *5. ease, make easy, help, assist, aid  
-**Freedom of information laws facilitate access to government documents for researchers.  
-**용이하게 하다  
-
-
-*6. refinement  
 *6. small improvement, advancement, enhancement  
-**For 14 years, Alfred Wegener made numerous refinements to his theory of continental drift.  
-**개선  
-
-
-*7. attribute  
 *7. charcateristic, trait, quality, property  
 *7. ascribe, credit, impute, refer  
-**The prime minister's ability to speak eloquently is considered one of his greatest attributes.  
-**The world's increase in energy use can be attributed to the population growth.  
-**특성  
-**~의 탓(덕)으로 돌리다   
 
 
 *8. belch  
