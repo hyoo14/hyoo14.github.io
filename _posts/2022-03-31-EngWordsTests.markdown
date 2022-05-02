@@ -19,6 +19,403 @@ categories: study
 {% endhighlight %}
 
 
+# day10(220502)  
+
+
+*1. modify  
+*1. change, alter, adjust, adapt  
+**Many software settings can be modified to improve the performance of a computer.   
+**바꾸다, 조정하다.  
+
+
+*2. initially  
+*2. at first, originally, primarily  
+**Ben initially supported Roger’s plan, but later opposed it.  
+**처음에  
+
+
+*3. critical  
+*3. important, crucial, essential  
+*3. dangerous, risky  
+**Air traffic controllers must make critical decisions every day that affect the lives of many people.  
+**The patient's adverse reaction to the medicine caused his heart rate to drop to a critical level.  
+**중요한  
+**위독한, 위험한  
+
+
+*4. luminous  
+*4. brilliant, bright, shining, glowing  
+*4. clear, explicit  
+**The luminous object that appeared over Europe in AD 1066 was Halley's Comet.  
+**a concise and luminous explanation  
+**빛나는  
+**명쾌한  
+
+
+*5. facilitate  
+*5. ease, make easy, help, assist, aid  
+**Freedom of information laws facilitate access to government documents for researchers.  
+**용이하게 하다  
+
+
+*6. refinement  
+*6. small improvement, advancement, enhancement  
+**For 14 years, Alfred Wegener made numerous refinements to his theory of continental drift.  
+**개선  
+
+
+*7. attribute  
+*7. charcateristic, trait, quality, property  
+*7. ascribe, credit, impute, refer  
+**The prime minister's ability to speak eloquently is considered one of his greatest attributes.  
+**The world's increase in energy use can be attributed to the population growth.  
+**특성  
+**~의 탓(덕)으로 돌리다   
+
+
+*8. belch  
+*8. suddenly emit, discharge, erupt, vent  
+**Volcanoes can belch toxic fumes without warning.  
+**분출하다  
+
+
+*9. underrate  
+*9. undervalue, underestimate, belittle  
+**Many parents underrate the importance of playing with their children.  
+**과소평가하다  
+
+
+*10. immense  
+*10. large, enormous, huge, tremendous  
+**The immense statue of the Greek goddess Athena attracted many tourists to thee Acropolis.  
+**거대한  
+
+
+*10-1. immerse  
+*10-1. bury, submerge  
+**담그다, 파묻다  
+
+
+*11. virtue  
+*11. goodness  
+*11. merit, desirable quality, strength  
+**Accoring to legend, King Arthur was both a great warrior and a man of virtue.  
+**A virtue shared by all great leaders is the ability to motivate others.  
+**미덕  
+**장점  
+
+
+*12. bustling  
+*12. busy, lively  
+*12. rush, hasten  
+**During the summer, the sidewalks and shops near the beach are bustling with people.  
+**붐비는, 떠들썩한  
+**서두르다  
+
+
+*13. distinct  
+*13. different, separate, discrete  
+*13. definite, clear and recognizable  
+**Each region of Italy maintains its own distinct traditions.  
+**There was a distinct difference in the twins' personalities.  
+**다른, 별개의  
+**뚜렷한  
+
+
+*14. thriving  
+*14. prosperous, successful, flourishing  
+**Our town used to be very small, but it has grown into a thriving community.  
+**번영하는  
+
+
+*15. obvious  
+*15. evident, clear, apparent, conspicuous  
+**It was obvious that Fred didn't understand what Wilma meant.  
+**분명한  
+
+
+*16. exceptional  
+*16. extraordinary, aabnormal, unusual  
+**The Ancient Greek Olympians displayed an exceptional amout of strength and endurance.  
+**이례적인  
+
+
+*17. cumbersome  
+*17. difficult to handle, burdensome, awkward  
+**Although the cultivator looks cumbersome, it is actually easy to use.  
+**다루기 힘든  
+
+
+*18. boon  
+*18. great benefit, advantage  
+**Due to so many people purchasing gifts, the Christmas season is always a boon to retail stores.  
+**큰 이익, 혜택  
+
+
+*18-1. boom  
+*18-1. flourish, thrive  
+**갑자기 번창하다   
+
+
+*19. optimum  
+*19. best, most favorable, supreme  
+**Machines achieve optimum performance when they are properly maintained and regularly used.  
+**최고의  
+
+
+*20. uniformly  
+*20. evenly, regularly, consistently  
+**If the paint is not spread uniformly on the wall, there will be variations in color when it dries.  
+**균일하게, 한결같이  
+
+
+*21. unleash  
+*21. release, unloose  
+**We took our dogs to the fenced park so that we could unleash them and let them run free.  
+**풀다  
+
+
+*22. acquire  
+*22. obtain, gain, procure, earn  
+**Some people acquired great wealth by investing in the stock market.  
+**얻다  
+
+
+*23. enigma  
+*23. mystery, puzzle, riddle  
+**Even today, the origin of Egypt's great pyramids is an enigma.  
+**수수께끼  
+
+
+*24. steadfast  
+*24. unwavering, firm, enduring, resolute  
+**It is the president's steadfast belief that Congress needs more women.  
+**변함없는, 단호한  
+
+
+*25. dainty  
+*25. delicate, exquisite, refined  
+**At the wedding, the decorations included thousands of dainty flowers.  
+**우아한, 섬세한  
+
+
+*26. anomaly  
+*26. irregularity, abnormality, exception  
+**Modern airplanes are very safe, so crashes are anomalies.  
+**이례적인 것, 예외   
+
+
+*27. splendid  
+*27. marvelous, magnificent  
+**The Palace of Versailles is a splendid example of French Architecture.  
+**멋진  
+
+
+*28. rapport  
+*28. bond, relationship, link, tie  
+**The friendly teacher had a strong rapport with his students.  
+**관계  
+
+
+*29. question  
+*29. take a critical look at, dispute  
+**Some people question the educational value of certain testing methods, such as multiple-choice exams.  
+**~에 대해 이의를 제기하다  
+
+
+*29-1. questioning  
+*29-1. suspicious, doubtful  
+**미심쩍어하는  
+
+
+*30. scatter  
+*30. disperse, dissipate, distribute, spread out, widely spread  
+**The man scattered grass seeds all over the lawn.  
+**흘뿌리다  
+
+
+*31. escalate  
+*31. intensify, increase, mount, rise  
+**The demonstration quickly escalated when a protestor threw a glass bottle at the police.  
+**확대되다, 증대하다.  
+
+
+*32. temporary  
+*32. short-lived, makeshift, for a limited time, transitory  
+**The pill caused a few temporary side effects.  
+**일시적인  
+
+
+*33. attest  
+*33. confirm, support, prove  
+**Three witnesses signed the will to attest its authenticity.  
+**증명하다, 입증하다  
+
+
+*34. fortify  
+*34. strengthen, reinforce  
+**To prepare for war, the general had his mem fortify the walls of the fort.  
+**강화하다  
+
+
+*35. remove  
+*35. eliminate, extract, withraw  
+**A plastic surgeon can remove scars using a laser.  
+**제거하다  
+
+
+*36. end  
+*36. purpose, goal, aim  
+*36. limit, boundary  
+**The end of the project is to increase agricultural yields in Sub-Saharan Africa.  
+**the end of one's tolerance  
+**목적, 목표  
+**한계  
+
+
+*37. plentiful  
+*37. abundant, bountiful, rich  
+**Fish and plankton are plentiful in the sea.  
+**풍부한  
+
+
+*38. make it  
+*38. arrive  
+*38. get on, succeed.  
+**Despite the traffic congestion downtown, all the fans managed to make it on time for the concert.  
+**make it as a singer  
+**(제시간에)도착하다  
+**성공하다  
+
+
+*39. devastate  
+*39. destroy, demolish, ravage, ruin  
+**The logging industry has devastated many tropical rainforests in South America.  
+**완전히 파괴하다  
+
+
+*40. eminently  
+*40. exceptionally, highly, extremely  
+**The city's new subway system is eminently practical.  
+**대단히, 현저히  
+
+
+*41. subtraction  
+*41. decrease, deduction, reduction  
+**Many teachers opposed the subtraction of funds for art and music.  
+**삭감, 공제  
+
+
+*42. as a rule of thumb  
+*42. in general  
+**As a rule of thumb, people should visit the dentist for a check-up every six months.  
+**경험적으로 보아 대개  
+
+
+*43. blur  
+*43. make less distinct, obscure, cloud  
+**The new political party blurred the lines between conservatives and liberals.  
+**흐리게 하다  
+
+
+*44. relay  
+*44. transfer, communicate, trasmit, impart  
+**In the 19th century, news reports were relayed by telegram.  
+**전달하다  
+
+*45. expandable  
+*45. able to be enlarged, extendable  
+**The dining room table is expandable to accommodate dinner guests.  
+**펼칠 수 있는, 확장할 수 있는  
+
+
+*45-1. expendable  
+*45-1. dispensable, unnecessary  
+**필요 없는  
+
+
+*46. scrupulous  
+*46. careful, fastidious, meticulous  
+*46. honest, moral  
+**The police officer was praised for his scrupulous performance of duties.  
+**A scrupulous real estate agent does not charge clients excessive fees.  
+**세심한, 꼼꼼한  
+**양심적인  
+
+
+*47. approximately  
+*47. about, roughly, nearly  
+**Approximately 25 percent of the world's electricity is used by the US alone.  
+**대략  
+
+
+*48. paradoxical  
+*48. seemingly contradictory, ironic  
+**Einstein thought that using violence to restore peace was paradoxical.  
+**역설적인  
+
+
+*49. source  
+*49. origin, beginning, derivation  
+**Located in central Africa, Lake Victoria is the source of the Nile River.  
+**근원, 기원  
+
+
+*50. adhere  
+*50. stick, cleave, cling  
+**The glue that covers a stamp's back allows it to adhere to an envelope.  
+**부착되다, 달라붙다  
+
+
+*51. available  
+*51. accessible, obtainable  
+**Books were available to the masses for the first time with the invetion of Gutenberg's printing press.  
+**구할 수 있는  
+
+
+*52. get rid of  
+*52. eliminate, remove, dispose of  
+**Meditation has become a popular way for people to get rid of stress.  
+**~을 없애다  
+
+
+*53. repel  
+*53. drive away, beat off  
+**The high walls of Medieval castles made it easy to repel attackers.  
+**물리치다  
+
+
+*53-1. repellent  
+*53-1. disgusting, repulsive  
+**혐오감을 주는  
+
+
+*54. maximize  
+*54. increase to the greatest possible degree  
+**Manufacturers set prices for their products that will maximize their potential profits.  
+**극대화하다  
+
+
+*55. outermost  
+*55. farthest away, farthest, most remote  
+**Neptune is the outermost planet in the solar system.  
+**가장 바깥의  
+
+
+*56. bind  
+*56. fie, fasten  
+**For hygiene reasons, restaurant employees with long hair must bind it before they start work.  
+**묶다  
+
+
+*57. visible  
+*57. perceptible  
+**The symptoms of the life-threatening disease may not be visible for several years after infection.  
+**눈에 띄는, 명백한  
+
+
+
+
 
 # day9(220427)  
 
