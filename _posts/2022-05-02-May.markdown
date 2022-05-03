@@ -9,6 +9,10 @@ categories: study
 
 
 May week1:  
+*eng words  
+*eng write prac  
+*eng speak memo   
+*eng write memo  
 
 
 {% endhighlight %}
@@ -16,9 +20,17 @@ May week1:
 
 Monday, May 02, 2022  
 *eng words  
+    
+o
+
+
+Tuesday, May 03, 2022  
+o  
+*eng words  
 *eng write prac  
 *eng speak memo   
-*eng write memo    
-o  
+*eng write memo  
+
+  
 
 
