@@ -19,6 +19,270 @@ categories: study
 {% endhighlight %}
 
 
+# day11(220504)  
+
+
+*1. plausible
+*2. transform
+*3. counterpart
+*4. nevertheless
+*5. pronounced
+*6. celebrated
+*7. exceedingly
+*8. chancy
+*9. vertical
+*10. persist
+*11. magnitude
+*12. discern
+*12-1. discerning
+*13. generate
+*14. eccentric
+*15. alternative
+*16. stratege
+*17. refine
+*18. precious
+*19. subtle
+*20. conducive to
+*21. preoccupied with
+*22. swift
+*23. menace
+*24. akin to
+*25. expend
+*25-1. expand
+*26. belittle
+*27. commend
+*27-1. command
+*28. sue
+*29. innovation
+*30. fragmentation  
+*31. mainly
+*32. sufficient
+*33. abnormally
+*34. barrier
+*35. gigantic
+*36. reproduce
+*37. allow
+*38. penetrate
+*39. device
+*40. divergent
+*41. flaw
+*42. buffer
+*43. refute
+*44. domestic
+*44-1. domesticate
+*45. on the spur of the moment
+*46. temperate
+*47. consistent with
+*48. splendor
+*49. prosper
+*50. brew
+*51. persevere
+*51-1. preserve
+*52. bias
+*53. administer
+*54. groundless
+*55. arouse
+*56. occupy
+*57. virtual
+*58. unexplored
+*59. tuned to  
+
+
+*1. possible
+*1. believable  
+*1. likely  
+*1. probable  
+*2. convert  
+*2. change  
+*2. alter  
+*3. complement
+*3. equivalent
+*4. in spite of that
+*4. however
+*4. still
+*4. yet
+*4. nonetheless
+*5. notable
+*5. striking
+*5. marked
+*5. significant
+*5. noticeable
+*5. distinct
+*5. strong
+*6. famous
+*6. renowned
+*6. well-known
+*7. highly
+*7. extremely
+*7. excessively
+*7. hugely
+*8. risky
+*8. perilous
+*8. dangerous
+*9. upright
+*9. up-and-down
+*9. erect
+*10. continue
+*10. last
+*10. endure
+*10. remain
+*11. extent
+*11. size
+*11. degree
+*11. measure
+*11. amount
+*12. identify
+*12. detect
+*12. distinguish
+*12-1. astute
+*12-1. perceptive
+*13. produce
+*13. create
+*14. unusual
+*14. bizarre
+*14. peculiar
+*14. odd
+*15. substitutive
+*15. different
+*15. substitute
+*15. choice
+*15. option
+*16. plan
+*16. method
+*16. scheme
+*17. improve
+*17. perfect
+*18. valuable
+*18. dear
+*18. priceless
+*19. hard to recognize
+*19. hardly perceived
+*19. slight
+*20. favorable to
+*20. helpful for
+*20. beneficail to
+*21. concentrated on
+*21. absorbed in
+*21. immersed in
+*22. quick
+*22. speedy
+*22. fleet
+*23. threaten
+*23. intimidate
+*23. frighten
+*24. similar to
+*24. like
+*25. use
+*25. use up
+*25. spend
+*25. consume
+*25-1. enlarge
+*25-1. increase
+*26. disregard
+*26. underestimate
+*27. admire
+*27. praise
+*27. compliment
+*27-1. order
+*27-1. dictate
+*28. take a strong legal action against
+*28. charge
+*29. new development
+*29. novelty
+*29. new idea
+*30. destruction
+*30. disintegration
+*30. disruption
+*31. principally
+*31. generally
+*31. primarily
+*31. cheifly
+*32. enough
+*32. adequate
+*32. ample
+*33. unusually
+*33. oddly
+*33. exceptionally
+*33. atypically
+*34. bar
+*34. obstacle
+*34. obstruction
+*35. huge
+*35. immense
+*35. colossal
+*36. copy
+*36. duplicate
+*36. imitate
+*36. breed
+*36. multiply
+*36. propagate
+*37. enable
+*37. permit
+*37. let
+*38. pierce
+*38. go through
+*38. enter
+*39. mechanism
+*39. apparatus
+*39. appliance
+*40. varying
+*40. different
+*40. dissimilar
+*41. defect
+*41. fault
+*41. blemish
+*41. shortcoming
+*42. protect
+*42. cushion
+*43. disprove
+*43. rebut
+*43. prove false
+*44. household
+*44. home
+*44. family
+*44-1. tame
+*44-1. train
+*45. without planning
+*45. on impulse
+*46. moderate
+*46. mild
+*46. clement
+*47. in agreement with
+*47. congruent with
+*48. magnificence
+*48. grandeur
+*48. majesty
+*49. succeed
+*49. flourish
+*49. thrive
+*50. develop
+*50. loom
+*50. be on the way
+*51. continue
+*51. carry on
+*51. persist
+*51-1. protect
+*51-1. conserve
+*52. prejudice
+*53. manage
+*53. supervise
+*53. conduct
+*53. give
+*53. provide
+*54. unfounded
+*54. baseless
+*55. stimulate
+*55. provoke
+*55. incite
+*55. awake
+*56. engross
+*56. engage
+*56. absorb
+*57. amlost complete
+*58. uncovered
+*59. in agreement with
+
+
 # day10(220502)  
 
 
