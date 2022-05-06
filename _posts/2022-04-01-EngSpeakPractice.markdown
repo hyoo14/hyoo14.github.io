@@ -259,6 +259,81 @@ Moreover, the animal’s blood vessels don’t travel to the outer parts of its 
 
 
 
+-------------------------------------------------    
+22.05.06 Friday    
+-------------------------------------------------    
+
+
+I prefer to borrow books rather than to buy them.  
+
+
+First, It is possible to save a lot of money by borrowing books.  
+For example, I used to spend over a hundred dollars each month buying books.  
+Now that I borrow them, I do not have to spend this money.  
+
+
+Second, borrowing books is a great way to discover new authors.  
+To be specific, I usually buy books written by the same authors.  
+But when I go to the library, I have the opportunity to try reading books by other authors without having to buy them.  
+
+
+-------------------------------------------------   
+
+
+According to the reading, a student thinks that the university students need a new parking lot even though there’s already one on campus.  
+The man does not think it is a good idea for two reasons.  
+
+
+First, he says that the university will have to spend money for a parking facility.  
+The university will increase tuition fees to pay for the parking lot.  
+
+
+Second, he mentions that students go to the cafe to have drinks or to study.  
+They would dislike staying at the cafe with all the exhaust and noise coming from the cars.  
+
+
+-------------------------------------------------   
+
+
+According to the reading, climate adaptation is how animals respond to climatic conditions in their habitats to ensure survival.  
+The professor describes two examples to explain climate adaptation.  
+
+
+First, she describes polar bears.  
+Found in the Arctic Circle where the weather is ver cold, the large body of a polar bear is an adaptation to its habitat.  
+Because larger animals lose less body heat, polar bears can stay warm and survive the cold weather.  
+
+
+Second, she describes spectacled bears.  
+Spectacled bears live in warmer areas of South America and have a relatively small body size.  
+This allows them to radiate more heat through the skin and keep their body temperatures low, making them well-suited to a mild climate.  
+
+-------------------------------------------------   
+
+The professor explains negative effects of advertising by giving two examples.  
+
+
+First, he describes the way advertising encourages excessive consumption.  
+For example, cell phones are overly marketed.  
+Advertising creates a continuous cycle of demand, so customers trade in for the newest model even though their phones function well.  
+
+
+Second, he describes the negative effect advertising has on body image.  
+For example, a narrow range of appearances and body types is portrayed in ads for fashion and beauty products, so viewers naturally adjust their personal beauty standards based on these.  
+However, since many people can’t measure up to the standard of beauty in the ads, they may develop low self-esteem.  
+
+-------------------------------------------------   
+
+
+
+
+
+
+
+
+
+
+
 
 
 
