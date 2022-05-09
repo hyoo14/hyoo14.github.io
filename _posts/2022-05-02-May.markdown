@@ -5,6 +5,28 @@ date:   2022-05-02 10:41:10 +0900
 categories: study
 ---
 
+
+{% highlight ruby %}
+
+
+May week2:  
+*eng words  
+*eng write prac  
+*eng speak memo   
+*eng write memo  
+
+
+{% endhighlight %}
+
+
+Monday, May 09, 2022     
+o  
+*eng words  
+*eng write prac  
+*eng speak memo   
+*eng write memo  
+
+
 {% highlight ruby %}
 
 
@@ -44,7 +66,8 @@ o
 Friday, May 06, 2022  
 *eng write prac  
 *eng words  
-o  
-*eng speak memo   
+*eng speak memo    
 *eng write memo  
+o  
+  
 
