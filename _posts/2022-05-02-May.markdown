@@ -20,12 +20,17 @@ May week2:
 
 
 Monday, May 09, 2022     
+*eng speak memo   
 o  
 *eng words  
 *eng write prac  
-*eng speak memo   
 *eng write memo  
 
+
+Tuesday, May 10, 2022     
+*eng speak memo   
+o  
+*eng words  
 
 {% highlight ruby %}
 
