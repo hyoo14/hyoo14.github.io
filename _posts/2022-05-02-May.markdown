@@ -29,8 +29,16 @@ o
 
 Tuesday, May 10, 2022     
 *eng speak memo   
-o  
 *eng words  
+o  
+
+
+Wedesday, May 11, 2022     
+*eng words  
+o  
+*eng write memo  
+
+
 
 {% highlight ruby %}
 
