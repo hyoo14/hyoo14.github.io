@@ -255,6 +255,54 @@ In this regard, I argue that it is advisable for young people to follow in their
 <br/>
 <br/>
 
+
+# 5
+
+
+The lecturer argues that attracting new businesses with incentives can have drawbacks.  
+This contradicts the reading passage's claim that luring new businesses with incentives is a great idea.  
+
+
+First, the lecturer maintains that it doesn't add money for local investment.  
+A university study found that overall tax revenue was reduced.  
+Companies receive tax rebates as incentives, so tax revenue does not increase.  
+This casts doubt on the reading passage's claim that attracting new businesses with incentives generates more tax revenue for local investment.  
+
+Next, the lecturer asserts that it does not provide more jobs for local people.  
+The new businesses will compete with existing ones, which means that some existing jobs will be lost.  
+In addition, the new companies will probably bring their own employees to the new area, so local residents will not get the new jobs.  
+This counters the reading passage's claim that giving incentives to companies will create jobs for locals.  
+
+
+Finally, the lecturer argues that it doesn't help to local environment.  
+In fact, pollution will increase locally when any new business is added to a region.  
+This is because even a green factory generates a small amount of pollution.  
+This refutes the reading passage's claim that using incentives to attract new businesses will benefit the local environment.  
+
+<br/>
+<br/>
+<br/>
+
+
+강의자는 장려금으로 새로운 기업을 유인하는 것이 문제점을 가질 수 있다고 주장한다.  
+이는 장려금으로 새로운 기업들을 유인하는 것이 훌륭한 생각이라는 읽기 지문의 주장을 반박한다.  
+
+
+첫째로, 강의자는 그것이 지역 투자를 위한 돈을 더해주지 않는다고 주장한다.  
+한 대학 연구는 전반적인 세입이 감소했다는 것을 발견했다.  
+기업들은 세금 환급을 장려금으로 받으므로, 세입은 증가하지 않는다.  
+이는 장려금으로 새로운 기업들을 유인하는 것이 지역 투자를 위한 더 많은 세입을 창출한다는 읽기 지문의 주장에 의구심을 제기한다  
+
+다음으로, 강의자는 그것이 지역 사람들을 위한 더 많은 일자리를 제공하지 않는다고 주장한다.  
+새로운 기업들은 기존의 기업들과 경쟁할 것이며, 이는 기존의 일부 일자리가 없어질 것임을 의미한다.  
+게다가, 새로운 기업들은 아마도 그들의 직원들을 새로운 지역으로 데려올 것이므로, 지역 주민들은 새로운 일자리들을 얻지 못할 것이다.  
+
+
+<br/>
+<br/>
+<br/>
+
+
 # 1
 
 일부 사람들은 우리에게 실제 세상에 대해 가르쳐주는 영화를 보는 것이 가장 좋다고 생각한다.  
