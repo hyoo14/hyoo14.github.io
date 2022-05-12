@@ -189,6 +189,72 @@ In this regard, I strongly believe that friends are the foremost influence on yo
 <br/>
 <br/>
 
+
+# 4
+
+
+Some people think that it is preferable for young people to choose a different type of job than their parents did.  
+However, in my opinion, young people have more advantages if they work in the same field as their parents since they can get helpful advice from their parents and they can utilize their parents' professional contacts.  
+
+
+To begin with, young workers can receive useful advice from their parents when they share the same career.  
+Parents have gained a lot of knowledge about their jobs due to extensive work experience, and thus they can provide valuable direction.  
+For example, my friend became an elementary school teacher like her parents.  
+When she began teaching, things were really overwhelming at first.  
+She had a hard time managing her students' behavior, and she was not sure of the best way to solve the problem.  
+However, her parents were able to give her a lot of useful tips on how to manage her students.  
+They suggested that she set clear rules and enforce them consistently, and she implemented her parents' advice right away.  
+Consequently, her students' behavior improved dramatically.  
+
+
+On top of that, young people can make use of their parents' professional connections when they work in the same field.  
+In particular, young workers can utilize their parents' work-related contacts to create useful business partnerships.  
+Take the example of Bill Gates, who chose a career in business like his mother.  
+His first noteworthy success was when IBM hired his company, Microsoft, to develop software for IBM's computers.  
+This happened because Bill Gates' mother had a professional connection with one of IBM's directors.  
+She told the IBM board member about Microsoft, and as a result, Bill Gates' company could develop a partnership with IBM.
+
+
+To sum up, young people who pursue the same career that their parents did can get invaluable guidance from their parents and benefit from their parents' work-related contacts.  
+In this regard, I argue that it is advisable for young people to follow in their parents' career footsteps rather than select a different occupation for themselves.  
+
+
+
+<br/>
+<br/>
+<br/>
+
+
+일부 사람들은 젊은 사람들이 부모가 선택한 것과 다른 종류의 직업을 선택하는 것이 더 좋다고 생각한다. 
+하지만, 내 생각에는 젊은 사람들은 부모와 같은 분야에서 일하는 경우에 더 많은 이점들을 가지는데, 부모로부터 유용한 조언을 얻을 수 있고 부모의 직업상의 관계를 활용할 수 있기 때문이다.  
+
+
+우선, 젊은 근로자들은 같은 직업을 공유할 때 부모로부터 유용한 조언을 받을 수 있다.  
+부모들은 폭넓은 업무 경험으로 그들의 직업에 대한 많은 지식을 얻었고, 따라서 그들은 유익한 방향을 제시할 수 있다.  
+예를 들어, 내 친구는 그녀의 부모님처럼 초등학교 교사가 되었다.  
+그녀가 가르치는 일을 시작했을 때, 처음에는 상황이 아주 대응하기 힘들었다.  
+그녀는 학생들의 품행을 관리하는 데 힘든 시간을 보냈고, 문제를 해결하는 최선의 방법을 확신할 수 없었다.  
+하지만, 그녀의 부모님이 그녀에게 학생들을 관리하는 방법에 대해 많은 유용한 비결을 가르쳐줄 수 있었다.  
+그들은 그녀가 명확한 규칙을 세우고 그것을 지속적으로 시행할 것을 제안했고, 그녀는 부모님의 조언을 즉시 이행했다.  
+결과적으로, 그녀의 학생들의 품행은 극적으로 향상되었다.  
+
+
+게다가, 젊은 사람들은 같은 분야에서 일할 때 부모의 직업상의 관계를 이용할 수 있다.  
+특히, 젊은 근로자들은 부모의 일과 관련된 관계를 유용한 사업상의 협력 관계를 형성하는 데 활용할 수 있다.  
+자신의 어머니처럼 경영 분야에서의 직업을 선택한 빌 게이츠의 예를 보라.  
+그의 첫 주목할 만한 성과는 IBM이 그들의 컴퓨터를 위한 소프트웨어를 개발하고자 그의 회사인 Microsoft를 고용했을 때였다.  
+이 일은 빌 게이츠의 어머니가 IBM의 임원들 중 한 사람과 직업상의 관계를 맺고 있었기 때문에 일어났다.  
+그녀가 IBM의 이사에게 Microsoft에 관해 이야기했고, 그 결과, 빌 게이츠의 회사는 IBM과 협력 관계를 발전시킬 수 있었다.  
+
+
+요약하자면, 부모가 종사했던 것과 같은 직업에 종사하는 젊은 사람들은 그들의 부모로부터 매우 유용한 지도를 받을 수 있고 부모의 일과 관련된 관계로부터 이익을 얻을 수 있다.  
+이러한 점에서, 나는 젊은 사람들이 스스로 다른 직업을 선택하기보다는 부모의 직업적 발자취를 따르는 것이 바람직하다고 주장한다.  
+
+
+<br/>
+<br/>
+<br/>
+
 # 1
 
 일부 사람들은 우리에게 실제 세상에 대해 가르쳐주는 영화를 보는 것이 가장 좋다고 생각한다.  
