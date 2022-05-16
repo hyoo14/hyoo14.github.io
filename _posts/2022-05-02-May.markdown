@@ -9,6 +9,30 @@ categories: study
 {% highlight ruby %}
 
 
+May week3:  
+*eng words  
+*eng write prac  
+*eng speak memo   
+*eng write memo  
+
+
+{% endhighlight %}
+
+
+
+Monday, May 16, 2022     
+o  
+*eng words  
+*eng speak memo   
+*eng write prac  
+*eng write memo  
+
+
+
+
+{% highlight ruby %}
+
+
 May week2:  
 *eng words  
 *eng write prac  
