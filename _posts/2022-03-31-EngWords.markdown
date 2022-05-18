@@ -26,6 +26,7 @@ categories: study
     inconceivable(v) creation innovation bring-together reunite rigorous(vv) strict(vv) liability(v) preeminent(vv) wax(v) accelerate rush speed-up hesitantly(vv)  
     ridicule(v)  disdain(v) sneer(v) despise(v) during-every-part-of(v) during-the-whole-of(v) mammoth extend-across cover cross unfilled sanctify(v) revere(v)   
     significant noticeable considerable  head systematically   
+    -relic(vestige)
 *day13-merely decimate inceptive retrieve compress designate dissemination(v) hypothetical flowing stipulate(v) evident full-fledged(v)  
     laborious tantalizing transmit candidly compulsorily deliberation preposterous(vv) occasionally inconceivable breeding overriding  
     override favor sediment predominate realize circuitous owing-to(v) model with-respect-to damaging heighten(vv) shortly(v) seep(vv)  
@@ -135,7 +136,13 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 **이용, 착취  
 
 
-*5. profoundly  
+*5. relic  
+*5. remains, remnant, vestige  
+**In the jungle, archaeologists uncovered pottery and other relics from an ancient civilization.  
+**유물, 나머지  
+
+
+*6. profoundly  
 *5. deeply, completely, strongly  
 **The death of the popular king profoundly affected the emotions of his subjects.  
 **깊이, 대단히  
