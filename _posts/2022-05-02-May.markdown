@@ -53,6 +53,14 @@ o
 *eng speak memo   
 
 
+Friday, May 20, 2022     
+*eng write prac  
+*eng words  
+o
+*eng write memo    
+*eng speak memo   
+
+
 
 
 {% highlight ruby %}
