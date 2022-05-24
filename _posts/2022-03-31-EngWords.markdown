@@ -14,18 +14,18 @@ categories: study
 *For improving english skill  
 
 
-*day15-intact albeit attainment progressively setback cutback supress incidentally tacit sustained radical grasp precipitate interlock accordingly  
-    remarkably disputable congeal realm dimension deplete ice-sheet bountifully periphery apparently far-reaching embody evade against  
-    oblige identical intimately spot immerse be-tempted-to inception   
-  -whole complete unaffected intricate elaborate involved system standard usual sensible sufficient fulfillment increasingly hold-back restrain  
-    stop-by-force by-the-way maneuver implicit implied establish-the-truth-of constant continued uninterrupted prolonged fundamental basic  
-    extreme drastic high-quality superior main comprehend apprehend grip seize conspicuously notably bring-about cause give-rise-to trigger  
-    link connect join consequently for-the-reason applicable pertinent germane surprisingly challengeable debatable arguable solidify harden  
-    stiffen condense cover wary prudent discreet sphere domain praise magnify magnitude exhaust empty use-up reduce distinctive peculiar  
-    special quality onlooker copiously plentifully exuberantly lose-the-ability-to-move fluctuation difference edge boundary border fringe  
-    seemingly ostensibly outwardly evidently extensive widespread board incarnate represent manifest contain incorporate elude shun next-to  
-    beside  awing-to attrubutable-to arrange assort force require compel assist benefit indistinguishable equal dubious detect see find cover  
-    plunge dip be-inclined-to beginning  
+*day15-intact albeit attainment(vv) progressively setback cutback supress(v) incidentally(v) tacit sustained radical grasp precipitate(v) interlock accordingly  
+    remarkably disputable congeal(v) realm dimension deplete(v) ice-sheet bountifully periphery apparently far-reaching embody(v) evade against(vv)  
+    oblige(v) identical intimately spot(v) immerse(v) be-tempted-to(vv) inception   
+  -whole(v) complete unaffected intricate elaborate involved(v) system(v) standard(vvvvv) usual(vvvvv) sensible(vvv) sufficient(vvv) fulfillment(vvv) increasingly(vvv) hold-back(v) restrain  
+    stop-by-force by-the-way(v) maneuver(v) implicit implied establish-the-truth-of(v) constant(vvvvv) continued(vvvvv) uninterrupted(vvvvv) prolonged(vvvvv) fundamental(v) basic(v)  
+    extreme drastic high-quality(v) superior(v) main comprehend(v) apprehend(v) grip(v) seize(v) conspicuously(vv) notably(vv) bring-about(v) cause(v) give-rise-to(v) trigger(v)  
+    link connect join consequently(vvvv) for-the-reason(vvvv) applicable(vv) pertinent(vv) germane(vv) surprisingly challengeable debatable arguable solidify(v) harden(v)  
+    stiffen(v) condense(v) cover(vv) wary(vv) prudent(vv) discreet(vv) sphere(v) domain(v) praise(v) magnify(v) magnitude exhaust(v) empty(v) use-up(v) reduce(v) distinctive peculiar(v)  
+    special(vv) quality(vvv) onlooker(vv) copiously(vv) plentifully exuberantly(vv) lose-the-ability-to-move fluctuation(v) difference(v) edge boundary border fringe(v)  
+    seemingly(v) ostensibly(v) outwardly(v) evidently(v) extensive(v) widespread(v) board(v) incarnate(vvv) represent(vvv) manifest(vvv) contain(vvv) incorporate(vvv) elude shun next-to  
+    beside  owing-to(v) attrubutable-to(v) arrange(vv) assort(vv) force(v) require(v) compel(v) assist(v) benefit(v) indistinguishable(v) equal(v) dubious(vvv) detect see find cover(vv)  
+    plunge(vv) dip(vv) be-inclined-to(v) beginning  
 *day14-lethal modest(v) deflect highlight exert(v) recurring meager(v) prevail(v) exclusively(vv) consensus now-and-then discrete improbable  
     undisputed(v) allocation inconclusive withstand cornerstone mobilize given-that(vv) cargo solitary coinage(v) reconcile obligation  
     sever foremost surge hasten(v) tentatively(v) scorn throughout pitfall(v) befall(vv) coupled-with span hollow hallow appreciable(v)  
@@ -433,7 +433,7 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 
 
 *46. due to  
-*46. caused by, awing to, attributable to  
+*46. caused by, owing to, attributable to  
 **Falling real estate prices due to decreased demand is a cause for concern.  
 **~로 인한, ~에 기인하는  
 
