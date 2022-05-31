@@ -13,6 +13,13 @@ categories: study
 {% endhighlight %}
 
 
+
+[220531]
+
+<br/>
+<br/>
+<br/>
+
 live performance or watching television  
 
 live performance  
@@ -54,7 +61,9 @@ Second, a big-city university can provide me with more opportunities.
 For example, in big cities students have more chances to meet people from various countries and backgrounds,  
 (and this kind of social networking can make it easy for students to experience different cultures.)  
 
-
+<br/>
+<br/>
+<br/>
 
 I agree with the statement that schools should require all students to take a physical education class.   
 
@@ -64,7 +73,9 @@ For example, gym classes require students to stretch and exercise, and these act
 Second, P.E. classes are fun.  
 To be specific, playing sports can be pleasurable for students, and having fun offers stress relief and a break from the mental pressure of academic classes.  
 
-
+<br/>
+<br/>
+<br/>
 
 I prefer to communicate face-to-face rather than through e-mail  
 
@@ -75,7 +86,9 @@ Second, talking to someone directly is more convenient.
 To be specific, you can get an immediate response with no delay.  
 (and this has a significant advantage over e-mail)  
 
-
+<br/>
+<br/>
+<br/>
 
 I think building a park is better than building a library in my community.    
 
@@ -86,6 +99,9 @@ For example, people can go for walks, play sports, or have picnics with friends 
 Second, building a park is better for our health.  
 To be specific, there will be a lot of trees in the park, and they can provide us with fresh air.  
 
+<br/>
+<br/>
+<br/>
 
 
 I prefer deciding after taking time to think things over to making decisions instantly.    
@@ -96,7 +112,9 @@ For example, things such as marriage and purchasing a house are long-term commit
 Second, making hasty decisions can lead to mistakes.  
 For example, once I bought clothes hastily without thinking and later regretted it because I didn't have enough money to buy my textbooks for school.  
 
-
+<br/>
+<br/>
+<br/>
 <br/>
 
 
@@ -111,7 +129,9 @@ For example, technology such as smartphones and the Internet has made it possibl
 Second, travel to most parts of the world is possible today.  
 To be specific, being able to visit nearly any country on earth via air, water, or land has given young people the opportunity to learn about other countries firsthand.    
 
-
+<br/>
+<br/>
+<br/>
 
 I would prefer to take a challenging course at a university.    
 
@@ -123,7 +143,9 @@ Second, a challenging course can better prepare me for the future.
 To be specific, getting a good job is becoming difficult because there is so much competition.  
 (If I am well trained, I will be able to compete better with others.)  
 
-
+<br/>
+<br/>
+<br/>
 
 I think studying a small class is more effective for students than studying in a large one.  
 
@@ -133,6 +155,9 @@ For example, when I was in a large class, there were so many students that I was
 Second, students have more opportunities to ask questions in small classes.  
 To be specific, the teacher will have enough time to respond to each student's question if there are fewer students.    
 
+<br/>
+<br/>
+<br/>
 
 I prefer to work someone who has a similar way of thinking to me.  
 
@@ -142,6 +167,9 @@ To be specific, it is much better to have a consensus in the workplace because i
 Second, thinking the same way allows people to get things done faster.  
 For example, agreeing on a particular goal and how to accomplish the goal means each person can focus on completing tasks as quickly as possible.  
 
+<br/>
+<br/>
+<br/>
 
 I disagree with the statement that the government should force rich people to share their wealth with poor people by imposing higher taxes on them.  
 
@@ -154,7 +182,9 @@ These ways are much more beneficial than paying higher taxes.
 
 
 
-
+<br/>
+<br/>
+<br/>
 
 
 
