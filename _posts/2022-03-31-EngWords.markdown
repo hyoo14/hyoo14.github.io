@@ -14,30 +14,31 @@ categories: study
 *For improving english skill  
 
 
-*day18-initiative provided-that phenomenal likewise tangible absurd  
-    inclement overly consume overall proliferation copious negligible  
-    notably worshiper pool at-the-urging-of regime acclaim reclaim  
-    declaim disparity bold allied authoritative moral compatible stress  
-    peculiarity rely-upon saturate constitution efface routinely  
-    implication unambiguous rigor contentious string decompose lateral   
+*day18-initiative(vvvv) provided-that(v) phenomenal(vv) likewise(vv) tangible absurd( vv)  
+    inclement(vvvv) overly(v) consume(v) overall(v) proliferation(vvvvv) copious(vv) negligible(vvvv)  
+    notably(vvvvv) worshiper(v) pool(vv) at-the-urging-of(vv) regime(v) acclaim(v) reclaim(v)  
+    declaim(v) disparity(v) bold(v) allied(vv) authoritative(vvv) moral(v) compatible(vvvv) stress  
+    peculiarity(vv) rely-upon saturate(v) constitution efface(v) routinely  
+    implication(vv) unambiguous(v) rigor(vv) contentious(v) string(v) decompose(v) lateral(v)   
     -enterprise ambition drive plan scheme if once on-the-condition-that  
-    supposing extraordinary remarkable similarly in-the-same-way also as-well  
-    material physical concrete substantial ridiculous preposterous ludicrous  
-    unfavorable harsh severe excessively inordinately unduly destroy devastate  
-    demolish eat devour general total comprehensive advance further forward  
-    multiplication insignificant slight minor trivial particularly especially 
-    in-particular combination put-together combination group  
-    at-the-recommendation-of embellishing administration applaud apprehensible   
-    inequality disproportion daring brave courageous vivid bright important  
-    significant drawn-out-of linked connected official authorized lesson message  
-    teaching consistent congruous consonant emphasize highlight underline  
-    emphasis accent particular feature characteristic quality depend-upon  
-    resort-to swift soak drench wet-thoroughly charter form structure wipe-out  
-    erase expunge affordable easy-to-handle move-toward come-forward near  
-    reach method way commonly regularly habitually adjust acclimate conform  
-    consequence result inference intimation clear distinct definite harshness  
-    strictness rigidness hardship adversity capable sufficient adequate  
-    inconceivable series chain side   
+    supposing extraordinary(v) remarkable(v) similarly(v) in-the-same-way(v) also(v) as-well(v)  
+    material(v) physical(v) concrete(v) substantial(v) ridiculous preposterous(v) ludicrous(v)  
+    unfavorable(v) harsh(v) severe(v) excessively(v) inordinately(v) unduly(v) destroy devastate  
+    demolish eat devour general(v) total(v) comprehensive(v) advance(v) further(v) forward(v)  
+    multiplication(v) insignificant(v) slight(v) minor(v) trivial(v) particularly especially 
+    in-particular combination(v) put-together(v) combination(v) group(v)  
+    at-the-recommendation-of(v) embellishing administration(v) applaud(v) apprehensible(v)   
+    inequality(v) disproportion(v) daring(v) brave(v) courageous(v) vivid bright important(v)  
+    significant(v) drawn-out-of(v) tempt(v) linked(v) connected(v) official(v) authorized(v) lesson message  
+    teaching spirit(v) confidence(v) consistent(v) congruous(v) consonant(v) emphasize highlight underline  
+    emphasis accent particular(v) feature(v) characteristic(v) quality(v) depend-upon  
+    resort-to(v) swift soak(v) drench(v) wet-thoroughly(v) charter(v) form(v) structure(v) wipe-out(v)  
+    erase(v) expunge(v) affordable(v) easy-to-handle(v) move-toward(v) come-forward(v) near(v)  
+    reach(v) method(v) way(v) commonly(v) regularly(v) habitually(v) adjust(v) acclimate(v) conform(v)  
+    consequence(v) result(v) inference(v) intimation(v) clear(v) distinct(v) definite(v) harshness(v)  
+    strictness(v) rigidness(v) hardship(v) adversity(v) capable(v) sufficient(v) adequate(v)  
+    inconceivable(v) series chain side  
+    -promote(advance, x-subdue)  
 *day17-ultimate(v) brittle(v) impetus(v) impetuous(vvvv) orchestrate(v) hamper(v) roughly(v) orientation(vv) orient(vvv)  
     converge(v) inflate(vv) terrain(v) in-earnest(vv) agile standstill(v) persuasively(v) miraculous intangible(vv) secure(vv)  
     subsist(v) archive(v) mode(v) commemorate(vv) henceforth(vv) transparent prominence incorporate(v)  
@@ -54,6 +55,7 @@ categories: study
     luxurious shower heap robust driving-force miss fail-to-notice inactive torpid free immune  
     not-subject-to excused somewhat slightly support prove give-a-rational-basis-of excuse  
     explanation originate unrehearsed arise-from wisely sensibly prudently accept allow permit  
+    -orientation(induction)  
 *day16-subsequently(v) explicit(vv) elicit(vvvvvv) prevailing rudimentary(vvvvvv)  
     allude-to(vvvvvv) fuse(v) infuse(vvvv) transitory(v) inviolable(vvv) supersede(v)   
     elaboration(vvv) pristine(v) hence fabricate(vvv) meet(vvv) devour amiss(vv)  
