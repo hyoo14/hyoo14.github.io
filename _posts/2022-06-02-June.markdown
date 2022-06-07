@@ -6,6 +6,39 @@ categories: study
 ---
 
 
+{% highlight ruby %}
+
+
+June week2:  
+*eng words  
+*eng write prac  
+*eng speak memo   
+*eng write memo  
+
+
+{% endhighlight %}
+
+
+
+Monday, June 06, 2022     
+*eng words  
+o  
+*eng speak memo      
+*eng write prac  
+*eng write memo   
+
+
+Tuesday, June 07, 2022     
+*eng words  
+o  
+*eng speak memo      
+*eng write prac  
+*eng write memo   
+
+
+
+
+
 
 {% highlight ruby %}
 
