@@ -222,8 +222,8 @@ if (count := fresh_fruit.get('레몬', 0) ) >= 2: #카운트에 개수 세서 �
 
 
 
-# mp과 filter 대신 comprehension을 사용하라! Bettery way 27(Thursday, 220609)  - (오랜만에 업데이트)  
-*mp과 filter 대신 comprehension  
+# Bettery way 27 -map과 filter 대신 comprehension을 사용하라! (Thursday, 220609)  - (오랜만에 업데이트)  
+*map과 filter 대신 comprehension  
 
 
 {% highlight ruby %}
@@ -253,5 +253,11 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 
 
 {% endhighlight %}
+
+
+
+# Better way 28, 29  
+*comprehension의 하위 식은 3개 미만으로 해라. 왜냐하면 너무 복잡해지기 때문.  
+*comprehension에 왈러스 연산자( := )와 함수 호출을 사용하여 가독성 높일 수 있음.
 
 
