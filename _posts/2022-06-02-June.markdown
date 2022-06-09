@@ -36,14 +36,16 @@ o
 *eng write memo   
 
 
-Tuesday, June 08, 2022     
+Wednesday, June 08, 2022     
 *eng words  
-o  
-*eng speak memo      
 *eng write prac  
 *eng write memo   
+o  
+*eng speak memo      
 
 
+Thursday, June 08, 2022     
+*python study  
 
 
 
