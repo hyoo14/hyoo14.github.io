@@ -220,3 +220,38 @@ if (count := fresh_fruit.get('레몬', 0) ) >= 2: #카운트에 개수 세서 �
 
 {% endhighlight %}
 
+
+
+# mp과 filter 대신 comprehension을 사용하라! Bettery way 27(Thursday, 220609)  - (오랜만에 업데이트)  
+*mp과 filter 대신 comprehension  
+
+
+{% highlight ruby %}
+
+-다음 task를 수행할 때..  
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  
+squares = []  
+for x in a:  
+    if x % 2 == 0:
+        squares.append(x**2)  
+print(squares)  
+
+
+-map, filter 이용 대신  
+alt = map(lambda x: x**2, filter(lambda x: x % 2 == 0, a))  
+assert even_squares = list(alt)  
+
+
+-comprehension을 사용!  
+squares = [x**2 for x in a if x % 2 == 0]  
+
+
+-dict와 set도 각각 dict comprehension과 set comprehension이 있어 사용 가능!  
+even_squares_dict = {x: x**2 for x in a if x % 2 == 0}# {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}    
+threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}     
+
+
+
+{% endhighlight %}
+
+
