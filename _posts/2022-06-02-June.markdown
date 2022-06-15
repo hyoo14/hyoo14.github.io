@@ -9,6 +9,23 @@ categories: study
 {% highlight ruby %}
 
 
+June week3:  
+*pythonic codes  
+(eng words, writing, speaking, etc)  
+
+{% endhighlight %}
+
+
+
+Wednesday, June 15, 2022     
+*python codes  
+
+
+
+
+{% highlight ruby %}
+
+
 June week2:  
 *eng words  
 *eng write prac  
