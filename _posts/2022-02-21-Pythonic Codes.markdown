@@ -285,9 +285,7 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 *더 나은 방법으로 이터레이터 프로토콜을 구현한 새로운 컨테이너 클래스를 제공하는 것이 있음  
 **class ReadVisits:
     def __init__(self, data_path):  
-        self.data_path = data_path  
-
-    
+        self.data_path = data_path      
     def __iter__(self):  
         with open(self.data_path) as f:  
             for line in f:  
