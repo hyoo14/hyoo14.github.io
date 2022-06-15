@@ -258,6 +258,55 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 
 # Better way 28, 29  
 *comprehension의 하위 식은 3개 미만으로 해라. 왜냐하면 너무 복잡해지기 때문.  
-*comprehension에 왈러스 연산자( := )와 함수 호출을 사용하여 가독성 높일 수 있음.
+*comprehension에 왈러스 연산자( := )와 함수 호출을 사용하여 가독성 높일 수 있음.  
+
+
+# Bettery way 30 (Wednesday, 220615)  
+*제너레이터(generator, yield를 사용하여 반환하는 함수)를 만들어서 사용하면  
+ 함수가 실제로 실행되지 않고 즉시 이터레이터를 반환, 메모리 크기를 제한할 수 있어  
+ 입력 길이가 아무리 길어도 처리 가능  
+**단, 반환하는 이터레이터에 상태가 있기 때문에 호출하는 쪽에서 재사용이 불가능함  
+
+
+# Better way 31 (Wednesday, 220615)  
+*이터레이터 결과는 단 한번만 만들어져서 재호출 시 아무 결과도 안 옴  
+**(StopIteration 예외가 되는 것임)  
+*카피해서 리스트에 넣어두는 해결책이 있으나 입력이 너무 길 경우 메모리를 많이 먹으므로 비추  
+*대안으로 호출 때마다 이터레이터를 받아주는 방법이 있음(근데 람다식 쓰는 것이 보기는 안좋다고함)  
+**def normalize_func(get_ter):
+    total = sum(get_iter()) # 새 이터레이터    
+    result = []  
+    for value in get_iter(): # 새 이터레이터    
+        percent = 100 * value / total    
+        result.append(percent)  
+    return result  
+
+  percentages = normalize_func(lambda: read_visits(path))  
+*더 나은 방법으로 이터레이터 프로토콜을 구현한 새로운 컨테이너 클래스를 제공하는 것이 있음  
+**class ReadVisits:
+    def __init__(self, data_path):  
+        self.data_path = data_path  
+
+    
+    def __iter__(self):  
+        with open(self.data_path) as f:  
+            for line in f:  
+                yield int(line)  
+  visits = ReadVisits(path)  #클래스를 불러와서 객체 정의    
+  percentages = normalize(visits) #객체를 보내줌  
+**유일한 단점은 입력 데이터를 여러번 읽는 다는 것.. 그래도 이게 제일 나은 듯?  
+*예외처리의 경우 - 반복 가능한 이터레이터인지 검사  
+**if iter(numbers) is numbers: #반복 안 가능?  
+      raise TypeError('컨테이너를 제공해야 합니다')  
+*예외처리 대안 - collection.abc 내장모듈 instance9 사용하여 검사  
+**from collections.abc import Iterator  
+  if instance(numbers, Iterator): #반복 가능한 이터레이션인지 검사  
+      raise TypeError('컨테이너를 제공해야 합니다')  
+
+
+
+
+
+
 
 
