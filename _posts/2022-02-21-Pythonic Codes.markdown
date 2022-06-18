@@ -303,6 +303,21 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 
 
 
+# Better way 32, 33 (Thursday, 220616)  
+# 긴 리스트 컴프리헨션보다는 제너레이터를, yield from을 사용해 여러 제너레이터 합성을
+*리스트컴프리핸션 입력 사이즈 커지면 메모리 많이 사용  
+**제너레이터 식으로 해결  
+***next함수로 다음 값 가져올 수 있음  
+*제너레이터 식은 두 제너레이터 식을 합성할 수도 있음  
+
+
+*yield from 사용으로 가독성도 높여줌  
+** for delta in move(4, 5.0): yield delta --> yield from move(4, 5.0)  
+**yield from은 근본적으로 인터프리터가 for루프 내포해서 성능 더 좋아짐  
+
+
+
+
 
 
 
