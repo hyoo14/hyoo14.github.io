@@ -316,6 +316,26 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 **yield from은 근본적으로 인터프리터가 for루프 내포해서 성능 더 좋아짐  
 
 
+# Bettery way 34, 35, 36 (Saturday, 220618)  
+# send로 제너레이터에 데이터를 주입하지 말라, 제너레이터 안에서 throw로 상태 변화하지 말라, 이터레이터나 제너레이터 다룰 때 itertools 사용하라  
+
+
+*yield 식 사용한 제너레이터 함수는 이터레이션 출력이 가능하지만 단방향임  
+**그래서 send메서드 사용해서 양방향 채널 만들어줄 수 있음  
+***하지만 방금 시작한 제너레이터는 최초 send 호출 때 보낼 인자가 없고 None만 뜸  
+****첫 값을 None을 주는 해결책이 있고, 코드가독성을 위해 yield from을 사용할 수도 있음  
+*****하지만 이 경우 다음 yield from 시작 때마다 None뜸.  
+******그래서 그냥 next를 사용하는 것을 권장  
+
+
+*제너레이터 안에서 Exception던질 수 있는 throw 메서드 있음-마지막 yield 실행에서 예외 발생  
+**가독성 많이 떨어짐. __iter__메서드 포함 클래스를 정의하여 사용하는 것이 더 나은 대안  
+
+
+*복잡한 이터레이션 코드 itertools에 거의 있음->help(itertools)해보시오  
+**연결 - chain:순차적으로 함침, repeat:반복, cycle:사이클반복, tee:병렬적으로 리스트 만들어줌, zip_logest:두 이터레이터 중 짧은 쪽의 경우 지정값 넣어서 합쳐줌  
+**원소 필터링 - islice:인덱싱으로 슬라이싱, takewhile:False나올 때까지 반환, dropwhile:False시작부터 True 전까지 반환, filterfalse:False인 것만 반환  
+**원소 조합 - accumulate:축적 반환, product:데카르트곱 반환, permutations:순열 반환, combinations:조합 반환, combinations_with_replacement:중복 조합 반환  
 
 
 
