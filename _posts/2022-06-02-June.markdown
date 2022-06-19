@@ -32,6 +32,10 @@ Saturday, June 18, 2022
 o  
 
 
+Sunday, June 18, 2022     
+*python codes  
+o  
+
 
 
 {% highlight ruby %}
