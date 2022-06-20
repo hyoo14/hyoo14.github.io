@@ -348,6 +348,24 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 *자식프로세스 멈추거나 교착 방지하려면 communicate 메서드에 대해 timeout 사용하면 됨  
 
 
+# Better way 53, 54 (Monday, 220620)  
+# 블로킹 I/O의 경우 스레드를 사용하고 병렬성을 피하라, 스레드에서 데이터 경합을 피하기 위해 Lock을 사용하라  
+*GIL(Global Interpreter Lock)은 CPython 자체와 사용하는 C 확장 모듈이 실행되면서 인터럽트가 함부로 발생하는 걸 방지  
+**(참고로 source -> bytecode --by interpreter)  
+*GIL 땜에 멀티스레딩이 코드 실행단에서는 성능향상이 안 됨  
+*그럼에도 멀티스레딩하는 이유는 동시성(컨커런시 concurency) 구현하기 쉽고 I/O 블로킹은 잘 되기 때문  
+**(GIL은 프로그램 병렬 실해은 막지만 시스템콜에는 영향 못 끼침)  
+*즉, multi threading은 코드를 가급적 손보지 않고 블리코이 I/O를 병렬로 실행하고 싶을 때 사용  
+
+
+
+*GIL의 락은 코드 딴이지, 자료구조 접근 까지는 못 막아줌  
+*파이썬 스레딩이 자료구조를 접근하고 일시 중단되고 연산 순서가 섞이는데, 락 따로 해줘야함  
+*threading 내장 Lock 클래스 사용해주면 됨  
+**with문을 통해 사용하면 코드 가독성에 굿  
+***with self.lock: self.count += offset  
+
+
 
 
 
