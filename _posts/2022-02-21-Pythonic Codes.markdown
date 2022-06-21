@@ -366,7 +366,13 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 ***with self.lock: self.count += offset  
 
 
+# Better way 55 (Tuesday, 220621)  
+# Queue를 사용해 스레드 사이의 작업을 조율하라  
 
+*순차적 작업을 동시에 파이썬 스레드 이용할 시(특히 I/O 위주) 파으파리인 유용(파이썬 쓰레드를 사용한)  
+*근데 Busy waiting, 종료 알리기, 메미로 사용 폭발의 문제가 발생할 수 있음  
+**그래서 Queue 클래스를 가져와서 사용하면 블로킹 연산, 버퍼 크기 지정, jin을 통한 완료 대기를 지원해줘서 문제를 어느정도 해결해줌  
+***굳이 dequeue로 직접 구현하는 것 보다 나음  
 
 
 
