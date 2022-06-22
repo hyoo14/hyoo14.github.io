@@ -47,6 +47,17 @@ Tuesday, June 21, 2022
 o  
 
 
+Wednesday, June 22, 2022     
+*python codes  
+o  
+
+
+Thursday, June 23, 2022     
+*python codes  
+o  
+
+
+
 {% highlight ruby %}
 
 
