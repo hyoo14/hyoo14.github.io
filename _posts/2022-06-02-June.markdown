@@ -6,36 +6,27 @@ categories: study
 ---
 
 
+
+
 {% highlight ruby %}
 
 
-June week3:  
+June week5:  
 *pythonic codes  
-(eng words, writing, speaking, etc)  
+*eng words  
+*eng writing  
+*eng speaking    
 
 {% endhighlight %}
 
 
+Monday, June 27, 2022     
 
-Wednesday, June 15, 2022     
-*python codes  
 o  
-
-
-Thursday, June 16, 2022     
 *python codes  
-o  
-
-
-Saturday, June 18, 2022     
-*python codes  
-o  
-
-
-Sunday, June 19, 2022     
-*python codes  
-o  
-
+*eng words  
+*eng writing  
+*eng speaking    
 
 
 {% highlight ruby %}
@@ -69,26 +60,36 @@ Thursday, June 23, 2022
 o  
 
 
+
 {% highlight ruby %}
 
 
-June week5:  
+June week3:  
 *pythonic codes  
-*eng words  
-*eng writing  
-*eng speaking    
+(eng words, writing, speaking, etc)  
 
 {% endhighlight %}
 
 
-Monday, June 27, 2022     
 
-o  
+Wednesday, June 15, 2022     
 *python codes  
-*eng words  
-*eng writing  
-*eng speaking    
+o  
 
+
+Thursday, June 16, 2022     
+*python codes  
+o  
+
+
+Saturday, June 18, 2022     
+*python codes  
+o  
+
+
+Sunday, June 19, 2022     
+*python codes  
+o  
 
 
 
