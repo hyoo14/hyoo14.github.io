@@ -37,6 +37,18 @@ Sunday, June 19, 2022
 o  
 
 
+
+{% highlight ruby %}
+
+
+June week4:  
+*pythonic codes  
+(eng words, writing, speaking, etc)  
+
+{% endhighlight %}
+
+
+
 Monday, June 20, 2022     
 *python codes  
 o  
@@ -55,6 +67,28 @@ o
 Thursday, June 23, 2022     
 *python codes  
 o  
+
+
+{% highlight ruby %}
+
+
+June week5:  
+*pythonic codes  
+*eng words  
+*eng writing  
+*eng speaking    
+
+{% endhighlight %}
+
+
+Monday, June 27, 2022     
+
+o  
+*python codes  
+*eng words  
+*eng writing  
+*eng speaking    
+
 
 
 
