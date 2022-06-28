@@ -14,6 +14,60 @@ categories: study
 
 
 
+[220628]  
+
+<br/>
+<br/>
+
+for number 1   
+
+<br/>
+<br/>
+
+distub -> could interrupt  
+be distracting -> can be distracted  
+
+
+useful tools -> there are interesting material available for you these days  
+essential life skill -> will use in school and work throughout their lives  
+
+
+too many violent -> thousands of images of killing is not good for people  
+mindless entertainment -> do not serve any educational purpose and encourage passiveness  
+
+
+possible to save a lot of money -> used to spend over ~, now do not have to spend  
+great way to discover new authors -> opportunity to try reading books by diverse authors without having to buy them   
+
+
+give me a more exciting life -> a lot of off-campus activities that students can enjoy  
+can provide me with more opportunities -> more chances to meet people from various countries and backgrounds  
+
+
+provide health benefits and make stronger -> require students to stretch and exercise, these activites help students take better care of their bodies  
+fun -> playing sports can be pleasurable for students  
+
+
+promote clear communication -> facial expressionsand body language covey a lot of important information,, face-to-face communication is clearer   
+more convinient -> can get immediate response with no delay  
+
+
+
+able to do more activities -> can go for walks, play sports, or have picnics with friends or family  
+better for our health -> a lot of trees in the park, can provide us with fresh air  
+
+
+make often affect the rest of our lives -> marriage and purchasing a house are long-term commitments, so they require careful thought  
+making hasty decisions can lead to mistake -> bought clothes hastily without thinking and later regretted because no money to buy books for assignment
+
+
+
+
+
+<br/>
+<br/>
+
+
 [220531]
 
 <br/>
