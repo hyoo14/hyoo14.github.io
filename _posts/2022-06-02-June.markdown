@@ -21,13 +21,19 @@ June week5:
 
 
 Monday, June 27, 2022     
-
-o  
 *python codes  
 *eng words  
-*eng writing  
 *eng speaking    
+o  
+*eng writing  
 
+
+Tuesday, June 28, 2022     
+*eng words  
+*eng speaking    
+o  
+*eng writing  
+*python codes
 
 {% highlight ruby %}
 
