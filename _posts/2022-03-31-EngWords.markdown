@@ -13,6 +13,12 @@ categories: study
 
 *For improving english skill  
 
+*day22-compel  restrain epitomize aggregate  
+    -incredulous dubious most-satisfactory suggest insinuate question dispute  
+    force oblige require coerce preserve keep maintain suppress repress tightly  
+    precisely only exclusively solely distinctvely earn derive achieve exemplify typify  
+    represent summarize abridge overall total combined collective gather collect   
+    combine accumulate amass   
 *day21-dissipate(vv) profound(vv) intriguing(v) ingenuity conquer(v) spell(v) facet(v)  
     mundane(vv) mere(vvv) intrusive intrude culminate-in(vv) prompt(vv) distinction(v)   
     appreciation(v) flag(v) ambivalent(vv) term (v) destitute-of(vvv) principal juncture(v) discount(vv)   
@@ -38,6 +44,7 @@ categories: study
     deduce(v) central-idea center heart change variation alteration excitement   
     exhilaration frisson damage(v) injure(v) disable(v) rigorously severly substance   
     material stuff issue be-important opposing(v) reluctant   
+    -though(still(not whether))    
 *day20-harness(v) radically(vv) deposit size-up(v) contiguous(vv) engage(vv) engagement(v)  
     pertinent(vvv) traumatic(vv) dispersal(vv) sought-after(vv) mastery(vv) perpetually(vvv) excrete(vvv)   
     execrate(vv) affluent stationary cling-to(v) endow(vv) verging-on(vvv) contemptuous(v)   
@@ -255,6 +262,123 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+
+
+# day 22
+
+
+*1. skeptical  
+*1. doubting, incredulous, dubious, suspicious  
+**Skeptical observers were amazed when the man walked on a wire across the Grand Canyon.  
+**의심 많은 
+
+
+*2. optimal  
+*2. best, ideal, most satisfactory  
+**Early childhood is the optimal period for second language acquisition.  
+**최적의, 최선의  
+
+
+*3. hint  
+*3. indication, implication, clue  
+*3. suggest, insinuate  
+**To sailors, a red sky in the morning is a hint that bad weather is approaching.  
+**hint him what she wants  
+**암시, 단서  
+**넌지시 알려주다  
+
+
+*4. challenge  
+*4. difficulty, problem  
+*4. question, dispute  
+**The main challenge that early goldminers faced in Alaska was the cold.  
+**Experts challenged the authenticity of the images that were supposedly those of Ansel Adams.  
+**문제, 난제  
+**이의를 제기하다  
+
+
+*5. potentially  
+*5. possibly, perhaps, maybe  
+**The student's plagiarism on her final paper could potentially lead to the university pressing criminal charges.  
+**어쩌면  
+
+
+*6. compel  
+*6. force, oblige, require, coerce  
+**Slave women were compelled to do arduous tasks all day long.  
+**강요하다  
+
+
+*7. simultaneously  
+*7. at the same time, concurrently, in parallel  
+**The website slows down when too many people access it simultaneously.  
+**동시에  
+
+
+*8. static  
+*8. unchanging, immobile, unmoving  
+**The price of oil has remained fairly static for some weeks.  
+**변화가 없는, 고정된  
+
+
+*9. retain  
+*9. preserve, keep, maintain  
+**Americans must retain a copy of their tax forms from the previous three years.  
+**보유하다, 유지하다  
+
+
+*9-1. restrain  
+*9-1. suppress, repress  
+**억제하다  
+
+
+*10. strictly  
+*10. rigorously, severely, tightly, precisely  
+*10. only, exclusively, solely  
+**Traffic rules are strictly enforced by the police department in the city.  
+**The computers in the school library should be used strictly for educational purposes.  
+**엄격히, 엄밀히  
+**오로지  
+
+
+*11. exceptionally  
+*11. uncommonly, unusually, distinctively  
+**Exceptionally bright children sometimes do not get along with their peers.  
+**유난히  
+
+
+*12. consequently  
+*12. as a result, therefore, hence, thus  
+**China has made efforts to increase global trade, which has consequently led to a more established economy.  
+**그 결과, 따라서  
+
+
+*13. obtain  
+*13. acquire, gain, earn, derive, achieve  
+**Jake was thrilled when he finally obtained his driver's license after failing the test twice before.  
+**얻다, 획득하다  
+
+
+*14. epitomize  
+*14. exemplify, typify, represent  
+*14. summarize, abridge  
+**Theodore Roosevelt epitomized the qualities of a successful leader.  
+**Photographers can sometimes epitomize an entire story in a single picture.  
+**~의 전형이 되다  
+**요약하다  
+
+
+*15. aggregate  
+*15. overall, total, combined, collective  
+*15. gather, collect, combine, accumulate, amass  
+**The aggregate demand for affordable housing increases every year.  
+**Particles and gases aggregate in outer space to eventually form stars and planets. 
+**총계의, 집합적인  
+**모이다, 모으다   
+
+
+
+
 
 
 # day 21  
