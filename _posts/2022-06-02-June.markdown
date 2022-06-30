@@ -37,9 +37,19 @@ o
 
 
 Wednesday, June 29, 2022  
+*eng words  
 o  
+*eng speaking  
+
+
+Thursday, June 30, 2022  
+o  
+*python codes  
 *eng words  
 *eng speaking  
+*eng writing  
+
+
 
 {% highlight ruby %}
 
