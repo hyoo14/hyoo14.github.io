@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "July"
+date:   2022-07-03 16:42:30 +0900
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+
+
+July week1:  
+*pythonic codes  
+*eng words  
+*eng writing  
+*eng speaking    
+
+{% endhighlight %}
+
+
+Sunday, July 03, 2022     
+*python codes  
+*eng words  
+o
+*eng speaking      
+*eng writing  
+
+
