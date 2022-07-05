@@ -52,30 +52,31 @@ categories: study
     capture organized crisis exigency increase rise growth augmentation cue  
     indicate communicate gesture motion matter point question announce  
     proclaim delete erase efface strong-competitor   
-*day23-configuration induce retain detain erratic eventual mandate requisite  
-    requite partake-of pledge dictate durable collectively furnish determine  
-    determined haul found-wanting classic grossly vivid transplant implement    
-    excavate secluded engulf truism perpetuate illusory heyday proficient amply  
-    desolate more-subtle disrupt forerunner immediate wield crush manner uneasy  
-    -arrangement shape form conformation persuade convince irregular  
-    unpredictable uneven ultimate final order command instruction necessity  
-    requirement essential required necessary return repay consume share promise  
-    oath vow undertaking maintain boundary cramp enclose cage require suggest  
-    prescribe determine long-lasting lasting enduring together all-together unitedly  
-    provide supply offer metamorphose resolve conclude figure-out calculate  
-    resolute firm draw pull drag heave nearness closeness proximity  
-    judged-inadequate typical exemplary model best finest excessively bright  
-    brilliant graphic lifelike synthetic place-in-another-context remove relocate hide  
-    disguise conceal tool instrument appliance execute enforce dig-out dig-up  
-    unearth disinter distaste nausea aversion remote hidden isolated solitary  
-    swallow self-evident-truth commonplace cliche inadvertent devise originate  
-    characteristic-of make-visible exhibit uncover subject continue immortalize  
-    eternize misleading deceptive delusive high-point golden-age prime  
-    florescence skilled skillful expert adept generously bountifully lavishly deserted  
-    bleak dreary lonely solitary less-noticeable interfere-with interrupt upset  
-    predecessor antecedent prompt on-the-spot nearest neighboring adjacent  
-    exercise use handle discourage deflate squash crumble way fashion mode  
-    apprehensive unstable disturbed ill-at-ease  
+*day23-configuration(v) induce(vvvv) retain(v) detain(vv) erratic(v) eventual(v) mandate(vv) requisite  
+    requite(vvv) partake-of(vvv) pledge(vv) dictate(vvv) durable collectively(v) furnish determine(vv)  
+    determined(vvv) haul(v) found-wanting(vvvv) classic(v) grossly(vv) vivid transplant(v) implement(vvv)    
+    excavate(v) secluded engulf truism(vvv) perpetuate(vvvvvv) illusory heyday proficient(vv) amply  
+    desolate(vvvv) more-subtle(vvv) disrupt(vvv) forerunner immediate(vvv) wield(vvvv) crush(vvvvv) manner(vvv)  
+    uneasy(vvv)    
+    -arrangement(v) shape(v) form(v) conformation(v) persuade convince irregular(vvv)  
+    unpredictable(vvv) uneven(vvv) ultimate final order(v) command(v) instruction(v) necessity  
+    requirement essential required necessary return(v) repay(v) consume share promise(v)  
+    oath(v) vow(v) undertaking(v) maintain boundary cramp enclose cage require(v) suggest(v)  
+    prescribe(v) determine(v) long-lasting lasting enduring together all-together unitedly  
+    provide supply offer metamorphose(v) resolve(v) conclude(v) figure-out(v) calculate(v)  
+    resolute(v) firm(v) draw(v) pull(v) drag(v) heave(v) nearness(v) closeness(v) proximity(v)  
+    judged-inadequate(v) typical exemplary model best finest excessively bright  
+    brilliant graphic lifelike synthetic(vv) place-in-another-context(v) remove(v) relocate(v) hide(v)  
+    disguise(v) conceal(v) tool(v) instrument(v) appliance(v) execute(v) enforce(v) dig-out(v) dig-up(v)  
+    unearth(v) disinter(v) distaste nausea aversion(vv) remote hidden isolated solitary  
+    swallow self-evident-truth(v) commonplace(v) cliche(v) inadvertent(vv) devise(vv) originate(vv)  
+    characteristic-of(v) make-visible(v) exhibit(v) uncover(v) subject(v) continue immortalize  
+    eternize misleading(v) deceptive(v) delusive(v) high-point golden-age prime  
+    florescence skilled skillful expert adept(v) generously bountifully lavishly deserted  
+    bleak(v) dreary(v) lonely solitary less-noticeable(v) interfere-with interrupt upset(v)  
+    predecessor antecedent prompt(vv) on-the-spot(vv) nearest(v) neighboring(v) adjacent(v)  
+    exercise(vv) use(vv) handle(vv) discourage deflate(vv) squash crumble way fashion mode  
+    apprehensive(v) unstable disturbed ill-at-ease  
 *day22-compel restrain epitomize(vv) aggregate(v) in-principle(v) surveillance(vv) thwart(vv) banish(v)  
     forum quarters quarter abolish(v) staggering(vv) disclose(v) scores simulate excessive(v)  
     entitled-to(v) entitle(v) turbulence(v) archaic(v) eject(vv) inject intensity sloping(v) endeavor(v)  
