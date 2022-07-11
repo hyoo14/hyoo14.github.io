@@ -13,6 +13,20 @@ categories: study
 
 *For improving english skill  
 
+*day26-assume assuming periodically locate impose  
+    immunity embark-on probe exhaustive exclusive spark   
+    tenacity  
+    -counterbalance counteract cancel-out undertake take-on  
+    adopt believe think suppose presume on-condition-that  
+    provided regularly at-intervals occasionally refer-to  
+    mention allude-to often usually find detect discover  
+    position situate place force pressure enforce charge fine  
+    requirement necessary-condition precondition exemption  
+    impunity suitable appropriate apposite start(on) begin  
+    investigate search examine explore exploration inquiry  
+    tire weary fatigue thoroguh complete only sole single  
+    handle control operate maneuver bring-about trigger  
+    provoke hint stubbornness determination firmness   
 *day25-consequent decimation evoke elaborate enigmatic pragmatic dogmatic   
     coincide-with wrought lucrative extensive dampen opaque endorse advent   
     immutable imputable yardstick conviction hallmark timid apart-from graduate-to  
@@ -355,6 +369,170 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+
+
+
+# day 26  
+
+
+*1. offset  
+*1. counterbalance, counteract, cancel out  
+**Residents on the island claim that lower housing prices are offset by the high bridge toll.  
+**상쇄하다  
+
+
+*2. assume  
+*2. undertake, take on, adopt  
+*2. believe, think, suppose, presume  
+**After John F. Kenedy's assassination, Lyndon Johnson assumed the role of president.  
+**Most people assume that stress has serious effects on physical and mental health.  
+**(책임, 임무를) 떠맡다  
+**생각하다  
+
+
+*2-1. assuming  
+*2-1. on condition that, provided  
+**~이라면  
+
+
+*3. periodically  
+*3. regularly  
+*3. at intervals, occasionally  
+**The fire alarms are tested periodically to ensure they are working properly.  
+**Charles Bukowski published his writing periodically throughout his life, often going years without releasing any work.  
+**정기적으로  
+**간헐적으로, 때때로  
+
+
+*4. cite  
+*4. refer to, mention, allude to  
+**Lawyers cite previous court decisions in their legal documents.  
+**언급하다  
+
+
+*5. commonly  
+*5. generally, often, normally, usually  
+**The earliest dramas of ancient Greece were commonly performed during religious festivals.  
+**보통, 일반적으로  
+
+
+*6. locate  
+*6. find, detect, discover  
+*6. position, situate, place  
+**Scientists have located a new planet in a distant solar system.  
+**The city located the new statue in the center of town for everyone to see.  
+**(위치 등을) 찾아내다, 발견하다  
+**(장소, 위치에) 두다  
+
+
+*7. impose  
+*7. force, pressure, enforce  
+*7. charge, fine  
+**Karen, as usual, imposed her will upon the rest of the group, and they all ended up at the museum.  
+**impose fees for a service  
+**강요하다  
+**부과하다  
+
+
+*8. prerequisite  
+*8. requirement, necessary condition, precondition  
+**Basic Mathematics is a prerequisite for the calculus class.  
+**필요조건  
+
+
+*9. immunity  
+*9. exemption, impunity  
+**Although diplomats enjoy immunity from legal prosecution in foreign countries, they can be expelled.  
+**면제   
+
+
+
+*10. proper  
+*10. suitable, appropriate, apposite  
+**Teenagers are often malnourished because they fail to eat a proper diet.  
+**적절한  
+
+
+*11. embark on  
+*11. start (on), begin, commence  
+**After two months of preparation, Bernie embarked on his backpacking trip across Europe.  
+**시작하다   
+
+
+*12. probe  
+*12. investigate, search, examine, explore  
+*12. exploration, inquiry  
+**Detectives probed the bridge's collapse, but they did not reach a clear conclusion.  
+**Both Britain and France launched a probe into how the criminal had slipped through their security net.  
+**조사하다, 찾다  
+**탐구, 탐사  
+
+
+*13. exhaust  
+*13. use up, deplete, run out of  
+*13. tire, weary, fatigue  
+**The world has exhausted much of its natural resources.  
+**Running the marathon exhausted Linda so much that she could not get up for two days.  
+**다 써 버리다, 고갈시키다  
+**지치게 하다  
+
+
+*13-1. exhaustive  
+*13-1. thorough, complete  
+**철저한  
+
+
+*14. exclusive  
+*14. only, sole, single  
+**In many small rural towns, a personal automobile is the exclusive means of transportation.  
+**유일한   
+
+
+*15. manipulate  
+*15. handle, control, operate, maneuver  
+*15. change, deliberately alter  
+**astronauts manipulate devices like the Canada Arm, a tool used to grab floating objects in space.  
+**Someone manipulated the company's computer passwords and deleted some important files.  
+**다루다, 조종하다  
+**조작하다, 속이다  
+
+
+*16. ongoing  
+*16. continued, constant, persistent  
+**The recovery after the hurricane is still ongoing.  
+**계속 진행 중인   
+
+
+*17. primary  
+*17. fundamental, elementary, basic  
+**All matter is composed of primary particles, such as quarks.  
+**기본적인  
+
+
+*18. interval  
+*18. space, distance, period  
+**Drivers of automobiles must maintain a minimum interval of one meter between their vehicles and bikers.  
+**(시간, 공간의) 간격, 기간  
+
+
+*19. spark  
+*19. bring about, trigger, provoke  
+*19. hint  
+**The government council proposed tax reforms in order to spark activity in the stagnant economy.  
+**a spark of hope  
+**유발하다  
+**약간, 조금  
+
+
+*20. tenacity  
+*20. stubbornness, determination, firmness  
+**Some residents refused to abandon their homes before the storm, and their tenacity put them in danger  
+**완고함, 고집  
+
+
+
+
+
 
 
 
