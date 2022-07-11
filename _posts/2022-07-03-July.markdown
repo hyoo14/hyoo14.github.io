@@ -11,6 +11,35 @@ categories: study
 {% highlight ruby %}
 
 
+July week2:  
+*pythonic codes  
+*eng words  
+*eng writing  
+*eng speaking  
+*eng reading  
+*eng listening      
+
+{% endhighlight %}  
+
+
+Monday, July 11, 2022     
+*eng reading  
+o  
+*pythonic codes  
+*eng words  
+*eng writing  
+*eng speaking  
+*eng listening      
+  
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 July week1:  
 *pythonic codes  
 *eng words  
@@ -73,6 +102,12 @@ Saturday, July 09, 2022
 *eng writing  
 o  
 *eng words  
+
+
+Sunday, July 10, 2022  
+*eng speaking  
+*eng writing  
+o  
 
 
 
