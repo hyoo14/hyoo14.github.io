@@ -25,3 +25,6 @@ Words and Phrases?
 *turbulent : 난폭한  
 *rigid : 경직된  
 *pathetic : 애처로운  
+
+
+*ensued : (어떤 일, 결과가) 뒤따르다  
