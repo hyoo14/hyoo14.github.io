@@ -19,7 +19,7 @@ Words and Phrases?
 
 # Words  
 
-
+***Monday, 220712  
 *taxing : 힘든  
 *arduous : 힘든  
 *turbulent : 난폭한  
@@ -28,3 +28,11 @@ Words and Phrases?
 
 
 *ensued : (어떤 일, 결과가) 뒤따르다  
+
+
+***Tuesday, 220713  
+*original : 독창적인  
+*exclusive : 배타적인, only  
+
+
+
