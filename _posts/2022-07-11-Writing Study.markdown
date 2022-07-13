@@ -17,6 +17,11 @@ translate eng->kor, kor->eng
 
 
 
+# 2 - 
+
+
+
+
 # 1 - Tuesday, 220712  
 The lecturer argues that we still do not know the origin of dogs.  
 This contradicts the reading passage's claim that dog domestication can be explained.  
