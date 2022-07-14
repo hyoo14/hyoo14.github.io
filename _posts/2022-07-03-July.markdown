@@ -44,13 +44,26 @@ o
 
 
 Wedesday, July 13, 2022     
-o  
 *eng reading  
 *pythonic codes  
 *eng words  
-*eng writing  
 *eng speaking  
 *eng listening      
+o  
+*eng writing  
+
+
+Thursday, July 14, 2022     
+*eng reading  
+*eng listening      
+*eng writing  
+*eng words  
+o  
+*pythonic codes  
+*eng speaking  
+
+
+
 
 
   
