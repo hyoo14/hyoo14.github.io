@@ -50,4 +50,8 @@ Words and Phrases?
 *orientation : 진로, 방향  
 
 
+**Thursday, 220714  
+*reliable : 신뢰할 수 있는  
+*embrace : 받아들이다  
+*fend off : 막아내다  
 
