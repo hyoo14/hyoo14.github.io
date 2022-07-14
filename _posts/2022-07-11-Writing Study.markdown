@@ -89,25 +89,116 @@ In this regard, I feel they are a great way to learn about other places from the
 -영화를 감상함으로써, 사람들은 한 나라의 가치와 사회 구조에 대해 배운다  
 
 시작하면서, 영화들은 통찰력을 준다 어떤 가치들이 중요한지 한 국가에.  
+-우선, 영화는 한 나라에서 어떤 가치가 중요한지에 대한 통찰을 제공한다.  
 캐릭더들의 행동들은 분명히 보여준다 사회들이 존경하는 것과 내려다 보는 것을  
+-등장인물들의 행동은 사회가 존중하는 것과 경시하는 것을 명백히 보여준다.  
 예를 들어, 한국은, 가족 관계를 매우 중요시한다.  
+-예를 들어, 한국에서는 가족 관계가 매우 중요하다.  
 결과적으로, 한국 영웅들은 희생을 할 것이다 동족의 다른 구성원을 도와주기 위해서, 반면 악당들은 묘사될 것이다 부정적으로 갖고 있는 것으로 너무 많은 개인적 욕망을  
+-그 결과, 한국의 영웅들은 그들 가문의 다른 일원들을 돕기 위해 희생할 것이고, 반면에 악당들은 개인적 욕망을 지나치게 많이 가진 사람으로서 부정적으로 묘사될 것이다.  
 이와는 대조적으로, 미국 영화의 영웅들은 종종 외로운 기사들이다 개인적으로 그들 자신의 꿈을 쫓는, 반면 그들의 대적자는 며사된다 약한 성격으로 자립심이 부족한  
+-반대로, 미국 영화의 영웅들은 종종 자신의 꿈을 홀로 추구하는 외로운 개혁가로 나타나고, 반면에 이들의 적은 독립심이 결여된 나약한 인물로 그려진다.  
 영화들은 그러므로 보여준다 매우 명확하게 어떤 가치를 사회들이 갖고있는지 사슴?
+-따라서 영화는 사회가 소중히 여기는 가치들을 매우 명백히 보여준다.  
 
 게다가, 영화들은 드러낸다 사회적 구조 나라의  
+-게다가, 영화는 한 나라의 사회구조를 드러낸다.  
 이것은 왜냐하면 그들이 묘사하기 때문이다 성별과 계급 관계들  
+-이는 영화들이 성과 계급 관계를 묘사하기 때문이다. 
 예를 들어, 인도에서 온 영화들은 보여준다 예약된 결혼들, 여자가 주부로서 살고, 그리고 매우 유명한 계급 제도 다른 캐스트?들과 부족들의   
+-예를 들어, 인도의 영화들은 중매 결혼, 가정주부로서 살아가는 여성, 그리고 다양한 카스트와 부족 간의 매우 뚜렷한 계급 질서를 보여준다.  
 이와는 대조적으로, 스웨덴 영화는 종종 보여준다 결혼을 로멘스 기반하여, 여성들은 집 밖에서 일하며, 더 많은 egalitarian? 계급 사회
+-대조적으로, 스웨덴의 영화들은 보통 연애에 바탕을 둔 결혼, 가정 밖에서 일하는 여성, 그리고 더 평등주의적인 계급 사회를 보여준다.  
 그러므로, 이러한 문화들로부터 영화를 보는 것은 관찰자들에게 아이디어를 준다 얼마나 이러한 사회들이 조직화되었는지에 대해서  
+-따라서, 이러한 문화들의 영화를 보는 것은 시청자에게 이러한 사회들이 어떻게 구성되었느지에 대한 지식을 제공한다.  
 즉, 원은 이해할 수 있다 다른 사회적 관계들을 영화들을 통해서 다양한 국가들의  
+-다시 말해서, 사람들은 다양한 나라들의 영화를 통해 각기 다른 사회적 관계를 이해할 수 있다.  
 
 요약하면, 영화들은 반영한다 한 국가의 가치와 사회적 구조를.  
+-요약하자면, 영화는 한 나라의 가치와 사회 구조를 반영한다.  
 이러한 관점에서, 나는 그것들이 매우 좋은 방법이라고 느낀다 -다른 장소에 대해 편안한 집으로부터  
+-이러한 점에서, 나는 영화가 집에서 편하게 다른 지역에 대해 배울 수 있는 훌륭한 방법이라고 생각한다.  
 
 *kor->eng  
+-일부 사람들은 영화가 그것이 만들어진 나라에 대해 알려주는 것이 거의 없다고 생각한다.  
+Some people think that the movie do not tell many things about the country where the movie made.  
+-하지만, 내 생각에는, 영화는 그것이 탄생한 사회에 대해 많은 것을 드러낸다.  
+However, in my opinion, the movie reveal many things about the societies of which movie made.  
+-영화를 감상함으로써, 사람들은 한 나라의 가치와 사회 구조에 대해 배운다  
+Watching movie, people learn the value and the social structure of a nation.  
+
+-우선, 영화는 한 나라에서 어떤 가치가 중요한지에 대한 통찰을 제공한다.  
+To begin with, movie provides the insight the value what is important to the country.  
+-등장인물들의 행동은 사회가 존중하는 것과 경시하는 것을 명백히 보여준다.  
+Characters' action clearly shows what society respect and see down upon.  
+-예를 들어, 한국에서는 가족 관계가 매우 중요하다.  
+For example, in Korea, family relationship is very important.  
+-그 결과, 한국의 영웅들은 그들 가문의 다른 일원들을 돕기 위해 희생할 것이고, 반면에 악당들은 개인적 욕망을 지나치게 많이 가진 사람으로서 부정적으로 묘사될 것이다.  
+As a result, Korean heros will sacrifice to help members of their clan, on the other hand, villans will be depicted negatively to have too much personal greed.  
+-반대로, 미국 영화의 영웅들은 종종 자신의 꿈을 홀로 추구하는 외로운 개혁가로 나타나고, 반면에 이들의 적은 독립심이 결여된 나약한 인물로 그려진다.  
+On the other hand, heros of America will often be described as lone crusader, their antagonist will be portrayed as weak character lack of the independence.  
+-따라서 영화는 사회가 소중히 여기는 가치들을 매우 명백히 보여준다.  
+So, the movie clearly show what the society considered valuable.  
+
+-게다가, 영화는 한 나라의 사회구조를 드러낸다.  
+On top of that, movie reveal the social structure of a country.  
+-이는 영화들이 성과 계급 관계를 묘사하기 때문이다. 
+This is because, the movies depicted the gender and class relationship.  
+-예를 들어, 인도의 영화들은 중매 결혼, 가정주부로서 살아가는 여성, 그리고 다양한 카스트와 부족 간의 매우 뚜렷한 계급 질서를 보여준다.  
+For instance, movies from India shows marriage, living as house wives, and variety of cast and clear class order between clans.  
+-대조적으로, 스웨덴의 영화들은 보통 연애에 바탕을 둔 결혼, 가정 밖에서 일하는 여성, 그리고 더 평등주의적인 계급 사회를 보여준다.  
+Contrastly, Swedish films show the marriage based on ordinary romance, working women outside the home, and more equivalent class society.  
+-따라서, 이러한 문화들의 영화를 보는 것은 시청자에게 이러한 사회들이 어떻게 구성되었느지에 대한 지식을 제공한다.  
+As a result, watching movies including these clutures provide audiences knowledge how societies consist of.  
+-다시 말해서, 사람들은 다양한 나라들의 영화를 통해 각기 다른 사회적 관계를 이해할 수 있다.  
+People can understand different socail relations by watching variety of moveis from many countries.  
+
+-요약하자면, 영화는 한 나라의 가치와 사회 구조를 반영한다.  
+To sum up, movies reflect a country's value and social structure.  
+-이러한 점에서, 나는 영화가 집에서 편하게 다른 지역에 대해 배울 수 있는 훌륭한 방법이라고 생각한다.  
+In this regard, I believe watching movies is a great way to learn different areas in comforty home.  
+
 
 *eng->eng  
+Some people think that the movie do not tell many things about the country where the movie made.  
+Some people think that movies tell little about the countires where they were produced.  
+However, in my opinion, the movie reveal many things about the societies of which movie made.  
+However, in my opinion, movies reveal a lot about the societies from which they originate.  
+Watching movie, people learn the value and the social structure of a nation.  
+By viewing them, people learn about a country's values and social strcture.  
+
+To begin with, movie provides the insight the value what is important to the country.  
+To begin with, movies give insight into what values are important to a country.  
+Characters' action clearly shows what society respect and see down upon.  
+Characters' actions clearly show what societies admire and what they look down upon.  
+For example, in Korea, family relationship is very important.  
+For example, in Korea, family relations are very important.  
+
+As a result, Korean heros will sacrifice to help members of their clan, on the other hand, villans will be depicted negatively to have too much personal greed.  
+As a result, Korean heroes will make sacrifices in order to help other members of their clan, while villains will be portrayed negatively as having too much personal ambition.  
+On the other hand, heros of America will often be described as lone crusader, their antagonist will be portrayed as weak character lack of the independence.  
+In contrast, heroes in American cinema are often lone crusaders who try to individualistically pursue their own dreams, while their antagonists are depicted as weaker characters that lack independence.  
+So, the movie clearly show what the society considered valuable.  
+Movies thus show very clearly what values societies hold dear.  
+
+On top of that, movie reveal the social structure of a country.  
+On top of that, movies reveal the social structure of a country.  
+This is because, the movies depicted the gender and class relationship.  
+This is because they portray gender and class relations.  
+For instance, movies from India shows marriage, living as house wives, and variety of cast and clear class order between clans.  
+For instance, movies from India show arranged marriages, women living as housewives, and a very pronounced class hierarchy among different castes and tribes.  
+Contrastly, Swedish films show the marriage based on ordinary romance, working women outside the home, and more equivalent class society.  
+On the contrary, Swedish films often show marriages based on romance, women working outside the home, and a more egalitarian class society.  
+As a result, watching movies including these clutures provide audiences knowledge how societies consist of.  
+Therefore, watching movies from these cultures gives viewers an idea about how these societies are organized.  
+People can understand different socail relations by watching variety of moveis from many countries.  
+In other words, one can understand the different social relationships through the films of various countries.  
+
+
+To sum up, movies reflect a country's value and social structure.  
+To sum up, movies mirror a country's values and social structure.  
+In this regard, I believe watching movies is a great way to learn different areas in comforty home.  
+In this regard, I feel they are a great way to learn about other places from the comfort of one's home.  
 
 
 # 1 - Tuesday, 220712  
