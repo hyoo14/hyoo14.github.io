@@ -17,7 +17,8 @@ categories: study
     immunity embark-on probe exhaustive exclusive spark   
     tenacity distinctive deeply-ingrained instantaneous agitate  
     agitation in-profile rim anxious acquire inquire handy enactment  
-    impede impend jettison segregate havoc dwindle dawdle  
+    impede impend jettison segregate havoc dwindle dawdle vague  
+    amplification  
     -counterbalance counteract cancel-out undertake take-on  
     adopt believe think suppose presume on-condition-that  
     provided regularly at-intervals occasionally refer-to  
@@ -37,7 +38,9 @@ categories: study
     assiduously carefully industriously different-from-one-another   
     establishment imminent upcoming modest unpretentious  
     unassuming cast-off separate seclude dissociate disunite  
-    linger procrastinate         
+    linger procrastinate compelling credible cogent discerning  
+    perceptive candidly ingenuously unclear uncertain imprecise  
+    obscure further-explanation  
 *day25-consequent decimation evoke elaborate enigmatic pragmatic dogmatic   
     coincide-with wrought lucrative extensive dampen opaque endorse advent   
     immutable imputable yardstick conviction hallmark timid apart-from graduate-to  
@@ -729,12 +732,57 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 **꾸물거리다  
 
 
+*48. concept  
+*48. idea, notion  
+**Thomas More's Utopia was based on the concept of a perfect world.  
+**개념  
 
 
+*49. sensational  
+*49. extraordinary, exciting  
+**Las Vegas is known around the world for its sensational night life.  
+**굉장한, 놀라운  
 
 
+*50. convincing  
+*50. persuasive, compelling, credible, cogent  
+**There's no convincing explanation as to how dogs were domesticated.  
+**설득력 있는  
 
 
+*51. insight  
+*51. understanding, perception, sense  
+**Nextel has insight into the mobile business market that Motorola would like to have.  
+**통찰력, 이해  
+
+
+*51-1. insightful  
+*51-1. discerning, perceptive  
+**통찰력 있는  
+
+
+*52. naively  
+*52. plainly, candidly, ingenuously  
+**The witness naively answered all of the judge's questions.  
+**솔직하게, 순진하게  
+
+
+*53. vague  
+*53. unclear, uncertain, imprecise, obscure  
+**In legal documents, it is essential to avoid vague terms and definitions.  
+**모호한, 불분명한  
+
+
+*54. associated   
+*54. connected, correlated, linked  
+**El Nino is a perfect example of how weather patterns and oceanic currents are closely associated.  
+**관련된  
+
+
+*55. amplification  
+*55. further explanation  
+**The Talmud is a Jewish text that provides amplification of the concepts from the Hebrew Bible.  
+**부연 설명  
 
 
 
