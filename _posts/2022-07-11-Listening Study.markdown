@@ -27,3 +27,7 @@ Note?
 
 ***Tuesday, 220612  
 *jurisdiction : 관할권  
+
+
+***Thursday, 220614  
+*jeopardize : 위태롭게 하다    
