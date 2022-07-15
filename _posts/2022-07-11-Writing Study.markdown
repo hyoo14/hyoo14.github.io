@@ -64,6 +64,110 @@ This refutes the reading passage's claim that a link between Etruscans and ancie
 이는 에트루리아인과 고대 터키인 사이의 관련성이 유샇나 장례 방식에 의해 입증된다는 읽기 지문의 주장을 반박한다.  
 
 
+*eng->kor    
+The lecturer argues that it is doubtful that the Etruscans came from Turkey.   
+강의자는 에트루스카 사람들이 터키에서 왔다는게 의심스럽다고 주장한다.  
+강의자는 에트루리아인이 터키에서 왔다는 것은 의심스럽다고 주장한다.  
+This contradicts the reading passage's claim that the Etruscans had Turkish origins.  
+이것은 에트루스카 사람들이 터키인 기원이라는 읽기 지문의 주장을 반박한다.  
+이는 에트루리아인이 터키 혈통을 가졌다는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer contends that a study that relies upon ancient DNA is hard to believe.  
+우선, 강의자는 고대 DNA에 연관된 한 연구는 믿기 힘들다고 주장한다.  
+첫째로, 강의자는 고대 DNA에 의존하는 연구는 믿기 어렵다고 주장한다.  
+The DNA was from thousands of years ago, which means that it has almost certainly degraded.  
+DNA는 수백년 전의 것이고 이것은 그것이 거의 확실하게 쇠락했다는 것을 의미한다.  
+그 DNA는 수천 년 전의 것이었는데, 이는 그것의 품질이 저하되었음이 거의 확실하다는 의미이다.  
+Also, given that lots of people may have had contact with the DNA, it has probably been contaminated.  
+또한, 수많은 사람들이 DNA에 접촉했을 것이고, 그곳은 아마도 오염되었을 것이다.   
+또한, 많은 사람들이 그 DNA와 접촉했을 것이라는 점을 고려하면, 그것은 아마 오염되었을 것이다.  
+This casts doubt on the reading passage's claim that DNA proves that Etruscans came from Turkey.  
+이것은 DNA가 에트투스 사람들이 터기에서 왔다는 것을 입증한다는 읽기 지문의 주장에 의심을 가져온다.  
+이는 DNA가 에트루리아인이 터키에서 왔음을 증명한다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+Next, the lecturer claims that it is unproven that the Eltruscan language is related to Turkish languages.  
+다음으로, 강의자는 에르스투스인 언어가 터키인 언어와 된다는게 증명되지 않았다고 주장한다.  
+다음으로, 강의자는 에트루리아의 언어가 터키의 언어와 관련이 있다는 것은 증명되지 않았다고 주장한다.  
+The similarities between the alphabets do not mean that Etruscan is related to Turkish languages.  
+알파뱃 사이의 유사성은 에트루스카어가 터키 언어와 연관됨을 의미하지 않는다.  
+철자 간의 유사성이 에트루리아어가 터기의 언어와 관련이 있다는 것을 의미히자는 않는다.  
+Actually, it could be the only language that has survived form its language family.  
+사실은, 이것은 언어 가족에서 살아남은 유일한 언어이다.  
+사실, 그것은 그것의 어족에서 살아남은 유일한 언어일 수도 있다.  
+This counters the reading passage's claim that the Etruscan language is evidence that the Etruscans migrated from Turkey.  
+이것은 에트루스크 언어가 에르투스커인들이 터키로부터 이주했다는 근거라는 읽기 지문의 주장을 반박한다    
+이는 에트루리아의 언어가 에트루리아인이 터키에서 이주했다는 증거라는 읽기 지문의 주장에 반대한다.  
+
+
+Finally, the lecturer asserts that there is no reason to assume a connection between the funerary practices of Etruscans and of anceitn Turks.  
+마지막으로, 강의자는 에르투스의 장례 의식과 고대 터키의 그것이 연결된다고 가정할 근거가 없다고 주장한다.  
+마지막으로, 강의자는 에트루리아인과 고대 터키인의 장례 풍습 간의 연관성을 가정할 근거가 없다고 주장한다.  
+It has been found that cremation was performed in northern Italy before the Etruscans lived.  
+그것은 에르스카인들이 살기 전 북이탈리아에서 시행되는 것이 찾아졌다  
+에트루리아인이 존재하기 전에 이탈리아 북부에서 화장이 행해졌다는 것이 발견되었다.  
+This indicates that the Etruscans were successors to these traditions.  
+이것은 에르스카사람들이 이러한 전통들의 후계자임을 의미한다.  
+이것은 에트루리아인이 이러한 전통의 계승자였음을 나타낸다.  
+This refutes the reading passage's claim that a link between Etruscans and ancient Turks is proven by similar funerary methods.  
+이것은 에르투스인과 고대 터키가 연결된다는 읽기 지문의 주장을 반박한다.  
+이는 에트루리아인과 고대 터키인 사이의 관련성이 유샇나 장례 방식에 의해 입증된다는 읽기 지문의 주장을 반박한다.  
+
+
+*kor->eng  
+강의자는 에트루리아인이 터키에서 왔다는 것은 의심스럽다고 주장한다.  
+The lecturer argues that it is doubtful that Esturican was from Turkey.  
+The lecturer argues that it is doubtful that the Etruscans came from Turkey.   
+이는 에트루리아인이 터키 혈통을 가졌다는 읽기 지문의 주장을 반박한다.  
+This contradicts the reading passage's claim that Esturican people had Turkish origin.  
+This contradicts the reading passage's claim that the Etruscans had Turkish origins.  
+
+
+
+첫째로, 강의자는 고대 DNA에 의존하는 연구는 믿기 어렵다고 주장한다.  
+First, the lecturer contends that research rely on the ancient DNA in unreliable.  
+First, the lecturer contends that a study that relies upon ancient DNA is hard to believe.  
+그 DNA는 수천 년 전의 것이었는데, 이는 그것의 품질이 저하되었음이 거의 확실하다는 의미이다.  
+The DNA was from thousands years ago, this indicates it has almost degraded.  
+The DNA was from thousands of years ago, which means that it has almost certainly degraded.  
+또한, 많은 사람들이 그 DNA와 접촉했을 것이라는 점을 고려하면, 그것은 아마 오염되었을 것이다.  
+In addition, many people could have contacted the DNA, it must be contaminated.  
+Also, given that lots of people may have had contact with the DNA, it has probably been contaminated.  
+이는 DNA가 에트루리아인이 터키에서 왔음을 증명한다는 읽기 지문의 주장에 의구심을 제기한다.  
+This casts doubt on the reading passage's claim that the DNA proved that Esturican came from Turk.  
+This casts doubt on the reading passage's claim that DNA proves that Etruscans came from Turkey.  
+
+
+다음으로, 강의자는 에트루리아의 언어가 터키의 언어와 관련이 있다는 것은 증명되지 않았다고 주장한다.  
+Next, the lecturer points out that it is not proven that Esturican related with Turkish language.  
+Next, the lecturer claims that it is unproven that the Eltruscan language is related to Turkish languages.  
+철자 간의 유사성이 에트루리아어가 터기의 언어와 관련이 있다는 것을 의미히자는 않는다.  
+Similarity between alphbets does not mean the connection between Esturican and Turkish language.  
+The similarities between the alphabets do not mean that Etruscan is related to Turkish languages.  
+사실, 그것은 그것의 어족에서 살아남은 유일한 언어일 수도 있다.  
+In fact, it could be the only one language that survied in their language family.  
+Actually, it could be the only language that has survived form its language family.  
+이는 에트루리아의 언어가 에트루리아인이 터키에서 이주했다는 증거라는 읽기 지문의 주장에 반대한다.  
+This couters the reading passage's claim that Esturican language was migrated from Turk.  
+This counters the reading passage's claim that the Etruscan language is evidence that the Etruscans migrated from Turkey.  
+
+
+
+마지막으로, 강의자는 에트루리아인과 고대 터키인의 장례 풍습 간의 연관성을 가정할 근거가 없다고 주장한다. 
+Finally, the lecturer asserts taht there is no proof that relevance of cemetary between Esturican and ancient Turkish.  
+Finally, the lecturer asserts that there is no reason to assume a connection between the funerary practices of Etruscans and of anceitn Turks.  
+에트루리아인이 존재하기 전에 이탈리아 북부에서 화장이 행해졌다는 것이 발견되었다.  
+There was a cremation in north part of Italy before Esturican exist.  
+It has been found that cremation was performed in northern Italy before the Etruscans lived.  
+이것은 에트루리아인이 이러한 전통의 계승자였음을 나타낸다.  
+This indicates that Esturican are succesors of this tradition.  
+This indicates that the Etruscans were successors to these traditions.  
+이는 에트루리아인과 고대 터키인 사이의 관련성이 유사한 장례 방식에 의해 입증된다는 읽기 지문의 주장을 반박한다.  
+This refutes the reading passage's claim that similar way of cemetary concluded relevance between Esturican and the ancient Turkish.  
+This refutes the reading passage's claim that a link between Etruscans and ancient Turks is proven by similar funerary methods.  
+
+
 # 2 - Thursday, 220714  
 *eng  
 Some people think that movies tell little about the countires where they were produced.  
