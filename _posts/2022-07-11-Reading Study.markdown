@@ -55,3 +55,22 @@ Words and Phrases?
 *embrace : 받아들이다  
 *fend off : 막아내다  
 
+
+**Friday, 220715  
+*narrow : 제한된, limited  
+*dormant : 활동하지 않는, inactive  
+*unprovoked : 자극되지 않는  
+*heralded : 예고하다, 알리다  
+*seismic : 지진의  
+*seismometers : 지진계  
+*dissemination : 보급  
+*fissure : 길게 갈라진 틈  
+*fluctuation : 변화  
+*tectonic : 구조상의  
+*tremore : 미진, 떨림  
+*pave the way : 길을 닦다, 상황을 조성하다  
+
+
+
+
+
