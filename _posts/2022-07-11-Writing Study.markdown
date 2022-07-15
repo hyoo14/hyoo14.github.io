@@ -16,6 +16,53 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+# 3 - Friday, 220714  
+*eng  
+The lecturer argues that it is doubtful that the Etruscans came from Turkey.   
+This contradicts the reading passage's claim that the Etruscans had Turkish origins.  
+
+
+First, the lecturer contends that a study that relies upon ancient DNA is hard to believe.  
+The DNA was from thousands of years ago, which means that it has almost certainly degraded.  
+Also, given that lots of people may have had contact with the DNA, it has probably been contaminated.  
+This casts doubt on the reading passage's claim that DNA proves that Etruscans came from Turkey.  
+
+
+Next, the lecturer claims that it is unproven that the Eltruscan language is related to Turkish languages.  
+The similarities between the alphabets do not mean that Etruscan is related to Turkish languages.  
+Actually, it could be the only language that has survived form its language family.  
+This counters the reading passage's claim that the Etruscan language is evidence that the Etruscans migrated from Turkey.  
+
+
+Finally, the lecturer asserts that there is no reason to assume a connection between the funerary practices of Etruscans and of anceitn Turks.  
+It has been found that cremation was performed in northern Italy before the Etruscans lived.  
+This indicates that the Etruscans were successors to these traditions.  
+This refutes the reading passage's claim that a link between Etruscans and ancient Turks is proven by similar funerary methods.  
+
+
+
+*kor  
+강의자는 에트루리아인이 터키에서 왔다는 것은 의심스럽다고 주장한다.  
+이는 에트루리아인이 터키 혈통을 가졌다는 읽기 지문의 주장을 반박한다.  
+
+
+첫째로, 강의자는 고대 DNA에 의존하는 연구는 믿기 어렵다고 주장한다.  
+그 DNA는 수천 년 전의 것이었는데, 이는 그것의 품질이 저하되었음이 거의 확실하다는 의미이다.  
+또한, 많은 사람들이 그 DNA와 접촉했을 것이라는 점을 고려하면, 그것은 아마 오염되었을 것이다.  
+이는 DNA가 에트루리아인이 터키에서 왔음을 증명한다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+다음으로, 강의자는 에트루리아의 언어가 터키의 언어와 관련이 있다는 것은 증명되지 않았다고 주장한다.  
+철자 간의 유사성이 에트루리아어가 터기의 언어와 관련이 있다는 것을 의미히자는 않는다.  
+사실, 그것은 그것의 어족에서 살아남은 유일한 언어일 수도 있다.  
+이는 에트루리아의 언어가 에트루리아인이 터키에서 이주했다는 증거라는 읽기 지문의 주장에 반대한다.  
+
+
+마지막으로, 강의자는 에트루리아인과 고대 터키인의 장례 풍습 간의 연관성을 가정할 근거가 없다고 주장한다. 
+에트루리아인이 존재하기 전에 이탈리아 북부에서 화장이 행해졌다는 것이 발견되었다.  
+이것은 에트루리아인이 이러한 전통의 계승자였음을 나타낸다.  
+이는 에트루리아인과 고대 터키인 사이의 관련성이 유샇나 장례 방식에 의해 입증된다는 읽기 지문의 주장을 반박한다.  
+
 
 # 2 - Thursday, 220714  
 *eng  
