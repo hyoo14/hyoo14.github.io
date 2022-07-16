@@ -651,6 +651,27 @@ threes_cubed_set = {x**3 for x in a if x % 3 == 0}# {216, 729, 27}
 **시작, 끝값 증가값과 함께 사용하지 말 것 권장  
 
 
+# Better way 13 (Thursday, 220714)  
+# 슬라이싱보다는 나머지를 모두 잡아내는 언패킹을 사용하라  
+
+*예시 : one, two, *others = [1, 2, 3, 4, 5, 6, 7]  #one=1, two=2, others=[3,4,5,6,7] 이렇게 별표 식 써서 언패킹하면 잘 됨  
+
+
+# Bettery way 14 (Friday, 220715)  
+# 복잡한 기준을 사용해 정렬할 때는 key 파라미터를 사용하라  
+
+
+*sort함수 key 파라미터에 lambda 함수 사용해주면 편리  
+**예시 : tools.sort(key = lambda x: x.name) # x의 name 애트리뷰트 알파뱃 순으로 오름차순 정렬됨  
+***만약 대소문자 구분 안 해주고 싶으면 x.name.lower() 해주면 됨.. 왜냐하면 그냥 소팅해주면 대문자가 소문자 보다 앞에 오기 때문  
+*여러 가지로 소팅해주고 싶다면? 튜플 사용해주면 됨!
+**예시 : power_tools.sort(key=lambda x : (x.weight, x.name))  
+***근데 이 경우 오름차순 또는 내림차순 한가지만 적용됨  
+****수로 정의된 애트리뷰트가 있다면 -를 붙여줘서 오름차순 내림차순이 섞인 정렬을 가능케 할 수는 있음  
+****위 경우가 아니라면 sort를 두번 호출하는 방식을 써야하는데 이 때는 원하는 sort기준 역순으로 호출 두번해야함  
+*****예:  power_tools.sort(key=lambda x: x.name)  
+*****       power_tools.sort(key=lambda x: x.weight, reverse=True)  
+*****    이 예는 weight기준 내림차순, 이름 기준 오름차순으로 정렬한 것  
 
 
 
