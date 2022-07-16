@@ -71,6 +71,21 @@ Words and Phrases?
 *pave the way : 길을 닦다, 상황을 조성하다  
 
 
-
+**Saturday, 220716   
+*feasible : 실현(실행, 생존) 가능한, viable  
+*oscillating : 진동의  
+*ebb : 썰물,  물이 빠지다, 사그라지다  
+*ebb and flow : 밀물과 썰물  
+*geyser : 간헐 온천  
+*brackish : 염분이 섞인  
+*estuarine : 강어귀, 하구 지역  
+*seepage : 침투, 누수, 누출  
+*swamp : 늪, 습지  
+*effluence : 내쭘음, 발산, 방출, 유출물, 하수, 폐수  
+*dilute : 희석하다, 묽게 하다  
+*porosity : 다공성, 투과성  
+*percolate : 스며들다  
+*granite : 화강암  
+*impervious : 영향받지 않는, 통과시키지 않는  
 
 
