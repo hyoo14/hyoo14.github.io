@@ -16,7 +16,57 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
-# 3 - Friday, 220714  
+#4 - Saturday, 220716
+*eng  
+The lecturer argues that the scenarios proposed to explain the ashen light of Venus are not convincing.  
+This contradicts the reading passage's claim that some plausible causes have been found.  
+
+
+First, the lecturer contends that it is impossible that a chemical process is responsible for the ashen light.  
+The light produced in this way would be so faint that it could only be observed with powerful telescopes.  
+However, the ashen light was seen using simple telescopes.  
+This casts coubt on the reading passage's clamin that a chemical process causes this phenomenon.  
+
+
+Next, the lecturer asserts that it is unlikely that the ashen light is sunlight reflected off the clouds of Venus.  
+This is because the ashen light happens very rarely, yet there is constant sunlight on Venus.  
+The ashen light would be detected more often if the source were sunlight.  
+This counters the reading passage's claim that the ashen light is relfected sunlight.  
+
+
+Finally, the lecturer points out that it cannot be true that aurorae are the ashen light.  
+Plasma only enters an atmosphere when it is drawn in by a magnetic field.  
+However, as Venus does not have one, there is no way that aurorae can occur on Venus.  
+This refutes the reading passage's claim that the glow observed on Venus may be aurorae.  
+
+
+*kor  
+강의자는 금성의 애센 광을 설명하기 위해 제시된 시나리오들이 설득력이 없다고 주장한다.  
+이는 몇 가지 그럴듯한 우너인들이 발견되었다는 읽기 지문의 주장을 반박한다.  
+
+
+첫째로, 강의자는 화학적 과정이 애센 광의 원인인 것은 불가능하다고 주장한다.  
+이러한 방식으로 만들어지는 빛은 너무 희미해서 배율이 높은 망원경으로만 관측될 수 있다.  
+그러나 애센 광은 평범한 망원경을 사용하여 목격되었다.  
+이는 화학적 과정이 이 현상을 야기한다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+다음으로, 강의자는 애센광이 금성의 구름에서 반사된 햇빛일 가능성은 낮다고 주장한다.  
+이것은 애센 광이 매우 드물게 발생하지만 금성에는 항상 햇빛이 있기 때문이다.  
+만약 원천이 햇빛이라면 애센 광은 더 자주 발견될 것이다.  
+이는 애센 광이 반사된 햇빛이라는 읽기 지문의 주장에 반대한다.  
+
+
+마지막으로, 강의자는 오로라가 애센 광이라는 것은 사실일 수 없다고 지적한다.  
+플라스마는 자기장에 의해 끌어당겨졌을 때에만 대기에 진입한다.  
+그러나 금성은 자기장을 가지고 있지 않기 때문에, 오로라가 금성에서 발생할 수 있는 방법은 없다.  
+이는 금성에서 관측된 빛이 오로라일 수 있다는 읽기 지문의 주장을 반박한다.  
+
+
+
+
+
+# 3 - Friday, 220715  
 *eng  
 The lecturer argues that it is doubtful that the Etruscans came from Turkey.   
 This contradicts the reading passage's claim that the Etruscans had Turkish origins.  
