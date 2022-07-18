@@ -16,6 +16,61 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+#5 - Monday, 220718
+*eng  
+Some people think that when doing a group project or working as a tem, the most important characteristic of the team members is either friendliness or createvity.  
+However, in my opinion, it is more important to be able to complete the asigned tasks punctually.  
+This is because punctuality is vital for ensuring that work is finished on schedule and for cooperating effectively with other people.  
+
+
+To begin with, to complete a project or a piece of work by a due date, all the group members should do their own tasks on time.  
+Typically, when people work togheter, the various tasks are divided up so that each member has his or her won role.  
+This means that everyone doing their part on time is the decisive factor that affects the success of the work.  
+For example, my friends and I decided to enter a science competition as a group on impulse.   
+We did not ahve as much time to prepare as other teams, but we split up the assignments and ended up completing our project by the deadline, thanks to everone doing their own work on schedule.  
+If anyone had not accomplished what he or she was supposed to do, we wouldn't have been able to do reach our goal.  
+
+
+On top of that, being punctual is a necessary quality to work well with otehrs.  
+If there is a member on a team who is not punctual but merely sociable or creative, he or she is very likely to give the other members a hard time by putting the project or the team's work in jeopardy.   
+For example, in my office, there was a coworker who never turned in his assignments as scheduled.  
+Even though he was easy to get along with and his ideas were always unique, his lateness made it difficult for the projects he participated in to be done on time.  
+Becuase of that, all the other people on his team expericneced difficulties, such as being reprimanded by a senior manager and having to sacrifice themselves to do work that was supposed to be his.  
+In the end, the other members found working with him very unpleasant.  
+
+
+To sum up, the capacity of team members to finish tasks according to a schedule is essential not only to meeting deadlines but also to collaborating well with one another.  
+In this regard, I feel that being punctual is a more significant attribute for a team member than being outgoing or inventive.  
+
+
+
+
+*kor  
+일부 사람들은 조별 과제를 하거나 팀으로 일할 때, 팀원들의 가장 중요한 특성은 친근감이거나 창의성이라고 생각한다.  
+하지만, 내 생각에는, 할당된 업무를 시간을 엄수하여 완성하는 것이 더 중요하다.  
+이는 시간 엄수가 업무를 일정대로 끝내지는 것을 보장하는 데에 있어서 그리고 다른 사람들과 효과적으로 협동하는 데에 있어서 필수적이기 때문이다.  
+
+
+우선, 프로젝트나 일을 기한까지 완성하기 위해, 모든 조원은 자신의 업무를 시간을 어기지 않고 해야 한다.  
+일반적으로, 사람들이 함께 일할 대, 각각의 팀 구성원이 각자의 역할을 가지도록 다양한 업무들이 나누어진다.  
+이는 모두가 그들의 업무를 시간을 어기지 않고 하는 것이 일의 성공에 영향을 미치는 결정적인 요소라는 것을 의미한다.  
+예를 들어, 나의 친구들과 나는 충동적으로 단체 과학 경연 대회에 참가하기로 결정했다.  
+우리는 다른 팀들에 비해 준비할 시간이 ㅁ낳이 없었짐나 과제를 분담해서 결국 마감일까지 프로젝트를 완성햇는데, 모두가 일정대로 자신의 업무를 한 덕분이었다.  
+만약 누군가가 하기로 했떤 것을 완성하지 못했더라면, 우리는 우리의 목표에 도달할 수 없었을 것이다.  
+
+
+게다가, 시간을 엄수하는 것은 다른 이들과 우너만하게 일하기 위해 필수적인 자질이다.  
+만약 팀에 시간을 엄수하지 않고 단지 사교적이고 창의적이기만 한 구성원이 있따면, 그 사람은 프로젝트나 팀의 업무를 위험에 빠뜨림으로써 다른 구성원들을 힘들게 할 가능성이 높다.  
+예를 들어, 나의 사무실에는, 절대 예정된 대로 업무를 제출하지 않는 한 동료가 잇엇다.  
+비록 그는 어울리기에 편했고 그의 생각은 독특했지만, 그의 늦음은 그가 참여했떤 프로젝트들이 시간을 어기지 않고 마무리되기가 어렵게 만들었다.  
+그것 때문에, 그의 팀의 모든 다른 사람은 상사에 의해 징계를 받는 것과 그의 것이었을 업무를 하는 데에 자신들을 희생해야 하는 것과 같은 어려움을 겪었다.  
+결국 다른 구성원들은 그와 함께 일하는 것이 불쾌하다는 것을 깨달았다.  
+
+
+요약하자면, 팀원들이 일정에 따라 업무를 끝내는 능력은 마감일을 맞추는 데에뿐만 아니라 서로 원만하게 협력하기 위해서도 필수적이다.  
+이러한 점에서, 나는 시간을 엄수하는 것이 사교적이거나 독창적인 것보다 팀원에게 더 중요한 자질이라고 생각한다.  
+
+
 #4 - Saturday, 220716
 *eng  
 The lecturer argues that the scenarios proposed to explain the ashen light of Venus are not convincing.  
