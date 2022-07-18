@@ -63,6 +63,106 @@ This refutes the reading passage's claim that the glow observed on Venus may be 
 이는 금성에서 관측된 빛이 오로라일 수 있다는 읽기 지문의 주장을 반박한다.  
 
 
+*eng->kor  
+The lecturer argues that the scenarios proposed to explain the ashen light of Venus are not convincing.  
+강의자는 시나리오들은 비너스의 ashen 빛이 납득되지 않음을 설명하기 위해 제안되었다고 주장한다.  
+강의자는 금성의 애센 광을 설명하기 위해 제시된 시나리오들이 설득력이 없다고 주장한다.  
+This contradicts the reading passage's claim that some plausible causes have been found.  
+이것은 몇 합당한 원인이 발견되었다는 읽기 지문의 주장을 반박한다.  
+이는 몇 가지 그럴듯한 우너인들이 발견되었다는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer contends that it is impossible that a chemical process is responsible for the ashen light.  
+먼저, 강의자는 화학 작용이 ashen 빛의 책임인 것은 불가능하다고 주장한다.  
+첫째로, 강의자는 화학적 과정이 애센 광의 원인인 것은 불가능하다고 주장한다.  
+The light produced in this way would be so faint that it could only be observed with powerful telescopes.  
+이러한 방식으로 생성된 그 빛은 강력한 망원경으로만 관찰될 수 있을 정도로 매우 희미할 것이다.   
+이러한 방식으로 만들어지는 빛은 너무 희미해서 배율이 높은 망원경으로만 관측될 수 있다.  
+However, the ashen light was seen using simple telescopes.  
+그러나, ashen 빛은 간단한 망원경 사용으로도 보인다.  
+그러나 애센 광은 평범한 망원경을 사용하여 목격되었다.  
+This casts coubt on the reading passage's clamin that a chemical process causes this phenomenon.  
+이것은 화학 작용이 이러한 현상을 야기한다는 읽기 지문의 요지 의심을 가져온다.  
+이는 화학적 과정이 이 현상을 야기한다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+Next, the lecturer asserts that it is unlikely that the ashen light is sunlight reflected off the clouds of Venus.  
+다음으로, 강의자는 ashen 빛은 비너스의 구름들에 반사된 햇빛이기 어렵다고 주장한다.  
+다음으로, 강의자는 애센광이 금성의 구름에서 반사된 햇빛일 가능성은 낮다고 주장한다.  
+This is because the ashen light happens very rarely, yet there is constant sunlight on Venus.  
+이것은 왜냐하면 ashen 빛은 매우 드물게 나타나는데 반면 비너스의 햇빛은 지속적이다.  
+이것은 애센 광이 매우 드물게 발생하지만 금성에는 항상 햇빛이 있기 때문이다.  
+The ashen light would be detected more often if the source were sunlight.  
+ashen 빛은 근원이 햇빛이라면 더 자주 관측될 것이다.    
+만약 원천이 햇빛이라면 애센 광은 더 자주 발견될 것이다.  
+This counters the reading passage's claim that the ashen light is relfected sunlight.  
+이것은 ashen 빛이 햇빛이 반사된 것이라는 읽기 자료의 요지를 반박한다.  
+이는 애센 광이 반사된 햇빛이라는 읽기 지문의 주장에 반대한다.  
+
+
+Finally, the lecturer points out that it cannot be true that aurorae are the ashen light.   
+마지막으로, 오로라가 ahen 빛이라는 것이 진실일리 없다고 강의자는 주장한다.   
+마지막으로, 강의자는 오로라가 애센 광이라는 것은 사실일 수 없다고 지적한다.  
+Plasma only enters an atmosphere when it is drawn in by a magnetic field.  
+플라즈마는 자기장에 의해 그려질 때, 오직 대기권을 통과한다.   
+플라스마는 자기장에 의해 끌어당겨졌을 때에만 대기에 진입한다.  
+However, as Venus does not have one, there is no way that aurorae can occur on Venus.  
+그러나 비너스는 갖고있지 않다. 비너스에서 오로라가 발생할 길은 없다.   
+그러나 금성은 자기장을 가지고 있지 않기 때문에, 오로라가 금성에서 발생할 수 있는 방법은 없다.  
+This refutes the reading passage's claim that the glow observed on Venus may be aurorae.  
+이것은 비너스의 반짝임이 오로라일 수 있다는 읽기 지문의 요지를 반박한다.   
+이는 금성에서 관측된 빛이 오로라일 수 있다는 읽기 지문의 주장을 반박한다.  
+
+
+*kor ->eng   
+강의자는 금성의 애센 광을 설명하기 위해 제시된 시나리오들이 설득력이 없다고 주장한다.  
+The lecturer argues that the scenarios for explaining the ashen light of the Venus is not convincing.  
+The lecturer argues that the scenarios proposed to explain the ashen light of Venus are not convincing.  
+이는 몇 가지 그럴듯한 원인들이 발견되었다는 읽기 지문의 주장을 반박한다.  
+This contradicts the reading passage's claim that some plausible reasons were found.  
+This contradicts the reading passage's claim that some plausible causes have been found.  
+
+
+첫째로, 강의자는 화학적 과정이 애센 광의 원인인 것은 불가능하다고 주장한다.  
+First, the lecturer contends that it is impossible that chemical process is responsible to the ashen light.  
+First, the lecturer contends that it is impossible that a chemical process is responsible for the ashen light.   
+이러한 방식으로 만들어지는 빛은 너무 희미해서 배율이 높은 망원경으로만 관측될 수 있다.  
+The light generated this way is very faint that can only obeserved by high scope telescopes.  
+The light produced in this way would be so faint that it could only be observed with powerful telescopes.  
+그러나 애센 광은 평범한 망원경을 사용하여 목격되었다.  
+However, ashen light has observed by simple telescope.  
+However, the ashen light was seen using simple telescopes.  
+이는 화학적 과정이 이 현상을 야기한다는 읽기 지문의 주장에 의구심을 제기한다.  
+This casts doubt on the reading passage's claim that the chemical process would cause this phenamona.  
+This casts coubt on the reading passage's clamin that a chemical process causes this phenomenon.  
+
+
+다음으로, 강의자는 애센광이 금성의 구름에서 반사된 햇빛일 가능성은 낮다고 주장한다.  
+Next, the lecturer points out that it is unlikely that the ashen light would be reflected light from the cloulds of the Venus.  
+Next, the lecturer asserts that it is unlikely that the ashen light is sunlight reflected off the clouds of Venus.   
+이것은 애센 광이 매우 드물게 발생하지만 금성에는 항상 햇빛이 있기 때문이다.  
+This is because ashen light take place very rare sunlight in Venus is constant.  
+This is because the ashen light happens very rarely, yet there is constant sunlight on Venus.  
+만약 원천이 햇빛이라면 애센 광은 더 자주 발견될 것이다.  
+There would be more ahsne light If source is sunlight.  
+The ashen light would be detected more often if the source were sunlight.  
+이는 애센 광이 반사된 햇빛이라는 읽기 지문의 주장에 반대한다.  
+This counters the reading passage's claim that ashen light is reflected sunlight.  
+This counters the reading passage's claim that the ashen light is relfected sunlight.  
+
+
+마지막으로, 강의자는 오로라가 애센 광이라는 것은 사실일 수 없다고 지적한다.  
+Finally, the lecturer asserts that it is not fact that auroura could be the ashen light.  
+Finally, the lecturer points out that it cannot be true that aurorae are the ashen light.  
+플라스마는 자기장에 의해 끌어당겨졌을 때에만 대기에 진입한다.  
+Plasma enter the atmosphere when drawn by magnetic field.  
+Plasma only enters an atmosphere when it is drawn in by a magnetic field.  
+그러나 금성은 자기장을 가지고 있지 않기 때문에, 오로라가 금성에서 발생할 수 있는 방법은 없다.  
+Because Venus do not have one, there is no way to generate auroura in the Venus.  
+However, as Venus does not have one, there is no way that aurorae can occur on Venus.  
+이는 금성에서 관측된 빛이 오로라일 수 있다는 읽기 지문의 주장을 반박한다.  
+This refutes the reading passage's claim that obaserved light could be the auroura.  
+This refutes the reading passage's claim that the glow observed on Venus may be aurorae.  
 
 
 
