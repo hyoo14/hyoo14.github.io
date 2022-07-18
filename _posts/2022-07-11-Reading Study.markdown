@@ -89,3 +89,35 @@ Words and Phrases?
 *impervious : 영향받지 않는, 통과시키지 않는  
 
 
+**Monday, 220718   
+*extensive : 엄청난, substantial  
+*expedient : 쓸모있는  
+*extraneous : 외래의  
+*extreme : 극도의  
+*amendment : 
+*compilance : 
+*allegiance : 
+*adjudicator : 
+*sovereighnty : 
+*discourse : 
+*inalienable : 
+*suspect : 
+*Bill of Rights : 권리장전  
+*convened : 
+*chunk : 큰 덩어리, 상당히 많은 양, 언어 학습자가 한꺼번에 하나의 단위처럼 배울 수 있는 어구  
+*poses : 제기한다, presents  
+*reveal : 폭로하다  
+*downplay : 경시하다  
+*embody : 포함한다  
+*genus : 속 (분류체계의 종속과목강문계 중에)  
+*disorient : 방향 감각을 혼란시키다  
+*sheds light on the broader genus : 보다 넓은 속을 밝히다  
+*sheds light on  : ~을 밝히다  
+
+
+
+
+
+
+
+
