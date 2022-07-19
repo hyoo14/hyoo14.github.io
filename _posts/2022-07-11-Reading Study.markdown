@@ -115,6 +115,23 @@ Words and Phrases?
 *sheds light on  : ~을 밝히다  
 
 
+**Tuesday, 220719   
+*arrival : 등장, 출현, 도착, advent  
+*prompt : 즉각적인, 신속한, 촉발하다, 유도하다  
+*transference : 이동, 옮기다  
+*established : 설립하다, 수립하다, 확고히하다, 인정받는  
+*conjecture : 추측  
+*consolidate : 굳히다, 강화하다, 통합하다  
+*obsolete : 더 이상 쓸모가 없는, 한물간, 구식의  
+
+
+
+# Coments  
+**Tuesday, 220719   
+*핵심을 계속 놓치는 느낌  
+ 
+
+
 
 
 
