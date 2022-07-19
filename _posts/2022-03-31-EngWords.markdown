@@ -13,6 +13,10 @@ categories: study
 
 *For improving english skill  
 
+*day28-onset mount involved solely mechanism speculate  
+    -intricated tangled only purely exclusively entirely suffer instrument device  
+    apparatus means method way guess suppose hypothesize assume gamble  
+    risk  
 *day27-ramnant indispensable undermine undertake underlie fashion prolong controversial  
     encompass unaccounted-for manifest faithful faith concede haphazard mainstay edible legible  
     scrutinize beneficiary yield channel overview occasional entice work-out-at enlist diminish  
@@ -401,6 +405,85 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 
 {% endhighlight %}
 
+
+
+# day 28  
+
+
+*1. abundance  
+*1. plenty, large number, profusion  
+**There was an abundance of wild animals in the dense forests.  
+**다수, 풍부  
+
+
+*2. onset  
+*2. beginning, start, commencement  
+**At the onset of the 19th century, New York City was already a bustling commericial center.  
+**시작  
+
+
+*3. witness  
+*3. observe, see, look on  
+**In 2001, many people gathered to witness the launch of the last space shuttle.  
+**목격하다  
+
+
+*4. mount  
+*4. grow, increase, multiply  
+**The pressure on the student mounted as the exam date approached.  
+**증가하다  
+
+
+*5. reinforce  
+*5. strengthen, support, consolidate, fortify  
+**Steel bars are used to reinforce concrete in the construction of large buildings and bridges.  
+**강화하다  
+
+
+*5-1. reinforcement  
+*5-1. supplement  
+**보강  
+
+
+*6. intense  
+*6. strong, extreme, fierce, acute  
+**Many in the open stadium covered their heads because the sun's rays were too intense.  
+**강렬한, 극심한  
+
+
+*7. involved  
+*7. complicated, intricate, tangled  
+**The author's literary style was so involved that students found her books difficult to read.  
+**복잡한  
+
+
+*8. solely  
+*8. only, purely, exclusively, entirely  
+**In 1790, voting rights in the US were solely for male landowners.  
+**오로지  
+
+
+*9. undergo  
+*9. experience, go through, suffer  
+**Japan has undergone several recessions since the 1980s.  
+**겪다, 경험하다  
+
+*10. mechanism  
+*10. instrument, device, apparatus  
+*10. means, method, way  
+**Scientists attached a GPS tracking system on the captured bear, but the mechanism failed.  
+**There has to be anotehr mechanism for moving these boxes out.  
+**기계, 장치  
+**방법  
+
+
+*11. speculate  
+*11. guess, suppose, hypothesize, assume  
+*11. gamble, risk  
+**Galileo corrrectly speculated that the planets move around the Sun.  
+**speculate in the stock market  
+**추측하다  
+**투기하다  
 
 
 # day 27  
