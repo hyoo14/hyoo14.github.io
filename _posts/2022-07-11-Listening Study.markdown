@@ -19,15 +19,19 @@ Note?
 
 # Thinking?    
 
-***Monday, 220611    
+***Monday, 220711    
 *focus on surface, not deep inside?  
 
 
 #Words  
 
-***Tuesday, 220612  
+***Tuesday, 220712  
 *jurisdiction : 관할권  
 
 
-***Thursday, 220614  
+***Thursday, 220714  
 *jeopardize : 위태롭게 하다    
+
+
+***Tuesday, 220719  
+*gill : 아가미  
