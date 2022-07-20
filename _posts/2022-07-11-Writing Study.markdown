@@ -16,6 +16,58 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+#6 - Wednesday, 220720  
+*eng  
+The lecturer argues that there is still hope for the Everglades.  
+This contradicts the reading passage's claim that environmental problems will make the Everglades disappear.  
+
+
+First, the lecturer contends that water pollution from chemicals in the Everglades has been decreasing.  
+This is because new government regulations restrict the amount of harmful chemicals going into the wetlands.  
+Due to the new rules, farmers are forced to switch to less harmful fertilizers.  
+This casts doubt on the reading passage's claim that water pollution from farms is so severe that the Verglades will be destroyed.  
+
+
+Next, the lecturer asserts that the problem of soil loss is already being addressed.  
+Local people have started restroing the soil, and the results are promising.  
+Also, reintroducing water and native plants will eventually return the soil to its original condition.  
+This counters the reading passage's claim that the soil is disappearing very quickly.  
+
+
+Finally, the lecturer claims that returning developed areas to their natural state is making it less likely that endangered species will go extinct.  
+The government is going to convert a 700-square-kilometer sugar plantation within the Everglades into wild marshland.  
+This will expand the habitats of species, giving it a higher chance of survival.  
+This refutes the reading passage's claim that development in the Everglades is placing animals at risk.  
+
+
+
+
+*kor  
+강의자는 에버글레이즈에 여전히 희망이 있다고 주장한다.  
+이는 환경 문제가 에버클레이즈를 사라지게 만들 것이라는 읽기 지문의 주장을 반박한다.  
+
+
+첫째로, 강의자는 에버글레이즈에서 화학 물질로 인한 수질 오염이 감소하고 있다고 주장한다.  
+이는 새로운 정부 규정이 습지대에 들어가는 유해한 화학 물질의 양을 제한하기 때문이다.  
+새로운 규정 때문에, 농부들은 덜 유해한 비료로 바꾸도록 강제받고 있다.  
+이는 농장에서 발생하는 수질 오염이 매우 심각해서 에버글레이즈가 파괴될 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+다음으로, 강의자는 토양 유실 문제가 이미 처리되고 있다고 주장한다.  
+현지 사람들은 토양을 복원하기 시작했고, 그 결과는 전망이 좋다.  
+또한, 물과 토착 식물을 다시 들여오는 것은 결국 토양을 원래 상태로 되돌려놓을 것이다.  
+이는 토양이 매우 빠르게 사라지고 있다는 읽기 지문의 주장에 반대한다.  
+
+
+마지막으로, 강의자는 개발된 지역을 천연 상태로 되돌리는 것이 위기에 처한 종들이 멸종될 가능성을 낮추고 있다고 주장한다.  
+정부는 에버글레이즈 내의 설탕 재배장 700제곱킬로미터를 야생 습지대로 바꿀 것이다.  
+이것은 종의 서식지를 확장하여, 그것이 더 높은 생존 가능성을 가지게 할 것이다.  
+이는 에버글레이즈에서의 개발이 동물들을 위험한 상태에 놓이게 한다는 읽기 지문의 주장을 반박한다.  
+
+
+
+
+
 #5 - Monday, 220718
 *eng  
 Some people think that when doing a group project or working as a tem, the most important characteristic of the team members is either friendliness or createvity.  
@@ -74,9 +126,11 @@ In this regard, I feel that being punctual is a more significant attribute for a
 *eng->kor  
 Some people think that when doing a group project or working as a team, the most important characteristic of the team members is either friendliness or createvity.  
 몇몇 사람들은 그룹 프로젝트를 할 때나 팀으로 일할 때 팀 멤버의 가장 중요한 속성은 친근함 또는 창의성이라고 생각한다.  
-일부 사람들은 조별 과제를 하거나 팀으로 일할 때, 팀원들의 가장 중요한 특성은 친근감이거나 창의성이라고 생각한다.   However, in my opinion, it is more important to be able to complete the assigned tasks punctually.  
+일부 사람들은 조별 과제를 하거나 팀으로 일할 때, 팀원들의 가장 중요한 특성은 친근감이거나 창의성이라고 생각한다.   
+However, in my opinion, it is more important to be able to complete the assigned tasks punctually.  
 그러나 내 생각에는 즉시 할당된 업무들을 완료할 수 있는지가 가장 중요하다.  
-하지만, 내 생각에는, 할당된 업무를 시간을 엄수하여 완성하는 것이 더 중요하다.   This is because punctuality is vital for ensuring that work is finished on schedule and for cooperating effectively with other people.  
+하지만, 내 생각에는, 할당된 업무를 시간을 엄수하여 완성하는 것이 더 중요하다.   
+This is because punctuality is vital for ensuring that work is finished on schedule and for cooperating effectively with other people.  
 이것은 왜냐하면 즉시성은 일이 예정되로 끝나는 것과 다른 사람들과 효과적으로 협력하는 것을 확신하는 데에 명확하다.  
 이는 시간 엄수가 업무를 일정대로 끝내지는 것을 보장하는 데에 있어서 그리고 다른 사람들과 효과적으로 협동하는 데에 있어서 필수적이기 때문이다.  
 
@@ -84,37 +138,47 @@ Some people think that when doing a group project or working as a team, the most
 
 To begin with, to complete a project or a piece of work by a due date, all the group members should do their own tasks on time.  
 먼저, 프로젝트 또는 하나의 일을 기한 안에 완료하려면 모든 그룹 멤버들은 그들의 업무를 시간 안에 해야한다.  
-우선, 프로젝트나 일을 기한까지 완성하기 위해, 모든 조원은 자신의 업무를 시간을 어기지 않고 해야 한다.  Typically, when people work togheter, the various tasks are divided up so that each member has his or her own role.  
+우선, 프로젝트나 일을 기한까지 완성하기 위해, 모든 조원은 자신의 업무를 시간을 어기지 않고 해야 한다.  
+Typically, when people work togheter, the various tasks are divided up so that each member has his or her own role.  
 일반적으로, 사람들이 같이 일할 때, 다양한 업무들이 분배되고 그래서 각 멤버들은 그 또는 그녀 스스로의 역할을 갖는다.  
-일반적으로, 사람들이 함께 일할 대, 각각의 팀 구성원이 각자의 역할을 가지도록 다양한 업무들이 나누어진다.   This means that everyone doing their part on time is the decisive factor that affects the success of the work.  
+일반적으로, 사람들이 함께 일할 대, 각각의 팀 구성원이 각자의 역할을 가지도록 다양한 업무들이 나누어진다.   
+This means that everyone doing their part on time is the decisive factor that affects the success of the work.  
 이것은 모든이가 그들의 부분을 시간안에 하는 것이 일의 성공에 영향을 끼치는 중요한 요소임을 의미한다.  
-이는 모두가 그들의 업무를 시간을 어기지 않고 하는 것이 일의 성공에 영향을 미치는 결정적인 요소라는 것을 의미한다.   For example, my friends and I decided to enter a science competition as a group on impulse.   
+이는 모두가 그들의 업무를 시간을 어기지 않고 하는 것이 일의 성공에 영향을 미치는 결정적인 요소라는 것을 의미한다.   
+For example, my friends and I decided to enter a science competition as a group on impulse.   
 예를 들어, 내 친구들과 나는 충동적으로 그룹으로써 과학 경쟁에 참여하기로 결정했다.  
-예를 들어, 나의 친구들과 나는 충동적으로 단체 과학 경연 대회에 참가하기로 결정했다.   We did not have as much time to prepare as other teams, but we split up the assignments and ended up completing our project by the deadline, thanks to everone doing their own work on schedule.  
+예를 들어, 나의 친구들과 나는 충동적으로 단체 과학 경연 대회에 참가하기로 결정했다.   
+We did not have as much time to prepare as other teams, but we split up the assignments and ended up completing our project by the deadline, thanks to everone doing their own work on schedule.  
 우리는 다른 팀들처럼 준비할 많은 시간이 없었다. 하지만 우리는 과제를 나누었고 우리의 프로젝트를 기한 안에 마치며 끝냈다.  
-우리는 다른 팀들에 비해 준비할 시간이 많이 없었으나 과제를 분담해서 결국 마감일까지 프로젝트를 완성햇는데, 모두가 일정대로 자신의 업무를 한 덕분이었다.  If anyone had not accomplished what he or she was supposed to do, we wouldn’t have been able to do reach our goal.  
+우리는 다른 팀들에 비해 준비할 시간이 많이 없었으나 과제를 분담해서 결국 마감일까지 프로젝트를 완성햇는데, 모두가 일정대로 자신의 업무를 한 덕분이었다.  
+If anyone had not accomplished what he or she was supposed to do, we wouldn’t have been able to do reach our goal.  
 만약 누군가가 그 또는 그녀가 하기로 한 것을 완료하지 않았다면, 우리는 우리의 목표에 도달하지 못 했을 것이다.  
 만약 누군가가 하기로 했떤 것을 완성하지 못했더라면, 우리는 우리의 목표에 도달할 수 없었을 것이다.    
 
 
 On top of that, being punctual is a necessary quality to work well with others.   
 게다가, 즉시 하는 것은 다른 이들과 일을 잘 하는 디에 필요한 퀄리티이다.   
-게다가, 시간을 엄수하는 것은 다른 이들과 우너만하게 일하기 위해 필수적인 자질이다.    If there is a member on a team who is not punctual but merely sociable or creative, he or she is very likely to give the other members a hard time by putting the project or the team’s work in jeopardy.   
+게다가, 시간을 엄수하는 것은 다른 이들과 우너만하게 일하기 위해 필수적인 자질이다.    
+If there is a member on a team who is not punctual but merely sociable or creative, he or she is very likely to give the other members a hard time by putting the project or the team’s work in jeopardy.   
 만약 사회적이거나 독창적이지만 시간을 엄수하지 않는 멤버가 있다면 그 또는 그녀는 프로젝트나 팀의 일을 위기에 빠뜨려서 다른 구성원들에게 힘든 시간을 줄 가능성이 높다.  
-만약 팀에 시간을 엄수하지 않고 단지 사교적이고 창의적이기만 한 구성원이 있따면, 그 사람은 프로젝트나 팀의 업무를 위험에 빠뜨림으로써 다른 구성원들을 힘들게 할 가능성이 높다.  For example, in my office, there was a coworker who never turned in his assignments as scheduled.   
+만약 팀에 시간을 엄수하지 않고 단지 사교적이고 창의적이기만 한 구성원이 있따면, 그 사람은 프로젝트나 팀의 업무를 위험에 빠뜨림으로써 다른 구성원들을 힘들게 할 가능성이 높다.  
+For example, in my office, there was a coworker who never turned in his assignments as scheduled.   
 예를 들어, 내 오피스에, 예정 안에 할당물을 절대 하지 않는 한 동료가 있다.   
-예를 들어, 나의 사무실에는, 절대 예정된 대로 업무를 제출하지 않는 한 동료가 잇엇다.  Even though he was easy to get along with and his ideas were always unique, his lateness made it difficult for the projects he participated in to be done on time.  
+예를 들어, 나의 사무실에는, 절대 예정된 대로 업무를 제출하지 않는 한 동료가 잇엇다.  
+Even though he was easy to get along with and his ideas were always unique, his lateness made it difficult for the projects he participated in to be done on time.  
 비록 그가 같이 지내기 쉽고 그의 아이디어는 항상 독특하지만, 그의 게으름은 시간 안에 끝내야 할 그가 참여한 프로젝트들을 힘들게 만든다  
 비록 그는 어울리기에 편했고 그의 생각은 독특했지만, 그의 늦음은 그가 참여했떤 프로젝트들이 시간을 어기지 않고 마무리되기가 어렵게 만들었다.  
 Becuase of that, all the other people on his team expericneced difficulties, such as being reprimanded by a senior manager and having to sacrifice themselves to do work that was supposed to be his.  
 이것 때문에, 그의 팀의 모든 다른 사람들은 시니어 매니저에게 reprimanded 되는 것과 그들 스스로 그가 했어야할 일을 하느라 희생되는 것 같은 어려움을 겪었다.  
-그것 때문에, 그의 팀의 모든 다른 사람은 상사에 의해 징계를 받는 것과 그의 것이었을 업무를 하는 데에 자신들을 희생해야 하는 것과 같은 어려움을 겪었다.  In the end, the other members found working with him very unpleasant.  
+그것 때문에, 그의 팀의 모든 다른 사람은 상사에 의해 징계를 받는 것과 그의 것이었을 업무를 하는 데에 자신들을 희생해야 하는 것과 같은 어려움을 겪었다.  
+In the end, the other members found working with him very unpleasant.  
 결국, 다른 멤버들은 그와 일하는 것이 매우 불쾌하다는 것을 발견했다.  
 결국 다른 구성원들은 그와 함께 일하는 것이 불쾌하다는 것을 깨달았다.   
 
  
 
-To sum up, the capacity of team members to finish tasks according to a schedule is essential not only to meeting deadlines but also to collaborating well with one another.  요약하면, 스케줄에 따라 일을 끝마치는 팀멤버의 능력이 매우 필수적이다. 기한을 meeting할 뿐 아니라 다른 이들과 협력하는 것 까지  
+To sum up, the capacity of team members to finish tasks according to a schedule is essential not only to meeting deadlines but also to collaborating well with one another.  
+요약하면, 스케줄에 따라 일을 끝마치는 팀멤버의 능력이 매우 필수적이다. 기한을 meeting할 뿐 아니라 다른 이들과 협력하는 것 까지  
 요약하자면, 팀원들이 일정에 따라 업무를 끝내는 능력은 마감일을 맞추는 데에뿐만 아니라 서로 원만하게 협력하기 위해서도 필수적이다.  
 In this regard, I feel that being punctual is a more significant attribute for a team member than being outgoing or inventive.  
 즉, 나는 팀 멤버들을 위해 즉시 하는 것이 뛰어나고 창의적인 것 보다 더 중요한 덕목이라는 느낌이 든다.  
@@ -124,25 +188,32 @@ In this regard, I feel that being punctual is a more significant attribute for a
 *kor->eng   
 일부 사람들은 조별 과제를 하거나 팀으로 일할 때, 팀원들의 가장 중요한 특성은 친근감이거나 창의성이라고 생각한다.  
 Some people think that the most important characteristic l is friendliness or creativity when doing a team assignment or working as a team.  
-Some people think that when doing a group project or working as a tem, the most important characteristic of the team members is either friendliness or createvity.  하지만, 내 생각에는, 할당된 업무를 시간을 엄수하여 완성하는 것이 더 중요하다.  
+Some people think that when doing a group project or working as a tem, the most important characteristic of the team members is either friendliness or createvity.  
+하지만, 내 생각에는, 할당된 업무를 시간을 엄수하여 완성하는 것이 더 중요하다.  
 However, in my opinion, it is more important that completing assigned tasks on a due date.  
-However, in my opinion, it is more important to be able to complete the asigned tasks punctually.  이는 시간 엄수가 업무를 일정대로 끝내지는 것을 보장하는 데에 있어서 그리고 다른 사람들과 효과적으로 협동하는 데에 있어서 필수적이기 때문이다.  
+However, in my opinion, it is more important to be able to complete the asigned tasks punctually.  
+이는 시간 엄수가 업무를 일정대로 끝내지는 것을 보장하는 데에 있어서 그리고 다른 사람들과 효과적으로 협동하는 데에 있어서 필수적이기 때문이다.  
 This is because, punctuation on time is essential for guarantee of completing  takss on schedule and cooperating with others effectively.   
 This is because punctuality is vital for ensuring that work is finished on schedule and for cooperating effectively with other people.  
 
 
 
-우선, 프로젝트나 일을 기한까지 완성하기 위해, 모든 조원은 자신의 업무를 시간을 어기지 않고 해야 한다.To begin with, to complete a project or a taks on deadline, every members do their tasks without ignoring their time.  
+우선, 프로젝트나 일을 기한까지 완성하기 위해, 모든 조원은 자신의 업무를 시간을 어기지 않고 해야 한다.
+To begin with, to complete a project or a taks on deadline, every members do their tasks without ignoring their time.  
 To begin with, to complete a project or a piece of work by a due date, all the group members should do their own tasks on time.  
 일반적으로, 사람들이 함께 일할 대, 각각의 팀 구성원이 각자의 역할을 가지도록 다양한 업무들이 나누어진다.  
 Basically, when people work together, each of a team member has divided various tasks to have their own role.   
-Typically, when people work togheter, the various tasks are divided up so that each member has his or her won role.   이는 모두가 그들의 업무를 시간을 어기지 않고 하는 것이 일의 성공에 영향을 미치는 결정적인 요소라는 것을 의미한다.  
+Typically, when people work togheter, the various tasks are divided up so that each member has his or her won role.   
+이는 모두가 그들의 업무를 시간을 어기지 않고 하는 것이 일의 성공에 영향을 미치는 결정적인 요소라는 것을 의미한다.  
 This means that it is a desicive factor for success in work not to breaking their working hours.  
-This means that everyone doing their part on time is the decisive factor that affects the success of the work.  예를 들어, 나의 친구들과 나는 충동적으로 단체 과학 경연 대회에 참가하기로 결정했다.
+This means that everyone doing their part on time is the decisive factor that affects the success of the work.  
+예를 들어, 나의 친구들과 나는 충동적으로 단체 과학 경연 대회에 참가하기로 결정했다.
 For example, my friends and I have determined to enter a group science competetion on impulse.  
-For example, my friends and I decided to enter a science competition as a group on impulse.   우리는 다른 팀들에 비해 준비할 시간이 많이 없었지만 과제를 분담해서 결국 마감일까지 프로젝트를 완성햇는데, 모두가 일정대로 자신의 업무를 한 덕분이었다.   
+For example, my friends and I decided to enter a science competition as a group on impulse.   
+우리는 다른 팀들에 비해 준비할 시간이 많이 없었지만 과제를 분담해서 결국 마감일까지 프로젝트를 완성햇는데, 모두가 일정대로 자신의 업무를 한 덕분이었다.   
 We didn't have much time to prepare than other teams but we end up complete our project on deadline by dividing our assignment, thanks to everyone to do our own work on schedule.  
-We did not ahve as much time to prepare as other teams, but we split up the assignments and ended up completing our project by the deadline, thanks to everone doing their own work on schedule.  만약 누군가가 하기로 했떤 것을 완성하지 못했더라면, 우리는 우리의 목표에 도달할 수 없었을 것이다.  
+We did not ahve as much time to prepare as other teams, but we split up the assignments and ended up completing our project by the deadline, thanks to everone doing their own work on schedule.  
+만약 누군가가 하기로 했떤 것을 완성하지 못했더라면, 우리는 우리의 목표에 도달할 수 없었을 것이다.  
 If someone wouldn't finish what they have to accomplish, we wouldn't reach to our goal.  
 If anyone had not accomplished what he or she was supposed to do, we wouldn't have been able to do reach our goal.   
 
@@ -150,22 +221,28 @@ If anyone had not accomplished what he or she was supposed to do, we wouldn't ha
 
 게다가, 시간을 엄수하는 것은 다른 이들과 원만하게 일하기 위해 필수적인 자질이다.  
 On top of that, punctuating time is enssential manner to work with others soundly.    
-On top of that, being punctual is a necessary quality to work well with otehrs.  만약 팀에 시간을 엄수하지 않고 단지 사교적이고 창의적이기만 한 구성원이 있따면, 그 사람은 프로젝트나 팀의 업무를 위험에 빠뜨림으로써 다른 구성원들을 힘들게 할 가능성이 높다.  
+On top of that, being punctual is a necessary quality to work well with otehrs.  
+만약 팀에 시간을 엄수하지 않고 단지 사교적이고 창의적이기만 한 구성원이 있따면, 그 사람은 프로젝트나 팀의 업무를 위험에 빠뜨림으로써 다른 구성원들을 힘들게 할 가능성이 높다.  
 If there is a team member who do not respect time but just friendly and creative, that person would make projects or team task in danger so other members would get in trouble.    
-If there is a member on a team who is not punctual but merely sociable or creative, he or she is very likely to give the other members a hard time by putting the project or the team's work in jeopardy.   예를 들어, 나의 사무실에는, 절대 예정된 대로 업무를 제출하지 않는 한 동료가 잇엇다.  
+If there is a member on a team who is not punctual but merely sociable or creative, he or she is very likely to give the other members a hard time by putting the project or the team's work in jeopardy.   
+예를 들어, 나의 사무실에는, 절대 예정된 대로 업무를 제출하지 않는 한 동료가 잇엇다.  
 For example, in my office, there is a colleague who never accomplish his task on time.  
-For example, in my office, there was a coworker who never turned in his assignments as scheduled.  비록 그는 어울리기에 편했고 그의 생각은 독특했지만, 그의 늦음은 그가 참여했떤 프로젝트들이 시간을 어기지 않고 마무리되기가 어렵게 만들었다.  
+For example, in my office, there was a coworker who never turned in his assignments as scheduled.  
+비록 그는 어울리기에 편했고 그의 생각은 독특했지만, 그의 늦음은 그가 참여했떤 프로젝트들이 시간을 어기지 않고 마무리되기가 어렵게 만들었다.  
 Even thought he is easy to get along and his idea is unique, his lateness would make hard to complete the projects that he participate withoug ignoring time.  
-Even though he was easy to get along with and his ideas were always unique, his lateness made it difficult for the projects he participated in to be done on time.  그것 때문에, 그의 팀의 모든 다른 사람은 상사에 의해 징계를 받는 것과 그의 것이었을 업무를 하는 데에 자신들을 희생해야 하는 것과 같은 어려움을 겪었다.
+Even though he was easy to get along with and his ideas were always unique, his lateness made it difficult for the projects he participated in to be done on time.  
+그것 때문에, 그의 팀의 모든 다른 사람은 상사에 의해 징계를 받는 것과 그의 것이었을 업무를 하는 데에 자신들을 희생해야 하는 것과 같은 어려움을 겪었다.
 For this, every people from his team get in trouble like having got penalties from their supervisor and sacrifice themselves to work what is his part of task.  
-Becuase of that, all the other people on his team expericneced difficulties, such as being reprimanded by a senior manager and having to sacrifice themselves to do work that was supposed to be his.  결국 다른 구성원들은 그와 함께 일하는 것이 불쾌하다는 것을 깨달았다.  
+Becuase of that, all the other people on his team expericneced difficulties, such as being reprimanded by a senior manager and having to sacrifice themselves to do work that was supposed to be his.  
+결국 다른 구성원들은 그와 함께 일하는 것이 불쾌하다는 것을 깨달았다.  
 Other members finally feel like working with him is unpleasant.   
 In the end, the other members found working with him very unpleasant.    
 
 
 요약하자면, 팀원들이 일정에 따라 업무를 끝내는 능력은 마감일을 맞추는 데에뿐만 아니라 서로 원만하게 협력하기 위해서도 필수적이다.  
 To sump up, it is essential that members from team complete their tasks on schedule not only for finish on deadlines but also for cooperate with others.   
-To sum up, the capacity of team members to finish tasks according to a schedule is essential not only to meeting deadlines but also to collaborating well with one another.   이러한 점에서, 나는 시간을 엄수하는 것이 사교적이거나 독창적인 것보다 팀원에게 더 중요한 자질이라고 생각한다.  
+To sum up, the capacity of team members to finish tasks according to a schedule is essential not only to meeting deadlines but also to collaborating well with one another.   
+이러한 점에서, 나는 시간을 엄수하는 것이 사교적이거나 독창적인 것보다 팀원에게 더 중요한 자질이라고 생각한다.  
 In this regard, I think punctuating time is a more important value than frindliness and inventiveness.  
 In this regard, I feel that being punctual is a more significant attribute for a team member than being outgoing or inventive.  
 
