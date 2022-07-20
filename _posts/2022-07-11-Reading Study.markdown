@@ -125,6 +125,8 @@ Words and Phrases?
 *obsolete : 더 이상 쓸모가 없는, 한물간, 구식의  
 
 
+**Wednesday, 220720   
+*obscured : 가려진  
 
 # Coments  
 **Tuesday, 220719   
