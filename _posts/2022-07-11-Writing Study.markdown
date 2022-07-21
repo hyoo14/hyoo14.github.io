@@ -65,6 +65,111 @@ This refutes the reading passage's claim that development in the Everglades is p
 이는 에버글레이즈에서의 개발이 동물들을 위험한 상태에 놓이게 한다는 읽기 지문의 주장을 반박한다.  
 
 
+*eng->kor    
+The lecturer argues that there is still hope for the Everglades.  
+강의자는 에버글레이드에 아직 희망이 있다고 주장한다.  
+강의자는 에버글레이즈에 여전히 희망이 있다고 주장한다.  
+This contradicts the reading passage's claim that environmental problems will make the Everglades disappear.  
+이것은 읽기 지문의 요지인 환경 문제로 에버글래이드는 사라질 것이라는 것을 반박한다.  
+이는 환경 문제가 에버클레이즈를 사라지게 만들 것이라는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer contends that water pollution from chemicals in the Everglades has been decreasing.  
+우선, 강의자는 주장한다. 에버글레이드에서 화학물질로 인한 수질오염이 줄어들고 있다고.  
+첫째로, 강의자는 에버글레이즈에서 화학 물질로 인한 수질 오염이 감소하고 있다고 주장한다.  
+This is because new government regulations restrict the amount of harmful chemicals going into the wetlands.  
+이것은 왜냐하면 새정부의 규제책들이 많은 양의 위험 화학물질이 습지로 가는 것을 제한하기 때문이다.  
+이는 새로운 정부 규정이 습지대에 들어가는 유해한 화학 물질의 양을 제한하기 때문이다.  
+Due to the new rules, farmers are forced to switch to less harmful fertilizers.  
+새로운 규제 때문에, 농부들은 덜 유해한 비료로 바꿀 것을 강요받는다.  
+새로운 규정 때문에, 농부들은 덜 유해한 비료로 바꾸도록 강제받고 있다.  
+This casts doubt on the reading passage's claim that water pollution from farms is so severe that the Everglades will be destroyed.  
+이것은 농장들로부터 수질오염이 매우 심각하여 에버글래이드가 파괴되어버릴 거라는 읽기 지문의 요지에 의구심을 가져온다
+이는 농장에서 발생하는 수질 오염이 매우 심각해서 에버글레이즈가 파괴될 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+Next, the lecturer asserts that the problem of soil loss is already being addressed.  
+다음으로 강의자는 토양의 문제는 이미 해결되었다고? 주장한다.  
+다음으로, 강의자는 토양 유실 문제가 이미 처리되고 있다고 주장한다.  
+Local people have started restroing the soil, and the results are promising.  
+지역 사람들은 토양 회복을 시작했다 그리고 결과는 희망적이다.  
+현지 사람들은 토양을 복원하기 시작했고, 그 결과는 전망이 좋다.  
+Also, reintroducing water and native plants will eventually return the soil to its original condition.  
+또한, 물 회복과 자연 식물들은 결과적으로 토양이 원래 상태로 돌아오게 했다.  
+또한, 물과 토착 식물을 다시 들여오는 것은 결국 토양을 원래 상태로 되돌려놓을 것이다.  
+This counters the reading passage's claim that the soil is disappearing very quickly.  
+이것은 토양이 매우 빠르게 사라지고 있다는 읽기 지문의 요지를 반박한다.  
+이는 토양이 매우 빠르게 사라지고 있다는 읽기 지문의 주장에 반대한다.  
+
+
+Finally, the lecturer claims that returning developed areas to their natural state is making it less likely that endangered species will go extinct.  
+마지막으로, 개발된 지역의 자연적 상태로의 환원은 위기 종들이 멸종하게 하는 것을 경감시킨다고 강의자는 주장한다.  
+마지막으로, 강의자는 개발된 지역을 천연 상태로 되돌리는 것이 위기에 처한 종들이 멸종될 가능성을 낮추고 있다고 주장한다.  
+The government is going to convert a 700-square-kilometer sugar plantation within the Everglades into wild marshland.  
+정부는 에버글래이드의 700제곱미터 설탕 경작지를 야생의 슾지로 바꿀 것이다.  
+정부는 에버글레이즈 내의 설탕 재배장 700제곱킬로미터를 야생 습지대로 바꿀 것이다.  
+This will expand the habitats of species, giving it a higher chance of survival.  
+이것은 종들의 서식지를 넓히고 그것들의 생존확률을 높일 것이다.  
+이것은 종의 서식지를 확장하여, 그것이 더 높은 생존 가능성을 가지게 할 것이다.  
+This refutes the reading passage's claim that development in the Everglades is placing animals at risk.  
+이것은 에버글레이드의 개발이 동물들에게 위험을 준다는 읽기 지문의 요지를 반박한다.  
+이는 에버글레이즈에서의 개발이 동물들을 위험한 상태에 놓이게 한다는 읽기 지문의 주장을 반박한다.  
+
+
+
+*kor->eng    
+강의자는 에버글레이즈에 여전히 희망이 있다고 주장한다.  
+The lecture argues that Everglade still has hope.  
+The lecturer argues that there is still hope for the Everglades.  
+이는 환경 문제가 에버클레이즈를 사라지게 만들 것이라는 읽기 지문의 주장을 반박한다.  
+This contradicts the reading passage's claim that environmental problem will make Everglade disappear.  
+This contradicts the reading passage's claim that environmental problems will make the Everglades disappear.  
+
+
+첫째로, 강의자는 에버글레이즈에서 화학 물질로 인한 수질 오염이 감소하고 있다고 주장한다.  
+First, the lecturer contends that water pollutions by chemicals has been decreasing in the Everglade.  
+First, the lecturer contends that water pollution from chemicals in the Everglades has been decreasing.  
+이는 새로운 정부 규정이 습지대에 들어가는 유해한 화학 물질의 양을 제한하기 때문이다.  
+This is becuase the regulation from new government has been restricted harmful chemicals going to the wetland.  
+This is because new government regulations restrict the amount of harmful chemicals going into the wetlands.  
+새로운 규정 때문에, 농부들은 덜 유해한 비료로 바꾸도록 강제받고 있다.  
+Due to the new rule, farmers forced to change less harmful fertilizer.  
+Due to the new rules, farmers are forced to switch to less harmful fertilizers.  
+이는 농장에서 발생하는 수질 오염이 매우 심각해서 에버글레이즈가 파괴될 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
+This casts doubt on the reading passage's claim that water pollution from farmland has been so critical that Everglades will be destroyed.  
+This casts doubt on the reading passage's claim that water pollution from farms is so severe that the Verglades will be destroyed.  
+
+
+다음으로, 강의자는 토양 유실 문제가 이미 처리되고 있다고 주장한다.  
+Next, the lecturer maintains that problem in losing soils already has been addressed.  
+Next, the lecturer asserts that the problem of soil loss is already being addressed.  
+현지 사람들은 토양을 복원하기 시작했고, 그 결과는 전망이 좋다.  
+Local people start to restore the soil, and the result is promising.  
+Local people have started restroing the soil, and the results are promising.  
+또한, 물과 토착 식물을 다시 들여오는 것은 결국 토양을 원래 상태로 되돌려놓을 것이다.  
+Also, returning water and native plants eventually recover original state of the soil.  
+Also, reintroducing water and native plants will eventually return the soil to its original condition.  
+이는 토양이 매우 빠르게 사라지고 있다는 읽기 지문의 주장에 반대한다.  
+This counters the reading passage's claim that the soil has been disappearing very quickly.  
+This counters the reading passage's claim that the soil is disappearing very quickly.  
+
+
+마지막으로, 강의자는 개발된 지역을 천연 상태로 되돌리는 것이 위기에 처한 종들이 멸종될 가능성을 낮추고 있다고 주장한다.  
+Finally, the lecturer asserts that returning developed areas to native state is less likely that endagered species has been extinct.  
+Finally, the lecturer claims that returning developed areas to their natural state is making it less likely that endangered species will go extinct.  
+정부는 에버글레이즈 내의 설탕 재배장 700제곱킬로미터를 야생 습지대로 바꿀 것이다.  
+The government will change the 700 square kilometers of sugar platation to harsh marshland.  
+The government is going to convert a 700-square-kilometer sugar plantation within the Everglades into wild marshland.  
+이것은 종의 서식지를 확장하여, 그것이 더 높은 생존 가능성을 가지게 할 것이다.  
+This expands the habitats of species, and it will survive more higher.  
+This will expand the habitats of species, giving it a higher chance of survival.  
+이는 에버글레이즈에서의 개발이 동물들을 위험한 상태에 놓이게 한다는 읽기 지문의 주장을 반박한다.  
+This refutes the reading passage's claim that development of Everglades cause animals in dangerous state.  
+This refutes the reading passage's claim that development in the Everglades is placing animals at risk.  
+
+
+
+
 
 
 
