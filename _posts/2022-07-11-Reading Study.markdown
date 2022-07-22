@@ -128,6 +128,21 @@ Words and Phrases?
 **Wednesday, 220720   
 *obscured : 가려진  
 
+
+**Friday, 220722     
+*pertaining : 존재하다, 적용되다  
+*addressed : 맞서다,  해결하다, 다루다, 처리하다  
+*neglecting : 무시하기, 방치하다, 등한하다, 도외시하다  
+*curtailed : 단축한, 줄인, 삭감한  
+*disenfranchisement : 권리 박탈  
+*severed : 끊다, 단절하다  
+*scrutinized :  세심히 살피다, 면밀히 조사하다  
+*tenets : 방침, 주의(主義), 교리(敎理)
+*remuneration : 보수(근로에 대한)   
+*instilled : 의식을 불어넣다, 심어 주다, 주입하다
+*shovel : 삽, 부삽  
+
+
 # Coments  
 **Tuesday, 220719   
 *핵심을 계속 놓치는 느낌  
