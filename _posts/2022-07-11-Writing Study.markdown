@@ -16,6 +16,64 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+#7 - Monday, 220726  
+*eng  
+Some people think that mobile phones are devices that liberate people by providing them with the opportunity to stay in contract all times.  
+However, in my opinion, cell phones have actually imprisoned people in a world where they must be in constant communication, and the noise of cell phones ringing and conversations in public spaces have become unavoidable.  
+
+
+To begin with, liberation from work and social responsibilities has become impossible because people can be reached at any time through their cell phones.  
+Whether friends or colleagues, people today expect others to be available at all times.  
+Therefore, people now have difficulty spending free time undisturbed.  
+For example, my brother who works as a salesman, cannot separate himself from his phone because he neverknows when his boss or clients may call.  
+If he misses those calls, it might negatively affect his career.  
+Due to his constantly ringing cell phone, it is difficult for him to have peaceful weekends or to relax at home.  
+
+
+On top of that, people are frequently disturbed by the noise of cell phones in public spaces.  
+Virtually everywhere one goes, one cannot escape from ringing phones and people chatting away on them.  
+According to a survey by Gallup, over 80 percent of the people who were polled responded that they frequently felt disturbed in public places due to rampant cell phone activity.  
+They reported that places such as theaters and resaurants are filled with ringing mobile phones.  
+Even at libraries, which require a quiet atmosphere, people have had their concentration disrupted by ringing phones.  
+In this way, cell phone users threaten to disrupt silence wherever they go.  
+
+
+To sum up, cell phones force people to be in continual contact with one another and create excessive noise that disturb others in public spaces.  
+In this regard, I think that rather than offering liberation, cell phones have instead restricted our independence.  
+
+
+
+*kor  
+일부 사람들은 휴대전화가 사람들에게 항상 연락을 유지할 수 있는 기회를 제공함으로써 그들을 자유롭게 만든 기기라고 생각한다.  
+하짐나, 내 생각에는, 휴대전화는 사실상 끊임없이 연락을 유지해야 하는 세상 속에 사람들을 가두었고, 공공장소에서 울려대는 휴대전화 벨소리와 대화 소음은 피할 수 없는 지경에 이르렀다.  
+
+
+우선, 업무와 사회적 의무로부터의 해방은 불가능해졌는데, 사람들은 휴대전화를 통해 언제라도 연락이 닿을 수 있기 때문이다.  
+친구든 동료든, 사람들은 오늘날 다른 사람들이 언제든 연락이 가능하기를 바란다.  
+따라서, 사람들은 오늘날 방해받지 않고 자유시간을 보내기가 힘들다.  
+예를 들어, 영업사원으로 일하는 나의 형은 그의 상사나 고객이 언제 전화를 할지 전혀 알 수 없기 때문에 전화기와 떨어져 있을 수가 없다.  
+그가 그 전화들을 받지 못하면 그것은 그의 업무에 부정적인 영향을 미칠지도 모른다.  
+끊임없이 울려대는 휴대전화 때문에 그는 평화로운 주말을 보내거나 집에서 휴식을 취하기가 힘들다.  
+
+
+게다가, 사람들은 공공장소에서 휴대전화의 소음으로 인해 자주 방해받는다.  
+사실상 어느 곳을 가더라도, 벨이 울리는 휴대전화와 그 것으로 잡담하는 사람들을 피할 수 없다.  
+갤럽의 한 설문조사에 따르면, 설문에 응답한 사람의 80퍼센트 이상이 만연한 휴대전화 관련 행위들로 인해 공공장소에서 방해받는 경우가 잦다고 응답했다.  
+그들은 극장과 식당과 같은 장소들이 벨이 울리는 휴대전화로 가득하다고 응답했다.  
+심지어는 조용한 분위기를 요구하는 도서관에서도 사람들은 벨이 울리는 전화로 인해 집중이 흐트러졌다.  
+이처럼, 휴대전화 사용자들은 어디를 가든지 고요함을 방해하려 든다.  
+
+
+요약하자면, 휴대전화는 사람들이 끊임없이 서로 연락을 주고받도록 강요하고 공공장소에서 다른 사람들을 방해하는 과도한 소음을 발생시킨다.  
+이러한 점에서, 나는 휴대전화가 자유를 주기보다는 우리의 독립을 제한했다고 생각한다.  
+
+
+
+
+
+
+
+
 #6 - Wednesday, 220720  
 *eng  
 The lecturer argues that there is still hope for the Everglades.  
