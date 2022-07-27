@@ -17,6 +17,9 @@ categories: study
 
 특히, 날짜 정보와 wiki 문서 정보를 포함하는 entity로 구성된 데이터를 만들도록 도와줌  
 
+
+https://drive.google.com/drive/folders/1u1QFTNWJtwMTnrQpNiT9ftks47JDvypQ?usp=sharing
+
 {% endhighlight %}
 
 
