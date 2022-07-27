@@ -21,7 +21,7 @@ categories: study
 
 
 #단어정리  
-*derive, clozed, stub
+*derive:파생하다, clozed(cloze test): 빈칸/빈칸채우기 테스트, stub: 토막글 문서  
 
 # Intro  
 새로운 엔티티는 계속 생기고, 기존 엔티티 기반의 것들은 커버 못 함  
