@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ubuntu에서 tibero설치 및 python연동"
+title:  "Tibero install and link with Python in Ubuntu"
 date:   2022-07-31 18:31:19 +0900
 categories: study
 ---
@@ -9,7 +9,7 @@ categories: study
 
 
 {% highlight ruby %}
-짧은 요약 :
+짧은 요약 : Tibero install and link with Python in Ubuntu  
 
 
 
