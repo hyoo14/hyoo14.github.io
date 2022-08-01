@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "August"
+date:   2022-08-01 14:25:30 +0900
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+
+
+August week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+{% endhighlight %}  
+
+
+Monday, August 01, 2022     
+*pythonic codes  
+*eng reading-papers  
+o  
+
+
+
+
