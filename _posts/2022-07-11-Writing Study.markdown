@@ -69,6 +69,49 @@ In this regard, I think that rather than offering liberation, cell phones have i
 
 
 
+*eng->kor    
+Some people think that mobile phones are devices that liberate people by providing them with the opportunity to stay in contract all times.  
+몇몇은 휴대폰은 모든 시간 동안 연락할 수 있는 기회를 제공함으로써 사람을 자유롭게 하는 기계라고 생각한다.
+However, in my opinion, cell phones have actually imprisoned people in a world where they must be in constant communication, and the noise of cell phones ringing and conversations in public spaces have become unavoidable.  
+그러나 내 생각에는 휴대폰은 사람들을 끊임없이 소통해야만 하는 세상에 가둔다. 그리고 휴대폰 음의 소음과 공공 장소에서의 대화는 피할 수 없다.   
+
+
+To begin with, liberation from work and social responsibilities has become impossible because people can be reached at any time through their cell phones.  
+우선, 일과 사회적 책임으로부터의 해방은 불가능해졌다. 왜냐하면 사람들은 휴대폰을 통해 어느 때나 닿을 수 있다.  
+Whether friends or colleagues, people today expect others to be available at all times.  
+친구이던 동료이던, 사람들은 오늘날 기대한다 다른이들이 항상 이용가능하기를.    
+Therefore, people now have difficulty spending free time undisturbed.  
+그러므로, 사람들은 이제 방해받지 않고 자유시간을 보내는 데에 어려움을 갖는다.   
+For example, my brother who works as a salesman, cannot separate himself from his phone because he neverknows when his boss or clients may call.  
+예를 들어, 내 동생은 영업직으로 일하는데, 그의 폰과 그 자신을 분리할 수 없다. 왜냐하면 그의 보스 또는 고객이 언제 연락할 지 알 수 없기 때문이다.  
+If he misses those calls, it might negatively affect his career.  
+만약 그가 이러한 전화들을 못 받는다면, 그의 커리어에 나쁜 영향을 끼칠지도 모른다.  
+Due to his constantly ringing cell phone, it is difficult for him to have peaceful weekends or to relax at home.  
+이러한 그의 지속적인 휴대폰 알림 때문에, 그에게 평화로운 주말 또는 집에서의 휴식은 어렵다.
+
+
+On top of that, people are frequently disturbed by the noise of cell phones in public spaces.  
+게다가, 사람들은 공공장소에서 휴대폰의 소음으로 지속적으로 방해받는다.  
+Virtually everywhere one goes, one cannot escape from ringing phones and people chatting away on them.  
+사실상 어디를 가던, 휴대폰 울림과 사람들의 채팅으로부터 도망칠 수 없다.  
+According to a survey by Gallup, over 80 percent of the people who were polled responded that they frequently felt disturbed in public places due to rampant cell phone activity.  
+갤럽 설문에 따르면, 80퍼센트 이상의 응답한 사람들이 공공장소에서 휴대폰 활동으로 자주 방해받는다고 느낀다고 대답했다.  
+They reported that places such as theaters and resaurants are filled with ringing mobile phones.  
+그들은 영화관이나 음식점 같은 장소들이 휴대폰 알람으로 가득차 있다고 응답했다.   
+Even at libraries, which require a quiet atmosphere, people have had their concentration disrupted by ringing phones.  
+심지어 도서관에서도, 조용한 분위기가 요구되는, 사람들은 그들의 집중이 휴대폰 알람으로 방해받았다.  
+In this way, cell phone users threaten to disrupt silence wherever they go.  
+마찮가지로, 휴대폰 사용자들은 그들이 어디를 가건 침묵을 방해할 위협을 한다.  
+
+
+To sum up, cell phones force people to be in continual contact with one another and create excessive noise that disturb others in public spaces.  
+즉, 휴대폰은 사람들이 다른 사람들과 지속적으로 접근 가능하게 강요하고 공공장소에서 다른 이들을 방해하는 과도한 소음을 만들게 한다.  
+In this regard, I think that rather than offering liberation, cell phones have instead restricted our independence.  
+이러한 관점에서, 나는 자유를 제공하는 대신 핸드폰은 우리의 독립을 제한한다고 생각한다.  
+
+
+
+
 
 
 
