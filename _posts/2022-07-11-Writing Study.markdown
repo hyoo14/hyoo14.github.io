@@ -16,6 +16,60 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+#8 - Wednesday, 220803  
+*eng  
+The lecturer argues that the proposal functions of Lambeosaurus crests do not match with what is known about this dinosaur.  
+This contradicts the reading passage's claim that possible uses have been identified.  
+
+
+First, the lecturer asserts that it is doubtful that the crests helped the dinosaurs find mates.  
+Most reptiles rely on behavior and sounds rather than appearance for obtaining a mate.  
+For instance, crocodiles raise their heads and make noises.  
+As a result, experts think that Lambeosarus used similar techniques.  
+This casts doubt on the reading passage's claim that the crests were used to appeal to mates.  
+
+
+Next, the lecturer points out that Lambeosaurus probably did not use its crest to combat other dinosaurs.  
+Fossil evidence shows that they pointed backward instead of forward, so they were not useful in fights.  
+They were also hollow, which means that they were too fragile to use for defending or attacking.  
+This counters the reading passage's claim that the crests may have been used in fights.  
+
+
+Finally, the lecturer maintains that the crests did not supply air while the dinosaurs ate plants under the water.  
+Lambeosaurus was big and it needed a lot of air.  
+However, the crests were small, so they could not have stored enough air.  
+This refutes the reading passage's claim that the crests provided air while the creatures put their heads beneath the water to eat.  
+
+
+
+*kor  
+강의자는 람베오사우루스의 볏에 대해 제시된 기능들은 이 공룡에 대해 알려져 잇는 것과 일치하지 않는다고 주장한다.  
+이는 가능성 있는 용도들이 확인되었다는 읽기 지문의 주장을 반박한다.  
+
+
+첫째로, 강의자는 볏이 공룡이 짝을 찾도록 도왔다는 것은 의심흐럽다고 주장한다.  
+대부분의 파충류는 짝을 얻기 위해 외모보다는 행동과 소리에 의존한다.  
+예를 들어, 악어는 머리를 들고 소리를 낸다.  
+그 결과, 전문가들은 람베오사우루스가 유사한 기법을 사용했을 것이라고 생각한다.  
+이는 볏이 짝의 관심을 끌기 위해 사용되었을 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+다음으로, 강의자는 람베오사우루스는 아마 볏을 다른 공룡과 싸우는 데 사용하지 않았을 것이라고 지적한다.  
+화석 증거는 그것이 앞쪽 대신 뒤쪽으로 향해있어서 싸움에 유용하지 않았다는 것을 보여준다.  
+그것은 또한 안이 비어있는데, 이것은 방어하거나 공경하는 데 사용하기에는 너무 손상되기 쉬웠다는 것을 의미한다.  
+이는 볏이 싸움에 사용되었을 것이라는 읽기 지문의 주장에 반대한다.  
+
+
+마지막으로, 강의자는 공룡이 물속에서 식물을 먹는 동안 볏이 공기를 공급하지 않았다고 주장한다.  
+람베오사우루스는 컸고 많은 공기를 필요로 했다.  
+그러나 볏이 작아서 충분한 공기를 저장할 수 없었을 것이다.  
+이는 그 생물체가 먹이를 먹기 위해 물속에 머리를 넣는 동안 볏이 공기를 제공했다는 읽기 지문의 주장을 반박한다.  
+
+
+
+
+
+
 #7 - Monday, 220726  
 *eng  
 Some people think that mobile phones are devices that liberate people by providing them with the opportunity to stay in contract all times.  
@@ -108,6 +162,51 @@ To sum up, cell phones force people to be in continual contact with one another 
 즉, 휴대폰은 사람들이 다른 사람들과 지속적으로 접근 가능하게 강요하고 공공장소에서 다른 이들을 방해하는 과도한 소음을 만들게 한다.  
 In this regard, I think that rather than offering liberation, cell phones have instead restricted our independence.  
 이러한 관점에서, 나는 자유를 제공하는 대신 핸드폰은 우리의 독립을 제한한다고 생각한다.  
+
+
+
+*kor->eng  
+일부 사람들은 휴대전화가 사람들에게 항상 연락을 유지할 수 있는 기회를 제공함으로써 그들을 자유롭게 만든 기기라고 생각한다.  
+Some people think that mobile phones are the devises that liberate them provided people that can always keep in touch.  
+하지만 내 생각에는, 휴대전화는 사실상 끊임없이 연락을 유지해야 하는 세상 속에 사람들을 가두었고, 공공장소에서 울려대는 휴대전화 벨소리와 대화 소음은 피할 수 없는 지경에 이르렀다.  
+However, in my opinion, cell phones prisoned people in the reality that people should be constantly contacted, and it is difficult to avoid ringing cell phones and noise from conversations.  
+
+
+우선, 업무와 사회적 의무로부터의 해방은 불가능해졌는데, 사람들은 휴대전화를 통해 언제라도 연락이 닿을 수 있기 때문이다.  
+To begin with, It is impossible to liberate from the work and social responsibility, because people can keep in touch anytime by mobile phones.  
+친구든 동료든, 사람들은 오늘날 다른 사람들이 언제든 연락이 가능하기를 바란다.  
+Friends or colleagues, people today want to contact with another whenever they want.  
+따라서, 사람들은 오늘날 방해받지 않고 자유시간을 보내기가 힘들다.   
+Accordingly, it is hard for people to have free time without disturbance.  
+예를 들어, 영업사원으로 일하는 나의 형은 그의 상사나 고객이 언제 전화를 할지 전혀 알 수 없기 때문에 전화기와 떨어져 있을 수가 없다.  
+For example, my brother who works as a salesman cannot be separated with his phone because he don’t know when his boss or customer call to him.  
+그가 그 전화들을 받지 못하면 그것은 그의 업무에 부정적인 영향을 미칠지도 모른다.  
+if he could not take the calls, his work would be affected negatively.  
+끊임없이 울려대는 휴대전화 때문에 그는 평화로운 주말을 보내거나 집에서 휴식을 취하기가 힘들다.  
+Because of ceaseless ringing cell phone, he cannot spend his peaceful weekend or take a rest in home.
+
+
+게다가, 사람들은 공공장소에서 휴대전화의 소음으로 인해 자주 방해받는다.
+On top of that, people frequently interrupted  by noises from cell phone.  
+사실상 어느 곳을 가더라도, 벨이 울리는 휴대전화와 그 것으로 잡담하는 사람들을 피할 수 없다.  
+Virtually wherever one goes, it is inevitable to avoid ringing cell phones and chatting people with it.  
+갤럽의 한 설문조사에 따르면, 설문에 응답한 사람의 80퍼센트 이상이 만연한 휴대전화 관련 행위들로 인해 공공장소에서 방해받는 경우가 잦다고 응답했다.  
+In one survey by Gallup, above 80 percents of people who responded the survey polled that it is pervasive to be interrupted by the activities of cell phones in public places.  
+그들은 극장과 식당과 같은 장소들이 벨이 울리는 휴대전화로 가득하다고 응답했다.  
+They responded that even in the places like theatre and restaurant ate all filled with ringing cell phones.  
+심지어는 조용한 분위기를 요구하는 도서관에서도 사람들은 벨이 울리는 전화로 인해 집중이 흐트러졌다.  
+Even in libraries where require quite atmosphere people are distracted their concentration by ringing cell phones.  
+이처럼, 휴대전화 사용자들은 어디를 가든지 고요함을 방해하려 든다.  
+In this regard, cell phone users prone to interfere the calm wherever they go.  
+
+
+요약하자면, 휴대전화는 사람들이 끊임없이 서로 연락을 주고받도록 강요하고 공공장소에서 다른 사람들을 방해하는 과도한 소음을 발생시킨다.  
+To sum up, cell phones force people communicate with another constantly and generate excessive noises that interfere others in public places.  
+이러한 점에서, 나는 휴대전화가 자유를 주기보다는 우리의 독립을 제한했다고 생각한다.  
+In this regard, I think rather than cell phones liberate us, restrict our independence instead.  
+
+
+
 
 
 
