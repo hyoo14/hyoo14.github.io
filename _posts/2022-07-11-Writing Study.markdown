@@ -69,81 +69,112 @@ This refutes the reading passage's claim that the crests provided air while the 
 * eng
 The lecturer argues that the proposal functions of Lambeosaurus crests do not match with what is known about this dinosaur.   
 강의자는 그 제안 람베어사우루스의 깃의 역할은 이 공룡에대해 알려진 것과 일이하지 않는다고 주장한다.  
+강의자는 람베오사우루스의 볏에 대해 제시된 기능들은 이 공룡에 대해 알려져 잇는 것과 일치하지 않는다고 주장한다.    
 This contradicts the reading passage’s claim that possible uses have been identified.  
 이것은 가능한 사용법이 밝혀졌다는 읽기지문의 요지를 반박한다.  
+이는 가능성 있는 용도들이 확인되었다는 읽기 지문의 주장을 반박한다.  
+
 
 First, the lecturer asserts that it is doubtful that the crests helped the dinosaurs find mates.  
-우선 강의자는 깃이 공룡이 짝을 찾은 것을 도와준다는 것이 의심스럽다고 주장한다.
+우선 강의자는 깃이 공룡이 짝을 찾은 것을 도와준다는 것이 의심스럽다고 주장한다.  
+첫째로, 강의자는 볏이 공룡이 짝을 찾도록 도왔다는 것은 의심흐럽다고 주장한다.  
 Most reptiles rely on behavior and sounds rather than appearance for obtaining a mate.  
 대부분의 파충류들은 짝짓기 할 때 외형이 아닌 행동과 소리에 의존한다.  
+대부분의 파충류는 짝을 얻기 위해 외모보다는 행동과 소리에 의존한다.  
 For instance, crocodiles raise their heads and make noises.  
+예를 들어, 악어는 머리를 들고 소리를 낸다.  
 예를 들어, 악어는 머리를 들고 소리를 낸다.  
 As a result, experts think that Lambeosarus used similar techniques.  
 결과적으로 전문가들은 앰브로사우소스도 비슷한 기술을 쓸 거라고 생각한다.  
+그 결과, 전문가들은 람베오사우루스가 유사한 기법을 사용했을 것이라고 생각한다.  
 This casts doubt on the reading passage’s claim that the crests were used to appeal to mates.  
 이것은 깃이 짝짓기 어필용이라는 읽기 지문의 주장에 의심을 가져온다.  
+이는 볏이 짝의 관심을 끌기 위해 사용되었을 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
 
 
 
 Next, the lecturer points out that Lambeosaurus probably did not use its crest to combat other dinosaurs.  
 다음으로 강의자는 램브로사우루스가 그것의 깃을 다른 공룡과 싸우는데에 사용하지 않았다고 지적한다.  
+다음으로, 강의자는 람베오사우루스는 아마 볏을 다른 공룡과 싸우는 데 사용하지 않았을 것이라고 지적한다.  
 Fossil evidence shows that they pointed backward instead of forward, so they were not useful in fights.  
 화석 증거는 앞이 아닌 뒤에 있다는 것을 보여준다. 그래서 그것들은 싸우는데 유용하지 않다.  
+화석 증거는 그것이 앞쪽 대신 뒤쪽으로 향해있어서 싸움에 유용하지 않았다는 것을 보여준다.  
 They were also hollow, which means that they were too fragile to use for defending or attacking.  
 그것들은 또한 비어있어서, 공격이나 수비하기에는 너무 약하다.  
+그것은 또한 안이 비어있는데, 이것은 방어하거나 공경하는 데 사용하기에는 너무 손상되기 쉬웠다는 것을 의미한다.  
 This counters the reading passage’s claim that the crests may have been used in fights.  
 이것은 깃이 싸움에 쓰였을 지 모른다는 읽기 지문의 요지를 반박한다.  
+이는 볏이 싸움에 사용되었을 것이라는 읽기 지문의 주장에 반대한다.  
 
 
 Finally, the lecturer maintains that the crests did not supply air while the dinosaurs ate plants under the water.  
 마지막으로 강의자는 공룡이 물 속에서 풀을 먹을 때 깃이 공기를 공급하지 않는다고 주장한다.  
+마지막으로, 강의자는 공룡이 물속에서 식물을 먹는 동안 볏이 공기를 공급하지 않았다고 주장한다.  
 Lambeosaurus was big and it needed a lot of air.  
 람브로사우로스는 크고 매우 많은 공기를 필요로 한다.  
+람베오사우루스는 컸고 많은 공기를 필요로 했다.  
 However, the crests were small, so they could not have stored enough air.  
 그러나 깃들은 작고 그래서 충분한 공기를 저장할 수 없다.  
+그러나 볏이 작아서 충분한 공기를 저장할 수 없었을 것이다.  
 This refutes the reading passage’s claim that the crests provided air while the creatures put their heads beneath the water to eat.  
 이것은 깃이 창조주가 머리를 물 속에 넣어 먹을 때 공기를 공급해준다는 읽기 지문의 요지를 반박한다.  
+이는 그 생물체가 먹이를 먹기 위해 물속에 머리를 넣는 동안 볏이 공기를 제공했다는 읽기 지문의 주장을 반박한다.  
 
 
 
 *kor->eng  
 강의자는 람베오사우루스의 볏에 대해 제시된 기능들은 이 공룡에 대해 알려져 잇는 것과 일치하지 않는다고 주장한다.
 The lecturer argues that supposed ability of lambaosaurus’s crests is not match with the known before.  
+The lecturer argues that the proposal functions of Lambeosaurus crests do not match with what is known about this dinosaur.  
 이는 가능성 있는 용도들이 확인되었다는 읽기 지문의 주장을 반박한다.  
 This contradicts the reading passage’s claim that usages are confirmed.  
+This contradicts the reading passage's claim that possible uses have been identified.  
 
 
 첫째로, 강의자는 볏이 공룡이 짝을 찾도록 도왔다는 것은 의심흐럽다고 주장한다.  
 First, the lecturer casts doubt on that crests help dinosaurs to find mates.  
+First, the lecturer asserts that it is doubtful that the crests helped the dinosaurs find mates.  
 대부분의 파충류는 짝을 얻기 위해 외모보다는 행동과 소리에 의존한다.  
 Most of reptiles rely on the behaviors and noises rather than appearances.   
+Most reptiles rely on behavior and sounds rather than appearance for obtaining a mate.  
 예를 들어, 악어는 머리를 들고 소리를 낸다.  
 For instance, crocodiles raise on head and make noise.  
+For instance, crocodiles raise their heads and make noises.  
 그 결과, 전문가들은 람베오사우루스가 유사한 기법을 사용했을 것이라고 생각한다.  
 As a result, experts think that rambausaurus would use similar methods.  
+As a result, experts think that Lambeosarus used similar techniques.  
 이는 볏이 짝의 관심을 끌기 위해 사용되었을 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
 This casts doubt on the reading passage’s claim that crests would be used for attraction.  
+This casts doubt on the reading passage's claim that the crests were used to appeal to mates.  
 
 
 
 다음으로, 강의자는 람베오사우루스는 아마 볏을 다른 공룡과 싸우는 데 사용하지 않았을 것이라고 지적한다.  
 Next, the lecturer points out that lambausaurus did not use its crests to fight other dinosours.  
+Next, the lecturer points out that Lambeosaurus probably did not use its crest to combat other dinosaurs.  
 화석 증거는 그것이 앞쪽 대신 뒤쪽으로 향해있어서 싸움에 유용하지 않았다는 것을 보여준다.  
 Fossil proofs show that head backward instead of frontward so that it is useless in fight.  
+Fossil evidence shows that they pointed backward instead of forward, so they were not useful in fights.  
 그것은 또한 안이 비어있는데, 이것은 방어하거나 공경하는 데 사용하기에는 너무 손상되기 쉬웠다는 것을 의미한다.  
 It is also hollow, this means that it is to fragile to defending and attacking.  
+They were also hollow, which means that they were too fragile to use for defending or attacking.  
 이는 볏이 싸움에 사용되었을 것이라는 읽기 지문의 주장에 반대한다.  
 This counters the reading passage’s claim that crests would be used for fight.  
+This counters the reading passage's claim that the crests may have been used in fights.  
 
 
 마지막으로, 강의자는 공룡이 물속에서 식물을 먹는 동안 볏이 공기를 공급하지 않았다고 주장한다.  
 Finally, the lecturer maintains that crests did not provide air while dinosaurs ate plants under water.  
+Finally, the lecturer maintains that the crests did not supply air while the dinosaurs ate plants under the water.  
 람베오사우루스는 컸고 많은 공기를 필요로 했다.  
 Lambausaurs was big and needed a lot of air.  
+Lambeosaurus was big and it needed a lot of air.  
 그러나 볏이 작아서 충분한 공기를 저장할 수 없었을 것이다.   
 However, crests is small, it is not enough for air store.  
+However, the crests were small, so they could not have stored enough air.  
 이는 그 생물체가 먹이를 먹기 위해 물속에 머리를 넣는 동안 볏이 공기를 제공했다는 읽기 지문의 주장을 반박한다.  
 This refutes the reading passage’s claim that crests provide air when creatures eat prey under water with its head.  
+This refutes the reading passage's claim that the crests provided air while the creatures put their heads beneath the water to eat.  
 
 
 
