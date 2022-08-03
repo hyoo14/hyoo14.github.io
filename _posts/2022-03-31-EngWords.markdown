@@ -13,6 +13,8 @@ categories: study
 
 *For improving english skill  
 
+*day29-analogous     
+    -comparable parallel   
 *day28-onset mount involved solely mechanism speculate adopt staple secrete  
     pursue toil toilsome approximate monumental puzzling divest pacifier relish  
     simulate hover omnious concur amplitude aptitude disintegrate liken-to  
@@ -421,6 +423,15 @@ merit, appeal, fastidious, contraction, intermingled, succulent, practically
 *day1-extant, sedentary, stunted, encroachment  
 
 {% endhighlight %}
+
+
+
+# day 29  
+
+*1. analogous  
+*1. similar, comparable, like, parallel  
+**Archimedes was certain that wings of an airplane were analogous in function to the wings of a hummingbird.  
+**유사한  
 
 
 
