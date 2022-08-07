@@ -17,7 +17,8 @@ categories: study
 
 실험 결과 제시하는 set이 의미있었음(CLIP과 이전 것의 차이도 없앰..?)  
 
-https://drive.google.com/drive/folders/1u1QFTNWJtwMTnrQpNiT9ftks47JDvypQ?usp=sharing
+[https://drive.google.com/drive/folders/1n_YKhrzyUUqHFnRMlkfdYAgNpXreVsV6?usp=sharing]
+
 
 {% endhighlight %}
 
