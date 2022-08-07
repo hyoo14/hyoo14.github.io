@@ -63,6 +63,57 @@ This refutes the reading passage's claim that a sauropod's muscles were not able
 이는 용각류의 근육이 목을 수직의 자세로 유지할 수 ㅇ벗었다는 읽기 지문의 주장을 반박한다.  
 
 
+*eng->kor    
+The lecturer argues that the assertion that sauropods had a horizontal neck position is not convincing.  
+강의자는 서로파드들은 수평적인 목 위치를 갖고 있다는 것은 납득되지 않는다고 주장한다.  
+강의자는 용각류가 수평의 목 자세를 가지고 잇었따는 주장은 설득력이 없다고 주장한다.  
+This contradicts the reading passage's claim that they kept their necks in this position.  
+이것은 그것들의 목들을 그 자세로 유지한다는 읽기 지문의 요지를 반박한다.  
+이는 용각류가 목을 이 자세로 유지햇다는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer contends that it is doubtful that the neck had to be positioned horizontally to offset the weight of the tail.  
+먼저 강의자는 꼬리의 무게를 상쇄시키기 위해 목이 수평으로 자세되는것은 의심스럽다고 주장한다.  
+첫째로, 강의자는 목이 꼬리의 무게를 상쇄하기 위해 수평으로 자리잡혀 잇어야 했다는 것은 의심스럽다고 주장한다.  
+The tail was not heavy because it was slender and included hollow bones.  
+그 꼬리는 무겁지 않다. 왜냐하면 그것은 슬랜더이고 빈 뼈를 갖기 때문이다.  
+꼬리는 가늘고 속이 비어있는 뼈를 포함했기 때문에 무겁지 않았다.  
+This means that a sauropod had no need to keep its head in horizontal position to maintain balance.  
+이것은 서로포드는 밸런스를 유지하기 위해 수평자세를 유지할 필요가 없음을 의미한다.  
+이것은 용각류가 균형을 유지하기 위해 머리를 수평의 자세로 유지할 필요갸 없었다는 것을 의미한다.  
+This casts doubt on the reading passage's claim that the unusual position of its tail indicates that a sauropod's neck was held horizontally.  
+이것은 그것의 꼬리가 서로포드의 목과 수평이 되도록 나타내는 일반적이지 않은 자세라는 읽기 지문의 요지에 의구심을 가져온다.    
+이는 꼬리의 독특한 자세가 용각류의 목이 수평으로 유지되었다는 것을 나타낸다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+
+Next, the lecturer asserts that the claim that sauropods' horizontal neck position made it easier to eat marine plants has been called into question.  
+다음으로, 서로포드의 수평 목 자세는 해초를 먹기 편하게 한다는 것은 의심스럽다고 강의자는 주장한다.  
+다음으로, 강의자는 용각류의 수평의 목 자세가 해양 식물을 먹기 더 쉽게 만들었다는 주장에는 의문이 제기되었다고 주장한다.  
+Since there was not sufficient marine vegetation, sauropods must have eaten a variety of plants.  
+왜냐하면 그곳에는 충분한 해초가 없기 때문에 서로포드는 다양한 종류의 식물들을 먹어야만 한다.  
+충분한 해양 식물이 없었기 때문에, 용각류는 다양한 식물을 먹어야 했음이 틀림없다.  
+Therefore, an upright neck posture was needed to access more food.  
+그러므로 곧은 목 자세는 더 많은 음식에 접근하기 위해 필요하다.  
+따라서, 더 많은 먹이에 접근하기 위해 수직의 목 자세가 필요했다.  
+This counters the reading passage's claim that sauropods held their necks horizontally to feed on marine vegetation.  
+이것은 서로포드가 그들의 목을 해초류를 먹기 위해 세운다는 읽기 지문 요지를 반박한다.  
+이는 용각류가 해양 식물을 먹기 위해 목을 수평으로 유지했다는 읽기 지문의 주장에 반대한다.  
+
+
+Finally, the lecturer claims that a saropod's muscels were strong enough to lift its neck vertically.  
+마지막으로 서로포드의 근육들은 그들의 목을 수직으로 세우기에 충분히 강하다고 강의자는 주장한다. 
+마지막으로, 강의자는 용각류의 근육이 목을 수직으로 들어 올릴 수 있을 만큼 튼튼했다고 주장한다.  
+It had powerful shoulder muscels that were linked with its neck by bones.  
+그것은 목과 뼈로 연결된 강력한 어깨 근육들을 갖고 있다.  
+그것은 뼈에 의해 목과 연결된 강력한 어깨 근육을 이용하여 목을 들어 올릴 수 있었다.  
+As a result, it was able to raise its neck using its shoulder muscles.  
+결과적으로, 그것은 그것의 목을 어깨 근육을 이용하여 세울 수 있다.  
+This refutes the reading passage's claim that a sauropod's muscles were not able to hold the neck in a vertical position.  
+이것은 서로포드의 근육들이 목을 수직 자세로 지탱하기 어렵다는 읽기 지문의 요지를  반박한다.  
+이는 용각류의 근육이 목을 수직의 자세로 유지할 수 ㅇ벗었다는 읽기 지문의 주장을 반박한다.  
+
+
 
 #8 - Wednesday, 220803  
 *eng  
