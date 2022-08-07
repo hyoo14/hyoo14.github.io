@@ -16,6 +16,64 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+#10 - Sunday, 220807  
+*eng  
+Some people think that it is not a positive thing for celebrities to make their political viewpoints public.  
+However, in mh opinion, it is beneficial for people to know what celebrities think.  
+The reasons for this are that celebrities' words have a constructive effect on society in general by drawing attention to those in need and that hearing celebrities speak out encourages people to voice their own opinions.  
+
+
+To begin with, public figures positively impact society by sharing their opinions about important humanitarian issues.  
+These days, they are in a unique position to capture a lot of people's attention.  
+Therefore, these famous people's voices can inspire the public to participate in helping good causes.  
+This is especially true when it comes to major catastrophes, such as earthquakes, wildfires, and floods.  
+For instance, in the wake of Hurricane Katrina, Brad Pitt, who is an international movie star, raised awareness about the need for disaster relief, particularly for the reconstruction of low-income housing in impoverished areas of New Orleans.  
+His efforts received a lot of attention due to his popularity, and they encouraged many people to donate money and volunteer their time in order to help rebuild houses destroyed by the hurricane.  
+
+
+On top of that, celebrities are capable of inspiring people to share their own views and make their voices heard.  
+It takes a lot of backbone to publicly express one' political views on controversial issues.  
+However, if people see that someone they admire acts bravely enough to speak his or her mind in public, they can be encouraged to express their own ideas confidently.   
+For example, there are always delicate issues in societies, such as gun control or capital punishment.  
+These should nevertheless be addressed to achieve a social consensus so that people can make breakthroughs and move forward.  
+Nowadays, celebrities often play a crucial role in opening up discussions about such sensitive topics, demonstrating great courage to risk receivingthe opponents' criticism.  
+Their bravery in action not only brings about ordinary people's active participation but also makes them courageous enough to speak their own minds openly.  
+
+
+To sum up, celebrities can make society a better place through awakening empathy for those in desperate situations and through stimulating ordinary people to speak up for what they believe in.  
+In this regard, I maintain that it is helpful for everyone if famous people share their opinions openly.  
+
+
+
+*kor  
+일부 사람들은 유명 인사들이 그들의 정치적인 관점을 공개하는 것이 긍정적인 것이 아니라고 생각한다.  
+하지만, 내 생각에는, 사람들이 유명 인사들이 무엇을 생각하는지를 아는 것은 유익하다.  
+이것에 대한 이유는 유명 인사들의 말은 도움을 필요로 하는 사람들에게 관심을 이끎으로써 사회 전반적으로 건설적인 영향을 미치고 유명 인사들이 그들의 의견을 토로하는 것을 듣는 것은 사람들이 자신의 의견을 표명하도록 격려하기 때문이다.  
+
+
+우선, 유명 인사들은 중요한 인도주의 관련 쟁점들에 대한 그들의 의견을 공유함으로써 사회에 긍정적으로 영향을 미친다.  
+요즘 그들은 많은 사람의 관심을 사로잡는 특수한 입장에 있다.  
+그러므로 그러한 유명한 사람들의 목소리는 대중들이 선의의 목적을 돕는 것에 참여하도록 고무할 수 있다.  
+이는 지진, 산불, 홍수와 같은 심각한 재앙에 관해서라면 특히 사실이다.  
+예를 들어, 허리케인 카트리나 이후, 국제적인 영화배우인 브래드 피트는 특히 뉴올리언스의 빈곤한 지역의 저소득자 주택 재건축과 관련하여 재난 구제의 필요성에 대한 인식을 높였다.  
+그의 노력은 그의 인기 덕분에 많은 관심을 받았고 많은 사람이 허리케인으로 파괴된 집들을 다시 짓는 것을 돕기 위해 돈을 기부하고 자원 봉사하도록 격려했다.  
+
+
+게다가, 유명 인사들은 사람들이 자신의 견해를 공유하고 의견을 표명하도록 고무할 수 있다.  
+논란이 많은 쟁점에 대한 정치적 견해를 공개적으로 표현하는 것은 큰 용기가 든다.  
+하지만, 사람들이 그들이 숭배하는 누군가가 그들의 생각을 공개적으로 말할 만큼 용감하게 행동하는 것을 본다면 자신의 의견을 자신 있게 표현하도록 격려될 수 있다.  
+예를 들어, 사회에는 총기 규제나 사형 제도와 같은 민감한 문제들이 항상 있다.  
+이것들은 그럼에도 불구하고 사람들이 돌파구를 만들고 앞으로 나아갈 수 있도록 사회적 합의를 성취하기 위해 다루어져야 한다.  
+오늘날, 유명 인사들은 종종 그러한 민감한 주제들에 대한 논의를 여는 중요한 역할을 하며, 반대자의 비난을 감수하는 위험을 무릅쓰는 큰 용기를 보여준다.  
+그들의 행동에서의 용감함은 평범한 사람들의 적극적인 참여를 불러일으킬 뿐만 아니라 그들을 자신의 의견을 공개적으로 말하기에 충분할 만큼 용감하게 만든다.  
+
+
+요약하자면, 유명 인사들은 절망적인 사오항에 놓인 사람들을 향한 공감을 일깨움을 통해 그리고 평범한 사람들이 그들이 믿는 것을 털어놓고 말하도록 격려함을 통해 사회를 더 좋은 곳으로 만들 수 있다.  
+이러한 점에서, 나는 유명한 사람들이 그들의 의견을 공개적으로 공유하면 모두에게 도움이 된다고 생각한다.  
+
+
+
+
 # 9 - Thursday, 220804  
 *eng  
 The lecturer argues that the assertion that sauropods had a horizontal neck position is not convincing.  
@@ -61,6 +119,110 @@ This refutes the reading passage's claim that a sauropod's muscles were not able
 마지막으로, 강의자는 용각류의 근육이 목을 수직으로 들어 올릴 수 있을 만큼 튼튼했다고 주장한다.  
 그것은 뼈에 의해 목과 연결된 강력한 어깨 근육을 이용하여 목을 들어 올릴 수 있었다.  
 이는 용각류의 근육이 목을 수직의 자세로 유지할 수 ㅇ벗었다는 읽기 지문의 주장을 반박한다.  
+
+
+*eng->kor    
+The lecturer argues that the assertion that sauropods had a horizontal neck position is not convincing.  
+강의자는 서로파드들은 수평적인 목 위치를 갖고 있다는 것은 납득되지 않는다고 주장한다.  
+강의자는 용각류가 수평의 목 자세를 가지고 잇었따는 주장은 설득력이 없다고 주장한다.  
+This contradicts the reading passage's claim that they kept their necks in this position.  
+이것은 그것들의 목들을 그 자세로 유지한다는 읽기 지문의 요지를 반박한다.  
+이는 용각류가 목을 이 자세로 유지햇다는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer contends that it is doubtful that the neck had to be positioned horizontally to offset the weight of the tail.  
+먼저 강의자는 꼬리의 무게를 상쇄시키기 위해 목이 수평으로 자세되는것은 의심스럽다고 주장한다.  
+첫째로, 강의자는 목이 꼬리의 무게를 상쇄하기 위해 수평으로 자리잡혀 잇어야 했다는 것은 의심스럽다고 주장한다.  
+The tail was not heavy because it was slender and included hollow bones.  
+그 꼬리는 무겁지 않다. 왜냐하면 그것은 슬랜더이고 빈 뼈를 갖기 때문이다.  
+꼬리는 가늘고 속이 비어있는 뼈를 포함했기 때문에 무겁지 않았다.  
+This means that a sauropod had no need to keep its head in horizontal position to maintain balance.  
+이것은 서로포드는 밸런스를 유지하기 위해 수평자세를 유지할 필요가 없음을 의미한다.  
+이것은 용각류가 균형을 유지하기 위해 머리를 수평의 자세로 유지할 필요갸 없었다는 것을 의미한다.  
+This casts doubt on the reading passage's claim that the unusual position of its tail indicates that a sauropod's neck was held horizontally.  
+이것은 그것의 꼬리가 서로포드의 목과 수평이 되도록 나타내는 일반적이지 않은 자세라는 읽기 지문의 요지에 의구심을 가져온다.    
+이는 꼬리의 독특한 자세가 용각류의 목이 수평으로 유지되었다는 것을 나타낸다는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+
+Next, the lecturer asserts that the claim that sauropods' horizontal neck position made it easier to eat marine plants has been called into question.  
+다음으로, 서로포드의 수평 목 자세는 해초를 먹기 편하게 한다는 것은 의심스럽다고 강의자는 주장한다.  
+다음으로, 강의자는 용각류의 수평의 목 자세가 해양 식물을 먹기 더 쉽게 만들었다는 주장에는 의문이 제기되었다고 주장한다.  
+Since there was not sufficient marine vegetation, sauropods must have eaten a variety of plants.  
+왜냐하면 그곳에는 충분한 해초가 없기 때문에 서로포드는 다양한 종류의 식물들을 먹어야만 한다.  
+충분한 해양 식물이 없었기 때문에, 용각류는 다양한 식물을 먹어야 했음이 틀림없다.  
+Therefore, an upright neck posture was needed to access more food.  
+그러므로 곧은 목 자세는 더 많은 음식에 접근하기 위해 필요하다.  
+따라서, 더 많은 먹이에 접근하기 위해 수직의 목 자세가 필요했다.  
+This counters the reading passage's claim that sauropods held their necks horizontally to feed on marine vegetation.  
+이것은 서로포드가 그들의 목을 해초류를 먹기 위해 세운다는 읽기 지문 요지를 반박한다.  
+이는 용각류가 해양 식물을 먹기 위해 목을 수평으로 유지했다는 읽기 지문의 주장에 반대한다.  
+
+
+Finally, the lecturer claims that a saropod's muscels were strong enough to lift its neck vertically.  
+마지막으로 서로포드의 근육들은 그들의 목을 수직으로 세우기에 충분히 강하다고 강의자는 주장한다. 
+마지막으로, 강의자는 용각류의 근육이 목을 수직으로 들어 올릴 수 있을 만큼 튼튼했다고 주장한다.  
+It had powerful shoulder muscels that were linked with its neck by bones.  
+그것은 목과 뼈로 연결된 강력한 어깨 근육들을 갖고 있다.  
+그것은 뼈에 의해 목과 연결된 강력한 어깨 근육을 이용하여 목을 들어 올릴 수 있었다.  
+As a result, it was able to raise its neck using its shoulder muscles.  
+결과적으로, 그것은 그것의 목을 어깨 근육을 이용하여 세울 수 있다.  
+This refutes the reading passage's claim that a sauropod's muscles were not able to hold the neck in a vertical position.  
+이것은 서로포드의 근육들이 목을 수직 자세로 지탱하기 어렵다는 읽기 지문의 요지를  반박한다.  
+이는 용각류의 근육이 목을 수직의 자세로 유지할 수 ㅇ벗었다는 읽기 지문의 주장을 반박한다.  
+
+
+*kor->eng  
+강의자는 용각류가 수평의 목 자세를 가지고 있었다는 주장은 설득력이 없다고 주장한다.  
+The lecturer argues that sauropods have horizontal neck position is not convincing.  
+The lecturer argues that the assertion that sauropods had a horizontal neck position is not convincing.  
+이는 용각류가 목을 이 자세로 유지햇다는 읽기 지문의 주장을 반박한다.  
+This contradicts the reading passage's claim that sauropods maintain its necks in this positions.  
+This contradicts the reading passage's claim that they kept their necks in this position.  
+
+
+첫째로, 강의자는 목이 꼬리의 무게를 상쇄하기 위해 수평으로 자리잡혀 잇어야 했다는 것은 의심스럽다고 주장한다.  
+First, the lecturer contends that it is doubtful that neck must be held horizontal to offset the weight of the tail.  
+First, the lecturer contends that it is doubtful that the neck had to be positioned horizontally to offset the weight of the tail.  
+꼬리는 가늘고 속이 비어있는 뼈를 포함했기 때문에 무겁지 않았다.  
+Tail is not heavey because it was slender and included hollow bone.  
+The tail was not heavy because it was slender and included hollow bones.  
+이것은 용각류가 균형을 유지하기 위해 머리를 수평의 자세로 유지할 필요갸 없었다는 것을 의미한다.  
+This indicates that sauropods don't need to maintain its head positioned horizontal for keeping its balance.  
+This means that a sauropod had no need to keep its head in horizontal position to maintain balance.  
+이는 꼬리의 독특한 자세가 용각류의 목이 수평으로 유지되었다는 것을 나타낸다는 읽기 지문의 주장에 의구심을 제기한다.  
+This casts doubt on the reading passage's claim that unusual position of tail keep sauropod's neck horizontal.  
+This casts doubt on the reading passage's claim that the unusual position of its tail indicates that a sauropod's neck was held horizontally.  
+
+
+
+다음으로, 강의자는 용각류의 수평의 목 자세가 해양 식물을 먹기 더 쉽게 만들었다는 주장에는 의문이 제기되었다고 주장한다.  
+Next, the lecturer points out that sauropods horizontal neck position made easier to feed marine plants is unconsious.  
+Next, the lecturer asserts that the claim that sauropods' horizontal neck position made it easier to eat marine plants has been called into question.  
+충분한 해양 식물이 없었기 때문에, 용각류는 다양한 식물을 먹어야 했음이 틀림없다.  
+Since there are no enough marine plants, sauropods must eat variety of plants.  
+Since there was not sufficient marine vegetation, sauropods must have eaten a variety of plants.  
+따라서, 더 많은 먹이에 접근하기 위해 수직의 목 자세가 필요했다.  
+As a result, vertical neck position was needed to access more food.  
+Therefore, an upright neck posture was needed to access more food.  
+이는 용각류가 해양 식물을 먹기 위해 목을 수평으로 유지했다는 읽기 지문의 주장에 반대한다.  
+This counters the reading passage's claim that sauropods keep its neck horizontal to eat marine plants.  
+This counters the reading passage's claim that sauropods held their necks horizontally to feed on marine vegetation.  
+
+
+마지막으로, 강의자는 용각류의 근육이 목을 수직으로 들어 올릴 수 있을 만큼 튼튼했다고 주장한다.  
+Finally, the lecturer asserts that sauropods' muscles are strong enough to raise its neck vertical.  
+Finally, the lecturer claims that a saropod's muscels were strong enough to lift its neck vertically.  
+그것은 뼈에 의해 목과 연결된 강력한 어깨 근육을 이용하여 목을 들어 올릴 수 있었다.  
+They can be raised by using strong shoulder muscles linked the neck with bones.  
+It had powerful shoulder muscels that were linked with its neck by bones.  
+
+
+As a result, it was able to raise its neck using its shoulder muscles.  
+이는 용각류의 근육이 목을 수직의 자세로 유지할 수 없었다는 읽기 지문의 주장을 반박한다.  
+This refutes the reading passage's claim that sauropod's muscles cannot keep its position vertical.  
+This refutes the reading passage's claim that a sauropod's muscles were not able to hold the neck in a vertical position.  
+
 
 
 
