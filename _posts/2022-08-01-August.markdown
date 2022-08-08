@@ -8,6 +8,27 @@ categories: study
 
 
 
+
+{% highlight ruby %}
+
+
+August week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+{% endhighlight %}  
+
+
+Monday, August 08, 2022     
+*pythonic codes  
+o  
+
+
+
 {% highlight ruby %}
 
 
@@ -56,6 +77,25 @@ Thursday, August 04, 2022
 *eng words  
 o  
 *eng listening  
+
+
+Friday, August 05, 2022  
+*pythonic codes  
+*eng words  
+o  
+
+
+Saturday, August 06, 2022  
+*eng reading-papers  
+o  
+
+
+Sunday, August 07, 2022  
+*eng reading-papers  
+*eng writing  
+*eng speaking  
+o  
+   
 
 
 
