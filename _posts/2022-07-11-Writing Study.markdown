@@ -141,31 +141,65 @@ In this regard, I maintain that it is helpful for everyone if famous people shar
 *kor->eng  
 일부 사람들은 유명 인사들이 그들의 정치적인 관점을 공개하는 것이 긍정적인 것이 아니라고 생각한다.  
 Some people think that famous celebrities open their political perspective is not positve.  
+Some people think that it is not a positive thing for celebrities to make their political viewpoints public.  
 하지만, 내 생각에는, 사람들이 유명 인사들이 무엇을 생각하는지를 아는 것은 유익하다.  
 However, in my opinion, it is beneficial for people to know what celebrities think.  
+However, in mh opinion, it is beneficial for people to know what celebrities think.  
 이것에 대한 이유는 유명 인사들의 말은 도움을 필요로 하는 사람들에게 관심을 이끎으로써 사회 전반적으로 건설적인 영향을 미치고 유명 인사들이 그들의 의견을 토로하는 것을 듣는 것은 사람들이 자신의 의견을 표명하도록 격려하기 때문이다.  
 There are reasons that famous celebrities' words have consturctive effect on in general society by making people to pay attention for people who need help and famous celebrities make their own opinion openly encourage people to make their own point of view.  
+The reasons for this are that celebrities' words have a constructive effect on society in general by drawing attention to those in need and that hearing celebrities speak out encourages people to voice their own opinions.  
+
 
 
 우선, 유명 인사들은 중요한 인도주의 관련 쟁점들에 대한 그들의 의견을 공유함으로써 사회에 긍정적으로 영향을 미친다.  
+To begin with, popular celebrities have positive effect in society by sharing their opinion about impoartant issues related to hammanities.  
+To begin with, public figures positively impact society by sharing their opinions about important humanitarian issues.  
 요즘 그들은 많은 사람의 관심을 사로잡는 특수한 입장에 있다.  
+They are on special positions to capture maney people's attention thesedays.  
+These days, they are in a unique position to capture a lot of people's attention.  
 그러므로 그러한 유명한 사람들의 목소리는 대중들이 선의의 목적을 돕는 것에 참여하도록 고무할 수 있다.  
+Therefore, these famous celebritie's voices encourage people to participate in help positive object.  
+Therefore, these famous people's voices can inspire the public to participate in helping good causes.
 이는 지진, 산불, 홍수와 같은 심각한 재앙에 관해서라면 특히 사실이다.  
+Especially it is true about serious disasters such as earthquakes, bushfires, and floods.  
+This is especially true when it comes to major catastrophes, such as earthquakes, wildfires, and floods.  
 예를 들어, 허리케인 카트리나 이후, 국제적인 영화배우인 브래드 피트는 특히 뉴올리언스의 빈곤한 지역의 저소득자 주택 재건축과 관련하여 재난 구제의 필요성에 대한 인식을 높였다.  
+For example, after the hurricane Kartrina, international movie actore, Bread Pitt particularly made high attention about necessity of emergency recovery about rebuilding low-income people's house in poor area of New Orleans.  
+For instance, in the wake of Hurricane Katrina, Brad Pitt, who is an international movie star, raised awareness about the need for disaster relief, particularly for the reconstruction of low-income housing in impoverished areas of New Orleans.  
 그의 노력은 그의 인기 덕분에 많은 관심을 받았고 많은 사람이 허리케인으로 파괴된 집들을 다시 짓는 것을 돕기 위해 돈을 기부하고 자원 봉사하도록 격려했다.  
+His effort pay attentioned and encourage many people to donate money and volunteer to rebuild devastated houses by hurricane due to his popularity.  
+His efforts received a lot of attention due to his popularity, and they encouraged many people to donate money and volunteer their time in order to help rebuild houses destroyed by the hurricane.   
 
 
 게다가, 유명 인사들은 사람들이 자신의 견해를 공유하고 의견을 표명하도록 고무할 수 있다.  
+On top of that, famous celebrities make people to share their own idea.  
+On top of that, celebrities are capable of inspiring people to share their own views and make their voices heard.  
 논란이 많은 쟁점에 대한 정치적 견해를 공개적으로 표현하는 것은 큰 용기가 든다.  
+It takes big courage to express political view openly about arguable issues.  
+It takes a lot of backbone to publicly express one' political views on controversial issues.  
 하지만, 사람들이 그들이 숭배하는 누군가가 그들의 생각을 공개적으로 말할 만큼 용감하게 행동하는 것을 본다면 자신의 의견을 자신 있게 표현하도록 격려될 수 있다.  
+However, people can be encouraged to express their own opinion confidentially when they see their admiring people act bravely to open their thinking public.  
+However, if people see that someone they admire acts bravely enough to speak his or her mind in public, they can be encouraged to express their own ideas confidently.   
 예를 들어, 사회에는 총기 규제나 사형 제도와 같은 민감한 문제들이 항상 있다.  
+For example, society always has sensitive problems like gun restraint or death penalty.  
+For example, there are always delicate issues in societies, such as gun control or capital punishment.
 이것들은 그럼에도 불구하고 사람들이 돌파구를 만들고 앞으로 나아갈 수 있도록 사회적 합의를 성취하기 위해 다루어져야 한다.  
+These, nevertheless, should be handled to achieve social consensus  for people to break through and go forward.  
+These should nevertheless be addressed to achieve a social consensus so that people can make breakthroughs and move forward.
 오늘날, 유명 인사들은 종종 그러한 민감한 주제들에 대한 논의를 여는 중요한 역할을 하며, 반대자의 비난을 감수하는 위험을 무릅쓰는 큰 용기를 보여준다.  
+Today, famous celebrities often show vast courage to take part in key role to open argument about those sensitive topics, relieve opponent's criticizes.  
+Nowadays, celebrities often play a crucial role in opening up discussions about such sensitive topics, demonstrating great courage to risk receivingthe opponents' criticism.  
 그들의 행동에서의 용감함은 평범한 사람들의 적극적인 참여를 불러일으킬 뿐만 아니라 그들을 자신의 의견을 공개적으로 말하기에 충분할 만큼 용감하게 만든다.  
+Their brave in their actions make not only active participation of ordinary people but also make themselves brave enough to say their own opinion openly.  
+Their bravery in action not only brings about ordinary people's active participation but also makes them courageous enough to speak their own minds openly.  
 
 
-요약하자면, 유명 인사들은 절망적인 사오항에 놓인 사람들을 향한 공감을 일깨움을 통해 그리고 평범한 사람들이 그들이 믿는 것을 털어놓고 말하도록 격려함을 통해 사회를 더 좋은 곳으로 만들 수 있다.  
+요약하자면, 유명 인사들은 절망적인 상황에 놓인 사람들을 향한 공감을 일깨움을 통해 그리고 평범한 사람들이 그들이 믿는 것을 털어놓고 말하도록 격려함을 통해 사회를 더 좋은 곳으로 만들 수 있다.  
+To sump up, famous celebrities can make the world better place by awakening sympathy toward people in desperate situations and make ordinary people to encourage to tell what they believe.  
+To sum up, celebrities can make society a better place through awakening empathy for those in desperate situations and through stimulating ordinary people to speak up for what they believe in.  
 이러한 점에서, 나는 유명한 사람들이 그들의 의견을 공개적으로 공유하면 모두에게 도움이 된다고 생각한다.  
+In this regard, I think it is helpful that famous celebrities share their own view openly.  
+In this regard, I maintain that it is helpful for everyone if famous people share their opinions openly.  
 
 
 
