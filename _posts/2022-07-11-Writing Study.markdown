@@ -64,6 +64,61 @@ This refutes the reading passage's claim that raising the tax on cigarettes will
 
 
 
+*eng->kor    
+The lecturer argues that an increased tax on tobacco will be ineffective.  
+강의자는 주장한다. 증가하는 세금 담배에 관한 효과적이지 않을 것이라고  
+강의자는 인상된 담뱃세가 효과가 없을 것이라고 주장한다.  
+This contradicts the reading passage's claim that a higher cigarette tax has several benefits.  
+이것은 반박한다 읽기 지문의 요지 높은 담배 세금이 몇몇 이득이 있다는  
+이는 더 높은 담뱃세에 몇 가지 이점들이 있다는 읽기 지문의 주장을 반박한다.  
+
+
+First, the lecturer maintains that an increased cigarette tax will not deter young people from starting to smoke.  
+먼저, 강의자는 주장한다. 증가하는 담배 세금이 줄이지 않을 것이라고 젊은 사람들 흡연을 시작하는  
+첫째로, 강의자는 인상된 담뱃세가 젊은 사람들이 담배를 피우기 시작하는 것을 제지하지 못할 것이라고 주장한다.  
+A study shows that when taxes on cigarettes increase, teenagers buy them from the black market.  
+연구는 보여준다 담배 세금이 증가할 때, 10대들이 담배를 산다고 암시장으로부터  
+한 연구는 담뱃세가 오르면 십 대들은 그것을 암시장에서 구입한다는 것을 보여준다.  
+Smugglers sell cigarettes cheaply and nver check the buyers' ID, which means that people who are underage can buy them easily.  
+스머글러들(밀수업자)은 담배를 싸게 팔고 구매자의 신분을 체그하지 않는다 이것은 의미한다 미성년자가 담배를 쉽게 살 수 있음을  
+밀수업자들은 담배를 싸게 팔고 사는 사람의 신분증을 전혀 확인하지 않는데, 이것은 미성년자들이 그것을 손쉽게 구입할 수 있다는 것을 의미한다.  
+This casts doubt on the reading passage's claim that raising the tax on cigarettes will reduce the number of young people who start to smoke.  
+이것은 의구심을 불러온다 읽기 지문의 주장 담배에대한 세금을 오리는 것이 흡연을 시작하는 젊은 사람들의 숫자를 줄일 것이라는  
+이는 담뱃세를 인상하는 것이 담배를 피우기 시작하는 젊은 사람들의 수를 줄일 것이라는 읽기 지문의 주장에 의구심을 제기한다.  
+
+
+
+Next, the lecturer asserts taht a tax increase would not benefit the environment.  
+다음으로 강의자는 주장한다. 세금 증가는 환경에 아무 이점이 없을 것이라고  
+다음으로, 강의자는 세금 인상이 환겨엥 이익이 되지 않을 것이라고 주장한다.  
+This is because a higher tax will p;robably not provide additional revenue for restoring the environment.  
+이것은 왜냐하면 더 높은 세금이 아마도 추가 이익을 제공하지는 않기 때문이다 환경을 복원할.  
+이것은 더 높은 세금이 아마 환경을 회복시키기 위한 추가적인 세입을 제공하지 않을 것이기 때문이다.  
+If the price of cigarettes increases, sales of cigarettes will decrease, and overall tax revenue will decline.  
+만약 담배의 가격이 증가하면, 담배의 판매가 줄어들 것이고 전체 세금 수익은 감소할 것이다.  
+담배 가격이 오르면, 담배 판매는 줄어들 것이고, 전반적인 세입이 감소할 것이다.  
+This counters the reading passage's claim that a higher tax will help undo the environmental harm caused by growing tobacco.  
+이것은 반박한다 읽기 지문의 요지 높은 세금이 도와줄 것이라고 환경적 위험을 없애는데 담배를 심어서 생기는  
+이는 더 높은 세금이 담배를 재배함으로써 생긴 환경 피해를 원상태로 돌리는 데 도움을 줄 것이라는 읽기 지문의 주장에 반대한다.  
+
+
+
+Finally, the lecturer claims that a higher tax on cigarettes will not alleviate poverty.  
+마지막으로 강의자는 주장한다 더 높은 세금은 가난을 경감시키지 못할 것이라고  
+마지막으로, 강의자는 더 높은 담뱃세가 빈곤을 완화하지 않을 것이라고 주장한다.  
+The tobacco industry creates many jobs, and these would be lost if the cigarette tax were raised.  
+담배 산업은 많은 일자리들을 만든다, 그리고 이것들은 사라질 것이다 만약 담배 세금이 증가하면.  
+담배 산업은 많은 일자리를 창출하고, 만약 담뱃세가 인상되면 이것들은 사라질 것이다.  
+As a result, poverty would increase.  
+결과적으로 가난은 증가할 것이다.   
+결과적으로, 빈곤은 증가할 것이다.  
+This refutes the reading passage's claim that raising the tax on cigarettes will produce more revenue that can be used to decrease poverty.  
+이것은 반박한다 읽기 지문의 요지 담배 세금을 증가하면 더 많은 이익을 만들 것이라는 가난을 줄이는데 사용될 수 있는  
+이는 담뱃세를 인상하는 것이 빈곤을 줄이는 데 사용될 수 있는 더 많은 세입을 만들어낼 거라는 읽기 지문의 주장을 반박한다.  
+
+
+
+
 
 
 #10 - Sunday, 220807  
