@@ -16,6 +16,64 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+# 12 - Monday, 220815  
+*eng  
+Some people think that the idea of taking away individual liberties is abhorrent.  
+However, in my opinion, there are certain situations in which it is acceptable to violate individual freedom, such as when someone has a job that could affect the safety of others and when acts of terror are being kept from happening.  
+
+
+To begin with, individuals' liberties can be violated when people are employed in positions that could potentially endagner others.  
+These employees must be trusted to work safely and responsibly in order to protect innocent people's lives.  
+For example, school bus drivers, pilots, and firefighters are in charge of many individuals' well-being.  
+If they are under the influence of alcohol or drugs, they will not be able to perform their tasks safely.  
+Thus, it is acceptable to infringe on their freedom and conduct random drug tests.  
+This is necessary to ensure that these public workers are not compromising people's live.  
+
+
+On top of that, the prevention of terrorist activities is a cause for which people's rights can be infringed upon.  
+Given the current increase in random violence in the world, measures must be taken to prevent these potential attacks from harming innocent people.  
+For instance, in order to ward off bombings or transport of dangerous materials, airports around the world conduct security checks on people and their belongings and intrude on their personal space.  
+Although this is intrusive and a violation of one's freedom, it is nonetheless necessary in order to protect everyone from potential harm.  
+Therefore, in these situations, government agencies and public institutions have the right to conduct searches and trespass on one's privacy.  
+
+
+To sum up, some people have jobs that could jeopardize the safety of others, and it is important to stop acts of terror before they happen.  
+In this regard, I feel that some individual freedoms do need to be restricted.  
+
+
+
+*kor  
+일부 사람들은 개인의 자유를 박탈하는 것은 끔찍하다고 생각한다.  
+하지만, 내 생각에는, 개인의 자유를 침해하는 것이 용인될 수 있는 특정 상황들이 존재하는데, 이를테면 어떤 사람이 다른 사람들의 안전에 영향을 미칠 수 있는 직업을 가지고 잇는 경우나, 테러 행위가 발생하는 것을 막기 위한 경우가 그러하다  
+
+
+우선, 어떤 사람이 잠재적으로 다른 사람들을 위험에 빠뜨릴 수 있는 직업에 종사할 때 그 개인의 자유는 침해될 수 있다.  
+이러한 일을 하는 사람들은 무고한 사람들의 생명을 보호하기 위해 안전하고 책임감 있게 일하도록 신뢰되어야 한다.  
+예를 들어, 학교 버스 기사, 조종사, 그리고 소방대원들은 수많은 개인의 안녕을 책임지고 있다.  
+만일 그들이 술에 취하거나 마약을 복ㅇㅇ한 상태에 있다면, 그들은 안전하게 직무를 수행할 수 없을 것이다.  
+따라서, 그들의 자유를 침해하고 임의로 약물 검사를 실시하는 것은 용인될 수 있다.  
+이는 이렇게 대중을 위해 일하는 근로자들이 사람들의 생명을 위태롭게 하지 않도록 보장하기 위해 필요하다.  
+
+
+게다가, 테러 행위의 방지는 사람들의 권리가 침해될 수 있는 한 가지 이유이다.  
+현재 세계에서 무작위한 폭력의 증가를 고려하면, 이 잠재적 공격이 무고한 사람들을 해치는 것을 막기 위해 조치가 취해져야 한다.  
+예를 들어, 폭격이나 위험 물질의 이송을 막기 위해 전세계의 공항들은 사람들과 그들의 소지품에 보안 검사를 실시하고 그들의 사적인 영역을 침범한다.  
+비록 이것이 강제적이고 개인의 자유의 침해일지라도, 그것은 그래도 잠재적인 피해자로부터 모두를 보호하기 위해서 필요하다.  
+따라서, 이러한 상황에서는 정부 기관과 공공기관이 개인의 사생활을 수색하고 침해할 권리를 지닌다.  
+
+
+요약하자면, 어떤 사람들은 타인의 안전을 위태롭게 할 수 있는 직업을 가지고 있고, 테러 행위가 일어나기 전에 이를 막는 것은 중요하다.  
+이러한 점에서, 나는 일부 개인의 자유가 제한될 필요가 있다고 생각한다.  
+
+
+
+
+
+
+
+
+
+
 # 11 - Thursday, 220811  
 *eng  
 The lecturer argues that an increased tax on tobacco will be ineffective.  
