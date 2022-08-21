@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "Deep Neural Networks for YouTube Recommendations"
+date:   2022-08-21 15:51:19 +0900
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+짧은 요약 :
+
+유튜브 추천 시스템에 DNN을 도입하여 성능 향상  
+
+후보자 생성, 랭킹 2가지 모델로 구성됨  
+
+둘 다 dnn 씀  
+
+[https://drive.google.com/drive/folders/1c5lyOb0Vc-RMfISK4a0sogeBJW0PglCo?usp=sharing]
+
+
+{% endhighlight %}
+
+
+#단어정리  
+*dichotomy: 이분법, conjugation: 활용, coarse: 거친, demographics: 인구통계, calibrate: 측정하다,   
+non-stationary: 비정상(불규칙), efficacy: 능률, outsized: 엄청난(대형의), propagate: 전파하다,   
+cohort: 집단, counter-intuitively: 반집단적으로, segregated: 분리된, ordinal: 서수(순서),   
+cardinality: 특정 데이터 집합의 유니크(Unique)한 값의 개수, churn: 마구 휘젓다, truncated: 끝을 자른,  
+notoriously: 악명 높은,  
+
+# 1. Intro  
+유튜브에서 추천 어려움  
+1) 스케일: 너무 큼(작은 것이 잘 동작)  
+2) 프레쉬니스: 새로 나온 거 잘 추천해주기 어려운  
+3) 노이즈: 기존 유저 정보 sparse하고 metadata 부실(잘 정리된 온톨로지가 존재 x)  
+그치만 구글 브레인의 텐서플로우를 통해 유연하고 대용량 분산 좋은 모델링 가능  
+*MF에서 DNN추천 적용  
+*DNN은 CF, 크로스도메인, 음악 추천등에 쓰이고 있음  
+*본 논문에서 간단한 오버뷰, 후보생성모델, 실험결과, 랭킹모델, 결론과 교훈 설명할 것  
+
+# 2. System Overview  
+시스템 전반  
+
+*후보 생성 모델과 랭킹 모델로 이루어짐  
+**둘 다 DNN모델  
+*후보 생성 네트워크의 input은 유저 유튜브 히스토리임  
+**탐색은 큰 코퍼스부터  
+***CF용으로 넓은 퍼스널리티 제공됨  
+*유저간 유사성  
+**비디오, 서치쿼리, 인구통계보고 측정  
+*랭킹 네트워크  
+**비디오, 유저관련 목적함수 사용  
+*이 두 시스템이 대용량 코퍼스에서 추천 가능케 해줌  
+*프리시전, 리콜, 랭킹로스 등의 offline metric썼지만, A/B test했고 live로 실험함(ctr변화와 재생시간 봄)  
+**offline metric과 A/B test 연관성이 항상 있지는 않았음  
+
+
+# 3. Candidate Generation  
+후보 생성   
+
+
+*추천 전 - MF로 접근, 랭킹로스로 학습  
+*factorization 흉내 네트워크(input: 유저 이전 시청) - > 비선형 factorization  
+
+
+# 3.1 Recommendation as Classification  
+분류로서 추천  
+
+*멀티클래스 분류로 봄  
+
+
+# Efficient Extreme Multiclass  
+*train 위해 네거티브 샘플 씀  
+**계층 소프트맥스 안씀.. 왜냐하면 정확도 떨어지기 때문인데 떨어진 이유는 트리 건널때 상관없는 것들 포함되기 때문  
+*서빙타임서 N클래스 계산해야함  
+**latency로 10ms 걸림  
+**기존엔 hash와 분류기 씀  
+**소프트맥스 서빙타임 없어서 scroing time이 nearest neighbor 서치로 줄어듬(dot product)  
+
+
+# 3.2 Model Architecture  
+모델 설계  
+*CBOW에 영향 받음 - 임베딩 만들어 씀(고정 어휘)  
+*이 임베딩(유저기록들)->FFNN에서 분류하다록  
+**임베딩 평균을 내서 넣는 것(성능 괜춘)  
+*GD, Back-Propagation 씀  
+*피처들 F.C로 연결, ReLU씀  
+
+
+# 3.3 Heterogeneous Signals  
+이형 신호  
+*DNN->MF  
+**여러 카테고리 피처들 쉽게 합쳐짐(쿼리, 인구통계, 지정학적, 성별, 로그인정보 등 정규화해서)  
+
+
+# "Example Age' Feature  
+예제 나이 피처  
