@@ -9,7 +9,7 @@ categories: study
 
 
 {% highlight ruby %}
-짧은 요약 :
+짧은 요약 :  
 
 유튜브 추천 시스템에 DNN을 도입하여 성능 향상  
 
@@ -97,3 +97,39 @@ notoriously: 악명 높은,
 
 # "Example Age' Feature  
 예제 나이 피처  
+
+*리프레쉬니스 중요(시청자가 선호해서)  
+*근데 ML은 과거데이터에 의존적(히스토리 학습하니)  
+*비디오인기분포는 불규칙적인 multinomial분포임  
+*추천에서 평균시청 likelihood 주마다 반영해줌  
+*잘못된 것 정정위해 feature 0으로 만들어줌(window end마다)  
+
+
+# 3.4 Label and Context Selection  
+라벨과 컨텍스트 선택  
+
+
+*추천은 대이인문제와 결과를 특정 문맥으로 바꾸는 것을 해결해야함  
+**정확한 평가 예측은 효과적 영화추천으로 볼 수도 있음  
+*대리인 문제 A/B 테스트 때 중요했는데 offline 땐 추정에 어려움이 있음  
+*학습예제-유튜브 시점  
+*새 컨첸츠 추천이 어렵  
+*만약 유저가 새로운거 보면 CF로 바로 바녕ㅇ  
+*고정된 트레이닝 개수 생성  
+**small 집단 방지  
+*의도적이지 않게 정보 제외해줘야 있어야 함  
+**대리인문제 등 오버피팅 방지  
+*주기적 이전 데이터 놓아주기?  
+*다음에 뭘 볼지 예측하는 것에 focus를 두게끔  
+
+
+# 3.5 Experiments with Features and Depth  
+피처와 뎁스 실험  
+
+*1M video, 1M 서치토큰, 256 floats 최근시청 50개, 최근 서치50개  
+*softmax output-multinomial  
+*유튜브 유저로 학습. tower 패턴 구조 네트워크(그냥 쌓은 거)  
+
+
+# 4. RANKING  
+랭킹  
