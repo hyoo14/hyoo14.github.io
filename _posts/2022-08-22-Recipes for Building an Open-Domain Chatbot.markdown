@@ -146,4 +146,48 @@ ACUTE-Eval procedure로 평가
 *1. Engagingness - 누구와 지속 대화 할래?  
 *2. Humanness - 누가 더 사람 같은지?  
 
+사람 평가는 시간과 비용이 많으 듦  
+그래서 스스로대화 시킴  
+*BST 세팅(ACUTE-EVAL 비용 크니까 대체재로)  
+**페르소나  
+**토픽  
+**이전발화  
+*위 세가자ㅣ 줌  
+(빔 디코딩 시 같은 대화 반복 피해줌  
+
+
+
+# 5. Results & Analysis  
+결과분석  
+# 5.1 Automatic Evaluations  
+자동 분석  
+# Retriever  
+탐색모델  
+ConvAI2, Wizard of wiki, 공감대화 ,BST로 파인튜닝  
+*hit@1/K로 평가(validation set에서)  
+
+
+# Generator  
+생성모델 평가  
+90M, 2.7B, 9.4B 파리미터 모델들(valid set: pushshift.io Reddit 사용)  
+파인튜닝 후 PP성능 향상  
+탐색&정제 후 PP 조금 향상  
+
+# Safety  
+안정성  
+
+BST파인튜닝이 더 safe한 응답을 함  
+(다른 프리트레인 모델 보다)  
+*분류기 or 휴리스틱 작업 했기 때문  
+*본 모델은 ConvAI2 학습이 더 적었고 unsafe인 경우도 적었음    
+**제시하는 모델의 파인튜닝이 unsafe가 덜 있는 이유    
+
+
+
+# 5.2 Self-Chat Evaluations  
+자가실험  
+
+
+
+
   
