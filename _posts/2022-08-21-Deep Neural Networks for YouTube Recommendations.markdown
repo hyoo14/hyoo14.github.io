@@ -133,3 +133,76 @@ notoriously: 악명 높은,
 
 # 4. RANKING  
 랭킹  
+candidates 수백으로 줄여서 좀 더 정확하게 찾아줌  
+*DNN사용  
+*A/B test로 성능 올림  
+*CTR보단 watch time이 더 좋은 척도였음  
+
+
+# 4.1 Feature Representation  
+피처 표현  
+*사용피처  
+**전통적 카테고리외에 연속/ordinal(서수)  
+***아이템인지 user context인지 구분해줌  
+
+
+# Feature Engineering  
+피처공학  
+*수백 피처들 카테고리&연속으로 나눔  
+*피처들 modi해줌  
+*user, video data ->유용피처로  
+*근데 일시적 유저행동은 어케해야하는지는?  
+**밑에 답  
+
+*유저의 이전 상호작용 중요시  
+**item 스스로, 유사 아이템, 다른 이의 advertisement 매치  
+
+*피처와 이전비디오 평가 중요 "churn(마구 휘젓다)" 추천  
+
+
+# Embedding Categorical Features  
+임베딩 카테고리 피처  
+*sparse한 카테고리 -> dense하게 임베딩 사용  
+*공유임베딩 종재 -> 일반화 향상위해 중요하고, 트레이닝 때 스피드향상 위해서 중요, 메모리 줄이기 위해서도 중요  
+
+
+# Normalizing Continuous Features  
+정규화-연속피처  
+*NN 스케일링에 민감  
+*정규화 중요-수렴 결과값위해  
+*제곱 or 루트화 ->offline test서 성능 향상  
+
+
+# 4.2 Modeling Expected Watch Time  
+모델링-기대 시청 시간  
+*기대 시청 시간->웨이티드 로지스틱 리그레션 사용  
+*로지스틱 리그레션 with 크로스엔트로피  
+*positive->청취시간에 가중 줌  
+
+
+# 4.3 Experiments with Hidden Layers  
+히든레이어 실험  
+*히든 레이어 달리 하여 실험  
+*width 증가시 depth 증가처럼 성능 올라감  
+*CPU타임은 오래걸려서 트레이드오프  
+*wide 줄일 수록 loss 0.2%씩 증가  
+*긍/부정 가중 안 줄 경우 4.1% loss 증가  
+**성능이 떨어짐  
+
+
+# 5. CONCLUSIONS  
+결론  
+*DNN추천 -> candidate generation & ranking  
+*Deep CF가 MF 압도  
+*대리인문제->미래분류 성능 연관  
+*신호버리기 중요(직전 정보)->오버피팅방지  
+*bias 없애고 시간 정보 추가시 A/B test의 offline prediction성능 향상  
+*DL Rank가 (감상 시간 예측)이 이전 모델들 압도  
+*임베딩사용  
+*정규화함  
+*비선형 layer사용함  
+*로지스틱회귀 가중 써서 감상시간 예측  
+*랭크만 하는 것 보다 성능 향상됨  
+
+
+
