@@ -6,7 +6,12 @@ categories: study
 ---
 
 
-
+# additional something?  
+*탐색(candidate generation)과 랭킹 따로 떼어놓은 이유는 랭킹에서는 고려할 다른 요소들이 많이 합쳐져있기 때문  
+*surrogate problem? offline metric에 오버피팅되어 실제로는 성능이 안 좋은 상태.. 그래서 A/B test 통해 실질 결과로 모델 선택함    
+*clickbait? 클릭 미끼.. ctr의 문제점 언급할 때 쓰이는 듯?  
+*candidate generation-영상을 시청할 확률학습, u-user embedding, v-video emgedding 있을 때 특정 video볼 확률, softmax  
+*네거티브 샘플 - 전부 학습 안 하고 더 효과적으로  
 
 {% highlight ruby %}
 짧은 요약 :  
@@ -17,13 +22,16 @@ categories: study
 
 둘 다 dnn 씀  
 
-[https://drive.google.com/drive/folders/1c5lyOb0Vc-RMfISK4a0sogeBJW0PglCo?usp=sharing]
+
 
 
 {% endhighlight %}
 
 
-#단어정리  
+링크(https://drive.google.com/drive/folders/1c5lyOb0Vc-RMfISK4a0sogeBJW0PglCo?usp=sharing)
+
+
+# 단어정리  
 *dichotomy: 이분법, conjugation: 활용, coarse: 거친, demographics: 인구통계, calibrate: 측정하다,   
 non-stationary: 비정상(불규칙), efficacy: 능률, outsized: 엄청난(대형의), propagate: 전파하다,   
 cohort: 집단, counter-intuitively: 반집단적으로, segregated: 분리된, ordinal: 서수(순서),   
