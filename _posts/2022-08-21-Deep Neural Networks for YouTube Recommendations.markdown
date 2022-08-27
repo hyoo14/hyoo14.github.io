@@ -19,7 +19,11 @@ categories: study
 *candidate generation - recall 최적화  
 **depth 늘리면 map 올라감  
 *ranking - mse 줄이는 최적화  
-**depth, width 늘리면 auc(area upder rocCurve) 좋아지는 쪽으로 감  
+**depth, width 늘리면 auc(area upder rocCurve) 좋아지는 쪽으로 감(클수록 1에 가까울수록 좋음)   
+*softmax로 볼 확률 예측하게하므로 nearest neigbor 찾는 계산은 안 해도 되서 효율적   
+
+
+
 {% highlight ruby %}
 짧은 요약 :  
 
