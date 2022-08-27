@@ -7,7 +7,7 @@ categories: study
 
 
 # additional something?  
-*탐색(candidate generation)과 랭킹 따로 떼어놓은 이유는 랭킹에서는 고려할 다른 요소들이 많이 합쳐져있기 때문  
+*탐색(candidate generation)과 랭킹 따로 떼어놓은 이유는 랭킹에서는 고려할 다른 요소들이 많이 합쳐져있기 때문(최근 업로드 등..)  
 *surrogate problem? offline metric에 오버피팅되어 실제로는 성능이 안 좋은 상태.. 그래서 A/B test 통해 실질 결과로 모델 선택함    
 *clickbait? 클릭 미끼.. ctr의 문제점 언급할 때 쓰이는 듯?  
 *candidate generation-영상을 시청할 확률학습, u-user embedding, v-video emgedding 있을 때 특정 video볼 확률, softmax  
@@ -16,7 +16,10 @@ categories: study
 
 *throughput-시간당 처리량(tps-transcation per second, rps-request per second, 시간당 처리 http수)    
 *latency-요청부터 응답까지 걸리는 시간(qps-quries per second, 초당 처리할 수 있는 쿼리수)  
-
+*candidate generation - recall 최적화  
+**depth 늘리면 map 올라감  
+*ranking - mse 줄이는 최적화  
+**depth, width 늘리면 auc(area upder rocCurve) 좋아지는 쪽으로 감  
 {% highlight ruby %}
 짧은 요약 :  
 
