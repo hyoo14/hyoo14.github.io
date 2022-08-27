@@ -13,6 +13,10 @@ categories: study
 *candidate generation-영상을 시청할 확률학습, u-user embedding, v-video emgedding 있을 때 특정 video볼 확률, softmax  
 *네거티브 샘플 - 전부 학습 안 하고 더 효과적으로  
 
+
+*throughput-시간당 처리량(tps-transcation per second, rps-request per second, 시간당 처리 http수)    
+*latency-요청부터 응답까지 걸리는 시간(qps-quries per second, 초당 처리할 수 있는 쿼리수)  
+
 {% highlight ruby %}
 짧은 요약 :  
 
