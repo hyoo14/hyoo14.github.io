@@ -23,6 +23,10 @@ categories: study
 *softmax로 볼 확률 예측하게하므로 nearest neigbor 찾는 계산은 안 해도 되서 효율적   
 
 
+*candidate generation서 미래에 뭐볼지 예측이 계속 볼지 예측보다 효과적(a/b test에서)  
+*ranking서 기대시청시간 예측  
+
+
 
 {% highlight ruby %}
 짧은 요약 :  
@@ -47,7 +51,7 @@ categories: study
 non-stationary: 비정상(불규칙), efficacy: 능률, outsized: 엄청난(대형의), propagate: 전파하다,   
 cohort: 집단, counter-intuitively: 반집단적으로, segregated: 분리된, ordinal: 서수(순서),   
 cardinality: 특정 데이터 집합의 유니크(Unique)한 값의 개수, churn: 마구 휘젓다, truncated: 끝을 자른,  
-notoriously: 악명 높은,  
+notoriously: 악명 높은,  held-out: 보류(중단)  
 
 # 1. Intro  
 유튜브에서 추천 어려움  
