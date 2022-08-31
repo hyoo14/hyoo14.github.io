@@ -26,6 +26,43 @@ categories: study
 *candidate generation서 미래에 뭐볼지 예측이 계속 볼지 예측보다 효과적(a/b test에서)  
 *ranking서 기대시청시간 예측  
 
+*cumulative distribution function->이걸로 정규화??  
+*임베딩 어떻게 최신화할까? 모델 최신화??  
+*네거티브 샘플링 자세히ㅡ샘플링해서 네거티브 파지티브 갯수 맞추는?  
+*watchtime click이어서 가중 로지스틱 회귀 씀  
+*피처엔지니어링-시청타임라인,좋아요,검색 등, 기기,문맥등  
+*베스트피처-유저인터렉선 윗 씨밀러 비디오, 채널과 주제에대한 시청횟수  
+*candi gen-nonlinear generalization of factorization technique->classification, 시청확률 학습하는 소프트맥스인셈  
+*u,v, geo,gender,age 컨켓 후 소프트맥스 학습  
+*이형 신호-연속형과 카테고리형 피처 모두 사용가능  
+*로스는 크로스엔트로피 로스-미니마이즈  
+*크로스엔트로피란?  
+*서빙에서는 어프록싱 니어리스트네이버-해쉬함수 써서 좀 더 빠르게  
+*rmse, auc 좀 더 자세히?  
+*유튭 이외 데이터도 포함, 사용자학습데이터수 고정ㅡ사용자 가중치 고정 위해  
+*무작위로 아이템 선정 예측보다 특정시점기준 예측이 더 효과적(시간적 정보를 담고 미래 예측이 ab테스트서 더 효과적, 레이블기준 시간적으로 전에 것들 갖고 예측하는 것이 효과적이었다)  
+*피처 다 쓰고 뎁스 늘리면 성능 향상  
+*MAP 계산?  
+*랭킹에서는 영상과 사용자 사이 피처를 많이 사용해야함, 사용자의 이전 행동을 고려하여 아이템과 인터렉션 모델링해야함  
+*랭킹피처공정-카테고리는 임베딩화, 컨티뉴어스는 노멀라이즈  
+*사용자가 선택한 아이템과 그렇지 않은 아이템의 기대시청시간 예측이 목표  
+*정리)  
+**candidate generation-멀티클래스 클래시피케이션, 소프트맥스  
+**랭킹-익스펙티드 워치타임  
+**캔디잰, 랭킹 네트웍구조 비슷  
+**age 피처 통해 시간 프레쉬니스 반영  
+**딥cf로 더 많은 피처 반영  
+**피처의 임베딩, 노멀라이즈 잘 활용  
+**여러층 신경망 넌리니어하게 효과적으로 피처 모델링  
+
+
+*futuer   
+**그래서 19년에는 멀티 클래스 랭킹 시스템  
+**다음에 뭐 볼지 예측  
+**ㅡ멀티태스크 러닝, 엔드투엔드 랭킹 시스템  
+**멀티태스크 러닝이란? user engagement(click and watch time), user satisfaction(like and rating) 이렇게 테스크 두개 나눠서 학습시킴  
+**와이드앤딥 모델 쓰고 position bias줄임(mitigate)  
+
 
 
 {% highlight ruby %}
@@ -51,7 +88,8 @@ categories: study
 non-stationary: 비정상(불규칙), efficacy: 능률, outsized: 엄청난(대형의), propagate: 전파하다,   
 cohort: 집단, counter-intuitively: 반집단적으로, segregated: 분리된, ordinal: 서수(순서),   
 cardinality: 특정 데이터 집합의 유니크(Unique)한 값의 개수, churn: 마구 휘젓다, truncated: 끝을 자른,  
-notoriously: 악명 높은,  held-out: 보류(중단)  
+notoriously: 악명 높은,  held-out: 보류(중단), coarse: 조잡한, asymetric: 비대칭  
+
 
 # 1. Intro  
 유튜브에서 추천 어려움  
