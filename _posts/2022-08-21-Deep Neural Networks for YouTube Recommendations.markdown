@@ -6,10 +6,46 @@ categories: study
 ---
 
 
+
+# 요약  
+
+
+DNN을 사용한 추천 모델로 구조비슷 dnn사용한 candidate generation과 ranking으로 구성  
+
+
+유튭추천이니까 스케일, 프레쉬니스, 노이즈 고려해야  
+-스케일:엄청나게 많은 유저/비디오   ->효율적으로 해야  
+-프레쉬니스:바이럴한 최신 비디오/여전히 유효한 but 시간이 좀 된 비디오   ->둘 다 추천해줄 수 있어야  
+-노이즈:sparse/not well structured   -> 잘 활용해야  
+
+
+candidate generation은 multiclass classification으로 정의(어떤 video볼 확률 softmax)   
+-in: watch vector avg, search vector avg, geo vector, gender …(사용자 기록), age(비디오)   
+–categorical(gender)과 continuous(age) 모두 concat해서 사용  
+–age는 오래된 정도 나타냄(비디오의)  
+-out: video 시청 확률  
+
+
+랭킹은 interaction정보 바탕으로 video들의 watch time 예측  
+-in: 보거나 평가한 video 임베딩, 사용자/비디오 언어 임베딩, 마지막으로 보고 지난 시간, 좋아요   
+-out: video 시청 시각 예측  
+
+
+기타   
+-surrogate prob있으니, 학습 때 offline metric 쓰더라도 실제 사용은 a/b test (대조/실험군)보고 결정  
+-사용자 학습 데이터 수 고정(가중치 동일 위해)  
+-특정 시점 기준으로 라벨하고 라벨링 된 데이터의 시점 이전 정보들을 사용하는 것이 예측 굿  
+-피처, 뎁스 다다익선  
+-카테고리 임베딩화, 연속형은 정규화  
+-relu 여러층 신경망 feature 사이 nonlinear interaction 효과적으로 모델링  
+
+
+
+
 # additional something?  
 *탐색(candidate generation)과 랭킹 따로 떼어놓은 이유는 랭킹에서는 고려할 다른 요소들이 많이 합쳐져있기 때문(최근 업로드 등..)  
 *surrogate problem? offline metric에 오버피팅되어 실제로는 성능이 안 좋은 상태.. 그래서 A/B test 통해 실질 결과로 모델 선택함    
-*clickbait? 클릭 미끼.. ctr의 문제점 언급할 때 쓰이는 듯?  
+*clickbait? 클릭 미끼.. ctr의 문제점 언급할 때 쓰이는 듯  
 *candidate generation-영상을 시청할 확률학습, u-user embedding, v-video emgedding 있을 때 특정 video볼 확률, softmax  
 *네거티브 샘플 - 전부 학습 안 하고 더 효과적으로  
 
