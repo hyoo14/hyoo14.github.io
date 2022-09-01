@@ -44,6 +44,12 @@ Wednesday, August 31, 2022
 o  
 
 
+Thursday, September 01, 2022     
+*eng reading-papers  
+*eng listening-lectures  
+o  
+
+
 
 
 {% highlight ruby %}
