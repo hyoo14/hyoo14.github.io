@@ -55,6 +55,10 @@ categories: study
 **피처의 임베딩, 노멀라이즈 잘 활용  
 **여러층 신경망 넌리니어하게 효과적으로 피처 모델링  
 
+*candidate generation-cf사용, in:user history/out:expected related videos, factorization 기술에서 온 nonlinear generation임  
+*cf? mf?  
+*feature power(x, root x, x square ...)은 크게 중요하지는 않음(강의에 따르면)  
+
 
 *futuer   
 **그래서 19년에는 멀티 클래스 랭킹 시스템  
