@@ -58,6 +58,7 @@ categories: study
 *candidate generation-cf사용, in:user history/out:expected related videos, factorization 기술에서 온 nonlinear generation임  
 *cf? mf?  
 *feature power(x, root x, x square ...)은 크게 중요하지는 않음(강의에 따르면)  
+*feature engineering에서 user-video interaction이 중요했음  
 
 
 *futuer   
