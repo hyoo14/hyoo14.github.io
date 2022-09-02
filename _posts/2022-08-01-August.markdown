@@ -50,6 +50,12 @@ Thursday, September 01, 2022
 o  
 
 
+Friday, September 02, 2022     
+*eng reading-papers  
+*eng listening-lectures  
+o  
+
+
 
 
 {% highlight ruby %}
