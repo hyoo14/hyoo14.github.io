@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "September"
+date:   2022-09-05 10:50:30 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+{% endhighlight %}  
+
+
+
+Monday, September 05, 2022     
+*eng listening-lectures  
+*pythonic codes  
+o  
+
+
+
