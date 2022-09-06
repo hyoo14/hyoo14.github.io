@@ -27,6 +27,13 @@ September week1:
 Monday, September 05, 2022     
 *eng listening-lectures  
 *pythonic codes  
+*eng words  
+o  
+
+
+Tuesday, September 06, 2022     
+*eng listening-lectures  
+*eng reading-papers   
 o  
 
 
