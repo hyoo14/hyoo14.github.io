@@ -69,4 +69,19 @@ anisotopic space서 더 align 함(더 uniform함)
 *문학서 비일치는 future work  
 
 
+# 2 Background: Contrastive Learning  
+*Contrastive learning  
+**의미 유사 가까이, 먼 경우는 멀리 배치  
+**BERT나 RoBERTa PLM 임베딩 사용  
+**CL로 파인튜닝  
+**Xi, Xi+ pair 만들기 -> 간단 dropout 적용, 성능 좋음  
+
+
+*유사 CL 목적함수 dual 인코더임  
+**Xi와 Xi+ 다르므로  
+
+
+*CL 주요속성  
+**alignment - 두 임베딩 사이 기대거리   
+**uniformity - 균등 분포하는지  
 
