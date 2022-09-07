@@ -39,8 +39,10 @@ Tuesday, September 06, 2022
 o  
 
 
-Tuesday, September 07, 2022     
+Wednesday, September 07, 2022     
 *eng listening-lectures  
+*eng reading-papers  
+*eng speaking  
 o  
 
 
