@@ -47,3 +47,11 @@ Wednesday, September 07, 2022
 o  
 
 
+Thursday, September 08, 2022     
+*eng listening-lectures  
+o  
+*eng reading-papers  
+*eng speaking  
+*eng words  
+
+
