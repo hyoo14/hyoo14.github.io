@@ -1036,6 +1036,53 @@ else블록에서 결과 데이터를 파일에 다시 쓰는 동안 예외가 �
 **try 블록이 성공적으로 처리되고 finally 블록이 공통적인 정리 작업을 수행하기 전에 실행해야 하는 동작이 있는 경우 else 블록을 사용할 수 있음  
 
 
+# Better way 66 (Thursday, 220908)  
+# 재사용 가능한 try/finally 동작을 원한다면 contextlib과 with 문을 사용하라    
+*파이썬의 with 문은 코드가 특별한 컨텍스트(context) 안에서 실행되는 경우를 표현  
+**예를 들어, 상호 배제 락(뮤텍스)을 with 문 안에서 사용하면 락을 소유했을 때만 코드 블록이 실행되는 것을 의미  
+*contextlib 내장 모듈을 사용하면 직접 만든 객체나 함수를 with 문에 쉽게 쓸 수 있음  
+**contextlib 모듈을 with 문에 쓸 수 있는 함수를 간단히 만들 수 있는 contextmanager 데코레이터를 제공  
+**이 데코레이터를 사용하는 방법이 __enter__와 __exit__ 특별 메서드를 사용해 새로 클래스를 정의하는 방법보다 훨씬 쉬움  
+
+
+{% highlight ruby %}
+from contextlib import contextmanager  
+
+
+@contextmanager  
+def debug_logging(level):  
+    logger = logging.getLogger()
+    old_level = logger.getEffectiveLevel()  
+    logger.setLevel(level)  
+    try:  
+        yield  
+    finally:  
+        logger.setLevel(old_level)  
+
+
+{% endhighlight %}  
+
+
+*yield 식은 with 블록의 내용이 실행되는 부분을 지정  
+
+
+# with와 대상 변수 함께 사용하기  
+*with 문에 전달된 컨텍스트 매니저가 객체를 반환할 수 있음  
+**이렇게 반환된 객체는 with 복합문의 일부로 지정된 지역 변수에 대입됨  
+**이를 통해 with 블록 안에서 실행되는 코드가 직접 컨텍스트 객체와 상호작용할 수 있음  
+*with문에 open을 전달하면 open은 with 문에서 as를 통해 대상으로 지정된 변수에게 파일 핸들을 전달하고  
+**with 블록에서 나갈 때 이 핸들을 닫음  
+**이러한 접근 방법은 코드 실행이 with 문을 벗어날 때 결국에는 파일이 닫힌다고 확신할 수 있게 해줌  
+**파일 핸들이 열린 채로 실행되는 코드의 양을 줄이도록 동기부여해줌  
+**일반적으로 파일 핸들이 열려 있는 부분을 줄이면 좋음  
+*상태를 격리할 수 있고, 컨텍스트를 만드는 부분과 컨텍스트 안에서 실행되는 코드를 서로 분리할 수 있는 것이 with 문의 또다른 장점  
+
+
+*정리  
+**with문을 사용하면 try/finally 블록을 통해 사용해야 하는 로직을 재활용하면서 시각적인 잡음도 줄일 수 있음  
+**contextlib 내장 모듈이 제공하는 contextmanager 데코레이터를 사용하면 직접 만든 함수를 with문에 사용할 수 있음  
+**컨텍스트 매니저가 yield하는 값은 with 문의 as 부분에 전달됨  
+***이를 활용하면 특별한 컨텍스트 내부에서 실행되는 코드 안에서 직접 그 컨텍스트에 접근할 수 있음  
 
 
 
