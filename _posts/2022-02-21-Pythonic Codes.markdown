@@ -1086,9 +1086,40 @@ def debug_logging(level):
 
 
 
+# Better way 67 (Friday, 220909)  
+# 지역 시간에는 time 보다는 datetime을 사용하라    
+*협정 세계시(Coordinated Universal Time, UTC)는 시간대(timezone)와 독립적으로 시간 나태니는 표준  
+*현재 위치를 기준으로 시간을 따지는 인간에게 UTC는 다소 불편  
+*파이썬 시간대 변환 방법은 두가지로 예전방식인 time모듈과 새로운 방식 datetime이 있음  
+**time 보다는 datetime이 권장되고 pytz 함께 사용하면 편리  
+
+*time의 경우 윈도우 같은 플랫폼에서 제공하는 시간대 관련 몇가지 기능의 사용이 제한됨  
+**플랫폼에 따라 다르게 작동하는 문제인데 호스트 운영체제의 C 함수에 의존적이기 때문  
+*그러므로 여러 시간대 사이의 변환을 다룬다면 datetime 모듈 사용이 권장됨  
+*datetime 모듈의 경우 지역 시간을 UTC로 된 유닉스 타임스탬프로 쉽게 바꿀 수도 있음  
 
 
+{% highlight ruby %}
 
+from datetime import datetime, timezone  
+
+
+time_str = '2020-08-27 19:13:04'  
+now = datetime.strptime(time_str, time_format) #시간대 설정이 안 된 시간으로 문자열 구분 분석  
+time_tuple = now.timetuple()  # 유닉스 시간 구조체로 변환  
+utc_now = time.mktime(time_tuple) #구조체로부터 유닉스 타임스탬프 생성  
+print(utc_now) #1598523184.0  
+
+{% endhighlight %}  
+
+
+*pytz 모듈을 내려받아 기본 설치가 제공하지 않는 시간대 정보를 추가할 수 있음  
+
+
+*정리  
+**여러 다른 시간대를 변환할 때는 time 모듈을 지양  
+**여러 다른 시간대를 신뢰할 수 있게 변환하고 싶으면 datetime과 pytz 모듈을 함께 사용하는 것을 권장  
+**항상 시간을 UTC로 표시하고, 최종적으로 표현하기 직전에 지역 시간으로 변환할 것  
 
 
 
