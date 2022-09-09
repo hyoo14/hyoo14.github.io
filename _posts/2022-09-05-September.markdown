@@ -51,8 +51,13 @@ Thursday, September 08, 2022
 *eng listening-lectures  
 *eng reading-papers  
 *pythonic codes  
+*eng words  
 o  
 *eng speaking  
-*eng words  
 
+
+Friday, September 09, 2022     
+*eng listening-lectures  
+*eng reading-papers  
+o  
 
