@@ -59,5 +59,7 @@ o
 Friday, September 09, 2022     
 *eng listening-lectures  
 *eng reading-papers  
+*pythonic codes  
+*eng words  
 o  
 
