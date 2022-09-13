@@ -68,6 +68,42 @@ In this regard, I feel that some individual freedoms do need to be restricted.
 
 
 
+infringe: 어기다, abhorrent: 혐오스런, ward off: 피하다, intrude on: 침입하다,  
+
+
+*eng->kor  
+Some people think that the idea of taking away individual liberties is abhorrent.  
+일부 사람들은 개인의 자유를 빼앗는 생각은 혐오스럽다고 생각한다.  However, in my opinion, there are certain situations in which it is acceptable to violate individual freedom, such as when someone has a job that could affect the safety of others and when acts of terror are being kept from happening.  
+그러나 내 생각에는 누군가 다른이의 안전에 영향을 끼치는 직업이 있을 때와 테러 행위들이 발생하기 전에 막아야할 때처럼 개인의 자유를 해쳐야하는 특정 상황이 있다.  
+
+
+
+To begin with, individuals’ liberties can be violated when people are employed in positions that could potentially endagner others.  
+우선, 개인의 자유는 사람들이 다른이를 위험에 빠뜨릴 잠재성이 있는 위치에 고용되었을 때 파괴될 수 있다.  These employees must be trusted to work safely and responsibly in order to protect innocent people’s lives.  
+이러한 피고용인은 안전하게 일하도록 신뢰받아야만하고 무고한 사람들의 생명이 보호받도록 의무가 있다.  For example, school bus drivers, pilots, and firefighters are in charge of many individuals’ well-being.  
+예를 들어, 통학버스기사들, 조종사들, 그리고 소방관들은 많은 개인들의 복리후생에 책임이 있다.  If they are under the influence of alcohol or drugs, they will not be able to perform their tasks safely.  
+만일 그들이 알코올이나 약에 영향을 받을경우, 그들은 그들의 안전 작업을 수행할 수 없다.  Thus, it is acceptable to infringe on their freedom and conduct random drug tests.  
+그러므로 그들의 자유를 침해하고 랜덤 약물 검사를 시행하는 것은 용인된다.  
+This is necessary to ensure that these public workers are not compromising people’s live.  
+이러한 공공 일꾼들은 사람들의 목숨과 타협할 수 없다는 것의 보장은 필요하다.  
+
+
+
+On top of that, the prevention of terrorist activities is a cause for which people’s rights can be infringed upon.  
+게다가, 테러범들의 활동을 방지하는 것은 사람들의 권리를 침해할 수도 있는 것을 야기한다.  Given the current increase in random violence in the world, measures must be taken to prevent these potential attacks from harming innocent people.  
+최근 세계에서 증가하는 무작위한 폭력에서, 무관한 사람들이 피해를 받는 이러한 잠재적인 공격들을 방지하는 검사는 반드시 이뤄져야한다.  For instance, in order to ward off bombings or transport of dangerous materials, airports around the world conduct security checks on people and their belongings and intrude on their personal space.  
+예를 들어, 폭발들을 또는 명백한 위험물들을 피하기 위해 전세계의 공항들은 사람들과 그들의 소지품을 보안 검사해야하고 사적 공간에 침입해야한다.  Although this is intrusive and a violation of one’s freedom, it is nonetheless necessary in order to protect everyone from potential harm.  
+비록 이것이 침해적이고 누군가의 자유를 파괴할지라도, 그럼에도 잠재적 위협으로부터 모두를 보호하기 위해 이것은 필요하다.  Therefore, in these situations, government agencies and public institutions have the right to conduct searches and trespass on one’s privacy.   
+그러므로, 이러한 상황들에서, 정부 대리인들과 공공  기관들은 검색하고 누군가의 개인권리를 침해할 권리가 있다.   
+
+
+To sum up, some people have jobs that could jeopardize the safety of others, and it is important to stop acts of terror before they happen.   
+요약하면, 어떤 이들은 다른이들의 안전을 파괴할 수 있는 직업을 갖고 있고 테러 행위가 발생하기 전에 막는 것은 중요하다.  In this regard, I feel that some individual freedoms do need to be restricted.  
+이러한 측면에서, 나는 몇몇 개인의 자유가 제약될 필요가 있다고 느낀다.  
+
+
+
+
 
 
 
