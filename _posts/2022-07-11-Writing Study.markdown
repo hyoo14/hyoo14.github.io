@@ -73,16 +73,21 @@ infringe: 어기다, abhorrent: 혐오스런, ward off: 피하다, intrude on: �
 
 *eng->kor  
 Some people think that the idea of taking away individual liberties is abhorrent.  
-일부 사람들은 개인의 자유를 빼앗는 생각은 혐오스럽다고 생각한다.  However, in my opinion, there are certain situations in which it is acceptable to violate individual freedom, such as when someone has a job that could affect the safety of others and when acts of terror are being kept from happening.  
+일부 사람들은 개인의 자유를 빼앗는 생각은 혐오스럽다고 생각한다.  
+However, in my opinion, there are certain situations in which it is acceptable to violate individual freedom, such as when someone has a job that could affect the safety of others and when acts of terror are being kept from happening.  
 그러나 내 생각에는 누군가 다른이의 안전에 영향을 끼치는 직업이 있을 때와 테러 행위들이 발생하기 전에 막아야할 때처럼 개인의 자유를 해쳐야하는 특정 상황이 있다.  
 
 
 
 To begin with, individuals’ liberties can be violated when people are employed in positions that could potentially endagner others.  
-우선, 개인의 자유는 사람들이 다른이를 위험에 빠뜨릴 잠재성이 있는 위치에 고용되었을 때 파괴될 수 있다.  These employees must be trusted to work safely and responsibly in order to protect innocent people’s lives.  
-이러한 피고용인은 안전하게 일하도록 신뢰받아야만하고 무고한 사람들의 생명이 보호받도록 의무가 있다.  For example, school bus drivers, pilots, and firefighters are in charge of many individuals’ well-being.  
-예를 들어, 통학버스기사들, 조종사들, 그리고 소방관들은 많은 개인들의 복리후생에 책임이 있다.  If they are under the influence of alcohol or drugs, they will not be able to perform their tasks safely.  
-만일 그들이 알코올이나 약에 영향을 받을경우, 그들은 그들의 안전 작업을 수행할 수 없다.  Thus, it is acceptable to infringe on their freedom and conduct random drug tests.  
+우선, 개인의 자유는 사람들이 다른이를 위험에 빠뜨릴 잠재성이 있는 위치에 고용되었을 때 파괴될 수 있다.  
+These employees must be trusted to work safely and responsibly in order to protect innocent people’s lives.  
+이러한 피고용인은 안전하게 일하도록 신뢰받아야만하고 무고한 사람들의 생명이 보호받도록 의무가 있다.  
+For example, school bus drivers, pilots, and firefighters are in charge of many individuals’ well-being.  
+예를 들어, 통학버스기사들, 조종사들, 그리고 소방관들은 많은 개인들의 복리후생에 책임이 있다.  
+If they are under the influence of alcohol or drugs, they will not be able to perform their tasks safely.  
+만일 그들이 알코올이나 약에 영향을 받을경우, 그들은 그들의 안전 작업을 수행할 수 없다.  
+Thus, it is acceptable to infringe on their freedom and conduct random drug tests.  
 그러므로 그들의 자유를 침해하고 랜덤 약물 검사를 시행하는 것은 용인된다.  
 This is necessary to ensure that these public workers are not compromising people’s live.  
 이러한 공공 일꾼들은 사람들의 목숨과 타협할 수 없다는 것의 보장은 필요하다.  
@@ -90,18 +95,62 @@ This is necessary to ensure that these public workers are not compromising peopl
 
 
 On top of that, the prevention of terrorist activities is a cause for which people’s rights can be infringed upon.  
-게다가, 테러범들의 활동을 방지하는 것은 사람들의 권리를 침해할 수도 있는 것을 야기한다.  Given the current increase in random violence in the world, measures must be taken to prevent these potential attacks from harming innocent people.  
-최근 세계에서 증가하는 무작위한 폭력에서, 무관한 사람들이 피해를 받는 이러한 잠재적인 공격들을 방지하는 검사는 반드시 이뤄져야한다.  For instance, in order to ward off bombings or transport of dangerous materials, airports around the world conduct security checks on people and their belongings and intrude on their personal space.  
-예를 들어, 폭발들을 또는 명백한 위험물들을 피하기 위해 전세계의 공항들은 사람들과 그들의 소지품을 보안 검사해야하고 사적 공간에 침입해야한다.  Although this is intrusive and a violation of one’s freedom, it is nonetheless necessary in order to protect everyone from potential harm.  
-비록 이것이 침해적이고 누군가의 자유를 파괴할지라도, 그럼에도 잠재적 위협으로부터 모두를 보호하기 위해 이것은 필요하다.  Therefore, in these situations, government agencies and public institutions have the right to conduct searches and trespass on one’s privacy.   
+게다가, 테러범들의 활동을 방지하는 것은 사람들의 권리를 침해할 수도 있는 것을 야기한다.  
+Given the current increase in random violence in the world, measures must be taken to prevent these potential attacks from harming innocent people.  
+최근 세계에서 증가하는 무작위한 폭력에서, 무관한 사람들이 피해를 받는 이러한 잠재적인 공격들을 방지하는 검사는 반드시 이뤄져야한다.  
+For instance, in order to ward off bombings or transport of dangerous materials, airports around the world conduct security checks on people and their belongings and intrude on their personal space.  
+예를 들어, 폭발들을 또는 명백한 위험물들을 피하기 위해 전세계의 공항들은 사람들과 그들의 소지품을 보안 검사해야하고 사적 공간에 침입해야한다.  
+Although this is intrusive and a violation of one’s freedom, it is nonetheless necessary in order to protect everyone from potential harm.  
+비록 이것이 침해적이고 누군가의 자유를 파괴할지라도, 그럼에도 잠재적 위협으로부터 모두를 보호하기 위해 이것은 필요하다.  
+Therefore, in these situations, government agencies and public institutions have the right to conduct searches and trespass on one’s privacy.   
 그러므로, 이러한 상황들에서, 정부 대리인들과 공공  기관들은 검색하고 누군가의 개인권리를 침해할 권리가 있다.   
 
 
 To sum up, some people have jobs that could jeopardize the safety of others, and it is important to stop acts of terror before they happen.   
-요약하면, 어떤 이들은 다른이들의 안전을 파괴할 수 있는 직업을 갖고 있고 테러 행위가 발생하기 전에 막는 것은 중요하다.  In this regard, I feel that some individual freedoms do need to be restricted.  
+요약하면, 어떤 이들은 다른이들의 안전을 파괴할 수 있는 직업을 갖고 있고 테러 행위가 발생하기 전에 막는 것은 중요하다.  
+In this regard, I feel that some individual freedoms do need to be restricted.  
 이러한 측면에서, 나는 몇몇 개인의 자유가 제약될 필요가 있다고 느낀다.  
 
 
+
+
+*kor->eng    
+일부 사람들은 개인의 자유를 박탈하는 것은 끔찍하다고 생각한다.  
+Some people think that  jeopardize one’s freedom is abhorrent.  
+하지만, 내 생각에는, 개인의 자유를 침해하는 것이 용인될 수 있는 특정 상황들이 존재하는데, 이를테면 어떤 사람이 다른 사람들의 안전에 영향을 미칠 수 있는 직업을 가지고 잇는 경우나, 테러 행위가 발생하는 것을 막기 위한 경우가 그러하다   
+However, in my opinion, there are some acceptable situations about violating privacy such as someone who have a job to affect someone else’s safety , to prevent take place of act of terror.  
+
+
+우선, 어떤 사람이 잠재적으로 다른 사람들을 위험에 빠뜨릴 수 있는 직업에 종사할 때 그 개인의 자유는 침해될 수 있다.   
+To begin with, some people work for the occupations that potentially make others in danger, their freedom could be restricted.  
+이러한 일을 하는 사람들은 무고한 사람들의 생명을 보호하기 위해 안전하고 책임감 있게 일하도록 신뢰되어야 한다.  
+People who do these jobs should be credential to work responsibly and protect safety and innocent people’s lives.  
+예를 들어, 학교 버스 기사, 조종사, 그리고 소방대원들은 수많은 개인의 안녕을 책임지고 있다.  
+For example, school bus drivers, pilots and fire fighters have responsibility to keep one’s wellbeing.  
+만일 그들이 술에 취하거나 마약을 복ㅇㅇ한 상태에 있다면, 그들은 안전하게 직무를 수행할 수 없을 것이다.  
+If they are drunken or take drug, they cannot conduct their work safely.  
+따라서, 그들의 자유를 침해하고 임의로 약물 검사를 실시하는 것은 용인될 수 있다.  
+Therefore, violate their freedom and take drug test randomly can be allowed.  
+이는 이렇게 대중을 위해 일하는 근로자들이 사람들의 생명을 위태롭게 하지 않도록 보장하기 위해 필요하다.  
+It is necessary to guarantee people’s lives that should not be in danger for public workers.
+
+
+게다가, 테러 행위의 방지는 사람들의 권리가 침해될 수 있는 한 가지 이유이다.  
+On top of that, prevention of terror behaviors is one of the reason that allow violation of privacy.  
+현재 세계에서 무작위한 폭력의 증가를 고려하면, 이 잠재적 공격이 무고한 사람들을 해치는 것을 막기 위해 조치가 취해져야 한다.  
+To consider the increase of randomly violation around the current world, this potential attack should be done something to prevent for innocent people harmed.  
+예를 들어, 폭격이나 위험 물질의 이송을 막기 위해 전세계의 공항들은 사람들과 그들의 소지품에 보안 검사를 실시하고 그들의 사적인 영역을 침범한다.  
+For example, to intrude violation or move of harmful materials, airports around the world search people’s belongings and trespass their private space.  
+비록 이것이 강제적이고 개인의 자유의 침해일지라도, 그것은 그래도 잠재적인 피해자로부터 모두를 보호하기 위해서 필요하다.  
+Although this is forced and violate one’s freedom, it is still necessary to protect potential victims.  
+따라서, 이러한 상황에서는 정부 기관과 공공기관이 개인의 사생활을 수색하고 침해할 권리를 지닌다.  
+Therefore, in this situations, government complex and public agencies have rights to search one’s privacy and violate privacy.  
+
+
+요약하자면, 어떤 사람들은 타인의 안전을 위태롭게 할 수 있는 직업을 가지고 있고, 테러 행위가 일어나기 전에 이를 막는 것은 중요하다.  
+To sum up, some people have jobs that jeopardize one’s safety, it is important to prevent the terror before take place.  
+이러한 점에서, 나는 일부 개인의 자유가 제한될 필요가 있다고 생각한다.  
+In this regard, I think it is necessary to restrict one’s freedom.  
 
 
 
