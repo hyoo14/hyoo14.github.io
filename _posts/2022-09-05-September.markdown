@@ -43,8 +43,18 @@ Wednesday, September 14, 2022
 *eng reading-papers  
 *pythonic codes  
 *eng speaking  
-o  
 *eng writing  
+o  
+
+
+Thursday, September 15, 2022     
+*eng listening-lectures  
+*eng speaking  
+*eng writing  
+o  
+*eng reading-papers  
+*pythonic codes  
+
 
 
 
