@@ -25,6 +25,29 @@ September week2:
 
 
 
+Monday, September 19, 2022     
+*eng-lectures  
+o  
+
+
+
+
+{% highlight ruby %}
+
+
+September week2:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
 Monday, September 12, 2022     
 *eng listening-lectures  
 *eng reading-papers  
