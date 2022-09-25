@@ -29,7 +29,7 @@ SBERT, SRoBERTa로 STS task서 SOTA 찍음
 {% endhighlight %}
 
 
-링크 (https://drive.google.com/drive/folders/1TfN3ngXQxHX-0UzQgcOTxz3nRjDwlr4c?usp=sharing)
+[링크](https://drive.google.com/drive/folders/1TfN3ngXQxHX-0UzQgcOTxz3nRjDwlr4c?usp=sharing)
 
 
 # 단어정리  
