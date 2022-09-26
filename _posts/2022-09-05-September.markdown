@@ -12,6 +12,27 @@ categories: study
 {% highlight ruby %}
 
 
+September week3:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+Monday, September 26, 2022     
+*eng-papers  
+o  
+
+
+{% highlight ruby %}
+
+
 September week2:  
 *eng reading-papers  
 *eng listening-lectures      
