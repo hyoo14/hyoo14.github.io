@@ -16,6 +16,35 @@ translate eng->kor, kor->eng
 {% endhighlight %}
 
 
+# 13 - Thursday, 220929  
+*eng  
+The lecturer argues that scientists do not know what started the Little Ice Age.  
+This contradicts the reading passage's claim that there are plausible theories about its cause.  
+
+
+First, the lecturere points out that no one has proven a correlation between sunspots and solar radiation.  
+During a recent period of reduced sunspot activity, the amount of solar energey did not decline.  
+This means that solar radiation is not related to the number of sunspots.  
+This casts doubt on the reading passage's claim that lessened solar radiation caused the Little Ice Age.  
+
+
+Next, the lecturer asserts that the cooling trend was not triggered by a volano.  
+The ash and dust would have cleared after a short period of time.  
+Therefore, the cooling effect would not have lasted for centuries, but the Little Ice Age lasted for over five hundred years.  
+This counters the reading passage's claim that the Little Ice Age was the result of a volcanic eruption.  
+
+
+Finally, the lecturer maintains that the Little Ice AGe was not caused by the increased reflectivity of the Earth.  
+Snow and ice are not the only causes of reflectivity, as clouds also reflect the Sun's energy.  
+The Earth had less cloud cover during this period because of the cooling of the oceans, so the Earth's overall reflectivity would not have risen.  
+This refutes the reading passage's claim that the Earth's greater reflectivity resulted in the Little Ice Age.   
+
+
+
+
+
+
+
 # 12 - Monday, 220815  
 *eng  
 Some people think that the idea of taking away individual liberties is abhorrent.  
