@@ -231,6 +231,101 @@ congruent: 거의 일치, copies: 사본
 **공격탐지, 2dataset 사용  
 
 
+*공격어 탐지 데이터셋  
+**SmEvalChallenge 2019  
+**계층적  
+***1. 공격적 여부, 타겟 여부, 타겟이 개인인지 그룹인지 그 외인지 여부  
+**레입르링 실험 통해 검증 됨  
+**14,- 영문트윗기반  
+
+
+*혐오발언, 공격어 데이터셋  
+**중심문제와 주변문제 관련성 모티브 받음  
+**HATE, OFF, NONE으로 구성  
+**혐오어 사전 이용하여 Hate-base 구축  
+**사전으로 혐오트윗 추론, 25k 트윗 기반  
+
+
+*베이스라인  
+**리니어SVM  
+***텍스트분류서 SOTA(?)  
+***유니그램으로 학습  
+***그리드서치로 bert 파라미터 선택  
+
+
+**투채널 BiLSTM  
+***임베딩스페이스 랜덤이니셜라이제이션  
+***버트  
+***BiLSTM은 32 hidden units  
+***최종에는 forward, backword 합쳐서 MLP softmax로 분류  
+
+
+**파인튠 버트  
+**SOTA 버트  
+***SemEval2019우승 버전사용  
+***최고 성능 보임  
+***SyLSTM  
+****이 세팅 참고 (loss function, initializer, learining rate 기반)  
+
+
+
+*학습  
+**스텐다드 크로스엔트로피  
+**AdamW optimizer  
+**cosine anealing learnign rate 스케쥴러  
+**vocab 30,- in corpus  
+**initial learning rate : 0.001  
+**regularization 0.1  
+
+
+**평가척도  
+**가중 F1 측정  
+**Precision & recall  
+
+
+
+# 5 Results  
+*결과  
+**랜덤이니셜라이징 임베딩 or 글로브+트위터 임베딩 사용  
+**student t-test with 가중 F1 측정   
+**베이스라인 압도  
+
+
+*공격어탐지  성능  
+**본 모델과 선택적 baseline이 성능 좋음  
+*공격어 탐지  
+**NN이 LinearSVM 보다 나음  
+**본 모델이 압도  
+*공격어 카테고리  
+**본 모델이 버트대비 4% 성능향상  
+*공격어 타겟 인식  
+**베이스라인 다 같음  
+**본모델이 압도, 버트보다 5.7% 향상  
+*혐오&공격어 성능  
+**본모델이 압도  
+
+
+*논의  
+**BiLSTM과 BERT 비교 논의  
+**근데 의존 tree 변환 시 비방향 그래프(단일관계)로 LSTM서 멀티릴레이션 케어됨  
+**BERT+GCN  
+***파라미터 과대화  
+***sparsity 증가  
+***이미 버트는 의존성 학습  
+***의존문법 추가가 불필요한 반복임  
+
+
+
+# 6 Conclusion  
+*SyLSTM 제안  
+**Semantic + Syntactic 인코더  
+**성능압도(tweet기반으로)  
+**의존문법 사용  
+**효율적 & 확장성 좋음  
+**언어학적 피처 추가에 좋음(DNN과 함께)   
+
+
+
 
 
 
