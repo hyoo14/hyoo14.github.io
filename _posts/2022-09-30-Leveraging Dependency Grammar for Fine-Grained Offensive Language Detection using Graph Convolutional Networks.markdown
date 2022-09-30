@@ -1,0 +1,186 @@
+---
+layout: post
+title:  "Leveraging Dependency Grammar for Fine-Grained Offensive Language Detection using Graph Convolutional Networks"
+date:   2022-09-30 17:00:19 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+공격적인 언어 탐지에서 올바른 탐지가 중요함  
+
+
+올바른 탐지  
+-false positive 체크  
+-차별적 편견 없음  
+
+
+제안하는 SyLSTM 통해 SOTA 성능 얻음  
+GCN+LSTM 구조  
+
+{% endhighlight %}
+
+
+[링크](https://drive.google.com/drive/folders/1gfg2VPZjYvfNgm5g7YUFfsYg5Z6WBcxg?usp=sharing)
+
+
+# 단어정리  
+*propagation: 전파, innocuous: 무해한, pejorative: 경멸적인, profanity: 욕설, disparage: 얕보다,   
+unprecedented: 전례없는, lexial: 단어나 어휘 관한 것, fall prey to: 먹이감이 되다, subsuming: 포함하다,  
+compatible: 호환되는, pave the way: 길을 마련하다, plethora: 과다, ethinicity: 민족성, caste: 카스트,  
+morphology: 형태, syntax: 통사론, nodal: 노드의, amod: 상태, posit: 단정짓다, lexicon: 사전,  
+congruent: 거의 일치, copies: 사본  
+ 
+
+# 1 Introduction  
+*공격적언어  
+**욕설, 얕보기(인종, 피부색, 민족, 성별, 국적, 종교 등)  
+**소셜미디어에서 폭증중이어서 필터 시급  
+*기존의 탐지  
+**어법적, 룰적 ngram, bow 사용  
+**욕설은 잘 탐지하나 혐오발언 탐지에 약함  
+**dnn의 경우 스스로 편견 생김(예를 들어, 아프리칸 아메리칸의 영어를 혐오로 인식)  
+
+
+*구조적 특징(통사적, 문장에서 단어의 역할을 따지는)이 잠재 공격 탐지에 핵심 역할을 함  
+**특히 대상없는 공격 또는 냉소에  
+**성급한 일반화 방지에도 역할함(욕설, 인종적 언어와 같은)  
+**특정 단어에 대한 bias 극복  
+
+
+*의존파스트리 중요  
+**언어에서 형태학적으로 부유하고 단어순서가 상대적으로 자유로움  
+**트위터 어휘로부터 영감 받아서 구조적 특징을 의존문법에서 부여하고 통합함  
+**딥러닝에서 사용할 경우 좋을 것  
+
+
+*SyLSTM제안   
+**신텍스기반+LSTM  
+**딥러닝+선택적의존성(딥러닝에 의한 시스템 bias 경감시켜줌)  
+**의존문법 사용 위해 GCN 사용  
+**의존파스트리의 input graph로 호환시킴  
+**BiLSTM기반 의미인코더+ GCN기반 구조인코더로 구성  
+**softmax 헤드로 분류  
+**기존 SOTA버트가 재학습 110M 파라미터인데 반해 제안보델은 9.5M 파라미터로 효율적  
+**성능도 SOTA  
+**테스트 data  
+***hate speech and offensive long detection  
+***계층 분류 시스템  
+***타입, 타겟, 공격 대상 구분  
+**공헌  
+***의미피처(임베딩같은)와 구조피처 같이 사용  
+***욕설공격탐지 성능 향상, 공격어 인식, 타입, target 3가지 모두 성능 향상  
+(논문구성: 2-연관, 3-디자인SyLSTM, 4-구체화(데이터셋+실험), 5-결과, 6-결론)  
+
+
+# 2 Related Work  
+*혐오탐지(20년 넘게 이어져옴)  
+**Smokey   
+***시작격으로 디시전 트리 분류  
+***47신텍스와 이멘틱스 사용  
+***3가지 클래스(flame, okay, maybe)  
+***전통적 머신러닝 사용의 토대가 됨  
+***과다 필터가 약점  
+
+
+*소셜네트워크 폭증  
+**소셜미디어 도메인 도입 계기  
+**기본언어학적 피처 제안  
+***욕탐지, 혐오발언 내적 탐지  
+***욕설탐지 훈련  
+****내적 편견에 빠지고 비효율적  
+
+
+*구조적 피처 중요  
+**공격탐지, 타겟 선별  
+**SNS서 발견  
+***혐오->특정대상  
+**언어특성-딥러닝 접목  
+***인스턴스 지목에 집중  
+**2가지 문제점  
+***내재된 편견 생김  
+***모델의 도메인 shift  
+
+
+*구조 피처 사용시 유용함 증명됨  
+**non-Euclidean syntactic 특성 사용(의존트리 같은)하므로 cost 절약  
+
+
+*GNN으로 딥러닝이 그래프까지 확장되고 GCN사용하여(CNN일반화버전) non-Euclidean data까지 확장  
+**스케일 확장 커짐  
+***Chebyshev 폴리노미얼 기반  
+**SNS, NLP, 자연과학서 성공적  
+
+
+*GCN서 NLP 우수성 입증  
+**시맨틱롤 레이블링 분석  
+**NLP 피처 추출용 GCN의 기반  
+**임베딩용으로 쓰임  
+**그러나 약점이 있음  
+***멀티릴레이션 그래프서 사용 못 함  
+***즉, 의존파스트리 사용 어려움  
+
+
+*의존파스트리  
+**본 논문에서 GCN서 쓰게 처음으로 변환함(공헌점)  
+**모델  
+**BiLSTM시맨틱인코더-의미피처추출(긴범위)  
+**GCN신텍틱인코더-의존파스트리(문장의) 피처 추출  
+***결과 향상  
+
+
+
+# 3 Methodology  
+*어법은 형태론 + 신텍스  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
