@@ -52,6 +52,11 @@ Thursday, September 29, 2022
 o  
 
 
+Friday, September 30, 2022   
+*eng reading-papers  
+o  
+
+
 {% highlight ruby %}
 
 
