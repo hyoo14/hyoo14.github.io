@@ -65,6 +65,8 @@ Saturday, October 01, 2022
 *eng listening-lectures  
 *eng speaking  
 *eng writing  
+*pythonic codes  
+*eng reading-papers  
 o  
 
 {% highlight ruby %}
