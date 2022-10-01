@@ -64,6 +64,7 @@ o
 Saturday, October 01, 2022  
 *eng listening-lectures  
 *eng speaking  
+*eng writing  
 o  
 
 {% highlight ruby %}
