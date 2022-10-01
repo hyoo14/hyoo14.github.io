@@ -119,7 +119,28 @@ This refutes the reading passage's claim that the Earth's greater reflectivity r
 
 
 
+*kor->eng   강의자는 과학자들이 무엇이 소빙기를 일으켰는지 알지 못한다고 주장한다.  
+The lecturer argues that scientists don’t know what causes little Ice Age.   이는 그것의 원인에 대해 그럴듯한 이론들이 있다는 읽기 지문의 주장을 반박한다.  
+This contradicts the reading passage’s claim that there are plausible theories about  the reason.  
 
+
+첫째로, 강의자는 아무도 태양 흑점과 태양 복사 사이의 상관관계를 증명하지 못했다고 지적한다.  
+First, the lecturer points out that nobody proves the correlation between sunspots and solar reflectivity.    태양 흑점 활동이 감소한 최근 시기 동안, 태양 에너지의 양은 줄어들지 않았다.  
+Sunspot activity decline these days, however solar energy do not reduced.   이것은 태양 복사가 태양 흑점의 수와 관련이 없다는 것을 의미한다.   
+This means that solar reflectivity does not related to the number of sunspots.   이는 줄어든 태양 복사가 소빙기를 초래했따는 읽기 지문의 주장에 의구심을 제기한다.  
+This casts doubt on the reading passage’s claim that shrieked solar reflectivity causes little Ice Age.  
+
+
+  
+다음으로, 강의자는 냉각 현상이 화산에 의해 촉발되지 않았다고 주장한다.   
+Next, the lecturer contends that cooling effect does not promoted by volcanic eruption.     재와 먼지는 단기간에 걷혔을 것이다.  
+Ashes and dust cleared with short periods.   따라서, 냉각 효과는 수 세기 동안 지속되지 않았을 것인데, 소빙기는 5백 년 이상 지속되었다.   
+Therefore, cooling effect did not lasted centuries, however little Ice Age lasted 500 years.   이는 소빙기가 화산 폭발의 결과였따는 읽기 지문의 주장에 반대한다.   
+This counters the reading passage’s claim that little Ice Age was result of volcanic eruption.  
+
+
+
+마지막으로, 강의자는 소빙기가 증가한 지구 반사율에 의해 초래되지 않았다고 주장한다.   눈과 얼음이 반사율의 유일한 원인은 아닌데, 이는 구름 또한 태양 에너지를 반사하기 때문이다 .    지구는 이 시기에 바다의 냉각 때문에 구름의 양이 더 적었고, 따라서 지구의 전체 반사율은 증가하지 않았을 것이다.   이는 지구의 더 높은 반사율이 소빙기를 야기했다는 읽기 지문의 주장을 반박한다.  
 
 
 
