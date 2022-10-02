@@ -69,6 +69,11 @@ Saturday, October 01, 2022
 *eng reading-papers  
 o  
 
+
+Sunday, October 02, 2022  
+*codes  
+o  
+
 {% highlight ruby %}
 
 
