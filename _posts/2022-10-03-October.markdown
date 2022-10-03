@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "October"
+date:   2022-10-03 17:30:30 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+
+
+Monday, October 03, 2022  
+*codes  
+o  
+
+
+
