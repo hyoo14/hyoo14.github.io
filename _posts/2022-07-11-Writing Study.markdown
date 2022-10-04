@@ -140,7 +140,14 @@ This counters the reading passage’s claim that little Ice Age was result of vo
 
 
 
-마지막으로, 강의자는 소빙기가 증가한 지구 반사율에 의해 초래되지 않았다고 주장한다.   눈과 얼음이 반사율의 유일한 원인은 아닌데, 이는 구름 또한 태양 에너지를 반사하기 때문이다 .    지구는 이 시기에 바다의 냉각 때문에 구름의 양이 더 적었고, 따라서 지구의 전체 반사율은 증가하지 않았을 것이다.   이는 지구의 더 높은 반사율이 소빙기를 야기했다는 읽기 지문의 주장을 반박한다.  
+마지막으로, 강의자는 소빙기가 증가한 지구 반사율에 의해 초래되지 않았다고 주장한다.  
+Finally, the lecturer maintains that increase of the earth reflectivity does not cause the little Ice Age.  
+눈과 얼음이 반사율의 유일한 원인은 아닌데, 이는 구름 또한 태양 에너지를 반사하기 때문이다 .   
+Snow and ice is not the only reason of reflectivity, this is because clouds also reflect solar energy.  
+지구는 이 시기에 바다의 냉각 때문에 구름의 양이 더 적었고, 따라서 지구의 전체 반사율은 증가하지 않았을 것이다.  
+The amount of clouds was small in the earth at that time, therefore total reflectivity of the earth do not increased.  
+이는 지구의 더 높은 반사율이 소빙기를 야기했다는 읽기 지문의 주장을 반박한다.  
+This refutes the reading passage’s claim that more higher reflectivity cause the little Ice Age.  
 
 
 
