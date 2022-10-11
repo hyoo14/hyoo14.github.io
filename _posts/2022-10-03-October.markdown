@@ -36,7 +36,7 @@ o
 {% highlight ruby %}
 
 
-October week1:  
+October week2:  
 *eng reading-papers  
 *eng listening-lectures      
 *eng words  
