@@ -9,28 +9,6 @@ categories: study
 
 
 
-{% highlight ruby %}
-
-
-October week2:  
-*eng reading-papers  
-*eng listening-lectures      
-*eng words  
-*eng writing  
-*eng speaking  
-*pythonic codes  
-
-
-{% endhighlight %}  
-
-
-
-
-
-Monday, October 03, 2022  
-*codes  
-o  
-
 
 
 {% highlight ruby %}
@@ -59,12 +37,46 @@ Monday, October 10, 2022
 o  
 
 
-Monday, October 11, 2022  
+Tuesday, October 11, 2022  
 *eng reading  
 *eng listening  
 *eng speaking  
 *eng writing  
 o  
+
+
+Wednesday, October 11, 2022  
+*eng reading  
+*eng listening  
+*eng speaking  
+*eng writing  
+o  
+
+
+
+{% highlight ruby %}
+
+
+October week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+
+
+Monday, October 03, 2022  
+*codes  
+o  
+
+
 
 
 Tuesday, October 04, 2022  
