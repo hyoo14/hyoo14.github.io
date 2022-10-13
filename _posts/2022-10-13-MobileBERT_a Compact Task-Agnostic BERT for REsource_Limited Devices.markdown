@@ -25,7 +25,7 @@ pre-train model이 nlp에서 매우 성공
 {% endhighlight %}
 
 
-[링크](https://drive.google.com/drive/folders/1zC8qtkySWQq_PVwUR7q-0bxgIVkXAMyn?usp=sharing)
+[링크](https://drive.google.com/drive/folders/1ztQKESAp8HbBBCRgYTgs_7VbM21V-m6W?usp=sharing)
 
 
 # 단어정리  
