@@ -35,3 +35,28 @@ disentangle: 풀다
 
 # 1 Introduction  
 *프리트레인 self supervised러닝 성능 폭발적  
+**천만 파라미터 가짐  
+**헤비한 모델 & 높은 레이턴시  
+**리소스 제한된 모바일 기기서 못 씀  
+*해결책으로 distillBERT 나옴  
+**compact한 버트 만드는 것  
+**task-agnostic에서 쓰기 어렵  
+*모바일 버트 실험  
+**largeBERT 파인튠해서 teacher모델 만들고 distill하는 것  
+*컴팩트 버트 쉬워보이지만 그렇지 않음  
+**narrow, shallow한 버트 만들면 끝일 것 같지만  
+**convex combination에 수렵하게 하고 prediction loss & convex combination 해주면  
+***정작 정확도 많이 떨어짐  
+***얕은 네트워크는 표현이 불충분함  
+***좁은 네트워크는 학습이 힘듬  
+
+
+*제안하는 모바일버트는  
+**narrow but bottleneck구조로 self어텐션과 FFNN 벨런싱 해줌  
+**깊고 얕은 모델 위해 티처 학습(특별 제작한)  
+**지식전이 기법 사용  
+
+
+*결과  
+**4.3배 축소, 5.5배 속도 증가  
+**NLP벤치마크 중 GLUE의 경우 약간 미흡하나 성능 비슷, SQuAD는 성능 오히려 향상시킴  
