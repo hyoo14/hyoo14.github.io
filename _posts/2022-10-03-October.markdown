@@ -61,6 +61,14 @@ Thursday, October 13, 2022
 o  
 
 
+Friday, October 14, 2022   
+*eng reading  
+*eng listening  
+*eng speaking  
+*eng writing  
+o  
+
+
 
 {% highlight ruby %}
 
