@@ -60,3 +60,62 @@ disentangle: 풀다
 *결과  
 **4.3배 축소, 5.5배 속도 증가  
 **NLP벤치마크 중 GLUE의 경우 약간 미흡하나 성능 비슷, SQuAD는 성능 오히려 향상시킴  
+
+
+
+# 2 Related Work  
+*버트 압축 시도들  
+**프리트레인 더 작은 버트  
+***task specific 지식 정제 위한  
+**버트 정제  
+***매우 작은 lstm으로 시퀀스 레이블링 위한  
+**싱글테스크 버트로  
+***멀티태스크 버트 학습  
+**앙상블 버트를  
+***싱글 버트로 정제  
+**본 논문과 동시에 distill BERT 나옴  
+***student 얕게, 추가 지식 전이-히든레이어  
+**TinyBERT  
+***layer-wise distill사용, pre/finetune에 모두 사용  
+**DistillBERT  
+***depth만 조정한 BERT  
+**본 논문 제안  
+***지식전이만 사용, 프리트레인에서만 모디파이  
+***depth말고 width줄임->더 효과적  
+
+
+
+# 3 Mobile BERT  
+*모바일 버트  
+**세부구조, 학습전략 소개  
+
+
+# 3.1 Bottleneck and Inverted-bottleneck  
+*모바일버트 버트라지만큼 deep  
+**블록은 더 작음-히든디멘션128  
+**두 선형변환으로 in/out 512로 조절해줌(보틀넥이라 명명)  
+*deep and thin model 학습의 어려움  
+**티처 네트워크 구현 -> 지식전이 -> 모바일버트 성능 향상  
+**티처넷 아키텍처-버트라지+인버티드 보틀넥=IB-BERT_LARGE = 모바일버트와 같은 구조, 512 feature map size  
+***IB버트 모바일버트 바로 비교 가능  
+*보틀넥-> 모바일버트 , 인버티드 보틀넥-> IB버트  
+**둘 다 쓰면 버트까지 보존, 모바일버트 compact 보존  
+
+
+# 3.2 Stacked Feed-Forward Networks  
+*MHA(Multi Head Attention)과 FFB 비교 벨런스 복구 문제 있음  
+**MHA: 다른 공간 info 묶어줌  
+**FFN: non-linearlity 증대  
+**오리지널버트: MHA,FFN=1:2  
+**보틀넥구조: MHA 더 넓은 피처맵, input FFN 좁음, MHA가 파라미터 더 많은 문제   
+*Stacked FFN-해결책으로 제안  
+**벨런스 맞춰줌  
+***어텐션 마다 4개 stacked FFN 사용  
+
+
+
+# 3.3 Operational Optimization  
+*.  
+
+
+ 
