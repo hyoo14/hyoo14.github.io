@@ -29,8 +29,7 @@ pre-train model이 nlp에서 매우 성공
 
 
 # 단어정리  
-*consecutive: 연속적인(연이은), quantifies: 양화(증량화), auxiliary: 보조자, amenable: 받을 수 있는,  
-disentangle: 풀다  
+*discrepancy: 차이/불일치, intermediate: 중간의, generic: 일반적인    
 
 
 # 1 Introduction  
@@ -115,7 +114,144 @@ disentangle: 풀다
 
 
 # 3.3 Operational Optimization  
-*.  
+*연산 최적화  
+**layer norm 대신 선형변환 NoNorm(h) = r o(Hadanard Product) h + b 사용  
+**gelu 대신 relu 사용  
+
+
+# 3.4 Embedding Factorization  
+*임베딩 table 축소 512-> (128 + 3raw token)  
+
+
+# 3.5 Training Objectives  
+*2개 목적함수  
+**faster map trasform  
+**attention trasfer  
+최종은 위 둘 linear combination 사용  
+
+
+*Feature Map Transfer(FMT)  
+**feature map  
+**teacher와 가깝게 된  
+**MSE사용 -  모바일 버트 피처맵과 IB버트 사이 차이를  
+**용어 l은 layer index, T는 seq 크기, Ni는 feature map size, 학습 안정화 도움(descrepency와 loss term이)  
 
 
  
+*Attention Transfer(AT)  
+**어텐션이 NLP 성능 올리고 버트 핵심인데  
+**셀프어텐션맵 사용(teacher로부터 학습)  
+**KL divergence 낮추는 것 목적함수로  
+**A는 어텐션 헤드 수  
+
+
+*Pre-training Distillation(PD)  
+**그 전에 knowledge distillation loss 사용  
+**linear combination of MLM loss and NSP loss  
+**MLM KD loss  
+**alpha는 hyperparameter in (0,1)  
+
+
+
+# 3.6 Training Strategies  
+*학습전략 소개  
+*보조자 지식 전이 Auxiliary Knowldege Transfer  
+**지식 정제의 보조자로 여기는 전략  
+**선형 합성 (loos들을) pre-train 정제 loss처럼  
+*JointKnowledgeTransfer  
+**layer wise 지식 전이 loss 같이 train하는 경우  
+*Progressive Knowlege Transfer  
+**IB버트 성능 못 따라온 경우, 각 layer별 progressive knowledge transfer  
+*Diagram of three strategeis  
+**낮은 layer에 적은 latency rate, 전체 freezing 대신  
+
+
+# 4 Experiments   
+*test진행   
+
+
+# 4.1 Model Settings  
+*세팅 찾기  
+**SQuAD v1.1, F1 score 메트릭으로 125k step 2048 배치  
+*IB버트(리턴모델)  
+**작은 inter-block hidden size  
+**inter-block batch size 줄임  
+***performance에 영향 없었음  512까지  
+**그래서 IB버트 인터블럭 512로 함  
+**intra block은 줄이면 성능 많이 떨어져서 건드리지 않음  
+
+
+*아키텍처 최적 탐색  
+**4배 압축 25M파라미터 in MHA, FFN for 모바일버트(학생)  
+**최적 벨런스 MHA, FFN 의 비율은 비율 MHA가 FFN 0.4~0.6배  
+***오리지널 버트가 0.5인 이유   
+**128인트라블록, 히든사ㅣ즈 4 stacked FFN(정확하고 효율적이었음)  
+**티처 어텐션 헤드 4개  
+**어텐션헤드 16->4로 줄여도 성능에 지장은 없었음  
+
+
+# 4.2 Implementation Details  
+*구현 상세  
+**BOOK CORPUS + ENGLISH WIKI data for pretraining  
+**버트라지와 비슷한 정확도  
+**256 TPU v3 500K step 배치 4096 LAMB optimizer  
+***trick은 사용 안 함(성능 높이는 트릭..추가적인 휴리스틱 학습 같은?)  
+**같은 training 스케쥴(프리트레인 정제 과정 사용, 공정 위해서)  
+**지식 전이 추가 240K step 24 layer  
+**공정 위해 joint knowledge transfer & auxiliary knowledge transfer 다 240K step  
+**파인튜닝 오리지널 버트처럼 진행  
+**batch 16/32/48  
+**l.r (1-10)*e-5  
+**epoch 2-10  
+**서치스페이스 다르므로 모바일 버트는 l.r 높이는 것이 권장됨 epoch도 파인튜닝시 높은 것 권장  
+
+
+
+# 4.3 Results on GLUE  
+*결과  
+**GLUE 9task 리더보드 모델들과 비교  
+**모바일버트 경쟁력 있음, 버트베이스보다 단지 0.6 점수 낮음  
+**4.3배 작고, 5.5배나 빠름  
+**GPT보다 0.8점 높고, 사이즈는 4.3배 작음  
+
+
+# 4.4 Results on SQuAD  
+*SQuAD 결과  
+**참고로 v1.1은 모두 답이 있고, v2.0은 답 없는 것도 있음  
+**single model은 리더보드에 없어서 특정 버트들과 따로 비교함  
+**결과는 모바일 버트가 압도  
+
+
+# 4.5 Quantization  
+*수량화? 양자화?  
+**해도 성능저하 없었음  
+**아직 압축 가능성 많이 남아 있다고 판단  
+
+
+# 4.6 Ablation Studies  
+# 4.6.1 Operational Optimizations  
+*NoNorm, relu opertation optimization 잘 되지만 FLOPS는 optimization 안 되서 real world와 성능 gap 생김  
+
+
+# 4.6.2 Training Strategies  
+*학습전략 달리해서 test  
+**auxiliary knowledge transfer가 우위  
+**이유는 student에 추가 학습 필요하기 때문  
+
+
+# 4.6.3 Training Objectives  
+*학습 목적함수  
+**경감 스터디에서 Attention Transfer, Feature Map Transfer, Pretraining Distillation, Operational Optimization 제거 test  
+**AT, PD성능 향상 잘 됨  
+**IB 버트 라지 긍정 역할  
+**향상여지 많음.. 왜냐하면 teacher에 비해 성능이 떨어지므로  
+
+
+# 5 Conclusion  
+*결론  
+**모바일 버트-테스크 무관하게 컴팩트한 버트  
+***버트보다 작고 빠르며 NLPtask에서 경쟁력이 입증됨  
+**모바일버트 deep, thin을 소개함  
+**bottleneck, inverted bottleneck 소개  
+**지식 전이 소개  
+**일반화되고 응용 잘 되길 기대  
