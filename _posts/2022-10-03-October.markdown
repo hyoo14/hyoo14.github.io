@@ -14,6 +14,34 @@ categories: study
 {% highlight ruby %}
 
 
+October week4:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+
+
+Monday, October 24, 2022  
+*eng reading  
+*eng listening  
+*eng speaking  
+*eng writing  
+o  
+
+
+
+
+{% highlight ruby %}
+
+
 October week3:  
 *eng reading-papers  
 *eng listening-lectures      
