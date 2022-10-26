@@ -75,6 +75,10 @@ urge: 독려하다
 infectious: 전염되는  
 accordingly: 따라서  
 cope: 대처하다  
+remaining vaccines: residual vaccines  
+susceptible: vulnerable  
+The pandemic has not ended yet.  
+The residual vaccines can go to South Asia.  
 
 
 
