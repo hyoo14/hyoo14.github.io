@@ -56,6 +56,30 @@ flagship: 주력상품
 sector: 분야  
 
 
+unit14 October
+history - both countable and uncountable   
+As an uncountable noun, history is the study of or a record of past events considered together, especially events of a particular period, country, or. 
+EXAMPLES:  
+I studied world history in college.  
+The last lecture was about American history.  
+As a countable noun, the word history is often treated as a singular noun. In this case, it is something that has been done or experienced by a particular person or thing many times over a long period:  
+EXAMPLES:  
+Our family has a history of diabetes.  
+There’s a long history of industrial disputes at the factory.  
+- the history of America  
+- the history of Rome  
+[using “the” before the noun pertains to the specific history of a place]  
+In some cases, the plural form “histories” is used to pertain of different kinds of history through time and even about a drama based on historical events:  
+EXAMPLE:   
+Histories and accounts of travels have been composed both in Arabic and Chinese.  
+the histories of Shakespeare  
+the study of family ancestries or histories  
+
+
+
+
+
+
 unit15 October  
 patron: 고객  
 figure: 수치  
@@ -79,6 +103,14 @@ remaining vaccines: residual vaccines
 susceptible: vulnerable  
 The pandemic has not ended yet.  
 The residual vaccines can go to South Asia.  
+
+
+unit17 October  
+ultra: 극단적인  
+colorectal: 결장의  
+bowel: 장(장기)  
+obesity: 비만  
+
 
 
 
