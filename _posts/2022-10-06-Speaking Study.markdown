@@ -112,6 +112,12 @@ bowel: 장(장기)
 obesity: 비만  
 
 
+unit18 October  
+showcase: 선보이다
+vow: 약속하다   
+
+
+
 
 
 
