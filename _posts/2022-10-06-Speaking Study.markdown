@@ -118,6 +118,12 @@ vow: 약속하다
 
 
 
+unit19 October  
+envisioned: 가시적인  
+tackle: 씨름하다  
+
+
+
 
 
 
