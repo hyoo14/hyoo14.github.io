@@ -123,6 +123,11 @@ envisioned: 가시적인
 tackle: 씨름하다  
 
 
+unit20 October  
+embark: 시작하다  
+exclusively: 독점적으로  
+
+
 
 
 
