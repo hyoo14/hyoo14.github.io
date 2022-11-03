@@ -129,6 +129,12 @@ exclusively: 독점적으로
 
 
 
+unit01 November  
+breach: 위반하다  
+regulator: 규제자  
+mandated: 법에 규정된  
+
+
 
 
 
