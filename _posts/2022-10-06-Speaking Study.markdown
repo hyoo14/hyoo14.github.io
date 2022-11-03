@@ -135,6 +135,12 @@ regulator: 규제자
 mandated: 법에 규정된  
 
 
+unit02 November  
+rodent: 설치류  
+mammal: 포유류  
+
+
+
 
 
 
