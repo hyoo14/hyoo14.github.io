@@ -138,6 +138,11 @@ mandated: 법에 규정된
 unit02 November  
 rodent: 설치류  
 mammal: 포유류  
+-uphoneland  
+hazy: a bit dark and seems to be rain soon  
+
+
+
 
 
 
