@@ -142,6 +142,23 @@ mammal: 포유류
 hazy: a bit dark and seems to be rain soon  
 
 
+unit03 November  
+fund: 투자하다  
+capacity: 용량, 수용력  
+transmit: 전달하다  
+0
+재생가능한: renewable  
+기본의: standard  
+가정: household  
+투자하다: fund  
+기여: contribution  
+용량, 수용력: capacity  
+전송하다: transmit  
+견적의, 추산의: estimated  
+선구자: pioneer  
+
+
+
 
 
 
