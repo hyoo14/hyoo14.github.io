@@ -224,6 +224,27 @@ Examples of nouncount words:   information, content, knowledge, technology, soci
 
 
 
+unit04 November(221108)  
+double digit: 두자리 숫자  
+all time low: 사상 최저 기록  
+tie the knot: 결혼하다  
+reach: 이르다  
+compile: 수집하다  
+annualized: 연간으로 환산된  
+steepest: 가장 가파른  
+tumble: 크게 추락하다  
+0  
+두자리 숫자: double digit  
+사상최저기록: all time low  
+결혼하다: tie the knot  
+이르다: reach  
+수집하다: compile  
+감소, 줄어듦: shrinkage  
+연간으로 환산한: annualized  
+가장 가파른: steepest  
+크게 추락하다: tumble  
+어려움: difficulties  
+  
 
 
 
