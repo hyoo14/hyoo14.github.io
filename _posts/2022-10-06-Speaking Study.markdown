@@ -156,7 +156,71 @@ transmit: 전달하다
 전송하다: transmit  
 견적의, 추산의: estimated  
 선구자: pioneer  
+0  
+Tip:  
+1. Definition: ”non-renewable resource (also called a finite resource)“ is a natural resource that cannot be readily replaced by natural means at a pace quick enough to keep up with consumption.  
 
+
+
+2. generalizing   
+
+When generalizing countable nouns, you can either:  
+1. make the noun plural:  
+Cats are gentle pets.  
+People like to interact with others.
+OR  
+2. make it singular but add an article:
+The cat is a gentle pet.  
+A person likes to interact with another person.  
+
+
+3. Which - When the clause contains unimportant or additional information, it can be set off with commas. If you remove a clause with which from a sentence, the meaning does not change significantly.  
+
+(CORRECT) There was an earthquake in Japan, which is bad news.   
+Let us try removing the “which” clause: 
+(STILL CORRECT) There was an earthquake in Japan.   
+(CORRECT) Our office, which has two conference rooms, is located in Toronto.  
+Let us try removing the “which” clause:
+(STILL CORRECT) Our office is located in Toronto.  
+
+
+
+4. Compound Subjects  
+If two or more singular or plural subjects are joined by AND, it will act as a plural compound subject and will need a plural verb.   
+
+Example: My brother and I are hungry.   
+
+
+5. To vs For   
+Use ”to“ in these cases:  
+1. Destination - We’re going to Paris.  
+2. Time - It‘s quarter to 2.  
+3. Distance - It’s about 10 miles from my house to university.  
+4. Comparing - I prefer sleeping to working.  
+5. Giving - I gave the book to my sister.  
+6. Motive/Reason (with verb) - I came here to see you.  
+
+
+Use ”for“ in these cases:  
+1. Benefits - Yogurt is good for your digestion.  
+2. Period of time - We have lived here for two years.  
+3. Schedule - I made an appointment for May 3.  
+4. Agree with - Are you for or against the development of nuclear weapons?  
+5. Doing something to help someone - Could you carry these books for me?  
+6. Motive/Reason (with noun) - Let‘s go out for a drink.  
+7. Function (with a verb-ing form) - A ladle is a big spoon used for serving soup.  
+
+
+6. Uncountable nouns  
+Do not use articles when generalizing uncountable nouns and plural countable nouns.  
+Examples:  
+		Honesty is a great trait.   (Uncountable)  
+		Water is an important resource. (Uncountable)  
+		Fruits are good for you. (Plural countable)  
+
+Noncount Nouns (Uncountable Nouns)  
+Some nouns have only a singular form;   you cannot add a number before or an “s” to the end of these words. This group of nouns is called noncount.  
+Examples of nouncount words:   information, content, knowledge, technology, society, equipment, news, fish, public transportation, medicine, work, architecture, pollution  
 
 
 
