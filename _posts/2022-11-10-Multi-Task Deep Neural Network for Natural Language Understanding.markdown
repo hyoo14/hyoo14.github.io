@@ -21,7 +21,7 @@ NLU용 MT-DNN 제안
 {% endhighlight %}
 
 
-[링크]()
+[링크](https://drive.google.com/drive/folders/1MOO0lPvXHxD0f4Puq0QTtkvnTZPAf8Yz)
 
 
 # 단어정리  
