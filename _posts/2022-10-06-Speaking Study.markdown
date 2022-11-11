@@ -244,6 +244,37 @@ tumble: 크게 추락하다
 가장 가파른: steepest  
 크게 추락하다: tumble  
 어려움: difficulties  
+
+
+unit06 November(221110)  
+spending: 지출  
+expenditure: 지출  
+compile: 집계하다  
+outbreak: 발발  
+0  
+지출: spending, expenditure  
+집계하다: compile  
+열정, 열의: enthusiasm  
+
+
+unit 07 November(221111)  
+passage: 항로  
+maritime: 해양  
+traverse: 가로지르다  
+transit: 수송, 통과  
+geopolitical: 지정학적인  
+relinquish: 포기하다  
+commodity: 상품  
+0  
+항로: passage  
+해양의: maritime  
+가로지르다: traverse  
+수송, 통과: transit  
+지정학적인: geopolitical  
+포기하가: relinquish  
+막음: blockage  
+상품: commodity  
+
   
 
 
