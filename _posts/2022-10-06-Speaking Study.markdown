@@ -246,6 +246,15 @@ tumble: 크게 추락하다
 어려움: difficulties  
 
 
+unit05 November  
+-we must investigate children’s books meticulously.   
+BETTER:   
+we must investigate children’s books meticulously.   
+
+
+
+
+
 unit06 November(221110)  
 spending: 지출  
 expenditure: 지출  
