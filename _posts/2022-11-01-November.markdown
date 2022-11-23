@@ -40,6 +40,11 @@ Tuesday, November 22, 2022
 o  
 
 
+Wednesday, November 23, 2022  
+*python related something(google cloud platform)    
+o  
+
+
 
 
 {% highlight ruby %}
