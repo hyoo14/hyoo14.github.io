@@ -45,6 +45,18 @@ Wednesday, November 23, 2022
 o  
 
 
+Thursday, November 24, 2022  
+*eng speaking  
+*python related something(google cloud platform)    
+o  
+
+
+Friday, November 25, 2022  
+*eng speaking  
+*python related something(google cloud platform)    
+o  
+
+
 
 
 {% highlight ruby %}
