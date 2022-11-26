@@ -57,6 +57,11 @@ Friday, November 25, 2022
 o  
 
 
+Sunday, November 27, 2022  
+*eng speaking  
+o  
+
+
 
 
 {% highlight ruby %}
