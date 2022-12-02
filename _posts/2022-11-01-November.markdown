@@ -47,6 +47,18 @@ Wednesday, November 30, 2022
 o  
 
 
+Thursday, December 01, 2022  
+*eng speaking  
+*pythonic things
+o  
+
+
+Friday, December 02, 2022  
+*eng speaking  
+*pythonic things
+o  
+
+
 {% highlight ruby %}
 
 
