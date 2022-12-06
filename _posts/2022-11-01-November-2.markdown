@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "December"
+date:   2022-12-06 19:30:30 +0900
+categories: study
+---
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+December week1:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+
+
+Monday, December 05, 2022    
+*pythonic things
+o  
+
+
+Tuesday, December 06, 2022    
+*pythonic things
+o  
+
+
+
+
+
