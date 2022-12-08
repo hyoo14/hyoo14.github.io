@@ -1210,6 +1210,6 @@ print(utc_now) #1598523184.0
 
 
 # Better way 71 (Friday, 220930)  
-# 생산자-소비자 큐로 Deque를 사용하라  
+# 생산자-소비자 큐로 Deque를 사용하라.     
 
 
