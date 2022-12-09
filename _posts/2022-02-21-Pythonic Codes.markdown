@@ -1228,3 +1228,26 @@ print(utc_now) #1598523184.0
 ***이진탐색이니깐!  
 
 
+# Better way 73(Thursday, 221208)  
+# 우선순위 큐로 heapq를 사용하는 방법을 알아두라     
+
+*정리  
+**우선순위 큐를 사용하면 선입선출이 아니라 원소의 중요도에 따라 원소 처리 가능  
+**리스트 사용 우선순위 큐는 성능 당연히 선형보다 나쁨(구성 원소 modify 후 재배치땜에)  
+**heapq 내장 모듈 사용하면 됨  
+***힙이니까 search O(logN)  
+**__lt__ 특별메서드 구현해놓으면 클래스에 비교 기능과 자연스러운 정렬 순서 제공 가능  
+***def __lt__(self, other):  
+       return self.due_date < other.due_date  
+
+
+
+# Better way 74(Friday, 221209)  
+# bytes를 복사하지 않고 다루려면 memoryview와 bytearray를 사용하라     
+
+*정리  
+**memoryview 내장타입은 슬라이스에 대해 파이썬 고성능 버퍼 프로토콜로 읽고쓰기를 지원, 복사가 없는 인터페이스 제공  
+**bytearray 내장타입은 복사가 없는 읽기함수(socket.recv_from과 같은)에 사용 가능한 bytes와 비슷한 변경 가능 타입 제공  
+**memoryview로 bytearray를 감싸면 복사에 따른 비용 추가 부담 없이 수신받은 데이터를 버퍼에서 원하는 위치에 스플라이스 가능  
+
+
