@@ -1211,5 +1211,10 @@ print(utc_now) #1598523184.0
 
 # Better way 71 (Friday, 220930)  
 # 생산자-소비자 큐로 Deque를 사용하라     
-
+*정리  
+**collections 내장 모듈에 있는 duque 클래스는 큐 길이와 관계없이 상수 시간만에 append와 popleft를 수행함  
+**FIFO 큐 구현에 이상적임  
+**반면 일반 list는 길이가 길어짐에 따라 pop, append의 성능도 나빠짐 (worst O(N) )  
+***pop(0)의 경우 큐 길이가 늘어남에 따라 길이 제곱에 비례해 성능 나빠짐  
+****왜냐하면 전체 리스트 내용을 다시 재대입하기 때문  
 
