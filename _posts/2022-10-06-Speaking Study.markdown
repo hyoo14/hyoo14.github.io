@@ -284,6 +284,12 @@ commodity: 상품
 막음: blockage  
 상품: commodity  
 
+
+
+unit 07 December(221212)  
+come up with: 찾아내다  
+concern: 문제  
+
   
 
 
