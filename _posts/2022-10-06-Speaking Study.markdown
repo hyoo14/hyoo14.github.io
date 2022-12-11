@@ -289,7 +289,7 @@ commodity: 상품
 unit 07 December(221212)  
 come up with: 찾아내다  
 concern: 문제  
-
+o  
   
 
 
