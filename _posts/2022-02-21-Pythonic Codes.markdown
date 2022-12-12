@@ -1273,5 +1273,24 @@ F-string에서 !r 접미사 뭍이지 않고 텍스트 치환식 사용 시 가�
 **직접 클래스의 __repr__ 특별 메서드를 정의해서 인스턴스의 출력 가능한 표현을 원하는 대로 만들 수 있고 디버깅 때 더 자세한 정보 표시 가능. 
 
 
+# Better way 76(Friday, 221209)  
+# TestCase 하위 클래스를 사용해 프로그램에서 연관된 행동 방식을 검증하라       
+
+*정리  
+**unittest 내장 모듈에 있는 TestCase 클래스의 하위 클래스를 정의하고 테스트하려는 동작마다 메서드를 정의함으로써 테스트를 정의할 수 있음. 
+TestCase 하위 클래스 안에서 테스트 메서드의 이름은 test로 시작해야함. 
+***from unites import TestCase, main  
+***from utils import to_str  
+****$ python3 utils_test.py  
+
+**테스트 안에서는 파이썬 내장 assert 문을 사용하지 말고, assertEqual과 같이 TestCase 클래스에 정의된 여러 가지 도우미 메서드를 사용해 원하는 동작을 확인. 
+***assertEqual: 두 값이 같은지 비교, assertTrue: 주어진 불 식이 참인지 검증 등. 
+
+**준비코드를 줄이려면 subTest 도우미 메서드를 사용해 데이터 기반 테스트를 정의해야함. 
+***예외 발생 검증 위해 with문 안에 컨택스트 매니저로 사용할 수 있는 assertRaises 도우미 메서드가 있음(try/except문과 비슷)  
+***미묘한 경우(edge case)가 많다면 각 함수를 서로 다른 TestCase 하위 클래스에 정의할 때도 있음. 
+***subTest 도우미 메서드로 한 테스트 메서드 안에 여러 테스트 정의 가능. 
+
+
 
  
