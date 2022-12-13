@@ -14,6 +14,37 @@ categories: study
 {% highlight ruby %}
 
 
+December week2:  
+*eng reading-papers  
+*eng listening-lectures      
+*eng words  
+*eng writing  
+*eng speaking  
+*pythonic codes  
+
+
+{% endhighlight %}  
+
+
+
+
+
+Monday, December 12, 2022    
+*pythonic things  
+*eng speaking  
+*eng reading  
+o  
+
+
+Tuesday, December 13, 2022    
+*pythonic things  
+o  
+
+
+
+{% highlight ruby %}
+
+
 December week1:  
 *eng reading-papers  
 *eng listening-lectures      
