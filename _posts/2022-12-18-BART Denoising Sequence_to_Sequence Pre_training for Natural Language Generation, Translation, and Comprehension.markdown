@@ -66,7 +66,64 @@ Seq2Seq PLM 이용
 
 
 # 2. Model  
-*ㅇ
+*BART는 노이즈 제거 오토인코더  
+**문서에 노이즈 추가->원본 문서로 복구  
+**Seq2seq로 bidirectional 인코더와 left to right 디코더로 구성  
+**프리트레인 시 negative log likelihood 최적화  
+*BART는 일반 seq2seq 트랜스포머 구조 GPT 따름, 몇몇 제외  
+**ReLU->GeLU  
+**이니셜파라미터 N(0, 0.02) 
+**일반모델 6layer, 라지 12layer  
+**버트와 다른점  
+(1) 각 디코더 레이어에 cross attention over final hidden layer가 인코더에 추가됨  
+(2) 추가 FFNN 없고 10퍼센트 파라미터 더 씀  
+
+
+# 2.2 Pre-training BART  
+*바트는 노이즈된 문서 복원  
+**cross entropy 최적화  
+(디코더 output과 원본 사이)  
+**다른 디노이징과 달리 특정 노이징 스킴 따름  
+**노이징 소스 없을시 그냥 LM  
+**아래 스킴을 test  
+*token masking  
+**버트 따름, 랜덤 토큰을 [mask]로 바꿈  
+*토큰 삭제  
+**랜덤 토큰 삭제  
+*Text Infilling(텍스트 채우기)  
+**채울 길이를 샘플링-포아송분포 이용  
+**SpanBERT에서 영감  
+but 본 모델은 분포 다르고 seq token 길이 다름  
+*문장 순서 바꾸기  
+**다큐먼트의 문장을 랜덤 셔플링  
+*문서 회전  
+**토큰이 유니크 랜덤 픽, 다큐먼트 로테이트,  
+시작 다큐먼트 식별?  
+
+
+
+# 3. Fine-tuning BART  
+BART 다양하게 사용(응용)  
+
+
+# 3.1 Sequence Classification Tasks  
+*Seq 분류  
+**인코더, 디코더에 같은 인풋  
+**cls토큰이 역할하듯이 final hidden state가 분류  
+**디코더가 가짐  
+
+
+*토큰 분류  
+**SQuAD의 답 end point 분류같은 것  
+**full 문서를 input으로 인코딩, 디코딩  
+**디코더의 top hidden state를 분류용으로 사용  
+
+
+*Seq 생성  
+**BART는 autoregressive 디코더에서 QA나 요약같은 sequence generatio에 직결  
+**정보는 카피되고 조정됨  
+**디노이징 프리트레인 연관  
+**인코더 input 과 디코더 output이 오토리그레시브  
 
 
 
