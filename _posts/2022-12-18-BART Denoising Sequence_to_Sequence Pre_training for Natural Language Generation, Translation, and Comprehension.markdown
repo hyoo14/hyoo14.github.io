@@ -35,4 +35,40 @@ Seq2Seq PLM 이용
 
 
 # 1 Introduction  
+*self supervised learning은 nlp서 매우 성공적  
+**MLM이 대표적  
+***노이즈 제거 오토인코더  
+***복원 목적  
+**최근 분포 개선에 중점  
+***특정 task에 국한되는 한계에 봉착  
+*BART 제안  
+**디노이징 오토인코더 빌트인  
+***즉 pre train + Bidirectional Autoregressive Transformer  
+(1) text에 노이즈 추가  
+(2) Seq2seqㄹㅎ 복원(노이즈 제거) 학습  
+**버트, GPT 등 사용  
+*노이즈 유연성 이점  
+**랜덤셔플링 + 스킴 채우기  
+***버트 mask, NSP 일반화 버전  
+***더 긴 문장 커버  
+*BART 성능  
+**text generation 에서 좋은 성능  
+**GLUE, SQuAD 에서 RoBERTa만큼  
+**SOTA in 추상대화, QA, 요약-3.5ROGUE/XSum도 능가  
+*BART -> 파인튜닝 새로운 방식 제시  
+**추가 트랜스포머 레이어 쌓음  
+**레이어는 외국어->노이즈 영어 BART 통해 번역  
+**Back translation MT 1.1BLeU 달성 in WMT romance  
+*경감 study for 이유 확인  
+**Data 와 parameter 최적화 중요  
+**BART 성능 full range task서 성능 최고  
+
+
+
+# 2. Model  
 *ㅇ
+
+
+
+
+
