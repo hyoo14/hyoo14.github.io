@@ -127,5 +127,9 @@ BART 다양하게 사용(응용)
 
 
 
+# 3.4 Machine Translation  
+*BART로 MT 향상, 디코더 영번역서  
+
+
 
 
