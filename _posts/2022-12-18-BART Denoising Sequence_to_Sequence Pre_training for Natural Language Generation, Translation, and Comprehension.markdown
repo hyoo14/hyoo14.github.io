@@ -129,6 +129,26 @@ BART 다양하게 사용(응용)
 
 # 3.4 Machine Translation  
 *BART로 MT 향상, 디코더 영번역서  
+**이전엔 프리트레인 인코더 향상, 여기선 pre train LM으로 향상   
+**BART서 가능, 프리트레인 디코더에서 인코더 파라미터 추가로 bitext 학습  
+**바트 인코더에 새 랜덤초기화 인코더  
+end to end 학습  
+새 인코더가 외국어->노이즈 영어로  
+**새 인코더 단어(오리지널 바트) 사용  
+**소스 인코더 두단계-역전파 cross entropy loss  
+(1) BART 파라미터 freeze, 랜덤이니셜라이징된 것 +self어텐션 input+포지션임베딩만 업데이트  
+(2) 모델 파라미터 학습을 적은 반복으로  
+
+
+# 4 Comparing Pre-training Objectives  
+BART는 더 넓은 노이징 스킴을 프리트레인일 때 지원  
+*base모델로 비교들 함  
+
+
+# 4.1 Comparison Objectives  
+*비교 목적  
+**학습 부분, 자원, 구조 비교  
+
 
 
 
