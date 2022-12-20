@@ -1322,7 +1322,8 @@ TestCase 하위 클래스 안에서 테스트 메서드의 이름은 test로 시
 **파이썬 unittest.mock 내장 모듈을 사용하면 목을 만들고 테스트에 사용할 수 있음. 
 *개별 파라미터에 관심이 없다면 unittest.mock.ANY 상수를 이용해 어떤 인자를 전달해도 관계 없다고 표현 가능. 
 *assert_called_with 메서드를 사용하면, 가장 최근에 목을 호출할 때 어떤 인자 전달됐나 확인 가능. 
-**여러 파라미터에 대해 과도하게 구체적으로 만들기 보다는 ANY를 사용해 좀 더 자유롭게 테스트 가능.  *unittest.mock.patch 관련 함수들은 목 주입을 더 쉽게 만들어줌. 
+**여러 파라미터에 대해 과도하게 구체적으로 만들기 보다는 ANY를 사용해 좀 더 자유롭게 테스트 가능. 
+*unittest.mock.patch 관련 함수들은 목 주입을 더 쉽게 만들어줌. 
 **patch함수는 임시로 모듈이나 클래스의 애트리뷰트에 다른 값을 대입. 
 **patch를 사용하면 앞에서 본 db에 접근하는 함수를 임시로 대치 가능. 
 
@@ -1547,4 +1548,53 @@ Returns:
 **파이썬 Exception 기반 클래스를 잡아내면 API 구현의 버그를 쉽게 찾을 수 있음  
 **중간 단계의 최상위 예외를 사용하면, 미래에 새로운 타입의 예외를  API에 추가할 때, API를 사용하는 코드가 깨지는 일을 방지할 수 있음  
 
- 
+
+
+
+
+
+# 기타: Backend Framework 관련  
+
+플라스크란?
+Python 기반 micro 프레임워크
+
+What does “micro” mean?
+The “micro” in microframework means Flask aims to keep the core simple but extensible.
+Everything else is up to you, so that Flask can be everything you need and nothing you don’t.
+
+심플하지만 확장가능하게 유지한것을 의미한다.
+즉, 어떻게 사용하냐에 따라 좋은 프레임워크가 될 수 있고 그렇지 않을 수도 있다.
+
+
+
+(MSA에 적합, 단일 기능만 적용할 때!)
+(fast api가 무섭게 오는 중)
+
+
+Flask와 Django의 차이점
+구분	Flask	Django
+생성년도	2010	2005
+프레임워크 성향	MSA	모놀리식
+어드민페이지	X	O
+ORM (=Object Relational Mapping)	X	O
+지원기능	상대적으로 적음	상대적으로 많음
+러닝커브	상대적으로 낮음	상대적으로 높음
+코드크기	상대적으로 작음	상대적으로 큼
+유연성	좋음	제한됨
+개발자의책임	상대적으로 큼	상대적으로 작음
+
+
+
+
+어느 프레임워크가 더 좋은가요?
+어느 쪽이 더 좋다고 할 순 없습니다. 프로젝트에 맞는 프레임워크를 선택해야 하면 됩니다.
+일반적으로 MSA형태의 소규모 프로젝트에 단일 기능을 구현하는 웹에 Flask가 보다 더 적합합니다.
+
+간혹 Django는 소규모 프로젝트에 한해서 오버스펙이 되기도 합니다.
+
+Flask의 경우, 지원기능이 적은만큼 필요한 기능을 구현해야 할 때마다, 별도의 라이브러리를 설치하고 Flask 어플리케이션과 바인딩 해줘야합니다.
+
+즉, 살이 붙으면 붙을수록 개발 cost도 높아집니다.
+
+주의점 : 너무 커스텀하지말자
+
