@@ -32,6 +32,11 @@ Monday, December 19, 2022
 o  
 
 
+Tuesday, December 20, 2022    
+*pythonic codes    
+o  
+
+
 
 
 {% highlight ruby %}
