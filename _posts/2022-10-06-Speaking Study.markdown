@@ -291,6 +291,51 @@ come up with: 찾아내다
 concern: 문제  
 o  
   
+  
+
+December unit 08 Work Relationships (221222)  
+*words  
+*q: Tell me a problem you had with a supervisor.  
+*a: I had a wonderful relationship with my previous supervisor.  
+*a: He knew how to inspire and motivate his team.   
+*a: I learned a lot from him and I am grateful for that experience.  
+
+
+December unit 09 People problems(221215)  
+*words  
+*q: What kind of person would you refuse to work with?  
+*a: If I felt that I couldn't get along with a colleague, I'd challenge myself to be understanding and change.  
+*a: There is always a wide variety of personalities in my organization.  
+*a: We should attempt to know and understand each others's personalities.  
+
+
+December unit 10 Different Ideas(221216)  
+*words  
+*q: What if you believed strongly in an idea, but your colleagues didn't like it or vote for it?  
+*a: I'd be hurt at first, but I'd understand that others might know better than I do.  
+
+
+December unit 11 Salary Demand(221220)  
+*words  
+*q: What salary are you seeking?  
+*a: I expect a salary that is similar to my last salary, also one that is fair to the market right now.  
+
+
+December unit 12 Would you do well (221221)
+*words  
+aside from: ~외에는  
+endurance=perserverance  
+do my best=do my utmost  
+motivate=inspire  
+
+
+*q: Why do you think you would do well in this job?  
+a: Aside from my sufficient knowledge and solid experience with this position, this is the kind of job that I really want to do.  
+a: And I will make sure that I will do my best in every task given.
+
+
+
+
 
 
 
