@@ -282,8 +282,33 @@ BART가 덜 효과적, Back Translation Data 없이 overfit 경향
 
 
 # 7 Related Work  
-oo
+*초기는 LM기반  
+GPT-leftward, ELMo-leftward+rightward(no intersaction), Radfold-large is good,  
+BERT-MLM, Pre Train is good, Left+Right realize  
+*효과 높이기 위해 train 길게(across layers) 예측 without autoregressively  
+*UniLM 파인튠 BERT only left both used for generation and discrimination  
+BART와 달리 auturegressive하지 않고 conditional prediction이고 denoise 없음  
+*MASS 연속 span masking  
+map with missing tokens  
+**BART는 적은 길이 mask, predict completion 성능 압도  
+*XLNet-BERT확장, autoregressive masked token, permutated order  
+**L&R context 예측->목적함수  
+**BART decoder는 L2R pre train  
+*T5도 디노이징  
+**BART는 문장 Completeness 예측, 요약서 성능 압도  
+**T5는 모델을 키워서 여러 task서 sota 보여줌  
+*여러 논문들 pre train가 MT 성능 올림 보임  
+**소스&타겟 언어 pre train이 성능 올리지만 pre TRAIN을 모든 언어에 해줘야함  
+**인코더를 향상할 때 pre train 사용, 하지만 디코더에는 제약  
+**BART가 MT 디코더 향상에 좋음  
 
+
+# 8 Conclusions  
+*BART 소개  
+**노이즈된 문서 -> 원본 복구(목적함수)  
+**RoBERTa급 discrimination  
+**SOTA in text generations  
+**future: noising new method 찾는 것(tailoring to specific end tasks같은)  
 
 
 
