@@ -39,6 +39,14 @@ Tuesday, December 20, 2022
 o  
 
 
+Wednesday, December 21, 2022    
+*pythonic codes    
+*eng speaking  
+*eng reading  
+*eng listening  
+o  
+
+
 
 
 {% highlight ruby %}
