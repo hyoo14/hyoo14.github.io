@@ -22,13 +22,14 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 {% endhighlight %}
 
 
-[링크]()
+[링크](https://drive.google.com/drive/folders/1j7ewpojOBNdOpyQgVkzIxnj4GW9BfK40?usp=sharing)
 
 
 # 단어정리  
 *auxiliary: ㅇ  
 *burgeoning(burgeoning field): o  
 *rigorous: o  
+*sinusoidal: o
 
 # 1. Introduction  
 *transfer learning to perform nlp에는 downstream 러닝을 위한 text처리가 필요   
@@ -73,6 +74,27 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 **셀프 오텐션은 어텐션의 변형형으로 시퀀스가 대체됨 각 요소에 그 요소를 제외한 가중 평균으로..
 **트랜스포머 원본은 인코더-디코더 아키텍처이고 seq2seq 태스크를 위한 설계임  
 **최근엔 싱글아키텍처 접근 LM용으로 쓰이고 우리는 이 아키텍처 사용  
+*인코더-디코더 트랜스포머 구현은 오리지널 형태에 가깝게 구현  
+**input->map->sequence embedding -->pass-->encoder  
+**encoder(blocks로 구성, self attention layer+FFNN)  
+**+layer normalization(simple버전으로 activation rescaled, additive bias 없음)  
+**+residual skip connection(sub component의 in/out에)  
+**+dropout(FFNN과 함께, skip connection에서, 어텐션 웨이트에서, in/out전반에서)  
+**디코더도 비슷하지만 스탠다드 어텐션을 포함함(autoregressive 또는 causal self-atteition형태)  
+***모델이 과거 결과에 접근하게 해줌  
+**디코더 out은 dense softmax layer로 감  
+**모든 트랜스포머는 독립적 head들로 나눠지고 output전에 합쳐짐     
+*셀프어텐션은 순서의존적  
+**기존 트랜스포머는 sinusoidal 위치 또는 학습된 위치 임베딩 사용, 최근에는 상대적 거리 임베딩 사용이 일반적  
+**단순화된 위치 임베딩 사용  
+**종합하여 거의 오리지널과 같으나, 다른 점은 layer norm bias 제외, layer norm을 residual path바깥에 배치, 다른 위치 임베딩 스킴 사용임  
+**실험의 일환으로 규모성 테스트함, 모델 컴비네이션과 데이터 병렬화, tpu pod으로 나눠서 학습 1,024tpu v3, mesh tensorflow library사용  
+
+
+# 2.2. The Colossal Clean Crawled Corpus  
+*nlp경향: 언레이블 데이터셋 비지도학습용으로 사용  
+**본 논문에서는 언레이블드 데이터의 퀄리티, 특성, 사이즈에 따른 효과 측정에 흥미  
+**니즈에 맞는 데이터 생성을 위해 Common Crawl로 web으로부터 수집(원래 n-gram lm용, commonsense reasoning 사용, MT 병렬연구서 사용, 테스팅 최적화 등지에서도 사용)     
 
 
 
