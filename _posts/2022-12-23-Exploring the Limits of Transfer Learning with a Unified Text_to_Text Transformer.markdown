@@ -29,7 +29,14 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 *auxiliary: ㅇ  
 *burgeoning(burgeoning field): o  
 *rigorous: o  
-*sinusoidal: o
+*sinusoidal: o  
+*gibberish: o  
+*lorem ipsum: o  
+*word sense: o    
+*disambiguation: o  
+*pronoun: o  
+*resolution: o  
+
 
 # 1. Introduction  
 *transfer learning to perform nlp에는 downstream 러닝을 위한 text처리가 필요   
@@ -95,13 +102,81 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 *nlp경향: 언레이블 데이터셋 비지도학습용으로 사용  
 **본 논문에서는 언레이블드 데이터의 퀄리티, 특성, 사이즈에 따른 효과 측정에 흥미  
 **니즈에 맞는 데이터 생성을 위해 Common Crawl로 web으로부터 수집(원래 n-gram lm용, commonsense reasoning 사용, MT 병렬연구서 사용, 테스팅 최적화 등지에서도 사용)     
+*Common Crawl은 web extrated text를 통해 제공됨  
+**문제는 자연어만으로 이루어지지 않았다는 것   
+**문제 해결을 위해 아래와 같은 휴리스틱 따름  
+***마침표/느낌표/물음표/인용기호로 종결된 라인들만 보유  
+***5문장보다 적은 페이지는 버리고 3 단어 이상 가진 문장만 보유  
+***부적절하거나 나쁜 단어를 포함한 페이지는 버림  
+***javascript 포함 페이지 버림  
+***"lorem ipsum" 있는 text 버림  
+***중괄호( "{" ) 있는 경우는 코드인 경우가 많으므로 버림  
+***중복된 경우 모두 버림( 세 문장당 하나는 버림)  
+**추가적으로, 다운스트림 태스크는 영어 텍스트에 집중, langdetect로 영어 아닌 페이지 식별(가능성 0.99이하)  
+**이전 크롤러에서 영감받아서 만듬(라인레벨, 하지만 데이터 새로 만듬-필터에 너무 피팅되서, 새로운 range, 병렬처리 트레이닝 데이터에 초점을 맞춤)  
+*데이터 합칠 때 19년 4월에서부터부터 누적, 다운로드  
+**텍스트 고르고 필터 적용  
+**C4라 명명, 텐서플로우 데이터셋 통해 배포  
+
+
+# 2.3. Downstream Tasks  
+*본 논문의 목표는 일반적인 언어 학습 능력을 측정하는 것  
+**MT, QA, 요약, 텍스트 분류 포하  
+***GLUE, SuperGLUE text분류, CNN/CM 요약, SQuAD QA, WMT 영독/프/루마니아 번역  
+****모두 텐서플로우 데이터셋에 존재  
+*데이터셋들 아래와 같음  
+**문장 허용여부 판단(CoLA)  
+**감정분석(SST-2)  
+**파라프레이징/문장 유사도(MRPC, STS-B, QQP)  
+**NLI(MNLI, QNLI, RTE, CB)  
+**Coreference resolution(WNLI, WSC)  
+**문장 완결성(COPA)  
+**Word sense disambiguation(WIC)  
+**QA(MultiRC, ReCoRD, BoolQ)  
+*GLUE, SuperGLUE에 의한 데이터셋 분산 사용  
+**단순함을 위해, 파인튜닝시 GLUE벤치마크 테스크들 모두 하나의 태스크로 다룸(컨캣해서)  
+**Definite Pronoun Resolution도 포함시킴  
+*CNN/DM 데이터셋은 QA로 소개되었지만 텍스트 요약으로 적용됨  
+**비익명버전을 사용함  
+**SQuAD는 일반적 QA 벤치마크, 실험과정서 모델은 질문과 맥락으로부터 답변을 토큰 하나하나씩 생성  
+**WMT 영/독을 위해 본 논문은 newstest2013과 같은 학습데이터을 검증셋으로 사용  
+**영/프를 위해 standard dataset2015와 newstest2014를 검증셋으로 사용  
+**영/루마니아 위해 WMT2016 검증셋 사용  
+**프리트레인은 영어 데이터이고 새 언어를 위한 텍스트가 필요함  
+
+
+# 2.4. Input and Output Format  
+*다양한 태스크들의 단일모델 학습을 위해 모든 태스크들을 text-to-text 포맷으로 캐스트해줌  
+**일관적인 트레이닝 목적함수를 프리트레이닝과 파인튜닝에서 모두 갖게 해줌, maximum likelihood 목적함수+티처포싱 사용  
+**태스크 특화된 prefix사용하여 태스크들 구분지어줌  
+*예를 들어, "That is good"을 영어에서 독일어로 번역한다고 하면, 모델은 translate English to German: That is good"이라고 입력받고 "Das ist gut"이라고 출력함  
+**텍스트 분류의 경우 모델이 간단하게 단일 단어와 일치하는 타겟 레이블을 예측해줌  
+***예를 들어, MNLI에서 목적은 전제가 내포하는지를 예측해주는 것(수반, 반박, 중립 과 같은)  
+****전처리를 통해 입력 시퀀스는 mnli premise: I hate pigeons. hyphothesis: My feelings towrards pigeons are filled with animosity" 타겟은 entailment.  
+*****아무 레이블도 일치하는 것이 없을 경우 이슈가 발생함. 이 경우 모델 아웃풋을 wrong이라 카운트. 하지만 한번도 이런 적은 없었음  
+*****텍스트 prefix 선택은 하이퍼파라미터임, 우리는 prefix 특정단어 바꾸는 것이 제한해주는 효과를 주는 것을 발견함, figure1다이어그램이 몇몇 input/output을 보여줌  
+*본 논문의 텍스트 투 텍스트 프레임워크는 다양한 nlp 태스크들의 공통 포맷을 따름  
+**대신 따로 파인튜닝하지 않고 동시에 해결(제로샷 러닝이나 스팬추출 등 대신에 전이학습에 집중)  
+*본 논문은 직접적으로  모든 태스크를 텍스트-투-텍스트로 캐스트함(STS-B 제외)    
+**STS-B는 유사도 점수를 1-5까지 중 하나로 예측하는 목표(점수는 반올림함)    
+***회귀문제를 21개 클래스 분류 문제로 효과적으로 바꿔줌  
+*각각 WNLI(from GLUE), DPR(from SuperGLUE) 태스크들도 간단한 포멧으로 텍스트투텍스트로 바꿔줌  
+**예를 들어, WNLI Winograd task들에서는 어구 포함을 언급?  
+***예: "The city councilmen refused the demonstrators a permit because they feared violence." 포함여부 "they" -> "city councilmen" or "demonstarators"  
+****모호한 대명사를 강조하는 것으로(언급하는 것이 무엇인지 알아내는 것으로) 치환  
+*WSC를 위해, 모호한 대명사, 정답지 명사, 참/거짓이 잘 맞는지를 모두 학습(참/거짓이 뭔지 모르는 채로)  
+*WNLI위한 것은 WSC와 유사  
+**검증 예 부족을 피하기 위해 WNLI를 학습시키지 않고 WNLI 검정셋의 결과를 리포트하지 않음   
+**WNLI 검증 제외는 스탠더드임  
+***그러므로 WNLI가 avg GLUE에 포함되지 않음  
 
 
 
-
-
-
-
+# 3. Experiments  
+*최근 NLP의 전이학습의 진보는 다양한 개발들의 도래를 불러움, 새로운 사전학습 목적함수들, 모델 구조들, 언레이블드 데이터셋 등  
+**이 섹션에서 이 기술들을 각각 경험적 서베이하고 공헌과 중요점 봄  
+***인사이트들을 통합하고 sota 얻어냄  
+*본 논문에서는 체계적으로 이러한 공헌들을 
 
 
 
