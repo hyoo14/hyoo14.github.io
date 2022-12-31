@@ -26,16 +26,23 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 
 
 # 단어정리  
-*auxiliary: ㅇ  
-*burgeoning(burgeoning field): o  
-*rigorous: o  
-*sinusoidal: o  
-*gibberish: o  
-*lorem ipsum: o  
-*word sense: o    
-*disambiguation: o  
-*pronoun: o  
-*resolution: o  
+*auxiliary: 보조의, 예비의    
+*burgeoning(burgeoning field): 자라나는, 신흥의, 급증하는    
+*rigorous: 철저한, 엄격한, 엄밀한    
+*sinusoidal: 사인 곡선적    
+*gibberish: 횡설수설    
+*lorem ipsum: 로렘 입숨(내용보다 디자인 요소를 강조하는 텍스트, 공간 채움을 위한 의미없는 글)    
+*word sense: 단어 의미? 참 뜻?      
+*disambiguation: 중의성 해소(word sense disambiguation: 단어 중의성 해소)      
+*pronoun: 대명사  
+*resolution: 결의한, 해결, 결단, 해답, 결심, 해상도  
+*fortuitous: 우연한, 행운의, 뜻밖의    
+*forgoes:  포기하다, 그만두다, 버리다  
+*ostensibly:  표면상, 구체적으로 나타내는, 표면적으로    
+*suboptional: 차선책, 선택적??  
+*amortize: 분할하다  
+*opted: 택하다, 결정을 내리다    
+
 
 
 # 1. Introduction  
@@ -224,7 +231,201 @@ NLP transfer learning의 퓨처워크 활용을 위해 데이터셋, 프리트�
 *메인 텍스트에서 결과 보기위해 스코어 평균 사용(GLUE, SGLUE), BLEU SCORE도 봄  
 *정확한 매칭 스코어와 F1스코어는 상관관계가 매우 큼(그래서 정확 매칭만 따짐)  
 *모든 스코어, 모든 태스크에 대한 결과는 태이블 16(어펜딕스E)에 있음  
+*기존 버트베이스 80.8SQuAD, 84.4MNLI, 본 실험 80.88, 84.24, 직접 비교에 무리가 있는 점은 본 구현은 인코더/디코더 모델이고, 스텝수가 1/4이기 때문  
+*전반적으로 직접 비교가 어렵  
 
+
+# 3.2. Architectures  
+초기 트랜스포머 구조는 인코더/디코더이지만 최근 자연어처리 전이학습용은 다른 구조들 사용  
+이 구조들을 리뷰해봄  
+
+
+
+# 3.2.1. MODEL STRUCTURES  
+*주요 차이점은 다른 마스킹 방식을 가진 어텐션 메커니즘 사용  
+*트랜스포머의 셀프-어텐션 연산은 문자열 입력과 새로운 동일 길이 문자열 출력을 수반  
+**가중치 계산하여 반영  
+*첫 고려 모델은 인코더-디코더 트랜스포머  
+**2layer, 2stack, fully visible attention mask(출력 때 모든 입력 다 반영(봄), prefix는 나중에 예측, 버트는 fully visible사용  )  
+*트랜스포머 디코더의 셀프어텐션은 causal(인과적?) 마스킹 패턴 사용  
+**문자열 중 예측 이전 것들만 반영, 이후 것들은 마스킹  
+*인코더-디코더 트랜스포머의 디코더는 autoregressive하게 출력열 생성  
+*LM일반적으로 압축 또는 문자열 생성에 사용    
+**그러나 text-to-text framework로 쉽게 이용(input과 target 이어붙여서) 가능  
+**약점은 causal masking이 input 기준 이전에 지나치게 의존적으로 만듬  
+**트랜스포머 기반 LM의 새로운 masking 패턴으로 해결됨(prefix LM에서 fully visible masking으로)    
+
+
+# 3.2.2. COMPARING DIFFERENT MODEL STRUCTURES  
+*유의미한 비교를 위해 다양한 상세 세팅 고려해줌(인코더-디코더 모델에서)  
+**레이어 개수, 파라미터 개수 버트베이스 개준 L, P, FLOPS는 M(L+L 레이어 인코더-디코더 위한)  
+*상세세팅(비교)들은 아래와 같음  
+**인코더-디코더 모델 L 레이어 in 인코더, L 레이어 in 디코더, 2P 파라미터, M FLOPs 연산코스트  
+**위와 동일 모델이지만, 인코더와 디코더 사이의 P 파라미터가 공유됨  
+**인코더-디코더 모델, 각각 인코더/디코더에 L/2 레이어 갖고 P 파라미터 가지며 M/2 FLOP cost  
+**디코더only LM, L 레이어, P 파라미터, M FLOP cost  
+**디코더only 로 위와 갖은 구조이되 prefix LM(레이어나 파라미터는 갖고 대신 fully visible 셀프어텐션)  
+
+
+# 3.2.3. OBJECTIVES  
+비지도학습 목적함수로 기본LM 목적함수, 베이스라인 디노이징 목적함수 고려  
+
+
+# 3.2.4. RESULTS  
+*디노이징 목적함수 사용한 인코더-디코더 구조가 가장 좋은 성능 보임  
+*인코더/디코더 파라미터 공유 유/무는 성능에 크게 연관 없음  
+*레이어수 줄이면 성능 떨어짐  
+
+
+# 3.3 Unsupervised Objectives  
+*비지도학습 목적함수 정하는 것 매우 중요  
+*기존 방법 그대로 사용하지 않고 text-to-text에 맞게 고쳐서 사용  
+
+
+# 3.3.1. DISPARATE HIGH-LEVEL APPROACEHS  
+*첫번째 방법, prefix LM 목적함수 사용 - text span 두 부분으로 나누고 각각 input/target 으로 줌     
+*두번째 방법, MLM from BERT(단, 버트는 encoder only 이므로 본모델 적용 위해 uncorrupted를 target으로)  
+*세번째 방법, basic deshuffling(디노이징 seq 오토인코더 방법으로써)  
+*버트 스타일인 두번째 방법이 성능 좋음  
+
+
+# 3.3.2. SIMPLIFYING THE BERT OBJECTIVE  
+*디노이징 목적함수 개조 실험  
+**기존 15% 마스킹, 약간 변조는 MASS(by Song)  
+*그냥 마스킹이 아닌 유니크 마스킹 실험  
+**마스킹될 길이 조절 등  
+*결과는 성능 다 비슷  
+
+
+# 3.3.3. VARYING THE CORRUPTION RATE  
+*오염 10, 15, 25, 50% 실험  
+**50%만 현저히 성능 덜어지고 나머지는 비슷, 15%로 결정  
+
+
+# 3.3.4. CORRUPTING SPANS  
+*랜덤, 연속적 길이 선택 고려  
+**3개가 성능 좋았음  
+
+
+# 3.3.5. DISCUSSION  
+*디노이징 목적함수가 좋고 그 이외에 변주는 크게 성능을 좌지우지하진 않음  
+**대신 트레이닝 스피드에는 영향 있음  
+*결론은 언레이블 데이터 탐색이 더 성능향상의 여지가 있다는 것  
+
+
+# 3.4. Pre-training Data set  
+*본 논문이 나오기까지 새 데이터셋 만드는 것 적극적이지 않았음  
+**본 논문에서 C4 제안, 공개  
+
+
+# 3.4.1. UNLABELED DATA SETS  
+*C4의 다양 변주들 만들어보고 실험함  
+**C4 -베이스라인(휴리스틱 필터 사용)  
+**Unfiltered C4 -langdetect 사용하여 영어 추출(휴리스틱 필터 없이)  
+**RealNews-like -C4에 추가적 필터링, RealNews 데이터셋 사용, non-news 뺌  
+**WebText-like -C4에서 URL유례 빼고 다 제외하니 2GB만 남음.. 그래서 Common Crawl data  12달 돌림  
+**Wikipedia -텐서플로우 위키 텍스트 사용 markup/ref 제외  
+**Wikipedia + Toronto Books Corpus -위키피디아의 중의성 제외 약점 보완위해 토론토북 코퍼스 합침  
+*C4에 휴리스틱 필터 제거시 성능 저하  
+*Wiki+TBC는 베이스라인보다 SGLUE성능 좋음  
+*위키 사용이 SQuAD 성능 끌어올림  
+*도메인 적응과 평행을 이루는 결과  
+
+
+# 3.4.2. PRE-TRAINING DATA SET SIZE  
+*C4는 큰데이터셋 만즈는 것 가능케 함  
+**데이터셋 사이즈 달리하여 테스트(2^29, 2^27, 2^25, 2^23 토큰)  
+**결과는 큰 것이 성능 제일 좋음  
+
+
+# 3.5. Training Strategy  
+*다양한 파인튜닝 트레이닝 모델 실험  
+
+
+# 3.5.1. FINE-TUNING METHODS  
+*모든 모델 파라미터 파인튜닝은 서브옵셔널한 결과 나옴(오버핏?)  
+**대신 두 대안 방법 적용-인코더-디코더모델의 서브셋만 파인튜닝  
+*첫번째로, 적응 레이어 방법, 추가적 댄스-ReLU-댄스 블락을 두어 이것만 파인튜닝  
+*두번째로, gradual unfreezing, 점진적으로 더 많은 모델 파라미터 파인튜닝하는 방식  
+*첫 방법이 더 성능 좋았음  
+
+
+# 3.5.2. MULTI-TASK LEARNING  
+*단일 비지도학습으로만 진행했었는데 대안으로 멀티테스크 학습있음   
+**다양 테스크 한번에 학습시키는 것  
+*다양 전략 테스트  
+**Examples-proportional mixing -길이가 오버피팅 좌우해서 길이 인위적으로 제한, 샘플 확률 m번째 task는  min(em,K)/SIGMA min(en,K) 이 때, K는 인위적 길이 제한
+**Temperature-scaled mixing -다언어 버트용으로 리소스 적은 언어를 위함, 온도 T라면 mixing rate rm은 1/T이고 sum=1되게 조정  
+**Equal mixing -동일하게 샘플링 uniform하게  
+*결과는 멀티태스크 러닝이 성능저하 가져옴(오버피팅)  
+
+
+# 3.5.3. COMBINING MULTI-TASK LEARNING WITH FINE-TUNING  
+멀티테스크 러닝이 sota이니 변주 적용해봄  
+*먼저 프리트레인 examples-proportional mixture with limit K=2^19, 파인튜닝-프리트레인 동시 leave-one-out MT(다른 분야 비지도학습 없는 거 보고 영감)  
+*결과는 멀티테스크 프리트레인 후 파인튜닝이 좋음  
+
+
+# 3.6. Scaling  
+*머신러닝의 쓴 교훈은 짱짱한 컴퓨팅 파워가 승리한다는 것  
+**이것은 nlp 전이학습에도 해당됨  
+**하지만 스케일하는 데에는 여러 방법이 있음  
+**베이스라인모델 220M 파라미터, 프리트레인/파인튜닝 2^19/2^18 스텝, 인코더/디코더 사이즈는 버트베이스와 같음  
+**확장 실험위해 버트라지 따름, dff=4096, dmodel=1024, dkv=64, 16head어텐션  
+***16/32레이어 2가지로 실험(인코더 디코더 각각 16or32)  
+**파라미터 2배, 4배 실험, 스텝수 2배 4배 실험(배치4배는 결과가 달라짐)  
+*결과는 자연스럽게 키운 것이 좋음  
+**다만 큰 모델 만들 시 파인튜닝이 비쌈(트레이드오프)  
+
+
+# 3.7. Putting It All Together  
+앞서 얻은 인사이트들 모두 반영 합침  
+*목적함수 -디노이징 mean span length 3, corrupt 15%  
+*더 긴 학습 -pretrain 1M steps(batch size 2^12, seq length 512, pre-train token 1 trillion)  
+*모델사이즈   
+**베이스 -220m 파라미터, 스몰 - dmodel=512,dff=2048,8head attention, 6layer 각각 인/디코더, 60m 파라미터  
+**라지 -dmodel=1024,dff=4096,dkv=64,16head attention, 24layer각각 인/디코더, 770m 파라미터  
+**3B and 11B - 왕창 크게 라지대비 3배, 11배 만듬  
+*멀티테스크 프리트레이닝 -적용  
+*파인튜닝 각각 GLUE, SGLUE -벤치마크 다 컨캣해서 학습  
+*빔서치 - 그리디 디코딩, 빔위드 4, 랭스패널티 alpha=0.6  
+*테스트셋 -WMT tasks 번역셋, GLUE,SGLUE official, SQuAD 사용  
+*24개 중 18개에서 SOTA(11B가 해냄)  
+*WMT는 SOTA 못 찍음-영어만 언레이블드 데이터 때문일 것(백트랜스레이션 없음)  
+
+
+# 4. Reflection  
+중요 발견에 대한 복습  
+
+
+# 4.1. Takeaways  
+*Text-to-text : 요약, 분류, 생성 명료하게 통합  
+*Architectures : 인코더-디코더 구조 사용, 텍스트-투-텍스트에 제일 적합, 인코더(또는 디코더)만 보다 두배 성능  
+*Unsupervised objectives : 디노이징 목적함수가 성능좋음 for 비지도 프리트레이닝  
+*Data sets : C4 휴리스틱 클린 텍스트 제공  
+*Training strategies : 적은 파라미터만 파인튜닝하는 것이 좋음  
+*Scaling : 큰 것이 짱  
+*Pushing the limits : 엄청 키워서 SOTA 찍음  
+
+
+# 4.2. Outlook  
+*The inconvenience of large models : 커야 성능 좋았음    
+*More efficient knowledge extraction : 효율적 프리트레인(일반적 지식학습) 방법은 아니었음(제안모델이)  
+*Formalizing the similarity between tasks : 태스크 간의 유사도 활용하면 결과 향상에 도움될 것  
+*Language-agnostic models : 일반 언어 모델에 적용하면 좋을 듯  
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 
