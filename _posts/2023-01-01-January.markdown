@@ -14,6 +14,32 @@ categories: study
 {% highlight ruby %}
 
 
+January week2:  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+
+
+##*eng words  
+##*eng writing  
+
+
+
+{% endhighlight %}  
+
+
+
+Monday, January 09, 2023    
+*pythonic things   
+o  
+
+
+
+
+{% highlight ruby %}
+
+
 January week1:  
 *eng speaking-int    
 *pythonic things-django    
