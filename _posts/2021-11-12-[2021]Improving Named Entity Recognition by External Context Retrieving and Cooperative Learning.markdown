@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"
+title:  "[2021]Improving Named Entity Recognition by External Context Retrieving and Cooperative Learning"
 date:   2021-11-12 16:30:10 +0900
 categories: study
 ---
@@ -17,6 +17,11 @@ CL(Collaborative Learning)으로 성능을 향상
 ->external text가 없을 때의 성능도 향상  
 
 {% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1AhjALJsybsnSN9mvvSjrdBfma_Wb6x4z?usp=sharing)
+
+
 
 *문장 포함 문서가 있으면 당연히 NER 성능이 향상  
 **하지만 문장 찾기가 쉽진 않음  
