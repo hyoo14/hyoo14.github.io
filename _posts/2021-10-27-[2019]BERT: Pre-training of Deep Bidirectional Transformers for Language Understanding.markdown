@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
+title:  "[2019]BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding"
 date:   2021-10-27 15:10:10 +0900
 categories: study
 ---
@@ -17,6 +17,9 @@ fine tuning으로 SOTA 찍음
 (QA, LI 등)
 
 {% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1F202cyZu4fuCeUOIGzoz7J-sFCN3zLN0?usp=sharing)
 
 
 -pretrained LM은 2가지가 있음
