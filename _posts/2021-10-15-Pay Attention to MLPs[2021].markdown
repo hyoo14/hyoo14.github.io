@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Pay Attention to MLPs"
+title:  "Pay Attention to MLPs[2021]"
 date:   2021-10-15 16:10:10 +0900
 categories: study
 ---
