@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Buy It Again: Modeling Repeat Purchase Recommendations"
+title:  "[2018]Buy It Again: Modeling Repeat Purchase Recommendations"
 date:   2021-12-09 14:20:10 +0900
 categories: study
 ---
@@ -15,6 +15,11 @@ categories: study
 특히 반복된 구매에 대한 시기적절한 추천  
 
 {% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1r9Go8oCLNy7EQ7_UJ79g5jiLDnB9uiG6?usp=sharing)
+
+
 
 
 *모델 = 구매 회수 기반 랭킹 + 시간에 따른 반감기 + 반복구매 주기적 현상 반영  
