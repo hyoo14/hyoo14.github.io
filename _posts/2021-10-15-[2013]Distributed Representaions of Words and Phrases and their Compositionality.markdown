@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Distributed Representaions of Words and Phrases and their Compositionality"
+title:  "[2013]Distributed Representaions of Words and Phrases and their Compositionality"
 date:   2021-10-15 16:00:10 +0900
 categories: study
 ---
@@ -18,6 +18,9 @@ Hierarchical Softmax 대체하는 Negative Sampling 으로 학습속도와 단�
 관용구 통쨔ㅐ로 학습시켜서 기존 관용구 약점 좀 보완함
 
 {% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1DZn7lY8wZPNmCAf2GcGmBFGy_ls7o7NK?usp=sharing)
 
 
 -그냥 소프트맥스는 계산이 너무 많음 (W) 
