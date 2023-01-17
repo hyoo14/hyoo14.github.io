@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2021-11-08-Attention Is All You Need"
+title:  "[2017]Attention Is All You Need"
 date:   2021-11-08 12:55:10 +0900
 categories: study
 ---
@@ -17,6 +17,10 @@ categories: study
 (QA, LI 등)
 
 {% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1ORJIXwL6jF2ja52tEHurFEe_ntETWN0x?usp=sharing)
+
 
 
 *RNN, LSTM, GRU가 LM이나 MT에서 이전의 SOTA였음  
