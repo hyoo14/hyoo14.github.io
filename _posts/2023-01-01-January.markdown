@@ -30,6 +30,38 @@ January week2:
 
 
 
+Monday, January 16, 2023    
+*pythonic things   
+*eng speaking  
+o  
+
+
+Tuesday, January 17, 2023  
+*eng speaking  
+o  
+
+
+
+
+{% highlight ruby %}
+
+
+January week2:  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+
+
+##*eng words  
+##*eng writing  
+
+
+
+{% endhighlight %}  
+
+
+
 Monday, January 09, 2023    
 *pythonic things   
 *eng speaking  
