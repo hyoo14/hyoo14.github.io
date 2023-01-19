@@ -52,6 +52,12 @@ Wednesday, January 18, 2023
 o  
 
 
+Thursday, January 19, 2023  
+*eng speaking  
+*eng reading  
+*pythonic things  
+o  
+
 
 
 {% highlight ruby %}
