@@ -14,7 +14,7 @@ categories: study
 {% highlight ruby %}
 
 
-January week2:  
+January week3:  
 *eng speaking-int    
 *pythonic things-django    
 *eng reading-papers   
@@ -63,6 +63,18 @@ Friday, January 20, 2023
 *eng speaking  
 *eng reading  
 *pythonic things  
+*codes  
+o  
+
+
+Saturday, January 21, 2023  
+*eng reading  
+*eng listening  
+*codes  
+o  
+
+
+Sunday, January 22, 2023  
 *codes  
 o  
 
