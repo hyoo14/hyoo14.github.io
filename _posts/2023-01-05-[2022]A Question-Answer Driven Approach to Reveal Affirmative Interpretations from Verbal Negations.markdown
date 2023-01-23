@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Question-Answer Driven Approach to Reveal Affirmative Interpretations from Verbal Negations"
+title:  "[2022]A Question-Answer Driven Approach to Reveal Affirmative Interpretations from Verbal Negations"
 date:   2023-01-05 13:34:19 +0900
 categories: study
 ---
