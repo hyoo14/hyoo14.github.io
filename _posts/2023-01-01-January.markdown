@@ -70,7 +70,13 @@ o
 
 Saturday, January 28, 2023  
 *eng listening      
+*eng speaking  
 o  
+
+
+Sunday, January 29, 2023  
+o  
+
 
 
 {% highlight ruby %}
