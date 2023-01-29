@@ -10,6 +10,31 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+January week5:  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+
+*codes  #this month
+
+
+##*eng words  
+##*eng writing  
+
+
+
+{% endhighlight %}  
+
+
+
+Monday, January 30, 2023       
+o  
+
+
 
 {% highlight ruby %}
 
@@ -76,6 +101,7 @@ o
 
 Sunday, January 29, 2023  
 *eng listening  
+*eng reading  
 o  
 
  
