@@ -11,9 +11,11 @@ categories: study
 
 {% highlight ruby %}
 짧은 요약 :  
-
--
-
+스케일 올린 LM으로 SOTA  
+GPT3 오토리그레시브 LM, 175B P(파라미터)  
+gradient update, fine tuning 없이 test  
+NLP task에서 좋은 성능 보여줌(번역, QA, cloze task)  
+단, 몇몇 데이터셋에서는 어려움 있었음을 발견  
     
 {% endhighlight %}
 
@@ -25,8 +27,256 @@ categories: study
 
 
 # 단어정리  
-* : .
+*cloze: 빈칸 메우기 식(빈칸 채우기 테스트의 그 빈칸 채우기)  
+*spurious: 가짜  
+*snippet: 단편  
+*negligibly: 무시할 정도로  
+*non-sequitur: 앞의 맥락을 따르지 않는, 앞과 맥락이 다른, 맞지 않는, non-follow  
+*efficacy: 효능  
+*corroborated: 확증하다, 제공하다  
+*atheism: 무신론  
+*pave the way: 길을 닦다  
+*pave: 포장하다, 덮다  
+*amortized: 상각, 분할 상환하다  
+*preliminary: 예비의, 서전의  
+
+
    
 
 # 1 Introduction  
-* . 
+*P-T 모델 생성으로 전환점이 됨  
+**이후 F-T로  
+**근데 F-T가 꼭 필요한 것은 아님(주장)  
+**한계점도 있는데 스케일링시 log linear하게 성능 증가(증가폭 둔화)  
+**본 논문은 스케일을 키워서 성능을 올림  
+**접근방식은 제로샷 task transfer  
+***one of few shot으로 명확히 함, zero shot과 비교, 더 나은 것으로 context서 분리  
+**GPT3가 zero, one 서로 희망적이고 few는 아주 좋음  
+***CoQA 84.1 F1 zero, 85.0 F1 few / Trivia QA 64.3 acc zero, 68.0 acc one, 71.2 acc few-SOTA  
+**작은 모델로 실험 12M 파라미터에서 13B 파라미터  
+***모델 커질수록 zero/one/few 사이 gap 커짐  
+
+
+# 2 Approach  
+*대개 RWC+19 따름  
+**스케일 업 : 모델 사이즈, 데이터셋 사이즈, 다양성, 학습길이  
+**context 학습 비슷 + 다른 세팅도 해봄  
+*F-T - PT model weight update, 수천 레이블, 특정 task 국한   
+**장: 성능, 단: 데이터 많이 피요하고 일반화 어렵고 가짜 feature사용 가능성이 있음  
+*FS - K개 예시 context와 completion 사용, context->completion 모델 만듬(k=10~100)  
+**장: 데이터가 적어도 됨, 단: SOTA는 못 달성, task specific data 약간은 필요  
+*1S - K가 1  
+*0S - K가 0  
+*영-프 번역서 FS의 성능이 좋았음  
+
+
+## 2.1 Model and Architectures  
+*GPT2와 같은 아키텍처, 단 초기화, 사전 정규화, 역토큰화는 변경  
+**sparse 트랜스포머처럼 8개 사이즈 모델 train, 125M~175B 파라미터  
+
+
+## 2.2 Training Dataset  
+*학습 데이터셋   
+**Common Crawl 필터버전 사용, fuzzy duplication을 다큐먼트에 적용하여 반복 피함  
+**유명 코퍼라 사용  
+
+
+## 2.3 Training Process  
+*큰 모델, 큰 배치, 작은 러닝레이트  
+**기울기 noise scale 측정(학습 중)  
+***배치 사이즈 결정  
+***메모리 안 죽고 큰 모델 학습  
+***matrix 모델 병렬로 사용  
+***v100 gpu  
+
+
+## 2.4 Evaluation  
+*LAMBADA, storycloze 비지도 학습셋으로 학습/평가 셋에 조건 줌  
+*일부 자연어 프롬프트 사용  
+*빔서치 사용(길이 4, 패널티 alpha 0.6)  
+*최종 결과 t.s에 명시  
+
+
+# 3 Results  
+## 3.1 Language Modeling, Cloze, and Completion Tasks  
+*전통 LM 관련 test  
+**PannTreeBank zero-shot PP 계산  
+**위키관련 4개 생략  
+**PTB에서 15p 향상시킨 SOTA  
+**LAMBADA 마지막 단어 예측(문단의)의 경우 0S서 GPT3가 8% 향상(sota 대비)  
+***FS서 포맷 잘 맞춰서 단어 예측하게했고 sota대비 18% 향상  
+**fill-in-the-blank 1S서 안 좋음, 0S는 괜춘  
+*패턴 배워야함  
+**좋은 결말 찾기 LM서 부적합, GPT3로 1.5B F-T 능가, sota는 못 미침(ALUM)  
+**story cloze 2016 마지막 문장 찾기 gpt3가 이전 0S 능가, SOTA bert보단 4.1% 적음  
+
+
+## 3.2 Question Answering  
+*QA test 넓은 사실 관련 closed-book  
+**Trivia QA  
+***GPT3 0S이 파인튠 T5 보다 14.2% 나음  
+***Q&A tailored 보다 3.8% 나음  
+***GPT3 1S은 파인튠 SOTA와 같음  
+***GPT3 FS는 위보다 3.2% 더 좋음  
+***ONQ서는 성능 떨어짐, 이게 fine-grained(not general)이기 때문  
+***ARC(CommonSenseReasoning) 다지선다에서 GPT3가 RoBERTa finetine과 성능 비슷  
+***근데 둘 다 sota는 아님  
+***R.C test서 GPT3 FS가 인간 CoPa 보다 3 앞섬  
+****DROP서 F-T 버트 압도하는 SOTA  
+
+
+## 3.3 Translation  
+*번역의 경우  
+**크롤러로 긁어옴, 그래서 비영어도 7% 포함  
+**페어 텍스트 아님  
+**gpt3 0s 성능 별로, 1s 7bleu 향상으로 괜춘, fs 추가로 4bleu 더 향상  
+**NMT서 sota(영어로에서), 그 외는 별로, BPE tokenizer가 영어 전문이기 때문  
+
+
+## 3.4 SuperGLUE  
+*WSC, MultiRC 빼고 context 사용용 새 set샘플링  
+*WSC & MultiRC 같은 set씀(주어진)  
+*COPA&ReCoRD 거의 SOTA(T5 보다 약간 뒤짐)  
+*WSC, BoolQ, MultiRC, RTE 좋은 성능  
+*WiC 약함(두 문장 비교)  
+*CB 약함  
+
+
+# 4 Measuring and Preventing Memorization Of Benchmarks  
+*벤치마크기억 방지 측정  
+**GPT2 보다 커지고 common crawl 크게 포함 -> 오염&기억 염려  
+**반면 데이터가 많으면 오버피팅 방지 ->과한 예시 삭제(13gram)  
+**GPT3 클린 데이터로 평가, 오염도 좀 방지  
+
+
+# 5 Limitations  
+*한계  
+**의미적 중복  
+**일관성 상실(길어지면)  
+**자기 반박  
+**파라프레이징  
+**bidirectional, denoising없어서(cost줄이려고) fill-in-the-blank 약함  
+**token weighting 고름(even), 핵심단어에 가중치 못 줌  
+**큰 P-T 지만 비디오나 물리 학습 못 하므로 약점  
+**사이즈 커서 deploy 힘듬  
+
+
+# 6 Related Work  
+*스케일 업  
+**적은 파워 autoregressive LM  
+***파라미터 늘리거나 연산 늘리거나 둘 다 늘리거나  
+***트랜스포머 사이즈 늘리고 FLOPS 늘리고 17B까지  
+***mixture(파라미터, 연산 둘 다 늘리는)  
+***ALBERT이용 or 일반화 or 특정 task -> 정제  
+***adaptive 연산, 유니버셜 트랜스포머 사용  
+
+
+*multi-task 모델  
+**지도, context, multitask 파인튜닝  
+**멀티테스크러닝 유망  
+**멀티스테이지 파인튠 소타  
+**메타러닝 LM 제한적  
+**본 논문 RL2에 가깝  
+**최적화 &MAML  
+**본 논문은 context + inner loop adopts to task + outer loop update weight  
+**알고리즘 개선 대푝 일어남  
+***디노이징 양방향, prefix LM, 인/디코더, 랜덤 퍼뮤테이션  
+**샘플링  
+**데이터/학습개선  
+**임베딩 파라미터 효율화  
+**GPT3 발전 가져옴(파인튜닝서 )  
+
+
+# 7 Conclusion  
+*175B 파라미터 LM, 성능 굿 0/1/F S로 파인튠 없이 성능 굿, 약점에도 스케일업 중요성 보여줌  
+
+
+# Broader Impacts  
+*LM위험성, 이점 양립, 특히 위험성 초점, LM향상 노력 설명  
+
+
+## 7.1 Misuse of Language Models  
+*LM 오용  
+**연구 외 오용, risk 평가  
+***위험 등 3가지, 잠재적 오용, 위험 행위, 외부요인  
+*잠재적 오용 활용   
+**사회 해로운 text generation  
+***가짜정보, 스팸, 피싱, 합법적 오용, 사기 essay  
+**text 어법 잘 맞을수록 오용도 증가  
+
+
+### 7.1.2 Threat Actor Analysis  
+*위험 분석  
+**지속적 위험  
+***모니터링 포럼, 가짜정보 전략, 멜웨어 분포, 컴퓨터 사기  
+***GPT2부터 시작함, 그땐 적었음  
+
+
+### 7.1.3 External Incentive Structures  
+*외부 요인 구조  
+**경제 요인  
+***싸고, 저렴(노력 적은) ,고수익  
+***인간 노동 필요  
+***어려운 과제  
+
+
+## 7.2 Fairness, Bias, and Representation  
+*공정, 편견, 대표성  
+**편견, 선입견 생김, data 따라...   
+***분석  
+**특징 과하게 연결 짓기 보다 분석(한계와 행동)  
+**성별, 인종, 종교 초점  
+
+
+
+### 7.2.1 Gender  
+*직업-남성에 치우침  
+*주부, 간호사-여성에 치우침  
+*경쟁력-남성  
+*중립-여성  
+*조언자-남성  
+*피조언자-여성  
+*참여자-남성  
+*피참여자-여성  
+*여성-외모(아름다움, 매력적)  
+*남성-다양  
+
+
+### 7.2.2 Race  
+*발생빈도 check + SentiWordNet 감정과 연관  
+*역사,사회 요소 반영  
+*노예제->부정적  
+*인구->부정적  
+*아시안의 경우 랭크 높음  
+*흑인은 낮음  
+*더 세련된 분석 필요  
+
+
+### 7.2.3 Religion  
+*무신론, 불교, 천주교(기독), 힌두교, 이슬람, 유대교 테스트  
+*이슬람의 경우 라마단, 모스크, 바이올레이션, 테로, 테로리스트와 연결  
+
+
+### 7.2.4 Future Bias and Fairness Challenges  
+*bias 내재 어려움(큰 모델서)  
+**지속 연구 분야임  
+*gender, race, religion 뽑음  
+**문학 특징 모델서 영감  
+**bias 방지도 중요  
+***NLP 외에도 있을 위험, 경험 NLP 영향 중요  
+
+
+## 7.3 Energy Usage  
+*에너지 사용  
+**큰 모델, 효율성 중요, 자원차원에서  
+**full gpt3 175B의 경우 100page 컨텐트, 0.4kW-hr, few rents  
+***고려 중요함  
+
+
+## 7.4 News Generation  
+*생성 test  
+**인간이 측정 test(자연스러운지, 사람과 얼마나 다른지)  
+**사람이 title, subtitle, 인간과 매우 같음, 더 같음, 보통, 기계에 더 가까움, 기계에 매우 가까움 체크  
+**not train 된 data로 test, 다른 모델도 test  
+**모델 사이즈가 커지면 사람이 기계와 식별하는 능력 떨어짐..  
+**길이가 길수록 인간의 구분 어려움  
