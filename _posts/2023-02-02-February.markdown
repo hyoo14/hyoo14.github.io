@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "February"
+date:   2023-02-02 00:20:30 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+February week1:  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+
+##*codes  
+##*eng words  
+##*eng writing  
+
+
+
+{% endhighlight %}  
+
+
+
+Monday, February 1, 2023       
+*pythonic things  
+*eng reading  
+*eng listening  
+*eng speaking  
+o  
+
+
+Tuesday, February 2, 2023  
+o  
+
+
+
+
