@@ -29,15 +29,19 @@ February week1:
 
 
 
-Monday, February 1, 2023       
-*pythonic things  
-*eng reading  
-*eng listening  
-*eng speaking  
+Wednesday, February 1, 2023       
+*eng speaking-int  
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
 o  
 
 
-Tuesday, February 2, 2023  
+Thursday, February 2, 2023  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
 o  
 
 
