@@ -45,5 +45,13 @@ Thursday, February 2, 2023
 o  
 
 
+Friday, February 3, 2023  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
+
 
 
