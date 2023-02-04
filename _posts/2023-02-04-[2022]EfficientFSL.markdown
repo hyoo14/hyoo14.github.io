@@ -1,0 +1,148 @@
+---
+layout: post
+title:  "[2022]Efficient Few-Shot Learning Without Prompts"
+date:   2023-02-04 20:05:19 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+* FS방법-파라미터 효율 튜닝(PEFT), 패턴추출학습(PET) 좋은 결과 보임->레이블 별로 없는 세팅서도 좋음  
+* 그러나 프롬프트 통한 섬세한 인간의 미세조정이 필요하고 수십억의 파라미터 가진 LM 필요  
+* 이러한 단점 극복위해 문장트랜스포머 파인튜닝(SETFIT) 제안  
+* 프롬프트 없는 효율적 프레임워크 FS 파인튜닝(문장 트랜스포머의)  
+* 첫 파인튜닝 때 적은 수의 레이블 test 사용(siamese와 대조적)  
+* 결과 모델이 풍부한 text임베딩 생성(분류 학습용)  
+* 프롬프트나 verbalizer 필요 없음  
+* 고성능(정확) & 파라미터 조금 필요  
+* PEFT & PET 만큼 경쟁력 있고 몇몇 분류서 성능 능가!  
+
+    
+{% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1ePdCknnc7QQFqm3NujLdoLc1vzoaPMm4?usp=sharing)  
+
+
+[Lecture link]()  
+
+
+# 단어정리  
+* verbalizer: 말로 표현하다(나타내다)  
+* dispense: 나누어 주다, 내놓다, 제공하다, 조제하다, 배풀다, 시행하다  
+* probe: 캐묻다, 캐다, 조사하다, 살피다, 조사, 탐사선  
+* 
+
+
+   
+
+# 1 Introduction  
+*FS 각광받지만 코스트가 큼(어노테이션 데이터가 많아야함)  
+**기존 방법론:  
+***in context learning(ICL)  
+***parameter-efficient fine-tuning (PEFT)  
+***prompt-based  
+**기존방법론들 T0나 GPT3처럼 큰 PLM이어야 성능 잘 나옴  
+**프롬프트도 비효율적인데 부과적인 인프라들이 필요하기 때문  
+**SETFIT : 문장트랜스포머 기반.  
+***문장트랜스포머는 프롬프트 합치고 큰 PLM이 필요 없으며 성능 좋음  
+**CR(Customer Rating) 8레이블 데이터 실행시 SETFIT이 FineTuning보다 3배 적음  
+***FS 텍스트분류 효율성 증명  
+**다음의 모델들을 비교함 : PLM F-T, SOTA, PET, PEFT기반 ADAPT, T-FEW, PERFECT(프롬프트 없는)  
+*공헌 정리  
+**SETFIT제안  
+***프롬프트 x, 간단, 이해가능 가이드 제공  
+**성능평가함  
+***다양 FS 텍스트분류, SOTA 능가 보임(프롬프트 없는 경우), 큰 모델 FS와 비슷 랭크  
+**코드, 데이터 공개  
+
+
+# 2 Related Work  
+*ICL은 바로 예측  
+**in/out 기반(프롬프트) 파라미터 업뎃x  
+*GPT3 큰 성능 보이지만 너무 사이즈가 크고 프롬프트 특정 지식만 가능한 단점  
+*PEFT기반-어댑터-파라미터업뎃 FFN  
+*T-FEW는 GPT3 능가, 더 적은 연산, 학습벡터 추가(넷트워크리스케일), GPT 1/16배, 프롬프트는 필요  
+*ICL대안으로 프롬프트 파인튜닝  
+**분류task->MLM으로 바꿈  
+**빈칸채우기포맷->레이블로(템플릿서) -->PET(패턴 이용 학습)  
+**사람 개입 필요, FS서 GPT3 압도, 더 작은 PLM 블록  
+**ADAPT는 PET decoupled label & 레이블 조건 MLM함  
+*PERFECT는 task 특징 adapter, multi token레이블 임베딩이 prompter와 verbalizer 지움  
+
+
+# 3 SETFIT  
+*SETFIT은 센탠스 트랜스포머기반  
+**트랜스포머 siamse net으로 학습  
+***의미 가까우면 가깝게 거리 조정  
+***파인튜닝으로 프리트레인 센탠스트랜스포머 튜닝  
+***결과: 임베딩으로 text풍부 임베딩 만들고 이걸로 분류  
+*이미지 유사도 측정 비슷하게 비교 학습 접근 사용(파인튜닝에서)  
+**적은 K레이블 주어짐  
+**트리플렛( xi, xj, 1) = T c, p  
+***xi, xj는 문장으로 같음, 그래서 1, c는 class label, p는 positive, T는 triplet  
+**(xi, xj, 0) = T c, n (문장이 다른 경우)  
+**비교 Fine Tuning으로 T 생성  
+***긍정, 부정 트리플렛 합쳐서 T set만듬  
+**ICL은 class 개수  
+**R = 20 사용  
+*head 분류 학습  
+**F-T된 ST encodes->원래 레이블  
+**Emb xi = ST(xi) : 한 sent 임베딩이 산출  
+**클래스 레이블 통해 training set을 head로 분류  
+**로지스틱 분류 사용  
+*F-T ST 인코더에 unseen 넣어서 추론  
+
+
+# 4 Experiments  
+*text 분류 DATA들 사용  
+**SETFIT 세팅 따름  
+**RAFT 벤치마크  
+**실세계 FS text 분류 11 task, 클래스당 50개의 적은 예시 사용  
+**3가지 SETFIT- ST size, l.r, batche size는 표참고  
+**베이스라인: 어펜딕스 참조  
+**선형증명: P-T ST 사용, 임베딩 생성  
+**선형분류용  
+***경감 study에 도움  
+**파인튠, RoBERTa 라지  
+**ADAPT 다른 PLM block 사용  
+***ALBERT xxlarge가 최고성능  
+**PERFECT는 codebase 꺼   
+**T-FEW는 논문꺼 11B  
+**F-T 적을 경우 성능 안 고르니 10 랜덤 분할하고 평균 성능으로 measure  
+
+
+# 5 Results and Discussion  
+**베이스라인 N=8, 64 레이블 샘플(클래스당)  
+**SETFIT MPNET이 F-T baseline능가(19.3P  , N = 8의 경우,  5.6P, N=64경우  )  
+**PERFECT도 마찮가지(13.6P에서 2.6P로 gap줄음)  
+**Linear Probe는 흥미롭게도 PERFECT N=8 압도, ADAPTER N=8과 비슷  
+**T-FEW가 SETFIT 2.4P능가(N=64)  
+**N=64는 반대 1.9P  
+*위는 FS 벤치마크용은 아니었고 RAFT로 FS 비교  
+**SETFIT RoBERTa가 GPT3&PET 8.6, 1.7 능가  / T-FEW보다는 4.5 낮음(대신 30배 작고 프롬프트 필요 없고 더 효율적 predict)  
+*한계  
+**text분류 성능 굿 but token, 두 문장 분류 같은 NLI는 모름  
+***본 논문 F-T 필요한 new task에 F-T 필요함.. T-FEW는 F-T 필요x  
+
+
+# 6 Computational Costs  
+*FLOPs로 cost 계산, 측정  
+**SETFIT MPNET이 T-FEW 보다 훨신 빠름(infer & train 둘 다)  
+**SETFIT MINLM은 T-FEW 보다 빠른데, SETFIT 사이즈는 636에서 106배 작음  
+***T0 11B 사용 T-FEW 보다        
+*실생활에 유용  
+**SETFIT MPNET 30초 학습, p3.2xlarge aws 인스턴스 $0.025 비용 소진  (slit 당 )  
+**T-FEW는 slit 당 $1.05, 736초 걸림  
+
+
+
+# 7 Conclusion  
+*SETFIT FS text 분류 접근 소개  
+*이점들 있음(T-FEW, ADAPTER, PERFECT대비)  
+*빠르고 , infer&train 시간 적음, 사이즈도 작음, 프롬프트도 필요 x  
