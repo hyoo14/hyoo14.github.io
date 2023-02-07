@@ -29,6 +29,44 @@ February week1:
 
 
 
+Monday, February 6, 2023       
+*eng speaking-int  
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
+
+
+Tuesday, February 7, 2023       
+*eng speaking-int  
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
+
+
+
+{% highlight ruby %}
+
+
+February week1:  
+*eng speaking-int    
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+
+##*codes  
+##*eng words  
+##*eng writing  
+
+
+
+{% endhighlight %}  
+
+
+
 Wednesday, February 1, 2023       
 *eng speaking-int  
 *pythonic things-django    
