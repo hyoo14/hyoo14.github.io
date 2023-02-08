@@ -13,7 +13,7 @@ categories: study
 {% highlight ruby %}
 
 
-February week1:  
+February week2:  
 *eng speaking-int    
 *pythonic things-django    
 *eng reading-papers   
@@ -39,6 +39,14 @@ o
 
 
 Tuesday, February 7, 2023       
+*eng speaking-int  
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
+
+Wednesday, February 8, 2023       
 *eng speaking-int  
 *pythonic things-django    
 *eng reading-papers   
