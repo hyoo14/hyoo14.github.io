@@ -42,4 +42,40 @@ categories: study
    
 
 # 1 Introduction  
-* .
+* LM은 NLP에서 중요 성과  
+**text분류, QA  
+**text->지식화  
+**기존 LM은 단일 docu 중심  
+**링크사용하지 않는 한계가 있고 의존관계도 모름(사용도 안함)  
+***그래서 본 논문에서 사용  
+*링크버트  
+**내부링크(지식, hyperlink) 이용  
+**앵커텍스트(anchor text) 샘플링  
+***(1) 연속 segment (한 문서의)  
+***(2) 랜덤 문서의 랜덤 segment  
+***(3) 링크 탄 문서의 segment  
+**위의 샘플링된 문서 segment pair로 학습  
+**MLM은 concept 위주로 하여 학습  
+**DRP은 두 segment 관계를 학습  
+*self-supervised graph 학습서 영향받음  
+**LM+grap-based  
+**일반도메인:위키글+link  
+**biomedi-PubMed글, 인용 링크  
+**평가: QA  
+**링크버트가 baseline 향상  
+**일반 MRQA서 4% F1점수 향상(GLUE)  
+**bio서 Pubmed 버트 압도(+3BLURB스코어, +7% in MedQA USMLE)  
+**docu 이해, FSQA에서 향상 보임  
+
+
+# 2 Related work  
+*탐색 증가 LM  
+**LM위한 검색 모듈  
+***앵커 텍스트 주어짐(질문같은)  
+***모델 향상(답 예측 같은)  
+**연관 docu 제시 기대  
+***pretrianing x   
+**본 논문은 검색 초점 x  
+***P-T -> LM으로 지식 work와는 다른 방식의 docu link 사용  
+*P-T LM 연관 docu  
+**여러 연관 docu 사용  
