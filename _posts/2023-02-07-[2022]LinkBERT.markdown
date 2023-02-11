@@ -12,7 +12,10 @@ categories: study
 {% highlight ruby %}
 짧은 요약 :  
 
-* .
+*LM 단일 다큐로 생성  
+**링크버트는 연관성 주목(docu간)  
+**MLM+RDP(Related Document Prediction)  
+**general&bio fields에서 SOTA  
 
     
 {% endhighlight %}
@@ -25,7 +28,15 @@ categories: study
 
 
 # 단어정리  
-* .
+* augmente: 증가시키다, 증강    
+* authogonal: 직교의, 공통점이 없는    
+* preliminaries: 서두의, 예비의  
+* salience: 돌출, 특징, 성질  
+* multi-hop: 다중홉?, 다중 반사?, 여러차례를 거쳐서 하는, 1단계->2단계 단계단계 거쳐서 예를들어 추론하는  
+* take over: 인수하다, 매입  
+* prepend: ~인 척하다, 가정하다, 상상하다, 가짜의, 상상의, 속이다  
+* salient: 현저한, 돌출된, 중요한  
+* efficacy: 효능
 
 
    
