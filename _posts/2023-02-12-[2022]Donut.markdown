@@ -17,7 +17,7 @@ categories: study
 {% endhighlight %}
 
 
-[Paper with my notes]()  
+[Paper with my notes](https://drive.google.com/drive/folders/1b_xFNjQea_RPgN9e3uKL2nb2ljV5Hccf)  
 
 
 [Lecture link]()  
