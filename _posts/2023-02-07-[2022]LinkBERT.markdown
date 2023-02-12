@@ -69,6 +69,7 @@ categories: study
 
 
 # 2 Related work  
+## Retrieval-augmented LMs  
 *탐색 증가 LM  
 **LM위한 검색 모듈  
 ***앵커 텍스트 주어짐(질문같은)  
@@ -79,3 +80,94 @@ categories: study
 ***P-T -> LM으로 지식 work와는 다른 방식의 docu link 사용  
 *P-T LM 연관 docu  
 **여러 연관 docu 사용  
+**same topic -> same LM context 연구 있음  
+**본 연구에선 hyperlink 집중 -> DRP  
+
+
+## Hyperllinks and citation links for NLP  
+*하이퍼링크 도움 됨  
+**관련 연구 따르면 open domain QA, 검색, 요약, 추천분야에서 성능 보임  
+**본 논문은 LM context 학습에 사용  
+
+
+## Graph-augmented LMs  
+*그래프 강화 LM  
+**그래프 보강 LM은 엔티티&엣지 관계 포착  
+**LM + KG 임베딩 동시 학습  
+**LM + GNN on KG  
+**본 논문은 docu 관계만 사용   
+
+
+# 3 Preliminaries  
+*fenc(encoder) : P-T 임베딩 생성  
+*fhead(head) : down stream task  
+
+
+## Masked language modeling (MLM)  
+*MLM  
+**15% 토큰 masking 하는데 이 중 80%는 mask, 10%는 랜덤, 10%는 그대로  
+
+
+## Next sentence prediciont (NSP)  
+*NSP  
+**(1)next segment  
+**(2) random  
+**[CLS] Xa [SEP] Xb [SEP] 이런 식으로 입력받아서 학습  
+**[cls]는 next yes or no  
+
+
+*본 논문은 MLM & NSP 기반  
+
+
+# 4 LinkBERT  
+*링크버트는 LM(MLM + DRP)  
+
+
+## 4.1 Document graph  
+*DRP : link(하이퍼링크)  
+**sim척도: TF-IDF cosine sim, top k  docu  
+
+
+## 4.2 Pretraining tasks  
+### Creating input instances  
+*LM input  
+**link된 docu들, 같은 context window에  
+**single or random docu  
+**엥커텍스트 뽑고 다음 seg 위해  
+***(1) 연속 seg 샘플 뽑음(같은 코퍼스에서)  
+***(2) 랜덤 seg(다른 코퍼스)  
+***(3) 링크 seg(하이퍼링크)  
+**두 seg로 학습 -> [CLS] XA [SEP] XB [SEP] 형태  
+
+
+### Training objectives  
+*목적함수 2개로 MLM + DRP(NSP와 유사)  
+
+
+### Graph machine learning perspective  
+*그래프 머신러닝  
+**graph self-supervised 영감 받음  
+***node 피처 예측, link 예측(graph의 내용 구조인 링크/피처)  
+**feature예측(MLM같은, segA서 sebB)  
+**DRP와 일치  
+
+
+## 4.3 Strategy to obtain linked documents  
+*link docu 얻기 전략  
+**link build(docu사이)  
+**3key 유용 링크 얻기  
+
+
+### Relevance  
+*연관성  
+**docu 사이 의미적 연관성, 버트사용, 연속/랜덤/하이퍼링크 사용  
+**또는 lexical 유사 사용  
+**랜덤보다 유용  
+
+
+### Salience  
+*특장점 가지는지  
+**링크가 new or usful 지식 제공하는지 모름, 이거 체크  
+**하이퍼링크가 잠재적 이득 than lexical sim 보다  
+**LM은 lexical sim인지에 좋음  
+**하이퍼링크 지식 배경지식에 적용  
