@@ -343,3 +343,24 @@ BLURB & MedQA-USMLE 두 task
 *결과  
 **BLURB에서 바이오버트가 압도  
 
+
+### MedQA-USMLE  
+*바이오링크버트 Base 2% 향상, Large 5% 향상, total 7% 압도, sota  
+**멀티합 필요 경우서 매우 강함  
+
+
+### MMLU-professional medicine  
+*QA서 50%정확도(340M para)  
+**GPT3같은 대형 모델 압도(175B para로 39% 정확도)  
+**unifiedQA 11B(43% 정확도)  
+**효과적 P-T LM이 압도(QA서)  
+
+
+# 7 Conclusion  
+*결론  
+**링크버트(일반, 의료) 좋은 성과 보임(버트 압도)  
+**다운스트림에서 Multihop서 강함, FS-QA 효과적  
+
+
+
+
