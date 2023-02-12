@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "[2022]OCR-free Document Understanding Transformer(Donut)"
+date:   2023-02-12 16:23:19 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+* .
+    
+{% endhighlight %}
+
+
+[Paper with my notes]()  
+
+
+[Lecture link]()  
+
+
+# 단어정리  
+* .
+
+   
+
+# 1 Introduction  
+* .
