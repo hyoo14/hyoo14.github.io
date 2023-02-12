@@ -171,3 +171,90 @@ categories: study
 **하이퍼링크가 잠재적 이득 than lexical sim 보다  
 **LM은 lexical sim인지에 좋음  
 **하이퍼링크 지식 배경지식에 적용  
+**hyperlink가 더 효과적, 그래서 사용  
+
+
+### Diversity  
+*다양성  
+**고른 분포 만듬  
+**확률 역 분포 사용  
+**데이터마이닝에서 사용  
+**LM성능 높여줌  
+
+
+# 5 Experiments  
+*일반 도메인 먼저 P-T on Wiki&hyperlink  
+**downstream으로 체크, BERT와 비교, bio domain은 다음 섹션에서 다룸  
+
+
+## 5.1 Pretraining setup  
+### Data.  
+**버트와 같은 data : wiki + Book Corpus  
+***wiki익스트랙터로 link 추출  
+***link, contiguous, random으로 training set준비, 각각 33%씩  
+**book에서 contiguous, random 각각 50%   
+
+
+### Implementation.  
+*사이즈  
+**tiny 4.4M para  
+**base 110M para  
+**large 340M para  
+**tiny 랜덤 초기화 사용, AdamW(beta1, beta2)=(0.9,0.98), l.r. warmup, 5,000스텝까지, linear decay  
+***총 10,000step학습, peak l.r:5e-3, weight decay 0.1, batch size2,048, 512toekn하루 RTX2080fp16  
+**base: peak 3e-4, 40,000스텝 학습, 4일, A100 GPU fp16  
+**large: 2e-4 peak 7일  
+
+
+### Baselines  
+*베이스라인  
+**링크버트tiny, 버트tiny 비교  
+**링크만 다룸  
+**베이스 비교  
+***P-T vanila BERT 링크버트와 같은 step  
+**라지도 비교  
+
+
+## 5.2 Evaluation tasks  
+F-T & 평가  
+
+
+### Extractive question answering(QA)  
+*QA  
+*Docu&Q input / answer output  
+**MRQA, HotpotQA, TriviaQA, NewsQA, SearchQA, SquAD 6개 평가  
+**MRQA shared task public test set 없음, 그래서 F-T 버트 따름 For Extractive QA  
+
+
+### GLUE.  
+*GLUE  
+**General Language Understanding Evaluation  
+**set-level 분류  
+**CoLA, STS-2, MRPC, QQP, STS-B, MNLI, PTE 등 test  
+
+
+## 5.3 Results  
+링크버트가 모든 곳서 성능 압도  
+
+
+## 5.4 Analysis  
+링크버트 유용함 입증(결과로써)  
+
+
+### Improved multi-hop reasoning  
+*링크버트가 큰 QA에서 성과 얻음  
+**HotpotQA, TriviaQA, SearchQA 큼  
+**SQuAD 작고 성과도 적음  
+**HotpotQA서 2-hop reasoning(한단계 타고 들어가서 추론, 성과 더 좋았음)  
+
+
+### Improved understanding of document relations  
+*다큐 관계 이해 향상  
+**MRQA는 정답 docu를 answer의 context로 사용  
+**검색서 좋은 Docu 찾는 것 중요  
+**QA는 docu 간 Relation알아야 성능 올라감  
+**이를 위해 SQuAD modify  
+***이상 큰 docu 1~2개 추가  
+**버트 성능 많이 떨어짐 2.8퍼  
+**링크버트는 0.81퍼 감소로 잘 버팀  
+**링크 중요하다는 점 알 수 있음  
