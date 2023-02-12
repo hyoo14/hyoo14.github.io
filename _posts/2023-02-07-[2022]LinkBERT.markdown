@@ -258,3 +258,88 @@ F-T & 평가
 **버트 성능 많이 떨어짐 2.8퍼  
 **링크버트는 0.81퍼 감소로 잘 버팀  
 **링크 중요하다는 점 알 수 있음  
+**DRP 통해 LM이 relation 더 잘 인지->이것이 목적(RT서)  
+***실제 성능 증가로 확인  
+
+
+### Improved few-shot QA performance  
+*링크버트 F.S서도 좋음 확인(MRQA test에서)  
+**NaturalQ 5.4% vs 1.8$  
+**15% vs 7% in error reduce  
+*링크버트가 더 지식 많이 쌓음 의미함  
+
+
+## 5.5 Ablation studies  
+*경감스터디(성능 확인 위해 spec 달리하여 test)  
+
+
+### What linked documents to feed into LMs?  
+*어떤 링크 docu가 LM으로?  
+**relevance 무시할 경우 버트처럼 성능 떨어짐  
+**lexical sim link 쓸 경우 성능 1.8%하락  
+**(논문 목적이 salient 지식 제공, lexical sim으로 불충분)  
+**(그래서 lexi sim이 BERT보단 2.2% 좋음)  
+**diversity 무시할 경우 1% 성능 저하  
+**즉, 좋은 input은 relevance/salience/diversity 모두 고려하는 것이고, 이들 모두 의미적으로 중요함  
+
+
+### Effect of the DRP objective  
+*DRP 목적함수의 효과  
+**DRP 안 사용할 경우 QA서 성능 많이 감소됨  
+**DRP가 LM에 relation 학습하게 해줌 의미  
+
+
+# 6 Biomedical LinkBERT(BioLinkBERT)  
+*바이오링크버트  
+**P-T LM bio text로 성능 올림  
+**PubMed data 사용, 서론,인용(bio paper)로 구성, 이전 WORk는 Raw text만 사용  
+**인용 많아서 link 풍부  
+**이러한 인용 사용 LM이 학습  
+**PubMed 로 학습 + 링크(인용)   
+**베이스라인으로 sota인 pubmed버트 비교(버트와 동일 구조)  
+
+
+## 6.1 Pretraining setup  
+### Data.  
+PubMed(21GB) data 사용  
+Pubmed Parser로 인용 추출, conti, rand, link 앞선 것 처럼 33%씩 추출하여 사용  
+
+
+### Implementation.  
+*바이오링크버트 베이스(110M para) as PubmedBERT parameter 개수 따름  
+**peak l.r 6e-4, batch:8,192, train:62,500steps, warm up10% steps and linear decay, 7일A100gpu fp16  
+**Pubmed버트 large없지만 바이오링크버트 Large(340M para) 구현  
+***peak l.r:4e-4, warup 20%, 21day A100gpu fp16  
+
+
+### Baselines  
+바이오링크버트와 펍메드버트 비교  
+
+
+## 6.2 Evaluation tasks  
+BLURB & MedQA-USMLE 두 task  
+
+
+### BLURB   
+*BLURB 5개 NER, PICO(population, intervention, comparison, and outcome) 추출, 문장Sim, docu분류, 2QA  
+**PubMedBERT처럼 F-T따름  
+
+
+### MedQA-USMLE  
+*사지선다QA  
+**bio&clinical 지식  
+**미국의료면허시험 Test  
+**multi-hop reasoning필요(증상, 추출(원인), 진단)  
+**Jin(2021) F-T따름  
+
+
+### MMLU-professional medicine  
+*복수정답 QA 의료 추론 사용(거대 데이터셋)  
+**MediQA-USMLE처럼 FT& test  
+
+
+## 6.3 Results  
+### BLURB.  
+*결과  
+**BLURB에서 바이오버트가 압도  
+
