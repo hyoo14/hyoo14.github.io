@@ -12,7 +12,12 @@ categories: study
 {% highlight ruby %}
 짧은 요약 :  
 
-* .
+* VisualDocuUnderstand 어렵고 복잡  
+	* 잘 읽고, 잘 이해해야 docu를  
+	* 기존 ocr에 의존적임  
+	* 단점 1) ocr높은 코스트, 2) docu type에 의존적/유연성 부족, 3)ocr error  
+	* DONUT 모델 제안 ( DOcumenNt Understandint Transforer )  
+	* SOTA 달성  
     
 {% endhighlight %}
 
@@ -24,9 +29,102 @@ categories: study
 
 
 # 단어정리  
-* .
+* holistic: 전체적인  
+* off-the-shelf: 기성품, 규격품  
+
 
    
 
 # 1 Introduction  
-* .
+* VDU  
+** 명세서,영수증,카드 등 다큐 이미지에서부터 유용한 정보 추출    
+** 중요&도전적 주제로 다큐 분류, 정보추출, VQA 포함  
+** 도넛이 메모리,시간,코스트 다 앞섬  
+** 기존: 1)읽기(이미지), 2)이해(ocr 기반)  
+** 기존은 문제 있음-ocr cost, docu 의존적, 유연성 적음, ocr 파생 에러  
+* 도넛   
+** 트랜스포머 기반 심플 모델  
+** 프리트레인: 다큐 이미지 & 텍스트  
+** 파인 튜닝 : vdu tasks  
+** sota 달성  
+** p-t from SynthDoG data  
+** Donut: 다른 언어로 확장 쉬움  
+** github에 공개  
+
+
+# 2 Method  
+## 2.1 Preliminary: background  
+* vdu 다양 방법 있음  
+* 기존 vdu  
+** ocr 의존  
+** ocr + bert  
+** image data large로 sota(P-T일 때 많은 데이터 필요)  
+** 부수적 노력 필요  
+
+
+## 2.2 Document Understanding Transformer  
+*docu 이해 트랜스포머  
+**트랜스포머 기반 비주얼 인코더->피처추출  
+**텍스트 디코더 -> 피처 매핑->단어 시퀀스  
+**ocr 사용 안 함  
+
+
+### Encoder.  
+*인코더  
+**docu->set of embeddings  
+**cnn or 트랜스포머 기반 모델들이 인코더 기능  
+**swim 트랜스포머를 본 논문에선 이용했고 성능이 제일 좋음  
+**shifted window multi head score attention + two layer MLP  
+
+
+### Decoder.  
+*디코더  
+**one-hot 벡터 생성  
+**BART 사용 -> P-T된 다언어 모델  
+*모델 인풋  
+**티처포싱 사용(학습전략)  
+***ground truth을 연속 input으로 사용(predict를 연속으로 넣는 대신)  
+**gpt3에서 영감  
+**special token for downstream  
+**output 변환은 json으로  
+***token 추가하여 구현  
+
+
+## 2.3 Pre-training  
+*task: model: read text in image -> cross entropy loss(of Next Token Predict)  
+**pseudo-ocr로 볼 수 있음  
+**visual LM over visual corpora  
+
+
+### Visual Corpora  
+*IIT-CDIP 사용, 11M 영문 docu  
+**클로바ocr : 가짜 레이블 만들어줌  
+**영문 외엔 안 되서 SynthDoG(Synthetic Docu Generation) 사용, 중/일/한/영 위키 0.5 샘플링  
+
+
+### SythDog  
+**이미지 랜더링 파이프라인 하도록 함  
+**배경: 이미지넷  
+**다큐: 선별된 사진  
+**단어/구: 위키  
+**layout: rule based & 진짜 흉내  
+
+
+## 2.4 Fine-tuning  
+**read(P-T) 이후 understand(F-T)  
+**to json(포맷은 디코더로 학습해서 맞춰줌)  
+
+
+# 3 Experiments and Analyses  
+*결과  
+**3VDU 적용, 6개 datasets(public & private 서비스 data)  
+
+
+## 3.1 Downstream Tasks and Datasets  
+### Document Classification.  
+*다큐 분류  
+**class 만 gen 되게(결과값으로)  
+**RVL-CDIP  
+***400K 이미지, 16 class, 25k(클래스당)  
+***편지,이메일 등으로 구성  
+***320k 학습, 40k 검증, 40k 테스트용  
