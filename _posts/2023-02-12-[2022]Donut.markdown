@@ -128,3 +128,186 @@ categories: study
 ***400K 이미지, 16 class, 25k(클래스당)  
 ***편지,이메일 등으로 구성  
 ***320k 학습, 40k 검증, 40k 테스트용  
+
+
+### Document Information Extraction.  
+*다큐 정보 추출  
+**IE task로 test  
+**구조화된 form에 매핑  
+**타겟 ontology 또는 DB 스키마  
+*평가척도  
+**F1 score & TreeEditDistance(TED) 정확도 사용  
+**F1은 GroundTruth와 얼마나 유사한지 측정하는데 한계가 있음  
+***1) 부분정답 체크 못 해줌 2) 구조 예측도 평가 못 함  
+**TED가 나음 - 식: max(0, 1-TED(pr, gt) / TED( empth, gt) )  
+***gt/pr/empty: groud truth/predict/empty tree  
+***IE시 유사한거 쓰임  
+**2 Public benchmark & 2 private data 사용  
+
+
+*CORD(Consolidated Receipt Dataset)  
+**public 벤치마크 0.8Ktrain/0.1Kvalid/0.1Ktest  
+**라틴영수증  
+**필드는 30개, name, 개수, 가격 포함  
+*중국 티켓 data  
+**1.5K train 중 10% valid, 0.4K test  
+**8fields: 티켓명, 역이름, 열차번호 등(필드들은 중복 없고 한번씩만 나옴)  
+*명함  
+**진행중인 데이터셋으로 일본 명함  
+**20K trian, 0.3K valid, 0.3K test  
+**필드: 이름, 회사, 주소 등 포함, 티켓과 비슷  
+*영수증: 한국 실제 데이터  
+**40K train, 1K valid, 1K test  
+**field 81개  
+**가게정보, 결제수단, 가격정보 등 이전보다 복잡  
+**비공개데이터로 네이버가 소유  
+
+
+### Document Visual Question Answering  
+*다큐 VQA  
+**Q&A pari로 학습  
+**text&visual로 context capture, 디코더는 answer  
+**대회 데이터로 50K Question, 12K document, 40K train, 5K valid, 5K test  
+**평가: ANLS(edit distance 기반)  
+
+
+
+## 3.2 Setups  
+*SwinB visual decoder 사용  
+**윈도우 사이즈10, layer number (2,2,14,2)  
+**도넛은 2M synthetic & 11M IIT-CDIP docu image 사용  
+**20K P-T step  
+**64개의 A100 GPU  
+**multi-batch size 196, Adam optimizer  
+**l.r: 1e-5 to 1e-4  
+**resolution set 2560*1290  
+**max length(decoder):1536  
+**멀티언어모델 P-T  
+**일부 F-T 960*1280 train 티켓&명함  
+**F-T edit dist 척도  
+**속도 비교는 P400GPU 사용, SOTA OCR(MS OCR, CLOVA OCR 포함) 비교  
+
+
+## 3.3 Experimental REsults  
+### Document Classification  
+*다큐 분류  
+**SOTA 찍음  
+**para 적고 속도 2배 빠름  
+**ocr base 모델 para 더 많음, 사이즈 작지 않음  
+
+
+### Document Information Extraction  
+*IE(정보추출)  
+**4가지 IE(티켓, 명함 등)  
+**BIO 태그 NER 사용하여 tag 분류에 사용  
+**VDU backbone으로 버트, BROS, LayoutLMv2 3개 사용  
+***최근 IE 모델 SPADE & WYVERN도 테스트  
+***spade는 그래프기반 box relation 예측  
+***wyvern은 트랜스포머 인코더 디코더 방식으로 엔티티 생성, ocr 결과서 사용, ocr output을 input으로 쓰는 점이 도넛과 다름  
+
+
+### Document Visual Question Answering  
+*Doc VQA  
+**1st group general VdU backbone(LayoutLMv2)  
+**러닝 타임 MS OCR API 측정  
+**3rd group PocVQA특화, F-T LayoutLMv2 모델임  
+**도넛은 필기도 잘 인식하는 등 경쟁력 있는 점수 받음  
+**도넛은 다른 접근방식으로 사이즈, 유지관리 cost가 적음  
+**도넛 강점이 테스트에서 잘 나타남  
+
+
+## 3.4 Further Studies  
+*요소별 분석  
+**핵심요소 무엇일지 실험&시각화  
+
+
+### On Pre-training Strategy.  
+*P-T 전략  
+**몇몇 VDU test  
+**도넛이 제일 심플하고 효과적  
+**다른 테스크(이미지 지식, 텍스트 모델)에 부과됨  
+**텍스트 리딩 테스크->3옵션 확인  
+**SyntheDoG only, IIT-CDIP Only, 둘 다(3옵션)  
+**SynthDoG로만 충분  
+**DocVQA에서 real 이미지 필요  
+**이미지 분포가 IIT-CDIP와 	DocVQA비슷하기 때문인 것으로 추정  
+
+
+### On Encoder Backbone.  
+*인코더 백본  
+**이미지 분류 백본  
+**과거 vision in VBU task  
+***이미지넷, Efficientnetv2  
+**Swin 트랜스포머가 성능 가장 압도  
+**높은 표현력 때문(striking scores in down stream task)  
+***그래서 택함  
+
+
+### On Input Resolution  
+*DocVQA: 이미지 클수록 성능 좋음, 택스트 크기 작을 수록 성능 안 좋음    
+**사이즈 클수록 연산 코스트 많이 듬  
+**효과적 어텐션 사용하여 문제 피함  
+**그러나 오리지날을 썼는데 왜냐하면 심플한 구성이 목적이므로  
+
+
+### On Text Localization.  
+*텍스트 로컬화  
+**시각화 <- cross attention map of decoder  
+***unseen docu 이미지 보여줌  
+**의미있는 결과 볼 수 있음  
+**위치 올바른 곳저 작동  
+
+
+### On OCR System.  
+*ocr 시스템  
+**test: 4개 유형 Ocr  
+**appendix a1 참고  
+
+
+### On Low Resourced Situation.  
+*리소스 적을 때 transit size limit to CORD  
+**도넛 shows robustness  
+**outperform LayoutLMv2  
+
+
+# 4 Related Work  
+## 4.1 Optical Character Recognition  
+*연관 ocr  
+**딥러닝  
+**1) text area detect  
+**2) recognize character  
+**both need large 스케일, 합성/실제 이미지들 필요  
+**1) cnn -> box-regression -> text local 성과 동형성 주목  
+**2) cnn encode: img->feature space / decoder: extract character  
+
+
+## 4.2 Visual Document Understandin  
+*VDU: 분류  
+**단순 이미지 분류: cnn  
+**최근 버트 : cv+ nlp  
+**ocr 추출은 텍스트 의존적  
+*docu IE  
+**real applications  
+**인력-> 숫자화  
+**ocr use 최근  
+**복잡  
+*VQA  
+**docu image 보고 answer  
+**ocr + bert  
+**답없는 질의에 대한 염려  
+***질의에 답 생성 제안  
+
+
+# 5 Conclusions  
+*도넛 제안  
+**end to end VDU  
+**ocr 사용 X  
+**easy train  
+**docu 이미지 생성기도 제안  
+***large scale 문제 경감  
+**벤치마크 public, private 모두 좋은 성능, cost도 저 적게 들어서 효율적  
+
+
+
+
+
