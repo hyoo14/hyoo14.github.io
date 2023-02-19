@@ -17,10 +17,10 @@ categories: study
 {% endhighlight %}
 
 
-[Paper with my notes]()  
+[Paper with my notes](https://drive.google.com/drive/folders/1E9wjgl5kX5Q8HRfq6jPRtiDq755cNOFC?usp=sharing)  
 
 
-[Lecture link]()  
+[Lecture link](https://aclanthology.org/2022.naacl-main.163.mp4)  
 
 
 # 단어정리  
