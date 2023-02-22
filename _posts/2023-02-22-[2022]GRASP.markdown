@@ -20,7 +20,7 @@ categories: study
 [Paper with my notes](https://drive.google.com/drive/folders/1SwbJMA7h1nZzc4I-hf9_Ij0bYIEQO5UB?usp=sharing)  
 
 
-[Lecture link]()  
+[~~Lecture link~~]()  
 
 
 # 단어정리  
