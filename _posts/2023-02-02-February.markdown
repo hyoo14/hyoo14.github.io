@@ -61,6 +61,14 @@ Thursday, February 23, 2023
 o  
 
 
+Friday, February 24, 2023       
+*eng speaking-int  
+*pythonic things-django    
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
+
 
 
 {% highlight ruby %}
