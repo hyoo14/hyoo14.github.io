@@ -45,3 +45,25 @@ categories: study
 ** 이전 sota는 f-t 사용, 로버타 사용  
 ** PLM 효과적 사용 제약, 이유는 레이어 추가했기 때문  
 ** PLM 잘 쓰기 위해 프롬프트 파인튜닝 사용  
+** 이를 통해 p-t와 f-t 사이 gap 매꿈  
+** 프롬프트 기반 파인튜닝은 mlm문제 text gen으로 해결  
+*** 레이블(mask) 예측  
+* 프롬프트 베이스는 파인튜닝에 비해 불충분  
+** 사람 + 조동사 많음(대화)  
+** 릴레이션 이해가 필요  
+
+
+* prompt 이용 의미관계 가이드 모델 제안(GRASP)  
+** argu aware prompt marking(APM) 전략 + 관계 증거 감지 task(RCD) 제안  
+** APM 전략: 모델이 흩어진 argu들 잘 고려  
+** RCD는 특정 clue 잘 감지하게 트레인  
+*** 발화가 주어, 목적어, 트리거인지 탐지  
+*** 즉, 여기서 PLM은 RCD+MLM 같이 학습  
+*** 대화 RE서 SOTA 달성  
+*** PLM만 사용  
+*** full shot , few shot 잘 예측   
+* 공헌  
+** prompt 기반 파인튜닝이 PLM 성능 극대화   
+** APM, RCD 소개 및 적용, 의미정보 등 추론  
+** SOTA 찍음  
+** 경감스터디로 요인들 분석  
