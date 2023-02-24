@@ -12,7 +12,15 @@ categories: study
 {% highlight ruby %}
 짧은 요약 :  
 
-*
+* DialogRE(Relation Extraction) task
+* 기존: PLM+F-T
+	* extra layer
+	* consider scatter semantic cues
+* 대안으로 grasp(Guiding Model RelAtional Semantics using Prompt) 제안  
+* 프롬프트 기반 파인튜닝 & relational semantics clues capture  
+1) 아규먼트인지 프롬프트로 마킹하는 전략
+2) 관계 증거 인식 작업  
+* 레이어추가 없이 F1, F1c score SOTA  
     
 {% endhighlight %}
 
@@ -31,4 +39,9 @@ categories: study
    
 
 # 1 Introduction  
-*.  
+* RE goal: 의미관계 추출  
+	* KB에서 중요  
+	* 대화서 중요 but 어렵, 왜냐하면 관계가 너무 많아서    
+** 이전 sota는 f-t 사용, 로버타 사용  
+** PLM 효과적 사용 제약, 이유는 레이어 추가했기 때문  
+** PLM 잘 쓰기 위해 프롬프트 파인튜닝 사용  
