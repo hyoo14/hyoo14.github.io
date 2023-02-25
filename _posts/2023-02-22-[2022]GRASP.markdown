@@ -67,3 +67,183 @@ categories: study
 ** APM, RCD 소개 및 적용, 의미정보 등 추론  
 ** SOTA 찍음  
 ** 경감스터디로 요인들 분석  
+*종합  
+** section 3에서 전체 과정 보일 것임  
+** section 4에서 실험 셋업 설명  
+** section 5에서 분석 제공  
+
+
+# 2 Related Works  
+### Prompt-based learning  
+*prompt 기반 학습  
+**p-t와 f-t 사이 objective gap 줄임  
+***ex)버트는 mlm(p-t)  
+***다운스트림은 다른 objective(f-t)  
+**prompt 기반에서 성능 f-t보다 나음  
+
+
+### DialogRE  
+*관련 최근 연구  
+**f-t plm  
+***gap 생김(f-t, p-t 목적함수 사이)  
+*gap 극복 위해  
+**여러 마스크 토큰 활용  
+***관계를 prompt에 넣는 것과 비슷  
+*prompt 기반 미흡한 점  
+**정보 밀도 떨어짐  
+**내부 관계 정보 알기 어려움  
+*그래서 이걸 반영한 light 모델 만듬  
+
+
+# 3 Methodology  
+*GRASP  
+**input with prompt template(APM으로 만든)  
+**plm이 이걸로 f-t(prompt base)  
+**그리고 vacab의 확률 체크  
+**RCD가 관계 clue type예측->mask로 사용(mlm서)  
+
+
+## 3.1 Problem Formulation  
+*exmaple X, dialouge: D, speakers: S, Subject: a1, object: a2  
+*DialogRE 목적: a1과 a2 사이 관계 y 예측  
+*T(.) 템플릿 펑션 Xprompt = T(x)  
+**[mask]는 Xinput에 insert  
+*T(.)로 템플릿 만듬, D->D'(프롬프트 마커 사용)  
+*RCD로 T(.)로 만듬 MT로 MLM  
+
+
+## 3.2 Argument-aware Prompt Marker  
+*Argue인지 prompt marker  
+**화자/비화자 argu 모두 고려  
+**이전 study는 화자만 고려  
+**하지만 비화자 포함 관계가 77.4% 였음  
+*Soares & Han 에 영향 받음  
+**엔티티 마커의 중요성(엔티티 위치 인식할 때)  
+**이것이 성능 많이 올려줌  
+**APM이 정보 sign(relation) 줌 (모델에)  
+**이 feature([p]) 임베딩은 vocab 모델서 초기화  
+**space token으로 시작점 드러냄  
+**본 prompt model가 주요부분 분간 능력 강화  
+**이걸로 token 대체법인 BERTs 강화  
+**버트가 overfit 방지 & 일반화시켜줌  
+**비화자는 고려x  
+**APM이 고려하게 해줌( [p]로 )  
+
+
+## 3.3 Prompt Construction  
+**템플릿으로 update  
+**이전 분포(argu type) 사용으로 초기화  
+**빈도통계로 argu type 분포 계산  
+**e(.):은 plm의 임베딩  
+**~e(.)은 이니셜라이즈된 임베딩  
+**결과적으로 T(.) 공식화  
+**X' -> X' prompt(argu강화 input)  
+**APM 사용하여 초기화  
+**rel 예측 위해 MLM 적용 연구  
+***Vrel은 labelword집합으로 정의  
+***초기화 때 meta data 사용  
+****의미 추출위해  
+
+
+## 3.4 Relational Clue Detection task  
+*관계 근거 탐지 task  
+**RCD task 사용  
+**Vred=? 주어,목적어,trigger,outside로 정의  
+**위 방식으로 레이블 seq 구성  
+*RCD task가 MLM head 사용 ->[mask] 예측  
+*[mask] 제외시 Vrcd 태그됨(meta-data 기반)  
+**즉, RCD가 non-[mask] 식별: clue type 맞게  
+
+
+## 3.5 Model Training  
+*rel 예측 전, trigger위치 mask [p] token으로  
+**RCD 결과 기반 APM 사용  
+*즉, [p]가 추가됨 (포맷에)  
+
+
+### Multitask Learning  
+*MTL  
+**M rel : y->Vrel 매핑 펑션  
+**f0 fill [mask] 후 마스크 예측  
+p[y|x]=p[mask]=Mrel(y_|X'prompt)   
+*위 줄이는 것이 학습 목적  
+**성능 향상 위해 MLM task의 rel prediction과 rel preciton of RCD을 MTL로 트레이닝  
+**이것이 GRASP(제안)으로 앞서 (6), (7) 식 합쳐서 씀  
+***joint loss minimize도 학습  
+
+
+# 4 Experiments  
+## 4.1 Experimental Setup  
+*베이스 plm  
+**로버타베이스->GRASP 베이스  
+**로버타라지 -> GRASP large  
+*F1/F1c -> 메트릭  
+*F1c는 F1에 대화 관련 보강(argu 고려 계산)  
+**풀샷세팅서 F-T, prompt F-T, 둘 다 테스트  
+**관련 비교군들 다 넣고  
+**8/16/32 shot 실험  
+
+
+## 4.2 Experimental Results  
+### Full-shot setting  
+*결과  
+**Grasp large sota  
+**TUCORE-GCN coln이 prompt 기반보다 더 좋았음  
+*GRASP large + 더 효과적(대화 세팅서)  
+**GRASO base의 낮은 성능은 모델 사이즈 때문  
+
+
+### Few-shot setting  
+*FS 세팅  
+**GRASP base가 성능 압도(baseline들)  
+**GRASP large 매우 좋은 성능  
+***8shot 중 약함 -> 정보 부족 때문   
+**F-T기반 5.7% 안 좋음, prompt f-t보다??  
+***의미파악 잘 못함  
+
+
+### Ablation Study  
+*경감 스터디  
+**f1 / f1c 세팅서  
+*APM없는 경우  F1 0.8p 감소 / F1c 0.4 산소  (dev)  
+*test에서는 f1 2.1%감소, f2 1.5% 감소      
+**non-speaker 도 중요  
+*KCD 제외 1.1% / 0.5% 하락 in dev  
+**test에서는 1.3% / 0.7% 감소  
+**KCD가 rel clue focus 잘 함을 뜻 함  
+*수동 초기화 없는 경우: 2.2% 감소 / 1.4% 감소 in dev  
+**test서 3.1% 감소 / 1.4% 감소  
+**prompt가 초기 중요 시스템   
+
+
+# 5 Analysis  
+## 5.1 Analysis on market type for APM    
+**APM 마커 프론트 성능 굿  
+**APM주변의 3.1% 성능 감소 => APM front 대비  
+
+
+## 5.2 Qualitative Analysis on GRASP  
+**real clue test(trigger의 공헌점)  
+**F-T 로버타 sym rel  얻는 것 노력 (trigger포함하여)  
+***got married 같은 cloud 놓침  
+*GRASP는 RCP&APM train in prompt + base  
+**GRASp영국 arried같은 clue는 놓침  
+**GRASP는 RCP&APM train in prommpt-base여서 rel clue 캐치   
+
+
+## 5.3 Analysis on the applicability of GRASP  
+*APM & RCD 강건성 test  
+**GRASP에 MELD, EmoryNLP, test 위한 감정인식 제껴두고 만남   
+
+**베이스라인 로버타 cosmic, tucore-GCN, C.R용돈 멘탈, 이벤트, cr, 용돈, 행동, 관계 for emotion recognition  
+**GRASP이 성능 압도  
+
+
+# 6 Conclusion  
+*결론  
+**GRASP 제안, plm guide to semantic rel by prompt-based(for 대화RE)  
+**적은 정보가 있는 대화에서 효과적으로 rel clue 캐치  
+**APM으로 화자/비화자 모두 고려   
+**RCD 어떤 token이 rel clue인지 결정  
+**SOTA 찍음  
+
