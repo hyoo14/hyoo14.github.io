@@ -70,11 +70,18 @@ o
 
 
 Saturday, February 25, 2023       
-*eng speaking-int  
 *pythonic things-django    
 *eng reading-papers   
 *eng listening-lectures      
 o  
+*eng speaking-int  
+
+
+Sunday, February 26, 2023       
+*eng reading-papers   
+*eng listening-lectures      
+o  
+
 
 
 
