@@ -149,14 +149,29 @@ categories: study
 
 
 
-# [2022]
+# [2022]Fast Adaptive Similarity Search through Variance-Aware Quantization  
 
 
 {% highlight ruby %}
 짧은 요약 :  
 
-
-
+* 연구동기: 고차원데이터 증가와 여기에 대한 양자화기법 이용(양자화: 연속데이터->디지털(이진)데이터)  
+** 빠른 쿼리 반응  
+** 인코딩 연산 & 스토리지 코스트 적음  
+** 기존 양자화 컨셉: data 차원 안겹치는 subspace로 분해, subspace 마다 dictionary 확장(사이즈 동일하게, 그리고 밸런싱)    
+** 하지만 이러한 기존 방법은 벨런싱이 항상 가능하지는 않다는 단점이 있고 때문에 성능도 떨어질 수 있음  
+* Variance-Aware Quantization 제안  
+** 내부 차원 감소 사용(subspace 다룸)  
+** 부분적으로만 밸런싱  
+** dictionary size 중요도에 따라 비례적으로 할당하여 최적화 문제 해결  
+* 평가  
+** 양자화, 해싱, 인덱싱 기법을 5개의 거대한 벤치마크로 평가  
+* 결과  
+** 제안 모델이 hash와 양자와에 비해 성능서 압도했고 속도는 5배 빨랐음  
+** 하드웨어 가속 기법 보다 성능은 조금 떨어졌지만 속도는 14배 빠름  
+** 비용은 반으로 줄어듦  
+** VAQ 간단데이터 스킵솔루션은 인덱싱에 비해 경쟁력과 나은 성능을 보임  
+** 새로운 인덱싱 기법으로의 전환 기대  
 
 
 
@@ -170,19 +185,26 @@ categories: study
 
 
 # 단어정리  
-* .
+* quantization: 양자화  
+* proportionally: 비례적으로  
+* oblivious: 잊기 쉬운  
+* evaluation against: ~에 대한 평가   
 
 
 
 
-# [2022]
+# [2022]VergeDB: A Database for IoT Analytics on Edge Devices
 
 
 {% highlight ruby %}
 짧은 요약 :  
 
 
-
+* IoT 번영-대용량의 시계열 수집, 저장, 분석 시스템 필요  
+* VergeDB 제안  
+** 유연, task기반 압축, 복잡 분석 task, ml가능  
+** 가벼운 스토리지 엔진  
+*** 연산리소스, 수용량, 네트워크 최적화 통해 처리량, 압축, task처리 정확도 극대화  
 
 
 
@@ -196,7 +218,20 @@ categories: study
 
 
 # 단어정리  
-* .
+* verge: 가장자리, 분산    
+* throughput: 처리량  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
