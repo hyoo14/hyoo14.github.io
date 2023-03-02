@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "March"
+date:   2023-03-02 10:15:30 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+March week1:  
+*eng speaking-int    
+*ai/nlp study     
+*eng reading-papers   
+*eng listening-lectures      
+
+##*codes  
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+Wednesday, March 01, 2023       
+*eng listening-lectures      
+o  
+
+
+Thursday, March 02, 2023       
+o  
+
+
+
+
