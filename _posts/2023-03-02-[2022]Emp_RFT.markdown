@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "[2022]Emp-RFT: Empathetic Response generation via Recognizing Feature Transitions between Utterances"
+date:   2023-03-03 15:16:22 +0900
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+* .
+    
+{% endhighlight %}
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1iPIQC3Pv3Tz0P-W0LnJpmDwclygYp1uh?usp=sharing)  
+
+
+[Lecture link](https://aclanthology.org/2022.naacl-main.303.mp4)  
+
+
+# 단어정리  
+* .
+
+   
+
+# 1 Introduction  
+* .
