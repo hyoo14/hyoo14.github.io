@@ -12,7 +12,11 @@ categories: study
 {% highlight ruby %}
 짧은 요약 :  
 
-* .
+*멀티턴 감정 대회서 각 발화는 감정, 키워드, 발화 의미 같음  
+**발화 사이서 감정 키워드, 의미 전이 일어남  
+**이 변화 캐치 어려움(기존 방법들)  
+*새 접근법 제안 & 답변 생성 제시(감정, 키워드 초점)  
+**성능 압도적  
     
 {% endhighlight %}
 
@@ -24,9 +28,212 @@ categories: study
 
 
 # 단어정리  
-* .
+*interlocutor: 대담자, 대화자, 대화상대  
+*lexicon: 어휘, 어휘 목록, 사전  
+*verdict: 판단, 결정  
 
    
 
 # 1 Introduction  
-* .
+**인간의 공간은 상황(경험), 이해(감정) 가능케 함  
+**공감 반응 생성 task 중요  
+**Empatheic Dialogues는 32 감정 레이블, 관련 상황, 응답자 감정 관련 감정으로 구성  
+**그간 접근법은 긴대화에 한계(작은 것에 초점 맞추기 때문)  
+**작은 level에서 보면 각각 감정, 키워드 있음  
+**발화 특성 이전과 달라짐(자연스럽게)  
+**이 변화 인간은 캐치(flow 이해를 바탕으로)  
+**키워드, 감성어와 변화 관련됨  
+*Emp-RFT(Empathetic Response generation via Recognizing Feature) 제안  
+**피처 transit 인지 + 반응 생성  
+**피처 transit: comparison function이용, 대화흐름, feature 캐치 가능케  
+**반응 생성: 적합 피처서 감정, 키워즈 집중  
+***생성 위한 다음 감정, 키워드 탐지  
+**plug&play LM 영감받음  
+***이 접근 방법 사용함  
+***contrastive loss 사용, 키워드로 다음 키워드 생성하는 모델  
+**test시 baseline 압도  
+**공헌  
+***피처 변호나 탐지 신 모델 제안  
+***반응생성 전략 제안  
+***베이스라인 압도  
+
+
+# 2 Related Work  
+**Lin: 감정 전문가 믹스  
+**Majumder: 감정 그룹핑, 감정 따라하기, 샘플링  
+**Li: 감정어 추출(lexicon에서) gen 모델 제안  
+**Shen: dual 러닝 사용  
+**Gao: 감정, 반응 생성 합침, gate 사용  
+**Sabour&Li: 상식 context 사용  
+**Kim: 화자 감정 야기 단어 추출 학습 & RSA framework 합침  
+**최근 연구 향상 굿, 피처 변화 인지 관련된 것 연구 됨  
+**Qiu: 감정 상태 인지 모델  
+**Zou: 키워드 변화  
+**Zhan: 외부 지식 변화, 지식 선택 for 새엇ㅇ  
+**Gu: 멀티턴서 감정, 키워드, 발화 의미 고려  
+
+
+# 3 Task Formulation  
+*용어  
+**con(context), u(utterance), e(emotion), k(keywords)  
+
+
+# 4 Data Preparation  
+*화자, 청자 발화 레이블 소개  
+
+
+## 4.1 Feature Annotation in Speaker Utterances  
+### Emotion and Keywords of Speaker Utterance(EofSU/KofSU).  
+*화자 피처 레이블링 감정, 키워드, 의도  
+**감정과 감정유발단어 탐지 목적  
+**top 6개 감정 유발어 extract & stopwords 등 제외  
+
+
+## 4.2 Feature Annotation in Listener Utterances  
+### Emotion of Listener Utterance(EofLU).  
+*청자 발화 레이블링  
+**감정(청자)  
+***로버타 파인튜닝    
+
+
+### Keywords of Listener Utterance (KofLU).  
+**키워드(청자)  
+***3커뮤니케이션 메커니즘으로 청자가 공감 표함  
+***감정 반응, 해석, 설명  
+***이 3개 사용  
+***각각 3개 유발 단어 탐지  
+**멘탈 dataset 사용  
+
+
+### Keyword Pairs Construction.  
+*키워드쌍 구축  
+**KPS 키페어 구축  
+**필터와 예측 위해  
+**단어 쌍 헤드&테일 로 이룸  
+**청자, 화자 둘 다  
+**pointwise mutual information으로 filter됨  
+***단어와 corpus 구성 측정  
+*tail 단어는 키워드로 여겨짐  
+**test set KofLU는 E-D(감정-대화) 기반이지만 존재하진 않음   
+**랜덤 샘플함  
+***E-D & 사람에게 레이블 시킴  
+**voting으로 레이블 결정  
+**Fleiss kappa로 계산  
+**0.55  
+
+<br/>  
+
+# 5 The Emp-RFT Model  
+*Emp-RFT 구조 소개 디테일  
+
+
+## 5.1 Context Encoding  
+### Word-Level Encoder.  
+*Context 인코딩  
+**단어 수준 인코더  
+***BART의 six layer 인코더 가짐(백본으로)  
+**버트서 영감, 발화 앞에 [SE] 토큰 가짐  
+**4개의 sum: 단어임베딩, 포지션임베딩, 롤임베딩, 감정 임베딩  
+**히든스테이트로 매핑  
+**발화 의미 [SEN] token서 뽑음  
+
+
+### Feature Transition Recognizer  
+*피처 변환 인식기  
+**두 비교 함수 활용  
+**빼고 곱함  
+**feature가 비교됨  
+**Hadamar product 사용  
+**강화된 발화 벡터 얻음  
+***발화의미+감정+전이정보 concat해서  
+**FC key는 FCL로 사이즈가 d임  
+**Emp-RFT가 이걸로 더 잘 캐치  
+
+
+### Utterance-Level Encoder.  
+*발화인코더  
+**g pi 인코더는 바트의 six-layer 인코더  
+**global position 임베딩으로 강화 발화를 변환 to context 대조, 발화관계 봄  
+**Emp-RFT는 계층 구조 인코더로 구성  
+**이를 통해 잘 이해  
+
+
+### Fusing Context with Keywords.  
+*키워드+context 합치기  
+**키워드 그래프 만듬  
+**edge는 두 키워드 사이  
+(1) 같은 발화  
+(2) 직전 두 발화  
+**tail단어 노드로 이어짐  
+**바트 디코더로 초기화 GPE로 frozen  
+**node 사이 relation 뿐만 아니라 영향을 캐치  
+
+
+### Next Emotion and Keywrods Detection.  
+*다음 감정/키워드 탐지  
+**max pooled fused context representation 기반 탐지  
+**Pe = softmax(Me MP(H))  
+**AN = Appended Node..  
+
+
+## 5.2 Response Generation   
+### Response Generator.  
+*응답생성  
+**바트 six layer decoder 백본  
+**input seq embedding(바트)  
+**예측 분포 사용 based on fused context representation  
+
+
+### Training  
+*학습  
+**C.E loss to three objects  
+
+
+### Contrastive PPLM.  
+*대조 PPLM 제안  
+**^Ky의 active reflection 필요해서 제안  
+**contrastive loss 사용 분류자  
+**기존은 예측자, 문장 구성 성분에 C.E loss 사용  
+**이 후, gradient loss 패스해서 생성모델로 문장 만듬  
+**키워드가 att가 아닌 obj여서 ED(감정대화) 반응 예측은 keyword set 반응과 더 비슷(긍정샘플링)  
+
+
+# 6 Experiments  
+*실험  
+## 6.1 Dataset and Baselines  
+### Dataset.  
+*데이터셋  
+**감정 대화서 실험, 24,850 멀티턴 대화  
+**turn 별로 추론  
+***47,611 인스턴스, 22,761 멀티턴  
+***1턴: 32 균등 감정 레이블 & 관련 상황 & 청자 감정(반응)  
+****8:1:1 train/valid/test 비율  
+*베이스라인  
+(1)MoEL: 트랜스포머 기반 생성모델  
+**감정 & 아웃풋 디코드 감정분포 기반  
+(2)EmpDG: 감정어 사용&적대적 프레임웍 생성/판별 모형  
+(3)MIME: 트랜스포머 생성모델 사용자 감정 따라함, 감정 그루핑 기반, 확률 샘플 사용  
+(4)MIME+Focused S1 & (5)Blender+Focused S1:  
+**RSA 프레임웍 붙임 MIME과 Blender에  
+***P-T 90M 파라미터, 대화 데이터 많음  
+***F-T in 감정대화, 베이시안룰 사용, RSA 프레임웍 사용  
+****모델이 특정 파트에 집중  
+****'감정 야기어' 참조  
+
+
+## 6.2 Evaluation Metrics  
+### Automatic Evaluation.  
+*평가 메트릭 3개  
+(1)PPL: model 전체 퀄리티 체크, token 유사하게 생성  
+(2)Distinct-n: 생성 응답이 얼마나 diverse한지 유니크 단어 n-gram 통해 측정  
+(3)BERT SCORE: 토큰 단위 의미 유사도 생성 응답과 황금답 사이(버트기반) 측정  
+
+
+## Human Ratings.  
+*인간 평가  
+**정량 평가 부족  
+**100test대화 샘플 3인의 스코어링 1to5  
+(1)공감  
+(2)연관  
+(3)유창  
+3개 평가   
