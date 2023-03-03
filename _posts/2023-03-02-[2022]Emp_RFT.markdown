@@ -229,7 +229,7 @@ categories: study
 (3)BERT SCORE: 토큰 단위 의미 유사도 생성 응답과 황금답 사이(버트기반) 측정  
 
 
-## Human Ratings.  
+### Human Ratings.  
 *인간 평가  
 **정량 평가 부족  
 **100test대화 샘플 3인의 스코어링 1to5  
@@ -237,3 +237,70 @@ categories: study
 (2)연관  
 (3)유창  
 3개 평가   
+
+
+### Human A/B Test.  
+*인간 A/B test  
+**3인 나은 반응 고름 ( 두 반응 중에서)  
+
+
+## 6.3 Analysis of Response Generation  
+*피처 변화 인지, contrastive PPLM, 다음 감정/키워드/인지, FTR,CP,NEKD,FCK 키워드 퓨징 사용  
+**자동 평가 결과  
+***PPL 빼고 전부 Emp-RFT가 압도  
+***PPL은 블렌더+Focused S1과 거의 같음  
+***압도이유: 높은 질의 non-generic 반응 생성, gold response와 의미가 유사  
+**P-T 응용이 성능 좋았음, E.D만 사용하는 것 보다  
+**무튼 Emp-RFT가 성능 더 좋음  
+**FTR활용 덕에 Emp-RFT는 멀티ㅓㄴ에도 좋은 결과 얻음  
+**반면 딴 모델 R 거친 context 읽음  
+
+
+### Human Evaluation Results.  
+*인간 평가 결과  
+**Emp-RFT가 가장 좋은 성과  
+***공감적 컨텍스트 맞는 non-generic 한 응답 생성  
+**P-T 사용은 성당한 향상 보임  
+***유창성과 다양성 점수서  
+**더 선호&더 일반적 평가 받음  
+
+
+### Ablation Study.  
+*경감 스터디  
+(1)FTR(Fused Text Representation) 유/무  
+**Emp-RFT가 어텐션 없어서 FTR 있는 것이 좋음, PPL서 특히  
+(2)CP(ContrastivePPLM) 유/무 
+**없을 경우 Dist-n & diversity 떨어짐  
+**^Ky를 활용 못하게 됨(CP 통한)  
+(3)CP + NEKD(Next Emotion Keyword Detection) 유/무  
+**다음 감정/키워드 감지 기능하므로 있어야 함  
+(4)CP + NPKD + FCK(Fusing Context representation with Keywords)  
+**context repre 키워드 합친 경우 제외시 키워드가 강조만 되고 정보 적어지므로 성능이 떨어짐  
+***버트 스코어, dist-n, diversity에서  
+
+
+## 6.4 Analysis of Next Emotion and Keywords  
+*다음 감정/키워드 분석  
+**NEKD 결과 Emp-RFT가 압도  
+**감정&키워드 잘 생성 의미  
+
+
+## 6.5 Case Study  
+*케이스 스터디  
+**Emp-RFT 전부 이해 happy->sadness  
+**FTR 없을 시 감정, 일관 상실  
+**CP, NEKD 없을 시 FCK generic만 생성  
+**CP: diverse  
+**FCK: emotion  
+**NEKD: 적절 답  
+
+
+# 7 Conclusion  
+*신 접근 제시  
+**feature 변이 캐치  
+**대화 흐름, 발화 피처 캐치  
+**감정/키워드 피처 집중  
+**답변생성 전략 제안  
+***context keyword 합친걸로 + 다음 감정/키워드 탐지 + ContrastivePPLM  
+**실험결과 멀티턴서 좋은 결과 얻음  
+***효과적, 공감적, 일관적 non-generic함  
