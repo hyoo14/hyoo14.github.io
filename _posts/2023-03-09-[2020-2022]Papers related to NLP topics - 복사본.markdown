@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2022-2023]Papers related to NLP topics"
+title:  "[2020-2022]Papers related to NLP topics"
 date:   2023-03-09 01:55:23 +0900
 categories: study
 ---
