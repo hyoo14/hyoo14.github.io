@@ -230,14 +230,15 @@ categories: study
 <br/>
 
 
-# [20]      
+# [2022]An expert-in-the-loop method for domain-specific document categorization based on small training data      
 
 
 
 {% highlight ruby %}
 짧은 요약 :  
 
-*
+*도메인 지식이 도메인=특징 문서 분류에 긍정 영향 줌  
+*일반론 적용 어려움 있을 경우에 특히 도움  
 
 
 {% endhighlight %}
@@ -256,14 +257,51 @@ categories: study
 <br/>
 
 
-# [20]      
+# [2020]An Empirical Methodology for Detecting and Prioritizing Needs during Crisis Events        
 
 
 
 {% highlight ruby %}
 짧은 요약 :  
 
-*
+*위기 때 필요한 것 감지  
+**소셜 미디어 감지   
+**감지 때 어려움 있음  
+***sparsity, noise -> 인식 어려움  
+*새 기법 사용  
+(1)필요 리소스 뽑기(mask, ventilator)  
+**0.64 precision  
+(2)문장 탐지: 누가 뭘 필요로 하는지(covid19 case)  
+**1000 태깅 트위터서 0.68 F1score 성능 보임  
+
+
+
+{% endhighlight %}
+
+
+[~Paper with my notes~]()  
+
+
+[~~Lecture link~~]()  
+
+
+# 단어정리  
+* ventilator:산소 호흡기, 환풍기    
+
+
+<br/>
+
+
+# [2021]Detecting Extraneous Content in Podcasts        
+
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+*팟캐스트 에피소드들에 외적 요인 포함(광고 등...)  
+**탐지(설명과 대본서)  
+*이 task 통해 요약 향상, ROUGE점수 향상, 요약서 외부 요인 제거  
 
 
 {% endhighlight %}
@@ -282,40 +320,18 @@ categories: study
 <br/>
 
 
-# [20]      
+# [2021]Incorporating the Measurement of Moral Foundations Theory into Analyzing Stances on Controversial Topics        
 
 
 
 {% highlight ruby %}
 짧은 요약 :  
 
-*
-
-
-{% endhighlight %}
-
-
-[~Paper with my notes~]()  
-
-
-[~~Lecture link~~]()  
-
-
-# 단어정리  
-* .  
-
-
-<br/>
-
-
-# [20]      
-
-
-
-{% highlight ruby %}
-짧은 요약 :  
-
-*
+*도덕적 기반과 이슈 의견 중 스텐스와 관련성 연관관계  
+**Moral Foundation Theory 이용(Dictionary)  
+**여러 토픽별 스텐스 분석  
+**토픽별 moral & lexical profile 다름  
+**스텐스 study 때 morality 고려  
 
 
 {% endhighlight %}
