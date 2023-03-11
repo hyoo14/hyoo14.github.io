@@ -7,6 +7,10 @@ categories: study
 
 
 
+[Paper with my notes](https://drive.google.com/drive/folders/1--eHt7Hc7Y86kIvo4Ps2G0KxRjWNgmAC?usp=sharing)  
+
+<br/>
+
 
 # [2021]Explainable Case-Based Reasoning: A Survey  
 * 설명 가능한 케이스 기반 reasoning(추론): 설문  
