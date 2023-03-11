@@ -5,7 +5,8 @@ date:   2023-02-22 20:14:33 +0900
 categories: study
 ---
 
-
+[Paper with my notes](https://drive.google.com/drive/folders/1NM6rlsoX3YLvY_fi0bihqvIGHyEsOZCg?usp=sharing)  
+<br/>
 
 
 # [2022]Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection  
