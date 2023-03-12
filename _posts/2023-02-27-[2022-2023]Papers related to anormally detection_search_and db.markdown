@@ -34,7 +34,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -67,7 +67,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()    
 
 
 [~~Lecture link~~]()  
@@ -103,7 +103,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -137,7 +137,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()     
 
 
 [~~Lecture link~~]()  
@@ -179,8 +179,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
-
+[~~Paper with my notes~~]()     
 
 [~~Lecture link~~]()  
 
@@ -212,7 +211,8 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()     
+
 
 
 [~~Lecture link~~]()  
