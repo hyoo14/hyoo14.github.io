@@ -12,6 +12,62 @@ categories: study
 <br/>
 
 
+# [2021]Knowledge-based XAI through CBR  
+
+
+{% highlight ruby %}
+짧은 요약 :  
+
+*KB x AI  
+**데이터 중심 에이전트  
+***diverse x data  
+*도메인지식 중요  
+**분류 성능 증대  
+
+{% endhighlight %}
+
+
+[~~Paper with my notes~~]()  
+
+
+[~~Lecture link~~]()  
+
+
+# 단어정리  
+* .  
+
+
+# [2021]Explainable artificial intelligence and social science  Further insights for qualitative
+* XAI&사회과학: 질적탐구 인사이트   
+
+{% highlight ruby %}
+짧은 요약 :  
+
+
+*질적분석수반 XAI 연구 리뷰  
+a)이론&프레임워크  
+b)방법론  
+c)데이터 수집법  
+d)분석과정(데이터)  
+  
+
+{% endhighlight %}
+
+
+[~~Paper with my notes~~]()  
+
+
+[~~Lecture link~~]()  
+
+
+# 단어정리  
+* .  
+
+
+
+<br/>
+
+
 # [2021]Explainable Case-Based Reasoning: A Survey  
 * 설명 가능한 케이스 기반 reasoning(추론): 설문  
 
@@ -32,7 +88,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -62,7 +118,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -90,7 +146,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -125,7 +181,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -157,7 +213,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -187,7 +243,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -221,7 +277,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -248,7 +304,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -283,7 +339,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -311,7 +367,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()  
 
 
 [~~Lecture link~~]()  
@@ -341,7 +397,7 @@ categories: study
 {% endhighlight %}
 
 
-[~Paper with my notes~]()  
+[~~Paper with my notes~~]()   
 
 
 [~~Lecture link~~]()  
