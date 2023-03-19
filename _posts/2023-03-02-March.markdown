@@ -50,7 +50,7 @@ o
 <br/>
 
 
-Wednesday, March 14, 2023       
+Wednesday, March 15, 2023       
 *eng listening-lectures     
 *eng reading-papers   
 *eng speaking-int    
@@ -60,7 +60,7 @@ o
 <br/>
 
 
-Thursday, March 14, 2023       
+Thursday, March 16, 2023       
 *eng listening-lectures     
 *eng reading-papers   
 *eng speaking-int    
@@ -70,10 +70,27 @@ o
 <br/>
 
 
-Thursday, March 14, 2023       
+Friday, March 17, 2023       
 *eng listening-lectures     
 *eng reading-papers   
 *eng speaking-int    
+*ai study  
+o  
+
+<br/>
+
+
+Saturday, March 18, 2023       
+*eng reading-papers   
+*ai study  
+o  
+
+<br/>
+
+
+Sunday, March 19, 2023       
+*eng listening-lectures     
+*eng reading-papers   
 *ai study  
 o  
 
