@@ -33,7 +33,18 @@ conformal prediction은 컴퓨터 비전, 자연어 처리, 강화 학습 등의
 
 
 {% highlight ruby %}
-짧은 요약 :  
+짧은 요약 :    
+*ML 자체가 블랙박스여서 불확실성에 대한 정량화가 필요
+**특히 의료분야에서 그냥 쓰기에 위험이 큼  
+**conformal prediction은 예측모델에 통계적으로 엄밀한 불확실성 집합을 제공  
+**특히 분포를 모를 때 사용 가능  
+**사전 학습된 뉴럴네트워크에서 ground truth을 포함하는 것으로 보장된 집을 만들어줌  
+***이 때, 유저가 특정화한 확률 기반으로 함 90%와 같은  
+**이해가 쉽고 사용이 쉽고 일반화, 여러 분야에 적용이 쉬움, 예를 들어 cv, nlp, deep 강화학습 등  
+*본 논문의 목적 및 공헌  
+**conformal prediction과 관련 분포에서 자유로운 불확실성 정량화 기술 소개  
+**관련 예제 및 이론 서술-머신러닝 태스크 포함, 타임시리즈, 분포 전환, 아웃라이어 포함  
+**코드도 제공  
 
 
    
@@ -47,10 +58,58 @@ conformal prediction은 컴퓨터 비전, 자연어 처리, 강화 학습 등의
 
 
 # 단어정리  
-* .
+* rigorious: 엄밀한  
+* quantification: 정량화  
+* conformal prediction: confidence level 측정, uncertainty 측정  
+* quantile: 분위수, 전체 분포를 특정 개수로 나눌 때 기준이 되는 수  
+* remark: 비고  
 
    
 
-# 1 Introduction  
-* .
+# 1 Conformal Prediction    
+* Conformal Prediction은 prediction set을 만드는 직관적인 방법  
+* 크게 두 단계로 구성  
+** 1. fitted 모델(학습된) f_hat으로 시작  
+** 2.f_hat 이용해서 prediction set(가능한 레이블들의 집합) 만듬  
+*** 이 때, 적은 양의 추가적인 calibration(교정용) 데이터 사용  
+* 보다 상세한 절차 또는 개념  
+** k개 클래스가 있다고 가정  
+** 각 클래스마다 분류기의 결과값 확률 추정(소프트맥스 점수, [0.1]값)  
+** 숫자 하나(N) 정해서 iid(independent.identical.distribution)하게 데이터인풋과 클래스 쌍 N개 뽑음->교정용 데이터 셋(calibration dataset)    
+*** 이 때, 이 데이터/레이블 쌍은 학습 때 사용되지 않은 거여야 함  
+*** 그리고 이는 (1)번 식을 만족함  
+**** 1-alpha <= P(Ytest (= C(Xtest)) <= 1-alpha+ 1/(n+1)  
+**** (Xtest, Ytest) 는 같은 분포에서 온 사용되지 안하은 데이터/레이블 쌍  
+**** alpha는 유저에게 입력받은 에러율  
+**** prediction set이 올바른 레이블을 가질 확률은 거의 1-alpha 임  
+**** 우리는 이 프로퍼티를 marginal coverage라고 함  
+**** 이는 교정셋과 테스트셋의 어떤 쌍의 확률이 랜덤성보다 평균적으로 얼마나 나은지 나타냄  
+** f_hat에서 가능한 클래스 레이블 집합(prediction set) 만들 때, 간단한 교정 스텝 수행
+*** 코드 수는 단 몇줄에 불과함  
+*** 상세한 교정 스텝 설명  
+**** 1. conformal score 정의 si = 1 - f_hat(Xi)Yi  (1-softmax 실제 클래스일 결과)  
+**** 점수는 소프트맥스 실제 클래스 결과가 낮을 경우 높아짐, 모델이 아주 성능이 안 좋을 때  
+**** 2. 스코어 s1,...,sn을 보고 경험적으로 정한 분위수(quantile) q_hat 을 반올림( (n+1)(1-alpha) ) / n 로 정의   
+**** (원래 q_hat은 1-alpha quantile이지만 맞추는 경우가 적었(small correction)음)  
+**** 3. 새로운 데이터 포인트(Xtest는 알지만 Ytest는 모르는)를 위해 prediction set을 만듬  
+**** prediction set C(Xtest) = {y:f_hat(Xtest)y >= 1-q_hat} 는 softmax값이 충분히 큰 클래스를 모두 가짐   
+*** 이 알고리즘은 (1)을 만족하는 것을 보장하는 prediction set을 줌  
+*** 어떤 모델이 사용되건 어떤 알지못하는 분포의 데이터를 사용하던  
+
+
+### Remark  
+.  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
