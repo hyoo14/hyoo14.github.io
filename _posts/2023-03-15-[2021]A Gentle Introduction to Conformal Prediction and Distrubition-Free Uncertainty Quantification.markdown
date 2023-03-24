@@ -167,6 +167,55 @@ P(Xtest (= C(Xtest)) >= 1-alpha
 ** 하나의 모델이어도 많은 가능한 스코어 함수들이 있고 각기 다른 프로퍼티(속성 값)들을 가짐  
 ** 그러므로 올바른 스코어 함수를 만드는 것은 공학적 선택에서 매우 중요  
 ** 다음 파트에서 좋은 스코어 함수의 예들 나열할 것  
+
+<br/>
+** 이하 파트는 축약식으로 설명하여 조금 부족할 수 있음 **  
+<br/>
+
+# 2 Examples of Conformal Procedures  
+* Conformal prediciton의 예시 제시  
+** 1차원 y  
+** 작은 conformal score -> confidence 큼  
+
+
+## 2.1 Classification with Adaptive Prediction Sets  
+* Adaptive 적응 예측 셋 분류  
+** 이전 메서드는 작은 평균과 함께 사용  
+*** 작은 subgroup undercover  
+*** easy one over cover  
+** Adaptive Prediction Sets 개발(APS)  
+*** 위 문제 해결 위해  
+** softmax 결과 f_hat(Xtest)는 Ytest|Xtest의 perfect 모델  
+** 높은 정수 class들 greedily 하게 포함, total mass 1-alpha 넘을 때까지    
+** ㅠ(x)는 {1,...K)의 순열, f_hat(Xtest) 정렬, most likelyhood에서 least비슷까지  
+** coverage 제공은 실패.. f_hat(xtest)가 완벽하지 않기 때문  
+** 그래서 conformal prediction 사용  
+*** uncertainty에 좋은 개념이라 판명되서  
+**  score function 다음 처럼 정의 - s(x,y)= Sigma j=1~k f_hat(x)ㅠj(x), where y=ㅠk(x)  
+** 즉, greedy하게 true label에 갈 때까지 class를 포함시킴  
+** 소프트맥스 사용(모든 클래스에)  
+** 다음으로 모든 conformal procedure로써 q_hat set 정의  
+** 이런걸 prediction set {y:s(x,y) <= q_hat} 만들고 zero size 피하기 위해 일부 modify함  
+
+
+## 2.2 Conformalized Quantile Regression  
+* 예제2: Conformalized Quantile Regression  
+** uncertainty 회귀 예제에 적용  
+** Quantile regression을 base로 함  
+*** ytest|xtest의 gamma quantile 학습 시도(base알고리즘)    
+** the quantile: t gamma(x)   
+*** fit model: t_hat gamma (x)  
+** Ytest|Xtest = x, t0.05(x): 5%확률, above t0.95(x): 5% 확률  
+*** gamma t^0.05(x), t_hat0.95(x) - 90% cover  
+** fit quantile 부정확  
+*** conformalize 해야함  
+** 근처 quantile과 y차이점으로 score 계산, talpha/2와 t1-alpha/2에서  
+** 정돈 set과 세팅 q_hat score 계산바탕 예측식은 C(x)=[t_hat alpha/2(x)-q_hat,t1-alpha/2(x)+q_hat]  
+** 직관적으로 c(x) 셋(집합) q_hat case하게 증가 또는 감소  
+** 클라스들 C가 연속형됨 -> good cover임  
+
+
+
  
 
 
