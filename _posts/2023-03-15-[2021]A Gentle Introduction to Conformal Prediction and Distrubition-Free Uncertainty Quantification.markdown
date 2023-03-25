@@ -401,6 +401,71 @@ P(Xtest (= C(Xtest)) >= 1-alpha
 * conformal risk 관리 방법들 있음  
 
 
+## 4.4 Outlier Detection  
+* 이상치 탐지에 적용 방법 공식 있음  
+
+
+## 4.5 Conformal Prediction Under Covariate Shift  
+* Covariate Shift 상황서 Conformal prediction방법론  
+** 질병 예측  
+** 인스턴스 분리  
+** 위 사용  
+** 새 pdf 사용하여 weight 정의  
+** quantile 설정  
+
+
+## 4.6 Conformal Prediction Under Distribution Drift  
+* 분포 변환 때 conformal prediction  
+** time series 같은 경우임  
+
+
+<br/>
+
+# 5 Worked Example  
+* 실제 활용 예  
+## 5.1 Multilabel Classification  
+* 멀티 레이블에서 활용    
+
+
+## 5.2 Tumor Segmentation  
+* 종양 분리에서 활용  
+
+
+## 5.3 Weather Prediction with Time-Series Distribution Shift  
+* 날씨 예측-시계열 분포 변화에서 활용  
+
+
+## 5.4 Toxic Online comment Identification via Outlier Detection  
+* 유해 코멘트 탐지(이상치 탐지)에서 활용  
+
+
+## 5.5 Selective Classification  
+* 선택적 분류에서 활용  
+
+
+# 6 Full conformal prediction  
+* full conformal prediction  
+## 6.1 Full Conformal Prediction  
+** 데이터 spliting 없게 하여 사용  
+
+
+## 6.2 Cross-Conformal Prediction, CV+, and Jackknife+  
+* full과 split conformal prediction 사이 타협접, tradeoff 가운데 지점  
+
+<br/>
+
+# 7 Historical Notes on Conformal Prediction  
+* 역사적 변천사  
+### Origins  
+* 기원은 우크라이나  
+** 베르누이 시퀀스에 관심에서 비롯됨  
+### Enter Conformal Prediction  
+* 본격적인 Conformal prediction의 진입  
+** 선조들의 예우 따른 것  
+### Current Trends  
+* 최근동향  
+** 작지만 가파르게 성장중  
+
  
 
 
