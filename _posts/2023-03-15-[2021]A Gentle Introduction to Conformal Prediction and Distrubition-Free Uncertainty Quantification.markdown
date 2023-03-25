@@ -63,6 +63,26 @@ conformal prediction은 컴퓨터 비전, 자연어 처리, 강화 학습 등의
 * conformal prediction: confidence level 측정, uncertainty 측정  
 * quantile: 분위수, 전체 분포를 특정 개수로 나눌 때 기준이 되는 수  
 * remark: 비고  
+* conformalizing: 일치하는, 부합하는 -> provide valid intervals of prediction  
+* deviation: 편차, 통계학에서 deviation은 관측값에서 평균 또는 중앙값을 뺀 것으로, 자료값들이 특정값으로부터 떨어진 정도를 나타내는 수치  
+* reliable: 신뢰할 수 있는, 믿을만한, 신뢰성  
+* magnitude: 크기의 정도  
+* residual: 추정된 식과 관측값의 차이, 예측값과 실제 관측값의 차이, 잔차  
+* perturbations: 변화를 나타내는 작은 변화, 근사값 추정    
+* sake: 목적, 이익, 원인, 혜택이나 이득  
+* multiplicative: 곱셈의, 급격하게 증가하는  
+* pragmatic: 실용적인  
+* intersperse: 배치하다  
+* stratified: 층을 이루게 하다, 계층화하다  
+* discretize: 연속적인 공간이나 물건을 나누다  
+* benign: 상냥한, 유순한, 자비로운, 친절한, 양성의(악성이 아닌)    
+* fluctuation: 파동, 이상한 변화, 변동    
+* stratify: 층화, 데이터를 분리  
+* progenitors: 특정한 현상이 발생하기 전의 원인을 찾아내는 것  
+* progeny: 어떤 현상이 발생한 후의 결과  
+* precocious: 조숙한, 빠른 학습, 빠르고 높은 성능을 보임  
+
+
 
    
 
@@ -213,7 +233,172 @@ P(Xtest (= C(Xtest)) >= 1-alpha
 ** 정돈 set과 세팅 q_hat score 계산바탕 예측식은 C(x)=[t_hat alpha/2(x)-q_hat,t1-alpha/2(x)+q_hat]  
 ** 직관적으로 c(x) 셋(집합) q_hat case하게 증가 또는 감소  
 ** 클라스들 C가 연속형됨 -> good cover임  
+** quantile regression = L1 norm 회귀 일반화로  
+** gamma = 0.5, loss func L0.5 = |t_hat r (x) - y| / 2 => t_hat 0.5 (x) 조건부 중간값 커버  
+** gamma 변경 -> L1 norm 변경  
+** MSE 대신 quantile loss가능  
 
+
+## 2.3 Conformalizing Scalar Uncertainty Estimates  
+*valid classes interval 찾는 스칼라 uncertainty 측정  
+
+
+### 2.3.1 The Estimated Standard Deviation  
+* 추정 표준 편차  
+** 예측셋 만드는 다른 방법: 표준 sigma(x) 미분법  
+** Ytest|Xtest = x 가정,  
+*** 분모사용(가우시안 같은)  
+** Maximum Likelihood of Data E[Ytest|Xtest=x]  
+** 근데 Ytest|Xtest 는 가우시안 아니어서 data 많아도 sigma_hat(x)가 꼭 reliable은 아님  
+** 휴리스틱 개념 넣어서 Conformal Prediction으로 사용 가능  
+
+
+### 2.3.2 Other 1-D Uncertainty Estimates  
+* 다른 1-D  uncertainty 예측  
+** 더 일반적으로 u(x)는 더 큰 value가 불확실 더 키우는 함수로 일반 미분 넘어서는 다양한 해석이 있음  
+** 예)하나의 uncertainty 스칼라 수반->user가 만든 모델 residual 크게 모델 f_hat에 fit y 예측하는,  
+*** 단 모델 r_hat에 fit, |y-f_hat(x)| 예측, r_hat  완벽->[f_hat(x)-r_hat(x), f_hat(x)+r_hat(x)] 완벽커버, 그러나 r_hat은 실제로는 poor  
+** 더 많은 uncertainty 스칼라들 있음   
+*** 1. 앙상블서 f_hat(x) 분산 측정  
+*** 2. 랜덤 드롭아웃 파편노드서 f_hat(x) 분산 측정  
+*** 3. 작은 랜덤 perturbation(근사값 추정)에서 f_hat(x) 분산 측정   
+*** 4. 다른 노이즈 생성 샘플에서 f_hat(x) 분산 측정   
+*** 5. f_hat(x) 크기 적대 근사값 추정에서 변화 측정    
+** 이 케이스들 다루는 방식은 같음  
+*** 예측 f_hat(x)와 uncertainty 스칼라 u(x) 
+** 휴리스틱 반영 스코어식 : s(x,y0 = |y-f_hat(x)| / u(x)  
+* 스코어 펑션 해석-곱셈가능 상호관계 factor of uncertainty scalar  
+** q_hat = 반올림( (1-alpha)(1+alpha) ) / n  
+*** colibration score 보장  
+** 위 바탕의 prediction sets는 (5)와 같음  
+** prediction set 살펴보면 valid, desired함  
+** 대칭  
+** 그러나 alpha 스케일 필요 없어  
+*** 측정 sigma_hat이 quantiles q와 레이블 분포의 관계 보장 없음  
+** quantile 회귀 선호 왜냐? 직접 척도 측정, 더 나은 휴리스틱  
+** 그럼에도 불확정 스칼라 남음  
+** 쉽게 사용 가능 -> ML library  
+
+
+## 2.4 Conformalizing Bayes  
+* 베이지안서 confidence 올림  
+** 베이지안 NN처럼 불확실성 정량화해서 많이 연구됨  
+** 그러나 잘못된 가정 많음  
+** 그럼에도 이전 정보 활용해서 예측해야하므로 의미가 있음  
+** 베이시안서 어떻게 예측 set 만들었는지가 핵심, 1-alpha 가 핵심  
+** 사후 예측 밀도 사용  
+** 베이시안 최적은 증명됨  
+** 본 알고리즘 레이블 고르는 데서 줄임  
+** 해석만 다름, softmax 근사 사용, 카테고리에서  
+** 베이시안은 f_hat(y|x) 주어지면 사후 확률 분포 Ytest 추정  
+** optimal prediction set: S(x)={y:f_hat(y|x) > t}, t는 Integral y(=s(x) f_hat(y|x)dy=1-alpha 일 때 goal 가짐  
+** 모델과 데이터에 가정 x니까 f_hat(y|x) 휴리스틱이라 여김  
+** score: s(x,y)=-f_hat(y|x)  
+** 예측 set c는 C(x)={y:f_hat(y|x) > -q_hat}  
+** 위 set valid 이유: threshold q_hat 골랐기 때문(그 아래 부분)   
+** 가정 충족, 1-alpha 커버리지  
+** 디시전 이론과 유사, Neyman-Pearson Lemma와 같음  
+
+
+### Discussion   
+* conformal prediction이 쉽고 실용적인 기술임  
+** 구현 쉽고  
+** 위 4가지 예가 로드맵으로 유용함  
+** 더 다양 응용 가능  
+*** 이상치 탐지, 이미지 분리 , 시계열 예측에 사용 가능  
+
+<br/>  
+
+# 3 Evaluating Conformal Prediction  
+* 다음 2섹션-> valid prediction set이 통계적으로 어떻게 만족하는지 다룸  
+** 평가 먼저  
+** 2 카테고리로 나눠 평가  
+* 1. 적응력 측정  
+** set 작다고 best는 아님(easy->작/hard->큼)  
+** 적응력은 coverage에 포함되지 않으므로 따로 필요  
+** 공식화함  
+* 2. 올바름 check  
+** 잘 구현되었나 체크  
+** coverage가 theorem 1 체크  
+** 나쁘지 않은 변동 사이즈로 공식 개발  
+*** 1-alpha 커버리지 초과 있을 시 문제있음 명시  
+** 그냥 평가시 계산 헤비하고 느려짐  
+** 트릭 구현하여 제공  
+
+
+## 3.1 Evaluating Adaptivity  
+** general prediction이 (1) 만족 set 얻지만 중요한 다른 절차 있음  
+** adaptivity가 중요 예  
+*** 어렵 input은 큰 set, 쉬운 input은 작은 set, 이것이 잘 되나 체크  
+
+
+### Set size.  
+*셋 사이즈  
+** 평균 사이즈 크면 conformal procedure 정확하지 않음 의미  
+** 셋 사이즈 발산은 어려운 예에 잘 예측 의미  
+** spreading이 바람직함  
+** 어려운 경우 아닐 수도 있음  
+** 관련 metric 다음 파트서 소개  
+
+
+### Conditional coverage.  
+* adaptivity formalized : P[Ytest (= C(Xtest) | Xtest] >= 1-alpha  
+** 모든 input X test에 대해 1-alpha 커버되는 예측 set 찾는 것  
+** marginal coverage property 보다 강건  
+** 대부분 case서 조건부 커버는 (7) 달성 못 함  
+** conformal procedures  
+** marginal vs conditional coverage:  
+*** 90% 커버, 평균 90% vs case 중 90% 맞춤(필요 but not 충분)->모든 그룹 90%  
+
+
+### Feature-stratified coverage metric.  
+* 피처로 층(데이터셋) 분리 커버 메트릭  
+** 커버 하나하나 얼마나 되나 check and average  
+* size-stratified coverage metric:  
+** 얼마나 conformal 절차가 (7) 만족에 가깝게 되었는지  
+** 가능 c(x)의 원소 개수  
+
+
+## 3.2 The Effect of the Size of the Calibration Set  
+** calibration set 개수 영향  
+** n=5000 경험적으로 성능 가장 높음  
+* 키 아이디어:  
+** conformal 예측 조건부 경의 랜덤 수량  
+** (1) 1-alpha 평균 커버  
+
+
+## 3.3 Checking for Correct Coverage  
+* 올바른 커버리지 체킹  
+* 새 교정셋 만들어서 계산해서 확인(경험기반)  
+** nval은 valid set size  
+** Cj 히스토그램이 1-alpha 중심이동, c_bar도 1-alpha로 근사  
+** 다 캐시함 conformal score->경제적  
+** (1) 성립  
+** 결정 생겼다면 추가하면 됨 n size  
+
+<br/>  
+
+# 4 Extensions of Conformal Prediction  
+* 확장  
+** 일반 지도학습에 어떻게 확장?  
+
+## 4.1 Group-Balanced Conformal Prediction  
+* 그룹 균형 Conformal Prediction  
+** interval 구하고 싶을 때(error 갖는)  
+** 그룹 가중 줌  
+** (8)은 보장하지 않음  
+** 그룹 기반 prediction set general 방법 있음    
+
+
+## 4.2 Class-Conditional Conformal Prediction  
+* 클래스별 조건별 Conformal Prediciton  
+** 클래스 균형 위해 조치 필요  
+** 클래스 별로 조정  
+*** 알고리즘 위와 같음  
+
+
+## 4.3 Conformal Risk Control  
+* conformal risk 관리 방법들 있음  
 
 
  
