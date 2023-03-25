@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "March2"
-date:   2023-03-25 10:15:30 +0900
+title:  "[2015]Effective Approaches to Attention-based Neural Machine Translation"
+date:   2023-03-25 19:59:30 +0900
 categories: study
 ---
 
