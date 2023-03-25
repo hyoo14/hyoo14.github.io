@@ -15,7 +15,7 @@ categories: study
 {% endhighlight %}
 
 
-[Paper with my notes]()  
+[Paper with my notes](https://drive.google.com/drive/folders/1pGtzNyK5IkgwWkjayZVsoc6ryOpl986-?usp=sharing)  
 
 
 [Lecture link](https://vimeo.com/162101582)  
