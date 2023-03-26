@@ -88,6 +88,16 @@ o
 <br/>
 
 
+Saturday, March 26, 2023       
+*eng listening-lectures     
+*eng reading-papers     
+*ai study  
+*weekly report  
+o  
+
+<br/>
+
+
 {% highlight ruby %}
 
 
