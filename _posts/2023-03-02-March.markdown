@@ -13,6 +13,43 @@ categories: study
 {% highlight ruby %}
 
 
+March week5:  
+*eng speaking   
+	-ints     
+*ai/nlp study  
+	-lectures  
+	-book(ml)     
+*eng reading  
+	-papers1(mentor's pick)    
+	-papers2(my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-paper2 source code  
+
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+Monday, March 27, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*eng speaking-ints  
+*ai study  
+o  
+
+
+
+{% highlight ruby %}
+
+
 March week4:  
 *eng speaking-int    
 *ai/nlp study     
