@@ -46,6 +46,16 @@ Monday, March 27, 2023
 o  
 
 
+Tuesday, March 28, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*ai study  
+o  
+*eng speaking-ints  
+*hrdnet?  
+*eng paper2 searching  
+
+
 
 {% highlight ruby %}
 
