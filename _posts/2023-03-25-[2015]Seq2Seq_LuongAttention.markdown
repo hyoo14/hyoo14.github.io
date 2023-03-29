@@ -84,6 +84,25 @@ categories: study
 <br/>  
 
 
+# 2 Neural Machine Translation  
+* NMT  
+** NN모델: 조건부 확률 P(y|X) 가능성으로 번역  
+*** source x1,...,xn to target y1,...,yn  
+** 구성  
+*** 인코더: 소스문장 representation 계산  
+*** 디코더: 한번에 one target word generation  
+**** 조건부 확률 분해  
+* 디코더 모델  
+** RNN 선택  
+** 연구들마다 각기 다른 RNN 사용  
+*** Kalchbrenner&Blunsom: RNN with 표준 hidden unit for decoder and CNN encoder  
+*** Sutskever, Luong: RNN 여러층 with LSTM hidden unit for enc/dec  
+*** Cho, Bahadanau, Jean: 특이 RNN, GRU(LSTM서 영감) for enc/dec  
+** 본 논문 더 자세히->확률 변수화, 각 단어 yj: P(yj|y<j,x)=softmax(g(hj))  
+*** hj는 RNN 히든  
+*** hj=f(hj-1,s)서 f는 현 hidden 구함, RNN/LSTM/GRU가 될 수 있음  
+
+
 
 
 
