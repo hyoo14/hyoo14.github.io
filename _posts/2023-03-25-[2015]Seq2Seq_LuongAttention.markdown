@@ -14,7 +14,15 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .  
+* 어텐션이 NMT 향상  
+* 근데 아직 연구/접근법 적음  
+* 간단, 효과적 2가지 방법 소개  
+	* global: 전체 소스 문장 단어 다 봄  
+	* local: subset만 봄  
+* WMT 영/독 번역으로 실험  
+	* 5.0 BLEU 향상 with dropout  
+* 앙상블 모델로 SOTA 달성  
+	* 25.9 BLEU로 기존 n-gram reranker에 1.0BLEU 앞섬    
 
 
 
