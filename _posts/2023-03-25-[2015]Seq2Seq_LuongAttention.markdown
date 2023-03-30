@@ -101,7 +101,18 @@ categories: study
 ** 본 논문 더 자세히->확률 변수화, 각 단어 yj: P(yj|y<j,x)=softmax(g(hj))  
 *** hj는 RNN 히든  
 *** hj=f(hj-1,s)서 f는 현 hidden 구함, RNN/LSTM/GRU가 될 수 있음  
+** 소스 present s는 decoder hidden 초기화 때 한번만 사용  
+** 반면 본 모델과 Bahdanau, Jean 에서 s는 hidden state 집합, 번역서 계속 이용  
+*** attention 기법  
+* 본 논문  
+** LSTM 쌓아서 NMT   
+** Zaremba LSTM 씀  
+** 목적함수: Jt = Sigma(x,y) in D -log p(y|x)    
+** D는 병렬 학습 코퍼스  
 
+
+# 3 Attention-based Models  
+* 어텐션 기반 모델  
 
 
 
