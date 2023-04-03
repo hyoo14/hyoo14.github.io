@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "[2020]SMART: Robust and Efficient Fine-Tuning for Pre-trained Natural Language Models through Principled Regularized Optimization"
+date:   2023-04-04 00:31:20 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* Transfer Learning  
+** NLP에 큰 변화 가져옴  
+*** SOTA 달성  
+** 그러나 자원제한, PreTrain 모델의 복잡성은 문제 야기  
+*** Overfit(downstream data)  
+*** generalization 실패(unseen 대해)  
+** Principled 매너에 따른 새 학습 프레임워크 제안  
+*** 더 나은 성능(일반화)  
+* 두가지 함유(gradient에)  
+** 1. smootheness regularization  
+*** 복잡성 매니지 잘 함  
+** 2. Bregman Proximal Point Optimization  
+*** 신뢰구간 기법(지나친 업데이트 방지)  
+** SOTA 달성 NLP tasks(GLUE, SNLI, SciTail ,ANLI)  
+
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/170WK4QSc8prsQk96sYUIO5VXO3PMSbKj?usp=sharing)  
+
+
+[Lecture link](http://slideslive.com/38928798)  
+
+<br/>
+
+# 단어정리  
+* principled manner: 원칙에 입각한 방식  
+* harness: 이용하다, 활용하다  
+* inducing: 설득하다, 유도하다, 유발하다  
+* perturbation: 작은 변화, 섭동=행동을 다스림    
+* simplex: 단일어, 단체(정삼각형, 정사면체, 정오포체..)    
+* proximal: 근위의, 인접면  
+* symmetrized: 대칭된, 균형적  
+* Bregman divergence: 브레그먼 발산(구성요소의 명목 분포와 실제 분포 간의 편차를 설명할 때 사용)  
+* exponential moving average: 지수이동평균(가중변수를 이용하여 최근 수치의 영향력은 높이고 과거 수치의 영향력은 낮추는 것)  
+
+
+
+<br/>
+
+# 1 Introduction  
+* Transfer Learning 등장 배경  
+** 큰 레이블 데이터 구하기 어렵고 비쌈  
+** 특정 downstream data 아니어도 관련 task data로 pre-train  
