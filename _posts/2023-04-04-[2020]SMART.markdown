@@ -63,3 +63,62 @@ categories: study
 * Transfer Learning 등장 배경  
 ** 큰 레이블 데이터 구하기 어렵고 비쌈  
 ** 특정 downstream data 아니어도 관련 task data로 pre-train  
+** 지식의 확장(전이)가 목표  
+** P-T -> F-T 순으로  
+** ELMo, GPT, BERT 유명  
+*** semantic & synthactic info 모두 파악 가능  
+*** unlabeled data로 학습  
+** 매우 큰 P-T 모델  
+*** T5는 11B param(1000억개)  
+** F-T서 PLM to target task(domain)  
+*** Top layer replace  
+*** low resoruce 필요  
+*** SOTA  
+** P-T 매우 복잡  
+*** 급격히 F-T 경우 overfit  
+** 보완책  
+*** 휴리스틱  
+*** l.r 스케줄링 조절  
+*** 점진 unfreezing  
+*** adapt certain layers & freezing other  
+*** add 추가 layers(모두 튜닝 노력 필요)  
+* 해결 위해 강건, 효율 F-T 프레임웍 제안  
+** 2가지 overfit 방지책 포함  
+(1) 매우 큰 PP 컨트롤  
+*** smootheness inducing adversarial 기술 제안  
+*** local shift sensitivity에서 영감(robust 통계의)  
+*** output 잘 안 바뀌게 함  
+*** 스무스 모델 효과적 capacity control  
+(2) 급격 업데이트 방지위해 Bregman Proximal Point 최적화 사용  
+*** 신뢰구간 제약(각 iter마다), 작은 이웃(이전 iter와)만 업데이트  
+*** 급격 업데이트 방지 & F-T 안정화  
+* SOTA와 비교, 성능 향상 확인  
+** 본 모델 356M param 앙상블 없이 GLUE SOTA  
+* 공헌  
+1. smootheness inducing adversarial regularization & proximal point optimization into LLM F-T 기법 소개  
+2. SOTA 달성(GLUE, SNLI, SciTail, ANLI)  
+* 표기  
+** f(xi ceta): 매핑  
+** f가 para cete input x 연관시킴  
+** output: 다차원 확률, simplex for 분류/회귀  
+** Pkl(P||Q) = Sigma k pk log (pk/qk)는 KL 다이버전스 p분포, q분포 param qk, pk  
+<br/>
+# 2 Background  
+* T-F L 배경  
+** NMT 첫 제안  
+** BERT 제안 양방향 트랜스포머 기반 인간 annotate 없이 큰 성과    
+** 큰 data, 큰 모델 영감되서 많이 나옴  
+** PLM 파인튠 채택  
+** 탑 layer는 특정 task용  
+** overfit 방지, 휴리스틱 사용  
+** 작은 l.r or triangular l.r 스케줄링, 적은 iter  
+** regularization 기술 제안  
+** 이미 있는 기술과 유사, but 다른 응용, 다른 동기부여  e.g. semi 지도학습, 비지도학습 도메인 적응, 제악 적대 in image 분류  
+* 본 최적화 기술  
+** 큰 class의 Bregman proximal point 기법 커버(록펠러 vanila proximal point, accelerated proximal point 방법 등)  
+* 관련 F-T 방법  
+** FreeLB: robust adversarial training 방법  
+** 본 논문은 local smoothness에 초점 -> 성능 올림  
+<br/>  
+# 3 The Proposed Method  
+* SMART 프레임웍 제안  
