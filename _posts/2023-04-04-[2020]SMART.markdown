@@ -100,7 +100,7 @@ categories: study
 * 표기  
 ** f(xi ceta): 매핑  
 ** f가 para cete input x 연관시킴  
-** output: 다차원 확률, simplex for 분류/회귀  
+** output: 다차원 확률, simplex(단체) for 분류/회귀  
 ** Pkl(P||Q) = Sigma k pk log (pk/qk)는 KL 다이버전스 p분포, q분포 param qk, pk  
 <br/>
 # 2 Background  
@@ -122,3 +122,106 @@ categories: study
 <br/>  
 # 3 The Proposed Method  
 * SMART 프레임웍 제안  
+** SMoothness-inducing Adversarial Regularization and BRegman pRoximal poinT opTimization  
+
+
+## 3.1 Smoothness-Inducing Adversarial Regularization  
+* model f(.; ceta)와 n개 data points of target task {(xi, yi)} i=1 to n   
+** xi는 input sent의 임베딩  
+** yi는 레이블  
+** 다음식으로 최적화 min ceta F(ceta) = L(ceta) + lamdas Rs(ceta), L(ceta) = 1/n(Sigma i=1 to n l(f(xi;ceta), yi)   
+*** L is loss function  
+** l(.,.)도 loss 함수 target 의존적  
+** lamda s > 0이 튜닝 param  
+** Rs(ceta)가 smoothess inducint adversarial regularization  
+*** ||xi_tilda - xil||p <= epcilon  
+** Rs(ceta) = 1/n(Sigma i=0 to n max lr(f(xi_tilda;ceta), f(xi;ceta)),  
+*** epsilon은 튜닝 param  
+** f(.;ceta)는 분류 task이고  
+** output 은 확률 simplex  
+** ls는 KL divergence로부터 선택    
+** 회귀서 f(.;ceta) 결과는 스칼라   
+** ls는 squared loss로 선정  
+** Rs(ceta) 계산은 최대화 문제 gradient ascent  
+* 역사  
+** Miyato가 준지도학습서 사용  
+** Shu가 비지도 도메인 적용에 사용  
+** Zhang이 이미지 분류서 적대 예 제한에 사용  
+** 파인튠에 사용은 본 모델이 처음  
+* Smoothness-inducing adversarial regulariation  
+** local Lipschitz 측정 f under metric ls(perturbation(섭동, 유도, 작은 행동?) 작으면 f 별로 안 변함)  
+( (1) 줄이면 f가 smooth해짐, xi 이웃에 대해)  
+*** overfit 방지  
+*** generalization 향상(적은 리소스로)  
+* 참고  
+** local Lipschitz continuity는 local shift sensitivity criterion과 비슷(1960's)  
+** 이 criterion이 가늠자들의 독립성 측정 때 사용  
+
+
+## 3.2 Bregman Proximal Point Optimization  
+* (1) 풀수 있고 Bregman Proximal point 최적화 기법 클래스를 제안   
+** 급진 update 억제  
+** P-T 모델을 초기화로 사용 f(.;ceta)로 표기, (t+1)th 반복서  
+** VBPP(Vanila Bregman Proximal Point)는 ceta t+1 = argmin ceta F(ceta) + mu DBreg(.,.), mu는 튜닝 param이고 >0일때 사용  
+** Bregman divergence DBreg는 DBreg(ceta, cetat) = 1/n Sigma i=1 to n ls(f(xi;ceta), f(xi;cedtat))로 정의    
+*** ls는 section 3.1에서 정의, mu 커지면 VBPP의 DBreg가 각 iter 마다 강하게 제약됨  
+*** ceta t가 너무 커지는 것 방지  
+*** 즉, Bregman proximal point method는 효과적으로 보유(도메인 벗어난 지식, P-T의 f(.,ceta))  
+** 각 sub 문제  
+*** (2)(VBPP 중) 는 closed form solution으로 인정 x SGD류로 풀어야(ADAM 같은)  
+* 비고  
+** 각 subprob converge까지 불필요   
+** 작은 iter면 충분  
+
+### Acceleration by Momentum  
+* 모멘텀 가속화  
+** 모멘텀 써서 가속화  
+** t+1 번째 iter, 모멘텀 MBPP  
+*** ceta t+1 = argmin ceta F(ceta) + mu DBreg(ceta, cetat_tilda), cdetat_tilda = (1-beta)ceta t + beta ceta t01_tilda, beta (= (0,1) 인 exponential 이동평균으로 모멘텀 param임  
+** Mean Teacher 라고도 불림  
+*** 준지도학습서 SOTA 보임, 편의 위해 MBPP는 알고리즘1로 칭함  
+<br/>
+# 4 Experiment - Main Results  
+* SMART F-T GLUE 사용, SOTA와 비교  
+
+
+## 4.1 Implementation Details  
+* 구현 상세  
+** BERT, RoBERTa, MT-DNN, HNN 기반  
+** ADAM, RADAM 사용 optimizer  
+** l.r (= {1*10^-5, 2*10^-5, 3*10^-5, 5*10^-5}  
+** batch size (= {16, 32, 64}  
+** max epoch 6  
+** l.r decay schedule with mwarm up 0.1  
+** dropout rate all layer as 0.1 except 0.3 for MNLI, 0.05 for CoLA    
+** gradient exploading 피하려고 gradient norm 1로 고정    
+** word piece로 토크나이징  
+** 최대길이 512  
+** perturbation(작은 변화?) size epcilon=10^-5, sigma=10^-5, mu=1, lamdas(={1,3,5}  
+*** l.r eta in algorithm 1 is set to 10^-3, beta=0.999  
+
+
+## 4.2 GLUE Main Results  
+* GLUE test   
+** BERT base 기반 & RoBERTa 라지 기반  
+** 버트베이스->베이스라인  
+** RoBERTa 사용  
+** 위에 RoBERTa PGD, FreeAT, FreeLB adversarial training 기법 built  
+** SMART 본 제안 모델  
+** 공정비교위해 버트 재구축->기존 버트보다 성능 오름  
+** 성능 기존 능가 in 8GLUE  
+** Adversarial training으로 GLOVE서 SOTA 능가  
+** T511billion param 대비 SMART는 356billion으로 더 효율적이며 SOTA  
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
