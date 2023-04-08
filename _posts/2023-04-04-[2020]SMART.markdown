@@ -213,7 +213,59 @@ categories: study
 ** Adversarial training으로 GLOVE서 SOTA 능가  
 ** T511billion param 대비 SMART는 356billion으로 더 효율적이며 SOTA  
 <br/>
+# 5 Experiment - Analysis and Extension  
+* 실험-분석과 확장  
+** SMART가 MT에 보완되는지 검증  
+** SNLI, SciTail의 도메인 적응되나 평가  
+** ANLI에서 강건성 test  
 
+
+## 5.1 Ablation Study  
+* 경감 study  
+** SMART 사용이 성능 최고  
+
+
+## 5.2 Error Analysis  
+* 에러분석  
+** MNLI 모호 샘플도 분석  
+** 샘플 4개로 나눔  
+1) 5/0/0 - 5개 레이블 같음  
+2) 4/1/0 - 4개 레이블 같음  
+3) 3/2/0 - 3개 같고 다른 2개 같음  
+4) 3/1/1 - 3개 같음  
+** SMART RoBERTa가 RoBERTa 압도  
+
+
+## 5.3 SMART with Multi-task Learning  
+* MT 사용 SMART  
+** MTDNN SMART가 성능 압도, 상호 보완적 입증  
+
+
+## 5. 4 Domain Adaptation  
+* 도메인 적용  
+** SNLI & SciTail set 이용  
+** 랜덤 샘플 0.1, 1, 10, 100%  
+** MT-DNN & MT-DNN-SMART  
+** 압도 SOTA  
+
+
+## 5.5 Results on SNLI and SciTail  
+** MT-DNN-SMART가 압도 SOTA  
+
+
+## 5.6 Robustness  
+** SMART가 압도, combine set test서  
+<br/>
+# 6 Conclusion  
+* 결론  
+** 강건 효율적 SMART 제안 (파인튜닝 framework)  
+** overfit 경감, 급격 update 방지  
+** SMART 구성  
+1) smooth-inducing adversarial regularization   
+2) Bregman proximal point optimization  
+** SOTA in NLP benchmarks(GLUE, SNLI, Scitail, ANLI)  
+** 도메인 적응 서로 향상  
+** 다른 곳에서도 잘 적용 예상  
 
 
 
