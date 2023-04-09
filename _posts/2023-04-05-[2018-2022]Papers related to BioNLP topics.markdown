@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2018-2023]Papers related to BioNLP topics"
+title:  "[2018-2022]Papers related to BioNLP topics"
 date:   2023-04-05 04:13:23 +0900
 categories: study
 ---

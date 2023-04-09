@@ -67,3 +67,151 @@ categories: study
 *실제 테스트에서도 결과가 좋았음  
 
 
+
+
+# 최근 정리 2023  
+
+## 1. 논문이 다루는 Task
+
+Natural Language Process with Self-Attention Model
+
+When **n** is length of token id list and **h** is dimension of word embedding vector.
+
+### Encoder
+
+- Input: tokenized text data [n]
+- Output: n representation vector [n, h]
+
+### Decoder
+
+- input: generated token vector (in prev step) [n] ( + Encoder output [n, h] as key and value representation), <SOS> in first step
+- output: generated token vector [n]
+
+## 2. 기존 연구 한계
+
+- Previous RNN model can’t calculate loss for nth output before calculate (n-1)th output. Because nth output require n-1th hidden state.
+- Previous RNN model can’t use parallel processing so that their training speed is slow.
+- Due to its sequential processing, it is slow and costly. Additionally, because it processes sequentially, it is difficult to convey information when words are far apart.
+
+## 3. 제안 방법론:
+
+### Main Idea
+
+- By removing the RNN mechanism and using only the Attention mechanism, it is possible to reduce costs and processing time, and process data in parallel to store similarities and information between sentences.
+- Normalization improves the stability of learning data information.
+- Use Key, Query, Value matrix to calculate attention between each input tokens.
+
+### ✨Contribution
+
+- 
+
+## 4. 실험 및 결과
+
+### Dataset
+
+- Dataset 이름 : WMT 2014 English-German
+
+### Baseline
+
+- GNMT + RL (English to German 24.6 BLEU, English to France 39.92)
+
+### 결과
+
+- 메인 결과
+    - English to German 28.4BLEU(SOTA)
+    - English to French 41.0BLEU(near SOTA)
+- Ablation Study
+    - number of head
+    - attention key size
+    - model size
+    - drop out
+    - positional encoding
+- Analysis
+    - better performance and better training speed
+
+---
+
+## 5. 질문 및 생각할거리
+
+- Transformer 모델이 RNN 모델에 비해 학습속도가 빠른 이유를 직관적으로는 이해가 가는데 구체적으로 왜 더 빠른지 잘 모르겠습니다.
+- Transfomer에서 Back propagation이 어떻게 진행되나요?
+
++ 추가 질문) 
+- decoder 에서 masking 이후 병렬화 하여 학습을 하는데 어떻게 학습된 결과를 합하는지 궁금합니다.
+
+
+---
+
+- Encoder Input : I ate Dinner
+- 학습 시점
+
+| t | 0 | 1 | 2 | 3 |  |
+| --- | --- | --- | --- | --- | --- |
+| loss | 0.32 | 0.214 |  |  | 80 |
+| label | 나는  | 저녁을 |  |  |  |
+| output | P(나는) | 저녁을 |  |  |  |
+| input | <SOS> | 나는 | 저녁을 |  |  |
+
+- 번역(Inference) 시점
+- Encoder Input : I ate Dinner / I have pencil
+- Encoder Output : (3, 768)
+
+| t | 0 | 1 | 2 | 3 |
+| --- | --- | --- | --- | --- |
+|  | 나는 |  |  |  |
+| input | <SOS> | 나는 | 저녁을 | 먹었다. |
+- encoder input : (n)
+- encoder output : (n, d)
+- decoder intput : (m)
+    - Embedding : (m, d)
+    - Positional Encoding : (m, d)
+    - Masked Self Attention
+        - Q → (m, d)*(d, d)
+        - K → (m, d)*(d, d)
+        - V → (m, d)*(d, d)
+    - (Vocab, d)
+        - vocab → 33000
+        - d → 768
+    - Attention Score
+        - SoftMax(QK^t)
+        - (m, d) (d, n) → (m , n)
+        - QK^t
+    - Attn Output : Score*V
+        - (m, n)*(n, d) → (m, d)
+        
+        |  | I | ate | dinner |
+        | --- | --- | --- | --- |
+        | I | 34 | -Inf | -Inf |
+        | ate | 45 | 82 | -Inf |
+        | dinner | 21 | 4 | 12 |
+        |  |  |  |  |
+        - SoftMax
+            
+            
+            |  | I | ate | dinner |
+            | --- | --- | --- | --- |
+            | I | 1 | 0 | 0 |
+            | ate | 0.4 | 0.6 | 0 |
+            | dinner | 0.2 | 0.4 | 0.4 |
+            
+            |  | ate | I | dinner |
+            | --- | --- | --- | --- |
+            | ate | 1 | 0 | 0 |
+            | I | 0.4 | 0.6 | 0 |
+            | dinner | 0.4 | 0.2 | 0.4 |
+            
+    - RNN (시간 정보가 자연스럽게 반영)
+        - <SOS> → hidden_1 → I
+        - I, hidden_1 → hidden_2 → ate
+        - ate, hidden_2 → hidden_3 → dinner
+        
+        - <SOS> → hidden_1 → ate
+        - ate, hidden_1 → hidden_2 → I
+        
+    - Encoder Self Attn 행렬 연산으로 손으로 직접 써보기
+    - ENcoder Self Attn Input : (n, d)
+    - Q, K, V 어떻게 어떤 행렬이랑 연산이 되는지
+    - Q, K, V를 어떻게 연산해서 Attn이 수행이 되는지
+    - 최종적인 output의 shape이 어떻게 되는지
+    
+    +) FFNN
