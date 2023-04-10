@@ -13,6 +13,44 @@ categories: study
 {% highlight ruby %}
 
 
+April week2:  
+*eng speaking   
+	-ints     
+*ai/nlp study  
+	-lectures  
+	-book(ml)     
+*eng reading  
+	-papers1(mentor's pick)    
+	-papers2(my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-paper2 source code  
+
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+Monday, April 11, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*ai study  
+o  
+
+<br/>
+
+
+{% highlight ruby %}
+
+
 April week1:  
 *eng speaking   
 	-ints     
@@ -63,15 +101,6 @@ o
 
 <br/>
 
-Monday, April 03, 2023       
-*eng reading-papers   
-*eng listening-lectures     
-*eng speaking  
-*ai study  
-o  
-
-<br/>
-
 Tuesday, April 04, 2023       
 *eng reading-papers   
 *eng listening-lectures     
@@ -102,6 +131,20 @@ Friday, April 07, 2023
 *eng reading-papers   
 *eng listening-lectures     
 *eng speaking  
+*ai study  
+o  
+
+<br/>
+
+Saturday, April 07, 2023       
+*eng reading-papers   
+*ai study  
+o  
+
+<br/>
+
+Sunday, April 07, 2023       
+*eng reading-papers   
 *ai study  
 o  
 
