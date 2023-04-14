@@ -39,9 +39,39 @@ April week2:
 <br/>
 
 
-Monday, April 11, 2023       
+Monday, April 10, 2023       
 *eng listening-lectures     
 *eng reading-papers   
+*ai study  
+o  
+
+<br/>
+Tuesday, April 11, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*ai study  
+o  
+
+<br/>
+Wednesday, April 12, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*eng speaking  
+*ai study  
+o  
+
+<br/>
+Thursday, April 13, 2023       
+*ai study  
+	*data visualization    
+	*modeling  
+o  
+
+<br/>
+Friday, April 14, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+*eng speaking  
 *ai study  
 o  
 
@@ -136,14 +166,14 @@ o
 
 <br/>
 
-Saturday, April 07, 2023       
+Saturday, April 08, 2023       
 *eng reading-papers   
 *ai study  
 o  
 
 <br/>
 
-Sunday, April 07, 2023       
+Sunday, April 09, 2023       
 *eng reading-papers   
 *ai study  
 o  
