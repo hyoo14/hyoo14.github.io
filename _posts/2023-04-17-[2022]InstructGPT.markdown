@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "[2022]Training language models to follow instructions with human feedback"
+date:   2023-04-17 03:59:20 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* uset intent 파악위해 사람의 피드백으로 파인튜닝(F-T, Fine Tuning)
+
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1VRg6Jnv2gBQmxx4kE__NQElIreVw48fy?usp=sharing)  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+<br/>
+
+# 1 Introduction  
+* LM이 의도와 다른 행동 보임  
+** next predict라서 의도파악과는 다름  
+** 본 논문에서 F-T + RL(사람 선호 맞출 경우 보상하는 강화학습) 제안  
+** RM(Reward Model)학습, RM으로부터 F-T, 이 때, PPO 알고리즘 사용  
