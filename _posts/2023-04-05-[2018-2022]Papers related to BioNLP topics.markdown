@@ -7,7 +7,7 @@ categories: study
 
 
 
-[Paper with my notes]()  
+[Paper with my notes](https://drive.google.com/drive/folders/1aEGi2uMKXZmucFJcV6w72Nd2MKxDIamI?usp=sharing)  
 
 <br/>
 
