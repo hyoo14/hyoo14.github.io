@@ -32,7 +32,18 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
+* hedging: 대비책
+* reliability: 믿을 수 있는, 믿을 만한  
+* mitigate: 완화시키다, 경감시키다  
+* bandit: 강도  
+* bandit environment: Bandit environment는 강화 학습에서 사용되는 용어 중 하나로, 에이전트가 행동을 선택할 수 있는 환경  
+* preformance regression: 성능이 이전 버전에 비해 감소하는 현상  
+* likert scale: 좋아요 점수 스케일 같이 일반적으로 숫자로 표현되는 등간 척도로 구성되어 있으며, 보통 5점 척도나 7점 척도를 사용   
+* held-out labels: Held-out labels은 검증 데이터 또는 테스트 데이터에 속한 레이블(정답)을 의미
+* overly hedge: 과도한 리스크 관리  
+* epistemic humility: 지식에 대한 겸손함이라는 의미로, 인간의 지식과 이해력에 대한 한계를 인식하고 수용하는 태도  
+
+
 
 
 
