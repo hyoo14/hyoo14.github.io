@@ -47,6 +47,13 @@ Monday, April 17, 2023
 *ai study  
 o  
 <br/>
+Tuesday, April 18, 2023       
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+o  
+<br/>
 
 {% highlight ruby %}
 
