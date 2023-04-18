@@ -54,3 +54,53 @@ categories: study
 ** next predict라서 의도파악과는 다름  
 ** 본 논문에서 F-T + RL(사람 선호 맞출 경우 보상하는 강화학습) 제안  
 ** RM(Reward Model)학습, RM으로부터 F-T, 이 때, PPO 알고리즘 사용  
+
+
+### Labelers significantly prefer InstructGPT outputs over outputs from GPT-3  
+* 레이블을 다는 사람들은 InstructGPT의 결과를 선호함  
+** 1.3B param의 InstructGPT를 175B param의 GPT3보다 더 선호  
+** 구조는 같되, 사람 data로 학습  
+** 선호도 InstructGPT 85 +- 3%, GPT3 71+-4%  
+
+
+### InstructGPT models show improvements in truthfulness over GPT-3  
+* 없던 정보 생성 줄어듦 41%->21%  
+
+
+### InstructGPT shows small improvements in toxicity over GPT-3, but not bias  
+* 유동성 25% 줄임  
+
+
+### We can minimize performance regression on public NLP datasets by modifying our RLHF fine-tuning procedure.  
+* performance regression ( preformance regression: 성능이 이전 버전에 비해 감소하는 현상  ) 줄임  
+** RLHF 파인튜닝 -> PPO update  
+
+
+### Our models generalize to the preferences of "held-out" labelers that did not produce any training data.  
+(held-out labels: Held-out labels은 검증 데이터 또는 테스트 데이터에 속한 레이블(정답)을 의미)  
+* InstructGPT 레이블 성능 확인  
+** 더 연구 필요  
+
+
+### Public NLP datasets are not reflective of how our language models are used.  
+* public data 본 LM 잘 반영 못 함  
+** InstructGPT 선호  
+
+
+### InstructGPT models show promising generalization to instructions outside of the RLHF fine-tuning distribution  
+* 파인튜닝분포서 일반화 가능  
+** 코드 QA, 다른 언어도 가능  
+
+
+### InstructGPT still makes simple mistakes.  
+** 아직 완전한 모델은 아님  
+** 긴 hedging 문장(보험? 대비용? 문장)  
+** 잘못된 전제 문제  
+** 안정성, 활용성관련 전진 필요  
+<br/>
+
+
+# 2 Related work  
+### Research on alignment and learning from human feedbak.  
+* 사람의 의도, 사람의 피드백 강화학습으로 반영하는 배치기술 기반(RLHF-Research and Learning from Human Feedback)  
+
