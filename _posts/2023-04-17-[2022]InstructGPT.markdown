@@ -103,4 +103,31 @@ categories: study
 # 2 Related work  
 ### Research on alignment and learning from human feedbak.  
 * 사람의 의도, 사람의 피드백 강화학습으로 반영하는 배치기술 기반(RLHF-Research and Learning from Human Feedback)  
+[Figure 2] 본 모델 3steps  
+(1) SFT(Supervised Fine Tuning)  
+(2) RM(Reward Model)  
+(3) PPO(RL, Proximal Policy Optimization)  
+** RL 피드백 : award  
+*** 로봇, 아타리 게임의 강화학습에서 사용되던 것  
+*** 파인튜닝에 이용(대화, 번역, 의미파싱, 스로리생성, 리뷰생성, 근거추출)  
+*** 언어 어시스턴트  
+
+
+### Training language models to follow instructions.  
+** cross domain generalization LM과 연관  
+*** 다른 도메인 데이터로 각각 train/test  
+
+
+### Mitigating the harms of language models.  
+** 유해요소 from LM 경감   
+*** 파인튜닝 small value target 데이터  
+*** 프리트레이닝 데이터 필터링  
+<br/>
+
+# 3 Models and experimental details  
+* 방법론, 실험 상세  
+## 3.1 High-level methodology  
+* 고차원 방법론  
+** 스타일 지속& 요약  
+
 
