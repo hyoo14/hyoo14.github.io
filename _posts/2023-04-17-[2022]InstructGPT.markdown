@@ -128,6 +128,87 @@ categories: study
 * 방법론, 실험 상세  
 ## 3.1 High-level methodology  
 * 고차원 방법론  
-** 스타일 지속& 요약  
+** 스타일 지속& 요약 도메인서 적용  
+*** PLM부터 시작  
+*** prompt 분포로 aligned 결과 생성  
+*** 사람이 레이블  
+*** 아래 3step 따름  
 
 
+### Step 1: Collect demonstration data, and train a supervised policy.  
+* 시연, 검증 프롬프트로 파인튜닝  
+
+
+### Step 2: Collect comparison data, and train a reward model.  
+* 결과와 대조 입력으로 RM 학습  
+
+
+### Step 3: Optimize a policy against the reward model using PPO.  
+* RM 결과를 스칼라 보상으로 사용, PPO로 파인튜닝  
+
+
+** Step 2, 3 반복  
+
+
+## 3.2 Dataset  
+* 데이터셋  
+** 상업 AI  
+** 사람 프롬프트  
+(1) SFT 시연 13K  
+(2) RM 시연 대조 33K  
+(3) PPO 31K  
+
+
+## 3.3 Human data collection  
+* 사람의 자료 수집  
+** 40명 계약  
+*** 이전보다 넓은 범위의 task(논란적, 민감 토픽)  
+*** 계약자는 harmful 잘 인지  
+*** 동의율(학습: 72.6+-1.6%, 선별: 77.3+-1.3%, 요약: 73+-4%)  
+
+
+## 3.4 Models  
+* 모델  
+** GPT3로 시작  
+
+
+### Supervised fine-tuning (SFT).   
+** SFT: 16에폭, 코사인러닝decay, dropout0.2, RM score기반 검증, 에폭 상승/RM 상승 시 사람의 선호도 증가  
+
+
+### Reward Modeling (RM).  
+** RM-6B 모델(작지만 안정적), CEL사용, rank 해줄 시 속도 상승  
+
+
+### Reinforcement learning (RL).  
+* PPO 사용 => SFT  
+** bandit env  
+*** 랜덤 user 프롬프트  
+*** 프롬프트와 답변 with reward  
+** KL 페널티(SFT에서)로 RM의 과최적화 방지  
+** PPO-ptx(mix) test  
+
+
+### Baselines.  
+* 베이스라인: GPT3, F-T GPT3, FLAN  
+
+
+## 3.5 Evaluation  
+### Evaluations on API distribution.  
+* API 분포기반 평가  
+** 사람의 선호 점수  
+*** 1-7점  
+** 유해탐지 데이터 수집  
+*** 이것도 레이블링  
+
+
+### Evaluations on public NLP datasets  
+* 공용 data 평가  
+** LM 안정성  
+** Zero Shot 성능  
+<br/>
+
+# 4 Results  
+## 4.1 Results on the API distribution  
+### Labelers significantly prefer InstructGPT outputs over outputs from GPT-3.  
+* Labelers: InstructGPT를 GPT3 보다 더 선호  
