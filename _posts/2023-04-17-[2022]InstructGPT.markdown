@@ -37,7 +37,7 @@ categories: study
 * mitigate: 완화시키다, 경감시키다  
 * bandit: 강도  
 * bandit environment: Bandit environment는 강화 학습에서 사용되는 용어 중 하나로, 에이전트가 행동을 선택할 수 있는 환경  
-* preformance regression: 성능이 이전 버전에 비해 감소하는 현상  
+* performance regression: 성능이 이전 버전에 비해 감소하는 현상  
 * likert scale: 좋아요 점수 스케일 같이 일반적으로 숫자로 표현되는 등간 척도로 구성되어 있으며, 보통 5점 척도나 7점 척도를 사용   
 * held-out labels: Held-out labels은 검증 데이터 또는 테스트 데이터에 속한 레이블(정답)을 의미
 * overly hedge: 과도한 리스크 관리  
@@ -212,3 +212,74 @@ categories: study
 ## 4.1 Results on the API distribution  
 ### Labelers significantly prefer InstructGPT outputs over outputs from GPT-3.  
 * Labelers: InstructGPT를 GPT3 보다 더 선호  
+
+
+### Our models generalize to the preferences of "held-out" labelers that did not produce an ytraining data.  
+(Held-out labels은 검증 데이터 또는 테스트 데이터에 속한 레이블(정답)을 의미)  
+* non-train labelers: InstructGPT를 GPT3 보다 더 선호  
+** overfit 아님을 보여줌  
+
+
+### Public NLP datasets are not reflective of how our language models are used.  
+* Public data set 척도로 부족  
+** 성능 평가 쉽게 만들었기 때문  
+
+
+## 4.2 Results on public NLP datasets  
+### InstructGPT models show improvements in truthfulness over GPT-3.  
+* GPT3 대비 사이즈 작지만 성능은 오름(진정성)  
+
+
+### InstructGPT shows small improvements in toxicity over GPT-3, but not bias.  
+* 유해성 다소 해소  
+
+
+### We can minimize performance regerssions on public NLP datasets by modifying our RLHF fine=tuning procedure.  
+(preformance regression: 성능이 이전 버전에 비해 감소하는 현상  )  
+* performance regression 최소화  
+
+
+# 4.3 Qualitative results  
+* 질적 평가  
+### InstructGPT models show promising generalization to instructions outside of the RLHF fine-tuning distribution.  
+* 일반화 미래 유망  
+** 비영어에서도 코드 요약, QA서 성능 나옴  
+
+
+
+### Instruct GPT still makes simple mistakes.  
+* 작은 실수 있음  
+** 잘못된 전제 옳다고 여김  
+*** 지나치게 장황  
+*** 제약사항 늘고, 성능 줄어듦  
+** 이유?: wrong dataset  
+** adversarial data collection -> 위 실수 줄일 것으로 예상  
+<br/>
+
+# 5 Discussion  
+## 5.1 Implications for alignment reserach  
+* 본 구현은 반복적  
+** 경험적 피드백  
+** 정제  
+** P-T 보다 쌈  
+** 지시 따름  
+** F-T 성능 저하 방지  
+
+
+## 5.2 Limitations  
+### Methodology.  
+* 가치판단이 사람에 의존적  
+
+
+### Models.  
+* 완전 안전x  
+** 여전히 toxic, 편향, 폭력 있음  
+** 프롬프팅으로 편향 오히려 높이는 것이 가능한 약점이 있음  
+
+
+## 5.3 Broader impacts  
+* 사람이 원하는 올바른 방향으로 학습하는 것이 목표  
+** 도움주고, 진실되고, 무해하게  
+* 반대 의도도 적용이 가능  
+** 누가 프롬프팅하느냐가 중요  
+
