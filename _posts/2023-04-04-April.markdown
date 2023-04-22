@@ -54,6 +54,32 @@ Tuesday, April 18, 2023
 *ai study  
 o  
 <br/>
+Wednesday, April 19, 2023       
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+o  
+<br/>
+Thursday, April 20, 2023       
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+o  
+<br/>
+Friday, April 21, 2023       
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+o  
+<br/>
+Saturday, April 22, 2023       
+*eng listening-lectures     
+*eng reading-papers   
+o  
+<br/>
 
 {% highlight ruby %}
 
