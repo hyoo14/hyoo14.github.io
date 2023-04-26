@@ -146,4 +146,43 @@ categories: study
 ** 모든 token MLM & 예측  
 *** mask 외에도 다 예측  
 ** 성능 향상됨을 확인  
+** 위를 통해 P-T와 F-T 사이의 mismatch를 줄인 것으로 생각  
+** 속도 뿌누 아니라 정확도도 상승, 파라미터 효율적 코드 달성  
+<br/>  
+
+# 4 RELATED WORK	  
+연관 work  
+### Self-Supervised Pre-training for NLP  
+* PLM(NLP)  
+** word representation  
+** contextual representation  
+** BERT  
+*** MASS, UniLM, ERNIE, SpanBERT  
+** XLNET  
+*** 두개의 attention 사용 (P-T 때), F-T땐 1개  
+** P-T speed up 초점: ELECTRA  
+
+
+### Generative Adversarial Networks   
+* GAN  
+** text applied(Yu 2017, Zhang 2017)  
+** MLE 보다 성능은 떨어짐  
+** 본논문과 maskeGAN이 비슷함  
+
+
+### Contrastive Learning  
+* 대조학습  
+** 가상 negative sampling 구분 기법  
+** 여러 모델서 적용  
+** NCE(Noise-Contrastive Estimation) 측면서 일렉트라와 연관  
+** Word2Vec이 contrastive learning임  
+** 일렉트라는 거대한 CBOW + negative sampling으로 볼 수 있음  
+** 다만 CBOW는 트랜스포머 사용하지 않고 unigram token distribution 분포를 사용함  
+<br/>  
+
+
+# 5 CONCLUSION  
+* replace token detection 제안  
+** 계산 효과적, 성능 상승(down stream에서)  
+** NLP P-T 더 효율적이면서도 성능이 유지되는 것->future work  
 
