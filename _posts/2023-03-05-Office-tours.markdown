@@ -19,13 +19,13 @@ categories: "mountain"
 {% highlight ruby %}
 
 
-#수내1:good
+#수내1:good / 사람: 적당 / 공간: 대 / 차: 3+1 /  깨끗, 유리컵  
 #수내2:better
 #정자:good
 #내방역:normal
 #삼성역:good
 #광화문:bad
-#강남역1:better
+#강남역1:better -> bad / 사람:너무 많음 / 공간: 대 / 차: 3+1 / 깨끗, 유리컵  
 #신논현역:normal
 #역삼역: best
 #홍대입구역:better
