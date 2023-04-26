@@ -33,8 +33,12 @@ categories: study
 <br/>
 
 # 단어정리  
-* reminiscent:  
-* ablations:  
+* reminiscent: 연상시키는, 기억하는, 추억에 잠기는  
+* ablations: 제거, 소거  
+* circumventing: 피하다, 면하다, 피해가다  
+* speculate: 추측하다  
+* stepping stones: 디딤돌    
+
   
 
 
@@ -43,5 +47,103 @@ categories: study
 
 <br/>
 
-# 1 Introduction  
-* .  
+# 1 INTRODUCTION    
+* 최근 representation learning method sota는 denoising auto-encoder  
+** train to recover  
+** MLM 근데 compute cost 매우 큼  
+* 위 이유로 replaced token detection 제안  
+** Efficient Learning Encoder that Classifies Token Replacement Accurately(ELECTRA) 명명  
+** ablation(경감, 제거)들 덕에 학습속도 오르고 정확도도 오름  
+** SQuAD2.0 SOTA등 성능 향상  
+<br/>
+
+# 2 METHOD  
+* small MLM(generator) + discriminator  
+** GAN 같지만 아님, MLE로 학습, P-T학습 후, F-T로 학습  
+* 두 네트워크 학습  
+** Generator G & Discriminator D  
+** 각 encoder로 구성   
+** Seq->vector representation h(x)  
+** xt = [MASK]  
+** 식: pG(Xt|x) = exp(e(xt)^T hG(x)t) / Sigma x' exp(e(x')^T hG(x)t)  
+** discriminator는 replace 판별  
+** 식: D(x,t) = sigmoid(W^T hD(x)t)  
+** real/fake로 구분  
+** MLE로 train  
+* 기타  
+** RL도 시도, MLE보다 성능 별로  
+** nonise input x  
+** 합산 loss minimize  
+** discriminator loss BP(Back Propagation) 안 함(샘플링이 중간에 있어서 못 함)  
+<br/>  
+
+
+# 3 EXPERIMENTS  
+# 3.1 EXPERIMENTAL SETUP	  
+* GLUE  
+** textual entail(RTE, MNLI), QA entail(QNLI), paraphrase(MRPC), Q parapharse(QQP)  
+** text sim(STS), sentiment(SST), linguistic acceptence(CoLA)  
+** Spearman Correlation for STS
+** Mathew Correlation for CoLA  
+** Accuracy for others  
+* SQUAD  
+** 1.1 -> 길이 선택 QA text  
+** 2.0 -> 답 불가능한 경우 포함  
+** EM(Exact Matching), F1 score로 평가  
+** 버트와 같은 data로 학습  
+** 라지모델로 XLNet과 같은 data로 학습  
+** 하이퍼파라미터 버트와 같음  
+** SQuAD위해 XLNet을 top으로  
+** random seed에 상당히 영향 받음  
+*** 10개 fine-tuning 중간값으로 평가  
+
+
+## 3.2 MODEL EXTENSIONS  
+* 버트 베이스를 기준으로 함  
+### Weight Sharing  
+** weight sharing으로 효율성 올림(gen과 disc의)  
+** 작은 gen이 효율적  
+** weight 변화 실험 진행  
+** 500K step 학습  
+** MLM이 representation에 효과적  
+** gen, disc 다른 사이즈인 경우 손해가 있음에도 모든 enc의 웨이도 쉐어 시도는 성능 올림  
+** 그래서 tie embedding 사용  
+### Smaller Generators  
+* compute time 더 걸리니 smaller generator 사용  
+** layer size 줄임, discriminator의 1/4에서 1/2일 때 성능 best  
+** 너무 크면 disc가 처리하기 힘듬(오래걸림, 파라미터 많아져서?)  
+### Training Algorithms  
+* 학습 알고리즘  
+** gen 학습 L MLM으로  
+** weight 초기화 후 L Disc로 학습, gen의 weight는 freeze  
+** inint 없으면 학습 어려움  
+** 위 학습 알고리즘 통해 성능 향상함  
+** Adversarial train 문제  
+** MLM 보다 성능 안 나옴  
+*** poor sample 때문으로 추축  
+
+
+## 3.3 SMALL MODELS  
+* 효율적 P-T가 목적이므로 작은 버트 사용  
+** 일렉트라 small 성능 굉장히 좋음(사이즈 대비)  
+
+
+## 3.4 LARGE MODELS  
+* 일렉트라 라지 모델 train  
+** 토큰대체 탐지 효과성 측정 위해  
+** 버트 라지만하게 만듬  
+** compute는 1/4만 듦  
+** 성능은 오름  
+
+
+## 3.5 EFFICIENCY ANALYSIS  
+* 효율성 분석  
+** 여전히 많은 input 받음  
+** 디딤돌 설정  
+** disc가 15%만 loss하게 설정  
+** gen model의 토큰 사용 [MASK] 대신   
+*** mask만 예측  
+** 모든 token MLM & 예측  
+*** mask 외에도 다 예측  
+** 성능 향상됨을 확인  
+
