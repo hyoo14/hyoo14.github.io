@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "[2019]Learning Imbalanced Datasets with Label-Distribution-Aware Margin Loss"
+date:   2023-04-28 18:27:22 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* .
+
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1VvMLE2Pf5hTZnteXC0uJZb3ieoRHMkQY?usp=sharing)  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
