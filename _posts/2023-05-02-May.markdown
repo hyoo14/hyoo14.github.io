@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "May"
+date:   2023-05-02 08:26:33 +0900
+categories: study
+---
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+May week1:  
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor's pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+Monday, May 01, 2023       
+*eng listening-lectures           
+*eng reading-papers   
+*ai study  
+o  
+<br/>
+Tuesday, May 02, 2023       
+o  
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+
+<br/>
