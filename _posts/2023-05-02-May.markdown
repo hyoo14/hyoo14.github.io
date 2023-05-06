@@ -14,7 +14,7 @@ categories: study
 {% highlight ruby %}
 
 
-May week1:  
+May week1:  ㅑ 
 *eng speaking   
 	-ints? exams?       
 *ai/nlp study  
