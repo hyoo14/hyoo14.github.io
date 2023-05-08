@@ -78,9 +78,149 @@ categories: study
 
 # 2 Related Works  
 * 기존: 리샘플 & 리웨이팅 2가지  
+### Re-sampling  
+
 ** 리샘플: 2가지  
 *** over-sampling -> overfit  
 *** 언어샘플: 작은 빈도 버리므로 불균형 심화  
+
+### Re-weighting  
 ** 리웨이트: cost 민감   
 *** 빈도 거꾸로 함(vanila)  
 *** 최적화(딥 모델서) 어려움  
+* re-weighting 역빈도-> 다빈도는 성능이 떨어지는 단점 생김  
+** 성능 올리는 선에서 샘플링하는 대처방안은 -> 본 모델의 접근법과 비슷함  
+** 특성 따라 weight 할당  
+*** Focal loss: 잘 분류된 경우 비율 축소  
+**** gradient 낮은 경우 비율 축소 (이미 분류 잘 되는 거 취급)  
+** weighting 때 regularization 중요  
+*** reg x면 max margin 수렴  
+*** 본 논문은 rare에 high margin  
+**** L2 reg 적용: 이란화 성능 최고  
+**** deferred reweighting 효과적  
+** 본 메인 기술은 위와 관련성 적음  
+*** 함께 적용 가능, 본 연구서 defereed re balancing 사용  
+
+### Margin loss  
+* hinge loss -> max margin 얻기 위해 사용(SVM서)  
+** Large Margin, softmax, Angular Softmax, Additive Margin Softmax: inter class variance 낮추고, inter class marging 높임(angular)  
+** 본은 위의 클래스의존 margin 대신 minority에 큰 margin 줌  
+*** 이론적 식과 경험으로 입증  
+
+### Label shift in domain adaptation  
+* 불균형데이터로 학습할 때 전이학습에서 레이블 shift(도메인 적응) 문제 있음  
+** 레이블 shift 어림잡기 어렵  
+** 이후 re-weighting(re-sampling)  
+** 본 모델이 더 나은가?  
+*** reweighting step 대체  
+* Distributionally robust optimization이라는 도메인 적용용 기술 있음  
+** target 레이블 분포 모른다는 가정  
+*** 매우 어렵  
+** 본 모델은 test 레이블 분포로 안다고 가정    
+
+### Meta-learning  
+* 메타러닝도 불균형해소 기법  
+** 본 논멘서 제시하는 모델이 더 효율적  
+</br>
+
+# 3 Main Approach  
+## 3.1 Theoretical Motivations  
+### Problem setup and notations  
+* 이론적 동기  
+** 클래스 test 분포와 학습 분포는 같을 것이라는 가정  
+** test error: L bal[f] = Pr (x,y)~Pbal [f(x) y < max f(x) l ]  
+** margin randa(x,y) = f(x) y - max j!=y f(x) j -- (1)  
+** margin for class j as : ramda j = min i (- Sj ramda(xi,yi)  
+### Fine-grained generalization error bounds  
+* 잘 정제된(일반화된) 에러 범위  
+** F: class family, C(F): complexity measure of F(precise와 직접 관련x), 일반화된 범위->C(F) / sqrt(n)   
+** imbalanced test erro <~ (1 / ramda min ) * ( sqrt( C(F)/n )  
+** 범위는 레이블 분포와 무관  
+** 더 정제는 아래와 같음  
+** (1-n^-5)의 높은 확률(랜덤 보다 높은) Lj[f] <~ 1/ramda j * sqrt(C(F)/n j) + log n / sqrt(nj)   
+### Class-distribution-aware margin trade-off   
+** 클래스 분포 힌지 마진 시 tarde-off  
+*** minor class에 큰 margin은 다빈도 class margin 해칠 것  
+*** 좋은 tradeoff란? k=2  
+** trade off 최적은 ramda 1 = C / n1 ^ 1/4 , and ramda 2 = C / n2 ^ 1/4  
+### Fast rate vs slow rate, and the implication on the choice of margins  
+** slow rate: 1/sqrt(n), fast rate: 1/n  
+** optional: ni is proportional to ni^-1/3   
+
+
+## 3.2 Label-Distribution-Aware Margin Loss  
+* 클래스 의존 마진 제안  
+** soft-margin loss func에서 network가 위 margin 갖게 함  
+** 멀티클래스서 hinge loss 다음처럼 정의: L LDAM-HG((x,y);f) = max(max j!=y {zj} - zy + ramda y, 0)  
+** C는 hyper parameter tuning용  
+*** 이를 통해 더 효과적 normalize logit  
+*** 히든 activate l2 norm 1  
+*** FCL l2 norm1  
+** CELoss를 다음처럼 사용: L LDAM((x,y);f) = (-log e^zy - ramda y )  / e^X - ramday y + Signam j!=y e^zj  
+** 스칼라부분: 클래스 기반 re-weighting  
+** LDAM 부분: 결과기반 re-weighting, 스칼라부분과 상호보완  
+
+
+## 3.3 Deferred Re=balancing Optimization Schedule  
+* 지연 재조정 최적화 스케쥴  
+** cost-sensitive reweighting&re-sampling은 잘 알려진 불균형 처리법  
+*** uniform 하게 만들어줌  
+*** re-sampling은 minor에 overfit 됨  
+*** minor weight increase: opti 힘들고 불안정하게 함   
+** learning rate annealing(견고하게 하기, 학습속도 서서히 줄이는 기법)과 함께 re-weighting / sampling으로 ERM 동일 비율 부여보다 성능 좋음  
+** 위 영향으로 deferred balancing training 개발  
+** 경험적으로 첫 단계의 트레이닝서 좋은 초기화가 이루어짐  
+</br>  
+
+
+# 4 Experiments  
+** IMDB review, CIFAR-10(10 classes), CIFAR-100(100 classes), Tiny Imagenet, iNaturalist2018서 실험(+data imbalace화)  
+### Baselines   
+** 베이스라인  
+*** ERM(모든 예 같은 가중치, CELoss 사용)   
+*** RW: inverse of sample size로  
+*** RS: inverse sample size prob으로  
+*** CB: (1-beta^ni) / (1-beta)로  
+*** Focal: 최신  
+*** SGD: 3GD로 learning rate 스케줄    
+
+
+### Our proposed algorithm and variants  
+* 본 제안 combi test  
+** DRW & DRS : ERM opti 스케줄 사용  
+** LDAM 위둘 cobmi  
+
+
+## 4.1 Experimental results on IMDB review dataset  
+* IMDB 결과  
+** BiLSTM Adam으로 학습  
+
+
+## 4.2 Experimental results on CIFAR  
+### Imbalanced CIFAR-10 and CIFAR-100  
+** CIFAR 실험 50,000 train image, 10,000 validation image, 32X32 size img, 10&100 classes  
+** imbalance 만들기 위해 수를 줄여서 long-tail 또는 step imbalance 만듬  
+*** long-tail서 size imbalance exponential decay  
+*** step서 mu=0.5로  
+** CE, LDAM-DRW가 성능 압도  
+### Imbalanced but known test label distribution  
+** 불균형하지만 테스트 레이블 분포가 알려진 경우에서도 실험  
+
+
+## 4.3 Visual recognition on iNaturalist 2018 and imbalanced Tiny ImageNet  
+** iNaturalist2018서도 성능 압도  
+
+
+## 4.4 Ablation study  
+### Evaluating generalization on minority classes  
+** 클래스별 에러 기법 사용  
+### Evaluating deferred re-balancing schedule   
+** deferred re-balancing schedule 사용  
+</br>  
+
+# 5 Conclusion  
+* margin loss 사용 LDAM, DRW training schedule 사용  
+** RW/RS 약점 LDAM이 보완  
+** DRW도 성공적용  
+** 설명은 잘 안됨->future work  
+
