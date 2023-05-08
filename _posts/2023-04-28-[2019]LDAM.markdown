@@ -14,7 +14,10 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .
+* 클래스 불균형 문제 해결 위한 방안 제시  
+** 레이블 인지 margin loss  
+** 트레이닝 스케쥴  
+** 이를 통해 성능 향상 이룸  
 
 
 
@@ -32,7 +35,22 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
+* fairness: 공정성  
+* deferred: 지연된, 연기된  
+* deferred re-sampling: 지연 재표본 추출,  누락된 데이터나 불균형한 데이터 분포를 고려하여 새로운 표본을 추출하는 방법 중 하나  
+* hinge: 문이 걸쳐 있는 지지대  
+* hinge loss: 주로 이진 분류(binary classification) 문제에서 사용, Hinge loss는 올바르게 분류된 데이터와 분류되지 않은 데이터의 차이를 계산하여 손실 값을 구하는 함수로 hinge와 비슷한 모양이라고 함  
+* theoretical footing: 이론적 근거  
+* oblivious: 의식하지 못하는, 무관하다  
+* derivation: 어원, 기원  
+* annealing: 가열 냉각, 풀림, 강화시키다
+* annealing the learning rate: 딥러닝에서 "annealing"은 학습 속도(learning rate)를 조절하는 기법 중 하나로, 학습을 진행하면서 학습 속도를 서서히 감소시키는 것을 말함. 이러한 방식으로 학습을 진행하면, 초기에는 학습률을 높게 설정하여 빠르게 수렴하도록 하고, 이후에는 학습률을 서서히 감소시켜 미세한 조정을 하여 정확도를 높이는 효과를 얻을 수 있음. 예를 들어, 딥러닝 모델에서 학습률을 annealing 기법으로 조정하면, 초기에는 큰 보폭으로 학습하다가 점차 보폭을 줄여 최적점에 도달하는 데 필요한 시간을 단축시키고, 과적합(overfitting)을 방지하면서 모델의 일반화 성능을 향상시킬 수 있음.   
+* acronym : 첫글자 조합해서 만든 말, e.g. NASA  
+* abbreviation: 약어, e.g. i.e. = id est = that is = 즉  
+
+
+
+
 
 
 
@@ -41,4 +59,28 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* long-tailed 레이블 분포  
+** 마이너클래스 성능 안 좋음  
+* 해결 방법  
+** re-weighting  
+** re-sampling in SGD    
+*** overfit in minor  
+** 해결책: minor에 제약 줌   
+* data 특성 margin 탐구  
+** large margin  
+*** regularization  
+* 클래스 마진 tradeoff optimize  
+* LDAM loss는 클래스간 마진 최적화  
+** 기존 softmargin 확장  
+** re-sample/weighting과 연관 적음  
+*** deferred re-balancing 기법으로 같이 사용  
+</br>
+
+# 2 Related Works  
+* 기존: 리샘플 & 리웨이팅 2가지  
+** 리샘플: 2가지  
+*** over-sampling -> overfit  
+*** 언어샘플: 작은 빈도 버리므로 불균형 심화  
+** 리웨이트: cost 민감   
+*** 빈도 거꾸로 함(vanila)  
+*** 최적화(딥 모델서) 어려움  
