@@ -26,9 +26,9 @@ categories: "mountain"
 #삼성역:good
 #광화문:bad
 #강남역1:better -> bad / 사람:너무 많음 / 공간: 대 / 차: 3+1 / 깨끗, 유리컵  
-#신논현역:normal
+#신논현역:normal / 사람:많음 / 공간: 중 / 차: 3+1 / 깨끗, 유리컵  
 #역삼역: best
-#홍대입구역:better
+#홍대입구역:better -> not good / 사람:너무 많음 / 공간: 대 / 차: 3+1 / 깨끗, 유리컵, 종이컵  
 #시청역:best
 #ddp:better
 #뚝섬역:bad
