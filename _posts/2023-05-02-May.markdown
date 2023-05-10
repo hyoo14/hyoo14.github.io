@@ -37,11 +37,44 @@ May week2:
 
 {% endhighlight %}  
 
+
+
+
 <br/>
 
 
-Monday, May 08, 2023       
+Monday, May 08, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
 o  
+<br/>
+
+
+Tuesday, May 09, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+<br/>
+
+
+Wednesday, May 10, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+
+
 
 {% highlight ruby %}
 
