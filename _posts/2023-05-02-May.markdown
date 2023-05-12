@@ -73,7 +73,26 @@ Wednesday, May 10, 2023
 *math study  
 *bio study  
 o  
+<br/>
 
+Thursday, May 11, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+<br/>
+
+Friday, May 12, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
 
 
 {% highlight ruby %}
