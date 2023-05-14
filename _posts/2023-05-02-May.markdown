@@ -93,6 +93,12 @@ Friday, May 12, 2023
 *math study  
 *bio study  
 o  
+<br/>
+
+Saturday, May 13, 2023  
+*ai study  
+o  
+<br/>
 
 
 {% highlight ruby %}
