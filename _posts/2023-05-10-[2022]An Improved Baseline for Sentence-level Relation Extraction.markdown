@@ -33,7 +33,7 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
+* preliminary: 예비의  
 
 
 
@@ -88,5 +88,52 @@ categories: study
 ### Entity marker  
 * 엔티티 마커  
 ** [EI]같은 토큰  
+### Entity marker (punct)  
+* 엔티티마커(구두점:@, #)  
+** 모델의 vocab 사용하면 됨  
+** 새롭게 소개 필요 없음  
+### Typed entity marker  
+* 타입 엔티티 마커  
+** <S:TYPE>, <O:TYPE> 과 같음  
+### Typed entity marker (punct)  
+* 타입 엔티티마커 구두점  
+** 구두점과 type 함께 사용  
+** 본 논문이 제안하는 것  
+
+
+** 새 토큰 임베딩은 랜덤 초기화 후 파인튜닝 때 update  
+</br>
+
+# 3 Experiments  
+* RE 벤치마크로 실험  
+
+
+## 3.1 Preliminaries  
+* 예비작업들  
+
+
+### Datasets.  
+* 데이터셋  
+** TACRED, TextAnalysisConferenceRelationExtraction Dataset  
+** original TACRED, Re-TACRED, TACREV  
+** TACRED noise 6.62%  
+** 관련 통계 Appx A 참고  
+
+
+### Copared methods.  
+* 비교 방법론들  
+** PA-LSTM(BiLSTM + POS Attention + SOFTMAX)  
+** C-GCN(graph-base model, pruned depency tree of sent, graph CNN)  
+** SpanBERT(PLM, span 예측 추가)  
+** KnowBERT(LM과 entity linker 함꼐 학습, subtoken이 entity임베딩에 가도록 허락(KB서 학습된)  
+** LUKE(LM을 큰 text 코포라와 Knowledge graph로 학습, Frequent entity추가, entity aware-attention 제안)  
+* 모델 configure  
+** re-run official 추천 파라미터로  
+** 허깅페이스 기반 + Adam, 5e-5 learning rate in BERT base, 3e-5 in BERT large & RoBERTa Large, linear warm-up 10% first, decay 0, batch 64, fine tuning epoch=5, f1 5 training average  
+
+
+## 3.2 Analysis on Entity Representation  
+* entity 표현 분석  
+** base & large BERT, large RoBERTA as encoder  
 
 
