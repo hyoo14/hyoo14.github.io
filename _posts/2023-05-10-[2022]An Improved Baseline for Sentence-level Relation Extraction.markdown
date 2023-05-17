@@ -135,5 +135,23 @@ categories: study
 ## 3.2 Analysis on Entity Representation  
 * entity 표현 분석  
 ** base & large BERT, large RoBERTA as encoder  
+** PLM별 성는ㅇ 비교  
+** 통찰  
+*** typed 엔티티 마커가 여러 변형 버전들 능가  
+*** RoBERTa F1 74.6(구두점 typed entity 마커)로 SOTA  
+*** 모든 카테고리 정보에서 도움 됨을 확인(RE서)  
+*** 특수 구두점 효과 좋음(새 마크 학습은 별로)  
+
+
+## 3.3 Comparison with Prior Methods  
+* 이전 메서드들 비교  
+** unseen 일반화 성능 & 어노테이션 에러시 성능 Appx B, C 참고  
+</br>
+
+# 4 Conclusion  
+* 결론  
+** 간단, 강력한 엔티티 펑츄에이션 타입 마커로 RE SOTA  
+** entity representation & noisey label 문제 접근  
+** 기록 압도 & SOTA 달성  
 
 
