@@ -44,11 +44,39 @@ May week3:
 
 
 Monday, May 15, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
 *ai study  
-*eng speaking  
+*math study  
+*bio study  
 o  
 <br/>
 
+Tuesday, May 16, 2023   
+*eng listening-lectures            
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+<br/>
+
+Wednesday, May 17, 2023   
+*eng listening-lectures            
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+<br/>
+
+
+Thursday, May 18, 2023   
+*eng listening-lectures               
+*ai study  
+o  
+<br/>
 
 {% highlight ruby %}
 
