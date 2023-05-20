@@ -77,16 +77,27 @@ o
 Thursday, May 18, 2023   
 *eng listening-lectures               
 *ai study  
-*eng speaking    
+*eng speaking 
+*bio study  
+*math study     
 o  
 <br/>
 
-Thursday, May 18, 2023   
+Friday, May 19, 2023   
 *eng listening-lectures               
 *ai study  
 *eng speaking    
+*bio study  
+*math study  
 o  
-<br/>
+<br/>  
+
+Saturday, May 20, 2023  
+*eng listening   
+*bio study  
+o  
+<br/>  
+
 
 {% highlight ruby %}
 
