@@ -95,9 +95,14 @@ o
 Saturday, May 20, 2023  
 *eng listening   
 *bio study  
+*ai study  
 o  
 <br/>  
 
+Sunday, May 21, 2023  
+*eng reading   
+o  
+<br/>  
 
 {% highlight ruby %}
 
