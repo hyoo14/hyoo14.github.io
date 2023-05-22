@@ -14,6 +14,50 @@ categories: study
 {% highlight ruby %}
 
 
+May week4:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+<br/>
+
+
+Monday, May 22, 2023   
+*eng listening-lectures     
+*eng speaking       
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+o  
+<br/>
+
+
+
+{% highlight ruby %}
+
+
 May week3:   
 *eng speaking   
 	-ints? exams?       
