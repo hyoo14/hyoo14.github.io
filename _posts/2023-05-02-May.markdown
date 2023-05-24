@@ -65,6 +65,21 @@ o
 <br/>
 
 
+Wednesday, May 24, 2023   
+*eng listening-lectures            
+*eng reading-papers   
+*ai study  
+*math study  
+*bio study  
+*eng speaking  
+o  
+<br/>
+
+Thursday, May 25, 2023   
+o  
+<br/>  
+
+
 
 {% highlight ruby %}
 
