@@ -95,7 +95,9 @@ o
 *bio study  
 <br/>  
 
-Saturday,  
+Saturday, May 27, 2023  
+*ai study  
+o  
 
 
 {% highlight ruby %}
