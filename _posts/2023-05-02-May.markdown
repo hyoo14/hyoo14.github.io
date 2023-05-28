@@ -98,6 +98,12 @@ o
 Saturday, May 27, 2023  
 *ai study  
 o  
+<br/>
+
+Sunday, May 28, 2023  
+*ai study  
+*eng reading  
+o  
 
 
 {% highlight ruby %}
