@@ -54,10 +54,10 @@ o
 <br/>
 
 Tuesday, May 30, 2023   
-o  
-*eng listening-lectures            
-*eng reading-papers   
+*eng listening-lectures       
 *ai study  
+o      
+*eng reading-papers   
 *math study  
 *bio study  
 *eng speaking  
