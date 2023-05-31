@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "[2022]BERTopic: Neural topic modeling with a class-based TF-IDF procedure"
+date:   2023-05-31 23:48:33 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/18a0bK_aQyLB45JvRj1iBGgW2c2KHccRU?usp=sharing)  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
