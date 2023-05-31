@@ -1,0 +1,48 @@
+---
+layout: post
+title:  "[2021]Korean Language Understanding Evaluation"
+date:   2023-05-30 20:14:33 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* .  
+
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1ns7PMLzJp0_FvHeIb1a4M9ET_qjnjuJ0?usp=sharing)  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
