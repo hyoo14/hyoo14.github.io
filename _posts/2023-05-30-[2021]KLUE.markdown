@@ -14,8 +14,10 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .  
-
+* 한국언어이해 평가 벤치마크 소개  
+* 8가지 포함(TC, STS, NLI, NER, RE, DP-DependencyParsing, MRC, DST-DialogueStateTracking)  
+* PLM 학습(KLUE-BERT, KLUE-RoBERTa(SOTA))  
+* 이슈 필터링(편견bias, 유해toxin, 개인정보PII-PersonalInformationIdentifier)  
 
 
 
@@ -32,8 +34,13 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
-
+* pragmatics: 실용주의, 화용론     
+** 화용론? 화자와 청자의 관계에 따라 언어 사용이 어떻게 바뀌는지, 화자의 의도와 발화의 의미는 어떻게 다를 수 있는지 등에 대한 연구   
+*** '말하는 이, 듣는 이, 시간, 장소 따위로 구성되는 맥락(context)과 관련하여 문장의 의미를 체계적으로 분석하려는 의미론의 한 분야'  
+*** 언어행위(speech act), 전제(presupposition 또는 PSP), 함축(implicature), 직시(deixis), 정보구조(information structure 또는 information packaging)등이 화용론에서 주요하게 다루는 주제  
+* preemptively: 선제적으로  
+* agglutinative nature: 교착 성질  
+* agglutinative: 교착, 교착어(한국어-조사 등이 붙음)  
 
 
 
@@ -45,4 +52,37 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* 버트, GPT3 같은 PLM의 성공이유는 GLUE나 SupserGLUE같은 효율적이고 잘 설계된 벤치마크 덕분    
+** syntax, semantics, pragmatics 잘 포함한 NLU 벤치마크인 것이 이유    
+** 다양 언어들에서 GLUE의 성공을 보고 GLUE와 유사한 언어별 벤치마크 생성(다국어 포함)  
+* 한국어도 그래서 GLUE 유사 벤치마크 시도  
+** 새로운 base 코포라부터 구축    
+*** 불법/편견/개인정보 문제 피할 수 있음  
+** 8KLUE Task  
+** PLM & tokenizer  
+<br/>
+
+# 2 KLUE Benchmark  
+## 2.1 Design Principles  
+* 디자인 원칙  
+** 다양 task/코포라 커버  
+*** 8 task/news, 백과사전, 리뷰, 스마트홈, 한국어스타일 포맷  
+*** 모두에게 공개  
+** 정확, 모호하지 않은 태깅  
+*** 가이드라인 꼼꼼하게 만듬  
+* PLM에서 윤리문제 줄임  
+** toxin(욕설, 성적인표현, 공격), bias(젠더, 종교, 인종), PII(개인정보) 제거  
+
+
+## 2.2 Source Corpora  
+* CC BY (-SA) 라이센스 기반 또는 상업이용을 허용  
+
+
+## 2.3 Considerations in Annotation  
+* 고려사항  
+** 한글 특성 잘 반영: agglutinative nature(교착특성) 잘 반영하게 가이드 in NER, POS, DP  
+** 정확태그 획득(가이드 통해..)  
+* 나쁜거 제거  
+** bias, hate(Moon 정의 따름): 지나친 일반화, 젠더, 인종, 배경, 국적, 종족, 정치견해, 피부색, 종교, 장애, 나이, 외모, 경제력, 직업  
+** hate:공격, 모욕, 냉소  
+** Privacy PII 인식  
