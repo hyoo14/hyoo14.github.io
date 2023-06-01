@@ -46,10 +46,10 @@ June week1:
 Thursday, June 01, 2023   
 *eng listening-lectures       
 *ai study  
-o      
-*eng reading-papers   
 *math study  
 *bio study  
+o      
+*eng reading-papers   
 *eng speaking  
 
 <br/>
