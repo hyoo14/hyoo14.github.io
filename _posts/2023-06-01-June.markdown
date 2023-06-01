@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "June"
+date:   2023-06-02 00:01:33 +0900
+categories: study
+---
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+June week1:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+<br/>
+
+
+Thursday, June 01, 2023   
+*eng listening-lectures       
+*ai study  
+o      
+*eng reading-papers   
+*math study  
+*bio study  
+*eng speaking  
+
+<br/>
+
