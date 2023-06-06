@@ -53,6 +53,10 @@ o
 *math study  
 <br/>
 
+Tuesday, June 06, 2023  
+*ai study  
+o  
+<br/>
 
 
 {% highlight ruby %}
