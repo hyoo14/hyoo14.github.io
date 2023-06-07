@@ -58,6 +58,16 @@ Tuesday, June 06, 2023
 o  
 <br/>
 
+Wednesday, June 07, 2023  
+*ai study  
+o  
+*eng speaking  
+*eng listening-lectures       
+*eng reading-papers   
+*bio study  
+*math study  
+<br/>
+
 
 {% highlight ruby %}
 
