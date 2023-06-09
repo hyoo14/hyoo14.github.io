@@ -73,6 +73,13 @@ Thursday, June 08, 2023
 o  
 <br/>
 
+Friday, June 09, 2023  
+*ai study  
+*eng listening  
+o  
+<br/>
+
+
 {% highlight ruby %}
 
 
