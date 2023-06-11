@@ -86,6 +86,10 @@ Saturday, June 10, 2023
 o  
 <br/>  
 
+Sunday, June 11, 2023  
+*ai study  
+<br/>
+
 
 {% highlight ruby %}
 
