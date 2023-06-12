@@ -14,7 +14,7 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* 
+* BERT + TFIDF : 성능 향상
 
 
 
@@ -31,8 +31,10 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
-
+* across: 통틀어, 전반에 걸쳐  
+* albeit: 비록 ~일지라도    
+* lemmatization: 기본 형태(lemma)로 바꾸는 과정(기본형으로 바꾸는 과정)  
+* proxies: 대리인, 대신할 변수  
 
 
 
@@ -43,4 +45,175 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* 토픽 모델링 비지도서 강력  
+** LDA, NMF(Non-Negative Matrix Factorization)  
+* 한계  
+** BOW 사용, context 단어 사이 관계 파악 못 함  
+* 해답  
+** MLP서 인기있는 text embeddings(BERT 등) 사용  
+* 임베딩은 tpic 모델서 채택되기 시작  
+** centeroid 모델에 도입(LDA와 대조적)  
+** Top2Vec은 Doc2Vec 같은 단어, 다큐 임베딩 사용  
+** Document는 clustering되고 토픽은 그 center 위주로 만들어짐  
+*** 흥미로운 건 클러스터링은 density 기반(HDBSCAN 사용)   
+* 단점(앞선 방법의)  
+** center 단어가 topic 이라는 것이 항상 성립되지 않음   
+** 빈도기반 rerank 시도되었지만 여전히 center 중심  
+* 본 논문서 버트토픽 소개  
+** 클러스터링 기술 & 클래스 기반 tfidf 사용  
+** 1. docu embedding 만들고(PLM)  
+** 2. 차원축소  
+** 3. centeroid 한계 극복위해 클래스 기반 tfidf로 topic 추출  
+** 더 유연 topic 모델 가능케함(동적 토픽 모델 처럼)  
+<br/>
+
+# 2 Related Work  
+* 뉴럴 토픽모델 성공적  
+** LDA 임베딩  
+** 임베딩 topic 모델  
+** LM->토픽모델 향상  
+** 임베딩 + 클러스터링  
+*** 유연한 토픽 모델  
+** 버트토픽  
+*** 임베딩 + tfidf  
+<br/>
+
+# 3 BERTopic  
+* 버트토픽  
+** 1. 다큐->임베딩  
+** 2. 차원 축소  
+** 3. ifidf로 topic 추출  
+
+
+## 3.1 Document embeddings  
+* 다큐 임베딩  
+** 같은 토픽인 경우 임베딩이 유사할 것으로 기대  
+** SBERT 프레임웍 사용(text->dense vector), (sent paragraph)  
+** 유사 다큐 클러스터링하지만 topic 생성에서는 다른 방법  
+** 더 나은 LM이 나오고 도입된다면 성능도 오를 것    
+
+
+## 3.2 Document clustering  
+* 다큐 클러스터링  
+** 차원 크면 거리 멀어짐-> locality구하기 어렵  
+** 클러스터링은 차원의 저주 극복한 것임에도 가장 직관적 방법이 차원 축소  
+** 비록 PCA, t-SNE가 유명하지만 UMAP가 locality 더 잘 지킴  
+** UMAP은 또하나 다른 차원 LM간 사용 가능  
+** 그래서 UMAP 사용  
+* HDBSCAN으로 클러스터링  
+** DBSCAN의 확장 버전  
+** 밀도 달리하여 클러스터링하는 기법(계층 클러스터링 알고리즘 self-clustering  )  
+** 연관 x docuemnt 할당 방지  
+** UMAP은 심지어 K-means나 HDBSCAN 성능도 향상시킴  
+
+
+## 3.3 Topic Representation  
+* 토픽 임베딩  
+** 토픽 임베딩은 클러스터링된 docu 기반으로 하나 할당  
+** tfidf 변형하여 중요 단어 측정  
+** TF는 문제 빈도, idf는 다른 먼서의 역빈도  
+** 클러스터의 다큐들 하나로 통합  
+** 이걸로 tfidf  
+<br/>
+
+# 4 Dynamic Topic Modeling  
+* 다이나믹 토픽 모델  
+** 정통모델은 정적  
+** 동적토픽모델링은 LDA 확장서 소개  
+*** 시간과 범위 따라 바뀜  
+** 버트토픽은 c-tf-idf 사용  
+** PLM 따라 역동적인 것  
+* 이를 위해  
+** 전체 코퍼스로 fit  
+** 각 토픽 별로 local 임베딩화(시간 반영)  
+** 메타 데이터 반영 가능해짐  
+
+
+## 4.1 Smoothing  
+* 토픽 임베딩이 시점마다 다르고 linear 하지도 않음  
+** L1 norm 사용  
+** 근데 항상 잘 적용은 아니니 옵셔널하게 사용할 것  
+<br/>
+
+# 5 Experimental Setup  
+* OCTIS(Optimizing & Comparing Topic models in Simple)이라는 오픈소스 사용해서 실험  
+
+
+## 5.1 Datasets  
+* 20NewsGroups, BBC News, Tramp's Tweet 사용  
+** 20뉴스그룹 116309 기사, 20 카테고리  
+** BBC 2225 애쳐(2004~2005)  
+** OCTIS로 전처리(특수문자/stopword/5단어 미만 제거, lemmatization(기본형으로 만듬)  
+** 최근 data 반영 위해 트럼프트윗 사용, 44253tweet(09~21)  
+** 동적 토픽 모델링 위해 트럼프 트윗 이용  
+** 추가적 UN 기사 06-15 분석  
+
+
+## 5.2 Models  
+* LDA, UMF, CTM, Top2Vec와 비교  
+** LDA, NMF는 OCTIS로 run  
+** SBERT는 임베딩으로 사용  
+** 공정비교위해 버트토픽과 Top2Vec HDBSCAN parameters 고정  
+** 일반화 성능 측정 위해 4개 다른 언어 모델 사용  
+
+
+## 5.3 Evaluation  
+* 토픽 일관성과 다양성으로 평가  
+** 일관성: NPMI(Normalized Pointwise Mutual Information)  
+*** 인간 판단 [-1,1] 레이팅  
+** 다양성: 유니크 단어 비율 [0,1]로 레이팅  
+** 10~50 토픽 벡터로 10 step of NPMI 스코어 계산  
+** 평균냄  
+** 50토픽 모두 결과로 평가  
+** 다양성은 validation 측정의 대리 변수(척도)  
+** 다른 이와 다르게 평가 가능  
+** NPMI이 인간판단과 연관성 보인다고 할지라도 최근 연구서는 안 보인다고 함  
+<br/>  
+
+# 6 REsults  
+## 6.1 Performance  
+* 버트토픽이 일반적으로 일관성 높고 다양성도 경쟁력있음  
+
+
+## 6.2 Language Models  
+* 버트토픽이 고르게 우수함(어떤 토픽 소스 데이터에서나)  
+** 그냥 PLM 보다 유연  
+
+
+## 6.3 Dynamic Topic Modeling  
+* 버트토픽 linear변화 있을때/없을때 관찰  
+** linear 가정 효과 없음  
+
+
+## 6.4 Wall time  
+* 시간  
+** CTM MP-NET SBERT 다소 느림  
+*** 위 지우면 속도 올라감  
+** Nueral 모델이 시간 더 걸림  
+** GPU 없으면 시간 급격히 더 걸림(당연한 소리 아닌가..?)  
+<br/>  
+
+# 7 Discussion  
+* 강점, 약점 논해보겠음  
+
+
+## 7.1 Strengths  
+* 강점  
+** LM 상관없이 성능 좋고 SOTA 가능 (GPU 없어도 괜춘)  
+** 임베딩 docu 분리(토픽 임베딩과 분리)은 큰 유연성 가져옴(따로 처리해도 전체 무관하게 사용 가능)  
+** 클래스 기반 tfidf 사용이 큰 장점(근데 실제로는 글쎄..)  
+
+
+## 7.2 Weakness  
+* 약점  
+** 하나의 토픽만 있다는 가정이 틀림  
+** 트랜스포머 기반 PLM 쓰지만 토픽 임베딩은 Bow에서 생성  
+<br/> 
+
+# 8 Conclusion  
+* 결론  
+** SOTA LM 써서 topic model 발전시킴(tfidf와 함께)  
+** 단계도 나눔(clustering&topic generationg)  
+*** 유연성 커짐  
+** 실험 보면 버트토픽은 언어의 패턴 일치를 학습-> 경쟁력과 안정성 보여줌  
+ 
