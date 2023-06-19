@@ -14,6 +14,49 @@ categories: study
 {% highlight ruby %}
 
 
+June week4:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+<br/>
+
+
+Monday, June 19, 2023   
+*ai study  
+o  
+<br/>
+
+Tuesday, June 20, 2023   
+*ai study  
+o  
+<br/>
+
+
+{% highlight ruby %}
+
+
 June week3:   
 *eng speaking   
 	-ints? exams?       
@@ -73,6 +116,17 @@ Friday, June 16, 2023
 *bio study  
 *math study  
 o  
+<br/>
+
+Saturday, June 17, 2023  
+*ai study  
+*eng listening  
+o  
+<br/>  
+
+Sunday, June 18, 2023  
+*ai study  
+o
 <br/>
 
 
