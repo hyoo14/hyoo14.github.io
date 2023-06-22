@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "[2020]ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT"
+date:   2023-06-17 00:16:22 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* .  
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes](https://drive.google.com/drive/folders/1yzBGKBpEYXEw_UnkVc-5iFVq66je428X?usp=sharing)  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
