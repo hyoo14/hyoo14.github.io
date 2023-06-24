@@ -76,6 +76,14 @@ Friday, June 23, 2023
 o  
 <br/>
 
+Saturday, June 24, 2023   
+*eng reading  
+*math study  
+o  
+*ai study  
+*eng listening  
+<br/>
+
 
 {% highlight ruby %}
 
