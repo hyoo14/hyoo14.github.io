@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "[2019]How Contextual are Contextualized Word Representations?"
+date:   2023-06-27 19:57:24 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* .  
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
