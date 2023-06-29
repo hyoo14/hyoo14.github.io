@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "[2018]Improving Language Understanding by Generative Pre-Training"
+date:   2023-06-24 16:17:02 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* .  
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* .  
+
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+* .  
