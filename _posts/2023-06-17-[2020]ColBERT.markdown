@@ -60,4 +60,46 @@ categories: study
 <br/>
 
 # 2 RELATED WORK  
-* .  
+* 뉴럴매칭모델   
+** NN -> rank  
+** 커널 풀링  
+** n-gram 매치  
+** 단어 임베딩  
+** q와 d 사이 관계 encode to signle  
+** docu IR inverted index(sparse)  
+* PLM for IR  
+** 버트 PT, FT   
+** 버트 경량화 노력 있음(정제, 압축, 가지치기)  
+* NLU 기반 -> 생성형  
+
+<br/>
+
+# 3 COLBERT  
+* ColBERT  
+** 비용과 퀄리티의 균형 잡음  
+** q와 d 관계를 late interaction으로 뉴럴 리랭킹 쌍으로 사용(사전계산)  
+** 실질적 뉴럴 검색 지원  
+** SOTA  
+** q와 d의 late interaction은 PLM encoder에 집중  
+
+
+## 3.1 Architecture  
+* 구조: 쿼리 enc fQ, 다큐 enc fD, late interaction, bag of embedding Eq  
+** q, d late interaction 사이에서 연관 스코어 MaxSim으로 구함, L2거리로 평가  
+** 딥컨볼루션&어텐션 매칭으로 더 세련된 매칭  
+** MaxSim 덕에 cost 줄어들었고 가지치기 가능  
+
+
+## 3.2 Query & Document Encoders  
+* 버트로 BOW같은 Bag of Embeddings 만듬  
+** 쿼리 인코더->쿼리 워디 피스->CLS옆 배치, 문맥고려 계산  
+** 마스크 추가로 쿼리 증강, 이게 중요함  
+** Col버트 차원수는 줄어들고 공간 효율은 높아짐  
+* 다큐 enc 쿼리 enc와 유사  
+** 마스크 추가 증강은 없음  
+
+
+## 3.3 Late Interaction  
+* q와 d 사이 Sq,d(연관도)는 late interaction 사이의 BoE 사이에 MaxSim(cosim)으로 구함  
+** 콜버트  
+
