@@ -79,6 +79,16 @@ Thursday, July 06, 2023
 o  
 <br/>
 
+Thursday, July 07, 2023   
+*eng reading  
+*eng speaking    
+*eng listening  
+*ai study        
+*bio study  
+*math study  
+o  
+<br/>
+
 
 
 {% highlight ruby %}
