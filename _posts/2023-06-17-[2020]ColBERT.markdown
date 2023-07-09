@@ -101,5 +101,7 @@ categories: study
 
 ## 3.3 Late Interaction  
 * q와 d 사이 Sq,d(연관도)는 late interaction 사이의 BoE 사이에 MaxSim(cosim)으로 구함  
-** 콜버트  
+** 콜버트 분해가능 엔드투엔드, 버트 파인 튜닝, Adam Opti 사용  
+** interaction은 학습 x, <q, d+, d-> 사용  
+** 스코어는 문서마다 softmax CE로 계산   
 
