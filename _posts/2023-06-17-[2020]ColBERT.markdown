@@ -35,6 +35,7 @@ categories: study
 # 단어정리  
 * held-out set: 데이터셋을 train set과 test set 두 세트로 나누는 과정을 의미  
 * latency: 지연 시간(자극과 반응 사이 시간)    
+* throughtput: 주어진 시간에 처리할 수 있는 정보 처리량  
 
 
 
@@ -104,4 +105,90 @@ categories: study
 ** 콜버트 분해가능 엔드투엔드, 버트 파인 튜닝, Adam Opti 사용  
 ** interaction은 학습 x, <q, d+, d-> 사용  
 ** 스코어는 문서마다 softmax CE로 계산   
+
+
+## 3.4 Offline Indexing: Computing & Storing Document Embeddings  
+* 콜버트 연산 분리 Q, D 사이    
+** offline 연산 사용  
+** indexing offline 최적  
+** GPU 병렬 처리  
+** 32/16 bit으로 저장  
+
+
+## 3.5 Top-k Re-ranking with ColBERT  
+* 콜버트 다른 text 기반 검색 리랭킹에 쓰임 가능  
+** GPU서 내적연산  
+** 뉴럴랭킹 보다 cost 낮고 scale 큼  
+
+
+## 3.6 End-to-end Top-k Retrieval with ColBERT  
+* ColBERT end2end 검색  
+** MaxSim 가지치기 쉬움  
+** vec sim 사용  
+** Faiss 속도 빠른 프레임웍 사용  
+** 쿼리 2단계 colBERT로 fit & refine  
+** Faiss 구현위해서 IVFPQ(Invered file with product quantization) 사용  
+** index 사용, K-means 기반 파티션  
+** 공간 효율 증대  
+<br/>
+
+# 4 EXPERIMENTAL EVALUATION  
+1. 리랭킹  
+2. end2end  
+3. 각 부분  
+4. 인덱싱  
+
+
+## 4.1 Methodology  
+* 방법론  
+** MS MARCO RANK  
+*** 2016 RC  
+*** 2018 Retrieval 8.8M  
+*** MRP@10  
+*** 3 query set  
+*** submit re-rank  
+*** heldout data(train, test 분리 안 된 set) for test  
+** TREC CAR  
+*** wiki 기반 29M  
+*** 3M 쿼리 wiki page title 기반  
+*** 2,254 쿼리  
+* 구현  
+** 파이썬3  
+** PyTorch1  
+** 버트 PLM  
+** l.r 3*10^-6  
+** 임베딩  
+** 쿼리 32  
+** batch 32  
+** TREC 맞게 P-T & F-T   
+** 파티션 p=2000   
+* HW  
+** V100(32gb)  
+** Xeon Gold 5132CPU  
+** 4 titan V 12gn gpu  
+
+
+## 4.2 Quality-Cost Tradeoff: Top-k Re-ranking  
+* 효율, 성능 tradeoff  
+* ColBERT가 일반 BERT보다 rank 성능 올라감  
+** 검색 cost 도 비쌈  
+
+
+## 4.3 End-to-end Top-k Retrieval  
+* end2end Top-k 검색  
+** ColBERT 사용이 성능 올림  
+
+
+## 4.4 Ablation Studies  
+* MaxSim 기반 late interaction이 나음  
+
+
+## 4.5 Indexing Throughput & Footprint  
+* space foot pring는 emb dim 줄이고 공간 효율적으로 해줌  
+<br/>
+
+# 5 CONCLUSIONS  
+* 컨텍스트 기반 late interaction deep LM 사용  
+** 독립적 q,d 인코드 + 가지치기 쉬운 구조  
+** 속도 올리고 성능도 올림  
 
