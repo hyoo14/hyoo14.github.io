@@ -66,6 +66,16 @@ Thursday, July 13, 2023
 o  
 <br/>  
 
+Friday, July 14, 2023  
+*ai study  
+*math study  
+*bio study  
+*eng listening  
+o  
+*eng reading  
+*eng speaking  
+<br/>  
+
 
 
 {% highlight ruby %}
