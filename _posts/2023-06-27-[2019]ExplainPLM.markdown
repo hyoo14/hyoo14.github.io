@@ -30,7 +30,15 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
+* word-sense:  
+* isotropic:
+* anisotropy:
+* manifests:
+* probing:
+* thereof(the lack thereof)
+* polysemy:
+* nuanced:
+*  
 
 
 
