@@ -14,7 +14,7 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .  
+* q, d encode 대 residual compression with denoised superison으로 성능 향상    
 
 
 {% endhighlight %}  
@@ -51,4 +51,124 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* 뉴럴 IR이 ODQA 점유  
+** 대부분 단일백터 sim인데 부족함   
+** ColBERT는 late interaction으로 여러 vector 반영  
+** late interaction은 enc 하중 줄이는 효과, 대신 space는 증가  
+** space footprint 추가하여 절약 추구(공간)  
+** cost 줄이는 기법들이 vanila late interaction과 동등하거나 나은 성능을 보이기도 함(싱글벡터여도)  
+** 본 논문은 v2버전 제안(cost줄여줌)  
+** 보다 가벼운 late interaction 제안->간단조합(크로스인코더로부터 정제) & hard negative mining    
+** residual compression 사용하여 공간 복잡도 줄임  
+** SOTA 달성  
+** MS MARCO 학습 MPR@10 SOTA  
+** out-of-domain test 위한 long-tail topic stratified(계층화, train/test나누는) Eval 제안(12domain)  
+** natural search query에 대한 것  
+** 여기서도 SOTA 찍음  
+* 공헌  
+** ColBERTv2 제안 -> denoised supervision + residual compression  
+** LoTTE 제안-out-of-domain test(long-tained topics)  
+** SOTA   
+<br/>
+
+# 2 Background & Related Work  
+## 2.1 Token-Decomposed Scoring in Neural IR  
+* single vec 유리하기도 함, 대신 poly encoder  
+** MaxSIM 안 쓰기도  
+** lexical match에만 focus도 있음  
+** weight 줄이는 것도 있음  
+
+
+## 2.2 Vector Compression for Neural IR  
+* 임베딩 압축 관련 최근 관심 증대  
+** ProductQuantization(양자화, 임베딩으로 변환)  
+** hash emb->binary code  
+** joint train centroid  
+** auto enc 사용  
+** PQ기반 F-T  
+** 본 논문 late interaction 기반 압축(residual copression이용)  
+
+
+## 2.3 Improving the Quality of Single-Vector Representations  
+* 싱글 vec 향상 노력  
+(1) 정제  
+(2) Neg Sample  
+(3) P-T 향상  
+** ColBERTv2는 (1)과 (2)에 해당  
+
+
+## 2.4 Out-of-Domain Evaluation in IR  
+* 트레인/테스트에 없는 도메인  
+** BEIR에서 다룸  
+** bio-medi, finance, scientific  
+* long-tail 버전으로 만든 LoTTE 소개할 예정  
+<br/>
+
+# 3 ColBERTv2   
+* ColBERTv2  
+** multi-vector retrieval model (reduce space footprint)  
+## 3.1 Modeling  
+** late interaction 그대로 사용(BERT로부터 encode)  
+* search 쿼리 입력 -enc-> vec(multi) -sim(MaxSIM계산)-> passage  
+** matrix 식 정의 : S q,d(similarity between q and d) = Sigma i=1 to N max j=1 to M Qi(Query) dot DjT(Docu)  
+*** S q,d = Sigma i=1,N max j=1,M Qi dot DjT  
+
+
+## 3.2 Supervision  
+* 뉴럴검색에서 지도(학습)   
+** positie/negative 다 필요  
+** 간단, 균등 supervision(지도) 목표  
+*** ColBERT trained with Khatab triplet(학습 때 index 사용)  
+** query마다 top-k passage 검색  
+** 각 q-p pari로 cross enc rerank 키움, MiniLM cross enc 학습 with 정제 -> 더 효과적  
+** KL-Divergence loss로 cross-enc 정제, in-batch negative 사용(CE loss 적용)  
+** denoised train 단일 vec와 multi vec 사이의 간극 좁힘  
+
+
+## 3.3 Representation  
+* 벡터표현  
+** ColBERT 클러스터링 잘됨 가정  
+** residual represtntation서 space줄임(footprint)  
+
+
+## 3.4 Indexing  
+* Indexing 3단계  
+** centroid 선택 : 근접이웃검색+ residual enc  
+** mem 줄이기 위해 K-means 사용  
+** 2 passage enc 버트 enc 사용 + 압축  
+** 3 index inversion 근접이웃 사용 위해 group화 및 inverted list 저장  
+
+
+## 3.5 Retrieval  
+* Q에 대해 centroid 참고 -> inverted list이용, passage emb 참고 -> cosim 계산-> 그룹화 -> score 얻음  
+<br/>
+
+# 4 LoTTE: Long-Tail, Cross-Domain Retrieval Evaluation  
+* out-of-domain 평가 위해 Long-Tail Topic Stratified Evaluation 제안  
+** Stack Exchange data 수집  
+** 서치쿼리는 google 서치 auto-completion용 GooAQ 사용  
+** 포럼 쿼리 외 해당 위키피디아도 이용  
+<br/>
+
+# 5 Evaluation  
+* 평가  
+## 5.1 In-Domain Retrieval Quality  
+* in-Domain: MS MARCO 사용  
+* ColBERTv2 성능 좋음 검증  
+
+
+## 5.2 Out-of-Domain Retrieval Quality  
+* BEIR, Wiki, openQA, TRAC 등 사용   
+* LoTTE로 test  
+** ColBERTv2가 대부분 SOTA 성능 보임  
+
+
+## 5.3 Efficiency  
+* 효율성 보임(v1보다)  
+<br/>
+
+# 6 Conclusion  
+* ColBERTv2 quality&space efficiency 증대  
+** 군집중심이 의미하는 바 catch->residual representation 가능케함  
+*** footprint 공간 축소시킴  
+** 정제 query로 quality 증대 -> SOTA 달성  
