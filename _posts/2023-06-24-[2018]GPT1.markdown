@@ -14,7 +14,13 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .  
+* NLU 다양 적용(텍스트포함관계, QA, STS, docu classify)  
+* 근데 큰 labled corpus는 적고(구하기 어렵고) unlabled corpus는 많음     
+* 생성적 P-T 통한 LM으로 unlabled corpus 학습  
+* F-T로 discriminator 학습  
+* 효과적, SOTA 달성 (9/12 tasks)  
+* common sense reasoning 에서 8.9% 성능 향상  
+* QA 5.7% 향샹, text entailment 1.5% 향상  
 
 
 {% endhighlight %}  
@@ -30,7 +36,11 @@ categories: study
 <br/>
 
 # 단어정리  
-* .  
+* supervision: 지도  
+* auxiliary: 보조의, 예비의, 지원군, ex) auxiliary task: 학습과정서 돕는 보조 작업, auxiliary data: 도울 수 있는 추가 데이터  
+* chunking: 텍스트를 의미 있는 조각으로 분할하는 과정(syntactic parsing의 단계로 주로 토큰화 다음에 발생), ex) 명사구, 동사구로 묶는 것 등    
+* annealed: 최적화 알고리즘과 관련, 물리에서 영감받은 방법으로 천천히 냉각함으로써 최적의 배치를 찾아가는 것. 점점 줄여나가는 것을 의미함, learning rate annealing은 학습률을 점차 줄여나가는 전략  
+
 
 
 
@@ -42,4 +52,108 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* 좋은 임베딩 학습이 중요 -> P-T 사용이 효과적  
+* unlable 사용 어렵  
+* 이유  
+1. 어떤 opti할지 (목적함수를) 불명확  
+2. 일치된 검증과 효과적 전이 방법이 없음  
+* 언어이해를 위한 준지도 학습 탐구  
+** 목적: 널리 쓰이는 전이(적은 적응으로 가능한)  
+** 도메인 달라도 되게  
+** 먼저 LM 모델링하고(언레이블로) 그리고 적용시킴(지도로)  
+** 트랜스포머 사용(구조화된 메모리 제공)  
+*** 롱텀 디펜던시 다를 수 있음  
+** 전이서 traverse style 접근, input을 하나의 token으로 봄  
+** 4개서 평가 NLI, QA, STS, TC 성능 SOTA(9/12), GLUE 서 좋은 성과  
+<br/>
+
+# 2 Related Work  
+** 준지도학습기반(NL)  
+*** seq label, text classify  
+** unlabel로 선학습  
+*** 단어 정보 전이  
+** 최근: 단어수준 전이 넘어섬  
+*** 구/문장 수준 전이  
+** 비지도 P-T: 준지도학습의 특별 case  
+*** 목적: 좋은 시작점 찾는 것.  
+*** 이미지 분류서 시작, 더 나은 일변화 가능케함, 점점 더 NL에 적용  
+** LM F-T위한 supervision  
+** 언어적 의미 파악 but LSTM은 제한적. 트랜스포머 권장  
+** auxiliary(보조) 추가 비지도학습-> 준지도학습의 대안
+*** pos 태깅, chunking, NER, LM semantic role labeling 서 적용  
+<br/>  
+
+# 3 Framework  
+* 프레임워크  
+** 2단계 구성 P-T & F-T  
+# 3.1 Unsupervised pre-training  
+** 비지도 P-T  
+LM의 MLE 목적. k: context window size, p: NN모델 파라미터, h0: UWe + Wp 멀티레이어 트랜스포머 사용  
+U: context vector(토큰), h:layer 개수, We: 토큰 emb matrix,  wb: positino emb matrix  
+
+
+## 3.2 Supervised fine-tuning  
+** 이후 지도학습  
+**Wy: 파라미터, y: prediction -> CE maximize  
+
+
+## 3.3 Task-specific input transformations  
+** 특정 task input에대한 트랜스포머  
+*** QA or 텍스트 포함  
+*** sent pair와 triplet, QA 같은 특정 포맷  
+*** seq 입력 기반이니 위 반영 필요(토큰)  
+*** 택스트 포함관계: 전제p,가설h,구분자$ (토큰  )
+*** 유사도: 리니어 레이블 추가로 해결  
+*** QA&CR  
+docu Z, question q, set of answers ak, delimiter token이 다음처럼 배치 [z;q;$;ak].  
+<br/>
+
+# 4 Experiments  
+## 4.1 Setup  
+* 실험  
+** BooksCorpus dataset 사용, LM용, 7,000 qlcnfvksehtj dufjwkdfm  
+일반모델 가능, 연속 text  
+대안으로 1B 단어뱅크 ELMO 사용  
+* 모델 스펙  
+** 트랜스포머 오리지널 따름  
+12layer decoder block만 with masked self attention head(768차원)  
+** l.r : 2.5e-4  
+** Adam opti, 100epoch, 512token layer Norm, BPE, dropout rate:0.1  
+** L2 reg, w=0.01, GELU act layer, fify library로 text  clean, spaCy로 white space 처리  
+
+
+## 4.2 Supervised fine-tuning  
+* 지도 F-T  
+** 다양 지도핛브 수행, GLUE 포함  
+* NLI task  
+** entailment, contradict, netural 판정  
+SMLI, NMLI< QNLI, SciTail, RTE data 사용  
+** 성능 향상 확인  
+* QA & CR  
+** RACE(영어 기반) 중고교 시험, SQuAD, story 빈칸 test, 성능향상 보임  
+* STS  
+** MRPC(Microsoft Research Paraphrase Corpus)  
+** STS 등test에서 4.2% 향상, BiLSTM+ELMo + Attention 대비  
+* 분류  
+** 두 문장 분류, 문법 맞는지 틀린지(이진분류)  
+** 성능향상 확인  
+** SOTA 9/12 달성, 기존 압도  
+<br/>  
+
+# 5 Analysis  
+* 분석  
+** 레이어 개수와 전이정도   
+*** 다다익선  
+** 제로샷 행동  
+** 효과적인 이유 탐색  
+**트랜스포머의 어텐션 메모리가 LSTM대비 효과적  
+** LSTM var 증가 확인(이것들 전이되서 성능 낮아짐)  
+* 경감 분석  
+** P-T 효과 입증  
+<br/>
+
+# 6 Conclusion  
+* 결론  
+**강한 NLU위한 프레임워크 소개  
+** 생성 P-T와 분류 F-T로 9/12 SOTA  
+** P-T는 효과적  
