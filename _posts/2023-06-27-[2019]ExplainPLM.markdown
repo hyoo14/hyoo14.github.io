@@ -14,7 +14,14 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* .  
+* 정적 임베딩->문맥 임베딩  
+** nlp 서 중요한 이벤트로 성능도 증대됨  
+* 컨텍스트가 무한한 단어위한건지 유한한 word sense인지는 모름  
+* isotropic하지 않음 발견  
+** 다른 문맥, 형태는 같은 단어 여전히 cosim 높음  
+* upper는 self sim 더 낮음  
+** upper가 더 문맥적(더 높은 lyaer가)  
+** 버트, 엘모, gpt2의 5% 미만만 통계적으로 설명 가능  
 
 
 {% endhighlight %}  
@@ -31,14 +38,13 @@ categories: study
 
 # 단어정리  
 * word-sense: 단어가 가지는 특정 의미를 가리킴, 다의어에서 문맥에 따라 다른 의미를 가질 수 있는데 이것을 구분하는 것(단어 의미 구별)    
-* isotropic: 동일한 성질을 모든 방향에서 동일하게 보이는 물리학적인 개념  
-* anisotropy:
-* manifests:
-* probing:
-* thereof(the lack thereof)
-* polysemy:
-* nuanced:
-*  
+* isotropic: 등방성?, 동일한 성질을 모든 방향에서 동일하게 보이는 물리학적인 개념, 즉 어떻게 보나 같은 성질 가짐    
+* anisotropy: 이방성(비등방성), 다른 종류의 자극으로 향하기, 그 특성이 모든 방향에서 동일하지 않고 특정 방향에 따라 달라질 수 있다는 개념  
+* manifests: 나타내다, 드러내보이다, 표시하다, 분명한  
+* probing: 진실을 캐기 위한, 면밀히 살피는, 캐묻다, 조사하다, 모델의 이해도나 능력을 탐색하는 것  
+* thereof(the lack thereof): 그것의, 그에 따른, the lack thereof(그것의 부재, 그것이 없음)  
+* polysemy: 단어나 구문이 여러가지 의미를 가질 수 있음, 다의성    
+* nuanced: 미묘한 차이가 있는, 뉘앙스, 세부적인 정보를 잘 이해하고 처리하는 능력    
 
 
 
@@ -50,4 +56,130 @@ categories: study
 <br/>
 
 # 1 Introduction  
-* .  
+* 단어 표현의 문맥을 어떻게 나타내는가를 버트, 엠로, gpt2의 기하학을 보며 비교(성찰적 논문)  
+** 정적 임베딩->최근 문맥임베딩(동적)으로 흐름이 넘어가며 성공적으로 성능들이 향상됨  
+** 결과로 전이학습이 용이해짐  
+** 얼마나 문맥적인지 알 수 있을까(근데)?  
+*** 무한한지, 유한한지 여부는?  
+** 기하학 관점으로 위의 질문에 대해 답하는 것이 논문의 요지  
+** 찾은 사실들  
+1. isotropic하지는 않음(균등분포)  
+** anisotopy in gpt2는 두 단어 ㅓ평균과 거의 완벽하게 일치  
+** isotroopy는 경험과 이론적 산물  
+2. 다른 컨텍스트에서 같은 단어의 등장한 벡터는 동일하지 않음  
+** upper layer에서 dis sim함  
+** upper layer가 더 context 특징적  
+3. context 특징성은 엘모, 버트, gpt2마다 다름  
+** elmo는 같은 문장 안 단어들이 매우 유사도가 높게 나옴  
+** bert는 덜 유사하게 나옴(랜덤보단 유사)  
+** gpt2는 전혀 유사하지 않게 나옴  
+4. 5% 미만의 var만 설명이 가능  
+문맥임베딩은 유사한 word sense 가 아님(static은 한물 감)  
+
+이것들 문맥임베딩이 가져온 성취를 이해하는데 도움이 될 것  
+<br/>  
+
+# 2 Related Work  
+* 정적임베딩: SGNS(Skip Gram Negative Sampling), BloVe -> 통계적 출현 기반  
+* 문맥 단어 임베딩  
+** 정적의 한계 극복 목적  
+** 컨텍스트 중심적(엘모, 버트, gpt2)  
+*** 딥LM, F-T로 여러 다운스트림 해결  
+* 엘모는 두 biLSTM concat(다른 방향의 두 모델을)  
+* 버트, gpt는 bidirectional&uni directional로 트랜스포머 기반 LM  
+** 12레이어 gpt2는 다른 버트나 glove 보고 만듬    
+* 버트는 sota in NLP  
+* 문맥임베딩 probing(조사) 분석이 제한적인걸로 알려짐  
+** 본 논문은 리니어학습->구조 예측, 의미 예측 제안  
+*** 문맥임베딩 의미, 구조 정보 찾음 의미있지만 어떻게 대답하지 못 함  
+** 그래서 기하학적으로 풀어볼 예정  
+<br/>  
+
+# 3 Approach  
+* 접근  
+## 3.1 Contextualizing Models  
+* 문맥화 모델  
+** 버트베이스 사용  
+** h.l은 엘모2, 버트12, gpt12   
+** 0th layer 추가 -> 베이스라인용  
+
+
+## 3.2 Data  
+* STS 데이터로 분석(Sent Eval)  
+
+
+## 3.3 Measures of Contextuality  
+* 문맥적 측정  
+** self sim  
+** intra sent sim  
+** maximum explainable variance  
+* 정의 1  
+** self sim  정의  
+** w:단어, {s1,..,sn}: sents, {i1,..,in}:indices, w=si[i1]=..=sm[in], fl(ri,i)는 s[i]와 레이어&매핑.  
+** sim(w) ㅗ Sigma i Sigma k!=j cosim(fl(sj,ij), fl(sk,ik)   
+** 단어 w, 레이어 l, 평균 cosim  
+** 문맥x 시 self sim  
+* 정의 2: intra sim  
+** s: sent, s:<w1,..,wn>, n개의 단어 센텐스  
+** fl(s,i) s[i]와 l번째 layer representation 매핑  
+** 더 간단, avg cosim, 단어와 sent vector 사이  
+* 정의 3  
+** MEV는 첫 원칙으로 설명되는 var의 분포  
+** MEV = sig1^2 / Sigma sigmai^2  
+
+
+## 3.4 Adjusting for Anisotropy  
+* Anisotropy 조절  
+* 단어가 isotropy라는 것은 균등 의미  
+** selfsim = 0.95  
+** 문맥화 x 뜻함  
+* 반대로 anisotopy라함은 두 단어 avg sim 0.99, selfsim=0.95, 문맥화o 뜻함  
+** 왜냐하면 다른 컨텍스트의 w는 avg에 dissim, 다른 random 보다 더  
+* 조절 위해 self sim, intra sent, MEV 에 각각 baseline avg cosim, baseline avg cosim, var in  uniformly randomly sampled 적용  
+** 주어진 식으로 조절  
+<br/>  
+
+# 4 Findings  
+## 4.1 (An)Isotropy  
+* non-input layer서 문맥임베딩은 anistropic함  
+* 문맥임베딩은 일반적으로 높은 레이어에서 anisotropic함  
+** isotropy는 이론적, 경험적 이점->정적임베딩  
+** 그래서 문맥임베딩의 anisotropy는 놀라움  
+
+
+## 4.2 Context-Specificity  
+* 컨텍스트 특징  
+** 문맥임베딩은 높은 층에서 더 문맥에 민감  
+** GPT2가 가장 문맥에 의존적  
+* 불용어가 가장 문맥에 의존적  
+* 문맥의존성은 엘모, 버트, gpt2마다 매우 다르게 나타남->intra sent로 체크  
+* 엘모는 레이어 높을수록 같은 문장내 단어간 sim 높아짐  
+** 같은 context 공유하기 때문  
+* 버트는 같은 문장내 단어간 dissim(layer 올라갈수록)  
+** 같은 sent 내라서 context 공유하더라도 의미가 sim할 필요 x  
+* GPT2에서는 같은 문장 내 단어가 아예 sim x(랜덤보다도 더)  
+** GPT2가 성공한 이유  
+
+
+## 4.3 Static vs. Contextualized  
+* 평균적으로 5%  미만의 문맥임베딩 단어의 variance만 정적 임베딩으로 설명됨  
+** 정적 word sense로 설명 어려움  
+* 문맥임베딩 주요( static 낮은) 레이어가 glove, fasttext 압도  
+** 버트는 버트의 1st layer로 비교  
+<br/>
+
+# 5 Future Work  
+*미래 목표  
+** 정적임베딩을 더 isotropic 안하게 만들면 성능이 향상되지 않을까 기대  
+** 문맥화된 정적 emb 생성  
+<br/>  
+
+# 6 Conclusion  
+*문맥임베딩 본질 탐구   
+** 문맥 특징성은 anisotropy 수반됨을 찾음  
+** 그러나 모델별로 차이 있었음  
+** 정적 임베딩은 문맥 임베딩 대체 안 됨을 실험적으로 증명  
+
+
+
+  
