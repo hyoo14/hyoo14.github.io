@@ -30,8 +30,8 @@ categories: study
 <br/>
 
 # 단어정리  
-* word-sense:  
-* isotropic:
+* word-sense: 단어가 가지는 특정 의미를 가리킴, 다의어에서 문맥에 따라 다른 의미를 가질 수 있는데 이것을 구분하는 것(단어 의미 구별)    
+* isotropic: 동일한 성질을 모든 방향에서 동일하게 보이는 물리학적인 개념  
 * anisotropy:
 * manifests:
 * probing:
