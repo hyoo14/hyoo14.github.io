@@ -1,10 +1,66 @@
 ---
 layout: post
-title:  "June"
+title:  "July"
 date:   2023-07-02 15:01:33 +0900
 categories: study
 ---
 
+
+
+
+
+
+{% highlight ruby %}
+
+
+July week4:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+<br/>
+
+
+Monday, July 17, 2023   
+*ai study        
+*eng reading  
+o  
+<br/>
+
+Tuesday, July 18, 2023   
+*ai study        
+*eng reading  
+*eng listening  
+*eng speaking  
+*bio study  
+o  
+<br/>
+
+Wednesday, July 19, 2023   
+*ai study          
+o  
+<br/>
 
 
 
