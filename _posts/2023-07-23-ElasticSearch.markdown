@@ -63,7 +63,7 @@ cluster.initial_master_nodes: ["movie-elastic-node-1"]
 -> wget <링크>로 설치  
 ->tar -xvf <압축파일명>으로 압축 품  
 ->kibana_installation_directory/config/kibana.yml에 'elasticsearch.hosts: ["http://34.64.185.118:9200"]' 적어놓음, server.host: "0.0.0.0"도 적어놓음  
--> .kibana-7.17.x-linux-x86_64/bin/kibana 로 kibana 실행  
+-> .kibana-7.17.x-linux-x86_64/bin/kibana 로 kibana 실행(경로문제인지.. 직접 해당 디렉토리 들어가서 ./kibana 해줘야 에러가 안 남.....)    
 -> 34.64.146.91:5601 로 접속
 
 
