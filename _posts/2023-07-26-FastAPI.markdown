@@ -30,17 +30,39 @@ source myenv/bin/activate
 
 * pip install fastapi uvicorn  
 * main.py  
-from fastapi import FastAPI
+from fastapi import FastAPI  
 
-app = FastAPI()
+app = FastAPI()  
 
-@app.get("/test")
-def test_keyword(keyword: str):
-    if keyword == "boostcamp":
-        return {"message": "api working"}
-    else:
-        return {"message": "invalid keyword"}
+@app.get("/test")  
+def test_keyword(keyword: str):  
+    if keyword == "boostcamp":  
+        return {"message": "api working"}  
+    else:  
+        return {"message": "invalid keyword"}  
+  
+* main.py (2nd version)  
+# -*- coding: utf-8 -*-  
 
+import requests  
+from fastapi import FastAPI  
+app = FastAPI()  
 
-* uvicorn main:app --host 0.0.0.0 --port 80
+@app.get("/test")  
+def test_keywor(keyword: str):  
+  url = "http://34.64.212.29:9200/keywords/_search"  
+  query = {  
+    "query":{  
+      "match": {  
+        "comment": keyword  
+      }  
+    },  
+    "_source": ["title", "keywords"]  
+  }  
+  response = requests.get(url, headers = {'Content-Type': "application/json"}, json=query)  
+  if response.status_code == 200:  
+    return response.json()  
+  else:  
+    return {"error": "Failed to fetch data from the external API"}  
+* uvicorn main:app --host 0.0.0.0 --port 8000    
 
