@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "FastAPI"
+date:   2023-07-26 11:00:41 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* FastAPI 간단 사용법  
+
+
+{% endhighlight %}  
+
+<br/>
+
+# deploy 없이 서버에 띄워놓기  
+
+* sudo yum update  
+sudo yum install python3-pip   
+python3 -m venv myenv  
+source myenv/bin/activate  
+
+* pip install fastapi uvicorn  
+* main.py  
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/test")
+def test_keyword(keyword: str):
+    if keyword == "boostcamp":
+        return {"message": "api working"}
+    else:
+        return {"message": "invalid keyword"}
+
+
+* uvicorn main:app --host 0.0.0.0 --port 80
+
