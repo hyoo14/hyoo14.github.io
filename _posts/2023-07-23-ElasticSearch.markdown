@@ -91,6 +91,7 @@ output {
     }
 }
 
+** 참고로 아래 logstash 실행할 때도 path 잘 맞춰서 명령어 쓰시오   
 ** ./bin/logstash -f /path/to/your/logstash.conf 로 logstash 실행(postgreSQL 데이터 가져옴)  
 
 # Elasticsearch api 호출
@@ -107,7 +108,17 @@ curl -X GET "http://34.64.212.49:9200/keywords/_search" -H 'Content-Type: applic
 
 <br/>
 
+curl -X GET "http://34.64.212.49:9200/infos/_search" -H 'Content-Type: application/json' -d'  
+{    
+  "query": {  
+    "match": {  
+      "comment": "반전 영화"  
+    }  
+  },  
+  "_source": ["title",  "keywords", "movie_code", "img_url"]  
+}'  
 
+<br/>
 
 ### Appendix  
 # 사용 근거 및 이유, 관련 프로젝트  
