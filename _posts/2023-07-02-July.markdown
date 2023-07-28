@@ -63,6 +63,11 @@ Thursday, July 27, 2023
 o  
 <br/>
 
+Friday, July 28, 2023   
+*ai study        
+o  
+<br/>
+
 
 {% highlight ruby %}
 
