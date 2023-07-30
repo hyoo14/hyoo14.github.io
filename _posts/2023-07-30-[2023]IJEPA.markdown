@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "[2023]Self-Supervised Learning from Images with a Joint-Embedding Predictve Architecture"
+date:   2023-07-30 23:43:24 +0900
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+*  
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+*  .  
