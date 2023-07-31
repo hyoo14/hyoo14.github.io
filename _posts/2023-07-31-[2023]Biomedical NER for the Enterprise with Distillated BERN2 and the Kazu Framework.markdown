@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[2023]Can Language Models be Biomedical Knowledge Bases?"
-date:   2023-07-31 22:17:24 +0900
+title:  "[2023]Biomedical NER for the Enterprise with Distillated BERN2 and the Kazu Framework"
+date:   2023-07-31 22:21:24 +0900
 categories: study
 ---
 
