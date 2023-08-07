@@ -13,6 +13,46 @@ categories: study
 {% highlight ruby %}
 
 
+August week2:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+<br/>
+
+
+Tuesday, August 02, 2023   
+*ai study        
+*eng speaking  
+*eng reading  
+o  
+<br/>
+
+
+{% highlight ruby %}
+
+
 August week1:   
 *eng speaking   
 	-ints? exams?       
