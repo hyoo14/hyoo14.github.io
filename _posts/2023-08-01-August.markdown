@@ -42,12 +42,21 @@ August week2:
 <br/>
 
 
-Tuesday, August 02, 2023   
+Monday, August 07, 2023   
 *ai study        
 *eng speaking  
 *eng reading  
 o  
 <br/>
+
+Tuesday, August 08, 2023   
+*ai study        
+*eng speaking  
+*eng reading  
+o  
+<br/>
+
+
 
 
 {% highlight ruby %}
