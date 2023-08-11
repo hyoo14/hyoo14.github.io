@@ -196,5 +196,36 @@ Next Topic should see:
 
 
 
+# [2022]Sequence tagging for biomedical extractive question
+answering  
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 최근 Extractive Question Answering(EQA) single-span extraction의 biomedical EQA에 도입 post-processing step 갖음  
+* BioASQ 7b and 8b list type QA에서 기존 압도  
+
+
+Next Topic should see: 
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+
+<br/>
+
 
 
