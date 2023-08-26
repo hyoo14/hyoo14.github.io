@@ -48,6 +48,30 @@ Monday, August 21, 2023
 o    
 <br/>
 
+Tuesday, August 22, 2023 
+o  
+<br/>
+
+Wednesday, August 23, 2023 
+o  
+<br/>
+
+Thursday, August 24, 2023 
+o  
+<br/>
+
+Friday, August 25, 2023 
+o  
+<br/>
+
+Saturday, August 26, 2023 
+o  
+<br/>
+
+Sunday, August 27, 2023 
+o  
+<br/>
+
 
 
 {% highlight ruby %}
@@ -89,8 +113,8 @@ o
 
 
 Tuesday, August 15, 2023    
-o  
 *eng speaking  
+o  
 <br/>
 
 Wednesday, August 16, 2023   
@@ -113,12 +137,12 @@ o
 *eng speaking  
 <br/>  
 
-Saturday, August 17, 2023  
+Saturday, August 19, 2023  
 o  
 *eng speaking  
 <br/>  
 
-Sunday, August 17, 2023  
+Sunday, August 20, 2023  
 o  
 *eng speaking  
 <br/>  
