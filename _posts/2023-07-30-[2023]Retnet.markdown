@@ -14,7 +14,11 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-*  
+* Recursive + Attention 구조 제안   
+** LLM에 좀 더 친화적  
+** 병렬, 반복, chunkwise recurrent 제안(병렬+반복의 중간정도?)    
+** 매우 효율적으로 추론 복잡도 O(1)  
+** 스케일링(up), 병렬, cost efficientcy 매우 좋음  
 
 
 {% endhighlight %}  
