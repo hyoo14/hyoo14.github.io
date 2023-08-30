@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "[2022]BioBART:Pretraining and Evaluation of A Biomedical Generative Language Model"
+date:   2023-08-30 17:09:24 -0400
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :   
+* 도메인 특화적인, 특히 생물학 쪽에 NLG 연구 적음  
+* PLM이 중대한 백본이 되는 NLP분야에서, 생물학에도 도입할 필요가 있음  
+* 그래서 BioBART를 BART로부터 생성해냄, 이것을 제안  
+** PubMed abstract들로 학습, BART 대비 성능 강화됨  
+** 다양한 task(dialogue, summarization, entity linking, ner) 모아보았고, 이걸로 성능 테스트  
+** 경감연구 결과 sentence permutation은 부정적 효과 가져옴 확인   
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* collate: 대조하다, 맞추어 보다, 함께 합치다    
+
+
+
+
+
+
+
+<br/>
+
+# 1 Introduction  
+*  .  
