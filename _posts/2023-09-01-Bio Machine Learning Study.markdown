@@ -18,6 +18,7 @@ categories: study
 * 1. Part 1-Basics Concept for Biomedical Machine learning
 * 2. Part 3-Deep learning for Biomedical sequence
 * 3. Part 4-Deep learning for Biomedical Graph
+* target study  
 
 {% endhighlight %}  
 
@@ -45,3 +46,13 @@ categories: study
 
 <br/>
 
+
+# target study  
+
+<br/>
+
+This course will focus on developing the computational, algorithmic, and database navigational skills required to analyze genomic data that have become available with the development of high throughput genomic technologies.   
+We will also illustrate statistical signal processing concepts such as dynamic programming, hidden markov models, information theoretic measures, and assessing statistical significance.   
+The goals will be achieved through lecture and lab exercises that focus on genomic databases, genome annotation via hidden markov models, sequence alignment through dynamic programming, metagenomic analyses, and phylogenetics with maximum likelihood approaches.    
+
+<br/>
