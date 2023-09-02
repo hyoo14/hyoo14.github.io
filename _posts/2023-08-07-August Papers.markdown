@@ -229,3 +229,41 @@ Next Topic should see:
 
 
 
+
+# [2023]Perceiver CPI: a nested cross-attention network for compound–protein interaction prediction  
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* Compound-protein interaction (CPI, 복합물-단백질 상호작용)은 의학 발견의 기반  
+** grpah cnn과 nn이 적용되고 있지만 누가 확실한 우위인지 불분명  
+** 특히 두 복합물-단백질 간의 상호작용을 전부 캐치하지 못 함  
+* Perceiver CPI network 제안  
+** cross-attention 매커니즘을 사용해서 학습 능력을 올림  
+** drug와 target 사이의 상호작용을 이전보다 잘 캐치함  
+* Davis, KIBA, Metz datasets로 평가  
+** 성능 향상됨 확인  
+
+
+Next Topic should see: 
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[Paper with my notes]()  
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* endeavored: 노력했다  
+
+
+
+<br/>
