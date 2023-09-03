@@ -49,7 +49,15 @@ September week1:
 Friday, September 1, 2023  
 *ai study  
 *eng listening  
+*eng reading  
 *bio study  
+*math study  
+o  
+<br/>  
+
+Saturday, September 2, 2023  
+*ai study  
+*eng speaking    
 o  
 <br/>  
 
