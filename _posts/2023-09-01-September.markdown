@@ -49,8 +49,17 @@ September week2:
 Monday, September 4, 2023  
 *ai study  
 *eng listening  
+*eng speaking  
+*eng reading  
+o  
+<br/>  
+
+Tuesday, September 5, 2023  
+*ai study  
+*eng listening  
 o  
 *eng speaking  
+*eng reading  
 <br/>  
 
 
