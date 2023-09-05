@@ -19,10 +19,25 @@ categories: study
 ** TC(Topic Classification)
 ** MRC(Machine Reading Comprehension)
 
+* all use pretrained language models such as GPT, BERT, ELECTRA.
+** fine-tuning methods are also utilized
+** extract features and find relationship like semantic similarities, relation between words, between topic and writings, answers and questions.
+
+* Those are applicable to bio nlp topics: DTI, predicting potential antibiotic resistence genes
+** 
+
+*goal  
+** making computer understand biomedi knowledge more better
 
 {% endhighlight %}  
 
 
+* Q:?
+** working hours(office arrival time and departure time)  -typyical schedule about   
+** project that take part in  
+** team members and roles    
+** topics that you are interested in these days?  
+** nlp applying
 
 
 
@@ -32,11 +47,16 @@ categories: study
 
 
 
-hmmm let me think about that
+hmmm let me think about that //
 
-let thinkk about it
+For sure, I totally understand..." //   
+"That's a really great question, I actually have some personal experience with that" //   
+"It's funny you mention that, because the same thing happened to me //  
 
-take time
+I guess I would largely agree" // 
+"That makes sense, I can get behind that". //
+
+conduct research, complete reserach, do reserach
 
 
 
