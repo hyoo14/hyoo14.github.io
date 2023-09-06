@@ -36,7 +36,7 @@ Next Topic should see:
 <br/>
 
 
-
+# [Papers with my notes](https://drive.google.com/drive/folders/1lWxLaDRBlU_pllTJW6GOiEmIJq82xTGN?usp=sharing)  
 
 
 # [2022]Predicting COVID-19 disease severity from SARS-CoV-2 spike protein
@@ -58,9 +58,6 @@ Next Topic should see: GISAID, GPBoost
 {% endhighlight %}  
 
 <br/>
-
-
-[Paper with my notes]()  
 
 
 [~~Lecture link~~]()  
@@ -95,8 +92,6 @@ Next Topic should see: eoRCC, PGVs, RCC, DNA replication, DNA repair, Germline, 
 
 <br/>
 
-
-[Paper with my notes]()  
 
 
 [~~Lecture link~~]()  
@@ -147,16 +142,19 @@ Next Topic should see:
 <br/>
 
 
-[Paper with my notes]()  
-
 
 [~~Lecture link~~]()  
 
 <br/>
 
 # 단어정리  
-* prognosis:  
-* refitting:  
+* aggregate: 뭉치, 집합, 집단  
+* prognosis: 병의 예후나 진행을 예측  
+* refitting: 다시 맞추거나 장착, 추정치 재조정  
+* nucleotide: DNA나 RNA의 기본 단위  
+* chromosomal: 염색체와 관련된  
+* aberrations: 이상이나 오류  
+* caveats: 경고나 주의사항, 제한사항  
 
 <br/>
 
@@ -179,8 +177,6 @@ Next Topic should see:
 
 <br/>
 
-
-[Paper with my notes]()  
 
 
 [~~Lecture link~~]()  
@@ -213,9 +209,6 @@ Next Topic should see:
 {% endhighlight %}  
 
 <br/>
-
-
-[Paper with my notes]()  
 
 
 [~~Lecture link~~]()  
@@ -252,9 +245,6 @@ Next Topic should see:
 {% endhighlight %}  
 
 <br/>
-
-
-[Paper with my notes]()  
 
 
 [~~Lecture link~~]()  
