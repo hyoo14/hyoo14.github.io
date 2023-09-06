@@ -57,10 +57,17 @@ o
 Tuesday, September 5, 2023  
 *ai study  
 *eng listening  
+*eng speaking  
+*eng reading  
+o  
+<br/>  
+
+Wednesday, September 6, 2023  
+*ai study  
+*eng listening  
 o  
 *eng speaking  
 *eng reading  
-<br/>  
 
 
 
