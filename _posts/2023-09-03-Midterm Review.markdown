@@ -24,7 +24,7 @@ categories: study
 ** extract features and find relationship like semantic similarities, relation between words, between topic and writings, answers and questions.
 
 * Those are applicable to bio nlp topics: DTI, predicting potential antibiotic resistence genes
-** 
+* And we can make a integration framework or program that belong many diverse BIO NLP methods.  
 
 *goal  
 ** making computer understand biomedi knowledge more better
