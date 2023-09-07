@@ -60,3 +60,16 @@ We will also illustrate statistical signal processing concepts such as dynamic p
 The goals will be achieved through lecture and lab exercises that focus on genomic databases, genome annotation via hidden markov models, sequence alignment through dynamic programming, metagenomic analyses, and phylogenetics with maximum likelihood approaches.    
 
 <br/>
+
+# extracted topics  
+
+* genomic DB/annotation + cs algorithm  
+* dynamic programming (sequence alignment)    
+* hidden markov models  
+* information theoretic measures  
+* assessing statistical significance  
+* metagenomic analyses  
+* maximum likelihodd approaches (for phylogenetics)  
+
+
+<br/>
