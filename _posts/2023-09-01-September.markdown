@@ -74,6 +74,9 @@ o
 
 Thursday, September 7, 2023  
 *ai study  
+*eng listening  
+*eng reading 
+o  
 <br/>
 
 
