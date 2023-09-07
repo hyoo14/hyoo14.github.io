@@ -33,3 +33,20 @@ Covered topics include fundamentals of probabilities and decision theory, regres
 
 
 <br/>
+
+# extracted topics  
+
+* statistical machine learning -> Bayesian modeling and inference  
+* fundamental probabilities and decision theory  
+* regression  
+* classification  
+* graphical madels  
+* mixture models  
+* clustering  
+* expectation maximization  
+* hidden markove models  
+* kalman filtering  
+* linear dynamical systems  
+
+
+<br/>
