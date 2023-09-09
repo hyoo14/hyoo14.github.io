@@ -216,6 +216,7 @@ Next Topic should see:
 <br/>
 
 # 단어정리  
+* deluge: 쇄도, 홍수, 많이 증가  
 
 
 <br/>
