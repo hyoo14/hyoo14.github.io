@@ -78,10 +78,16 @@ Thursday, September 7, 2023
 *eng reading 
 *bio study  
 *math study  
+*eng speaking  
 o  
-eng speaking  
 <br/>
 
+Friday, September 8, 2023  
+*ai study  
+*eng listening  
+*eng speaking  
+o  
+<br/>
 
 
 
