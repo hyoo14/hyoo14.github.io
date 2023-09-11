@@ -98,6 +98,13 @@ Saturday, September 9, 2023
 o  
 <br/>
 
+Sunday, September 10, 2023  
+*ai study  
+*eng listening  
+*eng reading  
+o  
+<br/>
+
 
 
 
