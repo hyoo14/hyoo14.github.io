@@ -73,3 +73,22 @@ The goals will be achieved through lecture and lab exercises that focus on genom
 
 
 <br/>
+
+
+# topics extending  
+
+* genomic DB/annotation + cs algorithm  
+* dynamic programming (sequence alignment)    
+** Forward algorithm  
+*** like CKY parsing, uses a table to store intermediate values  
+*** compute the likelihood of the observation sequence  
+*** By summing over all possible hidden state sequences  
+*** But doing this efficiently-> By folding all the sequences into a single trellis(격자)  
+* hidden markov models  
+* information theoretic measures  
+* assessing statistical significance  
+* metagenomic analyses  
+* maximum likelihodd approaches (for phylogenetics)  
+
+
+<br/>
