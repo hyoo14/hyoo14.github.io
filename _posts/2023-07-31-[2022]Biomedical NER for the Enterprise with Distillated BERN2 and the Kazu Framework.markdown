@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2023]Biomedical NER for the Enterprise with Distillated BERN2 and the Kazu Framework"
+title:  "[2022]Biomedical NER for the Enterprise with Distillated BERN2 and the Kazu Framework"
 date:   2023-07-31 22:21:24 +0900
 categories: study
 ---
@@ -26,7 +26,7 @@ categories: study
 <br/>
 
 
-[Paper with my notes]()  
+[Paper with my notes](https://drive.google.com/drive/folders/1Rt3yFa1WCPVXty2XgHmI1sSzP4LfQLDh?usp=sharing)  
 
 
 [~~Lecture link~~]()  
@@ -34,7 +34,10 @@ categories: study
 <br/>
 
 # 단어정리  
-*  
+* plethora: 과다, 과잉  
+* posit: 제안하다, 가정하다  
+* intricacies: 복잡한 부분, 세부 사항
+* forthcoming: 곧 나올 것인, 임박한  
 
 
 
