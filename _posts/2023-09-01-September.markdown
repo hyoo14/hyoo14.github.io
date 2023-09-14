@@ -56,9 +56,16 @@ o
 Tuesday, September 12, 2023  
 *ai study   
 *eng reading  
+*eng listening  
+*bio study  
+*math study  
 o  
 <br/>  
 
+Wednesday, September 13, 2023  
+*ai study  
+*eng listening  
+o  
 
 
 {% highlight ruby %}
