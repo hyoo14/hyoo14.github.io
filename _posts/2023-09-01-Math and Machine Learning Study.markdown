@@ -66,12 +66,20 @@ Covered topics include fundamentals of probabilities and decision theory, regres
 **** posterior probabilities is computed using Bayes' Theorem   
 **** P( theta | X ) = P( X | theta ) * P( theta ) / P( X )  
 **** Posterior Probability = likelihood * prior probability / total probability of data X  
+
+
 *** Bayesian Decision Theory  
 **** provides a framework for making optimal decision under uncertainity  
 **** given data + prior knowledge -- infer --> posterior probabilities ----> making decisions(that minimize a loss function based on posterior probabilities)  
 **** (evaluate all expected loss for all possible decisions & choose the one minimize the loss)  
 **** alpha(x) = argmin alpha_i Sigma_j L(alpha_i , weight_j) P(W_j | x)  
 **** optimal decision given data x(observed) = argmin Sigma loss function(decision, state) Posterior probability(xtate w_j | x)  
+
+
+*** Naive Bayesian Method(Classificaion)  
+**** classification algorithm based on Bayesian theory  
+**** assume all features are independent(why called "naivd")  
+**** calculating the probability of each class(with given data and priority prob)  
 
 
 ** logistic regression / maximum entropy  
