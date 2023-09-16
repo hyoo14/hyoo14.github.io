@@ -84,11 +84,23 @@ The goals will be achieved through lecture and lab exercises that focus on genom
 *** compute the likelihood of the observation sequence  
 *** By summing over all possible hidden state sequences  
 *** But doing this efficiently-> By folding all the sequences into a single trellis(격자)  
+
+
 * hidden markov models  
+** Markov Assumption: 바로 이전 상태만 현재 상태에 관여됨.(future state depends only on the current state) P(qi|q1,...qi-1) = P(qi|qi-1)  
+** Markov Chain: 상태와 전이 확률로 구성됨, Markov Assumption 따름 (a set of states and the transition probabilities, follow Markov Assumtion)  
+** Hidden Markov Model: 관측되지 않는 (숨겨진) 상태들의 마르코프 체인 + 그 상태들로부터 관측값을 생성하는 확률 과정을 결합한 모델(a Markov chain of unobserved (hidden) states + probabilistic process that generates observations from those states)  
+*** 상태에서의 관측값 발생 확률과 상태 전이 확률을 모두 포함, 숨겨진 상태들로부터 어떤 관측값 시퀀스가 생성되었는지를 추론  
+**** probabilities of observations given a state and the transition probabilities between states, used to infer the sequence of hidden states   
+
+
 * information theoretic measures  
 * assessing statistical significance  
 * metagenomic analyses  
+
+
 * maximum likelihodd approaches (for phylogenetics)  
+** likelihood : measure of how well a statistical model explains a set of observations(모델이 관측을 얼마나 잘 설명하나 측정)    
 
 
 <br/>
