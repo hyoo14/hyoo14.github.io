@@ -74,6 +74,12 @@ Thursday, September 14, 2023
 o  
 <br/>
 
+Friday, September 14, 2023  
+*ai study  
+*eng listening  
+o  
+<br/>
+
 
 {% highlight ruby %}
 
