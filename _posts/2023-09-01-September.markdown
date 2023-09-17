@@ -74,9 +74,18 @@ Thursday, September 14, 2023
 o  
 <br/>
 
-Friday, September 14, 2023  
+Friday, September 15, 2023  
 *ai study  
 *eng listening  
+o  
+<br/>
+
+Saturday, September 16, 2023  
+*ai study  
+*eng listening  
+*eng reading  
+*bio study  
+*math study  
 o  
 <br/>
 
