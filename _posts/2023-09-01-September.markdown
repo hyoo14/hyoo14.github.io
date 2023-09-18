@@ -13,6 +13,52 @@ categories: study
 {% highlight ruby %}
 
 
+September week4:   
+*eng speaking   
+	-ints? exams?       
+*ai/nlp study  
+	-lectures/book(ml)     
+*math  
+	-lectrues/book  
+*eng reading  
+	-papers(mentor‘s pick or my topics)   
+*eng listening  
+	-lectures      
+*codes  
+	-project base line code with comments(or paper source code with comments)  
+*bio?  
+
+##*eng words  
+##*eng writing  
+##*pythons
+
+
+
+{% endhighlight %}  
+
+
+
+
+
+
+<br/>
+
+
+
+
+Monday, September 18, 2023  
+*eng listening  
+*eng speaking  
+o  
+<br/>  
+
+
+
+
+
+{% highlight ruby %}
+
+
 September week3:   
 *eng speaking   
 	-ints? exams?       
@@ -84,6 +130,14 @@ Saturday, September 16, 2023
 *ai study  
 *eng listening  
 *eng reading  
+*bio study  
+*math study  
+o  
+<br/>
+
+Sunday, September 17, 2023  
+*ai study  
+*eng listening  
 *bio study  
 *math study  
 o  
