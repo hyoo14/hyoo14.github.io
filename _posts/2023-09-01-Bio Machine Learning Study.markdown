@@ -78,12 +78,17 @@ The goals will be achieved through lecture and lab exercises that focus on genom
 # topics extending  
 
 * genomic DB/annotation + cs algorithm  
+
+
 * dynamic programming (sequence alignment)    
 ** Forward algorithm  
 *** like CKY parsing, uses a table to store intermediate values  
 *** compute the likelihood of the observation sequence  
 *** By summing over all possible hidden state sequences  
 *** But doing this efficiently-> By folding all the sequences into a single trellis(격자)  
+** Viterbi algorithm  
+*** use a similar trellis to the Forward algirhtm to compute joint probability of the observation squence together with the best state sequence  
+*** trace back to find maximum prob sequence  
 
 
 * hidden markov models  
