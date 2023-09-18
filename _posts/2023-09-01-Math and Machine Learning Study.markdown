@@ -89,8 +89,21 @@ Covered topics include fundamentals of probabilities and decision theory, regres
 
 * graphical madels  
 * mixture models  
+
+
 * clustering  
+** partitioning of data into meaningful groups called clusters  
+*** L2 norm: uclidian distance, Manhatan: |x1-y1| + ... + |x2-y2|  
+*** k-menas algorithm(Assume: data lives in a Euclidean space, want k classes, start with randomly located cluster centers)  
+**** Assignment step: assign each data point to the closest center   
+**** Refitting step: move each cluster center to the center of gravity of the data assigned to it   
+
+
 * expectation maximization  
+** iterative method for learning probablistic categorization  
+*** expectation: compute P(Ci|E) for each example and re-label  
+*** maximization : re-estimate the model parameters theta from probabilistically re-labeled data  
+
 
 * hidden markove models  
 ** markov chain = first-order observable markov model  
