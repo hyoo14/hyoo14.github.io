@@ -52,6 +52,12 @@ Monday, September 18, 2023
 o  
 <br/>  
 
+Tuesday, September 19, 2023  
+*ai study  
+*eng speaking  
+o  
+<br/>  
+
 
 
 
