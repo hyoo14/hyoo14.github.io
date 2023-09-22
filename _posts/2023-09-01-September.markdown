@@ -58,6 +58,16 @@ Tuesday, September 19, 2023
 o  
 <br/>  
 
+Wednesday, September 20, 2023  
+*ai study  
+o  
+<br/>  
+
+Thursday, September 21, 2023  
+*ai study  
+o  
+<br/>  
+
 
 
 
