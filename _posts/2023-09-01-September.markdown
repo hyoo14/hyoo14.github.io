@@ -65,8 +65,25 @@ o
 
 Thursday, September 21, 2023  
 *ai study  
+*eng reading  
+*eng listening  
 o  
 <br/>  
+
+Friday, September 22, 2023  
+*ai study  
+o  
+<br/>  
+
+Saturday, September 23, 2023  
+*ai study  
+o  
+<br/>  
+
+Sunday, September 24, 2023  
+*eng reading  
+o  
+<br/>
 
 
 
