@@ -31,7 +31,7 @@ categories: study
 
 
 
-# [Papers with my notes]()  
+# [Papers with my notes](https://drive.google.com/drive/folders/1-fTfGu8YWXZzeqd10WoEqlwX-sXRyj3Y?usp=sharing)  
 
 
 # [2021]DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome   
