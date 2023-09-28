@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "[2021-2023]DNABERTs"
+date:   2023-09-30 10:08:11 -0400
+categories: study
+---
+
+
+# []
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 
+
+{% endhighlight %}  
+
+<br/>
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+
+<br/>
+
+
+
+
+# [Papers with my notes]()  
+
+
+# [2021]DNABERT: pre-trained Bidirectional Encoder Representations from Transformers model for DNA-language in genome   
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* DNA 유전체용 사전학습된 양방향 트랜스포머 인코더 모델 생성함  
+** 유전자가 다의성과 의미적 관계가 서로 멀어서 굉장히 복잡했는데 DNABERT를 통해 promoter prediction 잘 함 확인  
+
+
+{% endhighlight %}  
+
+<br/>
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* deciphering: 풀다  
+* polysemy: 다의성  
+* promoter: 조절 유전자(오페론 전사 개시 부분)  
+
+<br/>
+
+
+# [2023]DNABERT-2: EFFICIENT FOUNDATION MODEL AND BENCHMARK FOR MULTI-SPECIES GENOME  
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 효율적 기반 모델인 DNABERT-2 생성 및 다양한 종의 유전자에대한 밴치마크 제안  
+** 기존 모델들은 k-mer이었지만 여기서는 BPE를 토크나이저로 사용  
+*** computation cost 줄어들고 sample inefficient 줄어듦  
+** 유전체 이해 벤치마크 제공 - Genome Understanding Evaluation(GUE)  
+** DNABERT보다 성능 향상  
+
+{% endhighlight %}  
+
+<br/>
+
+
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* intricacies: 복잡한     
+* amalgamates: 합병하다     
+
+<br/>
+
+
+
