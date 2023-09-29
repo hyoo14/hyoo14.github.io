@@ -11,7 +11,7 @@ categories: study
 
 짧은 요약(Abstract) :    
 * 학습된 토크나이저와 학습된 트랜스포머 모델들을 사용하는 marker gene을 표현하는 새로운 접근법(모델)  
-** 차세대 DNA시퀀스 개술은 카머 DNA seq 데이터의 활용가능성을 높여주었음  
+** 차세대 DNA시퀀스 기술은 마커 DNA seq 데이터의 활용가능성을 높여주었음  
 ** LM은 기존의 어려움 극복을 위해 사용됨  
 ** seq는 유의미한 token으로 나누어지도록 함  
 ** 이 때 학습된 토크나이저 사용, BPE나 Unigram LM  
@@ -285,6 +285,76 @@ sent transformer로 학습(SRoBERTa)
 
 ### 3.3 Quality of sequence transformer embeddings  
 퀄리티..  SIF와 비교  
+
+
+#### 3.3.1 Spearman correlation of pairwise-alignment scores and cosine similarities  
+스피어맨상관계수 - 두 변수 순위 사이의 통계적 종속성 측정, 두 변수 모노토닉할 때 유용하다함  
+pairwise-alignment(페이의 정렬)-DNA/RNA/protein 서열 최적 일치 찾는 과정  
+상관계수 SRoBERTa가 훨씬 높음  
+
+
+
+#### 3.3.2 Clustering of embedded sequences  
+임베딩의 클러스터링 KEGG로 평가  
+
+
+#### 3.3.3 Classification of embedded sequences  
+분류  
+
+5-fold 분류에서 성능 차이 크지 않음  
+분류에서는 SRoBERTa가 성능 나음  
+(SIF 대비)  
+
+
+#### 3.3.4 Nearest sequence lookup  
+근접 seq 탐색, search도 테스트해보나봄  
+
+
+
+### 3.4 Classification of host phenotype from amplicon sequence data  
+주 표현형 분류  
+
+
+#### 3.4.1 Data set preparation  
+Operational Taxonomic Unit(OTU) : used micro biome research, DNA sequencing based find similarity  
+
+
+
+### 3.4.2 Sample-level embedding  
+sample microbiome 단위 임베딩  
+
+
+Amplicon Sequence Varient - 노이즈 줄이고 정밀도 높임   
+OTU/ASV frequencies: 특정 OTU/ASV가 샘플내에서 발견되는 횟수  
+
+
+### 3.4.3 Classification of samples  
+샘플 분류  
+
+
+
+## 3.5 Conclusion  
+SOTA  
+
+
+
+# Chapter 4  
+## Conclusion  
+토크나이징 전략 달리한 점이 좀 크게 보이는 듯  
+
+
+### 4.1 Implication  
+역시 토큰 방법과 압축에 대한 걸 얘기함  
+LM 자체가 압축 관련이라고 보는 듯  
+
+
+### 4.2 Limitations  
+사용한 데이터가 제한적... 
+
+
+
+### 4.3 Future directions  
+DNA model extending  
 
 
 
