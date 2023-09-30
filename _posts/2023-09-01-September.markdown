@@ -42,6 +42,34 @@ o
 *math/code(assginments+)  
 <br/>  
 
+Tuesday, September 26, 2023  
+*eng reading  
+*eng speaking  
+o  
+<br/>
+
+Wednesday, September 27, 2023  
+*eng reading  
+*eng speaking  
+o  
+<br/>
+
+Thursday, September 28, 2023  
+*eng reading  
+*eng speaking  
+o  
+<br/>
+
+Friday, September 29, 2023  
+*eng reading  
+*eng speaking  
+o  
+<br/>
+
+
+
+
+
 
 
 {% highlight ruby %}
