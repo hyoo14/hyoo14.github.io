@@ -34,10 +34,10 @@ September week5:
 <br/>
 
 Monday, September 25, 2023  
-o  
 *eng reading(research, bio, ml, TA)  
 *eng listening(research, bio, ml, TA)  
 *eng speaking  
+o  
 *eng writing(paper?)  
 *math/code(assginments+)  
 <br/>  
@@ -50,9 +50,6 @@ o
 
 Wednesday, September 27, 2023  
 *eng reading  
-*eng speaking  
-o  
-<br/>
 
 Thursday, September 28, 2023  
 *eng reading  
@@ -65,7 +62,6 @@ Friday, September 29, 2023
 *eng speaking  
 o  
 <br/>
-
 
 
 
