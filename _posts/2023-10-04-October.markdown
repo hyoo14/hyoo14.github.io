@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "October"
+date:   2023-10-04 10:38:33 -0400
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week1:   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*machine learning(ml)  
+	-lectrues/projects/assignments     
+*ECE lab(TA)  
+	-lab assignments 
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+Sunday, October 01, 2023  
+*ai study  
+o  
+<br/>  
+
+
+{% highlight ruby %}
+
+
+October week2:   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+Monday, October 02, 2023  
+*ai study  
+*eng speaking  
+o  
+<br/>  
+
+Tuesday, October 03, 2023  
+*ai study  
+*eng speaking  
+o  
+<br/>
+
+Wednesday, October 04, 2023  
+o  
+*eng reading(for paper)  
+*eng speaking(for TA)  
+*eng listening(for paper/class?)  
+*eng writing(for paper)  
+*code(for assignment/TA)    
+*ai/math study(for class/paper?)  
+<br/>
+
