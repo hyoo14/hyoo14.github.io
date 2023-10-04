@@ -82,5 +82,12 @@ o
 *eng writing(for paper)  
 *code(for assignment/TA)    
 *ai/math study(for class/paper?)  
+o  or  
+*research(dnabert, data, paper idea)-rc,wt      
+*bioinfo(assignment, homework)-lc,rc    
+*ece lab(code)-code,spk  
+*ml(recap and study)-lc    
+o  
+
 <br/>
 
