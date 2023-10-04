@@ -45,11 +45,14 @@ o
 Tuesday, September 26, 2023  
 *eng reading  
 *eng speaking  
+*eng listening  
 o  
 <br/>
 
 Wednesday, September 27, 2023  
 *eng reading  
+o
+<br/>
 
 Thursday, September 28, 2023  
 *eng reading  
@@ -62,6 +65,12 @@ Friday, September 29, 2023
 *eng speaking  
 o  
 <br/>
+
+Saturday, September 30, 2023  
+*ai study  
+o  
+<br/>
+
 
 
 
