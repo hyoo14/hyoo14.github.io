@@ -26,11 +26,9 @@ October week4:
 ## eng writing(paper)  
 ## math? code? (lecture/assignment/project)    
 
-
-
 {% endhighlight %}  
-
 <br/>
+
 Monday, October 16, 2023  
 o  
 *research   
