@@ -9,19 +9,51 @@ categories: study
 
 
 
-
 {% highlight ruby %}
 
 
-October week1:   
+October week4:   
 *research(ai/bio/nlp)     
 	-papers       
 *bioinformatics(bio)  
 	-lectrues/projects    
-*machine learning(ml)  
-	-lectrues/projects/assignments     
 *ECE lab(TA)  
 	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+
+<br/>
+Monday, October 16, 2023  
+o  
+*research   
+*ecelab  
+*bioinfo 
+<br/>  
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week3:   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
 	
 ## eng reading/listening/speaking  
 ## eng writing(paper)  
@@ -33,10 +65,56 @@ October week1:
 
 <br/>
 
-Sunday, October 01, 2023  
-*ai study  
+<br/>
+
+Monday, October 09, 2023  
+*research   
+*ecelab  
+o  
+*bioinfo 
+<br/>  
+
+Tuesday, October 10, 2023  
+*research   
+*bioinfo 
+*ecelab  
 o  
 <br/>  
+
+Wednesday, October 11, 2023  
+*research   
+*bioinfo 
+*ecelab  
+o  
+<br/>  
+
+Thursday, October 12, 2023  
+*research   
+*bioinfo 
+*ecelab  
+o  
+<br/>  
+
+
+Friday, October 13, 2023  
+*research   
+*bioinfo 
+*ecelab  
+o  
+<br/>  
+
+
+Saturday, October 14, 2023  
+*research   
+o  
+<br/>  
+
+Sunday, October 15, 2023  
+*research   
+o  
+<br/>  
+
+
 
 
 {% highlight ruby %}
@@ -90,4 +168,58 @@ o  or
 o  
 
 <br/>
+
+Thursday, October 05, 2023  
+*research   
+*ecelab  
+o  
+*bioinfo 
+<br/>  
+
+Friday, October 06, 2023  
+*research   
+*ecelab  
+o  
+*bioinfo 
+<br/>  
+
+Sunday, October 08, 2023  
+*research   
+o  
+<br/>  
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week1:   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*machine learning(ml)  
+	-lectrues/projects/assignments     
+*ECE lab(TA)  
+	-lab assignments 
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+
+<br/>
+
+Sunday, October 01, 2023  
+*ai study  
+o  
+<br/>  
+
+
 
