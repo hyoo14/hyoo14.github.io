@@ -65,10 +65,20 @@ o
 <br/>  
 
 Saturday, October 21, 2023  
-o  
 *research   
-*ecelab  
 *bioinfo 
+o  
+*ecelab  
+
+<br/>  
+
+
+Sunday, October 22, 2023  
+*research   
+*bioinfo 
+o  
+*ecelab  
+
 <br/>  
 
 
