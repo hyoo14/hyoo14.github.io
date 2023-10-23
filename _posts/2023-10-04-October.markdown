@@ -12,6 +12,36 @@ categories: study
 {% highlight ruby %}
 
 
+October week5:   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, October 23, 2023  
+o  
+*research   
+*ecelab  
+*bioinfo 
+*ml   
+<br/>  
+
+
+
+{% highlight ruby %}
+
+
 October week4:   
 *research(ai/bio/nlp)     
 	-papers       
