@@ -30,10 +30,18 @@ October week5:
 <br/>
 
 Monday, October 23, 2023  
-o  
-*research(LLAMA2 in new cluster)   
+*research(LLAMA2 in new cluster-ing)   
 *bioinfo(check hw1, and start ha2) 
 *ml(lecture)   
+*ecelab(find sol-ing)  
+o  
+<br/>  
+
+
+Tuesday, October 24, 2023  
+o  
+*research(LLAMA2 in new cluster)   
+*bioinfo(start ha2)    
 *ecelab(find sol)  
 <br/>  
 
