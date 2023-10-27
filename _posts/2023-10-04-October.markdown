@@ -47,12 +47,17 @@ o
 
 
 Wedesday, October 25, 2023  
-
-o  
 *research(LLAMA2 in new cluster-not enough gpu mem.. -> parallel try)   
 *bioinfo(recap)    
 *ecelab(find sol)  
+o  
 <br/>  
+
+Thursday, October 26, 2023  
+*research  
+*ecelab  
+*bioinfo  
+o  
 
 
 
