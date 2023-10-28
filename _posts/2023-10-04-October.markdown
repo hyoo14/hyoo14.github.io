@@ -65,6 +65,13 @@ Friday, October 27, 2023
 *bioinfo(papers and recap)  
 *ecelab(mark)  
 o  
+<br/>
+
+Saturday, October 28, 2023  
+*research(Data Augmentation trial)  
+*bioinfo(papers and recap)  
+*ecelab(mark)  
+o  
 <br/>  
 
 
