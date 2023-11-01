@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "November"
+date:   2023-11-01 09:07:53 -0400
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+November week1   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Wednesday, November 01, 2023  
+o  
+*research(new LMs->generate, metagenomics approach with paper read->competitors compare)   
+*bioinfo(exploration first, next: programming3, next: hw2) 
+*ecelab(mark and prepare lab)  
+<br/>  
+
