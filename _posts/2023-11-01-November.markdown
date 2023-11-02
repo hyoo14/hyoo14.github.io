@@ -32,9 +32,16 @@ November week1
 
 
 Wednesday, November 01, 2023  
+*research(new LMs->generate, metagenomics approach with paper read->competitors compare-ing)   
+*bioinfo(exploration first-ing, next: programming3, next: hw2) 
+*ecelab(mark and prepare lab)  
 o  
+<br/>  
+
+Thursday, November 02, 2023  
 *research(new LMs->generate, metagenomics approach with paper read->competitors compare)   
 *bioinfo(exploration first, next: programming3, next: hw2) 
 *ecelab(mark and prepare lab)  
+o  
 <br/>  
 
