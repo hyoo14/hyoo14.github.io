@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "[2022]AMR-meta: a k-mer and metafeature approach to classify antimicrobial resistance from high-throughput short-read metagenomics data"
+date:   2023-11-05 11:57:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* AMR-meta는 DB/alignment에 의존하지 않고 k-mer 통해 feature 추출,  
+이 feature에서 matrix factorization 사용으로 meta 추출,  
+이 meta 사용하여 제약있는 regression 모델 만듬..  
+(하지만 regression 자체가 데이터 의존적이므로 이 주장은 내가 볼 때는 합당하지 않음  )  
+* 그들의 주장에 따르면 meta는 multi-level gene diversity를 capture하고 학습에 이용되며 결론적으로 AMR여부 알려줄 수 있음(학습때 nonAMR도 사용-negative)  
+* 비교군으로 AMR++, DeepARG, Meta-MARC, 이들의 ensemble(voting) 선정했고 cross validation시 median f-score가 본 모델의 경우 0.7(0.2-0.9)로 비교군 보다 좋다고 주장  
+** 특히 semi-synthetic metagenomic data에서 average가 1.3 fold hit rate로 높았다고 함  
+** 속도는 DeepARG보다 3배 빠르고, Meta-MARC의 30배이며 AMR++와는 비슷  
+* 결론적으로 AMR-meta는 빠르고 정확한데, non AMR negative set을 써서 sensitivity와 specificity도 향상되었음  
+** 다만 AMR 예측/분류를 위한 용어 체계등이 표준화되지 않아 비교를 위한 벤치마크가 필요함을 인정  
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/18TEsfMrAaVNMqPnn1ze6thH3FQWNDCb4?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* homology: 동일 기원성(구조들이 공통의 조상으로부터 유래)  
+* homoplasy: 동형 기원성(서로 다른 종에서 비슷해 보이는 구조나 특성이 독립적으로 진화)  
+* hampered: 방해되다  
+* collate: 합치다  
+* house keeping gene: 세포 생존에 필수불가결한 유전자로 어떠한 상황에서도 발현되는 유전자  
+
+<br/>
+
+# 알아야할 것들    
+* dataset source: CARD, MEGRes, ARDB, uniprot(?, manually)    
+* 본 논문은  raw short-read AMR classification에 focus  
+* 본 논문에서는 MEGARes 2.0에서 gene 합침(근데 house keeping gene-생존 필수 유전자는 뺌)  
+* MEGARes에서 simulation해서 10배로 뿔림  
+* short read 만들기 위해 InSilicoSeq 사용( Illlumina's Noa Seq 시뮬레이션 )  
+* input: end paired reads, output: one of the 13 AMR classes  
+
+<br/>
+
+
+
+
