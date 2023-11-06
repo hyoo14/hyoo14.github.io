@@ -13,6 +13,37 @@ categories: study
 {% highlight ruby %}
 
 
+November week2   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, November 06, 2023  
+*research(now: for comparing AMR-meta, use megares)(future: new LLM for generate dataset and classification, compare Deep ARG)   
+*bioinfo(now: programming3)(future: summary of what I did to exploration format, hw2)  
+*ecelab(now: mark)(future: prepare next lab)    
+o  
+<br/>  
+
+
+
+
+{% highlight ruby %}
+
+
 November week1   
 *research(ai/bio/nlp)     
 	-papers       
