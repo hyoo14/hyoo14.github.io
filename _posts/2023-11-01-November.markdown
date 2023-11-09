@@ -52,6 +52,14 @@ Wednesday, November 08, 2023
 o  
 <br/>  
 
+Thursday, November 09, 2023  
+*research(now: for comparing AMR-meta, use megares)(future: new LLM for generate dataset and classification, compare Deep ARG)   
+*bioinfo(now: summary of what I did to exploration format)(future:  hw2)  
+*ecelab(now: prepare next lab)    
+o  
+<br/>  
+
+
 
 
 
