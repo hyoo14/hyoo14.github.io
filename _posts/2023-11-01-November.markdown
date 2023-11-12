@@ -67,6 +67,13 @@ o
 <br/>  
 
 Saturday, November 11, 2023  
+*research(now: use only with nuclotide model test-ing)(future: for comparing AMR-meta/Deep ARG/, new LLM for generate dataset and classification)   
+*bioinfo(now: hw2-ing)(future:  )  
+*ecelab(now: mark, prepare next lab-ing)    
+o  
+<br/>  
+
+Saturday, November 11, 2023  
 *research(now: use only with nuclotide model test)(future: for comparing AMR-meta/Deep ARG/, new LLM for generate dataset and classification)   
 *bioinfo(now: hw2)(future:  )  
 *ecelab(now: mark, prepare next lab)    
