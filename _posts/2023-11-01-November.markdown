@@ -38,6 +38,14 @@ Monday, November 13, 2023
 o  
 <br/>  
 
+Tuesday, November 14, 2023  
+*research(now: use only with nuclotide model test(another combination?))(future: for comparing AMR-meta/Deep ARG/, new LLM for generate dataset and classification)   
+*bioinfo(now: recap and paper?)(future:  )  
+*ecelab(now: mark, prepare next lab)    
+o  
+<br/>  
+
+
 
 
 
