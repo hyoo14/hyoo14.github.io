@@ -53,6 +53,13 @@ o
 <br/>  
 
 Thursday, November 15, 2023  
+*research(now: for comparing AMR-meta/Deep ARG/ARG++/Meta-MARC-ing)(future: crossvalidation, use only with nuclotide model test another combination, new LLM for generate dataset and classification)   
+*bioinfo(now: recap and paper?)(future:  )  
+*ecelab(now: mark, prepare next lab-ing)    
+o  
+<br/>  
+
+Friday, November 16, 2023  
 *research(now: for comparing AMR-meta/Deep ARG/ARG++/Meta-MARC )(future: crossvalidation, use only with nuclotide model test another combination, new LLM for generate dataset and classification)   
 *bioinfo(now: recap and paper?)(future:  )  
 *ecelab(now: mark, prepare next lab)    
