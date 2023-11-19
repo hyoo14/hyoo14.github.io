@@ -66,6 +66,14 @@ Friday, November 16, 2023
 o  
 <br/>  
 
+Saturday, November 17, 2023  
+o  
+<br/>  
+
+Sunday, November 18, 2023  
+*research(now: for comparing AMR-meta/Deep ARG/ARG++/Meta-MARC, crossvalidation)(future: use only with nuclotide model test another combination, new LLM )
+o  
+<br/>  
 
 
 
