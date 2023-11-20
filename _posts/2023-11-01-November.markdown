@@ -13,6 +13,38 @@ categories: study
 {% highlight ruby %}
 
 
+November week4   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, November 20, 2023  
+*research(now: for comparing ARG++/Meta-MARC)(future: use only with nuclotide model test another combination, new LLM )
+*bioinfo(now: recap and paper?)(future:  )  
+*ecelab(now: mark, prepare next lab)    
+o  
+<br/>  
+
+
+
+
+
+{% highlight ruby %}
+
+
 November week3   
 *research(ai/bio/nlp)     
 	-papers       
