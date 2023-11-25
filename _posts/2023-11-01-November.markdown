@@ -59,8 +59,14 @@ Thursday, November 23, 2023
 o  
 <br/>  
 
-Friday, November 23, 2023  
+Friday, November 24, 2023  
 *bioinfo(now: progress report)(next: devise LLM benchmark )(future:  )  
+*research(now: CARD training data refine-remove overlap)(next: comparing ARG++, non-amr data add)(future: use only with nuclotide model test another combination, new LLM )
+o  
+<br/>  
+
+Saturday, November 25, 2023  
+*bioinfo(now: devise LLM benchmark)(next:  )(future:  )  
 *research(now: CARD training data refine-remove overlap)(next: comparing ARG++, non-amr data add)(future: use only with nuclotide model test another combination, new LLM )
 o  
 <br/>  
