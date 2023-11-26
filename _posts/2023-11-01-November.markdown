@@ -71,6 +71,12 @@ Saturday, November 25, 2023
 o  
 <br/>  
 
+Sunday, November 26, 2023  
+*bioinfo(now: devise LLM benchmark)(next:  )(future:  )  
+*research(now: CARD training data refine-remove overlap, non-amr data add)(next: comparing ARG++)(future: use only with nuclotide model test another combination, new LLM )
+o  
+<br/>  
+
 
 
 
