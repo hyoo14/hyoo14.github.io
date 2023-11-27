@@ -10,6 +10,44 @@ categories: study
 
 
 
+
+
+
+
+{% highlight ruby %}
+
+
+November week4   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, November 27, 2023  
+*research(now: non-amr data add)(next: comparing ARG++)(future: use only with nuclotide model test another combination, new LLM )  
+*bioinfo(now: devise LLM benchmark)(next:  )(future:  )  
+*ecelab(now: mark, prepare next lab)    
+*ml  
+o  
+<br/>  
+
+
+
+
+
+
 {% highlight ruby %}
 
 
