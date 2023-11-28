@@ -1,0 +1,122 @@
+---
+layout: post
+title:  "[2019](Meta-MARC)Hierarchical Hidden Markov models enable accurate and diverse detection of antimicrobial resistance sequences"
+date:   2023-11-28 10:00:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* Meta-MARC 약자(Abbreviation)  : Metagenomic Antimicrobial Resistance Characterization  
+* train input: MEGARes v1    
+* Model: HMM  
+* train output: AMR class(24 picked classes)/group/mechanism    
+* 요약: HMM으로 AMR prediction sensitivity(recall) 높임  
+* test input: CARD - cross validation test  
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/10OnXIx7biD8pg8yd06OL1lozbBRD9rQ3?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* efficacy: 효능  
+* imperative: 피할 수 없는  
+* circumvent: 교묘하게 회파하다   
+* counteract: 중화하다  
+* pathogenic: 병원성  
+* non-pathogenic microbes: 비병원성 미생물  
+* high-throughput sequence: 높은 처리량의 시퀀스(일루미나 등을 사용하여 얻는)  
+* microbiome: 미생물군집  
+* genus-level: 속 수준  (종속강문계 중에서)  
+* resistome: 저항하다  
+* pedicatric: 소아과  
+* Escherichia coli: 대장균  
+* antibiotic-laden culture: 항생제가 함유된 배지  
+* inhibitory: 억제적인  
+* phenotypically: 표현형적으로  
+* fosmid: 유전자 클로닝에 사용되는 벡터  
+* confer: 부여하다  
+* culture media: 배양시 사용되는 물질  
+* contig: 염기서열이 밝혀진 작은 조각(fragment합친것)  
+* susceptibility: 민감하게 반응하는 경향  
+* obscuring: 모호한  
+* quertile: 분위수-데이터를 동등하게 네 부분으로 나는 값  
+* gene: 유전자 DNA 특정 부분  
+* genome: 전체 DNA 서열, 비코딩 DNA 포함  
+* sequence divergence: 서로 다른 DNA,RNA 또는 담백질 서열간의 차이점  
+* negligible: 무시할만한  
+* shotgun metagenomics data: 특정 환경 샘플서 얻어진 미생물 군집서 DNA 무작위로 많이 생성 및 분석  
+* proportion: 비율  
+* CIGAR: Consise Idiosynccitatic Groupped Alignment Report의 약자, DNA나 RNA 어떻게 매핑되는지 알려줌  
+* independent covariable: 결과(종속변수)에 영향을 미칠 수 있는 독립적 요인 뜻함(실험 조건 같은), covariables-연구자들에게 조작되지 않음  
+* varying intercept: 서로 다른 그룹이나 수준에서 데이터포인트가 서로 다른 시작점 가진다는 것 의미(서로 다른 곳에서 시작)  
+* calculate coefficient: 특정 변수의 영향력이나 중요도를 나타내는 계수를 계산한다는 의미  
+* Wilcoxon rank sum test: 두 독립표본 그룹간의 중앙값 차이를 비모수적(non-parametric) 방법으로 검정하는 통계 방법(실제값 아닌 rank기반-outlier 있을때 좋음)  
+* silico genes: 시뮬레이션 통해 생성된 gene  
+* prokaryote: 원핵생물(박테리아 + 고세균Archaea)  
+* contiguous: 연속적  
+* noncontiguous: 비연속적  
+* homologous: 유사한 구조나 기원을 가진(공통조상 유례)  
+* discrepantly: 차이가 나게, 불일치하게  
+* high divergence: 큰 차이의 불일치  
+* polymorphisms: 한 종 내의 자연스러운 변이  
+* prudent: 신중한  
+* multi-locus: 다중 위치  
+* allelic: 대립유전자  
+* beta-subunit: 특정 단백질 구성 요소  
+* housekeeping genes: 기본 필수 유전자  
+* DNA topoisomerase: 움 tkddnl rnwh whwjf gyth  
+* SNP- Single Nucleotide Polymorphisms  
+* Major Facilitator Superfamily: 세포막 통해 소분자 운송 관여 단백질  
+* wall time: 완료까지 걸리는 시간  
+
+<br/>
+
+# Description of functional metagenomic datasets  
+흙이랑 서아과 샘플 사용  
+
+# Meta-MARC identifies more on-target sequences than competing methods  
+on-target 더 잘 식별함, 비교군(BWA-메가레스사용, Resforms 보다 나음)  
+
+# HMM 태깅 외에 HTS를 assembly & predict 하는 pipeline도 있음  
+
+# Description of shotgun metagenomics data  
+성능평가 위해 소고기 도축장 데이터 사용   - abundance.. 풍부함..?  
+
+# Meta-MARC tolerates more genetic variation in shotgun metagenomic data  
+다양 유전자(변종된 것들도) 잘 분류  
+
+# Comparison of CPU-time and memory usage
+324gb ram ResFams보다 많은 시간 걸림, 랜덤에 좀 더 강건   
+
+# Construction of the Meta-MARC models  
+MEGARes v1(Aug 2016) 사용  
+
+# Group 1(284 models, 2905 MEGARes sequences)  
+* 284 클러스터로 multi drug 제외하고 USEARCH로 pairwise alignm된 것, 단일 seq 제외  
+
+# Group 2(108 models, 307 MEGARes sequences)  
+* multi drug 제외하고 비저항성에서 변이된 (저항성 보장 안된 것) 것 포함  
+
+# Group 3(675 models, 1073 MEGARes, 28,603 BLAST sequences)  
+* multi drug 포함, BLAST로 비슷한 seq추가(augmentation), 단일 seq인 것도 추가, Aug된 건 HMM으로 태깅  
+
+# Data availability  
+PRJNA215106, PRJNA244044, PRJNA2924710  
+
+# Code availability  
+https://github.com/lainsm/meta-marc  
+https://github.com/lainsm/meta-marc-publication    
+
+<br/>
+
+
+
+
