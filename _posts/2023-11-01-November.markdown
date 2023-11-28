@@ -45,7 +45,7 @@ o
 
 Tuesday, November 28, 2023  
 *research(now: non-amr data add)(next: comparing ARG++)(future: use only with nuclotide model test another combination, new LLM )  
-*bioinfo(now: Homework3)(next:  Programming Assignment4)(future:  devise LLM benchmark)  
+*bioinfo(now: poster)(next:  Homework3, Programming Assignment4)(future:  devise LLM benchmark)  
 *ecelab(now: prepare next lab)    
 o  
 <br/>  
