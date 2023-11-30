@@ -57,6 +57,12 @@ Wednesday, November 29, 2023
 o  
 <br/>  
 
+Thursday, November 30, 2023  
+*research(now: data merge, new LLM data augmentation, non-amr data add)(next: large model test, organize paper, comparing ARG++)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: poster)(next:  Homework3, Programming Assignment4, Final Assignment1/2/3, Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mark)     
+o  
+<br/>  
 
 
 
