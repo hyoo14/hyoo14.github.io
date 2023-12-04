@@ -53,11 +53,26 @@ o
 Saturday, December 2, 2023  
 *research  
 (now:)  
-**nt_user defined one test  
-**data merge   
-**new LLM data augmentation  
-**freezing test  
-**non-amr data add?   
+**nt_user defined one test-ing    
+**data merge-ing   
+**new LLM data augmentation-ing  
+**freezing test-not start yet  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper, comparing ARG++)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: )(next:  Homework3, Programming Assignment4, Final Assignment1/2/3, Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
+
+Sunday, December 3, 2023  
+*research  
+(now:)  
+**nt_user defined one test-done  
+**data merge-ing   
+**new LLM data augmentation-ing  
+**freezing test-not start yet  
+**non-amr data add?-found but not applied     
 (next: large model test, organize paper, comparing ARG++)(future: use only with nuclotide model test another combination )  
 *bioinfo(now: )(next:  Homework3, Programming Assignment4, Final Assignment1/2/3, Final Paper)(future:  devise LLM benchmark)   
 *ecelab(now: mail, mark)     
