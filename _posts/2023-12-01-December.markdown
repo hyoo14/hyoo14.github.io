@@ -47,6 +47,21 @@ Monday, December 4, 2023
 o  
 <br/>  
 
+Tuesday, December 5, 2023  
+*research  
+(now:)  
+** poster revise  
+**nt_user defined one test-another one..-not start    
+**data merge-ing   
+**new LLM data augmentation-ing  
+**freezing test-not start yet  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper, comparing ARG++)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Homework3, Programming Assignment4)(next:  Final Assignment1/2/3, Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
 
 
 
