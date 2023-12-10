@@ -102,6 +102,20 @@ Friday, December 8, 2023
 *bioinfo(now: Final Assignment1/2/3-not start yet)(next:  Final Paper)(future:  devise LLM benchmark)   
 
 
+Saturday, December 9, 2023  
+*research  
+(now:)  
+**data merge-ing   
+**amr plus plus  -not start  
+**new LLM data augmentation-not start  
+**nt_user defined one test-another one..-not start    
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Final Assignment1/2/3-not start)(next:  Final Paper)(future:  devise LLM benchmark)   
+
+
+
 
 
 {% highlight ruby %}
