@@ -105,7 +105,7 @@ Friday, December 8, 2023
 Saturday, December 9, 2023  
 *research  
 (now:)  
-**data merge-ing   
+**data merge-done   
 **amr plus plus  -not start  
 **new LLM data augmentation-not start  
 **nt_user defined one test-another one..-not start    
@@ -113,6 +113,14 @@ Saturday, December 9, 2023
 **non-amr data add?-found but not applied     
 (next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
 *bioinfo(now: Final Assignment1/2/3-not start)(next:  Final Paper)(future:  devise LLM benchmark)   
+
+
+Sunday, December 10, 2023  
+*research  
+(now:)  
+**new LLM data augmentation-not start   
+**amr plus plus  -not start  
+
 
 
 
