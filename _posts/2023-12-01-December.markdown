@@ -14,7 +14,47 @@ categories: study
 {% highlight ruby %}
 
 
-December week1   
+December week3   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, December 11, 2023  
+*research  
+(now:)  
+**new LLM data augmentation-ing   
+**amr plus plus  -not start  
+**nt_user defined one test-another one..-not start    
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Final Assignment1/2/3-not start)(next:  Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+December week2   
 *research(ai/bio/nlp)     
 	-papers       
 *bioinformatics(bio)  
@@ -100,7 +140,8 @@ Friday, December 8, 2023
 **non-amr data add?-found but not applied     
 (next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
 *bioinfo(now: Final Assignment1/2/3-not start yet)(next:  Final Paper)(future:  devise LLM benchmark)   
-
+o  
+<br/>  
 
 Saturday, December 9, 2023  
 *research  
@@ -113,13 +154,16 @@ Saturday, December 9, 2023
 **non-amr data add?-found but not applied     
 (next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
 *bioinfo(now: Final Assignment1/2/3-not start)(next:  Final Paper)(future:  devise LLM benchmark)   
-
+o  
+<br/>  
 
 Sunday, December 10, 2023  
 *research  
 (now:)  
 **new LLM data augmentation-not start   
 **amr plus plus  -not start  
+o  
+<br/>  
 
 
 
