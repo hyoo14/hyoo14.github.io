@@ -37,11 +37,26 @@ Monday, December 11, 2023
 (now:)  
 **new LLM data augmentation-ing   
 **amr plus plus  -not start  
-**nt_user defined one test-another one..-not start    
+**nt_user defined one test-another one..-ing(should map full genes to reads)    
 **freezing test-not start  
 **non-amr data add?-found but not applied     
 (next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
-*bioinfo(now: Final Assignment1/2/3-not start)(next:  Final Paper)(future:  devise LLM benchmark)   
+*bioinfo(now: Final Assignment1/2/3-ing)(next:  Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
+
+Tuesday, December 12, 2023  
+*research  
+(now:)  
+**new LLM data augmentation-ing   
+**amr plus plus  -not start  
+**nt_user defined one test-another one..-ing
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Final Assignment1/2/3-ing)(next:  Final Paper)(future:  devise LLM benchmark)   
 *ecelab(now: mail, mark)     
 o  
 <br/>  
