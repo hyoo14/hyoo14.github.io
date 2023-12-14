@@ -62,6 +62,21 @@ o
 <br/>  
 
 
+Wednesday, December 13, 2023  
+*research  
+(now:)  
+**new LLM data augmentation-done   
+**amr plus plus  -not start  
+**nt_user defined one test-another one..-done  
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+(next: large model test, organize paper)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Final Assignment1/2/3-done)(next:  Final Paper)(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
+
 
 
 
