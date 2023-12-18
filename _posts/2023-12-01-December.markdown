@@ -14,6 +14,47 @@ categories: study
 {% highlight ruby %}
 
 
+December week4   
+*research(ai/bio/nlp)     
+	-papers       
+*bioinformatics(bio)  
+	-lectrues/projects    
+*ECE lab(TA)  
+	-lab assignments 
+*machine learning(ml)  
+	-lectrues
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, December 18, 2023  
+*research  
+(now:)  
+**Reads test-ing  
+**new LLM data augmentation-done   
+**amr plus plus  -not start  
+**nt_user defined one test-another one..-done  
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+**organize paper  
+(next: large model test)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: )(next:  devise LLM benchmark)(future:  )   
+*ecelab(now: mail)     
+o  
+<br/>  
+
+
+
+
+
+{% highlight ruby %}
+
+
 December week3   
 *research(ai/bio/nlp)     
 	-papers       
@@ -110,6 +151,22 @@ o
 
 
 Saturday, December 16, 2023  
+*research  
+(now:)  
+**new LLM data augmentation-done   
+**amr plus plus  -not start  
+**nt_user defined one test-another one..-done  
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+**organize paper  
+(next: large model test)(future: use only with nuclotide model test another combination )  
+*bioinfo(now: Final Paper)(next:  )(future:  devise LLM benchmark)   
+*ecelab(now: mail, mark)     
+o  
+<br/>  
+
+
+Sunday, December 17, 2023  
 *research  
 (now:)  
 **new LLM data augmentation-done   
