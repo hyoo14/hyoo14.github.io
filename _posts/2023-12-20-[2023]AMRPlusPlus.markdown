@@ -1,0 +1,129 @@
+---
+layout: post
+title:  "[2023]MEGARes and AMR++, v3.0: an updated comprehensive database of antimicrobial resistance determinants and an improved software pipeline for classification using high-throughput sequencing"
+date:   2023-12-20 18:37:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* AMR있는 MEGARes dataset update 소개  
+* 금속(AMR속성으로?) 추가  
+* AMR++ update-HTS 분석용  
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1QQEPqUcc7v2e9YDXOZXe1F3RqIgSO9Fa?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* efficacy: 효능  
+* protocols: 절차, 규칙, 방법론  
+* therapeutic: 치료 목적의  
+* antibiotic regimens: 요법, 치료계획  
+* veterinary: 수의학  
+* confer: 부여하다  
+* abundance: 풍부한, 높은 농도   
+* acyclical: 주기적, 변화가 없는  
+* facilitates: 촉진, 용이하게하다  
+* binning: 카테고리로 분류하는 과정(그룹화)  
+* aggregated: 집계된, 모아진, 취합된  
+* accomodates: 수용하다, 적응하다, 맞추다  
+* complication: 복잡함, 어려움  
+* loci: 위치, 부위(복수형)  
+* locus: 위치, 부위(단수)  
+* transcription: 정보 전달(전사)  
+* conformation: 구조  
+* fluoroquinolone: 항생제 분류(효소 억제)  
+* accession: 등록번호, 접수번호  
+* meticulous: 매우 세심한, 꼼꼼한  
+* protein homolog: 유사한 구조나 유전적 기원을 가진 담백질  
+* knockout: 특정 유전자의 기능을 제거하거나 무력화시키는 기술  
+* over-expression: 어떤 유전자가 과도하게 발현  
+* variant: 변이  
+* chromosomal: 염색체의, 염색체와 관련된(DNA와 단백질의 복합체)  
+* Heat: 열  
+* Virulence: 독성  
+* anti-malarial resistance: 항 말라리아 저항성  
+* slico testing: 시뮬레이션  
+* confer: 부여하다  
+* TUFAB gene: Elfamycins 저항성 유전자  
+* suppressible: 억제할 수 있는  
+* frameshift: 염기서열 돌연변이  
+* susceptible: 영향받기 쉬운, 민감한  
+* unaccounted: 기록되지 않은, 설명되지 않은, 집계되지 않은  
+* difficile: 어려운, 힘든(불어), 영어로 difficult  
+* literature: 문헌, 학습, 연구 논문, 리뷰, 보고서  
+* amio acids: 아미노선  
+* denote: 표기하다, 의미하다, 나타내다  
+* missense: 유전자 돌연변이  
+* precedes: 선행하다, 앞서다, 이전에 일어나다  
+* methyltransferase: 메틸기 전달 효소  
+* miscellaneous: 다양, 여러가지, 잡다한  
+* supressible: 억제할 수 있는  
+* hypersusceptible: 매우 억제 가능한  
+* subsequently: 이후에, 그후에, 차례로  
+* proprietary: 독점적인  
+* non-proprietary: 비독점적인  
+* trimming: 필요x부분 제거 과정  
+* resistome: 특정 환경 내의 모든 항생제 내성 유전자 집합  
+* microbiome: 특정 환경의 모든 미생물집합  
+* encompassing: 포괄적, 포함하는  
+
+<br/>
+
+# INTRODUCTION	
+V3의 요지는 항생제 뿐만 아니라 살충제("biocides"), 금속("metal") AMR 관련된 것 추가한것(resistance to biocides and metal)  
+
+
+
+# UPDATES TO MEGARes AND AMR++  
+Updated ARG accessions for MEGARes v3.0  
+새로운 내성 유전자 포함 newART(865)->8733 total  
+single nucleotide polymorphism insertion/deletion mutation is added    
+
+
+# Added resistance-conferring variant information to MEGARes 3.0 annotations  
+1. 저항성 부여 변이 중요성->특정 변이 간주 부분 490 포함  
+2. 소프트웨어 통합->single nucleotide polymorphism existance check added  
+-> registome gene identifier/point finder 통합 시도  
+3. 개선된 알고리즘->유전적 변이 확인 부분 개선, DB 개선, BWA alignment  
+
+* CARD 보고, CARD처럼 gene family같은 것 추가 함  
+* KARGVA 프로그램 사용(KARGA기반, k-mer로 ARG 분석)  
+
+* BasicLocalAlignmentSearchTool인 BLASTN&EMBOSS(European MoleculorBiologyOpenSoftwareSuite)가 사용됨->pairwise alignment에서  
+** 변이 위치 확인  
+** 변이 맥락 context -> 변이 발생 seq 주변 부위(변이 뿐 아니라 주변도 고려한 것)  
+** 핵산 추출  
+
+
+# Resistance-conferring variant identification-저항성 부여 변이 식별    
+1. DB  
+2. BWA 정렬- SAM(Sequence Alignmen Map) 파일 생성(동일 있나 체크)  
+3. SAM에 ARG있나 확인 -> I-type, S-type, N-type, H-type 등  
+
+
+* 저항성 부여 변이 확인->저항성 부여 변이 필요여부에 따라 I/S/N/H 타입으로 분류  
+** 변이 확인 파이프라인 유형별 약간 달리함  
+
+# Updated AMR++ 3.0: NextFlow and SnakeMake pipelines  
+NextFlow, SnakeMake 포함(추가됨)  
+넥스트플로우는 스크립트 언어를 사용하여 AMR++ 작성, DSL2? 사용, 파이프라인 경량화 및 시간 단축  
+스네이트메이크는 파이썬기반 워크플로으로 작성, 공간 최적화  
+
+* BWA-MEM 정렬도 가능  
+* 크라켄 사용가능(고품질 non-host reads 분석)  
+
+
+<br/>
+
+
+
+
