@@ -125,7 +125,7 @@ categories: study
 
    
 # [2018]DeepARG: a deep learning approach for predicting antibiotic resistance genes from metagenomic data  
-
+--> updated with new post  
 
 {% highlight ruby %}
 짧은 요약 :  
