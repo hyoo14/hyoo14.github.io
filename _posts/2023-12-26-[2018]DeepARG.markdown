@@ -160,7 +160,52 @@ MLP, FCN으로 기존대비 좋은 성과
 ** 도전 과제: 멀티드러그 유전자들은 종종 유사한 시퀀스를 공유하기 때문에, 계산 방법으로 짧은 읽기 시퀀스의 진정한 정체성을 판별하기 어렵. 따라서 DeepARG는 예측 확률이 0.9 미만일 경우 상위 두 ARG 범주를 수동 검사를 위해 보고.  
 
 
-## Prediction of long ARG-like sequences
+## Prediction of long ARG-like sequences  
+* DeepARG-LS 모델은 전체 유전자 길이 서열을 기반으로 하며, UNIPROT 유효 유전자를 70% 학습 및 30% 검증 데이터로 분할하여 학습함.  
+* 모델은 전체 정밀도와 재현율이 각각 0.99로 높은 성능을 보였음.   
+* 특히, 데이터베이스에서 대표적으로 나타나는 베타 락타메이즈, 바시트라신, 클로람페니콜, 아미노글리코사이드 같은 항생제 범주에서 높은 정밀도와 재현율을 보임.  
+
+
+## Performance prediction of known and validated ARGs  
+* DeepARG-LS 모델은 MEGARes 데이터베이스의 모든 ARG 시퀀스에 적용되었으며, 이 데이터베이스에는 CARD, ARG-ANNOT, RESFINDER 등에서 수집된 수동으로 큐레이트된 ARG가 포함됨.  
+* 이 모델은 전체적인 정밀도와 재현율이 각각 0.94와 0.93으로 높게 나타남.  
+
+
+## Validation through Novel ARGs  
+* DeepARG-LS 모델은 카바페넴 내성을 나타내는 76개의 새로운 금속 베타 락타메이즈 유전자에 대해 테스트됨.  
+* 이 중 65개 (85% 정확도)가 베타 락타메이즈로 정확하게 예측되었으며, 나머지 9개는 낮은 정렬 커버리지로 필터링되었음.  
+
+
+## Validation through an in Silico spike-in experiment  
+* DeepARG-SS 모델은 ARG 시퀀스가 전체 리드의 소수에 불과한 실제 샘플에서의 성능을 평가하기 위해 사용됨.  
+* 이 모델은 10000개의 비우세 ARG 리드 중 9976개(99% 민감도)를 정확하게 예측함.  
+
+
+## Validation through PseudoARGs  
+* DeepARG-LS 모델은 진짜 ARG가 아니지만 ARG의 일부를 포함하는 유전자(가짜 ARG)를 구별하는 능력을 평가하기 위해 사용됨.  
+* 이 모델은 300개의 가짜 ARG 중 285개(5%의 거짓 양성률)를 필터링하는데 성공함.  
+
+
+## Limitation of DeepARG and usage recommendation  
+* DeepARG-LS와 DeepARG-SS 모델은 각각 다른 ARG 예측 전략에 맞춰져 있음. 특히, DeepARG-LS 모델은 더 긴 시퀀스에서 더 정확할 수 있음.  
+* DeepARG의 성능은 훈련 데이터베이스의 품질에 크게 의존함. 데이터베이스의 오류는 예측에 영향을 미칠 수 있음.  
+
+
+# Conclusion  
+* DeepARG는 메타게놠믹 데이터로부터 ARG를 식별하고 태깅을 달기 위한 새로운 계산 자원으로 개발되었음.  
+* DeepARG는 전통적인 '최고 적중 접근법'보다 더 정확하며, 엄격한 커트오프에 제한되지 않고 거짓 음  
+
+# Availability and requirements  
+* DeepARG는 명령 줄 프로그램으로, 입력으로 FASTA 파일 또는 BLAST 탭 형식 파일을 사용할 수 있음.
+* FASTA 시퀀스 파일을 입력으로 사용할 경우, DeepARG는 먼저 시퀀스 검색을 수행한 후 ARG를 태깅 처리. BLAST 탭 형식 파일이 입력되면 DeepARG는 바로 ARG 태깅.  
+* DeepARG의 온라인 버전도 사용 가능하며, 여기서 사용자는 메타게놠믹 원시 시퀀스 파일(FASTQ 형식)을 업로드하여 ARG 태깅 받음.
+* 데이터 처리가 완료되면 사용자는 ARG의 절대 및 상대적 풍부도를 포함한 태깅 처리된 ARG 결과에 대한 이메일을 받게됨.  
+* 웹 서비스는 사용자가 DeepARG 분석의 파라미터(정체성, 확률, 커버리지, E-value)를 수정할 수 있도록 함.  
+* 커맨드라인 버전을 사용할 경우, 사용자는 각 읽기/유전자가 특정 항생제 저항 범주에 속하는 확률과 함께 더 정교한 결과에 접근할 수 있음  
+
+
+# 기타 내용...  
+* 뭐야 BLAST쓰네...  
 
 
 
