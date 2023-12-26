@@ -10,6 +10,37 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+December week4   
+*research(ai/bio/nlp)     
+	-papers       
+	-lectrues/projects    
+	
+## eng reading/listening/speaking  
+## eng writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, December 25, 2023  
+*research  
+(now:)  
+** tapt-ing  
+**v3 test-ing  
+**amr plus plus  -not start  
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+**organize paper  
+(next: large model test)(future: use only with nuclotide model test another combination, devise LLM benchmark )  
+o  
+<br/>  
+
+
+
 
 {% highlight ruby %}
 
@@ -128,7 +159,7 @@ o
 <br/>  
 
 
-Sunday, December 25, 2023  
+Sunday, December 24, 2023  
 *research  
 (now:)  
 ** tapt-ing  
