@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "[2019]What does BERT learn about the structure of language?"
+date:   2023-12-28 14:59:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+
+* BERT 네트워크가 언어의 구조적 정보를 포착할 수 있다는 가능성 설명
+* BERT가 영어 구조에 대해 어떤 요소들을 학습하는지 탐구하기 위해 일련의 실험을 수행
+* 이 실험들을 통해, BERT의 하위 레이어에서는 문구 수준의 정보를, 중간 레이어에서는 표면적 특성에서부터 구문론적, 의미론적 특성까지 다양한 언어 정보가 계층적으로 인코딩되어 있음을 발견
+* BERT는 또한 주어-동사 일치와 같은 장거리 의존성 정보를 처리할 때 더 깊은 레이어를 필요로 하는 것으로 나타났으며, BERT의 표현이 전통적인 나무 구조와 유사한 방식으로 구성되어 있는 것을 확인
+
+Useful sentences :  
+*   
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+<br/>
+
+# 1 Introduction  
+* 
