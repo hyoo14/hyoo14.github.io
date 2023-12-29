@@ -70,6 +70,21 @@ o
 <br/>  
 
 
+Thursday, December 28, 2023  
+*research  
+(now:)  
+** paper reading  
+** tapt-ing  
+**v3 test-ing  
+**amr plus plus  -ing    
+**freezing test-not start  
+**non-amr data add?-found but not applied     
+**organize paper  
+(next: large model test)(future: use only with nuclotide model test another combination, devise LLM benchmark )  
+o  
+<br/>  
+
+
 
 {% highlight ruby %}
 
