@@ -14,12 +14,11 @@ categories: study
 
 
 January week1   
-*research(ai/bio/nlp)     
-	-papers       
-	-lectrues/projects    
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** H center-tapt, comparing(not a small deal), use deep hierarchy, NT+PT(new)  
+** B center-simple transformer, regression, xgb/light gb  
 	
-## eng reading/listening/speaking  
-## eng writing(paper)  
+## eng reading/listening/speaking/writing(paper)  
 ## math? code? (lecture/assignment/project)    
 
 {% endhighlight %}  
@@ -43,6 +42,20 @@ o
 (next: large model test)(future: use only with nuclotide model test another combination, devise LLM benchmark )  
 
 <br/>  
+
+Tuesday, January 2, 2024  
+*research  
+(now:)  
+** paper reading  
+o  
+<br/>
+
+Wednesday, January 3, 2024  
+* research  
+** reading...  
+o  
+<br/>  
+
 
 
 
