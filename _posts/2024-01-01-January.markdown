@@ -16,7 +16,7 @@ categories: study
 January week1   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** H center-tapt, comparing(not a small deal), use deep hierarchy, NT+PT(new)  
-** B center-simple transformer, regression, xgb/light gb  
+** B center-simple transformer, regression, xgb/light gb(and all for protein)    
 	
 ## eng reading/listening/speaking/writing(paper)  
 ## math? code? (lecture/assignment/project)    
@@ -55,6 +55,15 @@ Wednesday, January 3, 2024
 ** reading...  
 o  
 <br/>  
+
+Thursday, January 4, 2024  
+* research  
+o  
+** reading  
+** prot  
+** integrated environment for testings  
+<br/>  
+
 
 
 
