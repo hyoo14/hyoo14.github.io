@@ -58,6 +58,7 @@ o
 
 Thursday, January 4, 2024  
 * research  
+** blast_mmseq  
 o  
 ** reading  
 ** prot  
@@ -67,7 +68,18 @@ o
 
 Friday, January 5, 2024  
 * research  
+** blast_mmseq  
 o  
+** reading  
+** prot  
+** integrated environment for testings  
+<br/>  
+
+
+Saturday, January 6, 2024  
+* research  
+o  
+** blast_mmseq  
 ** reading  
 ** prot  
 ** integrated environment for testings  
