@@ -78,13 +78,21 @@ o
 
 Saturday, January 6, 2024  
 * research  
-o  
 ** blast_mmseq  
+o  
 ** reading  
 ** prot  
 ** integrated environment for testings  
 <br/>  
 
+Sunday, January 7, 2024  
+* research  
+** blast_mmseq  
+o  
+** reading  
+** prot  
+** integrated environment for testings  
+<br/>  
 
 
 
