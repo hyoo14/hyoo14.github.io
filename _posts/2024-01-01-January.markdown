@@ -9,6 +9,33 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+January week2   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** H center-tapt, comparing(not a small deal), use deep hierarchy, NT+PT(new)  
+** B center-blast     
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, January 8, 2024  
+* research  
+** blast_mmseq  
+o  
+** reading  
+** prot  
+** integrated environment for testings  
+<br/>  
+
+
+
+
 
 {% highlight ruby %}
 
