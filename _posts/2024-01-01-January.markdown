@@ -34,6 +34,16 @@ o
 <br/>  
 
 
+Tuesday, January 9, 2024  
+* research  
+** blast_mmseq_aug    
+o  
+** reading  
+** prot  
+** integrated environment for testings  
+<br/>  
+
+
 
 
 
