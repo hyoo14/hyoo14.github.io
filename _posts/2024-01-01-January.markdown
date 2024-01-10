@@ -47,10 +47,28 @@ o
 Wednesda, January 10, 2024  
 * research  
 ** blast_mmseq_aug    
+** integrated environment for testings  
 o  
 ** reading  
 ** prot  
+<br/>  
+
+
+Thursday, January 11, 2024  
+* research  
 ** integrated environment for testings  
+** blast_mmseq_aug      
+o  
+*** evo-aug  
+*** test  
+* classes assign  
+* conf  
+
+
+** reading  
+** prot  
+** deep hierarchy  
+
 <br/>  
 
 
