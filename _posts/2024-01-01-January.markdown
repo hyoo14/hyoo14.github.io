@@ -63,7 +63,9 @@ o
 *** test  
 *** iblast/diamond  
 * classes assign  
+** wrts  
 * conf  
+** wrts and test?  
 
 
 ** reading  
