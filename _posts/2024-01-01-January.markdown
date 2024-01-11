@@ -55,6 +55,8 @@ o
 
 
 Thursday, January 11, 2024  
+* classes assign  
+** wrts  
 * research  
 ** integrated environment for testings  
 ** blast_mmseq_aug      
@@ -62,11 +64,9 @@ o
 *** evo-aug  
 *** test  
 *** iblast/diamond  
-* classes assign  
-** wrts  
+
 * conf  
 ** wrts and test?  
-** plan  
 
 
 ** reading  
@@ -74,6 +74,16 @@ o
 ** deep hierarchy  
 
 <br/>  
+
+
+Friday, January 12, 2024  
+o  
+* research  
+* lecture(CM/GT/RCRG)  
+**CM-extra assignment/quiz/module/project/
+**GT-recap  
+**RCRG-recap?(or no)  
+* conf  
 
 
 
