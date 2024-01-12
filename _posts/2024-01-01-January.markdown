@@ -77,8 +77,9 @@ o
 
 
 Friday, January 12, 2024  
-o  
 * research  
+o  
+** aug test  
 * lecture(CM/GT/RCRG)  
 **CM-extra assignment/quiz/module/project/
 **GT-recap  
