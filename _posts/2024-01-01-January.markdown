@@ -12,6 +12,37 @@ categories: study
 {% highlight ruby %}
 
 
+January week3   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Aug focus(B)  
+** iBlast(G)     
+** deep hierarchy  
+(future pro+nu)  
+*class
+** CompuMetagen  
+** GeneThera  
+** RCRG  
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, January 15, 2024  
+o  
+* research: Aug   
+* research: iBla  
+* research: deep hier  
+* class  
+
+
+
+
+{% highlight ruby %}
+
+
 January week2   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** H center-tapt, comparing(not a small deal), use deep hierarchy, NT+PT(new)  
