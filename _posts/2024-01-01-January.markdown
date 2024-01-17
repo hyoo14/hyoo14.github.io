@@ -19,8 +19,8 @@ January week3
 ** deep hierarchy  
 (future pro+nu)  
 *class
-** CompuMetagen  
-** GeneThera  
+** Genomics  
+** GT(GeneTherapy)  
 ** RCRG  
 	
 ## eng reading/listening/speaking/writing(paper)  
@@ -38,10 +38,22 @@ o
 * class  
 
 Tuesday, January 16, 2024  
-* research: no idea... tired  
-* class ..  
+* research: Aug: summary  
+* research: iBla: run iblast  
+* research: deep hier: collect -ing  
+* class: Genomics: extra credit hw -ing  
+* class: GT: ps  
+* class: RCRG  
 o  
 
+Wednesday, January 17, 2024  
+* research: Aug:   
+* research: iBla:   
+* research: deep hier: collect -ing  
+* class: Genomics: extra credit hw -ing  
+* class: GT:   
+* class: RCRG:    
+o  
 
 
 
