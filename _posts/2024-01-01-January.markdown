@@ -61,6 +61,10 @@ Thursday, January 18, 2024
 * class: Genomics / GT / RCRG:  
 o  
 
+Friday, January 19, 2024  
+* research  
+o  
+
 
 
 {% highlight ruby %}
