@@ -57,6 +57,12 @@ Friday, January 26, 2024
 o   
 
 
+Saturday, January 27, 2024  
+* research  
+* class
+o   
+
+
 
 
 {% highlight ruby %}
