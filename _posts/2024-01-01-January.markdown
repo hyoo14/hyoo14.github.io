@@ -12,6 +12,35 @@ categories: study
 {% highlight ruby %}
 
 
+January week5   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Aug focus(B)  
+** iBlast(G)     
+** deep hierarchy  
+(future pro+nu)  
+*class
+** Genomics  
+** GT(GeneTherapy)  
+** RCRG  
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, January 29, 2024  
+* research  
+* class
+o   
+
+
+
+<br/>
+{% highlight ruby %}
+
+
 January week4   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** Aug focus(B)  
