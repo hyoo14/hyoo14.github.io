@@ -1,0 +1,127 @@
+---
+layout: post
+title:  "[2020]iBLAST: Incremental BLAST of new sequences via automated e-value correction"
+date:   2024-01-29 10:49:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* iBLAST 시스템은 이전 결과를 활용하여 새로운 데이터베이스 시퀀스가 추가될 때 이를 업데이트함으로써 새로운 시퀀스에 대한 효율적인 BLAST 검색을 위해 설계  
+* 이 접근 방식은 업데이트된 결과에 대한 중요한 통계, 예를 들어 e-value를 재계산하여 상당한 계산 비용을 절감  
+* iBLAST는 최근 NCBI BLAST 도구와 호환되며 BLAST에 익숙한 사용자에게 사용자 친화적  
+
+Useful sentences :  
+*   
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1biyTYigwuGZVoZkoV2X5cYTb5nszcG3Q?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+<br/>
+
+# Introduction  
+* iBLAST 시스템은 데이터베이스에 새로 추가된 시퀀스를 반영하여 BLAST 검색 결과를 업데이트하는 새롭고 효율적인 방법을 소개  
+* 전체 검색을 다시 실행하지 않고도 이를 수행함으로써 계산 자원과 시간을 크게 절약  
+* 이 방법은 새로운 시퀀스가 지속적으로 추가되면서 데이터베이스가 빠르게 성장하는 유전학 분야에서 특히 유용  
+* 기존의 방식은 업데이트된 데이터베이스에 대해 전체 BLAST 검색을 다시 실행해야 하며, 이는 계산 비용이 많이 들고 시간이 많이 소요  
+* 그러나 iBLAST는 이전 BLAST 검색 결과를 활용하여 새롭게 추가된 시퀀스에 대해서만 검색을 수행하고, e-value와 같은 중요한 통계를 재계산한 후 이러한 결과를 병합하여 업데이트된 검색 결과를 생성   
+* 이 방법은 NCBI BLAST와 동일한 결과를 제공하면서 상당한 계산 비용 절감을 보여주어 효율적인 생물학적 발견을 위한 유용한 도구  
+
+<br/>
+
+# Methods  
+* iBLAST의 증분 업데이트 메커니즘은 먼저 마지막 검색 이후 데이터베이스에 추가된 새로운 시퀀스에 대해 BLAST 검색을 수행하는 것  
+* 다음 업데이트된 데이터베이스 크기를 기반으로 새로운 결과와 이전 결과에 대한 중요한 통계, 예를 들어 e-value를 재계산  
+* 시스템은 이러한 결과를 병합하여 업데이트된 검색 결과를 생성  
+* 이 과정은 iBLAST가 데이터베이스 성장의 분수인 δ를 고려할 때 전체 NCBI BLAST 검색보다 (1+δ)/δ 배 더 빠르게 작동하기 때문에 훨씬 더 효율적  
+* 시스템의 구조는 NCBI BLAST 명령줄 도구의 최신 버전과 통합되는 Python 모듈을 포함하여 기존 BLAST 사용자의 호환성과 사용 용이성을 보장  
+* iBLAST는 광범위한 시퀀스 검색을 포함하는 대규모 생물정보학 프로젝트에 특히 유용하며, 이러한 작업에 필요한 계산 비용과 시간을 크게 줄임  
+
+## BLAST concepts and statistics  
+### Core concepts of a BLAST result: Hit, HSP, score, and e-value.  
+* BLAST 검색 결과의 핵심 개념에는 히트(Hit), 고득점 쌍(HSP), 점수(Score), 그리고 기대값(e-value)이 포함  
+* 히트(Hit): BLAST 검색을 수행할 때, 쿼리 시퀀스와 유의미한 정렬을 생성하는 대상 데이터베이스 내의 시퀀스들을 '히트'라고 정의, 각 히트는 쿼리 시퀀스와 유사성을 공유하는 하나의 대상 시퀀스를 나타냄  
+
+* 고득점 쌍(High Scoring Pair, HSP): 히트 내에서, 쿼리와 대상 시퀀스 사이의 특정 지역적 정렬을 고득점 쌍이라고 정의, HSP는 쿼리와 히트 사이에서 가장 높은 점수를 얻은 정렬 부분을 나타냄,  하나의 히트는 여러 개의 HSP를 포함할 수 있음  
+
+* 점수(Score): HSP의 점수는 정렬된 시퀀스 쌍 사이의 유사성 정도를 수치적으로 나타냄, 높은 점수는 높은 유사성을 의미하며, 점수 계산은 일치, 불일치, 갭 존재 등의 요소를 고려하여 이루어짐  
+
+* 기대값(e-value): e-value는 특정 HSP가 데이터베이스의 크기와 같은 다른 통계적 매개변수를 고려하여 랜덤한 일치로 발생할 확률을 나타냄, 낮은 e-value는 HSP가 우연히 발생할 가능성이 낮음을 의미하며, 따라서 해당 HSP가 더 유의미하다고 간주  
+
+* 이러한 개념들은 BLAST 검색 결과의 해석과 이해에 중요하며, 특히 e-value는 결과의 유의미함을 평가하는 데 주로 사용  
+
+
+### BLAST statistics for e-value computation  
+* BLAST에서 e-value 계산을 위한 통계는 주로 Karlin-Altschul 통계와 Spouge 통계 두 가지 방법을 사용  
+
+
+### Karlin-Altschul Statistics  
+* 이 방법은 e-value를 계산할 때 사용되며, 특정 HSP가 얻을 수 있는 점수(S)와 데이터베이스 크기, 쿼리의 길이 등을 고려하여 e-value를 계산  
+* Karlin-Altschul 통계는 e-value를 E=e^( −λ(S−μ) ) = Km′n′e^(−λS) 로 정의  
+* 여기서 m′과 n′은 쿼리와 데이터베이스의 유효 길이이며, λ, K, μ는 각각 통계적 매개변수  
+* 길이 조정값 l은 다음과 같은 공식을 만족 l= λ/1 ln(K(m−l)(n−Nl))  
+* 여기서 λ, K는 통계적 매개변수로, BLAST 검색에 사용되는 고정된 값  
+* 이러한 방식으로 Karlin-Altschul 통계는 검색 결과의 e-value를 계산함으로써, 특정 HSP가 무작위로 발생할 확률을 정량화  
+* 낮은 e-value는 HSP가 우연히 발생할 가능성이 낮으며, 따라서 해당 HSP가 더 유의미하다고 간주  
+* 이 통계 방법은 BLAST 검색 결과의 신뢰성과 정확성을 높이는 데 중요한 역할, 주로 blastn과 tblastx BLAST 프로그램에서 사용  
+
+### Spouge Statistics  
+* Spouge 통계는 Karlin-Altschul 공식을 발전시킨 것으로, 유효 길이를 직접 계산하는 대신 유한 크기 교정(Finite Size Correction, FSC)을 적용  
+* Karlin-Altschul 통계에서 길이 조정값 l을 계산한 후 이를 사용하여 데이터베이스와 쿼리의 유효 길이를 계산하는 대신, Spouge 통계는 유한 크기 교정(Finite Size Correction, FSC)을 적용  
+* FSC는 l을 직접 추정하는 대신, E[m−LI(y)]+[n−LJ(y)]+를 사용하여 (m−l)(n−Nl)의 대체 측정값인 '영역(area)'을 추정  
+* m은 쿼리의 실제 길이, n은 데이터베이스의 실제 길이, N은 데이터베이스 내의 시퀀스 개수  
+* e-value를 E = area *  K e^{- λ S} * db_scale_factor로 계산  
+* db_scale_factor는 데이터베이스 스케일 팩터로, n_0  / m_0 로 계산  
+* n_0 과 m_0  은 각각 데이터베이스와 쿼리의 유효 길이  
+* area는 유효 길이의 대체 측정값이며, db_scale_factor는 데이터베이스 크기에 대한 스케일 팩터, K와 λ는 BLAST 검색에 사용되는 통계적 매개변수, S는 HSP의 점수 의미   
+* Spouge 통계를 사용함으로써 BLAST는 데이터베이스 크기와 같은 외부 요인의 변화가 검색 결과의 통계적 유의성에 미치는 영향을 더 정확하게 반영할 수 있게 됨  
+* BLAST 검색 결과를 더 신뢰성 높이며 특히 큰 데이터베이스에서의 검색에 유용  
+* 이 방법은 주로 blastp, blastx, tblastn 프로그램에서 사용    
+
+
+### Existing e-value correction software and their features  
+* 기존 e-value 수정 소프트웨어와 그 특징에 관하여, mpiBLAST와 NOBLAST라는 두 가지 주요 도구가 있고 이들은 BLAST 결과의 e-value를 보정하는 데 사용  
+
+* mpiBLAST: mpiBLAST는 NCBI BLAST의 병렬 구현으로, 데이터베이스를 여러 부분으로 나누어 각각에 대해 병렬로 BLAST 검색을 수행  
+** e-value 보정을 위해, mpiBLAST는 전체 데이터베이스에 대한 사전 지식이 필요하며, 이를 각 병렬 작업에 전달하여 정확한 e-value 통계를 제공  
+
+* NOBLAST: NOBLAST는 분할된 데이터베이스를 사용할 때 결과를 합칠 필요가 있을 때 e-value를 보정하는 도구, 그러나 NOBLAST는 Spouge 통계를 지원하지 않으며, Karlin-Altschul 통계에 대해서만 정확한 e-value 통계를 제공  
+
+* iBLAST는 이러한 도구들과 다르게 시간적으로나 공간적으로 데이터베이스가 추가될 때 BLAST 결과를 합치는 기능을 제공, iBLAST는 기존의 BLAST 결과를 재사용하고, 새로 추가된 데이터베이스 부분에 대해서만 검색을 수행한 후, 이러한 새로운 검색 결과의 e-value를 보정하여 최종 결과를 생성합, 이 방식은 특히 데이터베이스의 성장으로 인해 BLAST 검색 결과를 자주 업데이트해야 하는 대규모 생물정보학 프로젝트에 유용  
+
+* iBLAST는 과정을 간소화하고 사용자가 쉽게 BLAST 검색 결과를 최신 상태로 유지할 수 있도록 도와줌  
+** mpiBLAST와 NOBLAST가 제공하는 기능에 비해, iBLAST는 더 광범위한 시나리오에서 e-value 보정을 지원하며, 사용자가 기존 검색 결과를 효율적으로 재사용할 수 있게 함​​.  
+
+
+### Redundancy in data vs. redundancy in computation.  
+* 데이터의 중복성은 데이터베이스 내에 중복된 정보나 시퀀스가 존재하는 것을 의미  
+* 이는 데이터 저장 공간을 불필요하게 차지하며 데이터 처리 시간을 증가시킬 수 있음  
+* 반면, 계산의 중복성은 특정 계산 작업이 불필요하게 반복되어 수행되는 것  
+* 예를 들어, 유전체 데이터베이스가 지속적으로 성장함에 따라 BLAST와 같은 시퀀스 검색 도구를 사용할 때, 데이터베이스 업데이트마다 처음부터 전체 검색을 다시 실행하는 것은 많은 계산 자원을 낭비하는 일   
+
+* iBLAST 시스템은 이러한 계산의 중복성 문제를 해결하기 위해 개발  
+* iBLAST는 이전 BLAST 검색 결과를 재활용하고 데이터베이스에 새로 추가된 부분에 대해서만 검색을 수행한 후, 새로운 검색 결과의 e-value를 보정하여 최종 결과를 생성  
+* 이 방법은 데이터베이스의 크기가 증가함에 따라 발생할 수 있는 계산의 중복성을 크게 줄여주며, 전체 데이터베이스에 대한 검색을 다시 실행하는 것보다 훨씬 효율적  
+
+* 데이터의 중복성은 데이터 관리와 저장의 측면에서의 문제를 일으키는 반면, 계산의 중복성은 주로 시간과 자원의 낭비와 관련  
+* iBLAST와 같은 도구는 계산의 중복성을 최소화하여 생물정보학 연구에서 시간과 계산 자원을 절약할 수 있는 방법을 제공  
+
+
+## e-value correction in an incremental setting  
+
+
+
+
