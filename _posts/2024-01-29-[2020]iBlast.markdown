@@ -121,6 +121,67 @@ Useful sentences :
 
 
 ## e-value correction in an incremental setting  
+### e-value correction for Karlin-Altschul statistics  
+### e-value correction for Spouge statistics  
+
+## Merging two search results with correct e-value statistics  
+## iBLAST implementation  
+### Record database for storing incremental search results  
+
+
+## Case studies  
+### Case study 1: Method verification.
+
+### Case study 2: Updating a query re-annotation of a novel transcriptomics dataset.  
+### Distributing workload across nodes  
+### Case study 3: Taxon-based incremental approach  
+
+
+
+# Results  
+## Case study 1: Method verification and performance  
+### Verification  
+
+
+## Case study 2: Large-scale alignment tasks on novel datasets  
+## Case study 3: Taxon-specific searches to expedite informatics  
+## iBLAST finds better scoring hits that are missed by NCBI BLAST   
+
+
+# Discusion  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
