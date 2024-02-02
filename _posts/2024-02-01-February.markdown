@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "February"
+date:   2024-02-01 23:01:53 -0400
+categories: study
+---
+
+
+
+
+
+{% highlight ruby %}
+
+
+February week1   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Aug focus(B)  
+** iBlast(G)     
+** deep hierarchy  
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+*class
+** Genomics  
+** GT(GeneTherapy)  
+** RCRG  
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Thursday, January 31, 2024  
+* research   
+* class  
+** seems like multitasking works bad.. stil struggling with low efficiency    
+o   
+
+
+
+
+
