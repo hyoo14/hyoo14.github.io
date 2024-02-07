@@ -42,6 +42,20 @@ Monday, February 5, 2024
 o   
 
 
+Tuesday, February 6, 2024  
+* research   
+* class  
+** keep      
+o   
+
+
+Wednesday, February 7, 2024  
+* research   
+* class  
+** keep      
+o   
+
+
 
 {% highlight ruby %}
 
