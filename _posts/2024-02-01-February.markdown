@@ -56,6 +56,14 @@ Wednesday, February 7, 2024
 o   
 
 
+Wednesday, February 8, 2024  
+* research   
+* class  
+** keep      
+o   
+
+
+
 
 {% highlight ruby %}
 
