@@ -13,6 +13,9 @@ categories: study
 * MMseqs2는 k-mer 일치 검색, 벡터화된 무간극 정렬, 간극이 있는 정렬의 세 단계 과정을 사용  
 * 병렬 처리와 분산 처리 기술을 통해 대용량 데이터 분석을 효율적으로 수행할 수 있음  
 
+* MMseqs2 is for handling large protein sequence data, which uses a three-step process involving k-mer match search, vectorized gapless alignment, and gapped alignment    
+* Parallel and distributed processing techniques enable efficient analysis of large data volumes  
+
 Useful sentences :  
 *   
 
@@ -52,9 +55,28 @@ Useful sentences :
 * MMseqs2는 수동 벡터화, 다중 코어 분산 처리, 및 대상 데이터베이스를 여러 서버에 분할하여 병렬 처리를 통해 높은 수준의 병렬화를 달성  
 ** 이러한 기능으로 인해 대규모 데이터 세트의 분석 속도가 획기적으로 빨라지고, 메타게놈 및 전체 게놈 단백질 서열 공간의 분석이 용이    
 
+* MMseqs2 is a sensitive tool for searching protein sequences in large metagenomic datasets  
+* It improves speed and sensitivity over other search tools in all aspects  
+** Achieves higher sensitivity at a speed 400 times faster than PSI-BLAST  
+* MMseqs2 search involves three steps:  
+** Matching short words ('k-mers')  
+** Vectorized gapless alignment    
+** Gapped alignment using Smith-Waterman  
+* The first step is crucial for better performance  
+* MMseqs2 finds matches between similar k-mers, allowing the use of large k-mer sizes while maintaining high sensitivity  
+* MMseqs2 achieves high-level parallelization through manual vectorization, multi-core distributed processing, and splitting the target database across multiple servers for parallel processing  
+** These features greatly speed up the analysis of large datasets, making it easier to analyze metagenomes and the entire proteome space.
+
+
+
 
 # 참고   
 * 근데 smith waterman aligner SWIPE나 k-mer incex용 TANTAN등 타 프로그램, 라이브러리 사용함  
 * UniProt에 태깅해주는데 SCOP데이터 기반으로 해준다고하네.. 이게 테스트데이터같은 느낌?  
 * false positive가 diamond보다 적음  
 * true positive 잘 감지하고 false positive 잘 줄이므로 좋은 모델이다 이말!  
+
+* MMseqs2 employs tools like the SWIPE aligner and TANTAN for k-mer indexing  
+* It labels UniProt sequences using SCOP data, appearing to act as test data  
+* It shows fewer false positives than DIAMOND  
+* As it accurately finds true positives and minimizes false positives, it is regarded as a strong model  
