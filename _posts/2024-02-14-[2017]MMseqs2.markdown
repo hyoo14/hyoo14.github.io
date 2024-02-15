@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2017]MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets"
+title:  "[2015]Fast and sensitive protein alignment using DIAMOND"  
 date:   2024-02-14 20:03:11 -0400
 categories: study
 ---
@@ -9,74 +9,117 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* MMseqs2는 대규모 단백질 서열 데이터를 빠르고 정확하게 분석하는 고성능 도구  
-* MMseqs2는 k-mer 일치 검색, 벡터화된 무간극 정렬, 간극이 있는 정렬의 세 단계 과정을 사용  
-* 병렬 처리와 분산 처리 기술을 통해 대용량 데이터 분석을 효율적으로 수행할 수 있음  
-
-* MMseqs2 is for handling large protein sequence data, which uses a three-step process involving k-mer match search, vectorized gapless alignment, and gapped alignment    
-* Parallel and distributed processing techniques enable efficient analysis of large data volumes  
-
+* DIAMOND는 BLASTX보다 20,000배 빠른 속도로 단백질 참조 데이터베이스에 대한 시퀀싱 읽기를 정렬하는 알고리즘  
+* 이 툴은 metagenomic 연구에서 미생물 샘플의 기능적 및 분류학적 내용을 결정하는 데 필수적
+* 공간 씨드 사용, 축소된 아미노산 알파벳, Smith-Waterman 정렬 계산의 최적화를 통해 높은 민감도와 빠른 속도를 달성  
+* DIAMOND is a tool that makes matching DNA to protein DB much faster
+* It works 20,000 times faster than BLASTX but as good at finding matches
+* It uses space seeds, reduced amino acid alphabet, double indexing, and Smith-Waterman alignment
 Useful sentences :  
-*   
+* Space seeds are like special patterns DIAMOND looks for in DNA. It helps DIAMOND find matches faster  
+* Reduced amino acid alphabet means DIAMOND uses simpler protein letters, making it quicker to see if things match  
+* Double indexing is a smart trick where DIAMOND organizes DNA and proteins in a way that it can search through them really fast  
+* Smith-Waterman alignment is a method DIAMOND uses to line up DNA sequences with proteins very accurately, like solving a puzzle  
 
 {% endhighlight %}  
 
 <br/>
 
-[Paper link](https://drive.google.com/drive/folders/16dHW3B07n0WUPJMOqyrSpiRhL_sIqpI3?usp=sharing)  
+[Paper link](https://drive.google.com/drive/folders/1LFBoWZIgSI8_dNWtA1IFo0sZcQon9IyT?usp=sharing)  
 [~~Lecture link~~]()  
 
 <br/>
 
 # 단어정리  
-* throughput: 처리량. dna sequence 처리량. 한시간에 dna sequence 몇개 이런식  
-* sensitivity: 민감도 또는 recall  ( = TP/(TP+FN)), 정확한 일치(즉, 진짜 hit 검출)를 찾아내는 능력  
-** 참고로 여기서는  주어진 E-value 이하의 첫 번째 거짓 양성(Falst Positive) 일치보다 더 나은 E-value를 가진 참 양성(True Positive) 일치의 비율로 측정  
-* aggravates: 더욱 악화시키다, 심화시키다  
-* consecutive: 연속적인  
-* diagonal: 일치가 발생하는 서열 정렬 매트릭스의 대각선.. 뭐 사실상 유사한이라는 맥락이라고 함  
-* homologous sequence: 진화학적 관련있는 유사한...  
-* suppressing: 압축 맞음.. 즉 시간이나 봐야할 것들의 양을 적게한다는 맥락으로 사용  
-* offset: 위치 표시.. 보다는 위치.. 즉, 데이터 구조, 배열, 또는 메모리 내 특정 위치를 나타냄!  
-* AUC sensitivity: Area Under the Curve.  진짜 양성 비율(True Positive Rate) 대 거짓 양성 비율(False Positive Rate)을 다양한 임계값에서 그린 것 , 값이 높을수록 알고리즘이 양성 샘플을 정확하게 감지하는 능력이 높음을 의미,  진짜 양성을 잘 감지하고, 거짓 양성을 최소화하는 데 효과적  
+* main memory bandwidth: 메인 메모리(일반적으로 RAM이라고 함)와 나머지 시스템 사이에서 데이터를 전송할 수 있는 최대 속도 (대역폭)   
 
 <br/>
 
-# To the Editor:   
-* MMseqs2는 대규모 메타게놈 데이터 세트 분석을 위한 민감한 단백질 서열 검색 도구  
-* 기존 검색 도구들과 비교하여 속도와 민감도의 트레이드오프에서 모든 범위에서 개선  
-** PSI-BLAST보다 400배 빠른 속도로 더 높은 민감도를 달성  
-* MMseqs2 검색은 세 단계로 구성:   
-** 짧은 단어(‘k-mer’) 일치  
-** 벡터화된 무간극(gapless) 정렬 
-** 그리고 간극이 있는(Smith–Waterman) 정렬  
-* 첫 번째 단계는 성능 향상에 결정적  
-* MMseqs2는 유사 k-mer 사이에서 k-mer 일치를 찾아내며, 이를 통해 높은 민감도를 유지하면서 큰 k-mer 크기를 사용할 수 있음   
-* MMseqs2는 수동 벡터화, 다중 코어 분산 처리, 및 대상 데이터베이스를 여러 서버에 분할하여 병렬 처리를 통해 높은 수준의 병렬화를 달성  
-** 이러한 기능으로 인해 대규모 데이터 세트의 분석 속도가 획기적으로 빨라지고, 메타게놈 및 전체 게놈 단백질 서열 공간의 분석이 용이    
+# 요약2  
 
-* MMseqs2 is a sensitive tool for searching protein sequences in large metagenomic datasets  
-* It improves speed and sensitivity over other search tools in all aspects  
-** Achieves higher sensitivity at a speed 400 times faster than PSI-BLAST  
-* MMseqs2 search involves three steps:  
-** Matching short words ('k-mers')  
-** Vectorized gapless alignment    
-** Gapped alignment using Smith-Waterman  
-* The first step is crucial for better performance  
-* MMseqs2 finds matches between similar k-mers, allowing the use of large k-mer sizes while maintaining high sensitivity  
-* MMseqs2 achieves high-level parallelization through manual vectorization, multi-core distributed processing, and splitting the target database across multiple servers for parallel processing  
-** These features greatly speed up the analysis of large datasets, making it easier to analyze metagenomes and the entire proteome space.
+* DIAMOND는 메타게노믹스(metagenomics) 분석과 같은 데이터 집약적 진화 프로젝트에서 단백질 데이터베이스와의 시퀀스 정렬을 크게 가속화하는 알고리즘
+* 이는 전통적인 BLASTX 접근법에 비해 20,000배 더 빠른 속도를 제공하면서도 비슷한 수준의 민감도를 유지  
+* 이 알고리즘의 핵심 최적화에는 공간 씨드(space seeds), 축소된 아미노산 알파벳(reduced amino acid alphabet), 그리고 Smith-Waterman 정렬 계산이 포함  
+* 이를 통해 대규모 데이터 세트의 분석을 현실적인 시간 안에 완료할 수 있으며, 특히 메타게노믹스 연구에서 수백만 개의 시퀀스를 효율적으로 처리하여 미생물 샘플의 기능적이거나 분류학적인 내용을 결정하는 데 중요한 역할  
+* DIAMOND의 이러한 특징은 메타게노믹스 데이터 분석의 병목 현상을 해결하며, 생물 정보학 연구에서 시간과 자원의 효율성을 크게 향상  
+* DIAMOND is a tool that makes matching DNA to protein databases much faster in big science projects like studying lots of tiny life forms  
+* It works 20,000 times faster than an old method called BLASTX but is just as good at finding matches.
+* Its smart tricks include using special patterns (space seeds), simpler protein letters (reduced amino acid alphabet), and a smart way to line up DNA (Smith-Waterman alignment)  
+* This lets scientists look at huge amounts of data quickly, especially helpful for studying many DNA sequences to learn about tiny life forms  
+* DIAMOND makes it much easier and faster to study lots of DNA, helping scientists save time and effort  
+
+# Intro  
+* metagenomics 연구에서는 환경으로부터 얻은 미생물 샘플의 기능적 또는 분류학적 구성을 이해하기 위해 수백만 개의 시퀀스 읽기를 분석  
+* 이 과정에서 NCBI nonredundant (NCBI-nr) 데이터베이스나 KEGG와 같은 단백질 시퀀스 참조 데이터베이스를 사용하여 DNA 시퀀스를 정렬하는 것이 중요한 단계  
+* BLASTX는 이 작업에 있어 높은 민감도로 인해 오랫동안 기준점으로 여겨졌으나, 고처리량 분석에서는 그 속도가 너무 느림  
+* 이에 더 빠른 대안이 요구되며, RAPSearch2는 BLASTX보다 최대 100배 빠른 속도를 제공하면서도 유사한 민감도를 유지  
+* 그러나 샘플 크기와 수가 계속해서 증가함에 따라, 더욱 빠른 방법이 필요  
+* 이러한 요구에 부응하여 DIAMOND는 이중 인덱싱을 사용하여 BLASTX에 비해 약 20,000배 빠른 속도로 시퀀스 읽기를 정렬하면서도 유사한 민감도를 유지하는 솔루션을 제공  
+* DIAMOND는 공간 씨드, 축소된 아미노산 알파벳, Smith-Waterman 정렬 계산 등의 최적화 기술을 사용하여 이러한 성능을 달성하며, 이는 metagenomics 연구에서 대규모 데이터 세트의 기능 분석을 가능하게 함  
+
+* A key step involves aligning DNA sequences with protein sequence reference databases like NCBI nonredundant (NCBI-nr) or KEGG  
+* BLASTX has been a go-to tool for this due to its high sensitivity, but it's too slow for high-throughput analysis  
+* Faster alternatives like RAPSearch2 offer up to 100 times the speed of BLASTX with similar sensitivity.
+* However, as sample sizes grow, even quicker methods are needed  
+* To meet this demand, DIAMOND uses double indexing to align sequence reads about 20,000 times faster than BLASTX while maintaining similar sensitivity  
+* DIAMOND achieves this performance through optimizations like spaced seeds, reduced amino acid alphabets, and Smith-Waterman alignment calculations, enabling functional analysis of large metagenomics datasets  
+
+
+# ONLINE METOHDS  
+## Over view of DIAMOND  
+* DIAMOND은 DNA 시퀀싱 읽기 파일과 NCBI-nr 또는 KEGG와 같은 단백질 참조 시퀀스 파일을 비교하는 고처리량 정렬 프로그램  
+* C++로 구현되어 멀티코어 서버에서 작동하며, BLASTX에 비해 4자리 수의 속도 향상을 보이면서 유사한 수준의 민감도를 유지  
+* 프로그램은 현대 컴퓨터 아키텍처를 최대한 활용하도록 설계되었으며, '시드 앤 익스텐드(seed-and-extend)' 접근법, 축소된 알파벳, 공간 시드(spaced seeds), 그리고 이중 인덱싱(double indexing) 등의 알고리즘 요소를 사용  
+
+* DIAMOND, RAPSearch2, 그리고 BLASTX 성능 비교에서, DIAMOND-fast 설정은 BLASTX에 비해 약 20,000배 빠르고, DIAMOND-sensitive 설정은 약 2,000배 빠르며, BLASTX 정렬의 99%를 포함하는 높은 수준의 정렬을 제공  
+* DIAMOND-fast는 RAPSearch2-fast보다 40배 빠르며, 민감도도 더 높습니다. 또한, RAPSearch2-sensitive와 비교했을 때 최대 500배 더 빠르면서 유사한 민감도를 제공  
+* DIAMOND의 기본 메모리 사용량은 100GB이지만, 속도 저하를 감수하면서 32GB 이하로 구성이 가능  
+
+* 이중 인덱싱 접근 방식은 쿼리와 참조 모두를 인덱싱하여, 두 인덱스 목록을 병렬로 선형 탐색함으로써 모든 일치하는 시드를 식별하고 해당 시드 위치에서 지역 정렬 계산을 수행  
+* 이 방법은 메모리 접근 패턴을 선형화하여 하드웨어 프리페처가 캐시를 효율적으로 채울 수 있도록 하여 데이터 지역성을 향상  
+
+* 메모리 효율성 측면에서 DIAMOND는 여러 공간 시드를 사용함에도 불구하고 메모리 사용량을 크게 줄임  
+* 이는 각 시드 형태에 대한 인덱스를 한 번에 하나씩만 구성하고 처리함으로써 달성되며, 이는 추가적인 메모리 절약을 가능하게 함  
+* 또한, 레이덱스 클러스터링 기술을 사용하여 시드 공간을 1,024개의 서로 겹치지 않는 파티션으로 분해하고, 한 번에 한 부분집합의 인덱스만을 구축하고 처리하여 메모리 사용량을 부분집합 인덱스 크기로 제한  
+
+* 시드 확장 단계에서 DIAMOND는 발견된 각 시드 매치가 10개 이상의 아미노산에 대한 비간격 정렬로 확장될 수 있는지를 결정  
+* 시드 매치는 알고리즘의 확장 단계를 트리거하며, 이는 Smith-Waterman 정렬 계산을 포함  
+* DIAMOND는 자체 SSE 가속화된 Smith-Waterman 구현을 사용하여 밴드 및 앵커드 정렬 계산을 가능하게 함  
+* 기본적으로 BLOSUM62 매트릭스, 갭 점수 11, 확장 점수 1을 사용하지만, 다른 BLOSUM 매트릭스와 점수 매개변수를 사용할 수도 있음  
+* 기본적으로 비트 점수가 50 미만인 정렬은 생략  
 
 
 
 
-# 참고   
-* 근데 smith waterman aligner SWIPE나 k-mer incex용 TANTAN등 타 프로그램, 라이브러리 사용함  
-* UniProt에 태깅해주는데 SCOP데이터 기반으로 해준다고하네.. 이게 테스트데이터같은 느낌?  
-* false positive가 diamond보다 적음  
-* true positive 잘 감지하고 false positive 잘 줄이므로 좋은 모델이다 이말!  
+## Experimental study  
+* 연구진은 NCBI-nr 데이터베이스(2013년 5월 기준으로 25.9백만 개의 시퀀스와 89억 개의 문자로 구성)를 참조 데이터베이스로 사용  
+* Human Microbiome Project 웹사이트에서 다양한 인간 관련 마이크로바이옴 샘플을 다루는 Illumina 읽기 파일 10개를 각 파일에서 무작위로 50만 개의 읽기를 추출하여 평균 길이 101의 총 500만 개의 읽기 세트를 얻었고 이를 Illumina (HMP) 데이터 세트라고 함  
+* 또한, 미국 에너지부 공동 게놰 연구소 웹사이트에서 영구동토층 코어와 관련된 Illumina 데이터 세트 12개를 다운로드, 각 파일에서도 50만 개의 무작위 읽기를 추출해 평균 길이 114의 총 600만 개의 읽기 세트를 얻었고 이를 Illumina (permafrost) 데이터 세트라고 명명  
+* 'Tucuman의 전통 치즈에서의 metagenomics'이라는 제목의 연구에서 Ion Torrent 읽기 데이터 세트 1개, '중앙 북태평양 회오리, ALOHA 스테이션, HOT186에서의 미생물 군집 유전자 내용 및 표현'이라는 제목의 연구에서 454 Titanium 읽기 데이터 세트 2개, 그리고 Sargasso Sea 프로젝트에서 Sanger 읽기 데이터 세트 1개를 NCBI에서 다운로드, 미생물 조립체에서 contigs 세트를 다운로드하고 MetaGeneMark을 사용해 총 30,000개의 개방 읽기 프레임(ORFs)을 예측  
+* 이러한 데이터 세트는 DIAMOND(버전 0.4.7), RAPSearch2(버전 2.18), 그리고 BLASTX(버전 2.2.28+)의 성능을 비교하는 데 사용   
+* 세 프로그램 모두 동일한 컴퓨터에서 48코어를 사용해 실행되었으며, 이 컴퓨터는 64코어 AMD Opteron 서버로, 512GB의 메인 메모리를 갖추고 있고 Ubuntu 12.04를 운영 체제로 사용  
+* 프로그램 설정은 다음과 같음: BLASTX는 '-num_threads 48 -evalue 0.1 -max_target_seqs 250 -comp_based_stats 0' 설정을, DIAMOND-fast는 'diamond blastx -t 48 -k 250 -min-score 40' 설정을, DIAMOND-sensitive는 'diamond blastx -t 48 -k 250 -sensitive -min-score 40' 설정을, RAPSearch2-fast는 'rapsearch -a T -z 48 -v 250 -e -1 -b 1' 설정을, RAPSearch2-default는 'rapsearch -z 48 -v 250 -e -1 -b 1' 설정을 사용  
+* 실행 시간 측정을 위해 BLASTX와 RAPSearch2는 각 데이터 세트의 세 개의 무작위 하위 집합에서 실행되었고, 그 실행 시간은 전체 데이터 세트로 확대되어 평균화  
+* DIAMOND는 전체 데이터 세트에서 실행되었습니다. 성능 비교에서는 BLASTX의 e-value가 10^-3 이하인 정렬만 고려  
 
-* MMseqs2 employs tools like the SWIPE aligner and TANTAN for k-mer indexing  
-* It labels UniProt sequences using SCOP data, appearing to act as test data  
-* It shows fewer false positives than DIAMOND  
-* As it accurately finds true positives and minimizes false positives, it is regarded as a strong model  
+## Principal coordinates (PCoA) analysis  
+* BLASTX와 DIAMOND의 출력 사이의 작은 차이가 상위 수준 분석 결과에 영향을 주지 않는다는 것을 보여주기 위해, 연구진은 12개의 공개된 영구동토층 샘플로부터 각각 20만 개의 읽기를 포함하는 12개의 무작위 하위샘플을 사용  
+* 각 하위샘플은 BLASTX와 DIAMOND-fast를 사용하여 NCBI-nr 데이터베이스와 정렬되었으며, 최소 비트 점수 50의 정렬만 유지됨   
+* 읽기는 각 읽기에 대해 알려진 KO(KEGG Orthology) 번호가 있는 최상의 정렬을 사용하여 KO 번호에 매핑  
+* 그런 다음 결과 프로필로부터 Bray-Curtis 거리를 계산하고, PCoA(주요 좌표 분석)를 사용하여 다이어그램을 생성했습니다​​.  
+* 이 과정은 고급 분석에서 BLASTX와 DIAMOND 간의 미묘한 차이가 전체적인 분석 결과에 큰 영향을 미치지 않음을 시각적으로 보여줌  
+
+
+## Memory usage and compatibility  
+* DIAMOND의 메모리 관리 시스템은 입력의 전체 크기에 의존하지 않는, 적응형 메모리 사용량을 가능하게 설계  
+* DIAMOND는 입력 쿼리와 참조 데이터를 고정된 크기의 B 시퀀스 문자 블록으로 나누어, 한 번에 서로 비교  
+* 시드 인덱스 항목이 8바이트 길이이고, 인덱스가 C 청크로 처리되므로, 전체 메모리 사용량은 2(B + 8B/C + const)로 주어지며, 여기서 const는 오버헤드 메모리의 일정량을 나타냄   
+* C의 기본값이 4일 때, 프로그램의 메모리 사용량은 데이터베이스 및 쿼리의 전체 크기와 관계없이 6B + const로 제한  
+* 블록 크기 B는 사용자가 대상 기계에 맞게 임의로 선택할 수 있으며 B와 C에 대한 명령 줄 옵션은 각각 -b와 -c임  
+
+* 블록 크기 매개변수가 성능에 미치는 영향을 탐구하기 위해, 연구진은 다양한 B 값을 사용하여 영구동토층에서 가져온 3천 5백만 개의 Illumina 읽기 쿼리 세트를 90억 개의 문자를 포함하는 NCBI-nr 데이터베이스와 정렬  
+* 이 작업은 최대 성능을 위해 고메모리 서버가 필요하지만, 약 절반의 속도로 16GB 메모리를 갖춘 기계에서 효율적으로 처리할 수 있음   
+* 이런 양의 RAM은 표준 데스크탑 컴퓨터에서 $160 정도에 쉽게 구할 수 있음  
+* 프로그램의 호환성을 보장하기 위해, 연구진은 2014년 9월에 다운로드한 NCBI-nr 데이터베이스와 Human Microbiome Project에서 가져온 6100만 개의 Illumina 읽기 쿼리 세트를 사용하여 다양한 시스템에서 테스트를 수행  
+
+

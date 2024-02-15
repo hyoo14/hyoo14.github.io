@@ -1,0 +1,82 @@
+---
+layout: post
+title:  "[2017]MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets"
+date:   2024-02-14 20:03:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* MMseqs2는 대규모 단백질 서열 데이터를 빠르고 정확하게 분석하는 고성능 도구  
+* MMseqs2는 k-mer 일치 검색, 벡터화된 무간극 정렬, 간극이 있는 정렬의 세 단계 과정을 사용  
+* 병렬 처리와 분산 처리 기술을 통해 대용량 데이터 분석을 효율적으로 수행할 수 있음  
+
+* MMseqs2 is for handling large protein sequence data, which uses a three-step process involving k-mer match search, vectorized gapless alignment, and gapped alignment    
+* Parallel and distributed processing techniques enable efficient analysis of large data volumes  
+
+Useful sentences :  
+*   
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/16dHW3B07n0WUPJMOqyrSpiRhL_sIqpI3?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* throughput: 처리량. dna sequence 처리량. 한시간에 dna sequence 몇개 이런식  
+* sensitivity: 민감도 또는 recall  ( = TP/(TP+FN)), 정확한 일치(즉, 진짜 hit 검출)를 찾아내는 능력  
+** 참고로 여기서는  주어진 E-value 이하의 첫 번째 거짓 양성(Falst Positive) 일치보다 더 나은 E-value를 가진 참 양성(True Positive) 일치의 비율로 측정  
+* aggravates: 더욱 악화시키다, 심화시키다  
+* consecutive: 연속적인  
+* diagonal: 일치가 발생하는 서열 정렬 매트릭스의 대각선.. 뭐 사실상 유사한이라는 맥락이라고 함  
+* homologous sequence: 진화학적 관련있는 유사한...  
+* suppressing: 압축 맞음.. 즉 시간이나 봐야할 것들의 양을 적게한다는 맥락으로 사용  
+* offset: 위치 표시.. 보다는 위치.. 즉, 데이터 구조, 배열, 또는 메모리 내 특정 위치를 나타냄!  
+* AUC sensitivity: Area Under the Curve.  진짜 양성 비율(True Positive Rate) 대 거짓 양성 비율(False Positive Rate)을 다양한 임계값에서 그린 것 , 값이 높을수록 알고리즘이 양성 샘플을 정확하게 감지하는 능력이 높음을 의미,  진짜 양성을 잘 감지하고, 거짓 양성을 최소화하는 데 효과적  
+
+<br/>
+
+# To the Editor:   
+* MMseqs2는 대규모 메타게놈 데이터 세트 분석을 위한 민감한 단백질 서열 검색 도구  
+* 기존 검색 도구들과 비교하여 속도와 민감도의 트레이드오프에서 모든 범위에서 개선  
+** PSI-BLAST보다 400배 빠른 속도로 더 높은 민감도를 달성  
+* MMseqs2 검색은 세 단계로 구성:   
+** 짧은 단어(‘k-mer’) 일치  
+** 벡터화된 무간극(gapless) 정렬 
+** 그리고 간극이 있는(Smith–Waterman) 정렬  
+* 첫 번째 단계는 성능 향상에 결정적  
+* MMseqs2는 유사 k-mer 사이에서 k-mer 일치를 찾아내며, 이를 통해 높은 민감도를 유지하면서 큰 k-mer 크기를 사용할 수 있음   
+* MMseqs2는 수동 벡터화, 다중 코어 분산 처리, 및 대상 데이터베이스를 여러 서버에 분할하여 병렬 처리를 통해 높은 수준의 병렬화를 달성  
+** 이러한 기능으로 인해 대규모 데이터 세트의 분석 속도가 획기적으로 빨라지고, 메타게놈 및 전체 게놈 단백질 서열 공간의 분석이 용이    
+
+* MMseqs2 is a sensitive tool for searching protein sequences in large metagenomic datasets  
+* It improves speed and sensitivity over other search tools in all aspects  
+** Achieves higher sensitivity at a speed 400 times faster than PSI-BLAST  
+* MMseqs2 search involves three steps:  
+** Matching short words ('k-mers')  
+** Vectorized gapless alignment    
+** Gapped alignment using Smith-Waterman  
+* The first step is crucial for better performance  
+* MMseqs2 finds matches between similar k-mers, allowing the use of large k-mer sizes while maintaining high sensitivity  
+* MMseqs2 achieves high-level parallelization through manual vectorization, multi-core distributed processing, and splitting the target database across multiple servers for parallel processing  
+** These features greatly speed up the analysis of large datasets, making it easier to analyze metagenomes and the entire proteome space.
+
+
+
+
+# 참고   
+* 근데 smith waterman aligner SWIPE나 k-mer incex용 TANTAN등 타 프로그램, 라이브러리 사용함  
+* UniProt에 태깅해주는데 SCOP데이터 기반으로 해준다고하네.. 이게 테스트데이터같은 느낌?  
+* false positive가 diamond보다 적음  
+* true positive 잘 감지하고 false positive 잘 줄이므로 좋은 모델이다 이말!  
+
+* MMseqs2 employs tools like the SWIPE aligner and TANTAN for k-mer indexing  
+* It labels UniProt sequences using SCOP data, appearing to act as test data  
+* It shows fewer false positives than DIAMOND  
+* As it accurately finds true positives and minimizes false positives, it is regarded as a strong model  
