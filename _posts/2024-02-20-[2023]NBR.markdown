@@ -1,0 +1,196 @@
+---
+layout: post
+title:  "[2023]Can NLIProvide Proper Indirect Supervision for Low-resource Biomedical Relation Extraction?"  
+date:   2024-02-20 19:10:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 생물 의학 관계 추출(RE)의 주요 장애물은 주석의 부족과 낮은 주석 커버리지로 인해 명시적으로 사전 정의된 레이블이 없는 인스턴스의 빈번함에 있음  
+* 이러한 접근 방식은 자원이 부족한 상황에서 일반화가 떨어지고 알려지지 않은 사례에 대한 선택적 예측을 할 수 없게 만듬  
+* NBR(NLI helps Biomedical RE)을 제시  
+* 이는 생물 의학 RE를 자연어 추론(NLI) 공식으로 변환하여 간접 감독을 제공  
+* 관계를 자연어 가설로 변환함으로써, NBR은 의미적 단서를 활용하여 주석 부족 문제를 완화  
+* ChemProt, DDI, GAD와 같은 세 가지 널리 사용되는 생물 의학 RE 벤치마크에서 실시한 광범위한 실험을 통해, NBR이 전체 자원 및 저자원 상황 모두에서 효과적임을 검증   
+* 간접 감독이 도메인 간 차이가 있을 때에도 생물 의학 RE에 혜택을 줄 수 있으며, NLI 지식과 생물 의학 지식을 결합하는 것이 최고의 성능 향상을 이끌어낸다는 것을 보여줌  
+* A big challenge in biomedical relation extraction (RE) is not having enough annotations and many instances lacking clear, pre-defined labels because of low annotation coverage  
+* Current methods treat biomedical RE like a multi-class classification problem, but this often leads to poor performance in limited resources  
+* These methods struggle to make accurate guesses about new, unseen cases  
+* Authors introduce a new approach called NBR, which stands for "NLI helps Biomedical RE"  
+* NBR changes the way we look at biomedical RE by using a method called natural language inference (NLI) to provide indirect supervision  
+* By turning relationships into natural language hypotheses, NBR uses hints from the meaning of words to help overcome the lack of annotations  
+* Authors tested NBR on three popular biomedical RE benchmarks: ChemProt, DDI, and GAD  
+* The tests showed that NBR works well both when we have a lot of data and when data is scarce  
+* Our findings suggest that using indirect supervision from NLI can be beneficial for biomedical RE, even when there's a gap between different fields of study  
+* Combining knowledge from NLI with biomedical information leads to significant improvements in performance  
+
+
+
+
+
+Useful sentences :  
+* NBR의 학습 목표는 InfoNCE(Information Noise-Contrastive Estimation) 손실을 최적화하는 것   
+* 이 손실 함수는 긍정적인 인스턴스가 각 단계에서 앵커 인스턴스에 대해 부정적인 인스턴스보다 더 높게 순위가 매겨져야 한다는 직관에 기반  
+* 여기서 부정적인 관계 샘플을 선택하고, 이들의 점수를 계산한 다음, 기준 관계의 추론 점수가 더 높게 순위가 매겨지도록 최적화  
+* InfoNCE 손실 함수는 모든 가능한 부정적인 예시에서 학습하는 것이 가장 효과적임을 보여줌  
+* 이 함수는 온도 매개변수 τ를 사용하여 더 어려운 부정적인 예시에 초점을 맞춤  
+* 조종 실험에서 모델이 데이터셋의 다수의 기권 인스턴스에 의해 오도되어 성능이 저하되는 경향이 있음을 관찰  
+* 이러한 기권 대 비기권 불균형을 완화하기 위해, 과도하게 확신하는 기권 인스턴스에 대해 벌칙을 부과하고 비기권 인스턴스를 장려하는 마진 기반의 기권 교정(Abstention Calibration) 정규화를 도입  
+* 구체적으로, 관계가 기권이 아닌 경우 기권의 점수를 억제하여 기권을 다른 관계보다 더 높게 순위를 매기도록 조정  
+* NBR aims to get better at something called InfoNCE (Information Noise-Contrastive Estimation) loss  
+* This is like a goal or target for learning  
+* The idea is to make sure good examples are ranked higher than bad ones every step of the way when comparing to a main example  
+* It picks out the bad relationship examples, figures out their scores, and then makes sure the score for the right relationship is higher  
+* The InfoNCE loss works best when it learns from all the possible bad examples it can find  
+* This loss uses something called a temperature parameter (τ) to focus more on the harder bad examples  
+* In some test runs, the model got confused by too many instances where it wasn't sure about the answer, which made it perform worse  
+* To fix this, NBR uses a special trick called margin-based Abstention Calibration  
+* This punishes too confident unsure instances and encourages sure ones  
+* Specifically, if the relationship isn't an unsure one, it makes the score for being unsure lower, so it ranks higher than other relationships  
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1upvrvvztXFev2iiqe1roQtU5BmK_4RWt?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+
+<br/>
+
+# 1 Introduction  
+* 생물학 및 의학 연구에서는 기계가 다양한 분자와 생체 분자 간의 관계를 이해하는 것에 크게 의존     
+* 예를 들어, 질병-타깃 예측은 약물 타깃과 질병 간의 연관성을 정확하게 식별하는 것이 필요  
+* 약물-약물 상호 작용 인식은 다약제 부작용 연구에 필수적  
+* 이러한 연구의 복잡성과 높은 비용으로 인해 기계 학습의 이해와 활용이 중요  
+
+# 2 Related Works  
+## Biomedical relation extraction    
+* 웹 저장소에서 생물 의학 코퍼스의 접근성이 증가하고 있음에도 불구하고, 이러한 비구조적 텍스트 데이터를 관심 있는 엔티티와 그들 간의 관계를 포함하는 엄격한 구조의 표현으로 변환하는 것이 주요 도전 과제  
+* 이 과정은 종종 전문가의 참여가 필요하며 비용이 많이 듬  
+* 이 문제를 해결하기 위해 생물 의학 RE 기술이 개발되어 이 과정을 자동화, 대부분의 기존 작업은 PubMed 초록 및 MIMIC-III 임상 노트와 같은 관련 코퍼스에서 사전 훈련된 언어 모델을 미세 조정하는 방식으로 수행  
+* 이 접근 방식의 두 가지 단점은 (1) 관계와 엔티티 간의 의미적 상호 작용을 포착하지 못하며 (2) 훈련 인스턴스의 수가 줄어들면서 성능이 저하된다는 점  
+
+## Indirect supervision   
+* 간접 감독을 활용하여 자원이 풍부한 작업에서 자원이 제한된 작업을 향상시키는 연구들이 있음  
+* 이러한 연구들은 종종 대상 작업의 교육 및 추론 파이프라인을 소스 작업의 형태로 재구성하여 교차 작업 신호 전송을 용이하게 함  
+* 최근에는 NLI 작업에서 간접 감독을 활용한 연구들이 제안  
+* 이러한 연구들은 NLI와 순위 학습 목표를 결합하거나 저자원 관계 추출에서 간접 감독의 이점을 관찰  
+
+# 3 Method  
+## 3.1 Problem Formulation  
+* RE 모델은 두 개의 언급된 엔티티가 포함된 문장을 입력으로 받아 두 엔티티 간의 관계를 레이블 공간에서 예측  
+* 데이터셋은 기권 인스턴스(관계 없음)와 비기권 인스턴스(관계 있음)로 구성  
+* 성공적인 RE 모델은 기권 인스턴스에 대해 기권하고 비기권 인스턴스에 대해 정확하게 예측해야 함  
+
+## 3.2 Relation Extraction with NLI  
+* Sainz et al. (2021)을 따라 RE 작업을 NLI 작업으로 재구성하여 NLI 리소스에서 간접 감독 신호의 교차 작업 전송을 허용  
+* 이를 통해 NLI 리소스에서의 간접 감독 신호를 활용할 수 있음  
+
+### Decompose RE to NLI queries  
+* NLI 공식화의 이점을 극대화하기 위해 대상 도메인 NLI 데이터셋에서 훈련된 모델을 사용하는 것이 좋음  
+* 그러나 사용 가능한 생물 의학 NLI 교육 자원은 제한적  
+* 일반 도메인 NLI 데이터셋인 MNLI와 SNLI에서 NLI 모델을 미세 조정함으로써, 도메인 갭이 존재하더라도 일반 도메인 NLI 지식이 생물 의학 도메인에서 여전히 유용할 수 있음을 경험적으로 발견  
+
+### Verbalizing relations to hypotheses  
+* 각 관계 y∈Y∪{⊥}를 자연어 가설 ν(y)로 표현  
+* 이렇게 하면 레이블의 문맥적 텍스트 표현이 언어 모델(LM)에 의해 더 잘 이해될 수 있으며, 표준 분류 방법에서 사용되는 관계 이름이나 이산 관계 레이블 인덱스보다 더 많은 의미적 신호를 제공  
+* 생물 의학 RE에서 엔티티 언급은 대부분 도메인 특정 용어이며, LM의 사전 훈련 코퍼스에서 거의 나타나지 않음  
+* 따라서 각 엔티티 언급은 Gu et al. (2021) 및 Peng et al. (2019)에서 따른 타입별 엔티티 마스크로 대체  
+* 좋은 가설을 선택하는 것이 성능에 영향을 줄 수 있으며, 우리는 각각 두 타입별 엔티티 마스크를 포함하는 여러 유형의 템플릿을 설계  
+* 예를 들어, 간단한 템플릿은 두 엔티티 간의 관계를 "is-a" 구문으로 표현하고, 설명적 템플릿은 관계에 대한 문맥 설명을 제공  
+
+### Confidence scoring  
+* 각 관계 레이블 y∈Y∪{⊥}에 대해, 관계 y가 유지되는지 여부의 신뢰 점수를 s(y)=fNLI(x[SEP]ν(y))로 계산  
+* 여기서 [SEP]은 전제  x와 가설  ν(y)를 구분하는 특수 토큰  
+* fNLI는 입력을 인코딩하고 전제가 가설을 함축하는 가능성에 해당하는 로짓을 생성하는 변환기 기반 NLI 모델  
+
+### Abstention as a separate label  
+* 우리는 ⊥을 별도의 관계 레이블로 취급하고 명시적으로 표현  
+* 이는 감독된 생물 의학 RE에서 ⊥을 추가 레이블로 취급하는 방식과 유사  
+* 명시적 템플릿은 중지 조건과 레이블 식별력을 Y 레이블의 점수에 통합하는 부담을 덜어줌  
+
+### Training objective  
+* 최근 대조적 학습 연구에서는 InfoNCE 손실이 부정적인 예시에서 효율적인 학습을 촉진한다는 것을 보여줌  
+* 이러한 직관에 기반하여, 긍정적인 인스턴스가 각 단계에서 앵커 인스턴스와 비교하여 부정적인 인스턴스보다 더 높게 순위가 매겨져야 한다고 가정하고, n개의 부정적인 관계를 샘플링하여 최적화  
+* 특히, InfoNCE 손실을 최적화하여 기준 관계의 추론 점수가 더 높게 순위가 매겨지도록 함   
+* 이 손실은 온도 매개변수 τ를 사용하여 더 어려운 부정적인 예시에 초점  
+* 파일럿 실험에서 모델이 데이터셋의 다수의 기권 인스턴스에 의해 오도될 수 있음을 관찰하였으며, 이는 성능 저하로 이어짐   
+* 이러한 기권 대 비기권 불균형을 완화하기 위해 마진 기반 기권 교정 정규화를 도입하여 과도하게 확신하는 기권 인스턴스에 대해 벌칙을 부과하고 비기권 인스턴스를 장려  
+
+### Inference  
+* NBR은 모든 관계에서 가설화된 가설을 수집하고 각 가설의 함축 점수 사이에서 순위를 매김   
+* 그런 다음 가설화된 가설이 가장 높은 점수를 달성한 관계가 최종 예측으로 선택   
+
+## 3.3 Cross-Domain NLI Fine-tuning   
+* NLI 공식화의 이점을 극대화하기 위해, 대상 도메인 NLI 데이터셋에서 훈련된 모델을 사용하는 것이 권장  
+* 그러나 사용 가능한 생물 의학 NLI 교육 자원은 제한적   
+* 대신 일반 도메인 NLI 데이터셋인 MNLI와 SNLI에서 NLI 모델을 미세 조정하는 실험을 진행  
+* 경험적으로 일반 도메인 NLI 지식이 도메인 갭이 존재하더라도 생물 의학 도메인에서 유용할 수 있음을 발견  
+
+
+## 3.4 Explicit Abstention Detector  
+* LAC를 사용한 훈련은 NBR을 암시적 기권 교정기로 만듬  
+* 명시적 기권 탐지기(EAD)를 도입하는 것은 선택적 후처리 단계로, 이전 작업에서 사용된 "no-answer reader" 구성 요소와 유사  
+* EAD는 별도로 훈련된 NBR의 다른 인스턴스로, "관계 있음" 대 "관계 없음"으로 관계 레이블을 변경하여 훈련  
+* 추론 시, 테스트 세트의 인스턴스에 대해 EAD가 기권을 예측하는 경우만 기권을 예측  
+
+# 4 Experiments  
+## 4.1 Experimental Setup  
+### Dataset and evaluation metric   
+* BLURB 벤치마크에 포함된 세 개의 문장 수준 생물 의학 관계 추출(RE) 데이터셋인 ChemProt, DDI, GAD에서 실험을 실시  
+* 이 데이터셋들은 고수준의 화학-단백질 상호작용, 약물-약물 상호작용, 유전자-질병 연관성 등을 포함  
+* 다양한 데이터셋 변형이 존재하지만, 가장 널리 사용되는 설정을 채택했으며, 대부분의 엔티티 쌍이 명시적인 관계 레이블 없이 '관계 없음'으로 표시  
+* 평가 지표로는 모든 비기권 인스턴스에 대해 계산된 마이크로 F1 점수를 사용  
+
+### Baselines  
+* 기준 모델로는 |Y| + 1 방식의 분류를 사용하는 다양한 생물 의학 전문 언어 모델을 기반으로 한 접근법들과 비교  
+
+### Ourmethod  
+* NBRNLI: NLI 공식화를 사용하며, 생물 의학 코퍼스에서 사전 훈련된 BioLinkBERTlarge를 백본으로 사용  
+* NBRNLI+FT: NBRNLI에 더해, 일반 도메인 NLI 데이터셋에서 BioLinkBERT를 추가적으로 미세 조정   
+* 이를 통해 모델은 생물 의학 도메인 지식을 유지하면서 관련 NLI 지식을 학습  
+* NBRNLI+FT+EAD: NBRNLI+FT에 별도로 훈련된 EAD 구성 요소를 결합  
+* 전처리된 LM으로 BioLinkBERT를 선택했으며, 다양한 생물 의학 도메인 작업에서의 성능 우위를 고려한 선택  
+
+## 4.2 ExperimentalResults  
+### NLI provides helpful indirect supervision   
+### Indirect supervision from NLI shines particularly under low-resource  
+* NBR은 모든 데이터셋에서 기존 방법들과 비교하여 상태-최고-성능(State-of-the-Art, SOTA)을 달성  
+* ChemProt, DDI, GAD 데이터셋에서 각각 1.10, 1.79, 0.96 포인트의 F1 점수 향상  
+* 생물 의학 RE를 NLI로 재구성하는 것의 효과를 확인했으며, 일반 도메인에서의 NLI 감독 신호를 생물 의학 RE 학습 신호로 전환하여 성능을 향상  
+* 기권 인스턴스를 명시적으로 탐지하는 것이 ChemProt과 DDI 데이터셋에서 성능을 향상시키며, 도메인 간 미세 조정이 중요한 역할을 함을 확인  
+
+## 4.3 Ablation Study  
+* InfoNCE 손실과 LAC가 모델 성능에 중요함을 확인, 특히, 기권 관계가 많은 데이터셋에서 이러한 구성요소가 더 중요  
+* LNCE를 순위 손실 합으로 대체하거나 LAC를 제거하면 성능이 저하  
+* 이는 InfoNCE와 LAC가 부정적인 예시에서의 학습과 기권 인스턴스 탐지에 유효함을 입증  
+
+## 4.4 Analysis  
+### NLI formulation benefits, even without additional NLI resources  
+### Two key ingredients of indirect supervision for biomedical RE  
+* 간접 감독의 이점을 보여주며, 저자원 설정에서 특히 NLI에서의 간접 감독이 빛을 발함  
+* 제로샷, 몇 샷 설정에서 NBR의 모든 변형이 모든 데이터셋에서 강력한 성능을 지속적으로 달성  
+* 학습 인스턴스 수가 증가함에 따라 간접 감독의 이점이 감소하는 경향, 이는 충분한 학습 신호가 제공될 경우 직접 감독이 효과적으로 학습할 수 있으며, 추가 NLI 신호의 한계 수익이 감소한다는 것을 시사  
+
+# 5 Conclusion  
+* NBR은 NLI 작업에서의 교차 작업 전송 학습을 통한 간접 감독을 활용하여 생물 의학 RE 작업을 개선하는 새로운 방법을 제시  
+* NBR은 관계를 자연어 가설로 표현하여 모델이 의미 정보를 활용해 정보에 기반한 예측을 할 수 있게 함  
+* 또한 NBR은 과도하게 확신하는 기권 인스턴스에 대해 벌칙을 부과하고 비기권 인스턴스를 장려하는 순위 기반 기권 교정 손실을 채택하여 불확실한 인스턴스에 대해 기권할 수 있는 능력을 가짐  
+* 세 가지 널리 사용되는 생물 의학 RE 벤치마크에서 실시한 광범위한 실험을 통해 NBR이 전체 자원 및 저자원 설정 모두에서 효과적임을 입증    
+* 효과적인 NLI 간접 감독을 위한 두 가지 주요 요소를 추가로 조사했으며, 향후 작업은 다른 간접 감독 접근 방식 및 프롬프트 학습을 기반으로 한 자동 관계 템플릿 생성에 대한 추가 조사를 포함할 수 있음  
+
+# Limitations  
+* 이 연구는 NLI를 생물 의학 RE에 대한 간접 감독으로 사용하는 것을 탐구  
+* 실험은 생물 의학 지식과 NLI 지식이 고성능 간접 감독 생물 의학 RE의 두 가지 핵심 요소임을 제안  
+* 이를 위해 생물 의학 도메인 코퍼스에서 사전 훈련된 언어 모델에 접근해야 하며, 이는 계산 자원을 필요로 함  
+* 일반 도메인 모델에 비해 특정 도메인에서 사전 훈련된 모델은 종종 다양성이 제한  
+* 추론 중에 NBR은 각각의 verbalized 관계에 대한 추론 점수를 평가하기 위해 레이블 수만큼의 전방 통과를 필요로 함   
+* 이는 표준 감독에 비해 더 높은 추론 비용과 교육 비용을 의미하며, 실시간 애플리케이션 등 일부 시나리오에서의 적용 가능성을 제한  
