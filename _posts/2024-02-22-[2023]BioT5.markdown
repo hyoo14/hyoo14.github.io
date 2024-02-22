@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "[2023]BioT5: Enriching Cross-modal Integration in Biology with Chemical Knowledge and Natural Language Associations"  
+date:   2024-02-22 10:02:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+* 
+
+
+
+
+
+Useful sentences :  
+* 
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1Gj3s_4CSWMY_JawmpscAp187ItIGV6ZX?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+
+<br/>
+
+# 1 Introduction  
+
+# 2 Related Works  
+## 2.1 Cross-modal Models in Biology  
+### Cross Text-molecule Modalities  
+### Cross Text-protein Modalities   
+### Cross Three or More Biology Modalities  
+## 2.2 Representations of Molecule and Protein  
+### Molecule Representation  
+### Protein Representation  
+# 3 BioT5  
+## 3.1 Pre-training Corpus  
+## 3.2 Separate Tokenization and Embedding   
+## 3.3 Model and Training  
+### Model architecture  
+### Pre-training  
+### Fine-tuning  
+
+# 4 Experiments and Results  
+## 4.1 Single-instance Prediction  
+### 4.1.1 Molecule Property Prediction  
+#### Baselines  
+#### Results  
+### 4.1.2 Protein Property Prediction  
+
+#### Baselines  
+#### Results  
+## 4.2 Multi-instance Prediction  
+### 4.2.1 Drug-targetInteractionPrediction  
+#### Baselines  
+#### Results  
+### 4.2.2 Protein-protein Interaction Prediction  
+#### Baselines  
+#### Results  
+## 4.3 Cross-modal Generation  
+### 4.3.1 Molecule Captioning  
+#### Baselines  
+#### Results  
+### 4.3.2 Text-Based Molecule Generation  
+#### Baselines  
+#### Results  
+# 5 Conclusions and Future Work   
+# 6 Limitations  
+
+
+
