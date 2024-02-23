@@ -1,0 +1,131 @@
+---
+layout: post
+title:  "[2024]Fine-Tuning or Retrieval? Comparing Knowledge Injection in LLMs"  
+date:   2024-02-23 16:19:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+
+* LLM은 다양한 분야에서 다양한 질문에 답할 수 있는 능력이 입증됨  
+* 사전 훈련된 가중치 내에 방대한 양의 사실 정보를 내포함    
+* 그러나 이 지식은 본질적으로 훈련 데이터의 특성에 크게 의존하며 제한적  
+* 따라서 외부 데이터셋을 사용하여 새로운 정보를 통합하거나 LLM의 기존 정보에 대한 능력을 개선하는 것은 상당한 도전 과제  
+* 이 연구에서는 두 가지 일반적인 접근 방식인 비지도 미세 조정과 검색-증강 생성(RAG)을 비교하는 것이 이 논문의 골자    
+* 저자들은 다양한 주제에 걸친 지식 집약적인 작업에서 두 접근 방식을 평가  
+* 평가 결과 비지도 미세 조정이 일부 개선을 제공하는 반면, RAG는 훈련 중에 마주친 기존 지식과 완전히 새로운 지식 모두에 대해 일관되게 그것을 능가한다는 것을 보여줌  
+* 특히 LLM이 비지도 미세 조정을 통해 새로운 사실 정보를 학습하는 데 어려움을 겪고 있으며, 훈련 중에 동일한 사실의 다양한 변형에 노출시키는 것이 이 문제를 완화할 수 있다는 것을 발견  
+
+
+* LLMs can answer many questions in different areas because they have a lot of facts from training  
+* Knowledge they have is limited and depends a lot on the training data  
+* Using outside data to add new info or make LLMs better at what they already know is hard  
+* This paper looks at two common ways to do this: unsupervised fine-tuning and RAG  
+* The authors tested these two methods on tasks that need a lot of knowledge  
+* They found that while unsupervised fine-tuning helps a bit, RAG is usually better for both old and new knowledge  
+* Especially, they saw that LLMs hardness to learn new facts with unsupervised fine-tuning  
+* Showing them many versions of the same fact while training might help with this problem    
+
+
+
+
+
+Useful sentences :  
+* LLM의  한계: 지식은 정적이며 시간이 지남에 따라 업데이트되지 않고 비특정적이어서 특정 분야에서 미세한 전문성이 부족  
+* 최근에는 특정 분야에 LLM을 적응시키고 지식을 업데이트하는 아이디어가 점점 더 보편화되고 있고 다양한 모델이 제안되었으며, 이는 건강 관리, 금융, 법률 등 다양한 분야에서 사실 지식과 능력을 향상시키기 위한 것  
+* 이 작업에서는 모델의 지식과 사실 데이터를 기억, 이해, 검색하는 능력을 평가하는 데 중점  
+* 저자들은 텍스트 코퍼스 형태의 지식 베이스가 주어졌을 때, 사전 훈련된 모델에게 이 지식을 가르치는 최선의 방법이 무엇인지 이해하려 함  
+* 지식을 사전 훈련된 모델에 추가하는 한 가지 방법은 미세 조정을 통한 것으로 미세 조정을 통해 모델의 훈련 과정을 계속하고 작업 특정 데이터를 사용하여 모델을 조정  
+* 이는 모델의 전반적인 품질을 크게 향상시키는 데 매우 효과적이지만, 반드시 모델에 새로운 지식을 가르치는 것은 아님  
+* 검색 증강 생성(RAG)은 외부 지식 소스를 사용하여 지식 집약적 작업에서 특히 LLM의 능력을 확장하는 기술  
+* 보조 지식 베이스 BQ와 사전 훈련된 임베딩 모델 Me가 주어지면, BQ에 있는 각 문서 b에 대해 임베딩을 생성하고 이를 벡터 저장소에 저장  
+* 새로운 쿼리 q를 받으면, 그 쿼리의 임베딩 Me(q)를 사용하여 dot-product ranking에 따라 q와 가장 가까운 상위 K개의 이웃 bq = {bk}K1을 검색합니  
+* 그런 다음 q를 bq와 q를 문자열 연결하는 것으로 업데이트하여 q˜ = bq∥q로 만들고 모델의 출력으로 M(q˜)를 반환  
+* 저자들은 Wikipedia에서 관련 청크를 수집한 후 GPT-4의 도움으로 새로운 다지선다형 데이터셋을 생성  
+* 이 데이터셋은 매우 구체적이고 고품질의 다지선다형 질문으로 구성  
+* 실험 프레임워크에서는 LM-Evaluation-Harness 저장소를 사용하여 선택된 지식 집약적 작업에서 LLM의 성능을 평가  
+* 이 플랫폼은 표준화된 평가 프레임워크를 보장하고 모델, 방법, 데이터셋 간의 일관된 비교를 허용  
+* 모델 선택에서는 추론 평가를 위해 Llama2-7B, Mistral-7B, Orca2-7B 세 가지 모델을 선택  
+* 이 모델들은 가장 인기 있는 오픈 소스 베이스 모델과 지시 조정 모델을 대표  
+* Anatomy (0-shot) 태스크에서는 Mistral-7B 모델이 RAG를 사용했을 때 0.681의 정확도로 가장 높은 성능  
+* Astronomy (0-shot) 태스크에서는 Orca2-7B 모델이 RAG를 사용했을 때 0.750의 정확도로 가장 높은 성능  
+* College Biology (0-shot) 태스크에서는 Mistral-7B 모델이 Finetuning RAG를 사용했을 때 0.764의 정확도로 가장 높은 성능  
+* College Chemistry (0-shot) 태스크에서는 Mistral 7B 모델이 RAG를 사용했을 때 0.500의 정확도로 가장 높은 성능  
+* Prehistory (0-shot) 태스크에서는 Mistral-7B 모델이 RAG를 사용했을 때 0.750의 정확도로 가장 높은 성능  
+* Current Events 결과에서는 Orca2-7B 모델이 RAG를 사용했을 때 0.876의 정확도로 가장 높은 성능  
+
+
+* RAG uses outside knowledge sources to make LLMs better at tasks that need a lot of knowledge  
+* For RAG, authors made a dense vector for each document in a help knowledge base    
+* When a new question comes, they find the closest documents to the question and add them to the question, giving more context  
+* The authors made a new set of multiple-choice questions with GPT-4 by using chunks from Wikipedia  
+* They used LM-Evaluation-Harness to check how well LLMs did on these knowledge-heavy tasks  
+* They chose three models for testing: Llama2-7B, Mistral-7B, and Orca2-7B  
+* In Anatomy (0-shot) task, Mistral-7B with RAG had the highest accuracy of 0.681 accuracy    
+* In Astronomy (0-shot) task, Orca2-7B with RAG did the best with 0.750 accuracy  
+* In College Biology (0-shot) task, Mistral-7B with Finetuning RAG scored highest at 0.764 accuracy  
+* In College Chemistry (0-shot) task , Mistral 7B with RAG reached 0.500 accuracy   
+* In Prehistory (0-shot) task, Mistral-7B with RAG got the top score with 0.750 accuracy   
+* In Current Events task, Orca2-7B with RAG had the best performance with 0.876 accuracy  
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/16Oq4_w55ASQXzwhZXDFZyyE-2HUmJ3cl?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+
+
+<br/>
+
+# 1. Introduction  
+
+# 2. Background  
+## Knowledge and Language Models  
+## Previously Seen Knowledge  
+## Knowledge and Reasoning  
+## Causes for Factual Errors  
+### Domain knowledge deficit  
+### Outdated Information  
+### Immemorization  
+### Forgetting  
+### Reasoning Failure  
+# 3. Injecting Knowledge to Language Models   
+## 3.1. Problem formulation  
+## 3.2. Fine-Tuning  
+### Supervised Fine-Tuning  
+### Reinforcement Learning  
+### Unsupervised Fine-Tuning  
+## 3.3. Retrieval Augmented GEneration  
+# 4. Knowledge Base Creation  
+## 4.1. Task Selection and Rationale   
+### MMLU Benchmark   
+### Current Events Task  
+## 4.2. Data Collection and Preprocessing  
+## 4.3. Current Events Task Creation   
+## 4.4. Paraphrases Generation  
+# 5. Experiments and Results  
+## Experimental Framework  
+## Model Selection  
+## Configuration Variation  
+## Training Setup  
+## Evaluation method  
+## MMLU Results  
+## Current Events Results  
+## Fine-Tuning vs. RAG     
+# 6. Importance of Repetition  
+## Data Augmentation  
+## Monotonic Improvement  
+## Learning New Information  
+# 7. Conclusion and Future Work  
+# 8. Limitations  
+
+
+
