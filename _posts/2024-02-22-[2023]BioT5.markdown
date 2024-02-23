@@ -9,7 +9,23 @@ categories: study
 
 
 짧은 요약(Abstract) :    
-* 
+
+* 최근 생물학 연구의 발전은 분자, 단백질, 그리고 자연어의 통합을 활용하여 약물 발견을 강화하고 있음  
+* 하지만 현재 모델들은 몇 가지 한계를 보이고 있는데, 예를 들어 유효하지 않은 분자 SMILES의 생성, 문맥 정보의 활용 미흡, 구조화된 지식과 비구조화된 지식을 동등하게 취급하는 것 등이 있음  
+* 이러한 문제들을 해결하기 위해, 우리는 화학 지식과 자연어 연관성을 바탕으로 생물학에서의 교차 모달 통합을 풍부하게 하는 포괄적인 사전 훈련 프레임워크인 BioT5를 제안  
+* BioT5는 100% 견고한 분자 표현을 위해 SELFIES를 활용하며, 비구조화된 생물학 문헌에서 생물 엔티티의 주변 문맥으로부터 지식을 추출  
+* 더 나아가, BioT5는 구조화된 지식과 비구조화된 지식을 구분하여 정보의 보다 효과적인 활용을 이끔  
+* 사전 훈련 후에, BioT5는 다양한 작업에서 우수한 성능을 보여주며, 생물 엔티티의 기본적인 관계와 특성을 포착하는 강력한 능력을 입증  
+
+* Recently advances in biology use the mix of molecules, proteins, and natural language to make drug discovery better  
+* But, current models have some problems, such as making wrong molecular SMILES, not using context info well, and treating structured and unstructured knowledge the same  
+* To fix these problems, authors suggest BioT5, a big pre-training framework that makes cross-modal integration in biology richer with chemical knowledge and natural language links  
+* BioT5 uses SELFIES for 100% solid molecular representations and pulls knowledge from the context around bio-entities in unstructured biology texts  
+* BioT5 also separates structured and unstructured knowledge for better use of info  
+* With pre-training, BioT5 does really well in many tasks, showing its strong skill in catching the basic relations and features of bio-entities  
+
+
+
 
 
 
