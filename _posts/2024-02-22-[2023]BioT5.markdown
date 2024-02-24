@@ -44,6 +44,25 @@ Useful sentences :
 <br/>
 
 # 단어정리  
+* modal: 모드, 방식(시각/청각)  
+* SMILES: Simplified Molecular Input Line Entry System, 화학물질의 구조를 문자열로 표현한 것, H20는 "O"로, CH4는 "C"로  
+* SELFIES: Self-referencing Embedded Strings, 화학 분야 분자구조 표현위한 최식 문자열 기법  
+* cornerstone: 모서리돌, 가장 중요, 기본  
+* pathways: 단계, 진행과정  
+* fuses: 결합하다, 통합하다  
+* syntactic: 구조, 문법, 형식  
+* semantics: 내용, 개념, 메세지  
+* colossal: 매우 큰, 거대한, 엄청난 규모  
+* dibromolit: 브롬 두개 합쳐진  
+* encompassing: 포함하다, 둘러싸다, 아우르다  
+* scaffold: 세포나 조직 자라게 지지해주는 물질 구조  
+* membrane-bound: 세포막, 세포내 막 구조에 결합된 분자나 단백잴(신호전달, 물질운반 등 역할)  
+* soluble: 용해성, 다른 용매에 용해될 수 있는 분자나 단백질( 효소)  
+* solubility: 용매에 용해될 수 있는 최대양  
+* worthnoting: 주목할 가치가 있는, 언급될 만한  
+* tailored: 맞춤형의 , 개인 맞춤의  
+* intricate: 복잡하고 세밀한  
+* holistic: 전체적인 입장에서  
 
 
 <br/>
