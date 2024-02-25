@@ -32,7 +32,39 @@ categories: study
 
 
 Useful sentences :  
-* 
+
+- 분자와 단백질은 약물 발견에서 중요한 생물학적 엔티티임  
+- 생물학적 연구의 최근 발전은 분자, 단백질, 자연어의 통합을 활용함  
+- BioT5는 다양한 생물학적 모달리티를 통합한 대규모 사전 훈련 모델임  
+- BioT5는 분자 표현을 위한 SELFIES와 단백질 표현을 위한 FASTA 포맷을 사용함  
+- BioT5는 ZINC20, Uniref50, C4 데이터셋 등을 사전 훈련에 사용함  
+- BioT5는 분자 및 단백질 속성 예측에서 기존 모델들을 능가하는 성능을 보임  
+- BioT5는 약물-표적 상호작용 예측과 단백질-단백질 상호작용 예측에서 우수한 결과를 달성함  
+- BioT5는 분자 캡셔닝과 텍스트 기반 분자 생성 작업에서 모든 기준 모델을 능가함  
+- BioT5의 사전 훈련에는 비정형 컨텍스트 지식과 구조화된 데이터베이스 지식이 포함됨  
+- BioT5의 한계는 각 하류 작업에 대한 전체 매개변수 미세 조정의 필요성에 있음  
+- BioT5는 서로 다른 하류 작업 간에 일반화 능력을 관찰하지 못함  
+- 데이터 누수는 서로 다른 작업의 데이터를 지시문을 사용하여 결합할 때 발생할 수 있음  
+- BioT5는 DNA/RNA 시퀀스 및 세포와 같은 다른 생물학적 모달리티를 탐색하지 않음  
+- BioT5는 주로 생물학적 엔티티의 시퀀스 형식에 중점을 두며, 2D 또는 3D 구조와 같은 다른 형식의 중요성을 인정함  
+
+
+
+
+- Molecules and proteins are crucial biological entities in drug discovery  
+- Recent advances in biological research utilize the integration of molecules, proteins, and natural language  
+- BioT5 is a large-scale pre-trained model that integrates various biological modalities  
+- BioT5 utilizes SELFIES for molecular representation and FASTA format for protein representation  
+- BioT5 employs datasets such as ZINC20, Uniref50, and C4 for pre-training  
+- BioT5 surpasses existing models in predicting molecular and protein properties  
+- BioT5 achieves excellent results in drug-target interaction prediction and protein-protein interaction prediction  
+- BioT5 outperforms all baseline models in molecule captioning and text-based molecule generation tasks  
+- BioT5's pre-training includes unstructured context knowledge and structured database knowledge  
+- A limitation of BioT5 is the need for full parameter fine-tuning for each downstream task  
+- BioT5 does not observe generalization ability across different downstream tasks  
+- Data leakage can occur when combining data from different tasks using directives  
+- BioT5 does not explore other biological modalities such as DNA/RNA sequences and cells  
+- BioT5 focuses primarily on the sequence format of biological entities, acknowledging the importance of other formats like 2D or 3D structures  
 
 {% endhighlight %}  
 
@@ -68,48 +100,111 @@ Useful sentences :
 <br/>
 
 # 1 Introduction  
+분자와 단백질은 약물 발견에서 중요한 생물학적 엔티티임  
+생물학적 연구의 최근 발전은 분자, 단백질, 자연어의 통합을 활용함  
 
 # 2 Related Works  
 ## 2.1 Cross-modal Models in Biology  
 ### Cross Text-molecule Modalities  
+분자 SMILES와 일반 텍스트 코퍼스를 함께 훈련시킨 MolT5 등이 있음  
+
 ### Cross Text-protein Modalities   
+ProteinDT와 BioTranslator와 같이 텍스트를 활용한 단백질 설계 모델이 있음  
+
 ### Cross Three or More Biology Modalities  
+Galactica와 DeepEIK와 같이 다양한 생물학적 모달리티를 통합한 모델이 있음  
+
 ## 2.2 Representations of Molecule and Protein  
 ### Molecule Representation  
+분자는 SMILES, InChI, SELFIES 등 다양한 방법으로 표현될 수 있음  
+
 ### Protein Representation  
+단백질은 FASTA 포맷 등을 사용하여 표현될 수 있음  
+
 # 3 BioT5  
 ## 3.1 Pre-training Corpus  
+ZINC20 데이터셋, Uniref50 데이터셋, C4 데이터셋 등을 사용함  
+
 ## 3.2 Separate Tokenization and Embedding   
+분자와 단백질을 위한 별도의 사전과 토큰화를 사용함  
+
 ## 3.3 Model and Training  
 ### Model architecture  
+T5 모델 아키텍처를 사용함  
+
 ### Pre-training  
+여러 모달리티에 대한 T5 목표를 적용하여 사전 훈련함  
+
 ### Fine-tuning  
+다양한 하류 작업에 대해 미세 조정 가능함  
+
 
 # 4 Experiments and Results  
 ## 4.1 Single-instance Prediction  
 ### 4.1.1 Molecule Property Prediction  
 #### Baselines  
-#### Results  
-### 4.1.2 Protein Property Prediction  
+G-Contextual, G-Motif, GROVERbase 등 다양한 기준 모델과 비교함  
 
-#### Baselines  
 #### Results  
+BioT5는 대부분의 작업에서 기준 모델을 능가함  
+
+
+### 4.1.2 Protein Property Prediction  
+#### Baselines  
+DDE, Moran, LSTM 등의 기준 모델과 비교함  
+
+#### Results  
+BioT5는 단백질 용해도 예측 작업에서 모든 기준 모델을 능가함  
+
+
 ## 4.2 Multi-instance Prediction  
 ### 4.2.1 Drug-targetInteractionPrediction  
 #### Baselines  
+SVM, Random Forest, DeepConv-DTI 등과 비교함  
+
 #### Results  
+BioT5는 BioSNAP, Human, BindingDB 데이터셋에서 우수한 성능을 보임  
+
 ### 4.2.2 Protein-protein Interaction Prediction  
 #### Baselines  
+RNN, Transformer, T5-small 등과 비교함  
+
 #### Results  
+BioT5는 분자 캡셔닝 작업에서 최고의 성능을 달성함  
+
 ## 4.3 Cross-modal Generation  
 ### 4.3.1 Molecule Captioning  
 #### Baselines  
+기준 모델로는 RNN, Transformer, T5, MolT5, GPT-3.5-turbo (zero-shot 및 10-shot MolReGPT 설정), MolXPT가 포함됨  
+
 #### Results  
+* BioT5는 MolT5-base와 유사한 매개변수 수를 가지고 있지만 모든 지표에서 모든 기준 모델을 능가함  
+* Text2Mol 점수는 0.603으로, 실제 분자와 해당 설명 사이의 Text2Mol 점수 0.609와 매우 가까움  
+* 이러한 우수한 성능은 BioT5 사전 훈련에 포함된 비정형 컨텍스트 지식과 구조화된 데이터베이스 지식이 텍스트와 분자 간의 복잡한 관계를 학습하는 데 도움이 됨  
+
+
 ### 4.3.2 Text-Based Molecule Generation  
 #### Baselines  
+비교된 기준 모델은 4.3.1 섹션의 기준 모델과 동일함  
+
 #### Results  
+* BioT5는 MolT5-base와 유사한 매개변수를 사용하지만 거의 모든 지표에서 우수한 성능을 보임  
+* BioT5의 정확도 점수는 MolT5-Large를 32.8% 초과하며, 생성된 분자의 유효성을 100% 유지함  
+* 이러한 향상된 성능은 컨텍스트 및 데이터베이스 지식의 통합과 분자 표현을 위한 SELFIES 사용에 기인함  
+
 # 5 Conclusions and Future Work   
+* BioT5는 생물학적 시스템의 이해를 증진시킬 수 있는 가능성을 보여줌  
+* 향후 연구 방향성을 제시함  
+
 # 6 Limitations  
+* BioT5의 주요 한계는 각 하류 작업에 대한 전체 매개변수 미세 조정을 수행하는 것임  
+* 이는 서로 다른 하류 작업 간에 일반화 능력을 관찰하지 못했기 때문임  
+* 또한, 서로 다른 작업의 데이터를 지시문을 사용하여 결합하면 데이터 누수가 발생할 수 있음  
+* 예를 들어, BindingDB의 학습 세트와 BioSNAP 및 Human의 테스트 세트 간에 중복이 발견됨  
+* BioT5는 텍스트, 분자 및 단백질 모달리티에서의 능력을 입증하지만, DNA/RNA 시퀀스 및 세포와 같은 다른 생물학적 모달리티가 존재하며, 단일 모달리티 내 또는 여러 모달리티 간에 많은 다른 작업이 존재함  
+* BioT5는 주로 생물학적 엔티티의 시퀀스 형식에 중점을 두지만, 2D 또는 3D 구조와 같은 다른 형식도 중요함  
+* 이러한 추가적인 탐색은 향후 작업으로 남겨짐  
+
 
 
 
