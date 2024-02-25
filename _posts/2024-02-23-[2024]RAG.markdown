@@ -71,6 +71,23 @@ Useful sentences :
 * In Prehistory (0-shot) task, Mistral-7B with RAG got the top score with 0.750 accuracy   
 * In Current Events task, Orca2-7B with RAG had the best performance with 0.876 accuracy  
 
+Useful sentences2:  
+* RAG consistently outperformed just fine-tuning
+* Using RAG with the base model as the generator was better than only fine-tuning
+* RAG was particularly effective for the current events task due to the direct match between the questions and the auxiliary dataset
+* Fine-tuning wasn't competitive with RAG
+* However, fine-tuning with multiple paraphrases provided a significant improvement over the baseline
+* Combining RAG with fine-tuning didn't perform as well as RAG alone
+* For tasks with new information, such as current events not seen during pre-training, standard fine-tuning did not improve and even degraded Llama2's performance
+* They explored data augmentation using paraphrases to improve fine-tuning results
+* Data augmentation is a well-established method for enhancing language model performance
+* They used generative models for augmentations, successfully improving classification models in the past
+* The approach showed a direct correlation between the number of paraphrases used and model accuracy
+* The accuracy of all models tested increased monotonically with the number of paraphrases used, suggesting a positive impact of paraphrase augmentation on the model's ability to  understand and generalize new knowledge  
+* An interesting phenomenon observed was a significant drop in training loss after each epoch, consistent with LLMs memorizing data during training and overfitting
+* Their hypothesis is that to teach pre-trained LLMs new knowledge, the information must be repeated in numerous ways
+
+
 
 Idea?:  
 * 근데 MMLU벤치마크 같은 거 좀 유용해보임  
@@ -111,45 +128,171 @@ Idea?:
 
 # 1. Introduction  
 
+* 대규모 언어 모델(LLM)은 방대한 양의 사실 정보를 포착할 수 있으며, 대규모 사전 훈련 데이터셋 덕분에 다양한 분야에서 놀라운 수준의 지식을 보여줌   
+* 그러나 이 지식에는 두 가지 주요 제한이 있음  
+** 첫째, 지식은 정적이며 시간이 지나면서 업데이트되지 않음  
+** 둘째, 특정 분야에 대한 미세한 전문 지식이 부족할 수 있음  
+* 이 두 문제는 서로 깊이 관련되어 있으며, 해결책은 모델의 지식을 향상시키는 것  
+* 최근에는 LLM을 특정 도메인에 맞게 조정하고 지식을 업데이트하는 아이디어가 점점 더 일반적이 됨  
+* 이 작업에서는 모델의 지식과 사실 데이터를 기억하고 이해하며 검색하는 능력을 평가하는 데 중점을 둠  
+* 저자들은 지식 주입의 개념을 이해하고자 하며, 텍스트 코퍼스 형태의 어떤 지식 베이스를 가지고 사전 훈련된 모델에 이 지식을 가르치는 최선의 방법이 무엇인지를 탐구   
+
 # 2. Background  
 ## Knowledge and Language Models  
+* 지식 정의, 이 연구의 범위 넘어섬  
+* 언어 모델 맥락에서의 사실적 지식 검토  
+* 모델이 사실 알고 있음, 질문에 정확하고 일관된 답 가능  
+* 참과 거짓 진술 구분 가능  
+
 ## Previously Seen Knowledge  
+* 모델이 사전 훈련 중 노출된 지식과 완전히 새로운 사실 사이 구분 필요  
+* 지식 주입 목표, 모델에 완전히 새로운 사실 가르치기보다는 특정 도메인 기억 "새롭게" 함  
+
 ## Knowledge and Reasoning  
+* LLM에 대한 지식 평가 프레임워크, 완벽하지 않음  
+* 다른 품질 지표 해결 못 함  
+* 순수하게 지식 집약적인 데이터 세트 만들기, 어느 정도 추론 포함 필요  
+* 강력한 추론 능력 가진 모델, 낯선 지식 집약적 작업에서 우수한 성능 발휘 가능    
+
 ## Causes for Factual Errors  
 ### Domain knowledge deficit  
+* 특정 도메인에 대한 포괄적 전문 지식 부족  
+
 ### Outdated Information  
+* 마지막 훈련 업데이트 이후 발생한 모든 사건, 발견 또는 변경 사항 포함 못 함
+
 ### Immemorization  
+* 훈련 과정 중 지식 노출됐지만 유지 못 함  
+
 ### Forgetting  
+* 추가 훈련(세부 조정) 과정에서 이전에 가졌던 일부 지식 잃어버림  
+
 ### Reasoning Failure  
+* 사실에 대한 관련 지식 가지고 있지만 적절하게 활용 못 함  
+
 # 3. Injecting Knowledge to Language Models   
+* 일반적인 사전 훈련만으로는 많은 지식 집약적 작업에 부족  
+* 지식 주입이라는 추가적인 후처리 단계 필요  
+* 지식 주입 문제 정의와 함께 세부 조정(Fine-Tuning, FT) 및 검색 증강 생성(Retrieval Augmented   Generation, RAG) 두 가지 프레임워크 검토    
+
 ## 3.1. Problem formulation  
+* 질문-응답(Q&A)을 통한 언어 모델 내 지식의 공식화  
+* 특정 질문 세트에 대한 정보를 포함하는 텍스트 코퍼스 존재  
+* 주어진 코퍼스를 보조 지식 기반으로 사용하여 질문 세트에 대한 모델의 성능 개선 가능  
+
 ## 3.2. Fine-Tuning  
+* 사전 훈련된 모델을 특정 데이터셋이나 작업에 맞게 조정하여 해당 도메인에서의 성능 향상  
+* 감독 학습, 강화 학습, 비감독 학습으로 분류  
+
 ### Supervised Fine-Tuning  
+* 레이블이 지정된 입력-출력 쌍 필요  
+* 가장 일반적인 방법 중 하나는 지시 학습  
+
 ### Reinforcement Learning  
+* 인간 피드백에서의 강화 학습(RLHF), 직접 선호 최적화(DPO), 근접 정책 최적화(PPO) 등  
+* 전반적인 응답의 질과 예상되는 행동에 초점을 맞추며 지식의 폭에 대해서는 반드시 초점을 맞추지 않음  
+
 ### Unsupervised Fine-Tuning  
+* 학습할 레이블이 없는 상태에서 진행  
+* 연속된 사전 훈련 또는 구조화되지 않은 세부 조정으로 종종 언급됨  
+* 사전 훈련 단계의 직접적인 연속으로 간주됨  
+
 ## 3.3. Retrieval Augmented GEneration  
+* 외부 지식 소스를 사용하여 지식 집약적 작업에서 LLM의 기능을 확장하는 기술  
+* 추가 훈련 없이도 사전 훈련된 임베딩 모델이 개선된 성능을 달성할 수 있음  
+* 보조 지식 기반과 입력 쿼리가 주어지면 RAG 아키텍처를 사용하여 입력 쿼리와 유사한 문서를 찾아 모델에 추가 컨텍스트 제공  
+
+
 # 4. Knowledge Base Creation  
+* LLM의 지식 집약적 작업에 대한 능력 평가 위해 작업 선택  
+
 ## 4.1. Task Selection and Rationale   
 ### MMLU Benchmark   
+* 해부학, 천문학, 대학 생물학, 대학 화학, 선사 시대 등 4개 작업 선택  
+* 사실적 지식에 중점, 추론에 최소한 의존하는 작업 선정  
+
 ### Current Events Task  
+* 모델이 훈련 데이터 컷오프 이후에 발생한 사건에 대해 배우지 못했음을 보장하는 작업 생성  
+* 2023년 8월부터 11월까지의 미국 현재 이벤트에 초점  
+
 ## 4.2. Data Collection and Preprocessing  
+* 위키백과에서 주제별 관련 기사 스크래핑하여 포괄적 보조 데이터셋 수집  
+* 'wikiextractor' 도구 사용하여 데이터를 원시 하위 섹션에서 깨끗한 청크로 변환  
+
 ## 4.3. Current Events Task Creation   
+* 위키백과에서 수집한 청크를 사용하여 GPT-4의 도움으로 새로운 객관식 데이터셋 생성  
+* GPT-4에게 매우 구체적이고 고품질의 객관식 질문 4개를 생성하도록 지시  
+
 ## 4.4. Paraphrases Generation  
+* 데이터셋 생성 후 GPT-4를 사용하여 입력 데이터의 패러프레이즈 버전 생성  
+* 각 작업에 대해 임의로 선택된 240개 청크에 대해 두 개의 패러프레이즈 생성, 하이퍼파라미터 튜닝을 위한 검증 세트로 사용  
+
 # 5. Experiments and Results  
 ## Experimental Framework  
+* LM-Evaluation-Harness를 사용하여 지식 집약적 작업에서 LLM의 성능 평가  
+* 표준화된 평가 프레임워크 활용, 모델 및 데이터셋 간 일관된 비교 보장  
+
 ## Model Selection  
+* 추론 평가를 위해 Llama2-7B, Mistral-7B, Orca2-7B 세 모델 선택  
+* bge-large-en을 RAG 구성요소의 임베딩 모델로 사용, FAISS를 벡터 저장소로 활용  
+
 ## Configuration Variation  
+* 기본 모델과 세부 조정된 모델 비교, RAG 구성요소와의 성능 평가  
+* RAG 컨텍스트에 추가할 텍스트 청크의 최적 수 탐색  
+
 ## Training Setup  
+* 섹션 3.2에 설명된 비감독 훈련 절차를 사용하여 모든 모델 훈련  
+* 4개의 NVIDIA A-100 GPU에서 최대 5 에폭 동안 훈련  
+
 ## Evaluation method  
+* 다지선다형 옵션을 질문에 추가하고 모델을 통과시켜 로그 확률 점수 획득  
+* 가장 높은 점수를 모델의 선택으로 해석하여 정확도 계산  
+
 ## MMLU Results  
+* 기본 모델, RAG, FT, 그리고 FT와 RAG를 결합한 접근 방식 비교  
+* 모든 경우에서 RAG가 기본 모델보다 훨씬 더 나은 성능을 보임  
+
 ## Current Events Results  
+* 현재 이벤트 작업 평가는 보조 데이터셋과 질문 간 일대일 대응으로 인해 RAG가 특히 효과적임  
+* 세부 조정은 RAG와 경쟁하지 못함, 그러나 다중 패러프레이즈를 사용한 세부 조정은 기본선보다 상당한 개선을 제공  
+
 ## Fine-Tuning vs. RAG     
+* MMLU와 현재 이벤트 작업 결과에서 RAG가 세부 조정보다 뚜렷한 이점을 보임  
+* 세부 조정은 대부분의 경우 기본 모델에 비해 결과를 개선했지만 RAG 접근 방식과 경쟁할 수는 없음  
+
 # 6. Importance of Repetition  
+* 현재 이벤트에 대한 새로운 정보 포함  
+* 표준 정규 세부 조정, Llama2의 성능 개선 실패 및 심각한 저하  
+* 데이터 증강을 통한 세부 조정 결과 개선 탐색  
+
 ## Data Augmentation  
+* 언어 모델 성능 향상을 위한 잘 확립된 방법  
+* 생성 모델을 사용한 증강, 과거 분류 모델 개선에 성공적  
+
 ## Monotonic Improvement  
+* 결과에 현저한 개선 가져옴  
+* 사용된 패러프레이즈 수와 모델 정확도 사이 직접적 상관관계 존재  
+
 ## Learning New Information  
+* 각 에폭 후 훈련 손실 크게 감소  
+* LLM이 훈련 중 데이터 암기 및 과적합하는 것과 일치  
+* 사전 훈련된 LLM에 새로운 지식 가르치려면, 지식을 여러 방식으로 반복해야 함  
+* 단순 문장 암기는 내용에 대한 지식 의미하지 않음  
+* 정보를 다양한 형태로 제공하여 데이터의 다양한 관계 더 높은 확률로 자연스럽게 나타남  
+
 # 7. Conclusion and Future Work  
+* 다양한 주제에 대한 방대한 지식 보유  
+* 전문화된 및 완전히 새로운 지식에 대한 적응 능력 테스트  
+* 세부 조정 유용할 수 있으나, 지식 주입에는 RAG가 더 신뢰할 선택임 발견  
+* 이 작업의 일부 측면 추가 연구 필요  
+* 비지도 학습을 주요 세부 조정 방법으로 집중 대비하여 지시 조정 또는 RL 기반 방법 탐색 필요  
+* 다양한 보조 지식 기반과의 기술 조합 연구 필요  
+
 # 8. Limitations  
+* 모든 기계 학습 응용 프로그램에서 하이퍼파라미터 선택이 결과에 큰 영향  
+* 특정 사례에 대한 모든 관련 하이퍼파라미터 최적화 권장  
+* 세 가지 다른 모델에서 실험 지원하나, 다른 LLM에 대한 일반화 철저히 테스트 필요  
+* 지식 기반으로 다양한 주제 선택하였으나 모든 출처가 Wikipedia에서 온 것으로, 다른 데이터셋은 다른 결과 초래할 수 있음  
 
 
 
