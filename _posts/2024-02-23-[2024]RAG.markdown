@@ -71,6 +71,11 @@ Useful sentences :
 * In Prehistory (0-shot) task, Mistral-7B with RAG got the top score with 0.750 accuracy   
 * In Current Events task, Orca2-7B with RAG had the best performance with 0.876 accuracy  
 
+
+Idea?:  
+* 근데 MMLU벤치마크 같은 거 좀 유용해보임  
+* paraphrases generation도 좀 유의미하게 쓰기 좋아보임, 실제로 성능도 높였다고 하고   
+
 {% endhighlight %}  
 
 <br/>
@@ -81,6 +86,25 @@ Useful sentences :
 <br/>
 
 # 단어정리  
+* nuanced: 미묘한 차이 가진 늬앙스 차이 인식, 이해  
+* expertise: 깊은 지식, 숙련도  
+* rationale 이유와 근거  
+* reliably: 신뢰할 수 잇게, 확실하게   
+* deficit: 부족, 적자, 결핍  
+* immemorization: 기억 못 하는  
+* auxiliary: 보조적인, 부수적인, 지원하는  
+* viable: 실행가능한, 생존가능한, 지속가능한  
+* conjunction: 문장이나 단어 연결(and, but, because, although)  
+* regressive: 퇴보, 역행, 과거로 돌아가는  
+* auto-regressive: 회귀적   
+* efficacy: 효용성  
+* opted: 선택하다, 결정하다  
+* chuncking: 기억 위해 나눔  
+* parsing: 구조적으로 나눔  
+* rigorous: 엄격, 철저, 정밀  
+* chunk: 덩어리, 조각  
+* demarcate: 경계를 정하다, 구분하다  
+* reliable: 신뢰할 수 있는, 믿을 수 있는  
 
 
 <br/>
