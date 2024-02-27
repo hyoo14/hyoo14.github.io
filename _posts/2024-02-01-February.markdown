@@ -39,6 +39,12 @@ Monday, February 26, 2024
 o   
 ** obstacles                  
 
+Tuesday, February 27, 2024  
+* research   
+* class     
+o   
+** tired, sleepy                    
+
 
 
 {% highlight ruby %}
