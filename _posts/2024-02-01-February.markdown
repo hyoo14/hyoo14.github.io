@@ -51,6 +51,12 @@ Wednesday, February 28, 2024
 o   
 ** so tired, need more sleep                  
 
+Thursday, February 29, 2024  
+* research   
+* class     
+o   
+** a lot to do...          
+
 
 
 {% highlight ruby %}
