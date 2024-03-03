@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "[2023]DrBERT: A Robust Pre-trained Model in French for Biomedical and Clinical domains"  
+date:   2024-03-03 18:19:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+
+* 사전 훈련된 언어 모델들이 의료 분야에서 높은 성능을 보였으며, 이는 주로 영어 자료에 기반함
+* 이 연구에서는 프랑스어 기반 공개 웹 데이터와 개인 의료 데이터로 훈련된 여러 PLMs를 비교 분석
+* PLMs의 성능을 최적화하기 위한 다양한 학습 전략을 평가  
+* 특히, "DrBERT"라는 프랑스어 기반 바이오메디컬 전문 PLM을 소개  
+** 이는 현재까지 자유 라이선스로 이용 가능한 가장 큰 의료 데이터 코퍼스에서 훈련됨  
+* 특정 도메인에서 PLMs의 효과성을 향상시킬 수 있는 새로운 방안(다양한 의료 관련 텍스트 소스를 크롤링-질병 및 상태에 대한 설명, 치료 및 약물 정보, 일반 건강 관련 조언, 공식 과학 회의 보고서, 익명화된 임상 사례, 과학 문헌, 논문, 프랑스어 번역 쌍, 대학 건강 과정)을 제시   
+
+
+* Pre-trained language models have shown high performance in the medical field, mainly based on English resources
+* This study compares several PLMs trained on French-based public web data and private medical data
+* Evaluates various learning strategies to optimize the performance of PLMs
+* Introduces "DrBERT," a French-based biomedical specialized PLM
+** This is trained on the largest medical data corpus available under a free license to date
+* Presents a new approach to enhance the effectiveness of PLMs in specific domains by crawling various medical related text sources(descriptions of diseases and conditions, treatment and medication information, general health advice, official scientific conference reports, anonymized clinical cases, scientific literature, theses, French translation pairs, university health courses)
+
+
+
+
+Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1m06sdY73i6gCXT-akaT-Q6XmvEECA943?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* 
+<br/>
+
+# 1 Introduction  
