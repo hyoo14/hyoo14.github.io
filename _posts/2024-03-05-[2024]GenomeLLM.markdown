@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "[2022]Exploring Genomic Large Language Models: Bridging the Gap between Natural Language and Gene Sequences"  
+date:   2024-03-05 09:50:11 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+짧은 요약(Abstract) :    
+
+* 유전체 서열화 기술의 급속한 발전과 서열 데이터의 축적으로 비프로그래머 사용자를 위한 더 사용자 친화적인 분석 도구에 대한 수요가 증가
+* 이러한 요구를 지원하기 위해, 우리는 간단한 문법을 이해하고 다양한 유형의 분석과 작업을 수행할 수 있는 GenomicLLM이라는 통합 도구를 개발
+* GenomicLLM 모델은 세 개의 대규모 공개 접근 데이터 세트를 사용하여 훈련되었으며, 서열과 비서열 입력을 포함한 혼합 코퍼스에서 더 나은 이해를 가능하게 하는 하이브리드 토큰화 접근 방식을 개발
+* GenomicLLM은 DNABERT-2 및 HyenaDNA와 같은 최신 도구와 비교하여 분류 작업에서 비슷한 성능을 보이며, 이러한 도구로는 수행할 수 없는 다른 회귀 및 생성 작업도 수행
+* 이 연구는 유전자 서열과 자연 언어 코퍼스의 혼합을 사용한 성공적인 대규모 언어 모델을 여기에 보여주며, 이는 더 넓은 범위의 응용 프로그램을 가능하게 함  
+
+
+
+* The GenomicLLM model was trained using three large public datasets and developed a hybrid tokenization approach that enables a better understanding of mixed corpora, including both sequence and non-sequence inputs
+* It performs similarly to the latest tools like DNABERT-2 and HyenaDNA in classification tasks but also handles other regression and generation tasks that these tools cannot
+* This research demonstrates a successful large-scale language model using a mix of genetic sequences and natural language corpora, enabling a broader range of applications
+
+Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* 
+<br/>
+
+# 1 Introduction  
