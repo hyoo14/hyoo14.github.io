@@ -38,11 +38,18 @@ Monday, March 4, 2024
 o   
 ** need more sleep      
 
-Tuesday, March 6, 2024  
+Tuesday, March 5, 2024  
 * research   
 * class     
 o   
 ** make relationship less tense       
+
+Wednesday, March 6, 2024  
+* research   
+* class     
+o   
+** so sleepy.. why?(not enough sleep.. it is true)         
+
 
 {% highlight ruby %}
 
