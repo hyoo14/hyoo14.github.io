@@ -50,6 +50,20 @@ Wednesday, March 6, 2024
 o   
 ** so sleepy.. why?(not enough sleep.. it is true)         
 
+Thursday, March 7, 2024  
+* research   
+* class     
+o   
+** forgot to git update  
+
+Friday, March 8, 2024  
+* research   
+* class     
+o   
+** should do many things but do not have enought time          
+         
+
+
 
 {% highlight ruby %}
 
