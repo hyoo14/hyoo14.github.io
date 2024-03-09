@@ -62,7 +62,10 @@ Friday, March 8, 2024
 o   
 ** should do many things but do not have enought time          
          
-
+Saturday, March 9, 2024  
+* research   
+* class     
+o   
 
 
 {% highlight ruby %}
