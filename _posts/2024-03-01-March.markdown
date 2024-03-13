@@ -45,6 +45,11 @@ Tuesday, March 12, 2024
 o   
 ** not good schedule from the bed      
 
+Wednesday, March 13, 2024  
+* research   
+* class     
+o   
+** tired eye problem         
 
 {% highlight ruby %}
 

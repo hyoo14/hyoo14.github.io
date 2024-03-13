@@ -1,0 +1,29 @@
+I think the background for using incremental methods is significant. As new data floods in due to advances in sequencing technologies, it becomes impractical to re-search and re-align the entire dataset each time. By employing incremental methods, we can maintain the previous search results and only need to process the new data. This not only conserves computing resources but also saves time, making it a valuable approach in our data handling strategy.
+
+
+
+
+
+
+Our approach involves adapting the merge module of the incremental method, iBlast, to develop iMMseqs2. Instead of solely relying on blast XML, we experimented with accepting blast m8 inputs and found it significantly saves time. Therefore, we propose a version of iMMseqs2 that accepts blast m8 file formats. We're also working on implementing XML support, but there are some issues with merging due to the complexity of the tags. However, iDiamond is capable of handling XML.
+
+Additionally, we chose the ASTRAL SCOPe dataset because iBlast tends to perform complex calculations and doesn't work as well with nucleotides.
+
+
+
+
+
+
+
+For the dataset, I'll make graphs such as species distribution, protein class distribution, fold distribution, etc. The key point here is that it's highly imbalanced data, which can be a reason for low classification accuracy.
+Additionally, we chose the ASTRAL SCOPe dataset because iBlast tends to perform complex calculations and doesn't work as well with nucleotides.
+
+
+
+
+For the experiment, it would be beneficial to add the results as the query size increases. I have already included results for the opposite scenario, where the database size grows. I've obtained various outcomes using iDiamond/iMMseqs2 for classification, but some results seem odd, so I'll need to retest them. I plan to add this information by today.
+
+
+
+
+In our future work, I am considering applying incremental methods to classification. Some alignment methods have shown promising performance in specific classifications. For example, diamond and mmseqs2 have demonstrated good results in antibiotic resistance classification. I think there's potential to apply incremental methods in these areas as well.
