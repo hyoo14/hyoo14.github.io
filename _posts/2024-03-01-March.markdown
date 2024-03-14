@@ -51,6 +51,13 @@ Wednesday, March 13, 2024
 o   
 ** tired eye problem         
 
+Thursday, March 14, 2024  
+* research   
+* class     
+o   
+** need rest for eyes   
+
+
 {% highlight ruby %}
 
 
