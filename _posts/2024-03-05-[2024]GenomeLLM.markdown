@@ -36,6 +36,100 @@ Useful sentences :
 
 # 단어정리  
 * versatile: 다재다능함이나 여러 가지 용도나 기능을 가진 것을 의미. 사람, 물건, 아이디어 등이 다양한 상황이나 목적에 맞게 적용될 수 있을 때 이를 ‘versatile’이라고 표현  
+* Ternary: 삼진.. ex)삼진분류(이진분류의 3항 버전)  
 <br/>
 
-# 1 Introduction  
+# 동기 및 목적  
+* 유전체 서열 데이터의 빠른 발전과 축적에 따라, 비전문가 사용자도 사용하기 쉬운 분석 도구의 필요성이 증가  
+* GenomicLLM은 이러한 요구를 충족시키기 위해 개발  
+
+# 모델 개발  
+* GenomicLLM은 GenomicLLM_GRCh38, Genome Understanding Evaluation, GenomicBenchmarks와 같은 세 가지 대규모 공개 데이터셋을 사용하여 훈련  
+* 혼합 코퍼스에서 더 나은 이해를 돕기 위해 하이브리드 토큰화 접근 방식이 개발  
+
+# 성능 및 응용  
+* GenomicLLM은 분류 작업에서 DNABERT-2 및 HyenaDNA와 비교할 수 있는 성능을 보임  
+* 또한 기존 모델이 수행할 수 없는 회귀 및 생성 작업도 수행할 수 있음  
+
+# 가용성  
+* 코드와 데이터는 GitHub과 Zenodo를 통해 접근할 수 있음  
+
+# 데이터셋과 작업: 여러 유형의 유전체 시퀀스 분류 작업에 사용된 데이터셋과 해당 작업들  
+* 인간 스플라이스 사이트 예측(Human Splice Site Prediction): 인간 유전체에서 스플라이스 사이트의 존재를 예측하여, 다양한 전사체가 어떻게 생성되는지 이해하고 질병을 일으키는 돌연변이와 그 메커니즘을 식별하는 데 도움  
+
+* 인간 강화기 검출(Human Enhancers Detection): 강화기 시퀀스와 비강화기 시퀀스를 구별하는 이진 분류를 수행, 이 작업은 유전자 발현 조절의 중요한 요소인 강화기를 식별하는 데 중요  
+
+* 인간 프로모터 검출(Human Promoters Detection): 프로모터 시퀀스와 비프로모터 시퀀스를 구별하는 이진 분류를 수행, 프로모터는 유전자 발현의 시작점을 결정하는 중요한 요소   
+
+* 인간 개방 크로마틴 영역 검출(Human OCR Detection): 개방 크로마틴 영역(OCR) 시퀀스와 비OCR 시퀀스를 구별하는 이진 분류를 수행, OCR은 유전자 조절과 발현에 중요한 역할  
+
+* 인간 규제 요소 검출(Human Regulatory Detection): 강화기 시퀀스, 프로모터 시퀀스, OCR 시퀀스를 구별하는 삼항 분류를 수행  
+
+* 인간 전사 인자 결합 부위 예측(Human Transcription Factor Binding Site Prediction): 시퀀스가 전사 인자 결합 부위인지 여부를 예측하는 이진 분류    
+
+* 인간 개방 독서 프레임 검출(Human Open Reading Frame (ORF) Detection): 세 개의 독서 프레임 중 어떤 것이 기능적인 단백질을 생성하는지 식별  
+
+* 인간 시퀀스 방향 검출(Human Seq Direction Detection): 시퀀스가 순방향(5'에서 3'까지)인지 역방향(3'에서 5'까지)인지를 구별하는 이진 분류 작업  
+
+* 인간 유전자 바이오타입 검출(Human Gene Biotype Detection): 시퀀스가 단백질 코딩 유전자에 속하는지 아니면 비코딩 유전자(예: 가성유전자, lncRNAs, miRNAs 등)에 속하는지를 구별하는 이진 분류  
+
+* 구아닌-시토신 함량 예측(Guanine-cytosine Content Prediction): 입력 시퀀스의 GC 함량을 계산하는 회귀 작업  
+
+* 핵산 시퀀스에서 아미노산 시퀀스 생성(Generation of Amino Acid Sequence from Nucleotide Sequence, NT2AA): 핵산 시퀀스를 바탕으로 해당하는 아미노산 시퀀스를 생성  
+
+* 인간 역보완 시퀀스 생성(Human Reverse Complement Sequence Generation): 입력 시퀀스에 기반하여 역방향 시퀀스, 보완 시퀀스, 또는 역보완 시퀀스를 생성  
+
+* 인간 유전자 설명 생성(Human Gene Description Generation): 부분 유전자 시퀀스와 주석 정보(예: ID)의 조합을 바탕으로 유전자에 대한 설명 정보를 생성  
+
+* 텍스트 시퀀스 독해력(Reading Comprehension Task): 텍스트와 시퀀스 기반 정보를 모두 이해하고 입력 질문에 대한 정확한 답변을 추출할 수 있도록 하는 작업  
+
+# 결과 및 논의  
+* GenomicLLM은 다양한 유전체 시퀀스 분석 작업을 수행  
+* 일부 분류 작업에서는 기존 도구보다 우수한 성능을 보임  
+* 또한, 회귀 및 생성 작업에서도 뛰어난 성능을 보임  
+
+# 토큰화 접근 방식  
+* 유전자 서열과 자연어 텍스트의 차이를 고려한 하이브리드 토큰화 접근 방식이 사용  
+* 이 접근 방식은 서로 다른 코퍼스 유형에 대해 다른 처리 방법을 적용  
+
+# 미래 계획  
+* GenomicLLM은 현재 간단한 문법을 사용하여 자연어 대화를 지원하지만, 향후 더 큰 자연어 모델을 기반으로 미세 조정을 수행하여 일상 대화 스타일로 자연어 질문에 답변할 수 있는 전체 유전체 시퀀스 분석 도구로 발전시킬 계획  
+
+
+
+* The rapid progress in genome sequencing technologies and the buildup of sequence data have led to a growing demand for analysis tools that are more accessible to non-programmers
+* To meet these needs, authors have developed an all-in-one tool named GenomicLLM, capable of understanding simple grammar in questions and performing various types of analyses and tasks
+* The GenomicLLM model was trained using three large, publicly accessible datasets (GenomicLLM_GRCh38, Genome Understanding Evaluation, GenomicBenchmarks) and utilizes a hybrid tokenization approach for better comprehension of mixed corpora, including sequence and non-sequence inputs
+* GenomicLLM exhibits comparable performance in classification tasks to state-of-the-art models like DNABERT-2 and HyenaDNA, and can also undertake additional regression and generation tasks that those models cannot
+* This study presents a successful large language model that uses a mix of gene sequences and natural language corpora, enabling a broader range of applications
+* Authors plan to fine-tune this model based on a larger natural language model to evolve it into a comprehensive genome sequence analysis tool that can answer natural language questions in a conversational style
+
+*Task List  
+** Human Enhancers Detection: Binary classification task differentiates between enhancer and non-enhancer sequences, essential for identifying elements that regulate gene expression
+
+** Human Promoters Detection: Binary classification task distinguishes between promoter and non-promoter sequences, crucial for determining the starting points of gene expression
+
+** Human OCR Detection: Binary classification task separates Open Chromatin Region (OCR) sequences from non-OCR sequences, significant for understanding gene regulation and expression
+
+** Human Regulatory Detection: Ternary classification task differentiates between enhancer sequences, promoter sequences, and OCR sequences  
+
+** Human Transcription Factor Binding Site Prediction: Binary classification task predicts whether a sequence is a Transcription Factor Binding Site  
+
+** Human Open Reading Frame (ORF) Detection: Identification task which of the three reading frames within a nucleotide sequence produces the functional protein   
+
+** Human Seq Direction Detection: Binary classification task determines whether a sequence is in the forward (5' to 3') or reverse (3' to 5') direction  
+
+** Human Gene Biotype Detection: Binary classification task discerns whether a sequence belongs to a protein-coding gene or a non-coding gene (like pseudogenes, lncRNAs, miRNAs, etc.)   
+
+** Guanine-cytosine Content Prediction: Regression task calculates the GC content of the input sequence  
+
+** Generation of Amino Acid Sequence from Nucleotide Sequence (NT2AA): Generating task for the corresponding amino acid sequences based on nucleotide sequences   
+
+** Human Reverse Complement Sequence Generation: Generating task based on the input sequence, for the reverse sequence, the complementary sequence, or the reverse complementary sequence.
+
+** Human Gene Description Generation: Generating task to creates descriptive information about a gene based on a combination of partial gene sequences and accompanying annotations like IDs   
+
+** Reading Comprehension Task: Task enables the model to comprehend both textual and sequence-based information within the input and extract the correct answer to the input question
+
+
+
