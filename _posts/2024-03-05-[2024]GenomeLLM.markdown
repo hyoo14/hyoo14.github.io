@@ -104,7 +104,7 @@ Useful sentences :
 * This study presents a successful large language model that uses a mix of gene sequences and natural language corpora, enabling a broader range of applications
 * Authors plan to fine-tune this model based on a larger natural language model to evolve it into a comprehensive genome sequence analysis tool that can answer natural language questions in a conversational style
 
-*Task List  
+* Tasks List  
 ** Human Enhancers Detection: Binary classification task differentiates between enhancer and non-enhancer sequences, essential for identifying elements that regulate gene expression
 
 ** Human Promoters Detection: Binary classification task distinguishes between promoter and non-promoter sequences, crucial for determining the starting points of gene expression
