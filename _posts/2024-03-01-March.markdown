@@ -57,6 +57,18 @@ Thursday, March 14, 2024
 o   
 ** need rest for eyes   
 
+Friday, March 15, 2024  
+* research   
+* class     
+o   
+** rest with archive81(need rest for eyes...)  
+
+Saturday, March 16, 2024    
+* research   
+* class     
+o   
+** resume to work          
+
 
 {% highlight ruby %}
 
