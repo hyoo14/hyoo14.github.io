@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "[2024]ChatQA: Building GPT-4 Level Conversational QA Models"  
+date:   2024-03-16 22:16:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약:  
+
+짧은 요약(Abstract) :    
+* 
+
+Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/15zm7pKvkg67pOnHOEQun1FWYZROrQ6y_?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* 
+<br/>
+
+# 1. Introduction  
+* 
