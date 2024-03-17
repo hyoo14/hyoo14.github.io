@@ -69,6 +69,13 @@ Saturday, March 16, 2024
 o   
 ** resume to work          
 
+Sunday, March 17, 2024    
+* research   
+* class     
+o   
+** refresh from sc pa              
+
+
 
 {% highlight ruby %}
 
