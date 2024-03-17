@@ -8,10 +8,18 @@ categories: study
 {% highlight ruby %}
 
 
-한줄 요약:  
+한줄 요약: LLM을 이용한 Data Augmentation을 통해 데이터가 적은 언어에서 좋은 벤치마크 성능을 보임, 하지만 타밀어처럼 데이터 너무 적을 경우 효과 낮았는데 이는 토크나이저 학습이 매우 중요함을 의미    
 
 짧은 요약(Abstract) :    
-* 
+* 이 논문은 큰 언어 모델(Large Language Models, LLMs)을 활용하여 다국어 상식 추론 데이터셋에서 극도로 제한된 학습 데이터를 보강하는 가능성을 탐구함  
+* 여러 LLMs, 즉 Dolly-v2, StableVicuna, ChatGPT, 그리고 GPT-4를 사용하여 세 가지 데이터셋인 XCOPA, XWinograd, 그리고 XStoryCloze를 보강함  
+* 이후 합성 데이터를 사용하여 작은 다국어 모델인 mBERT와 XLMR을 미세 조정한 효과를 평가함  
+* 영어로 생성된 데이터와 대상 언어로 생성된 데이터를 비교하며, LLM에 의해 생성된 데이터를 포함하는 것이 상당한 정확도 향상, 예를 들어 최상의 경우 13.4 정확도 점수 개선을 가져온다는 점에서 전반적인 이점을 보여줌  
+* 또한, 다양한 언어로 생성된 예시의 자연스러움과 논리적 일관성을 평가하기 위해 원어민 평가자를 활용한 인간 평가를 수행함  
+* 평가 결과, ChatGPT와 GPT-4와 같은 LLM은 대부분의 언어에서 자연스럽고 일관된 텍스트를 생성하는 데 뛰어난 능력을 보이지만, 타밀어와 같은 특정 언어에서 의미 있는 텍스트를 생성하는 데 어려움을 겪음  
+* ChatGPT는 원본 데이터셋과 비교하여 타당한 대안을 생성하는 데 있어 부족함을 보이지만, GPT-4에서 생성된 예시는 논리적 일관성 측면에서 경쟁력을 보임  
+* 생성된 데이터를 공개하여 재현성과 공공 사용을 가능하게 함  
+
 Useful sentences :  
 
 
@@ -29,14 +37,19 @@ Useful sentences :
 <br/>
 
 # 1. Introduction  
-* 이 논문은 큰 언어 모델(Large Language Models, LLMs)을 활용하여 다국어 상식 추론 데이터셋에서 극도로 제한된 학습 데이터를 보강하는 가능성을 탐구함  
-* 여러 LLMs, 즉 Dolly-v2, StableVicuna, ChatGPT, 그리고 GPT-4를 사용하여 세 가지 데이터셋인 XCOPA, XWinograd, 그리고 XStoryCloze를 보강함  
-* 이후 합성 데이터를 사용하여 작은 다국어 모델인 mBERT와 XLMR을 미세 조정한 효과를 평가함  
-* 영어로 생성된 데이터와 대상 언어로 생성된 데이터를 비교하며, LLM에 의해 생성된 데이터를 포함하는 것이 상당한 정확도 향상, 예를 들어 최상의 경우 13.4 정확도 점수 개선을 가져온다는 점에서 전반적인 이점을 보여줌  
-* 또한, 다양한 언어로 생성된 예시의 자연스러움과 논리적 일관성을 평가하기 위해 원어민 평가자를 활용한 인간 평가를 수행함  
-* 평가 결과, ChatGPT와 GPT-4와 같은 LLM은 대부분의 언어에서 자연스럽고 일관된 텍스트를 생성하는 데 뛰어난 능력을 보이지만, 타밀어와 같은 특정 언어에서 의미 있는 텍스트를 생성하는 데 어려움을 겪음  
-* ChatGPT는 원본 데이터셋과 비교하여 타당한 대안을 생성하는 데 있어 부족함을 보이지만, GPT-4에서 생성된 예시는 논리적 일관성 측면에서 경쟁력을 보임  
-* 생성된 데이터를 공개하여 재현성과 공공 사용을 가능하게 함  
+* 자연어 처리(NLP) 모델의 성공은 훈련 데이터의 가용성과 품질에 크게 의존함  
+* 이는 영어 이외의 언어에 대한 데이터가 일반적으로 제한되어 있다는 점에서 다국어 NLP에 있어 중요한 도전 과제임(Ponti et al. 2019; Joshi et al. 2020; Whitehouse et al. 2022)   
+* 데이터 부족 문제를 해결하는 한 가지 방법은 제로샷 교차 언어 전이나 다양한 언어에서의 다중 과제 학습을 통해 접근하는 것이며, 이는 수동으로 생성된 영어 학습 데이터에서의 제로샷 전이 학습을 통해 수행될 수 있음  
+* 저자들의 실험은 상대적으로 큰 규모의 합성 데이터셋으로 모델을 훈련시키는 것이 제한된 수동 생성 데이터셋으로 훈련시키는 것보다 더 나은 성능을 달성함을 보여줌  
+* 이러한 발견은 LLM으로 생성된 합성 데이터가 하류 과제에 특화된 모델을 개선하는 데 유용함을 실증적으로 확인함  
+* XCOPA 데이터셋에서 다국어 데이터 합성을 확장한 결과, ChatGPT와 GPT-4를 사용하여 다국어 데이터셋을 생성하는 것이 영어로 생성된 데이터에 대한 교차 언어 제로샷 전이의 효과를 일반적으로 능가함을 발견함  
+* 저자들은 다양한 언어에서 생성된 데이터셋의 질을 평가하기 위해 원어민 평가자에게 생성된 데이터에 대한 자연스러움과 논리적 일관성을 평가하도록 요청함  
+* 평가 결과, ChatGPT와 GPT-4가 생성한 데이터는 대부분의 언어에서 높은 자연스러움을 보이며 심지어 원본 데이터를 능가하는 경우도 있음을 보여줌  
+* 그러나 타밀어와 같은 특정 언어에서는 두 모델 모두 자연스러운 텍스트를 생성하는 데 실패함   
+* ChatGPT로 생성된 데이터셋 예시를 평가할 때 더 그럴듯한 옵션과 관련하여 원래 인간이 만든 데이터와 비교할 때 주목할 만한 일관성이 없음을 밝혀냄  
+* 반면, GPT-4는 인간이 작성한 데이터와 동등한 수준의 성능을 보임  
+* 요약하자면, LLM을 이용한 데이터 보강은 가능성이 있음을 보여주나, 데이터 생성에 사용된 LLM의 선택이 결과 데이터의 질과 고려되는 언어의 적용 가능성에 상당한 영향을 미침  
+* 더 발전된 모델 예를 들어 GPT-4에 접근할 수 없는 상황에서는 다른 모델을 사용할 수 있으나, 이는 특정 비영어권 언어에서 성능이 떨어질 수 있는 문제 - GPT-4에도 존재하는 문제 -와 논리적 일관성에 대한 우려를 낳을 수 있음  
 <br/>  
 
 # 2. Related Work  
@@ -164,3 +177,31 @@ Useful sentences :
 * LLMs를 활용한 합성 데이터 생성, 특히 다국어 데이터에 대해 접근하는 것은 감수성과 존중을 요구함  
 * LLMs가 웹 데이터에 기반하여 훈련되었기 때문에, 특정 언어나 커뮤니티에 대한 편견이나 스테레오타입을 전파할 위험이 있음  
 * 따라서, 특정 언어나 커뮤니티를 대표하는 문화적 정체성을 반영할 때는 언어학자, 언어 전문가, 커뮤니티 대표와 협력하여 스테레오타입의 전파나 문화적 민감성을 피할 필요가 있음  
+
+
+<br/>  
+# 요약  
+* 이 논문은 큰 언어 모델(LLMs)을 활용하여 다국어 상식 추론 데이터셋에서 극도로 제한된 학습 데이터를 보강하는 가능성을 탐구함
+* 여러 LLMs, 즉 Dolly-v2, StableVicuna, ChatGPT, 그리고 GPT-4를 사용하여 세 가지 데이터셋인 XCOPA, XWinograd, 그리고 XStoryCloze를 보강함  
+** XCOPA (Cross-lingual Choice of Plausible Alternatives): COPA (Choice of Plausible Alternatives)의 확장으로, 상황과 질문이 주어지며, 주어진 두 가지 선택지 중에서 가장 적합한 하나를 선택해야 하는 과제로 XCOPA는 이를 11개의 다양한 언어로 확장하여 다국어 상식 추론 능력을 평가  
+** XWinograd (Cross-lingual Winograd Schema Challenge): Winograd Schema Challenge (WSC)는 고전적인 자연어 이해 과제로, 대명사의 모호성을 해결하기 위해 상식과 문맥적 이해가 필요한 문제들을 포함, XWinograd는 WSC를 여러 언어로 확장하여 다국어 상황에서의 언어 이해와 상식 추론 능력을 평가  
+** XStoryCloze: StoryCloze 테스트는 일련의 문장으로 이루어진 짧은 이야기가 주어지고, 이야기의 결말로 가장 적합한 문장을 선택하는 과제, 이 테스트는 언어 이해와 논리적 추론 능력을 평가하는 데 사용,  XStoryCloze는 이 과제를 다양한 언어로 확장하여 다국어 이해 및 추론 능력을 평가   
+* 영어로 생성된 데이터와 대상 언어로 생성된 데이터를 비교하며, LLM에 의해 생성된 데이터를 포함하는 것이 상당한 정확도 향상을 가져온다는 점에서 전반적인 이점을 보여줌  
+* 평가 결과, ChatGPT와 GPT-4와 같은 LLM은 대부분의 언어에서 자연스럽고 일관된 텍스트를 생성하는 데 뛰어난 능력을 보이지만, 타밀어와 같은 특정 언어에서 의미 있는 텍스트를 생성하는 데 어려움 을 겪음  
+** 타밀어뿐만 아니라 텔루구어와 칸나다어와 같은 유사 언어에 대한 토크나이저가 제대로 훈련되지 않았기 때문에 이러한 언어에서 사용할 수 없는 생성을 초래하는 것으로 의심됨    
+** 토크나이저 학습이 매우 중요함을 의미  
+
+* This paper explores the possibility of enhancing limited training data in multilingual common sense reasoning datasets using large language models
+* The authors use various LLMs, namely Dolly-v2, StableVicuna, ChatGPT, and GPT-4 to augment three datasets like XCOPA, XWinograd, and XStoryCloze  
+** XCOPA (Cross-lingual Choice of Plausible Alternatives) is an extension of COPA (Choice of Plausible Alternatives)  
+*** It involves choosing the most plausible option out of two given choices based on a situation and a question  
+*** XCOPA expands this to 11 different languages to assess multilingual common sense reasoning ability    
+** XWinograd (Cross-lingual Winograd Schema Challenge) is based on the Winograd Schema Challenge (WSC)  
+*** WSC is a classic natural language understanding task that requires common sense and contextual understanding to resolve pronoun ambiguity  
+*** XWinograd extends WSC to several languages to evaluate language understanding and common sense reasoning in a multilingual context  
+** XStoryCloze involves selecting the most suitable sentence as the ending of a short story made up of a series of sentences  
+*** This task tests language comprehension and logical reasoning abilities   
+*** XStoryCloze extends this task to various languages to assess multilingual understanding and reasoning capabilities   
+* Comparing data generated in English with data generated in target languages shows that including data created by LLMs can significantly improve accuracy, demonstrating a general benefit    
+* The evaluation results show that LLMs like ChatGPT and GPT-4 are excellent at producing natural and consistent text in most languages, but they struggle to generate meaningful text in certain languages, such as Tamil  
+** The lack of proper tokenizer training for similar languages like Telugu and Kannada is suspected to cause the inability to generate content in these languages, highlighting the importance of tokenizer training  
