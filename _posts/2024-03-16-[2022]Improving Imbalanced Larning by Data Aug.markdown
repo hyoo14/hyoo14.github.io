@@ -32,7 +32,31 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-* 
+* ubiquitous: 어디에나 있는, 흔한  
+* contrived: 인위적인, 고안된  
+* ADME: absorption, distribution, metabolism, and excretion : 흡수, 분포, 대사, 배설 (약물의 체내 동태를 나타내는 용어)   
+* predispose: ~하는 경향을 만들다, ~에 취약하게 만들다  
+* owing: ~때문에, ~로 인하여  
+* paucity: 부족, 결핍  
+* hindrance: 방해, 장애  
+* interpolating: 보간하는, 중간값을 추정하는  
+* compensate: 보상하다, 보완하다  
+* weighting schemes: 가중치 체계  
+* shortcoming: 단점, 결점  
+* interpolation based: 보간 기반의  
+* perturbation: 교란, 작은 변화  
+* SMOTE-Synthetic Minority Over-sampling Technique: SMOTE-합성 소수 클래스 오버 샘플링 기법  
+* diminishes: 감소하다, 줄어들다  
+* henceforth: 이제부터, 앞으로  
+* schematically: 개략적으로, 도식적으로  
+* consists of: ~로 구성되다  
+* intermediate: 중간의, 중급의  
+* intermediate language: 중간 언어 (프로그래밍에서의 중간 코드나 데이터 변환에서의 중간 단계 언어를 의미할 수 있음)  
+* pharmacokinetics: 약동학 (약물이 생체 내에서 어떻게 흡수, 분포, 대사, 배설되는지를 연구하는 학문)  
+* albeit: 비록 ~이지만  
+* linear probing: 선형 탐사 (해시 테이블에서 충돌이 발생했을 때, 다음 빈 슬롯을 찾기 위해 순차적으로 탐색하는 방법)  
+* deem: ~라고 여기다, ~라고 판단하다  
+
 <br/>
 
 # 1. Introduction  
