@@ -31,7 +31,13 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-* 
+* conjecture: 추측, 가설  
+* segment: 구분, 조각, 구분하다  
+* aside: 잠시 주제에서 벗어나 다른 이야기 하겠습니다  
+* swing ordering: 유연성이나 적응성을 나타낼 수 있음. 이 맥락에서 “swing ordering”은 주문 프로세스가 매우 유동적이며, 고객의 요구 사항이나 시장 조건의 변화에 신속하게 적응할 수 있는 시스템을 의미  
+* speculate: 추측하다  
+
+ 
 <br/>
 
 # 1. Introduction  
