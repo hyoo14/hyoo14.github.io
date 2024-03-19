@@ -8,7 +8,7 @@ categories: study
 {% highlight ruby %}
 
 
-한줄 요약: 
+한줄 요약: IsarPipeline은 MMseqs2와 PSI-BLAST를 결합하여(및 메모리 잠금 품..) 단일 쿼리 정렬의 런타임을 53초로 단축시키며, PSI-BLAST에 비해 성능이 비슷하거나 약간 더 나은 PSSM 파일을 생성함  
 
 짧은 요약(Abstract) :    
 * 여러 생물정보학 및 계산 생물학 모델에서 단백질의 기능이나 구조를 예측하기 위해 사용되는 기계학습 모델들은 PSI-BLAST에 의해 생성된 다중 시퀀스 정렬이나 위치 특이적 점수 행렬의 요약된 진화 정보에 의존함  
@@ -38,7 +38,8 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-*  
+* convertail: 변환하는 모듈  
+* SOM: Supplementary Online Material: 논문 본문에 포함되지 않은 추가적인 정보, 데이터, 분석, 그림 등을 담고 있는 온라인 부록을 의미  
 <br/>
 
 # 1. INTRODUCTION  
