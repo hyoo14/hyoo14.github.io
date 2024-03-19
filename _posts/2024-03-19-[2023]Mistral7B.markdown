@@ -8,7 +8,7 @@ categories: study
 {% highlight ruby %}
 
 
-한줄 요약: 
+한줄 요약: GQA(Groupt Query Attention), SWA(Sliding Window Attention), 캐시 등을 사용해서 좀 더 빠르고 효율적인 LLM개발  
 
 짧은 요약(Abstract) :    
 * 저자들은 Mistral 7B를 소개함  
@@ -31,7 +31,9 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-* 
+* myriad of: 다양한, 무수한  
+* incur: 초래하다, 발생하다, 끼치다  
+* harassing: '괴롭히다', '폭력적이거나 성가신 행동을 반복적으로 하다'  
  
 <br/>
 
