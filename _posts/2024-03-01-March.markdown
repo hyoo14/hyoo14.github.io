@@ -49,6 +49,12 @@ Wednesday, March 20, 2024
 * class     
 o   
 
+Thursday, March 21, 2024    
+* research   
+* class     
+o   
+** sooooo busy 
+
 
 
 {% highlight ruby %}
