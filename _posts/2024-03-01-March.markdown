@@ -55,6 +55,11 @@ Thursday, March 21, 2024
 o   
 ** sooooo busy 
 
+Friday, March 22, 2024    
+* research   
+* class     
+o   
+** should be good to kin   
 
 
 {% highlight ruby %}
