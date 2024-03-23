@@ -61,6 +61,12 @@ Friday, March 22, 2024
 o   
 ** should be good to kin   
 
+Saturday, March 23, 2024    
+* research   
+* class     
+o   
+** ㅂㅅㅌhealing  
+
 
 {% highlight ruby %}
 
