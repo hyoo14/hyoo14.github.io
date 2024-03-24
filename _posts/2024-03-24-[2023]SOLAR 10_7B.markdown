@@ -11,7 +11,22 @@ categories: study
 한줄 요약: 
 
 짧은 요약(Abstract) :    
-* 
+* 저자들은 107억 개의 파라미터를 가진 대규모 언어 모델인 SOLAR 10.7B를 소개함  
+
+ 
+이 모델은 다양한 자연어 처리 작업에서 우수한 성능을 보임  
+
+최근의 노력에서 영감을 받아 저자들은 깊이 업스케일링이라는 새로운 방법을 제안함  
+이 방법은 모델의 깊이를 증가시키며 지속적인 학습을 진행함  
+
+다른 방법들과 달리 깊이 업스케일링은 복잡한 변경 없이도 효율적임  
+실험 결과 이 방법이 소규모 모델을 고성능으로 만드는 데 유용함을 확인함  
+
+또한 저자들은 SOLAR 10.7B-Instruct라는 변형 모델을 개발함  
+이 모델은 지시사항을 더 잘 따르며, 기존 모델들보다 우수한 성능을 보임  
+
+마지막으로, SOLAR 10.7B는 넓은 접근과 응용을 가능하게 하는 Apache 2.0 라이선스로 공개됨 
+
   
 Useful sentences :  
 
@@ -20,7 +35,7 @@ Useful sentences :
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1-4yQiTSff1lSouND8XpgqwTrQuRDp_GQ)  
 [~~Lecture link~~]()  
 
 <br/>
@@ -30,7 +45,63 @@ Useful sentences :
 
 <br/>
 # 1 Introduction  
-* 
+* 자연어 처리(NLP) 분야는 대규모 언어 모델(LLM)의 도입으로 크게 변모함  
+이러한 발전은 인간 언어에 대한 이해와 상호작용을 향상시킴  
+그러나 점점 더 큰 모델을 훈련할 필요성과 같은 도전 과제를 가져옴  
+최근 작업들은 전문가의 혼합(MoE)과 같은 언어 모델의 효율적인 스케일링을 제안함  
+이러한 접근 방식은 효과적이지만 교육 및 추론 프레임워크에 비중있는 변경을 요구함  
+효과적이고 효율적으로 LLM을 확장하면서 사용의 용이성을 유지하는 것은 중요한 문제임 
+
+
+<br/>
+# 2 Depth Up/Scaling  
+저자들은 기존 모델의 사전 훈련된 가중치를 사용하여 더 큰 LLM으로 확장하는 것을 목표로 함  
+이를 위해 Komatsuzaki 등이 제안한 MoE 방식 대신, Tan과 Le에서 영감을 받은 깊이 방향 확장 전략을 선택함  
+그 다음으로 확장된 모델에 지속적인 사전 훈련을 적용함  
+기본 모델로는 32층의 Llama 2 구조를 선택하고, Mistral 7B에서 사전 훈련된 가중치로 초기화함  
+깊이 방향 확장에서는 n층의 기본 모델에서 시작하여, s층을 목표로 하는 확장 모델의 층 수를 설정함  
+이 과정에서 기본 모델을 복제한 후, 원본 모델의 마지막 m층과 복제본의 처음 m층을 제거하여, n-m 층을 가진 두 개의 모델을 생성함  
+이 두 모델을 연결하여 s = 2·(n-m) 층을 가진 확장 모델을 형성함  
+깊이 방향 확장 모델의 성능은 초기에 기본 LLM보다 떨어지므로, 추가적인 사전 훈련 단계를 적용함  
+실험을 통해 깊이 방향 확장이 확장 모델의 성능 회복을 빠르게 돕는 것을 관찰함 
+
+<br/>
+# 3 Training Details  
+깊이 업스케일링 후, 저자들은 SOLAR 10.7B에 두 단계의 미세조정을 수행함  
+첫 번째 단계는 지시사항 조정으로, 모델이 QA 형식의 지시사항을 따르도록 훈련시킴  
+대부분 오픈소스 데이터셋을 사용하지만, 모델의 수학적 능력을 강화하기 위해 수학 QA 데이터셋도 합성함  
+데이터셋 제작 방법은 다음과 같음  
+첫째, Math 데이터셋에서 초기 수학 데이터를 수집함  
+이후 MetaMath와 유사한 과정을 사용하여 시드 수학 데이터의 질문과 답변을 재구성함  
+재구성된 질문-답변 쌍을 QA 데이터셋으로 사용하고 'Synth. Math-Instruct'라고 명명함  
+
+두 번째 단계는 정렬 조정으로, 지시사항 조정을 거친 모델을 인간 또는 강력한 AI(예: GPT-4)의 선호도와 더 일치하도록 추가로 미세조정함  
+대부분 오픈소스 데이터셋을 사용하지만, 'Synth. Math-Instruct' 데이터셋을 활용하여 수학 중심의 정렬 데이터셋도 합성함  
+정렬 데이터 합성 과정은 다음과 같음  
+'Synth. Math-Instruct' 데이터의 재구성된 질문-답변 쌍이 모델의 수학적 능력 강화에 유용하다는 사실을 활용함  
+따라서 재구성된 질문을 프롬프트로 사용하고 재구성된 답변을 선택된 응답으로, 원본 답변을 거부된 응답으로 설정하여 {프롬프트 선택 거부} DPO 튜플을 생성함  
+재구성된 질문-답변 쌍에서 튜플을 집계하여 'Synth. Math-Alignment'라는 결과 데이터셋을 명명함 
+
+
+<br/>
+# 4 Results  
+저자들은 깊이 업스케일링(Depth Up/Scaling) 방법론을 제안함  
+이 방법은 기존 모델의 사전 훈련된 가중치를 사용하여 더 큰 모델로 확장하는 것을 목표로 함  
+Komatsuzaki 등이 제안한 MoE 방식 대신 Tan과 Le에서 영감을 받은 깊이 방향 확장 전략을 선택함  
+그 다음으로 확장된 모델에 지속적인 사전 훈련을 적용함  
+기본 모델로는 32층의 Llama 2 구조를 선택하고 Mistral 7B에서 사전 훈련된 가중치로 초기화함  
+깊이 방향 확장에서는 n층의 기본 모델에서 시작하여 s층을 목표로 하는 확장 모델의 층 수를 설정함  
+이 과정에서 기본 모델을 복제한 후, 원본 모델의 마지막 m층과 복제본의 처음 m층을 제거하여 n-m 층을 가진 두 개의 모델을 생성함  
+이 두 모델을 연결하여 s = 2·(n-m) 층을 가진 확장 모델을 형성함  
+깊이 방향 확장 모델의 성능은 초기에 기본 LLM보다 떨어지므로 추가적인 사전 훈련 단계를 적용함  
+실험을 통해 깊이 방향 확장이 확장 모델의 성능 회복을 빠르게 돕는 것을 관찰함   
+
+<br/>
+# 5 Conclusion  
+저자들은 깊이 업스케일링된 모델인 SOLAR 10.7B와 그 변형 모델인 SOLAR 10.7B-Instruct를 소개함  
+이 모델들은 107억 개의 파라미터를 가지고 있으며, Llama 2 Mistral 7B 및 Mixtral-7B-Instruct 같은 모델들을 능가하는 우수한 성능을 자연어 처리(NLP) 과제에서 보임  
+따라서, 깊이 업스케일링(DUS)은 소형 모델에서 고성능 LLM으로 확장하는데 효과적임이 증명됨  
+더 많은 탐색을 통해 DUS는 더욱 개선될 수 있으며, LLM을 효율적으로 스케일링하는 새로운 방법을 제시할 수 있음 
 
 
 
@@ -38,4 +109,44 @@ Useful sentences :
 
 <br/>
 # 요약  
-*  
+*  저자들은 107억 개의 파라미터를 가진 대규모 언어 모델 SOLAR 10.7B를 소개함
+
+이 모델은 자연어 처리 분야에서 우수한 성능을 보임
+
+깊이 업스케일링(DUS) 방법론을 통해 기존 모델을 더 큰 모델로 확장함
+
+기본 모델로는 Llama 2 구조를 사용하고, Mistral 7B의 가중치로 초기화함
+
+확장 모델은 기본 모델을 복제하고 일부 층을 제거하여 형성함
+
+확장 모델의 성능을 높이기 위해 추가적인 사전 훈련을 적용함
+
+SOLAR 10.7B는 지시사항을 따르는 능력이 향상된 SOLAR 10.7B-Instruct 모델로 변형됨
+
+이 변형 모델은 기존 모델들보다 더 나은 성능을 보임
+
+깊이 업스케일링은 소형 모델을 고성능 대규모 언어 모델로 확장하는 효과적인 방법임이 증명됨
+
+SOLAR 10.7B 모델은 Apache 2.0 라이선스로 공개되어 연구와 응용을 촉진함
+
+
+
+The authors introduce the SOLAR 10.7B, a large language model with 10.7 billion parameters
+
+This model demonstrates superior performance in natural language processing tasks
+
+Depth Up/Scaling (DUS) methodology is utilized to expand existing models into larger ones
+
+The base model employs the Llama 2 structure and is initialized with weights from Mistral 7B
+
+The expanded model is formed by duplicating the base model and removing certain layers
+
+Additional pre-training is applied to enhance the performance of the expanded model
+
+SOLAR 10.7B is transformed into SOLAR 10.7B-Instruct, which shows improved instruction-following capabilities
+
+This modified model outperforms previous models
+
+Depth Up/Scaling proves to be an effective method for scaling small models into high-performance large language models
+
+The SOLAR 10.7B model is made publicly available under the Apache 2.0 license to encourage research and application
