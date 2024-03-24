@@ -67,6 +67,12 @@ Saturday, March 23, 2024
 o   
 ** ㅂㅅㅌhealing  
 
+Sunday, March 24, 2024    
+* research   
+* class     
+o   
+** ㅍㄹㅂㄷㅅhealing  
+
 
 {% highlight ruby %}
 
