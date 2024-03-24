@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "[2023]TIES-MERGING: Resolving Interference When Merging Models"  
+date:   2024-03-24 17:05:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+* 
+Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1EY3YTGw00PVcptxf0Au_4tZzHH6r7tAL?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* 
+
+<br/>
+# 1. INTRODUCTION  
+* 
+
+
+
+# 요약  
+
+* 
