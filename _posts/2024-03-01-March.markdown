@@ -37,6 +37,12 @@ Monday, March 25, 2024
 o   
 ** ㅍㅇㅍletsgo  
 
+Tuesday, March 25, 2024    
+* research   
+* class     
+o   
+** ㅈㅈletsgo  
+
 
 
 {% highlight ruby %}
