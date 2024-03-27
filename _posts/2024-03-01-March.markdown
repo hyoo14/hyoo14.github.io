@@ -11,6 +11,43 @@ categories: study
 {% highlight ruby %}
 
 
+March week5   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Aug focus(B)  
+** iBlast(G)     
+** deep hierarchy  
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+*class
+** Genomics  
+** GT(GeneTherapy)  
+** RCRG  
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, March 25, 2024    
+* research   
+* class     
+o   
+** ㅍㅇㅍletsgo  
+
+Tuesday, March 25, 2024    
+* research   
+* class     
+o   
+** ㅈㅈletsgo  
+
+
+
+{% highlight ruby %}
+
+
 March week4   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** Aug focus(B)  
