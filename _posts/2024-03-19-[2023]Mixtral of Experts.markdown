@@ -43,7 +43,11 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-* 
+* Sparse Mixture of Experts, SMoE: 희소 전문가 혼합  
+* routing: "라우팅"이란 전문가의 혼합(Mixture of Experts, MoE) 모델에서 중요한 개념으로, 각 입력에 대해 어떤 전문가(또는 전문가 그룹)가 처리할지 결정하는 과정을 의미   
+* Passkey task: Mixtral 모델의 능력을 평가하는 데 사용된 합성 태스크에서 언급, 이 태스크는 모델이 긴 프롬프트에서 무작위로 삽입된 패스키를 검색하는 능력을 측정하도록 설계, Mixtral 모델은 패스키의 위치나 시퀀스 내의 컨텍스트 길이에 관계없이 100%의 검색 정확도를 달성.  
+
+
 
 <br/>
 # 1 Introduction    
