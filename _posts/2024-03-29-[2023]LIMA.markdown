@@ -1,0 +1,145 @@
+---
+layout: post
+title:  "[2023]LIMA: Less Is More for Alignment"  
+date:   2024-03-29 12:18:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+* 대규모 언어 모델은 보통 두 단계로 훈련됨  
+* 첫 번째는 원시 텍스트에서 비지도 사전 훈련을 받아 일반적인 목적의 표현을 학습하는 것    
+* 두 번째는 최종 과제와 사용자 선호도에 더 잘 맞도록 대규모 지시어 튜닝과 강화 학습을 받는 것  
+* 저자들은 이 두 단계의 상대적 중요성을 측정하기 위해, 강화 학습이나 인간 선호 모델링 없이, 오직 1000개의 신중하게 큐레이션된 프롬프트와 응답에 대한 표준 감독 손실로 미세 조정된 65B 파라미터 LLaMa 언어 모델인 LIMA를 훈련시킴  
+* LIMA는 훈련 데이터에서 단 몇 가지 예제만으로 특정 응답 형식을 따를 수 있는 놀라운 성능을 보여주며, 여행 일정 계획부터 대체 역사에 대한 추측에 이르는 복잡한 쿼리까지 다양한 것을 포함함  
+* 더욱이, 저자들의 모델은 훈련 데이터에 나타나지 않은 새로운 과제로 잘 일반화하는 경향이 있음  
+* 통제된 인간 연구에서, 저자들의 모델의 응답은 43%의 경우에서 GPT-4와 동등하거나 엄격하게 선호되며, Bard와 비교했을 때는 이 비율이 58%로, 인간 피드백으로 훈련된 DaVinci003과 비교했을 때는 65%로 상승함  
+* 이러한 결과는 대규모 언어 모델의 지식이 사전 훈련 중에 거의 모두 학습되며 저자들의 모델에 고품질 출력을 생성하도록 가르치는 데 필요한 지시어 튜닝 데이터가 제한적이라는 강력한 주장을 함께 제공함    
+
+Useful sentences :  
+*   
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1E9kcvSDD2rGfcLk53WirJsukyAR7_PG7?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* upvote:  특정 콘텐츠나 댓글에 긍정적인 반응을 표시하는 행위를 의미  
+* constitutional AI: 인공지능(AI) 시스템을 설계하고 구현할 때 윤리적 가이드라인, 법적 기준, 사회적 가치를 AI의 결정과 행동에 통합하려는 접근 방식  
+* Likert scale: 설문 조사나 연구에서 태도, 의견, 가치를 측정하기 위해 사용되는 일련의 명제나 진술에 대한 응답자의 동의 또는 불동의 정도를 평가하는 방법, 이 척도는 보통 5점 또는 7점 척도로 구성되며, 각 점수는 '매우 동의함', '동의함', '중립', '동의하지 않음', '매우 동의하지 않음'과 같은 응답 옵션을 나타냄    
+
+
+<br/>
+# 1 Introduction  
+* 언어 모델은 다음 토큰을 예측하도록 사전 훈련되어 있어, 거의 모든 언어 이해나 생성 과제로 전이될 수 있는 일반적 목적의 표현을 배울 수 있음  
+* 이러한 전이를 가능하게 하기 위해, 언어 모델을 조정하는 다양한 방법이 제안되었는데, 이는 주로 대규모 다중 백만 예제 데이터셋을 통한 지시어 튜닝에 중점을 둠  
+* 최근에는 수백만 건의 인간 주석자와의 상호 작용을 통해 수집된 인간 피드백으로부터의 강화 학습(RLHF)에 더 많은 관심이 쏠리고 있음  
+* 기존의 조정 방법은 챗GPT 수준의 성능을 달성하기 위해 상당한 양의 컴퓨팅 자원과 전문 데이터를 필요로 함  
+* 그러나 저자들은 강력한 사전 훈련된 언어 모델을 갖고 있을 때, 단지 1000개의 신중하게 큐레이션된 학습 예제에 대한 단순한 미세 조정만으로도 놀라울 정도로 강력한 성능을 달성할 수 있음을 보임  
+* 저자들은 조정이 모델이 사용자와 상호 작용하는 방식의 스타일이나 형식을 배우는 단순한 과정일 수 있다는 가설을 세움  
+* 이미 사전 훈련 중에 습득한 지식과 능력을 노출시키기 위함임   
+
+<br/>
+# 2 Alignment Data  
+* 저자들은 자신들의 지식과 능력이 거의 전적으로 사전 훈련 중에 학습되었다는 피상적 정렬 가설을 정의함  
+* 정렬은 사용자와 상호 작용할 때 어떤 부분 분포의 형식을 사용해야 하는지 가르치는 것임  
+* 이 가설이 옳고 정렬이 주로 스타일을 배우는 것에 관한 것이라면, 사전 훈련된 언어 모델을 상대적으로 작은 예제 세트로 충분히 조정할 수 있다는 부수적인 결론을 낼 수 있음  
+* 이를 위해, 저자들은 출력(응답)이 서로 스타일적으로 일치하지만 입력(프롬프트)은 다양한 1000개의 프롬프트와 응답 데이터셋을 수집함  
+* 특히, 도움이 되는 AI 보조원의 스타일로 출력을 원함  
+* 이러한 예제들은 주로 커뮤니티 Q&A 포럼과 수동으로 작성된 예제들로 나뉘어져 있으며, 300개의 프롬프트로 구성된 테스트 세트와 50개의 개발 세트도 수집함  
+
+<br/>
+# 3 Training LIMA  
+* 저자들은 LIMA를 LLaMa 65B로부터 시작하여 1000개 예제로 구성된 정렬 훈련 세트에서 미세 조정하는 프로토콜을 사용함
+* 사용자와 보조원을 구분하기 위해 각 발언의 끝에 특별한 차례 종료 토큰(EOT)을 도입함  
+* 이 토큰은 생성을 중지하는 EOS의 역할을 하지만, 사전 훈련된 모델이 기존의 EOS 토큰에 부여했을 수 있는 다른 의미와 혼동을 피함  
+* 표준 미세 조정 하이퍼파라미터를 따라 15 에포크 동안 미세 조정을 진행하고, AdamW를 사용하여 가중치 감소는 0.1로 설정함  
+* 웜업 단계 없이 초기 학습률을 1−5로 설정하고 훈련 종료 시 1−6으로 선형 감소시킴  
+* 배치 크기는 32개 예제로 설정하며(더 작은 모델의 경우 64), 2048 토큰보다 긴 텍스트는 잘라냄  
+* 표준과 다른 주목할만한 변화로는 잔여 드롭아웃의 사용이 있음  
+* Ouyang et al.을 따라 잔여 연결에 드롭아웃을 적용하며, 하단 레이어에서는  = 0.0에서 시작하여 마지막 레이어에서는  = 0.3까지 선형으로 비율을 증가시킴(더 작은 모델의 경우  = 0.2)  
+* 생성 품질과의 상관관계가 없는 것으로 나타난 난이도로 인해 5번째에서 10번째 에포크 사이의 체크포인트를 수동으로 선택함   
+
+<br/>
+# 4 Human Evaluation  
+* 각 프롬프트에 대해 저자들은 다양한 기준 모델로부터 단일 응답을 생성하는데, 핵심 샘플링을 사용함  
+* 저자들의 방법론에서는 각 단계마다 평가자에게 단일 프롬프트와 두 가지 가능한 응답을 제시하며, 두 모델 중 어느 것이 더 나은지 또는 두 응답 모두 유의미하게 더 나은 것이 없는지를 평가하도록 요청함  
+* 평가자 간 일치도는 절반 점수 방식으로 계산되며, 두 평가자가 모두 동의하면 1점, 한 명만 무승부로 평가하면 0.5점, 그 외의 경우는 0점을 부여함  
+* 저자들은 또한 GPT-4와 인간 간의 일치도를 측정하는데, GPT-4는 거의 항상 자체와 일치함에도 불구하고 인간 평가자와 비슷한 수준의 일치도를 보임  
+* 인간 평가 연구의 결과를 보여주는 그림 1과 GPT-4의 선호도 결과를 보여주는 그림 2가 있으며, 주로 인간 연구의 결과를 검토  함  
+* 저자들의 주된 평가는 LIMA를 최신 모델과 비교하는 것이며, 일부 기준 모델은 실제 사용자 프롬프트에 대한 훈련으로 인해 매우 높은 기준을 가짐을 기억해야 함   
+
+<br/>  
+# 5 Why is Less More? Ablations on Data Diversity, Quality, and Quantity  
+* 저자들은 훈련 데이터의 다양성, 품질, 그리고 양이 미치는 영향을 평가하기 위해 일련의 소거 실험을 수행함
+* 입력의 다양성과 출력의 품질을 높이는 것이 측정 가능한 긍정적인 영향을 미치는 반면, 양을 늘리는 것만으로는 그렇지 않을 수 있음을 관찰함  
+* 실험 설정에서는 LLaMa 모델의 7B 파라미터 버전을 다양한 데이터셋에서 미세 조정하여 같은 하이퍼파라미터를 통제함  
+* 각 테스트 세트 프롬프트에 대해 5개의 응답을 샘플링하고, ChatGPT(GPT-3.5 Turbo)에게 1-6의 리커트 척도로 응답의 유용성을 평가하도록 요청함  
+* 다양성을 테스트하기 위해, 품질과 양을 통제하면서 프롬프트 다양성의 영향을 비교함  
+* 품질을 테스트하기 위해, Stack Exchange에서 2000개의 예제를 샘플링하여 품질이나 스타일 필터 없이 훈련한 모델과 필터링된 데이터셋에서 훈련한 모델을 비교함  
+* 양을 테스트하기 위해, Stack Exchange에서 지수적으로 증가하는 훈련 세트를 샘플링함  
+* 훈련 데이터의 양을 늘리는 것은 많은 기계 학습 설정에서 성능을 향상시키는 잘 알려진 전략이지만, 이 설정에서는 응답 품질을 향상시키지 않음을 발견함  
+
+
+<br/>
+# 6 Multi-Turn Dialogue  
+* 저자들은 단지 1000개의 단일 차례 상호 작용에 미세 조정된 모델이 다중 차례 대화에 참여할 수 있는지 테스트함  
+* LIMA는 이전 대화 단계의 정보를 참조하여 의외로 일관된 응답을 생성하는데, 이는 제로-샷 챗봇으로서 놀라운 성능임  
+* 그러나 모델이 분포 바깥에서 작동하고 있음은 분명하며, 10번의 대화 중 6번에서 3번의 상호 작용 내에 프롬프트를 따르지 못함  
+* 대화 능력을 향상시키기 위해, 저자들은 30개의 다중 차례 대화 체인을 수집함  
+* 이 중 10개는 저자들에 의해 구성되었고, 나머지 20개는 스타일에 맞게 편집된 Stack Exchange의 댓글 체인을 기반으로 함  
+* 저자들은 미세 조정을 위해 사전 훈련된 LLaMa 모델에서 출발하여 1030개의 예제로 구성된 새로운 LIMA 버전을 훈련시킴  
+* 같은 프롬프트를 사용한 10번의 실시간 대화를 수행하고, 그 중 일부 대화에서 발췌한 내용을 그림 8에 보여줌  
+* 응답 품질의 분포를 보여주는 그림 7에 따르면, 대화 추가는 생성 품질을 크게 향상시켜 우수한 응답의 비율을 45.2%에서 76.1%로 높임  
+* 또한, 실패율은 제로-샷(42차례 중 15번 실패)에서 미세 조정된 모델(46차례 중 1번 실패)로 대폭 감소함  
+* 전체 대화의 품질을 비교한 결과, 미세 조정된 모델이 10번의 대화 중 7번에서 현저히 더 낫고, 3번에서는 제로-샷 모델과 동등함을 발견함  
+* 이러한 능력의 도약과 제로-샷 모델이 전혀 대화할 수 있다는 사실은 해당 능력이 사전 훈련 중에 학습되었고, 제한된 감독을 통해 활성화될 수 있다는 가설을 강화함   
+
+
+<br/>
+# 7 Discussion  
+* 저자들은 1000개의 신중하게 큐레이션된 예제로 강력한 사전 훈련된 언어 모델을 미세 조정할 때, 다양한 프롬프트에 대해 놀라운 경쟁력 있는 결과를 생성할 수 있음을 보여줌  
+* 그러나 이 접근 방식에는 한계가 있음  
+* 주로 이러한 예제를 구성하는 데 드는 정신적 노력이 상당하고 확장하기 어려움  
+* 둘째, LIMA는 제품 등급 모델만큼 강력하지 않음  
+* LIMA는 일반적으로 좋은 응답을 생성하지만, 디코딩 중에 운이 나쁜 샘플이나 적대적인 프롬프트는 종종 약한 응답으로 이어질 수 있음  
+* 그럼에도 불구하고, 이 작업에서 제시된 증거는 복잡한 정렬 문제를 간단한 접근 방식으로 해결할 수 있는 잠재력을 보여줌  
+
+
+<br/>  
+# 요약  
+* 저자들은 대규모 언어 모델의 사전 훈련과 지시어 튜닝의 중요성을 비교하기 위해, 강화 학습 없이 신중하게 선정된 1000개의 프롬프트와 응답으로 LLaMa 언어 모델을 미세 조정한 LIMA를 개발함  
+* 저자들의 모델은 제한된 훈련 데이터만으로도 다양한 응답 형식을 따르며 새로운 과제에 잘 일반화하는 놀라운 성능을 보여줌  
+* 인간 평가에서 LIMA의 응답은 GPT-4, Bard, 인간 피드백으로 훈련된 DaVinci003과 비교해 높은 선호도를 얻음으로써, 대규모 언어 모델이 사전 훈련 중에 대부분의 지식을 습득하고, 고품질 출력을 생성하기 위한 지시어 튜닝 데이터가 상대적으로 적게 필요하다는 점을 강조함  
+* 저자들은 언어 모델이 다음 토큰을 예측하는 사전 훈련을 통해 언어 이해나 생성 과제에 전이될 수 있는 일반적 목적의 표현을 학습한다고 언급함  
+* LIMA의 훈련 데이터는 프롬프트의 다양성과 응답의 스타일적 일관성을 강조함으로써, 저자들의 모델이 사용자와 상호 작용하는 방식의 스타일과 형식을 배울 수 있음을 보여줌  
+* 다중 차례 대화 실험에서 LIMA는 제로-샷 챗봇으로서 이전 대화의 정보를 참조하여 일관된 응답을 생성할 수 있음을 보여줌  
+* 그러나 분포 바깥에서 작동하는 경우, 일정 수의 상호 작용 후 프롬프트를 따르지 못하는 경우가 있음  
+* 저자들은 대화 능력을 향상시키기 위해 추가로 다중 차례 대화 체인을 수집하여 새로운 LIMA 버전을 훈련시킴  
+* 이는 생성 품질을 크게 향상시키며 실패율을 현저히 감소시킴  
+* 토론에서 저자들은 이 접근 방식이 다양한 프롬프트에 대해 경쟁력 있는 결과를 생성할 수 있음을 인정하면서도 예제를 구성하는 데 드는 노력이 크고 확장하기 어렵다는 한계를 지적함  
+* 저자들의 모델이 아직 제품 등급 모델만큼 강력하지 않다는 점을 언급함  
+* 이 연구는 복잡한 정렬 문제를 간단한 접근 방식으로 해결할 수 있는 잠재력을 보여주며 대규모 언어 모델의 사전 훈련이 지식 습득에 중요하며 제한된 감독으로도 모델의 능력을 크게 활성화할 수 있다는 것을 보여줌    
+
+* The authors developed LIMA by fine-tuning the LLaMa language model with 1000 carefully selected prompts and responses, aiming to compare the importance of pre-training and instructional tuning in large language models without reinforcement learning  
+* Their model demonstrates remarkable performance with limited training data, following various response formats and generalizing well to new tasks  
+* In human evaluations, LIMA's responses were highly preferred over GPT-4, Bard, and DaVinci003 trained with human feedback, underscoring that large language models acquire most knowledge during pre-training and require relatively few instructional tuning data for high-quality output  
+* The authors note that language models learn general-purpose representations through pre-training that predict the next token, which can be transferred to nearly all language understanding or generation tasks    
+* LIMA's training data emphasizes prompt diversity and response stylistic consistency, showing that the authors' model can learn the style and format of interaction with users  
+* In multi-turn dialogue experiments, LIMA, as a zero-shot chatbot, produced consistent responses by referring to information from previous dialogue steps  
+* However, when operating outside its distribution, it sometimes failed to follow the prompts after a certain number of interactions  
+* To enhance conversational abilities, the authors collected additional multi-turn dialogue chains and trained a new version of LIMA, significantly improving generation quality and reducing failure rates  
+* In the discussion, the authors acknowledge that this approach can produce competitive results for various prompts but point out the significant effort required to construct examples and the difficulty of scaling  
+* They also mention that their model is not yet as powerful as production-grade models  
+* This research demonstrates the potential to solve complex alignment problems with a simple approach, highlighting the importance of pre-training in large language models for knowledge acquisition and the ability to significantly activate model capabilities with limited supervision  
+
