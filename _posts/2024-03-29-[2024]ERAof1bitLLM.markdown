@@ -1,0 +1,161 @@
+---
+layout: post
+title:  "[2024]The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits"  
+date:   2024-03-29 11:26:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+* 최근 연구인 BitNet [WMD+23]은 1비트 대형 언어 모델(LLM)의 새 시대를 열고 있음  
+* 이 연구에서는 모든 단일 파라미터(또는 가중치)가 삼진법 {-1 0 1}인 1비트 LLM 변형인 BitNet b1.58을 소개함  
+* 이는 동일한 모델 크기와 훈련 토큰을 사용하는 FP16 또는 BF16 트랜스포머 LLM과 모호성 및 최종 작업 성능 측면에서 * 일치하면서 지연 시간, 메모리 처리량 및 에너지 소비 측면에서 훨씬 비용 효율적임  
+* 더 깊이 있게, 1.58비트 LLM은 고성능이면서 비용 효율적인 새로운 세대의 LLM을 훈련하기 위한 새로운 스케일링 법칙과 레시피를 정의함  
+* 또한 새로운 계산 패러다임을 가능하게 하고 1비트 LLM에 최적화된 특정 하드웨어를 설계할 수 있는 문을 엶  
+  
+Useful sentences :  
+* 1bit LLM??  
+** 1비트 대형 언어 모델(LLM)은 언어 모델의 가중치와 파라미터가 1비트로 표현되는 모델   
+** 기존의 언어 모델은 보통 16비트(FP16) 또는 32비트(FP32)와 같은 더 높은 정밀도를 사용하는데, 1비트 모델에서는 모든 가중치 값이 -1, 0, 또는 1과 같이 매우 제한된 값으로 표현   
+** 이런 방식은 모델의 메모리 사용량을 크게 줄이고, 계산 효율성을 향상시켜, 특히 에너지 소비가 중요한 환경에서 유용하게 사용  
+** 하지만, 이렇게 단순화된 표현으로 인해 모델의 성능을 유지하면서도 효율성을 얻기 위한 추가적인 기술과 최적화가 필요  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/10AWEaV7dBy5MITOWjCddB2qkSnV56PFd?usp=sharing)  
+[~~Lecture link~~]()  
+
+<br/>
+
+# 단어정리  
+* negligible: 사소한, 미미한, 거의 없는  
+* FLOPs: Floating Point Operations Per Second"의 약자로, 컴퓨터가 1초 동안 수행할 수 있는 부동 소수점 연산의 횟수  
+* KV caches:  "Key-Value" 캐시의 약어로, 키(Key)와 값(Value)의 쌍으로 데이터를 저장하는 캐싱 시스템, KV 캐시는 빠른 데이터 검색과 고성능을 위해 메모리 내에 데이터를 저장하는 것이 일반적, 언어 모델링과 같은 특정 컨텍스트에서 KV 캐시는 트랜스포머 모델의 Attention 메커니즘 내에서 키(Key)와 값(Value) 벡터를 캐싱하여 장기 의존성을 효율적으로 처리하는 데 사용될 수 있음    
+* Groq: 머신러닝 및 인공지능(AI) 애플리케이션을 위한 특수 목적 하드웨어를 개발하는 회사  
+
+
+
+<br/>
+# 1 The Era of 1-bit LLMs  
+* 최근 몇 년간 인공지능 분야는 대형 언어 모델(LLM)의 크기와 능력에서 빠른 성장을 보여왔음  
+* 이 모델들은 자연어 처리 작업에서 뛰어난 성능을 입증했으나, 그들의 증가하는 크기는 배포에 대한 도전을 제기하고 고에너지 소비로 인한 환경적 및 경제적 영향에 대한 우려를 증가시킴  
+* 이러한 도전을 해결하는 한 가지 접근 방식은 사후 훈련 양자화를 사용하여 추론을 위한 저비트 모델을 생성하는 것임  
+* 이 기술은 가중치와 활성화의 정밀도를 크게 줄여 LLM의 메모리 및 계산 요구 사항을 상당히 감소시킴  
+* 추세는 16비트에서 4비트 변형과 같은 더 낮은 비트로 이동하는 것이었으나, 사후 훈련 양자화는 산업에서 LLM에 널리 사용되고 있음에도 불구하고 최적이 아님  
+
+* 1비트 모델 아키텍처와 같은 최근의 작업은 성능을 유지하면서 LLM의 비용을 줄이는 유망한 방향을 제시함  
+* 바닐라 LLM은 16비트 부동 소수점 값(FP16 또는 BF16)이고, 모든 LLM의 대부분은 행렬 곱셈임  
+* 따라서 주요 계산 비용은 부동 소수점 덧셈 및 곱셈 작업에서 비롯됨  
+* 반면에, BitNet의 행렬 곱셈은 정수 덧셈만을 포함하여 LLM을 위한 에너지 비용을 수십 배 절약함  
+* 많은 칩의 계산 성능의 근본적인 한계가 전력이기 때문에, 에너지 절약은 더 빠른 계산으로 전환될 수 있음  
+
+* 계산 외에도 DRAM에서 온칩 가속기(예: SRAM)의 메모리로 모델 매개변수를 전송하는 과정은 추론 중에 비용이 많이 들 수 있음  
+* SRAM을 확장하여 처리량을 개선하려는 시도가 있었지만, 이는 DRAM보다 훨씬 더 높은 비용을 도입함  
+* 전체 정밀도 모델과 비교하여, 1비트 LLM은 용량 및 대역폭 측면에서 훨씬 낮은 메모리 발자국을 가짐  
+* 이는 DRAM에서 가중치를 더 빠르고 효율적으로 로드하는 비용과 시간을 크게 줄일 수 있음  
+
+<br/>
+# 2 BitNet b1.58
+* BitNet b1.58은 BitNet 아키텍처를 기반으로 하는 트랜스포머로, nn.Linear를 BitLinear로 대체함  
+* 1.58비트 가중치와 8비트 활성화를 사용하여 처음부터 훈련됨  
+* 원래의 BitNet과 비교하여, 몇 가지 수정 사항이 도입됨  
+
+* 양자화 함수를 사용하여 가중치를 -1, 0 또는 +1로 제한함  
+* 먼저 가중치 행렬을 평균 절대값으로 스케일링한 다음, 각 값을 {-1, 0, +1} 중 가장 가까운 정수로 반올림함  
+
+* 활성화에 대한 양자화 함수는 BitNet에서와 동일하게 구현되지만, 비선형 함수 이전에 활성화를 [0, Qb] 범위로 스케일링하지 않음  
+* 대신, 활성화를 토큰별로 [-Qb, Qb] 범위로 스케일링하여 영점 양자화를 제거함  
+* 이는 구현과 시스템 수준 최적화에 더 편리하고 단순하며, 실험에서 성능에 미미한 영향을 미침  
+
+* LLaMA와 유사한 컴포넌트를 사용함  
+* LLaMA 아키텍처는 오픈소스 LLM의 뼈대가 되었으며, BitNet b1.58의 설계는 LLaMA와 유사한 컴포넌트를 채택함  
+* 구체적으로, RMSNorm, SwiGLU, 회전 임베딩을 사용하고 모든 바이어스를 제거함  
+* 이를 통해 BitNet b1.58을 인기 있는 오픈소스 소프트웨어(예: Huggingface vLLM 및 llama.cpp2)에 최소한의 노력으로 통합할 수 있음  
+
+<br/>
+# 3 Results  
+* 저자들은 BitNet b1.58을 다양한 크기로 재생산한 FP16 LLaMA LLM과 비교함  
+* 공정한 비교를 보장하기 위해, 저자들은 RedPajama 데이터셋에서 모델을 1000억 토큰으로 사전 훈련함  
+* ARC-Easy, ARC-Challenge, Hellaswag, Winogrande, PIQA, OpenbookQA 및 BoolQ와 같은 언어 작업에서 제로샷 성능을 평가함  
+* 또한, WikiText2 및 C4 데이터셋에서 검증 모호성을 보고함  
+
+* LLaMA LLM과 BitNet b1.58의 런타임 GPU 메모리와 지연 시간을 비교함  
+* 결과는 GPU 장치에서 LLM 추론 지연 시간을 위해 최적화된 FasterTransformer 코드베이스를 사용하여 측정됨  
+* BitNet b1.58의 2비트 커널도 Ladder에서 통합됨  
+* 출력 토큰당 시간을 보고함  
+
+* 표 1은 BitNet b1.58과 LLaMA LLM의 모호성 및 비용을 요약함  
+* 3B 모델 크기에서 BitNet b1.58이 전체 정밀도 LLaMA LLM과 모호성 측면에서 일치하기 시작하며, 2.71배 빠르고 GPU 메모리를 3.55배 덜 사용함  
+* 특히, 3.9B 모델 크기의 BitNet b1.58은 LLaMA LLM 3B보다 2.4배 빠르고 메모리를 3.32배 덜 소비하지만, 성능면에서 상당히 더 우수함  
+
+* 표 2는 최종 작업에서 BitNet b1.58과 LLaMA LLM의 제로샷 정확도에 대한 자세한 결과를 보고함  
+* 평가를 수행하기 위해 lm-evaluation-harness 파이프라인을 따름  
+* 결과는 모델 크기가 증가함에 따라 BitNet b1.58과 LLaMA LLM 간의 성능 격차가 좁혀짐을 보여줌  
+* 더 중요한 것은, BitNet b1.58이 3B 크기부터 전체 정밀도 기준과 성능이 일치한다는 것임  
+* 모호성 관찰과 마찬가지로, 최종 작업 결과는 BitNet b1.58 3.9B가 메모리 및 지연 시간 비용이 더 낮으면서 LLaMA LLM 3B보다 우수함을 보여줌  
+* 이는 BitNet b1.58이 최신 LLM 모델에 대한 파레토 개선임을 시사함  
+
+<br/>
+# 4 Discussion and Future Work  
+* 1비트 전문가의 혼합(MoE) LLM은 LLM에 대한 비용 효율적인 접근법으로 입증되었음  
+* 계산 FLOP를 크게 줄이지만 높은 메모리 소비와 칩 간 통신 오버헤드는 그것의 배포와 응용을 제한함  
+* 이러한 도전은 1.58비트 LLM으로 해결될 수 있음  
+* 첫째로, 줄어든 메모리 발자국은 MoE 모델을 배치하는 데 필요한 장치의 수를 줄임  
+* 둘째로, 네트워크를 통한 활성화의 전송 오버헤드를 크게 줄임  
+* 결국 모든 모델을 단일 칩에 배치할 수 있다면 오버헤드는 전혀 없을 것임  
+
+* LLM의 긴 시퀀스에 대한 기본 지원에서 LLM 시대에 긴 시퀀스를 처리할 수 있는 능력은 중요한 요구 사항이 됨  
+* 긴 시퀀스 추론의 주요 도전 과제 중 하나는 KV 캐시에 의해 도입된 메모리 소비임  
+* BitNet b1.58은 활성화를 16비트에서 8비트로 줄여 주어진 자원으로 컨텍스트 길이를 두 배로 늘림으로써 긴 시퀀스에 대한 기본 지원을 향한 중요한 단계를 나타냄  
+* 이는 향후 작업으로 1.58비트 LLM에 대해 4비트 이하로 무손실 압축될 수 있음  
+
+* 엣지 및 모바일에서의 LLM  
+** 1.58비트 LLM의 사용은 엣지 및 모바일 기기에서 언어 모델의 성능을 크게 향상시킬 잠재력이 있음  
+** 이러한 장치는 종종 메모리와 계산력이 제한되어 LLM의 성능과 규모를 제한할 수 있음  
+** 그러나 1.58비트 LLM의 감소된 메모리 및 에너지 소비는 이러한 장치에 배치될 수 있게 하여 이전에는 불가능했던 다양한 응용 프로그램을 가능하게 함  
+** 이는 엣지 및 모바일 장치의 기능을 크게 향상시키고 LLM의 새롭고 흥미로운 응용 프로그램을 가능하게 함  
+** 또한, 1.58비트 LLM은 엣지 및 모바일 장치에서 주로 사용되는 CPU 장치에 더 친화적임  
+** 이는 BitNet b1.58을 이러한 장치에서 효율적으로 실행할 수 있음을 의미하며, 그 성능과 능력을 더욱 향상시킴  
+
+* 1비트 LLM을 위한 새로운 하드웨어  
+** Groq와 같은 최근의 작업은 LLM을 위한 특정 하드웨어(예: LPUs)를 구축하기 위한 유망한 결과와 큰 잠재력을 보여줌  
+** 한 단계 더 나아가, 저자들은 BitNet에서 가능하게 된 새로운 계산 패러다임을 위해 특별히 최적화된 새로운 하드웨어와 시스템을 설계할 것을 촉구함  
+ 
+
+<br/>  
+# 요약  
+
+* BitNet b1.58은 모든 가중치가 삼진법 {-1, 0, 1}인 1비트 대형 언어 모델(LLM) 변형임  
+* 이 모델은 기존의 전체 정밀도 LLM과 비슷한 성능을 유지하면서, 처리량, 메모리, 에너지 소비 측면에서 더 효율적임  
+* 1.58비트 LLM은 고성능과 비용 효율성을 모두 제공하는 새로운 세대의 LLM을 훈련하기 위한 새로운 스케일링 법칙을 정의함  
+* 1비트 LLM은 메모리 사용량을 크게 줄이고 계산 효율성을 향상시켜 에너지 소비가 중요한 환경에서 유용함  
+* BitNet b1.58은 가중치를 -1, 0, +1로 제한하기 위한 양자화 함수를 채택함  
+* 활성화는 [-Qb, Qb] 범위로 스케일링되어 영점 양자화를 제거함  
+* LLaMA와 유사한 컴포넌트를 사용하여, 오픈소스 커뮤니티에 통합이 용이함  
+* BitNet b1.58과 전통적인 LLaMA LLM 사이의 성능 비교는 모델 크기가 증가함에 따라 성능 격차가 좁혀지는 것을 보여줌  
+* 1.58비트 LLM은 긴 시퀀스 처리, 엣지 및 모바일 장치에서의 언어 모델 성능 향상에 기여할 잠재력이 있음  
+* 저자들은 1비트 LLM을 위해 특별히 최적화된 새로운 하드웨어와 시스템 설계를 촉구함  
+
+
+* The BitNet b1.58 model pioneers the 1-bit LLM paradigm, encapsulating weights as ternary {-1, 0, 1}, thereby heralding a novel computational efficiency in NLP.  
+This architecture preserves the fidelity of conventional FP16 and BF16 LLMs while substantially enhancing latency, throughput, and energy metrics.  
+1.58-bit LLMs redefine scaling laws, propelling the development of performant yet economical future LLM iterations.  
+Such models significantly mitigate memory and computational overheads, aligning with eco-conscious computing directives.  
+BitNet b1.58's quantization schema curtails weights to ternary values, simplifying the model and curtailing computational complexity.  
+Activations within BitNet b1.58 are scaled to [-Qb, Qb], obviating zero-point quantization and streamlining system optimization.  
+Inclusion of LLaMA-esque components like RMSNorm facilitates BitNet b1.58's integration into prevalent open-source frameworks, enhancing its accessibility.  
+Empirical assessments exhibit BitNet b1.58's competitive edge over FP16 LLaMA LLMs, especially at escalated model dimensions, affirming its scalability.  
+The model's minimized energy and memory demands potentiate advanced LLM applications on constrained edge and mobile platforms.  
+Advancements in specialized hardware tailored for 1-bit LLMs could unlock unprecedented computational efficiencies, as advocated by the authors.  
+BitNet b1.58's approach to long sequence support, via activation bit-width reduction, presents a strategic advantage for processing extensive contextual spans.  
+The model's alignment with high-performance benchmarks, notwithstanding its reduced bit precision, underscores a significant leap in LLM optimization.  
+BitNet b1.58's architecture, inspired by successful LLaMA components, showcases the adaptability of high-impact LLM strategies to 1-bit configurations.  
+The model's adeptness at maintaining competitive zero-shot accuracies, with lower resource consumption, marks a paradigm shift in LLM deployment strategies.  
+BitNet b1.58's emergence as a vanguard in the 1-bit LLM domain signifies a pivotal transition towards more sustainable and efficient language model ecosystems.  
