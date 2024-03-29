@@ -144,18 +144,20 @@ Useful sentences :
 * 저자들은 1비트 LLM을 위해 특별히 최적화된 새로운 하드웨어와 시스템 설계를 촉구함  
 
 
-* The BitNet b1.58 model pioneers the 1-bit LLM paradigm, encapsulating weights as ternary {-1, 0, 1}, thereby heralding a novel computational efficiency in NLP.  
-This architecture preserves the fidelity of conventional FP16 and BF16 LLMs while substantially enhancing latency, throughput, and energy metrics.  
-1.58-bit LLMs redefine scaling laws, propelling the development of performant yet economical future LLM iterations.  
-Such models significantly mitigate memory and computational overheads, aligning with eco-conscious computing directives.  
-BitNet b1.58's quantization schema curtails weights to ternary values, simplifying the model and curtailing computational complexity.  
-Activations within BitNet b1.58 are scaled to [-Qb, Qb], obviating zero-point quantization and streamlining system optimization.  
-Inclusion of LLaMA-esque components like RMSNorm facilitates BitNet b1.58's integration into prevalent open-source frameworks, enhancing its accessibility.  
-Empirical assessments exhibit BitNet b1.58's competitive edge over FP16 LLaMA LLMs, especially at escalated model dimensions, affirming its scalability.  
-The model's minimized energy and memory demands potentiate advanced LLM applications on constrained edge and mobile platforms.  
-Advancements in specialized hardware tailored for 1-bit LLMs could unlock unprecedented computational efficiencies, as advocated by the authors.  
-BitNet b1.58's approach to long sequence support, via activation bit-width reduction, presents a strategic advantage for processing extensive contextual spans.  
-The model's alignment with high-performance benchmarks, notwithstanding its reduced bit precision, underscores a significant leap in LLM optimization.  
-BitNet b1.58's architecture, inspired by successful LLaMA components, showcases the adaptability of high-impact LLM strategies to 1-bit configurations.  
-The model's adeptness at maintaining competitive zero-shot accuracies, with lower resource consumption, marks a paradigm shift in LLM deployment strategies.  
-BitNet b1.58's emergence as a vanguard in the 1-bit LLM domain signifies a pivotal transition towards more sustainable and efficient language model ecosystems.  
+* The BitNet b1.58 model pioneers the 1-bit LLM paradigm, encapsulating weights as ternary {-1, 0, 1}, thereby heralding a novel computational efficiency in NLP  
+* This architecture preserves the fidelity of conventional FP16 and BF16 LLMs while substantially enhancing latency, throughput, and energy metrics  
+* 1.58-bit LLMs redefine scaling laws, propelling the development of performant yet economical future LLM iterations  
+* Such models significantly mitigate memory and computational overheads, aligning with eco-conscious computing directives  
+* BitNet b1.58's quantization schema curtails weights to ternary values, simplifying the model and curtailing computational complexity  
+* Activations within BitNet b1.58 are scaled to [-Qb, Qb], obviating zero-point quantization and streamlining system optimization    
+* Inclusion of LLaMA-esque components like RMSNorm facilitates BitNet b1.58's integration into prevalent open-source frameworks, enhancing its accessibility    
+* Empirical assessments exhibit BitNet b1.58's competitive edge over FP16 LLaMA LLMs, especially at escalated model dimensions, affirming its scalability  
+* The model's minimized energy and memory demands potentiate advanced LLM applications on constrained edge and mobile platforms  
+* Advancements in specialized hardware tailored for 1-bit LLMs could unlock unprecedented computational efficiencies, as advocated by the authors  
+* BitNet b1.58's approach to long sequence support, via activation bit-width reduction, presents a strategic advantage for processing extensive contextual spans    
+* The model's alignment with high-performance benchmarks, notwithstanding its reduced bit precision, underscores a significant leap in LLM optimization    
+* BitNet b1.58's architecture, inspired by successful LLaMA components, showcases the adaptability of high-impact LLM strategies to 1-bit configurations    
+* The model's adeptness at maintaining competitive zero-shot accuracies, with lower resource consumption, marks a paradigm shift in LLM deployment strategies  
+* BitNet b1.58's emergence as a vanguard in the 1-bit LLM domain signifies a pivotal transition towards more sustainable and efficient language model ecosystems  
+
+  
