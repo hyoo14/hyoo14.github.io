@@ -33,7 +33,10 @@ Useful sentences :
 <br/>
 
 # 단어정리  
-* uptraining: 기존의 훈련된 모델을 추가로 훈련시켜서 새로운 기능이나 성능 향상을 도모하는 과정을 의미
+* uptraining: 기존의 훈련된 모델을 추가로 훈련시켜서 새로운 기능이나 성능 향상을 도모하는 과정을 의미  
+* memory bandwidth:   컴퓨터의 메모리 시스템이 데이터를 전송할 수 있는 최대 속도를 의미, 다시 말해, CPU나 GPU와 같은 프로세싱 유닛이 메모리로부터 데이터를 읽거나 메모리에 데이터를 쓸 수 있는 최대 데이터 양  
+* FLOP: "Floating Point Operations Per Second"의 약자로, 초당 부동 소수점 연산의 수를 나타냅니다. 이는 컴퓨터, 특히 CPU나 GPU의 성능을 측정하는 데 사용되는 지표 중 하나로, 특정 장치가 1초 동안 수행할 수 있는 부동 소수점 연산(덧셈, 뺄셈, 곱셈, 나눗셈 등)의 최대 수를 의미  
+* ROUGE score: Recall-Oriented Understudy for Gisting Evaluation 는 자동 요약이나 기계 번역의 품질을 평가하는 데 주로 사용되는 지표, 이 방법은 기계에 의해 생성된 요약문과 인간이 만든 참조 요약문 사이의 유사성을 측정함으로써, 기계 요약의 품질을 평가  
 
 <br/>
 # 1 Introduction  
@@ -51,26 +54,135 @@ Useful sentences :
 
 <br/>
 # 2 Method  
-*
+* 2.1 업트레이닝  
+** 다중 쿼리 모델을 다중 헤드 모델에서 생성하는 과정은 두 단계로 이루어짐  
+** 첫 번째는 체크포인트를 변환하고, 두 번째는 모델이 새로운 구조에 적응할 수 있도록 추가 사전 훈련을 진행하는 것임  
+** 그림 1은 다중 헤드 체크포인트를 다중 쿼리 체크포인트로 변환하는 과정을 보여줌  
+** 키와 값 헤드의 프로젝션 행렬은 단일 프로젝션 행렬로 평균 풀링되며, 이는 단일 키와 값 헤드를 선택하거나 처음부터 새로운 키와 값 헤드를 무작위로 초기화하는 것보다 더 효과적임을 발견함  
+** 변환된 체크포인트는 그 후 원본 훈련 단계의 소수 비율 알파만큼 동일한 사전 훈련 레시피로 사전 훈련됨  
+
+* 2.2 그룹화된 쿼리 어텐션  
+** 그룹화된 쿼리 어텐션은 쿼리 헤드를 G 그룹으로 나누고, 각 그룹은 단일 키 헤드와 값 헤드를 공유함  
+** GQA-G는 G 그룹으로 그룹화된 쿼리를 의미함  
+** 단일 그룹과 따라서 단일 키 및 값 헤드를 가지는 GQA-1은 MQA와 동일하며, 헤드 수와 동일한 그룹을 가지는 GQA-H는 MHA와 동일함  
+** 그림 2는 그룹화된 쿼리 주의와 다중 헤드/다중 쿼리 주의의 비교를 보여줌  
+** 다중 헤드 체크포인트를 GQA 체크포인트로 변환할 때, 각 그룹의 키 및 값 헤드는 해당 그룹 내의 모든 원래 헤드를 평균 풀링하여 구성됨  
+** 중간 수의 그룹을 사용하면 MQA보다 품질이 높지만 MHA보다 빠른 속도를 가진 보간된 모델이 됨  
+** MHA에서 MQA로 가는 것은 H 키 및 값 헤드를 단일 키 및 값 헤드로 줄여 키-값 캐시의 크기를 H배로 줄이고, 따라서 로드해야 하는 데이터의 양을 줄임  
+** 그러나 더 큰 모델은 헤드 수를 일반적으로 확장하여 다중 쿼리 주의가 메모리 대역폭과 용량 모두에서 더 공격적인 절감을 나타냄  
+** GQA를 사용하면 모델 크기가 증가함에 따라 대역폭과 용량이 동일한 비율로 감소하도록 유지됨  
+** 또한, 더 큰 모델은 주의로 인한 메모리 대역폭 오버헤드가 상대적으로 덜 영향을 받으며, KV-캐시는 모델 차원과 함께 확장되지만 모델 FLOPS와 파라미터는 모델 차원의 제곱과 함께 확장됨  
+** 표준 샤딩은 모델 파티션 수만큼 단일 키 및 값 헤드를 복제함  
+** 따라서 GQA는 이러한 파티셔닝에서 발생하는 낭비를 제거함  
+** 결론적으로 저자들은 GQA가 특히 더 큰 모델에 대해 매우 좋은 절충안을 제시할 것으로 기대함  
+** GQA는 인코더 자체 주의 계층에는 적용되지 않음  
+** 인코더 표현은 병렬로 계산되며, 따라서 메모리 대역폭은 일반적으로 주요 병목 현상이 아님  
 
 
 <br/>
 # 3 Experiments  
-* 
+* 3.1 실험 설정
+
+** 모든 모델은 T5.1.1 아키텍처를 기반으로 하며, JAX, Flax, Flaxformer로 구현되었음  
+** 주된 실험에서는 T5 Large와 XXL 모델을 다루고, 이들 모델의 다중 쿼리 및 그룹화된 쿼리 주의 버전에 대한 업트레이닝된 버전을 고려함  
+** Adafactor 최적화기를 사용하며, T5와 동일한 하이퍼파라미터와 학습률 일정을 적용함  
+** MQA와 GQA는 디코더 자체 주의와 교차 주의에 적용되지만, 인코더 자체 주의에는 적용되지 않음  
+
+** 업트레이닝은 공개된 T5.1.1 체크포인트에서 초기화된 모델에 대해 수행됨  
+** 키와 값 헤드는 적절한 MQA나 GQA 구조로 평균 풀링되며, 그 후 원본 사전 훈련 단계의 α 비율로 추가 사전 훈련됨  
+** α = 0.05인 경우, 훈련에는 약 600 TPUv3 칩-일이 소요됨  
+
+** 데이터는 CNN/Daily Mail, arXiv, PubMed, MediaSum, Multi-News와 같은 요약 데이터셋에서 평가됨  
+** 번역 데이터셋 WMT 2014 English-to-German과 질문 응답 데이터셋 TriviaQA에서도 평가됨  
+** GLUE와 같은 인기 있는 분류 벤치마크는 자동 회귀 추론이 그다지 적용되지 않기 때문에 평가에 포함되지 않음  
+
+* 3.2 주요 결과
+
+** 그림 3은 MHA T5-Large와 T5-XXL, 그리고 업트레이닝된 MQA 및 GQA-8 XXL 모델의 평균 성능을 평균 추론 시간의 함수로 보여줌   
+** 업트레이닝된 MQA 모델은 MHA 모델과 비교하여 더 높은 품질과 더 빠른 추론을 제공하는 유리한 절충안을 제공함   
+** 또한 GQA는 MHA-XXL에 가까운 성능을 달성하면서 MQA에 가까운 속도를 유지함  
+** 표 1에는 모든 데이터셋에 대한 전체 결과가 포함됨  
+
+* 3.3 변형 실험
+
+** 이 섹션에서는 다양한 모델링 선택의 영향을 조사하기 위한 실험을 제시함  
+** CNN/Daily Mail(단문 요약), MultiNews(장문 요약), TriviaQA(질문 응답)와 같은 대표적인 작업 샘플에서 성능을 평가함  
+
+** 체크포인트 변환 그림 4는 체크포인트 변환 방법의 성능을 비교함  
+** 평균 풀링이 가장 잘 작동하는 것으로 나타났으며, 이어서 단일 헤드를 선택하고, 그 다음으로 무작위 초기화가 이루어짐  
+** 직관적으로 결과는 사전 훈련된 모델로부터 정보가 얼마나 잘 보존되는지에 따라 순서가 지정됨  
+
+** 업트레이닝 단계 그림 5는 T5 XXL 모델의 MQA 및 GQA-8에 대한 업트레이닝 비율에 따른 성능 변화를 보여줌   
+** 먼저 변환 후에 GQA가 이미 합리적인 성능을 달성하는 반면, MQA는 업트레이닝이 유용함을 알 수 있음  
+** MQA와 GQA 모두 5% 업트레이닝에서 이익을 얻으며, 10%에서는 수익이 감소함  
+
+** 그룹 수 그림 6은 GQA 그룹 수가 추론 속도에 미치는 영향을 보여줌  
+** 더 큰 모델의 경우 KV 캐시로 인한 메모리 대역폭 오버헤드가 덜 제한적이며, 헤드 수 증가로 인한 키-값 크기 감소가 더욱 심화됨  
+** 결과적으로 그룹 수를 MQA에서 8개로 늘리면 처음에는 추론 오버헤드가 적당히 추가되지만, MHA로 이동함에 따라 더 많은 비용이 드는 것으로 나타남  
+** 8개 그룹은 유리한 중간 지점으로 선택됨  
 
 <br/>
 # 4 Related Work  
-*  
+* 이 작업은 디코더의 품질과 추론 시간 사이에서 더 나은 절충안을 달성하기 위해 키와 값 로딩으로 인한 메모리 대역폭 오버헤드를 줄이는 데 중점을 둠  
+* Shazeer(2019)가 처음으로 다중 쿼리 주의를 통해 이 오버헤드를 줄이는 방안을 제안함  
+* 후속 연구에서는 다중 쿼리 주의가 긴 입력에 특히 도움이 됨을 보여줌(Pope 등 2022; de Jong 등 2022)  
+* Rabe(2023)는 공개 구현과 함께 독립적으로 GQA를 개발함  
+* 다른 연구에서는 키-값 헤드가 메모리 대역폭 오버헤드를 결정하는 것에 특별히 초점을 맞추지 않고 계산 효율성을 위해 주의 헤드를 그룹화하는 것을 탐구함(Park 등 2020; Luo 등 2022; Ni 등 2023)  
+
+* 키와 값 뿐만 아니라 파라미터로부터 메모리 대역폭 오버헤드를 줄이기 위한 여러 다른 방법들이 제안되었음  
+* Flash 주의(Dao 등 2022)는 주의 계산을 구조화하여 이차 주의 점수를 구체화하지 않고 메모리를 줄이고 훈련을 가속화함  
+* 양자화(Dettmers 등 2022; Frantar 등 2022)는 키와 값을 포함한 가중치와 활성화의 크기를 정밀도를 낮추어 줄임  
+* 모델 증류(Hinton 등 2015; Gou 등 2021)는 대신 더 큰 모델에서 생성된 데이터를 사용하여 더 작은 모델을 미세 조정하여 주어진 정밀도에서 모델 크기를 줄임  
+* 레이어-스파스 크로스 주의(de Jong 등 2022)는 대부분의 크로스 주의 레이어를 제거하는데, 이는 긴 입력에 대한 주요 비용을 구성함  
+* 추측 샘플링(Chen 등 2023; Leviathan 등 2022)은 더 작은 모델로 여러 토큰을 제안하여 이를 병렬로 더 큰 모델에 의해 평가하게 하여 메모리 대역폭 병목 현상을 완화함  
+
+* 마지막으로 제안하는 업트레이닝 절차는 Komatsuzaki 등(2022)에 의해 표준 T5 체크포인트를 드문 활성화 혼합 전문가 모델로 업트레인하는 것에서 영감을 받음  
 
 <br/>  
 # 5 Conclusion  
-* 
+* 언어 모델은 주로 키와 값 로딩으로 인한 메모리 대역폭 오버헤드 때문에 추론에 비용이 많이 듬  
+* 다중 쿼리 주의는 이 오버헤드를 줄이지만 모델 용량과 품질이 감소하는 비용을 지불함  
+* 저자들은 다중 헤드 주의 모델을 다중 쿼리 모델로 변환할 것을 제안함  
+* 이는 원래 사전 훈련 계산의 작은 비율로 이루어짐  
+* 또한, 다중 쿼리와 다중 헤드 주의 사이의 보간으로서 그룹화된 쿼리 주의를 도입함  
+* 이는 다중 헤드 주의에 가까운 품질을 다중 쿼리 주의와 비슷한 속도로 달성함  
+
+
 
 <br/>
-# 6 Limitations  
-* 
+# Limitations  
+* 이 논문은 키와 값 로딩으로 인한 메모리 대역폭 오버헤드를 개선하는 데 중점을 둠  
+* 이 오버헤드는 주로 긴 시퀀스를 생성할 때 가장 중요한데, 이때 품질을 평가하기가 본질적으로 어려움  
+* 요약 작업에는 불완전한 평가인 Rouge 점수를 사용하는데, 이로 인해 저자들의 절충안이 정확한지 확신하기 어려움  
+* 제한된 계산으로 인해 저자들의 XXL GQA 모델을 처음부터 훈련된 비교 모델과 비교하지 못하므로, 업트레이닝 대 비교 훈련의 상대적 성능을 알 수 없음  
+* 마지막으로, 저자들은 업트레이닝과 GQA의 영향을 인코더-디코더 모델에서만 평가함  
+* 최근에는 디코더 전용 모델이 매우 인기가 있으며, 이러한 모델은 별도의 자체 주의와 교차 주의가 없기 때문에 GQA가 MQA에 비해 더 큰 이점을 가질 것으로 예상함  
 
 
 <br/>  
 # 요약  
-* 
+* 언어 모델 추론의 속도와 품질 개선을 위해, 다중 쿼리 주의를 기반으로 한 새로운 접근법이 제안됨  
+* 다중 헤드 주의 모델을 소량의 계산으로 다중 쿼리 모델로 업트레이닝하는 방법이 소개됨  
+* 그룹화된 쿼리 주의는 다중 쿼리와 다중 헤드 주의의 중간 형태로, 속도와 품질 사이의 균형을 맞춤  
+* 이 방법은 기존 다중 헤드 언어 모델 체크포인트를 효율적으로 활용함  
+* 업트레이닝된 모델은 다중 헤드 주의와 비슷한 품질을, 다중 쿼리 주의와 비슷한 속도로 달성함  
+* 실험은 다양한 요약 및 질문 응답 데이터셋에서 수행되어, 접근법의 효과를 입증함  
+* 업트레이닝된 GQA 모델은 특히 큰 모델에서 메모리 대역폭을 효율적으로 사용함  
+* 메모리 대역폭을 줄이는 기존 방법들과 비교하여, 이 연구는 모델 성능을 유지하면서 추론 속도를 향상시킴  
+* 이 연구는 대규모 언어 모델의 추론 효율성을 향상시키기 위한 새로운 방향을 제시함  
+* 제안된 접근 방식은 특히 긴 입력 시퀀스에 대한 처리에 유리함  
+* 다만, 품질 평가에 있어 ROUGE 점수와 같은 기존 지표의 한계를 인식하고, 보다 포괄적인 평가 방법의 필요성을 강조함  
+* 연구는 인코더-디코더 모델에 초점을 맞췄지만, 디코더 전용 모델에 대한 적용 가능성도 시사함  
+
+* A new approach based on multi-query attention is proposed to improve the speed and quality of language model inference  
+* A method to uptrain multi-head attention models to multi-query models with minimal computation is introduced  
+* Grouped-query attention, a hybrid between multi-query and multi-head attention, balances speed and quality  
+* This technique efficiently utilizes existing multi-head language model checkpoints  
+* Uptrained models achieve quality comparable to multi-head attention and speed similar to multi-query attention   
+* Experiments across various summarization and question-answering datasets demonstrate the effectiveness of this approach   
+* The uptrained GQA model is particularly efficient in using memory bandwidth in large models  
+* Compared to existing methods to reduce memory bandwidth, this research enhances inference speed while maintaining model performance  
+* The study presents a new direction for improving inference efficiency in large-scale language models  
+* The proposed approach is especially beneficial for processing long input sequences  
+* However, it acknowledges the limitations of traditional metrics like ROUGE scores and emphasizes the need for more comprehensive evaluation methods   
+* While focusing on encoder-decoder models, the research also suggests potential applicability to decoder-only models  
