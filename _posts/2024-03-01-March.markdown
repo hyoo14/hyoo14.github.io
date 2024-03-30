@@ -52,6 +52,13 @@ Thursday, March 28, 2024
 * research        
 o     
 
+Friday, March 29, 2024    
+* research        
+o     
+
+Saturday, March 30, 2024    
+* research        
+o     
 
 
 {% highlight ruby %}
