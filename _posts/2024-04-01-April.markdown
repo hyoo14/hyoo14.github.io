@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "April"
+date:   2024-04-01 09:08:53 -0400
+categories: study
+---
+
+
+
+
+{% highlight ruby %}
+
+
+April week1   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** iBlast(G) ㅇㄱㄱㅇㄱㅃㄹㄲㄴㄱㅍㅇㅍㅃㄹㅈㅂㅎㅈ    
+** paper focus: E-NLP  
+  
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+
+*class  
+** RobustDeepLearning     
+** ECE303TA    
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, April 01, 2024    
+* research   
+* class     
+o   
+** ㅍㅇㅍletsgo  
+  
