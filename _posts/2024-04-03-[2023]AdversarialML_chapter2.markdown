@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2023]Adversarial Machine Learning: Attack Surfaces, Defence Mechanisms, Learning Theories in Artificial Intelligence: Chapter2: Adversarial Deep Learning"  
+title:  "[2023]Adversarial Machine Learning: Attack Surfaces, Defence Mechanisms, Learning Theories in Artificial Intelligence: Chapter2: Adversarial Deep Learning study"  
 date:   2024-04-03 12:00:29 -0400
 categories: study
 ---
