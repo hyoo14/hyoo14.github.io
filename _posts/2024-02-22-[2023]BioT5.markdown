@@ -205,6 +205,17 @@ BioT5는 분자 캡셔닝 작업에서 최고의 성능을 달성함
 * BioT5는 주로 생물학적 엔티티의 시퀀스 형식에 중점을 두지만, 2D 또는 3D 구조와 같은 다른 형식도 중요함  
 * 이러한 추가적인 탐색은 향후 작업으로 남겨짐  
 
-
+<br/>
+# 요약  
+* Recent biology advancements have improved drug discovery by combining molecules, proteins, and natural language  
+* Current models face challenges, such as incorrect molecular SMILES, inefficient contextual information use, and equal treatment of structured and unstructured knowledge  
+* A new pre-training model has been developed to enhance cross-modal integration in biology, using accurate molecular representations through SELFIES and extracting contextual knowledge from unstructured biological texts  
+* This model distinguishes between structured and unstructured knowledge for better information utilization  
+* It excels in tasks like predicting molecular and protein properties, drug-target interactions, and protein-protein interactions, employing datasets like ZINC20, Uniref50, and C4 for pre-training  
+* It surpasses existing models in molecule captioning and text-based molecule generation  
+* The model includes both unstructured contextual knowledge and structured database knowledge in its pre-training  
+* One limitation is the need for extensive fine-tuning for each specific downstream task  
+* It lacks generalization across different tasks and has a potential risk of data leakage when combining data from various tasks  
+* The model focuses primarily on sequence formats of biological entities and does not explore other modalities like DNA/RNA sequences and cells, nor other formats like 2D or 3D structures  
 
 
