@@ -11,6 +11,47 @@ categories: study
 {% highlight ruby %}
 
 
+April week2   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** iBlast(G) ㅇㄱㄱㅇㄱㅃㄹㄲㄴㄱㅍㅇㅍㅃㄹㅈㅂㅎㅈ    
+** paper focus: E-NLP  
+  
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+*class  
+** RobustDeepLearning     
+** ECE303TA    
+	
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, April 08, 2024    
+* research   
+* class     
+** summary of book  
+o   
+
+Tuesday, April 09, 2024    
+* research   
+* class     
+** summary of book  
+o   
+
+
+
+
+{% highlight ruby %}
+
+
 April week1   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** iBlast(G) ㅇㄱㄱㅇㄱㅃㄹㄲㄴㄱㅍㅇㅍㅃㄹㅈㅂㅎㅈ    
