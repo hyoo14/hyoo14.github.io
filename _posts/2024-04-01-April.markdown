@@ -70,6 +70,12 @@ Saturday, April 13, 2024
 ** summary of book  
 o   
 
+Sunday, April 14, 2024    
+* research   
+* class     
+** summary of book  
+o   ㅅㅅㅂㅀㄱㅇㄴㅠㅠ   
+
 
 
 {% highlight ruby %}
