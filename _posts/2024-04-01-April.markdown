@@ -75,8 +75,67 @@ Sunday, April 14, 2024
 * class     
 ** summary of book  
 o   ㅅㅅㅂㅀㄱㅇㄴㅠㅠ   
+<makedb>  
+makeblastdb -in source.fasta -dbtype prot  
+
+sed -i 's/\x13//g' astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa
+
+singularity exec --bind /ifs/groups/rosenMRIGrp/hty23/astral_scope/:/data /ifs/groups/rosenMRIGrp/hty23/iMethods/methods/blast_latest.sif makeblastdb -in /data/astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2.fa -dbtype prot
 
 
+<search>
+
+singularity exec --bind /ifs/groups/rosenMRIGrp/hty23/astral_scope/:/data /ifs/groups/rosenMRIGrp/hty23/iMethods/methods/blast_latest.sif blastp -query /data/astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -db /data/astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2 -out /data/result/blastp_astral_scope_result2.xml -outfmt 5
+
+
+-----음 근데 signularity라 그런가 잘 안됨... 그냥 직접 다운로드 후 실행해야할듯  
+wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.12.0/ncbi-blast-2.12.0+-x64-linux.tar.gz
+tar -xzvf ncbi-blast-2.12.0+-x64-linux.tar.gz
+
+bin에 실행파일있음 blastp, blastn 등등..
+
+makeblastdb -in /content/drive/MyDrive/playground_test_anything/astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2.fa -dbtype prot
+
+아 근데 sed -i 's/\x13//g' /content/drive/MyDrive/playground_test_anything/astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2.fa 이거해줘야..
+(search:)  
+
+./../blastp -query astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -db astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2.fa -out blastp_astral_scope_result2.xml -outfmt 5 -num_threads 96
+./../blastp -query astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -db astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_2.fa -out blastp_astral_scope_result2.m8 -outfmt 6 -num_threads 96
+
+
+get mmseqs github repo :
+git clone https://github.com/soedinglab/MMseqs2.git  
+cd MMseqs2
+mkdir build
+cd build
+module load cmake
+cmake ..
+make -j $(nproc)
+
+(search:)
+mmseqs easy-search query.fasta targetDB.fasta results.tsv tmp --threads 96
+
+
+
+get diamond github repo :
+git clone https://github.com/bbuchfink/diamond.git
+cd diamond
+mkdir build
+cd build
+module load cmake
+cmake ..
+make -j $(nproc)
+
+(makedb:)
+./../diamond makedb --in reference.fasta -d dbname
+
+(search:)
+./../diamond blastp -d reference -q queries.fasta -o matches.tsv
+./../diamond blastp -q astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -d db_diamond_astral_scope_3 -o diamond_astral_scope_result3.m8
+./../diamond blastp -q astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -d db_diamond_astral_scope_6 -o diamond_astral_scope_result6.xml --outfmt 5
+
+
+[next? 23, 234, 2345, 23456, 234567, 2345678, 23456789, 2345678910]  
 
 {% highlight ruby %}
 
