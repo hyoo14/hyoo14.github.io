@@ -7,6 +7,45 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+April week3   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** iBlast(G)     
+
+*class  
+** RobustDeepLearning(assignment will release this week)       
+** ECE303TA    
+
+* future...research    
+** upload zenodo    
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, April 15, 2024    
+* research   
+** 23, 234, 2345, 23456, 234567, 2345678, 23456789, 2345678910  
+** merge and benchmark metric test  
+* class     
+** summary of paper? or topics?    
+o   
+
+
+
 
 {% highlight ruby %}
 
