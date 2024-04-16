@@ -38,14 +38,50 @@ April week3
 
 Monday, April 15, 2024    
 * research   
-** 23, 234, 2345, 23456, 234567, 2345678, 23456789, 2345678910  
-** merge and benchmark metric test  
+** 23, 234, 2345, 23456, 234567, 2345678, 23456789, 2345678910  ok  
+** merge ok //and benchmark metric test  ing
 * class     
 ** summary of paper? or topics?    
 o   
 
+Tuesday, April 16, 2024    
+* research   
+** benchmark metric test-accuracy etc..   
+*** Hit coverage ratio(non incremental)    
+*** Protein Class Accuracy(non incremental)  
+*** average evalues (calculate with best hit) draw plot ok    
+*** number of total hit vs batches  
+*** average whole hits vs batches  
 
+* class     
+** summary of paper? or topics?    
 
+o   
+
+[slurm batch sh 파일 업데이트 ㅎㅎ]
+#!/bin/bash -l
+#SBATCH --partition def
+#SBATCH --account rosenmriprj
+#SBATCH --cpus-per-task 32
+#SBATCH -t 00:10:00
+#SBATCH --mem=2G
+#SBATCH -o slurm-%j-${2}.out  # 표준 출력 파일
+#SBATCH -e slurm-%j-${2}.err  # 표준 오류 파일
+
+conda activate myenv
+
+nproc
+
+echo "SLURM_CPUS_ON_NODE = $SLURM_CPUS_ON_NODE"
+
+./../makeblastdb -in $1 -dbtype prot
+
+#./../blastp -query astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_1.fa -db $1 -out $2 -outfmt 5 -num_threads 32
+
+# 작업 완료 후 seff 명령어를 사용하여 작업 통계를 출력 파일에 추가
+echo "SLURM job efficiency statistics:" >> slurm-%j-${2}.out
+seff $SLURM_JOB_ID >> slurm-%j-${2}.out
+[근데 의도대로 딱 파일명이 잘 찍히지는 않음.. 필요 정보는 찍긴함]   
 
 {% highlight ruby %}
 
