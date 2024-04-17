@@ -46,16 +46,21 @@ o
 
 Tuesday, April 16, 2024    
 * research   
-** benchmark metric test-accuracy etc..   
-*** Hit coverage ratio(non incremental)    
-*** Protein Class Accuracy(non incremental)  
+** benchmark metric test-accuracy etc..   ok  
+*** Hit coverage ratio(non incremental)    ok  
+*** Protein Class Accuracy(non incremental)  ok  
 *** average evalues (calculate with best hit) draw plot ok    
 *** number of total hit vs batches  
 *** average whole hits vs batches  
 
 * class     
 ** summary of paper? or topics?    
+o   
 
+Wednesday, April 17, 2024    
+* research   
+* class     
+** summary of paper? or topics?    
 o   
 
 [slurm batch sh 파일 업데이트 ㅎㅎ]
