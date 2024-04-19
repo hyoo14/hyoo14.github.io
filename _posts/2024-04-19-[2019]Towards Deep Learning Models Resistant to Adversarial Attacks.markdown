@@ -29,7 +29,7 @@ Useful sentences :
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1_IubWvPAcy5m153Sg7ZClbzietjY_IYy?usp=sharing)  
 [~~Lecture link~~]()  
 
 <br/>
