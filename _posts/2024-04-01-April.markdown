@@ -77,6 +77,14 @@ Friday, April 19, 2024
 *** + 코워킹(넷트워킹)?  
 o   
 
+
+Saturday, April 20, 2024    
+* research   
+* class     
+** paper recommended    
+*** + 코워킹(넷트워킹)?  
+o   
+
 [slurm batch sh 파일 업데이트 ㅎㅎ]
 #!/bin/bash -l
 #SBATCH --partition def
