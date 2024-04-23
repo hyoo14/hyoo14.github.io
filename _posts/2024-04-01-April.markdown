@@ -40,6 +40,11 @@ Monday, April 22, 2024
 * class   
 o   
 
+Tuesday, April 23, 2024    
+* research   
+* class   
+o   
+
 
 
 {% highlight ruby %}
