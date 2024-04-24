@@ -41,9 +41,27 @@ Monday, April 22, 2024
 o   
 
 Tuesday, April 23, 2024    
-* research   
 * class   
+** writing assignment  
+* ta  
+** meeting... 펑크내심..ㄷㄷㅂㄷㅂㄷ    
+* research   
+** experiments  
 o   
+
+Wednesday, April 24, 2024    
+* class   
+** writing assignment  
+* research   
+** experiments  
+o   
+
+-문제를 자기가 찾고 스스로 해결, 내가 찾은 문제가 제일 중요한 문제다라고 설명할 수 있어야!  
+역량 극단적으로 빠르게 발전..  
+
+-정확도가 제일 중요하긴하네... 성능(정확도)가 가장 보존되는 한도 내에서 속도나 다른 것을 업그레이드 시켜야!  
+
+-트랜스포머 뜯어보거나 nano gpt 뜯어보는거, 카파시가(openai 퇴사자) 어떻게 학습하는지 뜯어보면 좋아  
 
 
 
