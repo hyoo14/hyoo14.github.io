@@ -84,6 +84,7 @@ Sunday, April 28, 2024
 * class   
 ** study      
 o   
+*** maybe for future, 적대적유전자입력 생성 및 공격.. 근데 이 유전자가 특정 생물임을 확인하는 절차(db에서 확인)가 있어야겠지...  
 
 
 
