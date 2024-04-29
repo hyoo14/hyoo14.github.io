@@ -9,6 +9,49 @@ categories: study
 {% highlight ruby %}
 
 
+April week5   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods .. 언제끝나냐       
+
+*integrated(research and class)..only way I found?  
+** robustness of nucl lms(and adv attack?)    
+
+*class  
+** RobustDeepLearning(assignment will release next next week)       
+** ECE303TA    
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, April 29, 2024    
+* research   
+** experiments  
+* class   
+** study      
+o  
+
+
+
+
+{% highlight ruby %}
+
+
 April week4   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** iBlast(G)     
