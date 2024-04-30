@@ -55,6 +55,8 @@ Tuesday, April 30, 2024
 * class  
 ** study  
 o  
+한글자음초성 handling not easy with lm(위의 예시)->좋은토픽    
+
 
 
 
