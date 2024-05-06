@@ -9,6 +9,55 @@ categories: study
 {% highlight ruby %}
 
 
+May week2   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods .. 언제끝나냐       
+
+*integrated(research and class)..only way I found?  
+** robustness of nucl lms(and adv attack?)    
+
+*class  
+** RobustDeepLearning(assignment will release next next week)       
+** ECE303TA    
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, May 06, 2024  
+* research   
+** experiments   
+* integrated   
+** ㄷㅎㅊ준비   
+* class  
+** study  
+감기 아쥑...ㅠㅠ  
+뭐 특별한 것은 없고.. 좀 화가나고 마음이 떠난 상태  
+ㄷㅎㅊ준비 빡쎄야하는데.... 회복하고 운동하고 해봐야겠어   
+o  
+
+
+
+
+
+{% highlight ruby %}
+
+
 May week1   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** incremental methods .. 언제끝나냐       
