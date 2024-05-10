@@ -80,7 +80,9 @@ Friday, May 10, 2024
 * class and integrated  
 ** dnabert2 되는듯? 굿  
 ** nucl transformer 시도  
+** mistral dna라는 것도 있네..?  
 어제 수업 좋았다    
+
 o  
 
 
