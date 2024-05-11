@@ -82,9 +82,16 @@ Friday, May 10, 2024
 ** nucl transformer 시도  
 ** mistral dna라는 것도 있네..?  
 어제 수업 좋았다    
-
 o  
 
+
+Saturday, May 11, 2024  
+* research  
+* class and integrated  
+** dnabert2 finetuning without gdrive    
+** nucl transformer ?     
+** mistral dna ?    
+o     
 
 
 
