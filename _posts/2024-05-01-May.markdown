@@ -93,6 +93,13 @@ Saturday, May 11, 2024
 ** mistral dna ?    
 o     
 
+Sunday, May 12, 2024  
+* research  
+* integrated with class  
+역시세계최고동네는 좋긴하다  
+o  
+
+
 
 
 {% highlight ruby %}
