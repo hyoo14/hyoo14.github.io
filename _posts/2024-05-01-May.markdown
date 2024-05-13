@@ -96,9 +96,12 @@ o
 Sunday, May 12, 2024  
 * research  
 * integrated with class  
+** dnabert2/nt   
 역시세계최고동네는 좋긴하다  
 o  
-
+mistral dna 해볼까말까 아직 몰겠다  
+그래프는ㅅㅂ걍dcg하면되겠구먼ㅈㄴㄱㅃㄱㄺㅅㅂㄴㄴㄷㅅㄲ  
+여러 상관계수를 하나의 그래프에 나타내봐야겠다...  
 
 
 
