@@ -50,6 +50,9 @@ o
 Tuesday, May 14, 2024  
 * research  
 * integrated with class   
+md 보니까 그냥 개인적으로 학습시킨 모델이네..  
+https://huggingface.co/RaphaelMourad 여기 mistral이랑 mixtral로 트레이닝한것들 11개 정도 있음  
+https://medium.com/@morphos77/mistral-dna-mistral-model-for-genomics-e800e8349ed4 이거는 개인 블로그  
 o   
 
 
