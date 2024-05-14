@@ -55,6 +55,8 @@ https://huggingface.co/RaphaelMourad 여기 mistral이랑 mixtral로 트레이�
 https://medium.com/@morphos77/mistral-dna-mistral-model-for-genomics-e800e8349ed4 이거는 개인 블로그  
 o   
 
+뭐 하냐해면 뭐 볼케이노그림도 그리고 근데 그보다 먼저 worker 240513에서 캔달 안 좋은 예시 찾았는데 거기에서 피어쓴 점수 봐야함  
+
 
 
 
