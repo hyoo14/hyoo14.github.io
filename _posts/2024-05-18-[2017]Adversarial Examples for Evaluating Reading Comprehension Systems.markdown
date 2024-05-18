@@ -46,7 +46,7 @@ We hope our insights will motivate the development of new models that understand
 <br/>
 
 [Paper link](https://drive.google.com/drive/folders/1s9zUjtwX3LIOeNYAZ4khcSKBCDwEnyKU?usp=sharing)  
-[~~Lecture link~~]()  
+[Lecture link](https://aclanthology.org/D17-1215.mp4)   
 
 <br/>
 
