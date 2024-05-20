@@ -9,6 +9,51 @@ categories: study
 {% highlight ruby %}
 
 
+May week4   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods .. 언제끝나냐       
+
+*integrated(research and class)..only way I found?  
+** robustness of nucl lms(and adv attack?)    
+*** target(d2/nt /md? )  
+
+*class  
+** RobustDeepLearning(assignment will release this week)       
+** ECE303TA    
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+Monday, May 20, 2024  
+* research  
+** 볼케이노그림 해석, worker 240513에서 캔달 안 좋은 예시 찾았는데 거기에서 다른
+모델들 비교, incremental 이후도 비교, 피어쓴 점수까지  
+* integrated with class  
+** 과제 + 자연어 다룬 수업 부분의 논문 정리  
+** 이제 기한도 얼마 안 남아서 정리 및 논의 메일까지도?  
+o    
+
+
+
+{% highlight ruby %}
+
+
 May week3   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** incremental methods .. 언제끝나냐       
