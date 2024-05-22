@@ -62,6 +62,14 @@ Tuesday, May 21, 2024
 **** 저장은 됐는데...ㅋㅋㅋ 불러오기가 잘 안 됨... 불러왔는데 성능이... 띠용   
 o    
 
+Wednesday, May 22, 2024  
+* research  
+** kendall tau update  
+* integrated with class  
+** 과제.. 마무리지어놔야함  
+** 허깅페이스 푸시엔 풀.. 해보고 캐릭 코돈까지는 했으면  
+o  
+
 
 
 {% highlight ruby %}
