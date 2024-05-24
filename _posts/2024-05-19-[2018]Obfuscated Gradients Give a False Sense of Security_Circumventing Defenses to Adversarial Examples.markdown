@@ -38,7 +38,32 @@ In a case study, examining non-certified white-box-secure defenses at ICLR 2018,
 Our new attacks successfully circumvent 6 completely, and 1 partially, in the original threat model each paper considers.
 
 * Useful sentences :  
-*   
+* 방어 방법이 흐린 그라디언트를 사용하는지 여부를 정당화하기 위해서는 방어의 몇 가지 주요 특성과 행동을 조사할 수 있습니다. 주요 지표는 다음과 같습니다:
+1. **한 번의 공격이 반복적인 공격보다 더 효과적**: 반복적인 최적화 기반 공격이 일반적으로 단일 단계 공격보다 더 효과적입니다. 만약 단일 단계 방법이 반복적인 방법보다 더 효과적이라면, 방어가 반복적인 공격을 국소 최소값에 갇히게 만들 가능성이 있습니다.
+
+2. **블랙박스 공격이 화이트박스 공격보다 더 효과적**: 블랙박스 공격은 그라디언트 정보를 사용하지 않기 때문에, 블랙박스 공격이 화이트박스 공격보다 더 성공적이라면 방어가 그라디언트를 흐리게 만들고 있음을 나타냅니다.
+
+3. **제한 없는 공격이 100% 성공에 도달하지 못함**: 만약 무제한 왜곡으로 공격이 100% 성공하지 못한다면, 이는 공격이 최적으로 수행되지 않음을 나타내며, 이는 흐린 그라디언트를 시사합니다.
+
+4. **무작위 샘플링으로 적대적 예제를 찾을 수 있음**: 만약 ε-볼 내에서 무작위 검색으로 그라디언트 기반 공격이 아닌 적대적 예제를 찾을 수 있다면, 이는 흐린 그라디언트를 나타냅니다.
+
+5. **왜곡 범위를 증가시켜도 공격 성공률이 증가하지 않음**: 일반적으로 더 큰 왜곡 범위는 공격 성공률을 증가시켜야 합니다. 그렇지 않다면 이는 흐린 그라디언트를 나타낼 수 있습니다
+
+* To justify whether a defense method is using obfuscated gradients, one can examine several key characteristics and behaviors of the defense. The primary indicators include:
+
+To determine if a defense method is using obfuscated gradients, several indicators can be examined. One key indicator is if one-step attacks perform better than iterative attacks, which suggests that the iterative methods are getting stuck in local minima. Another sign is if black-box attacks outperform white-box attacks, indicating that the defense might be obfuscating gradients. Additionally, if unbounded attacks fail to reach 100% success, it shows that the attack is not performing optimally, hinting at possible gradient obfuscation. Furthermore, if random sampling can find adversarial examples when gradient-based attacks cannot, it indicates that the gradients are being obfuscated. Lastly, if increasing the distortion bound does not increase the attack success rate, this is another strong sign that the defense method is using obfuscated gradients. 
+
+
+1. One-step attacks perform better than iterative attacks: Iterative optimization-based attacks are generally more effective than one-step attacks. If single-step methods outperform iterative methods, the defense might be causing the iterative attack to get stuck in local minima.
+
+2. Black-box attacks outperform white-box attacks: Since black-box attacks do not use gradient information, if they are more successful than white-box attacks, this suggests that the defense might be obfuscating gradients.
+
+3. Unbounded attacks fail to reach 100% success: If an attack with unbounded distortion does not achieve 100% success, it indicates the attack is not performing optimally, suggesting possible obfuscated gradients.
+
+4. Random sampling can find adversarial examples: If brute-force random search within an ε-ball finds adversarial examples when gradient-based attacks do not, it indicates obfuscated gradients.
+
+5. Increasing distortion bound does not increase attack success: Typically, a larger distortion bound should increase the attack success rate. If this is not observed, it might indicate obfuscated gradients.
+   
 
 
 {% endhighlight %}  
@@ -195,6 +220,10 @@ For example, consider a neural network model that identifies panda images.
 If non-differentiable defenses are applied to this model, normal gradient-based attacks cannot deceive the model.
 
 However, by using BPDA, we can approximate the non-differentiable parts and make the model misidentify the panda image as another animal.
+
+
+
+
 
 <br/>
 # refer format:     
