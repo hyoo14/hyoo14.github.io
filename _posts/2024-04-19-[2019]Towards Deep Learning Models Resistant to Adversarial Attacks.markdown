@@ -22,7 +22,50 @@ categories: study
 * 저자들은 이러한 잘 정의된 적의 클래스에 대한 견고성이 완전히 저항할 수 있는 심층 학습 모델로 가는 중요한 디딤돌임을 믿습니다
 
 Useful sentences :  
-*   
+*   The strengths of adversarial training include improved robustness against attacks, better generalization to unseen attacks, and a solid theoretical framework for developing defenses. However, its weaknesses are the high computational cost, reduced accuracy on clean data, risk of overfitting to specific attacks, and difficulty in scaling to large datasets and complex models  
+
+**Strengths:
+
+1. **Improved Robustness:** Adversarial training significantly enhances the robustness of neural networks against adversarial attacks. This is achieved by training the model on adversarial examples, which makes it more resistant to perturbations during inference.
+   
+2. **Generalization to Unseen Attacks:** Models trained with adversarial training tend to generalize better to unseen adversarial attacks. By exposing the model to a variety of adversarial examples, it learns to withstand different types of attacks.
+
+3. **Defensive Shield:** Adversarial training acts as a defensive shield by continuously challenging the model with the worst-case adversarial examples. This helps in achieving a model that is inherently more secure and reliable in adversarial settings.
+
+4. **Theoretical Framework:** Adversarial training provides a theoretical framework for understanding and defending against adversarial attacks. This framework helps in formulating new defenses and understanding the limitations of current models.
+
+**Weaknesses:**
+
+1. **Computationally Expensive:** Adversarial training is computationally intensive as it requires generating adversarial examples during training. This process increases the overall training time and computational resources needed.
+
+2. **Reduced Accuracy on Clean Data:** Models trained with adversarial training often experience a reduction in accuracy on clean (non-adversarial) data. The trade-off between robustness and accuracy is a significant challenge.
+
+3. **Overfitting to Specific Attacks:** There is a risk of overfitting to the specific types of adversarial attacks used during training. This makes the model vulnerable to new, unseen types of attacks that were not included in the training process.
+
+4. **Difficulty in Scaling:** Scaling adversarial training to large datasets and complex models is difficult. The increased computational burden and the need for extensive adversarial example generation make it challenging to apply adversarial training in practical, large-scale scenarios.
+
+
+**장점:**
+
+1. **향상된 견고성:** 적대적 훈련은 적대적 공격에 대한 신경망의 견고성을 크게 향상시킵니다. 이는 모델을 적대적 예제에 대해 훈련시킴으로써 달성되며, 추론 중에 발생하는 교란에 더 저항하게 만듭니다.
+
+2. **보지 못한 공격에 대한 일반화:** 적대적 훈련으로 훈련된 모델은 보지 못한 적대적 공격에 대해 더 잘 일반화됩니다. 다양한 적대적 예제에 모델을 노출함으로써, 모델은 다양한 유형의 공격을 견딜 수 있도록 학습합니다.
+
+3. **방어막 역할:** 적대적 훈련은 모델을 최악의 적대적 예제로 계속해서 도전하게 함으로써 방어막 역할을 합니다. 이는 적대적 환경에서 본질적으로 더 안전하고 신뢰할 수 있는 모델을 달성하는 데 도움이 됩니다.
+
+4. **이론적 틀:** 적대적 훈련은 적대적 공격을 이해하고 방어하는 이론적 틀을 제공합니다. 이 틀은 새로운 방어를 공식화하고 현재 모델의 한계를 이해하는 데 도움이 됩니다.
+
+**단점:**
+
+1. **비용이 많이 듬:** 적대적 훈련은 훈련 중에 적대적 예제를 생성해야 하므로 계산 비용이 많이 듭니다. 이 과정은 전체 훈련 시간과 계산 자원을 증가시킵니다.
+
+2. **정상 데이터에 대한 정확도 감소:** 적대적 훈련으로 훈련된 모델은 정상(비적대적) 데이터에 대한 정확도가 감소하는 경우가 많습니다. 견고성과 정확성 간의 균형을 맞추는 것이 큰 도전 과제입니다.
+
+3. **특정 공격에 대한 과적합:** 훈련 중에 사용된 특정 유형의 적대적 공격에 과적합할 위험이 있습니다. 이는 훈련 과정에 포함되지 않은 새로운 유형의 공격에 모델이 취약하게 만듭니다.
+
+4. **확장 어려움:** 적대적 훈련을 대규모 데이터셋과 복잡한 모델로 확장하는 것이 어렵습니다. 증가된 계산 부담과 광범위한 적대적 예제 생성을 필요로 하여 실질적인 대규모 시나리오에서 적대적 훈련을 적용하는 것이 어렵습니다.
+
+
 
 
 {% endhighlight %}  
@@ -256,3 +299,7 @@ min θ ρ(θ), 여기서 ρ(θ) = E(x, y)∼D [max δ∈S L(θ, x + δ, y)]
 <br/>  
 # 요약  
 * 
+
+<br/>
+# reference format  
+Madry, Aleksander, Makelov, Aleksandar, Schmidt, Ludwig, Tsipras, Dimitris, & Vladu, Adrian. (2018). Towards Deep Learning Models Resistant to Adversarial Attacks. International Conference on Learning Representations (ICLR), Poster.
