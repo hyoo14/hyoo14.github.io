@@ -9,7 +9,7 @@ categories: study
 {% highlight ruby %}
 
 
-June week1   
+June week2   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** incremental methods .. 언제끝나냐       
 
@@ -47,6 +47,8 @@ June week1
 Monday, June 03, 2024  
 * research   
 ** duplicate check and todo list and scor    
+모든result파일서du제거후-->근데du없었음    
+plot다시해보자-->필요없음    
 * integrated with class  
 ** ppt  
 ** d2 test...  
@@ -55,6 +57,8 @@ r은ㄷㅊㅊㅁㅊㄹ나하자 ㅄㄱㅇㅈㄷㅀㅈㄷㅁㅎㄴㄴㅇㄹㅁㅎ
 
 char/word/bt moti-> char/codon/bt -> synonym/bt more의미있(지킴) -> 이터레티브perform up  
 future: adv train? use hier?  
+강의자료 보면 다른 참고문헌 있는데 그거 보면서non-gradient 인 것을 언급할 수 있게 준비해야  
+그리고 char/codon/bt예시도 만들어야  
 
 
 
