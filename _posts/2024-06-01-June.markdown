@@ -60,6 +60,26 @@ future: adv train? use hier?
 강의자료 보면 다른 참고문헌 있는데 그거 보면서non-gradient 인 것을 언급할 수 있게 준비해야  
 그리고 char/codon/bt예시도 만들어야  
 
+Tuesday, June 04, 2024  
+* research  
+** ref add!  
+* integrated with class  
+o  
+
+sbatch run_merger.sh merge_diamond_astral_scope_result23456789.m8 diamond_astral_scope_result10.m8 merge_diamond_astral_scope_result23456789   
+sbatch run_merger.sh mmseqs2_astral_scope_result_2.m8 mmseqs2_astral_scope_result_3.m8 merge_mmseqs2_astral_scope_result23.m8  
+sbatch run_multi_merger.sh blastp_astral_scope_result2.m8 blastp_astral_scope_result3.m8 merge_blastp_astral_scope_result23.m8  
+sbatch run_merger.sh ../astral_combined/mmseqs2_astral_scope_result_23456789.m8 mmseqs2_astral_scope_result_10.m8 merge_mmseqs_astral_scope_result2345678910.m8  
+sbatch /ifs/groups/rosenMRIGrp/hty23/iMethods/methods/MMseqs2/build/src/astral_scope/run_merger.sh /ifs/groups/rosenMRIGrp/hty23/iMethods/methods/MMseqs2/build/src/astral_combined/mmseqs2_astral_scope_result_23456789.m8 /ifs/groups/rosenMRIGrp/hty23/iMethods/methods/MMseqs2/build/src/scope/mmseqs2_astral_scope_result_10.m8 merge_mmseqs2_astral_scope_result2345678910.m8    
+
+
+10121723 normal  
+10121734 BeeGFS  
+
+
+Wednesday, June 05, 2024  
+* integrated with class  
+o  
 
 
 
