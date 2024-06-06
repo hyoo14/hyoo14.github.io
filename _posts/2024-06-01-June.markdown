@@ -81,6 +81,10 @@ Wednesday, June 05, 2024
 * integrated with class  
 o  
 
+Thursday, June 06, 2024  
+* integrated with class  
+o  
+ㄲㅇㅠㅠㅠ흑흑  
 
 
 {% highlight ruby %}
