@@ -86,6 +86,11 @@ Thursday, June 06, 2024
 o  
 ㄲㅇㅠㅠㅠ흑흑  
 
+Friday, June 06, 2024  
+* integrated with class  
+** think about far more step
+o  
+
 
 {% highlight ruby %}
 
