@@ -86,11 +86,15 @@ Thursday, June 06, 2024
 o  
 ㄲㅇㅠㅠㅠ흑흑  
 
-Friday, June 06, 2024  
+Friday, June 07, 2024  
 * integrated with class  
 ** think about far more step
 o  
 
+Saturday, June 08, 2024  
+* integarted with class  
+** think about far more step and write  
+o  
 
 {% highlight ruby %}
 
