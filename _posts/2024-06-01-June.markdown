@@ -50,11 +50,20 @@ Monday, June 10, 2024
 *** 속종명은 ar에만 test..적용 미정....     
 * research  
 ** check length of batch  
-** test without max limit
+** test without max limit  
 o  
 오늘 다 할 필요는 없음 리소치  
 
   
+
+Tuesday, June 11, 2024  
+* research  
+** todo list  
+* integarted with class  
+** writing  
+o  
+ㅎㅈㄶㄳㄷㄱㄱㄷㅠㅠ  
+
 
 
 
