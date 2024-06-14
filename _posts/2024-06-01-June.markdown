@@ -79,6 +79,7 @@ o
 Friday, June 14, 2024  
 * integrated with class  
 ** another way to gen: hierar  
+*** 젠 쉽지 않을 것 같은데 그냥 검증로직만..?  
 o  
 
 
