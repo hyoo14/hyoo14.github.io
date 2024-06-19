@@ -26,7 +26,7 @@ Textual style transfer is the task of transforming stylistic properties of text 
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1yRrce_OzRnkWidnQ8k7ejrW7_eCSGiRy?usp=sharing)  
 [~~Lecture link~~]()   
 
 <br/>
