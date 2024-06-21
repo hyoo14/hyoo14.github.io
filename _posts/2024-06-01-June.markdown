@@ -66,6 +66,11 @@ Thursday, June 20, 2024
 o  
 ㄱㅈㄱㄷㅈㅉㅇㅈㄷㅈㄱㅇㅅㅂㄳㅂ  
 
+Friday, June 21, 2024  
+* ㄷㅎㅊㅍㄹㅈㅌ  
+* research  
+o  
+
 
 
 {% highlight ruby %}
