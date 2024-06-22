@@ -27,7 +27,7 @@ Pretraining Large Language Models (LLMs) on large corpora of textual data is now
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1ClJHBY0smXDvMaO6dG9_Ozw-GlhiBJyV?usp=sharing)  
 [~~Lecture link~~]()   
 
 <br/>
