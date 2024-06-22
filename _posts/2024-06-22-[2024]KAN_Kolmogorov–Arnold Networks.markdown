@@ -27,7 +27,7 @@ Inspired by the Kolmogorov-Arnold representation theorem, we propose Kolmogorov-
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1XN76uEajy9W4caNeXJcWzMmNV02MVocX?usp=sharing)  
 [~~Lecture link~~]()   
 
 <br/>
