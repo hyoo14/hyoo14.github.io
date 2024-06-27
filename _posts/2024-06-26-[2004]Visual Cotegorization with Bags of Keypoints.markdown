@@ -132,6 +132,8 @@ Nowadays, SVM and Naive Bayes are used less frequently, and it has been a while 
 Although the methods used are different, I thought that the task is similar to image object classification.
 
 
+[refine?]  
+I found that it is a good idea to use the bag of keypoints method, which applies the bag of words approach used in text categorization to visual data. Nowadays, SVM and Naive Bayes are used less frequently, and it has been a while since I last saw them in a paper, so it was somewhat refreshing to see them used in this study. Although the methods used are different, I thought that the task is similar to image object classification.
 
 
 
