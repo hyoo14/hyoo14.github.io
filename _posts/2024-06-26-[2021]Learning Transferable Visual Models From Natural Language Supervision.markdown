@@ -28,7 +28,7 @@ State-of-the-art computer vision systems are trained to predict a fixed set of p
 
 <br/>
 
-[Paper link]()  
+[Paper link](https://drive.google.com/drive/folders/1PQKSJPuf0uGkqLaUSW9CTkGJVBmaBaFL?usp=sharing)  
 [~~Lecture link~~]()   
 
 <br/>
