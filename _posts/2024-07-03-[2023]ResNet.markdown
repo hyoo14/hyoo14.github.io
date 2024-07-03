@@ -1,0 +1,266 @@
+---
+layout: post
+title:  "[2015]Deep Residual Learning for Image Recognition"  
+date:   2024-07-03 18:24:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+
+
+
+깊은 신경망은 학습하기가 더 어렵습니다. 우리는 이전에 사용된 것보다 훨씬 더 깊은 네트워크의 학습을 용이하게 하기 위해 잔차 학습 프레임워크를 제안합니다. 우리는 층을 참조되지 않은 함수를 학습하는 대신 층 입력을 참조하여 잔차 함수를 학습하도록 명시적으로 재구성합니다. 우리는 이러한 잔차 네트워크가 최적화하기 더 쉽고 깊이가 크게 증가함에 따라 정확도를 높일 수 있다는 종합적인 실험 증거를 제공합니다. ImageNet 데이터셋에서 우리는 깊이가 최대 152층인 잔차 네트워크를 평가했으며, 이는 VGG 네트워크보다 8배 깊지만 복잡도는 더 낮습니다. 이러한 잔차 네트워크의 앙상블은 ImageNet 테스트 세트에서 3.57%의 오류율을 기록했습니다. 이 결과는 ILSVRC 2015 분류 작업에서 1위를 차지했습니다. 우리는 또한 CIFAR-10 데이터셋에서 100층 및 1000층의 분석을 제시합니다.
+
+
+
+Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize and can gain accuracy from considerably increased depth. On the ImageNet dataset, we evaluate residual nets with a depth of up to 152 layers—8× deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers.
+
+
+
+
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/19VmK8OAF5aHGL5deuQNyJJ5KhFMytKNE?usp=sharing)  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+ 
+<br/>
+# Methodology    
+
+
+### 3.1 잔차 학습
+
+층을 쌓아 올린 몇 개의 층에 대해 H(x)를 적합해야 하는 기본 매핑으로 간주합니다. 여기서 x는 이 층들의 첫 번째 층에 대한 입력을 나타냅니다. 여러 비선형 층이 복잡한 함수들을 점근적으로 근사할 수 있다는 가정을 한다면, 잔차 함수, 즉 H(x) - x를 점근적으로 근사할 수 있다는 가정도 동등하게 적용될 수 있습니다. 따라서 쌓인 층들이 H(x)를 근사하도록 기대하는 대신, 우리는 이 층들이 잔차 함수 F(x) := H(x) - x를 명시적으로 근사하도록 합니다. 따라서 원래 함수는 F(x) + x가 됩니다. 두 가지 형식 모두 점근적으로 원하는 함수를 근사할 수 있어야 하지만, 학습의 용이성은 다를 수 있습니다.
+
+이 재구성은 열화 문제(degradation problem)에 대한 직관에 반하는 현상들에 의해 동기가 부여되었습니다. 더 깊은 모델이 더 얕은 모델보다 학습 오류가 작아야 합니다. 열화 문제는 여러 비선형 층이 신원 매핑(identity mappings)을 근사하는 데 어려움을 겪을 수 있음을 시사합니다. 잔차 학습 재구성을 통해 신원 매핑이 최적이라면, 여러 비선형 층의 가중치를 0으로 구동하여 신원 매핑에 접근할 수 있습니다.
+
+### 3.2 단축 연결에 의한 신원 매핑
+
+우리는 몇 개의 쌓인 층마다 잔차 학습을 적용합니다. 건축 블록은 그림 2에 나타나 있습니다. 본 논문에서는 다음과 같이 정의된 건축 블록을 고려합니다:
+
+y = F(x, {W_i}) + x 
+
+여기서 x와 y는 고려되는 층의 입력과 출력 벡터입니다. 함수 F(x, {W_i})는 학습해야 할 잔차 매핑을 나타냅니다. 그림 2의 예에서는 두 층이 있으며, F = W2σ(W1x)에서 σ는 ReLU를 나타내며, 편의를 위해 바이어스는 생략했습니다. F + x 연산은 단축 연결을 통해 수행되며, 요소별 덧셈이 이루어집니다. 추가적인 비선형성(즉, σ(y), 그림 2 참조)은 덧셈 후에 적용됩니다.
+
+단축 연결은 추가적인 매개변수나 계산 복잡성을 도입하지 않습니다. 이는 실제로 매우 매력적이며, 단순 네트워크와 잔차 네트워크 간의 비교에서도 중요합니다. 우리는 매개변수 수, 깊이, 너비, 계산 비용이 동일한 단순/잔차 네트워크를 공정하게 비교할 수 있습니다.
+
+x와 F의 차원이 동일해야 합니다. 그렇지 않은 경우(예: 입력/출력 채널 변경 시), 차원을 맞추기 위해 단축 연결을 통해 선형 투영 Ws를 수행할 수 있습니다:
+
+y = F(x, {W_i}) + W_s x 
+
+잔차 함수 F의 형태는 유연합니다. 본 논문에서는 두 층 또는 세 층이 있는 함수 F를 실험에 사용했지만, 더 많은 층도 가능합니다. 단일 층만 있는 경우, y = W1x + x로 단순한 선형 층과 유사하게 됩니다.
+
+### 3.3 네트워크 아키텍처
+
+우리는 다양한 단순/잔차 네트워크를 테스트하여 일관된 현상을 관찰했습니다. 논의를 위해 두 가지 모델을 설명합니다.
+
+단순 네트워크: 우리의 단순 베이스라인은 VGG 네트워크 철학에 영감을 받았습니다. 주로 3x3 필터를 사용하며, 두 가지 간단한 설계 규칙을 따릅니다: (i) 동일한 출력 특징 맵 크기에 대해 동일한 수의 필터를 사용하고, (ii) 특징 맵 크기가 절반이 되면 필터 수를 두 배로 늘려 층별 시간 복잡성을 유지합니다. 네트워크는 글로벌 평균 풀링 층과 1000개의 클래스에 대한 완전 연결 층으로 끝납니다. 총 가중치 층 수는 34입니다.
+
+잔차 네트워크: 단순 네트워크를 기반으로 단축 연결을 추가하여 잔차 네트워크로 변환합니다. 신원 단축 연결은 입력과 출력의 차원이 동일한 경우 직접 사용할 수 있습니다. 차원이 증가하는 경우, 1x1 컨볼루션을 사용하여 차원을 맞추는 투영 단축 연결을 사용합니다.
+
+### 3.4 구현
+
+ImageNet에 대한 우리의 구현은 [21, 41]의 관행을 따릅니다. 이미지는 [256, 480] 범위에서 무작위로 샘플링되며, 224x224 크기로 무작위로 크롭하여 사용됩니다. 표준 색상 증강이 적용됩니다. 배치 정규화(BN)는 각 컨볼루션 후와 활성화 전 즉시 적용됩니다. SGD를 사용하여 미니 배치 크기 256으로 학습하며, 초기 학습률은 0.1에서 시작해 오류가 평탄해질 때마다 10배 감소시킵니다. 가중치 감쇠는 0.0001, 모멘텀은 0.9를 사용합니다. 드롭아웃은 사용하지 않습니다.
+
+테스트 시 비교 연구를 위해 표준 10-크롭 테스트를 사용하며, 최상의 결과를 위해 여러 크기에서 점수를 평균화합니다.
+
+
+
+### 3.1 Residual Learning
+
+Let us consider H(x) as an underlying mapping to be fit by a few stacked layers, where x denotes the inputs to the first of these layers. If one hypothesizes that multiple nonlinear layers can asymptotically approximate complex functions, it is equivalent to hypothesize that they can asymptotically approximate the residual functions, i.e., H(x) - x. Instead of expecting stacked layers to approximate H(x), we explicitly let these layers approximate a residual function F(x) := H(x) - x. The original function thus becomes F(x) + x. Both forms should asymptotically approximate the desired functions, but the ease of learning might differ.
+
+This reformulation is motivated by the counterintuitive phenomena regarding the degradation problem. A deeper model should have no greater training error than its shallower counterpart if the added layers can be constructed as identity mappings. The degradation problem suggests that solvers might have difficulties approximating identity mappings by multiple nonlinear layers. With the residual learning reformulation, if identity mappings are optimal, solvers may simply drive the weights of the multiple nonlinear layers towards zero to approach identity mappings.
+
+### 3.2 Identity Mapping by Shortcuts
+
+We apply residual learning to every few stacked layers. A building block is shown in Fig. 2. In this paper, we consider a building block defined as:
+
+y = F(x, {W_i}) + x
+
+Here, x and y are the input and output vectors of the layers considered. The function F(x, {W_i}) represents the residual mapping to be learned. For the example in Fig. 2 that has two layers, F = W2σ(W1x), where σ denotes ReLU and biases are omitted for simplifying notations. The operation F + x is performed by a shortcut connection and element-wise addition. The second nonlinearity (i.e., σ(y)) is applied after the addition.
+
+Shortcut connections introduce neither extra parameter nor computational complexity. This is attractive in practice and important in our comparisons between plain and residual networks. We can fairly compare plain/residual networks with the same number of parameters, depth, width, and computational cost.
+
+The dimensions of x and F must be equal. If this is not the case, we can perform a linear projection Ws by the shortcut connections to match the dimensions:
+
+y = F(x, {W_i}) + W_s x 
+
+The form of the residual function F is flexible. In this paper, we experiment with functions F that have two or three layers, but more layers are possible. If F has only a single layer, it is similar to a linear layer y = W1x + x.
+
+### 3.3 Network Architectures
+
+We tested various plain/residual nets and observed consistent phenomena. To provide instances for discussion, we describe two models for ImageNet.
+
+Plain Network: Our plain baselines are inspired by the philosophy of VGG nets. They primarily use 3x3 filters and follow two simple design rules: (i) layers have the same number of filters for the same output feature map size, and (ii) the number of filters is doubled if the feature map size is halved. The network ends with a global average pooling layer and a 1000-way fully connected layer with softmax. The total number of weighted layers is 34.
+
+Residual Network: Based on the plain network, we insert shortcut connections to turn it into a residual network. Identity shortcuts can be directly used when the input and output dimensions are the same. When dimensions increase, we use projection shortcuts to match dimensions.
+
+### 3.4 Implementation
+
+Our implementation for ImageNet follows the practice in [21, 41]. The image is resized with its shorter side randomly sampled in [256, 480], and
+
+ a 224x224 crop is randomly sampled. Standard color augmentation is applied. Batch normalization (BN) is applied after each convolution and before activation. We train all plain/residual nets from scratch using SGD with a mini-batch size of 256. The learning rate starts at 0.1 and is reduced by 10 when the error plateaus. Training runs for up to 60x10^4 iterations with a weight decay of 0.0001 and a momentum of 0.9. Dropout is not used.
+
+For testing, we adopt the standard 10-crop testing for comparison studies and average the scores at multiple scales for the best results.
+
+
+
+
+<br/>
+# Results  
+
+
+
+### 4.1 ImageNet 분류
+
+우리는 ImageNet 2012 분류 데이터셋에서 우리의 방법을 평가했습니다. 이 데이터셋은 1000개의 클래스로 구성되어 있으며, 128만 개의 학습 이미지와 5만 개의 검증 이미지를 포함합니다. 최종 결과는 테스트 서버에서 보고한 10만 개의 테스트 이미지에 대한 것입니다. 우리는 top-1 및 top-5 오류율을 평가합니다.
+
+**단순 네트워크**: 우리는 먼저 18층 및 34층 단순 네트워크를 평가했습니다. 34층 단순 네트워크는 그림 3(중간)에 나와 있습니다. 18층 단순 네트워크는 유사한 형태입니다. 자세한 아키텍처는 표 1에 나와 있습니다.
+
+표 2의 결과는 34층 단순 네트워크가 18층 단순 네트워크보다 검증 오류가 더 높다는 것을 보여줍니다. 이유를 밝히기 위해, 그림 4(왼쪽)에서 학습 절차 동안의 학습/검증 오류를 비교했습니다. 우리는 열화 문제를 관찰했습니다 - 더 깊은 모델이 얕은 모델보다 더 높은 학습 오류를 가집니다.
+
+### 4.2 CIFAR-10과 분석
+
+우리는 CIFAR-10 데이터셋에서 더 많은 연구를 수행했습니다. 이 데이터셋은 10개의 클래스에서 5만 개의 학습 이미지와 1만 개의 테스트 이미지로 구성됩니다. 우리는 학습 세트에서 학습하고 테스트 세트에서 평가된 실험을 제시합니다. 우리의 초점은 매우 깊은 네트워크의 동작에 있지만, 최첨단 결과를 밀어내는 것은 아니므로 간단한 아키텍처를 의도적으로 사용합니다.
+
+단순/잔차 아키텍처는 그림 3(중간/오른쪽)의 형태를 따릅니다. 네트워크 입력은 32×32 이미지이며, 픽셀별 평균이 빼집니다. 첫 번째 층은 3×3 컨볼루션입니다. 그 다음으로 3×3 컨볼루션 층 6n 개를 사용하여 특징 맵 크기 {32, 16, 8}에서 각각 2n 층씩 쌓습니다. 필터의 수는 각각 {16, 32, 64}입니다. 서브샘플링은 스트라이드 2인 컨볼루션을 통해 수행됩니다. 네트워크는 글로벌 평균 풀링, 10-way 완전 연결 층, 그리고 소프트맥스로 끝납니다.
+
+### 4.3 PASCAL 및 MS COCO에서의 객체 탐지
+
+우리의 방법은 다른 인식 작업에서도 좋은 일반화 성능을 보입니다. 표 7 및 8은 PASCAL VOC 2007 및 2012, 그리고 COCO에서의 객체 탐지 베이스라인 결과를 보여줍니다. 우리는 Faster R-CNN을 탐지 방법으로 채택했습니다. 여기서 VGG-16을 ResNet-101로 대체한 개선사항에 관심이 있습니다. 두 모델을 사용하는 탐지 구현은 동일하므로, 이득은 더 나은 네트워크로 인한 것입니다. 특히 COCO 데이터셋에서 COCO의 표준 메트릭(mAP@[.5, .95])에서 6.0% 증가, 즉 28% 상대적 향상을 얻었습니다. 이 증가는 학습된 표현으로 인한 것입니다.
+
+깊은 잔차 네트워크를 기반으로, 우리는 ILSVRC & COCO 2015 대회에서 여러 트랙에서 1위를 차지했습니다: ImageNet 탐지, ImageNet 로컬라이제이션, COCO 탐지, 그리고 COCO 세그멘테이션. 자세한 내용은 부록에 나와 있습니다.
+
+## Results (English)
+
+### 4.1 ImageNet Classification
+
+We evaluated our method on the ImageNet 2012 classification dataset, which consists of 1000 classes with 1.28 million training images and 50,000 validation images. The final result is reported on 100,000 test images by the test server. We evaluate both top-1 and top-5 error rates.
+
+**Plain Networks**: We first evaluated 18-layer and 34-layer plain nets. The 34-layer plain net is in Fig. 3 (middle). The 18-layer plain net is of a similar form. See Table 1 for detailed architectures.
+
+The results in Table 2 show that the deeper 34-layer plain net has higher validation error than the shallower 18-layer plain net. To reveal the reasons, in Fig. 4 (left), we compared their training/validation errors during the training procedure. We observed the degradation problem - the deeper model has a higher training error.
+
+### 4.2 CIFAR-10 and Analysis
+
+We conducted more studies on the CIFAR-10 dataset, which consists of 50,000 training images and 10,000 testing images in 10 classes. We present experiments trained on the training set and evaluated on the test set. Our focus is on the behaviors of extremely deep networks, not on pushing the state-of-the-art results, so we intentionally used simple architectures.
+
+The plain/residual architectures follow the form in Fig. 3 (middle/right). The network inputs are 32×32 images, with the per-pixel mean subtracted. The first layer is 3×3 convolutions. Then we use a stack of 6n layers with 3×3 convolutions on the feature maps of sizes {32, 16, 8} respectively, with 2n layers for each feature map size. The numbers of filters are {16, 32, 64} respectively. The subsampling is performed by convolutions with a stride of 2. The network ends with a global average pooling, a 10-way fully-connected layer, and softmax.
+
+### 4.3 Object Detection on PASCAL and MS COCO
+
+Our method has good generalization performance on other recognition tasks. Tables 7 and 8 show the object detection baseline results on PASCAL VOC 2007 and 2012, and COCO. We adopt Faster R-CNN as the detection method. Here, we are interested in the improvements of replacing VGG-16 with ResNet-101. The detection implementation of using both models is the same, so the gains can only be attributed to better networks. Most remarkably, on the challenging COCO dataset, we obtain a 6.0% increase in COCO’s standard metric (mAP@[.5, .95]), which is a 28% relative improvement. This gain is solely due to the learned representations.
+
+Based on deep residual nets, we won the 1st places in several tracks in ILSVRC & COCO 2015 competitions: ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation. The details are in the appendix.
+
+
+
+
+<br/>
+# 예시  
+
+### ImageNet 분류에서의 예시
+**단순 네트워크와 잔차 네트워크 비교**  
+우리는 ImageNet 2012 데이터셋에서 18층과 34층의 단순 네트워크를 평가했습니다. 34층 단순 네트워크는 그림 3(중간)에 나와 있습니다. 표 1은 자세한 아키텍처를 보여줍니다.
+
+표 2의 결과는 34층 단순 네트워크가 18층 단순 네트워크보다 검증 오류가 더 높다는 것을 보여줍니다. 이를 설명하기 위해 그림 4(왼쪽)에서 학습/검증 오류를 비교했습니다. 우리는 더 깊은 모델이 얕은 모델보다 더 높은 학습 오류를 가지는 열화 문제를 관찰했습니다.
+
+잔차 네트워크에서는 이러한 열화 문제가 개선되었습니다. 예를 들어, 34층 잔차 네트워크는 34층 단순 네트워크보다 더 낮은 오류율을 기록했습니다.
+
+### CIFAR-10 데이터셋에서의 예시
+**잔차 네트워크의 학습**  
+우리는 CIFAR-10 데이터셋에서 더 많은 연구를 수행했습니다. 이 데이터셋은 10개의 클래스에서 5만 개의 학습 이미지와 1만 개의 테스트 이미지로 구성됩니다. 6n 층을 가진 잔차 네트워크를 실험했으며, 이 네트워크는 특징 맵 크기 {32, 16, 8}에 각각 2n 층씩 쌓여 있습니다.
+
+예를 들어, 110층 잔차 네트워크는 매우 깊지만, 학습 오류가 0.1% 미만으로 낮아지는 등 잘 수렴하였습니다. 이는 매우 깊은 네트워크가 최적화 어려움을 극복하고 더 높은 정확도를 달성할 수 있음을 보여줍니다.
+
+### PASCAL 및 MS COCO에서의 객체 탐지 예시
+**Faster R-CNN을 이용한 객체 탐지**  
+우리는 PASCAL VOC 2007 및 2012, 그리고 COCO 데이터셋에서 객체 탐지를 평가했습니다. Faster R-CNN 방법을 사용하여 VGG-16을 ResNet-101로 대체했습니다. 특히 COCO 데이터셋에서 COCO의 표준 메트릭(mAP@[.5, .95])에서 6.0% 증가, 즉 28% 상대적 향상을 얻었습니다. 이는 더 나은 네트워크로 인해 성능이 개선된 것을 보여줍니다.
+
+### Example in ImageNet Classification
+**Comparison of Plain and Residual Networks**  
+We evaluated 18-layer and 34-layer plain networks on the ImageNet 2012 dataset. The 34-layer plain network is shown in Figure 3 (middle). Table 1 provides detailed architectures.
+
+Results in Table 2 show that the 34-layer plain network has higher validation error than the 18-layer plain network. To reveal the reasons, we compared training/validation errors in Figure 4 (left). We observed the degradation problem where the deeper model has higher training error than the shallower counterpart.
+
+In contrast, the residual networks mitigated this issue. For instance, the 34-layer residual network achieved lower error rates compared to the 34-layer plain network.
+
+### Example in CIFAR-10 Dataset
+**Training of Residual Networks**  
+We conducted further studies on the CIFAR-10 dataset, consisting of 50,000 training images and 10,000 testing images in 10 classes. We experimented with residual networks with 6n layers, with feature map sizes {32, 16, 8} respectively having 2n layers.
+
+For example, the 110-layer residual network, despite being very deep, converged well with training error dropping below 0.1%. This demonstrates that extremely deep networks can overcome optimization difficulties and achieve high accuracy.
+
+### Object Detection on PASCAL and MS COCO
+**Object Detection using Faster R-CNN**  
+We evaluated object detection on the PASCAL VOC 2007 and 2012, and COCO datasets using Faster R-CNN. We replaced VGG-16 with ResNet-101. Notably, on the COCO dataset, we achieved a 6.0% increase in the standard metric (mAP@[.5, .95]), a 28% relative improvement. This improvement is attributed to the superior network.
+
+
+
+<br/>  
+# 요약 
+
+1. 잔차 학습 프레임워크는 깊은 신경망의 학습을 용이하게 합니다.
+2. 잔차 네트워크는 더 깊은 네트워크에서도 최적화가 용이하고 높은 정확도를 유지합니다.
+3. ImageNet 데이터셋에서 잔차 네트워크는 최고 성능을 기록하며, 특히 152층 모델이 뛰어난 성능을 보였습니다.
+4. CIFAR-10 데이터셋에서도 잔차 네트워크는 매우 깊은 모델에서 좋은 성능을 발휘했습니다.
+5. PASCAL 및 COCO 데이터셋에서의 객체 탐지 실험에서도 잔차 네트워크가 기존 모델보다 뛰어난 성능을 보였습니다.
+
+
+1. The residual learning framework eases the training of deep neural networks.
+2. Residual networks are easier to optimize and maintain high accuracy even with very deep networks.
+3. On the ImageNet dataset, residual networks achieved top performance, particularly the 152-layer model.
+4. On the CIFAR-10 dataset, residual networks also performed well, even with extremely deep models.
+5. In object detection experiments on PASCAL and COCO datasets, residual networks outperformed traditional models.
+
+
+
+
+# 기타  
+
+
+잔차 학습 프레임워크는 깊은 신경망의 최적화를 용이하게 하여 높은 정확도를 유지합니다. ImageNet, CIFAR-10, PASCAL, COCO 데이터셋에서 잔차 네트워크는 기존 모델보다 뛰어난 성능을 보였습니다.
+
+
+The residual learning framework simplifies the optimization of deep neural networks, maintaining high accuracy. Residual networks outperformed traditional models on the ImageNet, CIFAR-10, PASCAL, and COCO datasets.
+
+
+
+잔차 학습은 네트워크의 층을 입력에 대한 잔차 함수를 학습하도록 재구성하여, 깊은 신경망의 최적화를 용이하게 합니다.
+
+Residual learning reformulates the network layers to learn residual functions with reference to the inputs, simplifying the optimization of deep neural networks.
+
+
+It was fascinating to revisit such an impressive paper that feels like the origin of very deep neural networks with 152 layers.
+
+
+
+<br/>
+# refer format:     
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. "Deep Residual Learning for Image Recognition." arXiv preprint arXiv:1512.03385 (2015). https://doi.org/10.48550/arXiv.1512.03385
+  
+@article{He2015,
+  author    = {Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun},
+  title     = {Deep Residual Learning for Image Recognition},
+  journal   = {arXiv preprint arXiv:1512.03385},
+  year      = {2015},
+  url       = {https://doi.org/10.48550/arXiv.1512.03385},
+}
+
+
