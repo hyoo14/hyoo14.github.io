@@ -1,0 +1,198 @@
+---
+layout: post
+title:  "[2015]U-Net: Convolutional Networks for Biomedical Image Segmentation"  
+date:   2024-07-03 20:11:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+
+
+
+딥 네트워크의 성공적인 훈련에는 수천 개의 주석이 달린 훈련 샘플이 필요하다는 데 큰 동의가 있습니다. 이 논문에서는 이용 가능한 주석이 달린 샘플을 보다 효율적으로 사용하기 위해 데이터 증강을 강하게 활용하는 네트워크 및 훈련 전략을 제시합니다. 이 아키텍처는 문맥을 포착하기 위한 수축 경로와 정밀한 위치 지정을 가능하게 하는 대칭 확장 경로로 구성됩니다. 우리는 이러한 네트워크가 매우 적은 이미지로 끝까지 훈련될 수 있으며 전자 현미경 스택에서 신경 구조를 세분화하기 위한 ISBI 챌린지에서 이전 최고의 방법(슬라이딩 윈도우 컨볼루션 네트워크)을 능가한다는 것을 보여줍니다. 동일한 네트워크를 투과광 현미경 이미지(위상 대비 및 DIC)에서 훈련하여 ISBI 세포 추적 챌린지 2015에서 큰 차이로 우승했습니다. 게다가 네트워크는 빠릅니다. 512x512 이미지의 세분화는 최신 GPU에서 1초 미만이 소요됩니다. 전체 구현(Caffe 기반) 및 훈련된 네트워크는 http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net에서 사용할 수 있습니다.
+
+
+
+There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net.
+
+
+
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link](https://drive.google.com/drive/folders/1sJM3g_8g4dQfE_dZYEtekeu9KmsNamyw?usp=sharing)  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+ 
+<br/>
+# Methodology    
+
+
+이 논문에서는 U-Net의 아키텍처와 훈련 전략을 사용하여 생물 의학 이미지 세분화를 수행합니다. U-Net의 주요 특징은 수축 경로(contracting path)와 확장 경로(expanding path)를 포함한 대칭적인 구조입니다.
+
+1. **네트워크 아키텍처**:
+   - **수축 경로**: 이 경로는 컨볼루션 네트워크의 전형적인 아키텍처를 따릅니다. 두 개의 3x3 컨볼루션(패딩 없는 컨볼루션), 각 컨볼루션 뒤에 ReLU(Rectified Linear Unit)가 따라오며, 2x2 최대 풀링(max pooling) 연산이 있어 다운샘플링을 수행합니다. 다운샘플링 단계마다 특징 채널(feature channel)의 수를 두 배로 증가시킵니다.
+   - **확장 경로**: 이 경로에서는 특징 맵(feature map)을 업샘플링한 후, 2x2 컨볼루션("업컨볼루션")을 사용하여 특징 채널 수를 반으로 줄입니다. 수축 경로에서 잘라낸(cropped) 특징 맵과 병합(concatenate)한 다음, 두 개의 3x3 컨볼루션과 ReLU를 적용합니다. 마지막 층에서는 1x1 컨볼루션을 사용하여 각 64-컴포넌트 특징 벡터를 원하는 클래스 수로 매핑합니다. 네트워크 전체에 23개의 컨볼루션 층이 있습니다.
+
+2. **훈련**:
+   - 입력 이미지와 해당 세분화 맵을 사용하여 Caffe의 확률적 경사 하강법(stochastic gradient descent) 구현을 통해 네트워크를 훈련시킵니다. 패딩 없는 컨볼루션 때문에 출력 이미지는 입력 이미지보다 경계가 작습니다. GPU 메모리를 최대한 활용하기 위해 큰 입력 타일을 선호하며 배치 크기를 하나의 이미지로 줄입니다.
+   - 에너지 함수는 최종 특징 맵에 대한 픽셀 단위 소프트맥스(soft-max)와 크로스 엔트로피 손실 함수(cross entropy loss function)로 계산됩니다. 손실 함수는 각 위치에서 실제 값과 예측 값의 차이를 페널티로 줍니다.
+   - 데이터가 적기 때문에, 훈련 이미지에 탄성 변형(elastic deformation)을 적용하여 데이터 증강(data augmentation)을 많이 사용합니다. 이 방법은 네트워크가 변형에 대한 불변성을 학습할 수 있도록 합니다.
+
+3. **데이터 증강**:
+   - 미세 변형 이미지에서는 주로 이동 및 회전 불변성과 변형 및 그레이 값 변화에 대한 견고성을 필요로 합니다. 특히 무작위 탄성 변형은 주석이 달린 이미지가 매우 적은 경우 네트워크를 효과적으로 훈련시키는 핵심 개념입니다. 무작위 변위 벡터를 사용하여 부드러운 변형을 생성합니다.
+
+4. **실험**:
+   - U-Net의 적용을 세 가지 다른 세분화 작업에 대해 시연합니다. 첫 번째 작업은 전자 현미경 이미지에서 신경 구조를 세분화하는 것입니다. 두 번째 작업은 ISBI 세포 추적 챌린지 2015에서 수행된 광학 현미경 이미지에서의 세포 세분화입니다. 여기서 U-Net은 두 가지 데이터 세트에서 모두 우수한 성능을 보였습니다.
+
+
+
+In this paper, we perform biomedical image segmentation using the U-Net architecture and training strategy. The key feature of U-Net is its symmetric structure that includes a contracting path and an expanding path.
+
+1. **Network Architecture**:
+   - **Contracting Path**: This path follows the typical architecture of a convolutional network. It consists of the repeated application of two 3x3 convolutions (unpadded convolutions), each followed by a Rectified Linear Unit (ReLU) and a 2x2 max pooling operation for downsampling. At each downsampling step, the number of feature channels is doubled.
+   - **Expanding Path**: This path involves upsampling the feature map followed by a 2x2 convolution ("up-convolution") to halve the number of feature channels, concatenation with the correspondingly cropped feature map from the contracting path, and two 3x3 convolutions followed by ReLU. At the final layer, a 1x1 convolution is used to map each 64-component feature vector to the desired number of classes. In total, the network has 23 convolutional layers.
+
+2. **Training**:
+   - The network is trained using the input images and their corresponding segmentation maps with the stochastic gradient descent implementation of Caffe. Due to unpadded convolutions, the output image is smaller than the input by a constant border width. To maximize GPU memory usage, large input tiles are preferred over a large batch size, reducing the batch to a single image.
+   - The energy function is computed by a pixel-wise soft-max over the final feature map combined with the cross-entropy loss function, penalizing the deviation of the predicted values from the true values.
+   - Due to limited training data, extensive data augmentation is applied by using elastic deformations on the training images. This allows the network to learn invariance to such deformations.
+
+3. **Data Augmentation**:
+   - For microscopic images, shift and rotation invariance, as well as robustness to deformations and gray value variations, are essential. Random elastic deformations are key to effectively train the network with few annotated images. Smooth deformations are generated using random displacement vectors on a coarse 3x3 grid.
+
+4. **Experiments**:
+   - The application of U-Net to three different segmentation tasks is demonstrated. The first task involves the segmentation of neuronal structures in electron microscopic recordings. The second task is the segmentation of cells in light microscopic images as part of the ISBI cell tracking challenge 2015. U-Net showed superior performance in both datasets.
+
+
+
+<br/>
+# Results  
+
+
+
+1. **전자 현미경 이미지에서 신경 구조 세분화**:
+   - U-Net은 2012년에 시작된 ISBI EM 세분화 챌린지에서 이전 최고의 네트워크인 Ciresan et al.의 슬라이딩 윈도우 컨볼루션 네트워크를 능가했습니다. 
+   - U-Net은 0.000353의 워핑 에러(warping error)와 0.0382의 랜드 에러(rand error)를 기록하며 새로운 최고 점수를 달성했습니다. 이는 이전 최고의 방법보다 더 낮은 에러율을 보여줍니다.
+
+2. **광학 현미경 이미지에서의 세포 세분화**:
+   - 두 가지 데이터 세트에서 실험이 수행되었습니다: "PhC-U373"과 "DIC-HeLa".
+   - "PhC-U373" 데이터 세트에서 U-Net은 92%의 교차 영역 비율(IOU, Intersection Over Union)을 달성했으며, 이는 두 번째로 좋은 알고리즘보다 83% 더 높은 성능을 보였습니다.
+   - "DIC-HeLa" 데이터 세트에서 U-Net은 77.5%의 IOU를 달성했으며, 이는 두 번째로 좋은 알고리즘보다 46% 더 높은 성능을 보였습니다.
+
+3. **속도 및 효율성**:
+   - U-Net은 최신 GPU에서 512x512 이미지의 세분화를 1초 미만으로 수행할 수 있습니다. 
+   - 이 네트워크의 구현 및 훈련된 네트워크는 모두 공개되어 있으며, 다양한 생물 의학 세분화 작업에 쉽게 적용할 수 있습니다.
+
+
+
+1. **Segmentation of Neuronal Structures in Electron Microscopic Images**:
+   - U-Net outperformed the previous best network, the sliding-window convolutional network by Ciresan et al., in the ISBI EM segmentation challenge that started in 2012.
+   - U-Net achieved a new best score with a warping error of 0.000353 and a Rand error of 0.0382, showing lower error rates compared to the previous best method.
+
+2. **Cell Segmentation in Light Microscopic Images**:
+   - Experiments were conducted on two datasets: "PhC-U373" and "DIC-HeLa".
+   - In the "PhC-U373" dataset, U-Net achieved an Intersection Over Union (IOU) of 92%, significantly higher than the second-best algorithm, which had 83%.
+   - In the "DIC-HeLa" dataset, U-Net achieved an IOU of 77.5%, significantly higher than the second-best algorithm, which had 46%.
+
+3. **Speed and Efficiency**:
+   - U-Net can perform segmentation of a 512x512 image in less than a second on a recent GPU.
+   - The implementation and trained networks of U-Net are publicly available and can be easily applied to various biomedical segmentation tasks.
+
+
+
+
+<br/>
+# 예시  
+
+
+1. **전자 현미경 이미지에서 신경 구조 세분화**:
+   - **데이터 세트**: Drosophila 첫 번째 인스타 유충의 복부 신경 코드(VNC)의 일련의 섹션 전자 현미경 이미지(512x512 픽셀) 30장이 사용되었습니다.
+   - **훈련 과정**: 각 이미지에는 완전히 주석이 달린 세포(흰색)와 막(검은색) 세분화 맵이 있습니다. 네트워크는 이 주석이 달린 데이터를 사용하여 훈련되었습니다.
+   - **결과**: U-Net은 0.000353의 워핑 에러와 0.0382의 랜드 에러를 기록하여 이전 최고의 방법보다 더 나은 성능을 보였습니다.
+
+2. **광학 현미경 이미지에서의 세포 세분화**:
+   - **PhC-U373 데이터 세트**:
+     - **데이터 세트**: 이 데이터 세트에는 폴리아크릴아미드 기판 위에 있는 신경 아교종-아교모세포종 U373 세포가 포함되어 있습니다. 위상 대비 현미경을 사용하여 촬영된 35개의 부분적으로 주석이 달린 이미지가 있습니다.
+     - **결과**: U-Net은 92%의 교차 영역 비율(IOU)을 달성했으며, 이는 두 번째로 좋은 알고리즘보다 더 높은 성능을 보였습니다.
+   - **DIC-HeLa 데이터 세트**:
+     - **데이터 세트**: 이 데이터 세트에는 평평한 유리 위에 있는 HeLa 세포가 포함되어 있습니다. 차등 간섭 대비(DIC) 현미경을 사용하여 촬영된 20개의 부분적으로 주석이 달린 이미지가 있습니다.
+     - **결과**: U-Net은 77.5%의 IOU를 달성했으며, 이는 두 번째로 좋은 알고리즘보다 더 높은 성능을 보였습니다.
+
+
+
+1. **Segmentation of Neuronal Structures in Electron Microscopic Images**:
+   - **Dataset**: A set of 30 images (512x512 pixels) from serial section transmission electron microscopy of the Drosophila first instar larva ventral nerve cord (VNC) was used.
+   - **Training Process**: Each image comes with a corresponding fully annotated ground truth segmentation map for cells (white) and membranes (black). The network was trained using this annotated data.
+   - **Results**: U-Net achieved a warping error of 0.000353 and a Rand error of 0.0382, showing better performance compared to the previous best method.
+
+2. **Cell Segmentation in Light Microscopic Images**:
+   - **PhC-U373 Dataset**:
+     - **Dataset**: This dataset contains glioblastoma-astrocytoma U373 cells on a polyacrylamide substrate. It includes 35 partially annotated images recorded by phase contrast microscopy.
+     - **Results**: U-Net achieved an Intersection Over Union (IOU) of 92%, significantly higher than the second-best algorithm.
+   - **DIC-HeLa Dataset**:
+     - **Dataset**: This dataset contains HeLa cells on flat glass. It includes 20 partially annotated images recorded by differential interference contrast (DIC) microscopy.
+     - **Results**: U-Net achieved an IOU of 77.5%, significantly higher than the second-best algorithm.
+
+
+<br/>  
+# 요약 
+
+
+
+U-Net은 생물 의학 이미지 세분화를 위한 컨볼루션 네트워크로, 데이터 증강을 통해 적은 수의 주석이 달린 이미지로도 높은 성능을 보입니다. 이 네트워크는 수축 경로와 확장 경로로 구성되어 있으며, 세밀한 위치 지정을 가능하게 합니다. 전자 현미경 이미지와 광학 현미경 이미지에서 뛰어난 성능을 입증했으며, ISBI 챌린지에서 최고 점수를 기록했습니다. 또한, U-Net은 최신 GPU에서 1초 미만의 시간으로 이미지를 세분화할 수 있는 빠른 처리 속도를 자랑합니다. 이 구현과 훈련된 네트워크는 공개되어 다양한 생물 의학 세분화 작업에 쉽게 적용할 수 있습니다.
+
+
+
+U-Net is a convolutional network for biomedical image segmentation that demonstrates high performance even with a small number of annotated images through data augmentation. The network consists of contracting and expanding paths, enabling precise localization. It has shown outstanding performance in electron microscopic and light microscopic images, achieving top scores in the ISBI challenges. U-Net also boasts a fast processing speed, segmenting images in less than a second on recent GPUs. The implementation and trained networks are publicly available and can be easily applied to various biomedical segmentation tasks.
+
+
+# 기타  
+
+
+
+U-Net은 수축 경로와 확장 경로로 구성된 대칭적인 컨볼루션 네트워크로, 입력 이미지를 세밀하게 세분화합니다. 네트워크는 데이터 증강을 사용하여 적은 수의 주석이 달린 이미지로 훈련되며, 각 컨볼루션 층에서 ReLU 활성화 함수와 최대 풀링을 적용합니다. 최종적으로, 1x1 컨볼루션을 통해 원하는 클래스 수로 매핑된 세분화 맵을 생성합니다.
+
+
+
+U-Net is a symmetric convolutional network consisting of contracting and expanding paths, which precisely segment input images. The network uses data augmentation to train with a small number of annotated images, applying ReLU activation and max pooling at each convolutional layer. Finally, a 1x1 convolution maps the output to the desired number of classes, generating a segmentation map.
+
+---
+
+U-Net is a symmetric convolutional network consisting of contracting and expanding paths, which precisely segment input images. The network uses data augmentation to train with a small number of annotated images, applying ReLU activation and max pooling at each convolutional layer.
+
+대략 10년전의 이 U-Net 아키텍처가 Stable Diffusion에 차용되어 좋은 성과를 내는 모습이 인상적이었다.
+
+It's impressive to see that the U-Net architecture from roughly 10 years ago has been adopted into Stable Diffusion, yielding excellent results.
+
+
+
+<br/>
+# refer format:     
+Ronneberger, Olaf, Philipp Fischer, and Thomas Brox. "U-Net: Convolutional Networks for Biomedical Image Segmentation." arXiv preprint arXiv:1505.04597, conditionally accepted at MICCAI 2015. https://doi.org/10.48550/arXiv.1505.04597.
+  
+
+@article{ronneberger2015u,
+  title={U-Net: Convolutional Networks for Biomedical Image Segmentation},
+  author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas},
+  journal={arXiv preprint arXiv:1505.04597},
+  year={2015},
+  note={Conditionally accepted at MICCAI 2015},
+  url={https://doi.org/10.48550/arXiv.1505.04597}
+}
+
+
