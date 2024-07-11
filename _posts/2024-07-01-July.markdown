@@ -69,6 +69,14 @@ Wednesday, July 10, 2024
 o  
 parameters changing and different images 근데 이미지가 너무 적다는 말 타당하기는 하네... 흠흠  
 
+Thursday, July 11, 2024  
+* research with classes  
+** find prj tp->ft weired img    
+** assign 2(1)->mostly done    
+* etc  
+**   
+o  
+
 
 
 {% highlight ruby %}
