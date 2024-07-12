@@ -77,6 +77,14 @@ Thursday, July 11, 2024
 **   
 o  
 
+Friday, July 12, 2024  
+* research with classes  
+** find prj tp->ft weired img    
+** assign 2(1)->mostly done    
+* etc  
+**   
+o  
+
 
 
 {% highlight ruby %}
