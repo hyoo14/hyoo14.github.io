@@ -90,6 +90,13 @@ Saturday, July 13, 2024
 ** as2  
 o  
 
+Sunday, July 14, 2024  
+* etc  
+** git  
+* class  
+** as2  
+o  
+
 
 
 {% highlight ruby %}
