@@ -55,7 +55,7 @@ Tuesday, July 16, 2024
 * etc  
 ** git  
 * research and class  
-** asML CVprj  
+** asML CVprj -> maybe add textual inversion??    
 ** adML hw2(3)    
 (**if have time..  paraGlade?  )   
 o  
