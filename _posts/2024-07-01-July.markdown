@@ -60,8 +60,14 @@ Tuesday, July 16, 2024
 (**if have time..  paraGlade?  )   
 o  
 
-
-
+Wednesday, July 17, 2024  
+* etc  
+** git  
+* research and class  
+** asML CVprj -> maybe add textual inversion?? before...made more imgs      
+** adML hw2(3)    
+(**if have time..  paraGlade?  )   
+o  
 
 
 
