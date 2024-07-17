@@ -65,6 +65,9 @@ Wednesday, July 17, 2024
 ** git  
 * research and class  
 ** asML CVprj -> maybe add textual inversion?? before...made more imgs      
+*** 일단 이미지 좀 늘려보긴 했는데.. 에폭도 늘리긴 했는데... 그냥 프리트레인방식인데 로스가 줄지를 않네...이팍100인데 흠  
+*** 다음으로 다시 로라 튜닝해봐야할듯 이미지 여러개쓰고.. 다만 학습할때 트포만 하는게 아니라 vae를 같이 써줘야함(unet이 vae에 있음)  
+*** 그것도 안되면... textual inversion? 또는 controlnet..? 쿠우 힘들군.....  
 ** adML hw2(3)    
 (**if have time..  paraGlade?  )   
 o  
