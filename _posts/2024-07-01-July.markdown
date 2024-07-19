@@ -78,6 +78,13 @@ Thursday, July 18, 2024
 *** epoch 50 별로면 접고 다음방식.. 드림캐스트?   이후 textual inversion 또는 controlnet..   
 o  
 
+Friday, July 19, 2024  
+* research and class   
+** asML CVprj  
+*** epoch 50 fail... -> DreamBoth? textual inversion? control net?  
+o  
+
+
 
 {% highlight ruby %}
 
