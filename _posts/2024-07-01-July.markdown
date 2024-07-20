@@ -84,6 +84,12 @@ Friday, July 19, 2024
 *** epoch 50 fail... -> DreamBoth? textual inversion? control net?  
 o  
 
+Saturday, July 20, 2024  
+* research and class   
+** asML CVprj  
+*** 드림부스 약간 각 보이는 것 같은데 흠 또 바로는 안되네... 흠  
+o  
+
 
 
 {% highlight ruby %}
