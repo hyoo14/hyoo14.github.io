@@ -90,6 +90,13 @@ Saturday, July 20, 2024
 *** 드림부스 약간 각 보이는 것 같은데 흠 또 바로는 안되네... 흠  
 o  
 
+Sunday, July 21, 2024  
+* research and class   
+** adML  
+*** vgg, resnet, efficientnet  
+* etc  
+o  
+
 
 
 {% highlight ruby %}
