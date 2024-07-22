@@ -96,7 +96,7 @@ Sunday, July 21, 2024
 *** vgg, resnet, efficientnet  
 * etc  
 o  
-
+adML 은 이제 augmentation해봐야할듯 그리고 densenet?  더 최신 큰 모델도 시도해봐야  
 
 
 {% highlight ruby %}
