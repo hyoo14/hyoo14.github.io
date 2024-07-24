@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2024]Anti-Asian Hate Speech Detection via Data Augmented Semantic Relation Inference"  
+title:  "[2022]Anti-Asian Hate Speech Detection via Data Augmented Semantic Relation Inference"  
 date:   2024-07-24 15:36:29 -0400
 categories: study
 ---
@@ -159,7 +159,7 @@ Li, Jiaxuan, and Yue Ning. "Anti-Asian Hate Speech Detection via Data Augmented 
 @article{Li2022,
   title={Anti-Asian Hate Speech Detection via Data Augmented Semantic Relation Inference},
   author={Jiaxuan Li and Yue Ning},
-  journal={Journal of Social Media and Hate Speech Research},
+  journal={Proceedings of the International AAAI Conference on Web and Social Media},
   volume={4},
   number={2},
   pages={15--34},
