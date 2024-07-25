@@ -74,6 +74,13 @@ Wednesday, July 24, 2024
 o  
 후우 월화수 넘 힘들군 ㅠㅠ  
 
+Thursday, July 25, 2024  
+* research and class   
+** adML  
+*** augmentation and densenet  
+** asML  
+*** report and new test including all shapes(전체형상?몸전체?)  
+o  
 
 
 
