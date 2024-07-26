@@ -82,6 +82,14 @@ Thursday, July 25, 2024
 *** report and new test including all shapes(전체형상?몸전체?)  
 o  
 
+Friday, July 26, 2024  
+* research and class  
+** adML
+*** upgrade and make format  
+** asMl  
+*** write and metric test  
+o  
+
 
 
 
