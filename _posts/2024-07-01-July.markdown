@@ -10,6 +10,56 @@ categories: study
 {% highlight ruby %}
 
 
+July week5   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods 
+
+*integrated(research and class)  
+** maybe adv train and seq quality measure later(paraGuide and diffusion)    
+
+*class  
+** ApplicationsMLs      
+** AppliedML   
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, July 29, 2024  
+* adML  
+* etc  
+* comment  
+* asML  
+o  
+제일극한예상ㅠㅠ   
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 July week4   
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** incremental methods 
@@ -105,6 +155,27 @@ Sunday, July 28, 2024
 * etc   
 ** run code   
 o  
+
+cd ncbi-blast-2.12.0+/
+  936  ll
+  937  cd bin/
+  938  ll
+  939  cd astral_combined
+sbatch run_blastp_m8_extend_time_noLimit.sh astral-scopedom-seqres-gd-all-2.08-2023-01-06_subse                                                  t_2345678910.fa new_blastp_astral_scope_result2345678910.m8
+
+ cd MMseqs2/
+  910  ll
+  911  cd build/
+  912  ls
+  913  cd src/
+  914  ls
+  915  ll
+  916  cd astral_combined
+sbatch run_mmseqs2_m8_noLimit.sh astral-scopedom-seqres-gd-all-2.08-2023-01-06_subset_234567891                                                  0.fa new_mmseqs2_astral_scope_result2345678910.m8
+
+
+
+sbatch run_diamond_m8_noLimit.sh db_diamond_astral_scope_2345678910 new_diamond_astral_scope_re                                                  sult2345678910.m8
 
 
 
