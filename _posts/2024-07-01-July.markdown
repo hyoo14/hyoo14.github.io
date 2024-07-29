@@ -102,6 +102,8 @@ Sunday, July 28, 2024
 * research and class    
 ** asMl  
 *** write and metric test  
+* etc   
+** run code   
 o  
 
 
