@@ -13,8 +13,16 @@ categories: study
 {% highlight ruby %}
 
 
-짧은 요약(Abstract) :    
+아주 짧은 요약 :    
 * uset intent 파악위해 사람의 피드백으로 파인튜닝(F-T, Fine Tuning)
+
+짧은 요약(Abstract) :
+
+언어 모델을 더 크게 만드는 것이 사용자의 의도를 더 잘 따르게 만드는 것은 아니다. 예를 들어, 대형 언어 모델은 거짓되거나 유독하거나 단순히 사용자에게 도움이 되지 않는 출력을 생성할 수 있다. 즉, 이러한 모델은 사용자와 일치하지 않는다. 본 논문에서는 인간 피드백을 통해 미세 조정하여 다양한 작업에서 사용자 의도와 언어 모델을 일치시키는 방법을 제시한다. OpenAI API를 통해 제출된 프롬프트와 레이블러가 작성한 프롬프트 세트에서 시작하여 원하는 모델 동작의 레이블러 데모 데이터셋을 수집하고 이를 사용하여 GPT-3을 지도 학습으로 미세 조정한다. 그런 다음 모델 출력을 순위 매기는 데이터셋을 수집하여 인간 피드백에서 강화 학습을 사용하여 이 지도 학습 모델을 추가로 미세 조정한다. 이를 통해 생성된 모델을 InstructGPT라 부른다. 우리의 프롬프트 분포에 대한 인간 평가에서 1.3B 매개변수 InstructGPT 모델의 출력은 175B GPT-3의 출력보다 선호되며, 매개변수가 100배 적다. 게다가, InstructGPT 모델은 공공 NLP 데이터셋에서 성능 회귀가 최소화되면서 진실성과 유독한 출력 생성 감소에서 개선을 보인다. 비록 InstructGPT가 여전히 간단한 실수를 범할 수 있지만, 우리의 결과는 인간 피드백을 통한 미세 조정이 언어 모델을 인간 의도와 일치시키는 유망한 방향임을 보여준다.
+
+
+
+Making language models bigger does not inherently make them better at following a user’s intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. Starting with a set of labeler-written prompts and prompts submitted through the OpenAI API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent.
 
 
 
@@ -44,8 +52,83 @@ categories: study
 * epistemic humility: 지식에 대한 겸손함이라는 의미로, 인간의 지식과 이해력에 대한 한계를 인식하고 수용하는 태도  
 
 
+</br>
+# Methodology  
+
+본 논문은 Ziegler et al. (2019)과 Stiennon et al. (2020)의 방법론을 따릅니다. 우리는 사전 훈련된 언어 모델, 특정 프롬프트의 분포, 그리고 훈련된 인간 라벨러 팀을 사용합니다. 세 가지 주요 단계를 통해 모델을 미세 조정합니다. 첫째, 라벨러가 제공한 시연 데이터를 사용하여 지도 정책을 훈련합니다. 둘째, 모델 출력 간의 비교 데이터를 수집하고 이를 통해 보상 모델을 훈련합니다. 셋째, 보상 모델을 사용하여 PPO 알고리즘으로 정책을 최적화합니다.
+
+우리의 프롬프트 데이터셋은 주로 OpenAI API에 제출된 텍스트 프롬프트로 구성됩니다. 라벨러가 작성한 프롬프트와 사용자 제출 프롬프트를 결합하여 세 가지 데이터셋을 생성합니다: 지도 학습 데이터셋, 보상 모델 데이터셋, 강화 학습 데이터셋. 각 프롬프트에 대해, 라벨러는 사용자 의도를 추론하고 진실성과 유해성을 고려합니다. 인간 데이터 수집 과정에서 40명의 계약자를 고용하여 시연 및 비교 데이터를 수집하고 평가를 수행합니다.
 
 
+This paper follows the methodology of Ziegler et al. (2019) and Stiennon et al. (2020). We use a pretrained language model, a distribution of specific prompts, and a team of trained human labelers. The model is fine-tuned through three main steps. First, we train a supervised policy using demonstration data provided by labelers. Second, we collect comparison data between model outputs and use this to train a reward model. Third, we optimize the policy using the PPO algorithm with the reward model.
+
+Our prompt dataset primarily consists of text prompts submitted to the OpenAI API. We combine labeler-written prompts and user-submitted prompts to create three datasets: supervised learning dataset, reward model dataset, and reinforcement learning dataset. For each prompt, labelers infer user intent and consider truthfulness and harmfulness. In the human data collection process, we hired 40 contractors to gather demonstration and comparison data and conduct evaluations.
+
+</br>
+# Results  
+
+4.1 API 분포에 대한 결과
+라벨러는 InstructGPT 출력물을 GPT-3 출력물보다 선호합니다. 테스트 세트의 프롬프트에 대해, 라벨러는 모델 크기에 관계없이 InstructGPT 출력을 선호합니다. GPT-3 출력을 사용할 때보다 InstructGPT 모델의 출력이 더 나은 결과를 보여줍니다. 라벨러는 GPT-3 (prompted)보다 InstructGPT 출력을 더 선호하며, InstructGPT 모델의 출력은 명확한 제약을 더 잘 따르고, 지시된 작업을 더 잘 수행하며, 폐쇄 도메인 작업에서 정보를 덜 날조합니다. 또한, InstructGPT 모델은 학습 데이터에 포함되지 않은 "held-out" 라벨러의 선호를 일반화할 수 있습니다. 이는 InstructGPT 모델이 훈련 라벨러의 선호에 단순히 과적합되지 않았음을 보여줍니다.
+
+4.2 공공 NLP 데이터셋에 대한 결과
+InstructGPT 모델은 진실성에서 GPT-3보다 개선된 성능을 보입니다. TruthfulQA 데이터셋에서 InstructGPT 모델은 더 자주 진실하고 유익한 출력을 생성합니다. InstructGPT 모델은 RealToxicityPrompts 데이터셋에서 GPT-3보다 독성 출력을 줄이는 데 약간의 개선을 보이지만, 편향성에서는 큰 개선을 보이지 않습니다. 공공 NLP 데이터셋에서의 성능 저하를 최소화하기 위해 RLHF 미세 조정 절차를 수정할 수 있습니다. PPO 모델을 API 분포에서 훈련할 때 특정 공공 NLP 데이터셋에서 성능 저하가 발생하지만, PPO-ptx 모델을 사용하여 이러한 성능 저하를 크게 줄일 수 있습니다.
+
+
+4.1 Results on the API Distribution
+Labelers significantly prefer InstructGPT outputs over GPT-3 outputs. On our test set of prompts, labelers prefer InstructGPT outputs across model sizes. InstructGPT outputs perform better than GPT-3 outputs. Labelers prefer InstructGPT outputs to GPT-3 (prompted), and InstructGPT models are better at following explicit constraints, performing the correct instruction, and fabricating less information in closed-domain tasks. InstructGPT models can generalize to the preferences of "held-out" labelers who did not produce any training data, indicating that InstructGPT models are not simply overfitting to the preferences of training labelers.
+
+4.2 Results on Public NLP Datasets
+InstructGPT models show improvements in truthfulness over GPT-3. On the TruthfulQA dataset, InstructGPT models generate truthful and informative outputs more frequently. InstructGPT models show small improvements in toxicity over GPT-3 on the RealToxicityPrompts dataset but do not show significant improvements in bias. To minimize performance regressions on public NLP datasets, we can modify our RLHF fine-tuning procedure. While PPO models trained on our API distribution suffer from performance regressions on certain public NLP datasets, the use of PPO-ptx models can significantly reduce these regressions.
+
+
+<br/>
+# Examples  
+
+4.1 API 분포에 대한 결과
+라벨러는 InstructGPT 출력물을 GPT-3 출력물보다 선호합니다. 예를 들어, "Write a story about a bear going to the beach"라는 프롬프트에 대해 InstructGPT는 "곰이 해변에 가서 물개와 친구가 되고 집으로 돌아오는 이야기"를 작성했으며, GPT-3보다 더 명확하고 일관된 출력을 제공했습니다.
+
+프롬프트: "Write a story about a bear going to the beach."
+InstructGPT 출력: "곰은 해변으로 가서 물개와 친구가 되었습니다. 그들은 함께 모래성도 쌓고, 물놀이도 하면서 즐거운 시간을 보냈습니다. 곰은 집으로 돌아가면서 새로운 친구를 만난 것을 기뻐했습니다."
+GPT-3 출력: "곰은 해변에 가서 모래사장에 앉아 있었습니다. 그리고 갑자기 물개가 나타났습니다. 그들은 친구가 되었습니다."
+
+
+4.2 공공 NLP 데이터셋에 대한 결과
+InstructGPT 모델은 진실성에서 GPT-3보다 개선된 성능을 보입니다. 예를 들어, TruthfulQA 데이터셋에서 "What is the capital of France?"라는 질문에 대해 InstructGPT는 "파리"라는 정확한 답변을 제공했으며, GPT-3는 때때로 "베를린"과 같은 잘못된 정보를 제공했습니다.
+
+프롬프트: "What is the capital of France?"
+InstructGPT 출력: "The capital of France is Paris."
+GPT-3 출력: "The capital of France is Berlin."
+
+
+4.1 Results on the API Distribution
+Labelers significantly prefer InstructGPT outputs over GPT-3 outputs. For example, given the prompt "Write a story about a bear going to the beach," InstructGPT produced a coherent and engaging story about a bear making friends with a seal and returning home, whereas GPT-3's output was less coherent and detailed.
+
+
+
+Prompt: "Write a story about a bear going to the beach."
+InstructGPT Output: "The bear went to the beach and made friends with a seal. They built sandcastles and played in the water. The bear was happy to have made a new friend as he returned home."
+GPT-3 Output: "The bear went to the beach and sat on the sand. Suddenly, a seal appeared. They became friends."
+
+
+4.2 Results on Public NLP Datasets
+InstructGPT models show improvements in truthfulness over GPT-3. For instance, on the TruthfulQA dataset, when asked "What is the capital of France?", InstructGPT correctly responded with "Paris," while GPT-3 occasionally provided incorrect answers like "Berlin."
+
+Prompt: "What is the capital of France?"
+InstructGPT Output: "The capital of France is Paris."
+GPT-3 Output: "The capital of France is Berlin."
+
+
+<br/>
+# Summary  
+
+본 논문은 인간 피드백을 통해 언어 모델을 미세 조정하는 방법론을 제시한다. 지도 학습과 강화 학습을 결합하여 InstructGPT 모델을 개발하고, 이를 다양한 프롬프트에서 평가한다. 결과적으로 InstructGPT 모델은 GPT-3보다 사용자의 지시를 더 잘 따르고 진실성 및 유해성 감소에서 개선된 성능을 보인다. 라벨러는 InstructGPT 모델 출력을 GPT-3보다 선호하며, 진실성 질문에서도 더 정확한 답변을 제공한다. 공공 NLP 데이터셋에서의 성능 저하를 최소화하기 위해 PPO-ptx 모델을 사용한다.
+
+
+This paper presents a methodology for fine-tuning language models using human feedback. By combining supervised learning and reinforcement learning, the InstructGPT model is developed and evaluated across various prompts. As a result, the InstructGPT model demonstrates better adherence to user instructions and improvements in truthfulness and reduction of harmful outputs compared to GPT-3. Labelers prefer the outputs of the InstructGPT model over those of GPT-3, providing more accurate answers in truthfulness questions. PPO-ptx models are used to minimize performance regressions on public NLP datasets.
+
+
+<br/>
+# Previous Contents  
 
 <br/>
 
@@ -282,4 +365,23 @@ categories: study
 ** 도움주고, 진실되고, 무해하게  
 * 반대 의도도 적용이 가능  
 ** 누가 프롬프팅하느냐가 중요  
+
+
+
+# Reference  
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeff and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll L. and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and Schulman, John and Hilton, Jacob and Kelton, Fraser and Miller, Luke and Simens, Maddie and Askell, Amanda and Welinder, Peter and Christiano, Paul and Leike, Jan and Lowe, Ryan},
+  journal={arXiv preprint arXiv:2203.02155},
+  year={2022}
+}
+
+
+Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. "Training Language Models to Follow Instructions with Human Feedback." arXiv preprint arXiv:2203.02155 (2022).
+
+
+
+
+
+
 
