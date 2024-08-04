@@ -12,6 +12,14 @@ categories: study
 
 짧은 요약(Abstract) :    
 
+
+
+기존의 많은 연구들은 적대적 공격(adversarial attacks)을 사용하여 자연어 처리(NLP) 모델을 분석했으나, 각 공격 방법이 독립적인 코드 저장소에 구현되어 있어 개발 및 성능 개선이 어려웠습니다. 이 논문은 NLP에서 적대적 공격, 데이터 증강(data augmentation), 및 적대적 훈련(adversarial training)을 위한 파이썬 프레임워크인 TextAttack을 소개합니다. TextAttack은 공격을 네 가지 구성 요소(목표 함수, 제약 조건, 변환, 탐색 방법)로 구성하여 모듈화된 디자인을 통해 연구자들이 새로운 조합으로 쉽게 공격을 구성할 수 있도록 합니다. TextAttack은 문헌에서 16개의 적대적 공격을 구현하고, 다양한 모델과 데이터셋(BERT 및 기타 변환기 포함)을 지원하며, 모든 GLUE 작업을 포함합니다. 또한, TextAttack은 데이터 증강 및 적대적 훈련 모듈을 포함하여 모델의 정확도와 강인성을 향상시키기 위해 적대적 공격의 구성 요소를 사용할 수 있습니다. TextAttack은 누구나 간단한 코드 몇 줄로 데이터 증강과 적대적 훈련을 시도할 수 있게 함으로써 NLP의 민주화를 실현하고 있습니다. 코드와 튜토리얼은 [여기](https://github.com/QData/TextAttack)에서 확인할 수 있습니다.
+
+
+
+While there has been substantial research using adversarial attacks to analyze NLP models, each attack is implemented in its own code repository. It remains challenging to develop NLP attacks and utilize them to improve model performance. This paper introduces TextAttack, a Python framework for adversarial attacks, data augmentation, and adversarial training in NLP. TextAttack builds attacks from four components: a goal function, a set of constraints, a transformation, and a search method. TextAttack’s modular design enables researchers to easily construct attacks from combinations of novel and existing components. TextAttack provides implementations of 16 adversarial attacks from the literature and supports a variety of models and datasets, including BERT and other transformers, and all GLUE tasks. TextAttack also includes data augmentation and adversarial training modules for using components of adversarial attacks to improve model accuracy and robustness. TextAttack is democratizing NLP: anyone can try data augmentation and adversarial training on any model or dataset, with just a few lines of code. Code and tutorials are available at [https://github.com/QData/TextAttack](https://github.com/QData/TextAttack).
+
 * Useful sentences :  
 
 
@@ -31,16 +39,141 @@ categories: study
 # Methodology    
 
 
+
+TextAttack 프레임워크는 적대적 공격, 데이터 증강 및 적대적 훈련을 지원하는 파이썬 기반의 모듈형 프레임워크로 설계되었습니다. TextAttack의 설계는 공격을 네 가지 구성 요소로 분해합니다: 목표 함수, 제약 조건, 변환 및 탐색 방법입니다. 이러한 모듈형 디자인을 통해 연구자들은 새로운 공격을 쉽게 구성할 수 있습니다.
+
+1. **공격 개발**: TextAttack은 문헌에서의 16가지 적대적 공격을 모듈형 디자인으로 구현하여 제공하며, 이를 통해 연구자들은 각 공격의 구성 요소를 재사용하여 새로운 공격을 쉽게 개발할 수 있습니다. 
+
+2. **새로운 공격 생성**: 기존 구성 요소와 새로운 구성 요소를 조합하여 새로운 공격을 생성할 수 있습니다. 예를 들어, Jin et al. (2019)의 TextFooler에서 사용된 탐색 방법, 변환 및 제약 조건을 사용하여 번역 모델을 공격하는 새로운 목표 함수를 구현함으로써 새로운 공격을 생성할 수 있습니다.
+
+3. **사전 훈련된 모델을 사용한 평가**: TextAttack은 다양한 데이터셋과 모델(LSTM, CNN, BERT 등)에 대해 사전 훈련된 모델을 제공합니다. 이를 통해 사용자는 TextAttack을 사용하여 공격을 평가할 수 있습니다. 
+
+4. **데이터 증강**: TextAttack의 변환 및 제약 조건을 사용하여 새로운 샘플을 생성하여 데이터 증강을 수행할 수 있습니다. 이는 텍스트 데이터를 변형하고, 이를 기반으로 새로운 샘플을 생성하여 모델의 훈련 데이터셋을 확장합니다.
+
+5. **적대적 훈련**: TextAttack은 적대적 예제를 사용하여 모델을 훈련시키는 기능을 제공합니다. 이는 주기적으로 모델의 현재 약점을 기반으로 적대적 예제를 생성하고, 이를 원본 데이터셋과 대체하여 훈련을 수행함으로써 모델의 강인성을 향상시킵니다.
+
+
+
+TextAttack is a Python-based modular framework designed to support adversarial attacks, data augmentation, and adversarial training. The design of TextAttack decomposes attacks into four components: a goal function, a set of constraints, a transformation, and a search method. This modular design allows researchers to easily construct new attacks.
+
+1. **Developing Attacks**: TextAttack provides implementations of 16 adversarial attacks from the literature using a modular design, enabling researchers to reuse components from existing attacks to easily develop new ones.
+
+2. **Creating New Attacks**: New attacks can be created by combining existing and novel components. For example, the search method, transformations, and constraints used in Jin et al. (2019)’s TextFooler can be adapted to attack a translation model by implementing a new goal function.
+
+3. **Evaluating with Pre-Trained Models**: TextAttack offers pre-trained models (LSTM, CNN, BERT, etc.) on various datasets, allowing users to evaluate attacks using these models.
+
+4. **Data Augmentation**: Using transformations and constraints, TextAttack can generate new samples for data augmentation. This involves transforming text and generating new samples to expand the training dataset, enhancing the model‘s training.
+
+5. **Adversarial Training**: TextAttack supports training models on adversarial examples. This involves periodically generating adversarial versions of the dataset based on the model’s current weaknesses, substituting the original dataset with these adversarial samples, thus improving the model’s robustness.
+
 <br/>
 # Results  
+
+
+
+
+TextAttack 프레임워크의 성능은 다양한 메트릭을 사용하여 평가되었습니다. 주요 결과는 다음과 같습니다:
+
+1. **공격 성공률 (Attack Success Rate)**:
+   - baseline LSTM 모델의 공격 성공률은 deepwordbug 공격에서는 23.46%, textfooler 공격에서는 40.09%였습니다.
+   - 적대적 훈련을 수행한 deepwordbug 모델의 경우, 공격 성공률이 35.07%에서 44.74%로 증가했습니다.
+
+2. **정확도 (Accuracy)**:
+   - baseline LSTM 모델의 기본 정확도는 77.30%였습니다.
+   - deepwordbug 공격 후 정확도는 76.38%에서 73.16%로 감소했습니다.
+   - textfooler 공격 후 정확도는 61.85%로 감소했습니다.
+
+3. **BLEU 점수 (BLEU Score)**:
+   - TextAttack을 사용하여 번역 모델에 대한 공격을 평가할 때, BLEU 점수를 통해 공격의 효과를 측정했습니다. 하지만 구체적인 BLEU 점수는 논문에 명시되어 있지 않았습니다.
+
+4. **문장 임베딩 코사인 유사도 (Sentence Embedding Cosine Similarity)**:
+   - 적대적 예제와 원본 텍스트 간의 유사도를 측정하여 변환된 텍스트가 원본 텍스트와 얼마나 유사한지를 평가했습니다. 이 메트릭은 주로 USE(Uni-versal Sentence Encoder) 임베딩을 사용하여 계산되었습니다.
+
+
+
+The performance of the TextAttack framework was evaluated using various metrics. The key results are as follows:
+
+1. **Attack Success Rate**:
+   - The attack success rate for the baseline LSTM model was 23.46% for the deepwordbug attack and 40.09% for the textfooler attack.
+   - For the deepwordbug model with adversarial training, the attack success rate increased from 35.07% to 44.74%.
+
+2. **Accuracy**:
+   - The baseline accuracy of the LSTM model was 77.30%.
+   - After the deepwordbug attack, the accuracy dropped from 76.38% to 73.16%.
+   - After the textfooler attack, the accuracy dropped to 61.85%.
+
+3. **BLEU Score**:
+   - BLEU scores were used to measure the effectiveness of attacks on translation models using TextAttack. However, specific BLEU scores were not detailed in the paper.
+
+4. **Sentence Embedding Cosine Similarity**:
+   - This metric was used to measure the similarity between the adversarial examples and the original text, evaluating how similar the transformed text remains to the original. This was primarily calculated using Universal Sentence Encoder (USE) embeddings.
+
+These results highlight the effectiveness of TextAttack in evaluating the robustness of NLP models against adversarial attacks and demonstrate the framework‘s utility in improving model robustness through adversarial training.
 
 
 <br/>
 # 예시  
 
 
+
+
+TextAttack 프레임워크의 성능을 평가하기 위해 다양한 메트릭을 사용한 실험 결과는 다음과 같습니다.
+
+#### 예시 문장
+
+- **원본 (Original)**: ”Perfect performance by the actor“ → Positive (99%)
+- **적대적 예제 (Adversarial)**: ”Spotless performance by the actor“ → Negative (100%)
+
+위 예시에서 ”perfect“를 ”spotless“로 바꾼 것만으로도 BERT 기반 감정 분석 모델의 예측이 긍정에서 부정으로 완전히 바뀌었습니다 [oai_citation:1,TextAttack2020.emnlp-demos.16.pdf](file-service://file-MC6YwHuoydKVs0bzgAZY8R5L).
+
+#### 평가 메트릭 수치
+
+표 2는 sst2 데이터셋에서 LSTM 모델을 사용하여 다양한 공격 유형에 대한 평가 결과를 보여줍니다 [oai_citation:2,TextAttack2020.emnlp-demos.16.pdf](file-service://file-MC6YwHuoydKVs0bzgAZY8R5L).
+
+| Trained Against       | Attack Method | Accuracy (%) | Attack Success Rate (%) |
+|-----------------------|----------------|--------------|-------------------------|
+| baseline (early stopping) | deepwordbug   | 77.30       | 23.46                   |
+| baseline (early stopping) | textfooler    | 77.30       | 40.09                   |
+| deepwordbug (20 epochs)   | deepwordbug   | 76.38       | 35.07                   |
+| deepwordbug (75 epochs)   | deepwordbug   | 73.16       | 44.74                   |
+| textfooler (20 epochs)    | textfooler    | 61.85       | 29.63                   |
+
+
+
+The performance of the TextAttack framework was evaluated using various metrics. The key results are as follows:
+
+#### Example Sentences
+
+- **Original**: ”Perfect performance by the actor“ → Positive (99%)
+- **Adversarial**: ”Spotless performance by the actor“ → Negative (100%)
+
+In this example, swapping ”perfect“ with ”spotless“ completely changed the BERT-based sentiment classifier‘s prediction from positive to negative [oai_citation:3,TextAttack2020.emnlp-demos.16.pdf](file-service://file-MC6YwHuoydKVs0bzgAZY8R5L).
+
+#### Evaluation Metrics Results
+
+Table 2 shows the evaluation results of various attack types on an LSTM model trained on the sst2 dataset [oai_citation:4,TextAttack2020.emnlp-demos.16.pdf](file-service://file-MC6YwHuoydKVs0bzgAZY8R5L).
+
+| Trained Against       | Attack Method | Accuracy (%) | Attack Success Rate (%) |
+|-----------------------|----------------|--------------|-------------------------|
+| baseline (early stopping) | deepwordbug   | 77.30       | 23.46                   |
+| baseline (early stopping) | textfooler    | 77.30       | 40.09                   |
+| deepwordbug (20 epochs)   | deepwordbug   | 76.38       | 35.07                   |
+| deepwordbug (75 epochs)   | deepwordbug   | 73.16       | 44.74                   |
+| textfooler (20 epochs)    | textfooler    | 61.85       | 29.63                   |
+
+
+
 <br/>  
 # 요약 
+
+
+
+TextAttack 프레임워크는 적대적 공격, 데이터 증강, 적대적 훈련을 위한 파이썬 기반의 모듈형 설계로, 연구자들이 다양한 공격을 쉽게 구성하고 평가할 수 있게 합니다. 주요 메트릭으로는 공격 성공률, 정확도, BLEU 점수, 문장 임베딩 코사인 유사도가 사용되었습니다. 예를 들어, BERT 기반 감정 분석 모델에서 ”perfect“를 ”spotless“로 변경하는 것만으로 예측이 긍정에서 부정으로 바뀌었습니다. baseline LSTM 모델의 경우, deepwordbug 공격 성공률은 23.46%, textfooler 공격 성공률은 40.09%로 나타났습니다. 적대적 훈련을 수행한 모델은 더 높은 강인성을 보여줬습니다.
+
+
+
+The TextAttack framework features a modular Python-based design for adversarial attacks, data augmentation, and adversarial training, enabling researchers to easily construct and evaluate various attacks. Key metrics include attack success rate, accuracy, BLEU score, and sentence embedding cosine similarity. For instance, in a BERT-based sentiment classifier, changing ”perfect“ to ”spotless“ switched the prediction from positive to negative. The attack success rate for the baseline LSTM model was 23.46% for deepwordbug and 40.09% for textfooler. Models trained with adversarial examples showed higher robustness.
+
 
 
 # 기타  
