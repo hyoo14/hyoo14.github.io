@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "[2020]TextAttack: A Framework for Adversarial Attacks, Data Augmentation, and Adversarial Training in NLP"  
+date:   2024-08-04 15:01:29 -0400
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+짧은 요약(Abstract) :    
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+ 
+<br/>
+# Methodology    
+
+
+<br/>
+# Results  
+
+
+<br/>
+# 예시  
+
+
+<br/>  
+# 요약 
+
+
+# 기타  
+
+
+<br/>
+# refer format:     
+@inproceedings{morris2020textattack,
+  title={TextAttack: A Framework for Adversarial Attacks, Data Augmentation, and Adversarial Training in NLP},
+  author={Morris, John X. and Lifland, Eli and Yoo, Jin Yong and Grigsby, Jake and Jin, Di and Qi, Yanjun},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  pages={119--126},
+  year={2020},
+  organization={Association for Computational Linguistics},
+  url={https://www.aclweb.org/anthology/2020.emnlp-demos.16}
+}
+
+
+
+Morris, John X., Eli Lifland, Jin Yong Yoo, Jake Grigsby, Di Jin, and Yanjun Qi. "TextAttack: A Framework for Adversarial Attacks, Data Augmentation, and Adversarial Training in NLP." In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations, 119-126. Association for Computational Linguistics, 2020. https://www.aclweb.org/anthology/2020.emnlp-demos.16.
+
+
