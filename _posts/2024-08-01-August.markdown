@@ -38,6 +38,8 @@ August week2
 ## eng reading/listening/speaking/writing(paper)  
 ## math? code? (lecture/assignment/project)    
 
+정리가 좀 필요할듯 위에..  
+
 {% endhighlight %}  
 <br/>
 
