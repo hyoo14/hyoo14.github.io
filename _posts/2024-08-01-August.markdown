@@ -83,6 +83,14 @@ Saturday, August 10, 2024
 o  
 
 
+Sunday, August 11, 2024  
+* adML  
+* asML  
+* etc  
+* research?  
+o  
+
+
 
 
 {% highlight ruby %}
