@@ -6,6 +6,55 @@ categories: study
 ---
 
 
+{% highlight ruby %}
+
+
+August week3   
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods 
+
+*integrated(research and class)  
+** maybe adv train and seq quality measure later(paraGuide and diffusion)    
+
+*class  
+** ApplicationsMLs      
+** AppliedML   
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+정리가 좀 필요할듯 위에..3주 뒤에는 좀 로드가 덜 하길..  
+
+{% endhighlight %}  
+<br/>
+
+Monday, August 12, 2024  
+* adML  
+* asML  
+* etc  
+* research?  
+o  
+
+
+
+
+
+
+
 
 {% highlight ruby %}
 
