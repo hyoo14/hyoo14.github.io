@@ -85,6 +85,14 @@ Saturday, August 17, 2024
 o  
 
 
+Sunday, August 18, 2024  
+* research  
+* adML  
+* asML  
+* etc  
+o  
+
+
 
 
 {% highlight ruby %}
