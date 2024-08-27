@@ -50,9 +50,9 @@ Monday, August 26, 2024
 o  
 
 Tuesday, August 27, 2024  
-* asML
-* adML  
-* etc  
+* asML-integrating stuffs   
+* adML-inquire again  
+* etc-BMC format    
 o  
 
 
