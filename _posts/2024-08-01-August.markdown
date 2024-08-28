@@ -56,6 +56,12 @@ Tuesday, August 27, 2024
 o  
 
 
+Wednesday, August 28, 2024  
+* asML-integrating stuffs   
+* adML-inquire again  
+* etc-BMC format    
+o  
+
 
 
 {% highlight ruby %}
