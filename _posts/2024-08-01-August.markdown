@@ -63,6 +63,11 @@ Wednesday, August 28, 2024
 o  
 
 
+Thursday, August 29, 2024  
+* asML-integrating stuffs   
+* adML-start?    
+* etc-temp emb application?      
+o  
 
 {% highlight ruby %}
 
