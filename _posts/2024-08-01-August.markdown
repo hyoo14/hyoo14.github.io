@@ -69,6 +69,13 @@ Thursday, August 29, 2024
 * etc-temp emb application?      
 o  
 
+
+Friday, August 30, 2024  
+* asML  
+* adML
+* etc?  
+o    
+
 {% highlight ruby %}
 
 
