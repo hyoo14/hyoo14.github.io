@@ -76,6 +76,14 @@ Friday, August 30, 2024
 * etc?  
 o    
 
+
+Saturday, August 31, 2024  
+* asML  
+* adML
+* etc?  
+o    
+
+
 {% highlight ruby %}
 
 
