@@ -52,7 +52,12 @@ Monday, September 02, 2024
 * etc  
 o  
 
-
+Tuesday, September 03, 2024  
+* asML-experiments    
+* adML-arxiv recommedation    
+* research     
+* etc  
+o  약간 지친 느낌은..왜일지  
 
 
 
