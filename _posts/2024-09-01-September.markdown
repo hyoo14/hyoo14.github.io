@@ -63,6 +63,10 @@ o  약간 지친 느낌은..왜일지
 
 Wednesday, September 04, 2024  
 * asML-experiments    
+** 기존은 딱 정해진 레이블링  
+*** 생성은 보다 유연한 대처 가능  
+*** 유연한 대처 평가도 가능?  
+*** 실제 예시의 레이블은 꼭 하나는 아니니...  
 * adML-arxiv recommedation    
 * research     
 * etc  
