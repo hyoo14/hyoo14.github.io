@@ -52,6 +52,7 @@ Monday, September 02, 2024
 * etc  
 o  
 
+
 Tuesday, September 03, 2024  
 * asML-experiments    
 * adML-arxiv recommedation    
@@ -59,6 +60,13 @@ Tuesday, September 03, 2024
 * etc  
 o  약간 지친 느낌은..왜일지  
 
+
+Wednesday, September 04, 2024  
+* asML-experiments    
+* adML-arxiv recommedation    
+* research     
+* etc  
+o  좀 지지부진..오늘은 더 해야...
 
 
 
