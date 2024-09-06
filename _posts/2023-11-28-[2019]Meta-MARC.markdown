@@ -118,5 +118,20 @@ https://github.com/lainsm/meta-marc-publication
 <br/>
 
 
+# Reference type
+## Latex  
 
+@article{lakin2019hierarchical,
+  title={Hierarchical Hidden Markov Models Enable Accurate and Diverse Detection of Antimicrobial Resistance Sequences},
+  author={Lakin, Steven M. and Kuhnle, Alan and Alipanahi, Bahar and Noyes, Noelle R. and Dean, Chris and Muggli, Martin and Raymond, Rob and others},
+  journal={Communications Biology},
+  volume={2},
+  number={1},
+  pages={294},
+  year={2019},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s42003-019-0545-9},
+  url={https://doi.org/10.1038/s42003-019-0545-9},
+  month={Aug}
+}
 
