@@ -89,12 +89,14 @@ o
 
 Saturday, September 07, 2024  
 * adML-arxiv recommedation   
+* 강의 평가도!  
 o  
 
 
 Sunday, September 08, 2024  
 * asML-experiments   
 ** veri(git)  
+** 강의 녹화도!  
 * 과금 정리 및 담주 고민까지..?    
 o  
 
