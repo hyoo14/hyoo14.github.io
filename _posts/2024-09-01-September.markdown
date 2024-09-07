@@ -81,6 +81,23 @@ Thursday, September 05, 2024
 ** 한글작성 완료까지............ 너무 빠듯하군  
 o  
 
+Friday, September 06, 2024   
+* asML-experiments    
+** 대략 된듯..후우 넘피곤  
+o  
+
+
+Saturday, September 07, 2024  
+* adML-arxiv recommedation   
+o  
+
+
+Sunday, September 08, 2024  
+* asML-experiments   
+** veri(git)    
+o  
+
+
 
 {% highlight ruby %}
 
