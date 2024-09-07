@@ -94,7 +94,8 @@ o
 
 Sunday, September 08, 2024  
 * asML-experiments   
-** veri(git)    
+** veri(git)  
+* 과금 정리 및 담주 고민까지..?    
 o  
 
 
