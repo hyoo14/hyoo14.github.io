@@ -9,6 +9,55 @@ categories: study
 {% highlight ruby %}
 
 
+September week3     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods->maybe just bioarxiv..   
+
+*integrated(research and class)  
+** maybe adv train and seq quality measure later(paraGuide and diffusion)    
+
+*class  
+** ApplicationsMLs      
+** AppliedML   
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+과제로 다음 컨퍼페이퍼로 어드벤스..?  
+그리고흠..  기다려보는수밖엔..     
+하던거는 그냥 바이오아카로 마무리..  
+
+{% endhighlight %}  
+<br/>
+
+Monday, September 09, 2024  
+* research     
+* etc  
+o  
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 September week2     
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** incremental methods->maybe just bioarxiv..   
