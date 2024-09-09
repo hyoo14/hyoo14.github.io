@@ -46,7 +46,7 @@ September week3
 
 Monday, September 09, 2024  
 * research     
-* etc  
+* etc(pj s?, s' prj?)    
 o  
 
 
