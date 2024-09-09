@@ -47,6 +47,9 @@ September week3
 Monday, September 09, 2024  
 * research     
 * etc(pj s?, s' prj?)    
+** ibd disease(microbion bacterial related disease)    
+*** hmp2 database(https://www.hmpdacc.org/resources/data_browser.php)  
+*** glm2(method)  
 o  
 
 
