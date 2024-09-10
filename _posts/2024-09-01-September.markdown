@@ -53,7 +53,12 @@ Monday, September 09, 2024
 o  
 
 
-
+Tuesday, September 10, 2024  
+* research  
+** don't forget the deadline  
+* etc  
+** hmp2,glm2(see previous one on Monday)  
+o  
 
 
 
