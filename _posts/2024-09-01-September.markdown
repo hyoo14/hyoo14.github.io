@@ -1,3 +1,9 @@
+gene calling-> translate -> amino acid
+cds->translate->amino acid
+cds integenic region mass new sequence for training
+
+
+
 ---
 layout: post
 title:  "September"
