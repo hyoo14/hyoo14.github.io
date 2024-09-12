@@ -74,6 +74,8 @@ o
 
 Thursday, September 12, 2024  
 * research  
+** good refer:  
+*** https://huggingface.co/upstage/solar-pro-preview-instruct  
 o  
 
 
