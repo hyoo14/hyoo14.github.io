@@ -79,6 +79,11 @@ Thursday, September 12, 2024
 o  
 
 
+Friday, September 13, 2024  
+* 
+o  
+잘 아는 것과 모르는 것을 알아야  
+
 
 
 
