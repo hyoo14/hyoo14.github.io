@@ -80,9 +80,15 @@ o
 
 
 Friday, September 13, 2024  
-* 
+* research  
 o  
 잘 아는 것과 모르는 것을 알아야  
+
+
+Saturday, September 14, 2024  
+* research  
+o  
+
 
 
 
