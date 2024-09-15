@@ -90,6 +90,11 @@ Saturday, September 14, 2024
 o  
 
 
+Sunday, September 15, 2024  
+* research  
+o  
+
+
 
 
 
