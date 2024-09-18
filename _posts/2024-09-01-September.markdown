@@ -60,6 +60,11 @@ Tuesday, September 17, 2024
 o  
 
 
+Wednesday, September 18, 2024  
+* research       
+* etc(glm2?)      
+o  
+
 
 
 {% highlight ruby %}
