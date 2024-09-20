@@ -70,6 +70,10 @@ Thursday, September 19, 2024
 o  
 
 
+Friday, September 20, 2024  
+* research       
+o  
+
 
 
 {% highlight ruby %}
