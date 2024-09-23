@@ -1,15 +1,58 @@
-gene calling-> translate -> amino acid
-cds->translate->amino acid
-cds integenic region mass new sequence for training
-
-
-
 ---
 layout: post
 title:  "September"
 date:   2024-09-01 15:29:53 -0400
 categories: study
 ---
+
+
+
+{% highlight ruby %}
+
+
+September week5     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** incremental methods->maybe just bioarxiv..   
+
+*integrated(research and class)  
+** maybe adv train and seq quality measure later(paraGuide and diffusion)    
+
+*class  
+** not fixed yet..   
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng reading/listening/speaking/writing(paper)  
+## math? code? (lecture/assignment/project)    
+
+시간관리 이게 가능할 관리일까...? 후움    
+
+{% endhighlight %}  
+<br/>
+
+Monday, September 23, 2024  
+* research       
+* plan..         
+o  
+
+
+
+
+
+
+
 
 
 {% highlight ruby %}
