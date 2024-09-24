@@ -49,6 +49,15 @@ o
 
 
 
+Tuesday, September 24, 2024  
+* research       
+* plan..        
+* etc..   
+o  
+
+
+
+
 
 
 
