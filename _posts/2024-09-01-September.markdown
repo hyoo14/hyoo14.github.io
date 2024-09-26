@@ -58,8 +58,19 @@ o  아 근데 수업 어캐할지 모르겠네 흠..
 
 Wednesday, September 25, 2024  
 * research       
+* class  
+* etc  
 * plan..      
-o  아   
+o    
+
+
+Thursday, September 26, 2024  
+* research  
+* class  
+* etc  
+* plan  
+o   
+
 
 
 
