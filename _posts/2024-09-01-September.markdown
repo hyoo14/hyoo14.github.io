@@ -72,6 +72,12 @@ Thursday, September 26, 2024
 o   
 
 
+Friday, September 27, 2024  
+* research->north america / arx  
+* etc  
+* plan and contact?  
+o  
+
 
 
 
