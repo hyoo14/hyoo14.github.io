@@ -84,6 +84,10 @@ Saturday, September 28, 2025
 o  
 
 
+Sunday, September 29, 2025  
+* research  
+o  
+
 
 
 
