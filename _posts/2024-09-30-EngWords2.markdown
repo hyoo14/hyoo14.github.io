@@ -14,6 +14,8 @@ categories: study
 *For improving english skill  
 
 
+{% endhighlight %}  
+
 ### 1-50
 1. **Abate** (줄이다) – **Mitigate**, **Alleviate**, **Assuage**
 2. **Aberrant** (비정상적인) – **Anomalous**, **Deviant**
