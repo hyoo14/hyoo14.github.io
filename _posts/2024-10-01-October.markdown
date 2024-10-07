@@ -10,6 +10,61 @@ categories: study
 {% highlight ruby %}
 
 
+October week2     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** advAttack_verification and geneLMs     
+
+*class  
+** DataScience  
+** CellGeneTherapy     
+** HealthInformatics  
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+<br/>
+
+Monday, October 07, 2024  
+* research   
+** now nt_pd.. next: d2_pd and AMRs       
+*** in iter case, success counting way is changed  
+**** 그리고 석세스 레이트 구할때는 판별 잘 되었던 것들 중에서 판별 안 되는걸로 바뀐 경우만 체크하도록    
+*** 그리고 변조 시퀀스 검증로직 도입하여 계산      
+* etc..         
+* class  
+* eng  
+* plan  
+o  
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 October week1     
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** advAttack_verification and geneLMs     
