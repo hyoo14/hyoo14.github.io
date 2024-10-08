@@ -53,8 +53,15 @@ Monday, October 07, 2024
 * plan  
 o  
 
+nt_pd에서 iteration0-50은 되었구
+그다음은 codon iter랑 nucl/codon epsilon이랑 bt  
 
 
+Tuesday, October 08, 2024  
+* research   
+* class  
+* eng  
+o  
 
 
 
