@@ -280,3 +280,52 @@ NLP task에서 좋은 성능 보여줌(번역, QA, cloze task)
 **not train 된 data로 test, 다른 모델도 test  
 **모델 사이즈가 커지면 사람이 기계와 식별하는 능력 떨어짐..  
 **길이가 길수록 인간의 구분 어려움  
+
+
+
+
+
+<br/>
+# 기타   
+
+* Few-Shot Learning 소개    
+
+Few-shot learning은 특정 작업에 대해 몇 개의 예제를 제공받은 후 모델이 그 작업을 수행할 수 있는 능력을 평가하는 방법입니다.
+예를 들어, 텍스트 분류 작업에서 몇 개의 라벨이 붙은 문장(예: 긍정적/부정적)들을 모델에게 보여준 후, 새로운 문장의 라벨을 예측하게 합니다.    
+GPT-3는 사전 학습된 모델을 활용해, 학습 중 제공된 몇 개의 예시들로부터 작업의 유형과 규칙을 파악하고 그에 따라 추론을 합니다.  
+
+
+* Zero-Shot Learning   
+ 
+Zero-shot learning은 아무런 예제도 제공받지 않고 특정 작업을 수행하는 능력을 평가하는 방법입니다.
+이 경우, 모델은 단순히 문제 설명과 문맥만을 기반으로 답을 추론해야 합니다.
+예를 들어, "이 문장이 긍정적인지 부정적인지 판별하시오"라는 지시만 주어지고, 별도의 예시 없이 모델이 그 질문에 답해야 합니다.
+GPT-3의 경우, 사전 학습 단계에서 다양한 질문과 텍스트 구조를 학습했기 때문에, 특정 작업에 대해 명시적으로 학습하지 않았더라도 이해하고 답변할 수 있는 능력을 보여줍니다.  
+
+
+* One-Shot Learning   
+
+One-shot learning은 하나의 예제만 제공된 상태에서 모델이 특정 작업을 수행하는 능력을 평가하는 방법입니다.
+이 방식은 few-shot과 zero-shot의 중간 형태로, 모델이 하나의 예시를 보고 규칙을 유추하여 새로운 입력에 대해 예측을 수행합니다.
+예를 들어, 문장의 라벨이 하나만 주어진 후 새로운 문장의 라벨을 예측하게 하는 방식입니다.  
+
+
+
+<br/>
+# refer format:     
+
+
+
+
+@inproceedings{brown2020language,
+  author = {Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
+  title = {Language Models are Few-Shot Learners},
+  booktitle = {Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS)},
+  year = {2020}
+}
+
+
+
+Brown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom Henighan, Rewon Child, Aditya Ramesh, Daniel M. Ziegler, Jeffrey Wu, Clemens Winter, Christopher Hesse, Mark Chen, Eric Sigler, Mateusz Litwin, Scott Gray, Benjamin Chess, Jack Clark, Christopher Berner, Sam McCandlish, Alec Radford, Ilya Sutskever, and Dario Amodei. "Language Models are Few-Shot Learners." Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS), 2020.
+
+
