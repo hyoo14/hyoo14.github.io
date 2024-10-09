@@ -61,11 +61,18 @@ Tuesday, October 08, 2024
 * research   
 * class  
 * eng  
+* etc도 하긴 해야..  / plan도 짜긴 짜야........  
 o  
 
+nt_pd NUCL iter랑 epsilon은 된듯?
+nt_pd codon iter 중(이거 오래 걸리넹...)..   그다음 epsilon 해보고.. bt까지?  
+
+너무 오래 걸려서.. d2도 해봐야할듯 다음스텝으로  hf에 저장하고 불러오는것은 실패... d2자체에 문제가 있음(파인튜닝하면서)  
 
 
-
+Wednesday, October 09, 2024  
+* class  
+o   
 
 
 
