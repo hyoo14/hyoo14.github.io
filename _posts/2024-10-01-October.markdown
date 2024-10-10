@@ -72,8 +72,15 @@ nt_pd codon iter 중(이거 오래 걸리넹...)..   그다음 epsilon 해보고
 
 Wednesday, October 09, 2024  
 * class  
+* eng  
 o   
 
+
+Thursday, October 10, 2024  
+* research  
+* class  
+* eng  
+o  
 
 
 {% highlight ruby %}
