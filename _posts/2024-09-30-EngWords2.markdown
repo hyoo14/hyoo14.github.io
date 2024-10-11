@@ -16,6 +16,34 @@ categories: study
 
 {% endhighlight %}  
 
+
+
+
+1.	Ameliorate(어밀리어레이트): 개선하다, 개량하다
+	•	To make something better or more tolerable, especially when it’s been in a bad or undesirable condition.
+	•	Example: “The new policies were implemented to ameliorate the living conditions of the urban poor.”
+	•	예: 새로운 정책들이 도시 빈민의 생활 조건을 개선하기 위해 시행되었다.
+2.	Mitigate(미티게이트): 완화하다, 경감하다
+	•	To make something less severe, serious, or painful.
+	•	Example: “Measures were taken to mitigate the effects of the economic downturn.”
+	•	예: 경제 침체의 영향을 완화하기 위한 조치가 취해졌다.
+3.	Reticent(레티슨트): 과묵한, 말을 잘 하지 않는 (부정적 뉘앙스)
+	•	Reluctant to speak or express feelings; reserved.
+	•	Example: “He was reticent about his plans, which made others suspicious.”
+	•	예: 그는 자신의 계획에 대해 과묵하여 다른 사람들의 의심을 샀다.
+4.	Equivocal(이퀴보컬): 애매한, 모호한
+	•	Open to more than one interpretation, often with the intent to deceive or be ambiguous.
+	•	Example: “The politician’s response was equivocal, leaving the voters uncertain about his stance.”
+	•	예: 정치인의 답변은 애매모호해서 유권자들은 그의 입장을 확신할 수 없었다.
+5.	Ephemeral(이페머럴): 일시적인, 덧없는
+	•	Lasting for a very short time; transient.
+	•	Example: “The beauty of the cherry blossoms is ephemeral, disappearing within a few weeks.”
+	•	예: 벚꽃의 아름다움은 덧없어서 몇 주 안에 사라진다.
+
+
+
+
+
 ### 1-50
 1. **Abate** (줄이다) – **Mitigate**, **Alleviate**, **Assuage**
 2. **Aberrant** (비정상적인) – **Anomalous**, **Deviant**
