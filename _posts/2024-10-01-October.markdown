@@ -83,6 +83,12 @@ Thursday, October 10, 2024
 o  
 
 
+Friday, October 11, 2024  
+* research  
+* class  
+* eng  
+o  
+
 
 {% highlight ruby %}
 
