@@ -51,7 +51,13 @@ o
 시간이 그냥 엄청 빠르게 지나가네..  
 휴우 ㅠㅠㅠㅠ   
 
+Tuesday, October 15, 2024  
+* research  
+* class  
+* etc  
+o   
 
+극한....   
 
 
 {% highlight ruby %}
