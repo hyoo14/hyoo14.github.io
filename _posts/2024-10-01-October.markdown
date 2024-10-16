@@ -60,6 +60,15 @@ o
 극한....   
 
 
+Wednesday, October 16, 2024  
+* research  
+* class  
+* etc  
+o   
+
+너모 힘들다... ㅠㅠㅠ  
+
+
 {% highlight ruby %}
 
 
