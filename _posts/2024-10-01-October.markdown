@@ -73,6 +73,8 @@ Thursday, October 17, 2024
 * research  
 o  
 
+데모와 에스오피  
+
 
 {% highlight ruby %}
 
