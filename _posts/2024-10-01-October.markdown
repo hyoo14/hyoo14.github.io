@@ -69,6 +69,11 @@ o
 너모 힘들다... ㅠㅠㅠ  
 
 
+Thursday, October 17, 2024  
+* research  
+o  
+
+
 {% highlight ruby %}
 
 
