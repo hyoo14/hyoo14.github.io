@@ -76,6 +76,14 @@ o
 데모와 에스오피  
 
 
+Friday, October 18, 2024  
+* research  
+o  
+
+약간 번아웃..  
+
+
+
 {% highlight ruby %}
 
 
