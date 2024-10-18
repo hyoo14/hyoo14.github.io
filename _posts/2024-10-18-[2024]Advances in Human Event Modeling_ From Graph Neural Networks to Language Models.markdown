@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[2024]Advances in Human Event Modeling From Graph Neural Networks to Language Models"  
-date:   2024-10-18 17:10:29 -0400
+date:   2024-10-18 01:51:29 -0400
 categories: study
 ---
 
