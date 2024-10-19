@@ -82,6 +82,11 @@ o
 
 약간 번아웃..  
 
+Saturday, October 19, 2024  
+* research  
+* class  
+o  
+
 
 
 {% highlight ruby %}
