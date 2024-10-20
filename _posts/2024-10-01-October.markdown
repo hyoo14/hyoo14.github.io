@@ -88,6 +88,12 @@ Saturday, October 19, 2024
 o  
 
 
+Sunday, October 20, 2024  
+* research  
+* class  
+* etc  
+o   
+
 
 {% highlight ruby %}
 
