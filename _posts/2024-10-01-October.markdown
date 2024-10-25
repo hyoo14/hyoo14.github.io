@@ -64,13 +64,18 @@ Wednesday, October 23, 2024
 o  
 
 
-Thursday, October 24, 2023  
+Thursday, October 24, 2024  
 * research  
 * class  
 * etc  
 o   
 
 
+Firday, October 25, 2024   
+* research  
+* class  
+* etc  
+o   
 
 
 {% highlight ruby %}
