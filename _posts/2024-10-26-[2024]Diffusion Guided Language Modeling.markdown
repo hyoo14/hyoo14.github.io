@@ -10,6 +10,11 @@ categories: study
 
 한줄 요약: 
 
+인풋은 도메인이 다른 입력이 될테고  
+그 인풋이 들어오면  
+센텐스 t5가 알아서 속성에 맞게 프롬프트를 만들고  
+그 프롬프트가 gpt와 같은 llm또는 autoregressive lm에 들어가서 결과가 나온다..  
+
 짧은 요약(Abstract) :    
 
 
