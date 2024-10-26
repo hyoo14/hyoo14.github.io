@@ -78,6 +78,13 @@ Firday, October 25, 2024
 o   
 
 
+Saturday, October 26, 2024  
+* research  
+* class  
+* etc  
+o   
+
+
 {% highlight ruby %}
 
 
