@@ -15,6 +15,10 @@ categories: study
 센텐스 t5가 알아서 속성에 맞게 프롬프트를 만들고  
 그 프롬프트가 gpt와 같은 llm또는 autoregressive lm에 들어가서 결과가 나온다..  
 
+왜 디퓨전인고 하니..  
+생성 중 미세한 오류가 발생할 수 있는데,  
+이를 보정하기 위해 Gaussian 노이즈를 추가하여 모델의 강건성을 높인 부분땜에.. 인듯 하다..  
+
 짧은 요약(Abstract) :    
 
 
@@ -220,6 +224,35 @@ The lack of comparison with the latest large language models could be due to sev
 3. **Technical Differences**: While the latest large models may include various forms of attribute control, they do not employ plug-and-play methods like DGLM. To highlight the efficiency and flexibility of DGLM’s approach, the authors may have opted to compare it with models that also focus on similar, lightweight control methods.
 
 Future research could provide a more direct performance evaluation in terms of attribute control, fluency, and diversity by comparing DGLM to these newer large language models.
+
+
+
+디퓨전 프로세스를 통해 생성되는 텍스트의 질을 개선하고자 합니다. 디퓨전 모델은 데이터를 점진적으로 변형하여 생성하는 방식으로, 노이즈를 제거하면서 점차 더 세밀하고 사실적인 결과를 만들어내는 장점이 있습니다.  
+
+디퓨전 방식을 사용하는 이유는 다음과 같습니다:  
+
+1. 다양하고 자연스러운 생성: 디퓨전 모델은 텍스트를 점진적으로 생성하여, 특정 주제에 대해 더욱 다양하고 자연스러운 응답을 생성할 수 있습니다. 이는 특히 텍스트의 흐름과 일관성을 유지하면서도 창의적인 응답을 유도할 수 있는 장점이 있습니다.  
+
+2. 노이즈 감소와 의미 보존: 디퓨전 방식은 텍스트 생성 과정에서 노이즈를 제거하면서 점차적으로 의미 있는 텍스트를 만들어냅니다. 이는 언어 모델이 더 구체적이고 의미 있는 결과를 내놓을 수 있도록 도움을 줍니다.  
+
+3. 세밀한 조정 가능: 디퓨전 모델은 여러 단계에 걸쳐 텍스트를 생성하기 때문에, 특정 단계에서 원하는 수정이나 조정을 할 수 있는 여지를 제공합니다. 이를 통해, 일반적인 언어 모델링보다 더 세밀하게 결과를 컨트롤할 수 있습니다.  
+
+이 논문에서는 이러한 디퓨전 과정을 통해 언어 생성의 효율성과 질을 높일 수 있음을 실험적으로 증명    
+
+
+
+The aim of this paper is to improve the quality of generated text through the diffusion process. The diffusion model is a method that generates text by gradually transforming data, removing noise, and ultimately producing more refined and realistic results.  
+
+The reasons for using the diffusion approach are as follows:  
+
+1. Diverse and Natural Generation: The diffusion model generates text incrementally, allowing it to produce more diverse and natural responses on specific topics. This approach is particularly beneficial for maintaining the flow and coherence of the text while encouraging creative responses.  
+
+2. Noise Reduction and Meaning Preservation: The diffusion process removes noise during text generation, resulting in progressively meaningful text. This helps language models produce more detailed and meaningful outcomes.   
+
+3. Fine-tuned Control: Since the diffusion model generates text across multiple stages, it allows adjustments and modifications at specific stages. This enables more precise control over the results than conventional language modeling.  
+
+In this paper, the authors experimentally demonstrate that the diffusion process can enhance the efficiency and quality of language generation.  
+
 
 
 <br/>
