@@ -297,6 +297,11 @@ Actually, I didn't know well and didn't understand the Stable Diffusion model. I
 
 <br/>
 # refer format:     
+Zhang, Lvmin, Anyi Rao, and Maneesh Agrawala. “Adding Conditional Control to Text-to-Image Diffusion Models.” In Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV), 3836–3847. October 2023.
+
+
+
+
 Lvmin Zhang, Anyi Rao, and Maneesh Agrawala. "Adding Conditional Control to Text-to-Image Diffusion Models." *Computer Vision and Pattern Recognition (cs.CV)*, *Artificial Intelligence (cs.AI)*, *Graphics (cs.GR)*, *Human-Computer Interaction (cs.HC)*, *Multimedia (cs.MM)*, arXiv:2302.05543, 2023. DOI: https://doi.org/10.48550/arXiv.2302.05543.
 
   
