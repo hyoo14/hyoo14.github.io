@@ -94,6 +94,42 @@ This paper provides a comprehensive overview of the Attention Model, a concept t
 - **Multi-Dimensional Attention**: Processes each dimension of input independently to extract contextual meaning.
 
 
+
+
+
+이 논문에서는 트랜스포머 모델의 아키텍처와 효율성, 정확도 향상에 대해 설명합니다. 트랜스포머는 순환 연결을 제거하고, 자기 어텐션만을 통해 입력과 출력 간의 전역적 의존성을 학습하는 모델입니다. 주요 내용은 다음과 같습니다.
+
+1. **트랜스포머 아키텍처 개요**: 트랜스포머는 순차 처리를 없애고 병렬 처리가 가능하게 설계되었습니다. 이를 통해 기계 번역과 같은 작업에서 더 빠르고 정확한 결과를 얻을 수 있습니다.
+
+2. **자기 어텐션과 스케일드 닷 프로덕트**: 트랜스포머는 스케일드 닷 프로덕트를 사용해 각 토큰과 해당 위치 간의 관계를 학습합니다. 이를 통해 병렬 처리의 효율성이 크게 향상됩니다.
+
+3. **다중 헤드 어텐션**: 여러 개의 어텐션 헤드를 병렬로 활용하여 입력을 여러 세그먼트로 나누고, 각 세그먼트에 대해 독립적으로 어텐션을 계산합니다. 이를 통해 다차원적 문맥 정보를 학습하며 정보 손실을 줄입니다.
+
+4. **포지셔널 인코딩**: 트랜스포머는 입력 시퀀스의 순서를 반영하기 위해 포지셔널 인코딩을 사용하여 모델이 각 단어의 위치를 이해할 수 있도록 돕습니다.
+
+5. **잔차 연결과 정규화**: 각 층에 잔차 연결과 정규화를 적용하여 훈련 과정의 안정성을 높이고, 깊은 네트워크에서도 정보 손실을 최소화하여 성능을 향상시킵니다.
+
+이와 같이 트랜스포머는 NLP와 컴퓨터 비전 등 다양한 작업에서 활용되며, 여러 변형 모델들이 연구되어 높은 성능을 보입니다.
+
+---
+
+
+
+This paper explains the architecture, efficiency, and accuracy improvements of the Transformer model. The Transformer is a model that eliminates recurrent connections, learning global dependencies between input and output through self-attention alone. The main points are as follows:
+
+1. **Overview of the Transformer Architecture**: The Transformer is designed to eliminate sequential processing, enabling parallel computation, resulting in faster and more accurate outcomes in tasks like machine translation.
+
+2. **Self-Attention and Scaled Dot-Product**: The Transformer uses scaled dot-product attention to learn relationships between each token and its position, greatly enhancing processing efficiency.
+
+3. **Multi-Head Attention**: By using multiple attention heads in parallel, the model divides the input into segments and calculates attention independently for each segment, allowing it to capture multi-dimensional contextual information and reducing information loss.
+
+4. **Positional Encoding**: To reflect the order of the input sequence, the Transformer employs positional encoding, helping the model understand the position of each word.
+
+5. **Residual Connections and Normalization**: Residual connections and normalization are applied to each layer to increase training stability and minimize information loss, especially in deeper networks, thereby improving performance.
+
+The Transformer thus finds applications across various tasks in NLP and computer vision, with numerous variants being researched and demonstrating high performance.
+
+
 <br/>
 # Results  
 
