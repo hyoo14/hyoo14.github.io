@@ -144,9 +144,65 @@ AlphaGo evaluates board positions and predicts optimal moves using its policy an
 
 
 <br/>  
-# 기타  
+# 기타 
 
 
+
+이 이미지는 AlphaGo에서 정책 네트워크와 가치 네트워크를 학습하고 활용하는 과정을 설명합니다. 각 네트워크는 바둑의 상태를 평가하고, 다음 수를 예측하는 데 중요한 역할을 합니다.
+
+1. **롤아웃 정책 (Rollout Policy)**: 초기 정책 네트워크는 인간 전문가의 기보를 학습하여 수를 예측하는 분류 작업을 수행합니다. 여기서 학습된 모델을 `pπ`라고 부릅니다.
+
+2. **지도 학습 (SL) 정책 네트워크**: 정책 네트워크(`pσ`)는 인간 전문가의 데이터를 바탕으로 학습되며, 분류 과정을 통해 수를 예측합니다. 이는 AlphaGo가 다음 수를 정밀하게 선택할 수 있도록 돕습니다.
+
+3. **강화 학습 (RL) 정책 네트워크**: 지도 학습에서 학습된 정책 네트워크는 자가 대국을 통해 추가로 학습됩니다. 정책 그래디언트를 통해 강화 학습이 이루어지며, 이 네트워크는 `pρ`로 불립니다.
+
+4. **가치 네트워크 (Value Network)**: 가치 네트워크(`vθ`)는 보드의 상태를 평가하고, 주어진 위치에서 승리할 확률을 예측하는 회귀 과정을 수행합니다. 이 네트워크는 자가 대국 데이터를 바탕으로 학습되며, AlphaGo가 상태에 따라 최적의 결정을 내리도록 돕습니다.
+
+이렇게 훈련된 정책 네트워크와 가치 네트워크는 AlphaGo가 바둑판에서 다음 최선의 수를 예측하고 평가하는 데 중요한 역할을 합니다.
+
+---
+
+
+
+This image explains the training and utilization process of the policy and value networks in AlphaGo. Each network plays a critical role in evaluating the game state and predicting the next move.
+
+1. **Rollout Policy**: The initial policy network, trained on human expert games, performs a classification task to predict moves. This trained model is referred to as `pπ`.
+
+2. **Supervised Learning (SL) Policy Network**: The policy network (`pσ`) is trained on human expert data and predicts moves through classification. This enables AlphaGo to accurately choose the next move.
+
+3. **Reinforcement Learning (RL) Policy Network**: The policy network trained with supervised learning is further refined through self-play reinforcement learning, using policy gradients. This refined network is known as `pρ`.
+
+4. **Value Network**: The value network (`vθ`) evaluates the board state and predicts the probability of winning from a given position through a regression task. This network is trained on self-play data and aids AlphaGo in making optimal decisions based on the game state.
+
+These trained policy and value networks are essential for AlphaGo to accurately predict and evaluate the best moves on the Go board. 
+
+
+
+
+
+
+
+이 이미지는 AlphaGo가 바둑에서 몬테카를로 트리 탐색(Monte Carlo Tree Search, MCTS)을 사용하는 과정의 각 단계를 설명하고 있습니다. 각 단계는 선택(Selection), 확장(Expansion), 평가(Evaluation), 백업(Backup)으로 나뉘어 있으며, 이를 통해 AlphaGo는 최적의 수를 찾아갑니다.
+
+1. **선택 (Selection)**: 트리의 루트에서 시작하여 선택 규칙(Q + u(P))을 사용하여 최적의 경로를 따라 이동합니다. 이때 가장 높은 가치를 가진 수를 선택합니다.
+2. **확장 (Expansion)**: 현재 트리에 없는 새로운 노드가 도달하면 트리가 확장되며, 가능한 다음 수들이 추가됩니다. 여기서 확률(P)을 기반으로 확장 노드들이 선택됩니다.
+3. **평가 (Evaluation)**: 확장된 노드는 가치 네트워크(vθ)에 의해 평가되며, 보드 상태에 대한 예측이 이루어집니다. 여기서 승리 확률을 계산하여 그 값을 평가합니다.
+4. **백업 (Backup)**: 평가된 결과(vθ와 r)가 트리를 따라 역방향으로 전파되어 상위 노드에 반영됩니다. 이를 통해 선택된 경로의 가치를 업데이트하며, 최적의 수를 찾는 과정이 반복됩니다.
+
+이 과정을 통해 AlphaGo는 현재 보드 상태에서 다음 최선의 수를 효율적으로 탐색하여 인간 수준의 직관적인 수를 둘 수 있게 됩니다.
+
+---
+
+
+
+The image illustrates the stages of Monte Carlo Tree Search (MCTS) used by AlphaGo in the game of Go. The process is divided into four stages: Selection, Expansion, Evaluation, and Backup, which collectively help AlphaGo find the optimal move.
+
+1. **Selection**: Starting from the root, AlphaGo follows a selection rule (Q + u(P)) to traverse the tree along the path with the highest value, selecting moves that maximize the combined evaluation score.
+2. **Expansion**: Upon reaching a node that isn’t already in the tree, the tree expands by adding new possible moves. These new nodes are chosen based on probabilities (P).
+3. **Evaluation**: The expanded node is evaluated by the value network (vθ), which predicts the win probability from that board state. This step assesses the potential outcome of the current board position.
+4. **Backup**: The evaluated results (vθ and r) are propagated back up the tree, updating the values of the traversed nodes. This updates the values along the selected path, refining the search for the optimal move.
+
+Through this iterative process, AlphaGo efficiently explores potential moves, enabling it to make intuitive yet calculated moves at a human-competitive level.
 
 
 <br/>
