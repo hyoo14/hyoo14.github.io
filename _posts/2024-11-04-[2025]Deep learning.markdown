@@ -1,0 +1,165 @@
+---
+layout: post
+title:  "[2025]Deep learning"  
+date:   2024-11-04 00:19:29 -0500
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+
+짧은 요약(Abstract) :    
+
+
+
+심층 학습(딥러닝)은 데이터의 다층 표현을 학습하는 다중 처리 계층으로 구성된 컴퓨팅 모델을 가능하게 합니다. 이러한 방법들은 음성 인식, 시각적 객체 인식, 객체 탐지 등 다양한 영역에서 최신 성과를 크게 향상시켰으며, 약물 발견과 유전체학과 같은 분야에서도 혁신적인 성과를 보여주었습니다. 딥러닝은 역전파 알고리즘을 활용하여 기계가 각 계층의 표현을 이전 계층의 표현으로부터 계산하는 데 필요한 내부 매개변수를 변경하는 방법을 제시하여 대규모 데이터 세트 내에서 복잡한 구조를 발견합니다. 심층 합성곱 신경망(Convolutional Neural Networks)은 이미지, 비디오, 음성, 오디오 처리에서 큰 진전을 이루었으며, 순환 신경망(Recurrent Neural Networks)은 텍스트와 음성 같은 순차 데이터 처리에서 뛰어난 성과를 보였습니다.
+
+
+Deep learning enables computational models with multiple processing layers to learn representations of data with multiple levels of abstraction. These methods have dramatically improved the state of the art in speech recognition, visual object recognition, object detection, and have shown groundbreaking results in fields such as drug discovery and genomics. Deep learning discovers intricate structures within large datasets by using the backpropagation algorithm, which directs how a machine should alter its internal parameters to compute the representation in each layer from the representation in the previous layer. Deep convolutional networks have made significant breakthroughs in processing images, video, speech, and audio, while recurrent networks have excelled in handling sequential data such as text and speech.
+
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+
+
+
+
+ 
+<br/>
+# Methodology    
+
+
+#### 1. 딥러닝 개요
+딥러닝은 다층의 신경망을 활용하여 데이터에서 복잡한 패턴과 표현을 학습하는 기술입니다. 딥러닝 모델은 데이터를 다양한 수준에서 추상화하며, 특히 시각적 객체 인식, 음성 인식, 약물 발견, 유전체학과 같은 다양한 분야에서 성과를 보였습니다. 
+
+#### 2. 역전파를 이용한 다층 학습
+딥러닝에서는 '역전파(backpropagation)'라는 알고리즘을 통해 신경망의 각 층에서 내부 매개변수를 학습합니다. 역전파는 모델의 출력 오류를 입력으로 되돌려 보내면서 오류를 줄이는 방식으로 가중치를 조정해 나갑니다. 이 과정을 통해 모델은 점진적으로 학습하고, 결과적으로 매우 정교한 표현을 얻습니다.
+
+#### 3. 합성곱 신경망 (CNN)
+합성곱 신경망은 주로 이미지 및 비디오 처리에 적합한 모델로, 지역적으로 연결된 계층을 사용하여 이미지의 특정 특징을 추출합니다. CNN은 특정 위치에서 반복적으로 특징을 추출하는 필터를 활용해 패턴을 찾아내며, 이는 다양한 위치에서도 동일한 패턴을 인식할 수 있게 해줍니다. 이를 통해 CNN은 이미지 분류, 객체 탐지, 이미지 내 객체 위치 확인 등에서 강력한 성능을 발휘합니다.
+
+#### 4. 순환 신경망 (RNN)
+순환 신경망은 순차 데이터를 처리하는 데 적합한 모델로, 시계열 데이터나 텍스트, 음성 같은 데이터를 효과적으로 다룰 수 있습니다. RNN은 입력 데이터를 시간 순서대로 처리하며, 이전의 입력 상태를 기억하여 다음 상태에 반영합니다. 이를 통해 문장 번역, 음성 인식 등에서 우수한 성능을 보여줍니다.
+
+#### 5. 분산 표현과 언어 처리
+딥러닝은 각 단어를 벡터 형태로 표현하는 분산 표현을 통해 언어를 더 효과적으로 처리할 수 있게 합니다. 이는 서로 의미가 유사한 단어들이 벡터 공간에서 가깝게 위치하게 하여 자연어 처리 작업을 더 효율적으로 수행하게 해줍니다.
+
+
+
+
+
+#### 1. Overview of Deep Learning
+Deep learning leverages multi-layered neural networks to learn complex patterns and representations from data. This approach abstracts data at multiple levels and has shown remarkable success in areas such as visual object recognition, speech recognition, drug discovery, and genomics.
+
+#### 2. Multi-layer Learning with Backpropagation
+In deep learning, the 'backpropagation' algorithm is used to train each layer of the neural network's parameters. Backpropagation adjusts weights by propagating output errors back through the network, minimizing these errors over time. This enables the model to incrementally learn and achieve sophisticated representations.
+
+#### 3. Convolutional Neural Networks (CNN)
+Convolutional Neural Networks are well-suited for image and video processing, employing locally connected layers to capture specific features in images. CNNs use filters to detect patterns across various locations, making it possible to recognize similar patterns in different positions. CNNs excel in tasks such as image classification, object detection, and locating objects within images.
+
+#### 4. Recurrent Neural Networks (RNN)
+Recurrent Neural Networks are ideal for handling sequential data, effectively processing time-series data, text, and speech. RNNs process inputs in a sequential order, retaining previous input states to inform the next. This makes them well-suited for applications like sentence translation and speech recognition.
+
+#### 5. Distributed Representations and Language Processing
+Deep learning enhances language processing by employing distributed representations, which represent each word as a vector. Words with similar meanings are positioned closely in this vector space, allowing for more efficient natural language processing tasks.
+
+
+<br/>
+# Results  
+
+
+<br/>
+# 예제  
+
+
+
+
+#### 1. 딥러닝 개요: 이미지 및 음성 인식
+딥러닝은 이미지 인식과 음성 인식과 같은 복잡한 문제에서 성공적인 예시가 있습니다. 예를 들어, 딥러닝을 이용한 합성곱 신경망(CNN)은 이미지의 객체를 인식하여 자동차나 동물과 같은 사물을 정확하게 분류하는 데 사용됩니다. 음성 인식에서는 특정 단어나 문장을 인식해 텍스트로 변환하는 데 딥러닝 기반의 순환 신경망(RNN)이 사용됩니다.
+
+#### 2. 역전파(backpropagation): 문자 인식
+역전파 알고리즘은 손글씨 숫자 인식과 같은 작업에서 사용된 예시가 있습니다. 신경망이 학습하면서 오류를 줄이기 위해 각 계층에서 가중치를 조정하며, 결과적으로 손글씨 숫자를 정확히 인식하게 됩니다. 이를 통해 신경망은 단순한 오류 교정을 통해 복잡한 패턴을 학습할 수 있습니다.
+
+#### 3. 합성곱 신경망 (CNN): 얼굴 인식 및 이미지 분류
+CNN은 주로 얼굴 인식이나 일반적인 이미지 분류에 많이 사용됩니다. 예를 들어, 얼굴 인식에서 CNN은 사람의 얼굴 이미지를 분석해 특정 인물임을 인식하고, 이미지 분류에서는 동물, 차량 등 다양한 객체를 구별해 냅니다. CNN은 필터를 통해 특징을 추출하여 다양한 위치에서 동일한 패턴을 탐지하는 데 탁월한 성능을 보입니다.
+
+#### 4. 순환 신경망 (RNN): 기계 번역
+순환 신경망은 기계 번역 작업에서 좋은 성능을 보인 예시가 있습니다. 영어 문장을 입력으로 받아 RNN이 이를 기억하고, 문장의 의미를 바탕으로 프랑스어나 다른 언어로 번역합니다. RNN은 문장의 순서와 흐름을 기억하여 문맥에 맞는 번역을 제공하는 데 유용합니다.
+
+#### 5. 분산 표현과 언어 처리: 단어 벡터와 문맥 학습
+분산 표현은 단어 벡터(word embedding)를 생성하여 유사한 단어들이 가까운 위치에 오도록 합니다. 예를 들어, “고양이”와 “개”와 같은 단어가 벡터 공간에서 가깝게 위치하게 되어, 자연어 처리 시스템이 유사한 의미를 학습하고 문맥에 따라 단어를 이해하게 됩니다.
+
+---
+
+
+
+#### 1. Deep Learning Overview: Image and Speech Recognition
+Deep learning has been successfully applied in complex tasks like image and speech recognition. For instance, convolutional neural networks (CNNs) use deep learning to identify objects in images, allowing for accurate classification of items such as cars and animals. In speech recognition, recurrent neural networks (RNNs) are used to recognize specific words or phrases and transcribe them into text.
+
+#### 2. Backpropagation: Handwritten Digit Recognition
+The backpropagation algorithm is used in tasks like handwritten digit recognition. During training, the neural network adjusts weights at each layer to minimize errors, eventually enabling accurate recognition of handwritten digits. Through simple error correction, backpropagation allows the neural network to learn complex patterns effectively.
+
+#### 3. Convolutional Neural Networks (CNN): Face Recognition and Image Classification
+CNNs are widely used in face recognition and general image classification. For example, in face recognition, CNNs analyze facial features to identify specific individuals, while in image classification, they distinguish objects such as animals or vehicles. CNNs use filters to extract features and excel at recognizing patterns in different locations.
+
+#### 4. Recurrent Neural Networks (RNN): Machine Translation
+Recurrent neural networks are effective in machine translation tasks. Given an English sentence as input, RNNs retain the context and meaning to translate it into languages like French. RNNs keep track of the sequence and flow of sentences, making them useful for contextually accurate translations.
+
+#### 5. Distributed Representations and Language Processing: Word Embeddings and Context Learning
+Distributed representations create word embeddings, where words with similar meanings are located close together in a vector space. For example, words like "cat" and "dog" are positioned near each other, allowing natural language processing systems to understand context and similarity in meaning.
+
+
+<br/>  
+# 요약   
+
+
+
+딥러닝은 다층 신경망을 통해 이미지와 음성 인식 같은 복잡한 문제를 해결합니다. 합성곱 신경망(CNN)은 얼굴 인식과 이미지 분류에서 강력한 성능을 보이며, 순환 신경망(RNN)은 기계 번역에서 문맥과 흐름을 기억하여 정확한 번역을 제공합니다. 역전파(backpropagation)는 손글씨 숫자 인식에서 오류를 줄이며 신경망 학습을 가능하게 합니다. 또한, 분산 표현을 통해 단어 벡터(word embedding)를 학습해 자연어 처리에서 문맥을 파악하고 유사한 단어 간의 관계를 이해할 수 있게 합니다.
+
+
+
+Deep learning utilizes multi-layered neural networks to address complex tasks like image and speech recognition. Convolutional Neural Networks (CNNs) excel in face recognition and image classification, while Recurrent Neural Networks (RNNs) are effective in machine translation by retaining context and sequence. Backpropagation enables neural networks to minimize errors during training, such as in handwritten digit recognition. Additionally, distributed representations allow learning of word embeddings, helping natural language processing systems to grasp context and understand relationships between similar words.
+
+<br/>  
+# 기타  
+
+
+
+
+<br/>
+# refer format:     
+
+
+@article{lecun2015deep,
+  title={Deep learning},
+  author={LeCun, Yann and Bengio, Yoshua and Hinton, Geoffrey},
+  journal={Nature},
+  volume={521},
+  number={7553},
+  pages={436--444},
+  year={2015},
+  publisher={Nature Publishing Group}
+}
+
+
+
+LeCun, Yann, Yoshua Bengio, and Geoffrey Hinton. 2015. "Deep Learning." Nature 521, no. 7553: 436-444.  
+
