@@ -199,6 +199,21 @@ The TACO framework is designed to preserve structural information in graph data,
 
 
 
+TACO 프레임워크는 지속적 학습 환경에서 노드 분류 작업을 수행하여 성능을 평가합니다. 노드 분류는 그래프의 각 노드가 특정 클래스로 분류되는 것을 목표로 합니다. 예를 들어, Kindle 데이터셋에서는 아마존 킨들 제품을 종교, 어린이 전자책, 건강/피트니스 등으로 분류하고, DBLP와 ACM 데이터셋에서는 학술 논문을 데이터베이스, 인공지능(AI), 컴퓨터 비전 등과 같은 학문 분야로 분류합니다. TACO는 이 작업에서 F1-AP와 F1-AF를 주요 평가 지표로 사용합니다. **F1-AP (Average Performance)**는 각 작업의 F1 점수를 평균하여 전체적인 성능을 나타내며, **F1-AF (Average Forgetting)**는 새로운 작업을 학습하면서 이전 작업에 대한 성능 저하를 측정해 모델의 망각률을 평가합니다. 높은 F1-AP와 낮은 F1-AF는 TACO가 새로운 데이터를 학습하면서도 기존 정보를 잘 보존한다는 것을 의미합니다.
+
+
+
+The TACO framework is evaluated using node classification tasks within a continual learning setting. Node classification aims to assign each node in the graph to a specific class. For example, in the Kindle dataset, Amazon Kindle products are categorized into classes such as Religion, Children’s eBooks, and Health & Fitness, while in the DBLP and ACM datasets, academic papers are classified into fields like Database, Artificial Intelligence (AI), and Computer Vision. TACO uses F1-AP and F1-AF as its primary evaluation metrics. F1-AP (Average Performance) represents the overall performance by averaging F1 scores across tasks, while F1-AF (Average Forgetting) measures the decrease in performance on previous tasks when learning new tasks, indicating the model’s forgetting rate. High F1-AP and low F1-AF indicate that TACO retains prior knowledge effectively while learning new data.
+
+
+
+망각률
+
+망각률은 지속적 학습에서 모델이 새로운 작업을 학습할 때 이전 작업에 대한 성능이 얼마나 감소하는지를 나타내는 지표입니다. TACO 프레임워크에서는 **F1-AF (Average Forgetting)**를 사용하여 망각률을 측정합니다. F1-AF는 각 작업에서 얻은 F1 점수를 기준으로, 새로운 작업을 학습한 이후 이전 작업의 성능 저하를 평균하여 계산합니다. 낮은 F1-AF 값은 모델이 새로운 데이터에 적응하면서도 이전에 학습한 내용을 잘 유지하고 있다는 의미입니다. 반대로 F1-AF 값이 높다면 모델이 새로운 작업을 학습하는 동안 이전 정보를 많이 잊어버리고 있다는 것을 나타냅니다.
+
+Forgetting Rate
+
+The Forgetting Rate indicates how much a model’s performance on previous tasks declines as it learns new tasks in a continual learning setting. In the TACO framework, F1-AF (Average Forgetting) is used to measure this rate. F1-AF is calculated by averaging the drop in F1 scores for each task after learning new tasks. A low F1-AF value means the model effectively retains knowledge from previous tasks while adapting to new data. Conversely, a high F1-AF value suggests that the model has forgotten a significant amount of information from prior tasks as it learns new ones.
 
 <br/>
 # refer format:     
