@@ -88,6 +88,13 @@ Saturday, November 09, 2024
 o  
 
 
+Sunday, November 10, 2024  
+* research  
+* class  
+* etc  
+o  
+
+
 
 
 {% highlight ruby %}
