@@ -80,6 +80,14 @@ o
 
 
 
+Saturday, November 16, 2024  
+* research  
+* class  
+* etc  
+o  
+
+
+
 
 
 {% highlight ruby %}
