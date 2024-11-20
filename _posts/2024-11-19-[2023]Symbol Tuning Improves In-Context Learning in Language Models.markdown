@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2024]Symbol Tuning Improves In-Context Learning in Language Models"  
+title:  "[2023]Symbol Tuning Improves In-Context Learning in Language Models"  
 date:   2024-11-19 11:00:20 -0500
 categories: study
 ---
@@ -275,16 +275,27 @@ Symbol Tuning is a novel methodology that fine-tunes language models by replacin
 
 
 
-@article{Wei2024,
-  title={Symbol Tuning Improves In-Context Learning in Language Models},
-  author={Jerry Wei and Le Hou and Andrew Lampinen and Xiangning Chen and Da Huang and Yi Tay and Xinyun Chen and Yifeng Lu and Denny Zhou and Tengyu Ma and Quoc V. Le},
-  journal={arXiv preprint arXiv:2305.08298v2},
-  year={2024},
-  month={January},
-  note={Available at: \url{https://arxiv.org/abs/2305.08298}}
+@inproceedings{2023.emnlp-main.61,
+  title = {Symbol Tuning Improves In-Context Learning in Language Models},
+  author = {Jerry Wei and Le Hou and Andrew Lampinen and Xiangning Chen and Da Huang and Yi Tay and Xinyun Chen and Yifeng Lu and Denny Zhou and Tengyu Ma and Quoc V. Le},
+  booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
+  month = {December},
+  year = {2023},
+  address = {Singapore},
+  editor = {Houda Bouamor and Juan Pino and Kalika Bali},
+  venue = {EMNLP},
+  sig = {EMNLP},
+  publisher = {Association for Computational Linguistics},
+  pages = {968--979},
+  url = {https://aclanthology.org/2023.emnlp-main.61},
+  doi = {10.18653/v1/2023.emnlp-main.61},
+  language = {English}
 }
 
 
 
-Wei, Jerry, Le Hou, Andrew Lampinen, Xiangning Chen, Da Huang, Yi Tay, Xinyun Chen, Yifeng Lu, Denny Zhou, Tengyu Ma, and Quoc V. Le. 2024. "Symbol Tuning Improves In-Context Learning in Language Models." arXiv preprint arXiv:2305.08298v2. January.   
+
+Wei, Jerry, Le Hou, Andrew Lampinen, Xiangning Chen, Da Huang, Yi Tay, Xinyun Chen, Yifeng Lu, Denny Zhou, Tengyu Ma, and Quoc V. Le. "Symbol Tuning Improves In-Context Learning in Language Models." In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, edited by Houda Bouamor, Juan Pino, and Kalika Bali, 968–979. Singapore: Association for Computational Linguistics, 2023.   
+
+
 
