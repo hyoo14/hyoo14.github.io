@@ -53,6 +53,17 @@ o
 time really flies  
 
 
+Tuesday, November 26, 2024  
+* research  
+* class  
+* etc  
+o  
+
+
+
+
+
+
 
 
 {% highlight ruby %}
