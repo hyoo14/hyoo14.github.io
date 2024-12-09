@@ -14,6 +14,53 @@ categories: study
 {% highlight ruby %}
 
 
+December week3     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** advAttack_verification and geneLMs     
+
+*class  
+** DataScience  
+** CellGeneTherapy     
+** HealthInformatics  
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+<br/>
+
+Monday, December 09, 2024  
+* research  
+* class->assignment and class backups  
+* etc  
+o  
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 December week2     
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** advAttack_verification and geneLMs     
