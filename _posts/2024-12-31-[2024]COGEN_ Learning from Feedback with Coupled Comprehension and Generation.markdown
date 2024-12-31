@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2024]COGEN Learning from Feedback with Coupled Comprehension and Generation"  
+title:  "[2024]COGEN: Learning from Feedback with Coupled Comprehension and Generation"  
 date:   2024-12-31 02:41:40 -0500
 categories: study
 ---
