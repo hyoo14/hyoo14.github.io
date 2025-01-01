@@ -48,6 +48,11 @@ Monday, December 30, 2024
 o  
 
 
+Tuesday, December 31, 2024  
+* class(eng)    
+* research  
+o  
+
 
 
 {% highlight ruby %}
