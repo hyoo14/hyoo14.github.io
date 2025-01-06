@@ -10,6 +10,49 @@ categories: study
 
 
 
+
+{% highlight ruby %}
+
+
+January week2     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** advAttack_verification and geneLMs     
+
+*class  
+**not decided.. maybe take first lecture and make decision?  
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+<br/>
+
+Monday, January 06, 2025  
+* class(eng)    
+* research  
+o  
+
+
+
+
+
+
 {% highlight ruby %}
 
 
