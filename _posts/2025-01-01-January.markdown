@@ -52,7 +52,7 @@ Monday, January 27, 2025
 * class    
 ** submit team assignment(dai)  
 * research  
-** amr, adv?  
+** amr, adv->now work with pbsim2 atk..     
 o   
 
 
