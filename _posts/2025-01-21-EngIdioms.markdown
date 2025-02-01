@@ -23,6 +23,7 @@ categories: study
 
 * Icing on the cake : 금상첨화.. (케익위의 설탕장식..)  
 * fall guy: 희생양, 뒤집어 쓴 사람  
+* i have no higher calling than: 더 높은 소명이 없다, 이거보다 중요한건 없다   
 
 
 
