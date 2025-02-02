@@ -25,7 +25,10 @@ categories: study
 * fall guy: 희생양, 뒤집어 쓴 사람  
 * i have no higher calling than: 더 높은 소명이 없다, 이거보다 중요한건 없다   
 * Hard times build character: 어려운 시기가 사람의 성품(인격)을 단련시킨다. 즉, 힘든 경험이나 어려운 시련을 겪으면서 사람이 더 강해지고 성장한다는 뜻   
-
+* supplant:대체하다, 대신하다  
+* poised to: 준비가 된, ~할 것 같은  
+* get back on track: 다시 정상 궤도로 돌아오다  
+* overhaul: 점검 및 개선  
 
 
 
