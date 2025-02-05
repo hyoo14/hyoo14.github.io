@@ -29,6 +29,7 @@ categories: study
 * poised to: 준비가 된, ~할 것 같은  
 * get back on track: 다시 정상 궤도로 돌아오다  
 * overhaul: 점검 및 개선  
+* pike: 스타벅스의 기본 드립 커피 메뉴인 Pike Place Roast  
 
 
 
