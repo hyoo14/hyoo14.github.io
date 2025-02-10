@@ -16,6 +16,50 @@ categories: study
 {% highlight ruby %}
 
 
+February week3     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** advAttack_verification and geneLMs     
+** LLM app for gene  
+
+*class  
+**FCV   
+**DAI    
+
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )
+## math? code? (lecture/assignment/project)    
+
+
+
+{% endhighlight %}  
+<br/>
+
+Monday, February 10, 2025  
+* class    
+* research  
+o   
+서술마무리후메일  
+
+
+
+
+
+{% highlight ruby %}
+
+
 February week2     
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** advAttack_verification and geneLMs     
