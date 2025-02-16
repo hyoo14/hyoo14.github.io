@@ -78,7 +78,7 @@ As a result, the proposed **VECO model** delivers new state-of-the-art results o
 
 @inproceedings{luo2021veco,
   author    = {Fuli Luo and Wei Wang and Jiahao Liu and Yijia Liu and Bin Bi and Songfang Huang and Fei Huang and Luo Si},
-  title     = {{VECO}: Variable and Flexible Cross-lingual Pre-training for Language Understanding and Generation},
+  title     = {VECO: Variable and Flexible Cross-lingual Pre-training for Language Understanding and Generation},
   booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing},
   year      = {2021},
   pages     = {3980--3994},
