@@ -61,6 +61,7 @@ Tuesday, February 18, 2025
 * class    
 * research  
 o   
+LLM app for gene / fair vllm 둘 다 좀 아주 적절하지가 않네.. 그냥 그닥인가..흠   
 
 
 
