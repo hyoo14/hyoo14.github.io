@@ -62,6 +62,7 @@ Tuesday, February 18, 2025
 * research  
 o   
 LLM app for gene / fair vllm 둘 다 좀 아주 적절하지가 않네.. 그냥 그닥인가..흠   
+이미 fair diffusion도 있고.. 파인튜닝이 적합한지도 잘... 흠  
 
 
 
