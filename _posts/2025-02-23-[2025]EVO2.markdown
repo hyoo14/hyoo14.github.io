@@ -1,0 +1,520 @@
+---
+layout: post
+title:  "[2025]Genome modeling and design across all domains of life with Evo 2"  
+date:   2025-02-23 11:05:40 -0500
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+Evo 2는 9.3조 개의 DNA 염기 서열을 학습한 생물학적 기반 모델로, 변이 예측, 유전자 기능 분석, 유전체 서열 생성을 수행하며, 기존 모델보다 더 긴 컨텍스트(최대 100만 bp)를 활용하여 전사인자 결합, 단백질 구조 요소 등을 자동으로 학습하고 예측 정확도를 향상시킨다.    
+
+시퀀스 설명용 주석을 학습에 이용한 점이 인상적이네..    
+이게 evo1이랑 다른 점이기도 한 듯  
+
+
+짧은 요약(Abstract) :    
+
+
+
+Evo 2는 모든 생명체의 유전체 데이터를 기반으로 학습된 생물학적 기반 모델이다. 이 모델은 9.3조 개의 DNA 염기 서열을 활용하여 단일 뉴클레오타이드 수준에서 기능적 변화를 예측할 수 있다. Evo 2는 특정 과업에 맞춰 추가 학습 없이 비암호성 병원성 돌연변이 및 BRCA1 변이를 정확하게 예측할 수 있으며, 전사인자 결합 부위, 단백질 구조 요소 등 다양한 생물학적 특징을 자동으로 학습한다. 또한, Evo 2는 이전 방법보다 자연스럽고 일관된 방식으로 미토콘드리아, 원핵생물, 진핵생물의 유전체를 생성할 수 있다. 추론 시 검색을 활용하여 후성유전체 구조를 제어할 수 있는 첫 번째 사례도 제시되었다. Evo 2는 모델 파라미터, 훈련 코드, 추론 코드, OpenGenome2 데이터셋을 완전히 공개하여 생물학적 복잡성 탐구와 설계를 가속화하는 것을 목표로 한다.
+
+
+
+Evo 2 is a biological foundation model trained on 9.3 trillion DNA base pairs from a highly curated genomic atlas spanning all domains of life. It achieves single-nucleotide resolution with context windows of up to 1 million tokens, enabling accurate functional impact predictions for genetic variations—including noncoding pathogenic mutations and clinically significant BRCA1 variants—without task-specific finetuning. Evo 2 autonomously learns biological features such as transcription factor binding sites, protein structural elements, and prophage genomic regions. Beyond prediction, Evo 2 generates mitochondrial, prokaryotic, and eukaryotic sequences at genome scale with greater naturalness and coherence than prior methods. It also demonstrates controllable epigenomic structure generation through inference-time search, marking a first in biology. To accelerate biological exploration and design, Evo 2 is fully open-source, including model parameters, training code, inference code, and the OpenGenome2 dataset.
+
+
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+
+
+
+
+ 
+<br/>
+# Methodology    
+
+
+
+
+Evo 2는 40B(400억) 및 7B(70억) 파라미터 모델로 훈련되었으며, 모든 생명체의 유전체 데이터를 학습하여 예측 및 생성 작업을 수행할 수 있도록 설계되었다.
+
+1. 아키텍처 (Architecture)
+
+Evo 2는 StripedHyena 2라는 새로운 다중 하이브리드 컨볼루션 아키텍처를 사용한다. 이 모델은 서로 다른 유형의 연산자를 결합하여 대규모 유전체 데이터를 효과적으로 학습할 수 있도록 최적화되었다.
+	•	StripedHyena 2는 컨볼루션 연산자와 어텐션 기법을 결합하여 성능을 극대화하며, 기존 Transformer 기반 모델 대비 최대 3배 높은 처리 속도를 보인다.
+	•	최대 100만 염기쌍(bp) 길이의 시퀀스를 학습할 수 있는 초장거리(long-context) 모델로, 기존 모델보다 훨씬 긴 유전체 패턴을 학습할 수 있다.
+	•	컨텍스트 확장을 위한 로터리 임베딩(rotary embeddings) 기법을 활용하여 성능을 최적화하였다.
+
+2. 훈련 데이터 (Training Data)
+
+Evo 2는 **9.3조 개의 DNA 염기 서열(9.3T tokens)**을 학습 데이터로 사용하며, 이를 통해 모든 생명체 영역(도메인)에서 유전적 변이의 기능적 영향을 예측할 수 있도록 설계되었다.
+	•	훈련 데이터는 박테리아, 고세균(아케아), 진핵생물, 박테리오파지 등 모든 생물 도메인을 포함하는 OpenGenome2 데이터셋에서 가져왔다.
+	•	기존 모델들이 주로 원핵생물(Prokaryote) 데이터에 집중한 반면, Evo 2는 진핵생물(Eukaryote) 데이터까지 포함하여 보다 일반적인 생물학적 패턴을 학습할 수 있도록 하였다.
+	•	훈련 과정에서는 먼저 8,192개 염기쌍(bp)의 짧은 시퀀스를 학습하는 사전훈련(pretraining) 단계를 거친 후, 최대 100만 염기쌍까지 확장하는 중간훈련(midtraining) 과정을 통해 긴 유전체 패턴을 학습하였다.
+
+3. 모델 학습 과정 (Training Process)
+
+Evo 2는 두 단계의 훈련 과정을 거쳤다.
+	1.	단기 컨텍스트 훈련 (Short-Context Pretraining)
+	•	초기에는 8,192개 염기쌍 길이로 데이터를 훈련하여 유전체의 핵심 유전자 영역을 효과적으로 학습하도록 하였다.
+	•	이 단계에서는 **유전자(gene) 영역과 기능적 엘리먼트(예: 전사 인자 결합 부위)**가 강조되도록 데이터 가중치를 조정하였다.
+	2.	장기 컨텍스트 훈련 (Long-Context Midtraining)
+	•	이후, 컨텍스트 윈도우를 100만 염기쌍까지 확장하여 장거리 유전체 패턴을 학습하도록 하였다.
+	•	긴 DNA 서열에서 유전자 간 상호작용 및 조절 메커니즘을 포착할 수 있도록 최적화하였다.
+
+이를 통해 Evo 2는 기존 유전체 모델들이 다루지 못했던 광범위한 생물학적 도메인에서 유전적 변이의 기능을 예측하고 새로운 유전체를 생성할 수 있는 모델로 발전하였다.
+
+
+
+
+Evo 2 was trained as a 7B and 40B parameter model to perform predictive and generative tasks across all domains of life.
+
+1. Architecture
+
+Evo 2 employs StripedHyena 2, a novel multi-hybrid convolutional architecture designed to efficiently process large-scale genomic data.
+	•	StripedHyena 2 integrates convolutional operators with attention mechanisms, achieving up to 3× speed improvements over traditional Transformer-based architectures.
+	•	The model supports up to 1 million base pairs (bp) of context, enabling it to capture long-range genomic patterns.
+	•	Rotary embeddings were utilized to extend the model’s context window while maintaining efficient training.
+
+2. Training Data
+
+Evo 2 was trained on 9.3 trillion DNA base pairs from the OpenGenome2 dataset, covering bacteria, archaea, eukaryotes, and bacteriophages to comprehensively model genomic complexity.
+	•	Unlike prior models that focused on prokaryotic sequences, Evo 2 incorporates eukaryotic genomic data, enabling more generalizable biological insights.
+	•	Training began with short sequences (8,192 bp) before gradually expanding to 1 million bp, ensuring both fine-grained genetic element learning and long-range genome-scale modeling.
+
+3. Training Process
+
+Evo 2 underwent a two-phase training strategy:
+	1.	Short-Context Pretraining:
+	•	Initially trained on 8,192 bp sequences, focusing on functional genomic elements like gene regions and transcription factor binding sites.
+	•	Data weights were adjusted to prioritize biologically significant regions.
+	2.	Long-Context Midtraining:
+	•	The context window was progressively extended to 1 million bp, allowing Evo 2 to capture long-range genomic interactions and regulatory mechanisms.
+
+This two-phase approach enables Evo 2 to accurately predict the functional impact of genetic variations and generate naturalistic and coherent genome-scale sequences, making it the most advanced biological foundation model to date.
+
+
+
+
+
+
+
+
+
+
+   
+ 
+<br/>
+# Results  
+
+
+
+
+Evo 2는 기존 생물학적 언어 모델(Biological Language Models)과 비교하여 **다양한 평가 데이터셋과 척도(metric)**에서 최고 수준의 성능을 보였다. 특히, **유전적 변이의 기능 예측(Variant Effect Prediction, VEP)**에서 강력한 성능을 나타냈으며, 특정 태스크에 맞춰 미세 조정(finetuning) 없이 경쟁 모델과 비교하여 높은 정확도를 기록하였다.
+
+1. 테스트 데이터셋 및 평가 메트릭 (Test Datasets & Metrics)
+
+Evo 2는 다양한 생물학적 문제를 평가하기 위해 여러 공개된 데이터셋과 새로운 벤치마크 평가를 수행했다.
+	1.	ClinVar 변이 예측 (Variant Effect Prediction on ClinVar)
+	•	데이터셋: ClinVar 데이터셋의 병원성(Pathogenic) 및 양성(Benign) 변이 데이터
+	•	테스트 데이터 수:
+	•	코딩 영역 (Coding region): 14,319 SNV(단일 뉴클레오타이드 변이) + 1,236 비SNV(삽입/삭제)
+	•	비코딩 영역 (Noncoding region): 34,761 SNV + 3,894 비SNV
+	•	평가 척도:
+	•	AUROC (Area Under the Receiver Operating Characteristic Curve)
+	•	AUPRC (Area Under the Precision-Recall Curve)
+	•	결과: Evo 2는 비코딩 변이(non-SNV, noncoding, splice-associated 변이) 예측에서 최고 성능을 기록
+	2.	SpliceVarDB 변이 예측 (Splicing Variant Effect Prediction on SpliceVarDB)
+	•	데이터셋: SpliceVarDB (실험적으로 검증된 스플라이싱 변이 데이터)
+	•	테스트 데이터 수:
+	•	엑손(exonic) 변이: 1,181
+	•	인트론(intronic) 변이: 3,769
+	•	결과: Evo 2는 엑손 및 인트론 변이 예측에서 최고 성능을 달성
+	3.	BRCA1 및 BRCA2 변이 예측 (Breast Cancer Variant Effect Prediction on BRCA1/BRCA2)
+	•	데이터셋: BRCA1/BRCA2 유전자 변이 데이터
+	•	테스트 데이터 수:
+	•	BRCA1: 2,077 코딩 변이 + 1,125 비코딩 변이
+	•	BRCA2: 최근 발표된 BRCA2 변이 데이터 포함
+	•	결과: Evo 2는 BRCA1/BRCA2 변이 예측에서 최고 성능을 달성하며, 특히 비코딩 변이(non-SNV) 예측에서 기존 모델보다 월등히 우수한 결과를 보임
+
+2. 경쟁 모델과 성능 비교 (Comparison with Baselines)
+
+Evo 2는 최신 변이 예측 모델 및 생물학적 언어 모델과 비교하여 평가되었다. 주요 비교 모델은 다음과 같다.
+	1.	AlphaMissense (Cheng et al., 2023)
+	•	주요 특징: 코딩 영역 변이 예측을 위한 최첨단 모델
+	•	결과: 코딩 변이(SNV) 예측에서 일부 우수했으나, 비코딩 변이 및 삽입/삭제 변이(non-SNV)에 대한 성능이 부족
+	2.	GPN-MSA (Benegas et al., 2025)
+	•	주요 특징: 단백질 서열 기반의 변이 예측 모델
+	•	결과: 코딩 변이에서 높은 성능을 보였으나, Evo 2가 BRCA1 및 비코딩 변이 예측에서 더 높은 성능을 기록
+	3.	Nucleotide Transformer (NT)
+	•	주요 특징: DNA 시퀀스를 직접 학습한 Transformer 기반 모델
+	•	결과: Evo 2가 유전자 예측, 유전적 변이 해석, 기능성 분류에서 더 뛰어난 성능을 보임
+	4.	Evo 1 (이전 버전)
+	•	결과: Evo 2는 기존 Evo 1보다 더 긴 컨텍스트(최대 100만 bp)를 활용하여 예측 성능을 크게 향상
+
+3. Zero-shot 성능과 지도학습 성능 비교 (Zero-shot vs Supervised Fine-tuning)
+	•	Evo 2는 **Zero-shot 평가(사전 학습된 모델을 별도 미세 조정 없이 바로 사용)**에서도 높은 성능을 기록
+	•	그러나 Supervised Fine-tuning을 수행한 경우, 특히 BRCA1 변이 분류에서 AUROC 0.94, AUPRC 0.84로 최고 성능을 달성
+	•	이는 Evo 2의 기본적으로 학습된 유전체 표현이 강력하여 지도학습을 통해 더욱 정교한 모델을 만들 수 있음을 시사
+
+결론 (Conclusion)
+
+Evo 2는 최신 생물학적 모델들과 비교하여 변이 예측, 스플라이싱 변이, BRCA1/2 변이 예측에서 최고 수준의 성능을 달성하였다.
+특히,
+	•	비코딩 변이 예측 및 삽입/삭제 변이 예측에서 기존 모델 대비 가장 우수한 성능을 기록
+	•	100만 bp 컨텍스트 창을 활용하여 유전자 간 장거리 관계 학습이 가능
+	•	Zero-shot 평가에서도 우수한 성능을 보이며, 추가적인 지도학습을 통해 최고 수준의 변이 예측 모델 구축 가능
+
+이러한 결과는 Evo 2가 생물정보학, 임상 유전학, 그리고 생명과학 전반에서 강력한 도구로 활용될 수 있음을 보여준다.
+
+
+
+Evo 2 outperformed state-of-the-art biological language models across multiple benchmarks, particularly in variant effect prediction (VEP), splicing mutation prediction, and BRCA1/BRCA2 pathogenic variant classification.
+
+1. Test Datasets & Evaluation Metrics
+	1.	ClinVar Variant Effect Prediction
+	•	Dataset: ClinVar dataset with pathogenic and benign variants
+	•	Test Set:
+	•	Coding Variants: 14,319 SNVs + 1,236 non-SNVs
+	•	Noncoding Variants: 34,761 SNVs + 3,894 non-SNVs
+	•	Metrics:
+	•	AUROC (Area Under the ROC Curve)
+	•	AUPRC (Area Under the Precision-Recall Curve)
+	•	Results: Evo 2 achieved state-of-the-art performance for non-SNV and noncoding variant prediction
+	2.	SpliceVarDB for Splicing Variant Effect Prediction
+	•	Dataset: SpliceVarDB (experimentally validated splicing variants)
+	•	Test Set:
+	•	Exonic variants: 1,181
+	•	Intronic variants: 3,769
+	•	Results: Evo 2 achieved the highest performance for splicing variant classification
+	3.	BRCA1 & BRCA2 Variant Prediction
+	•	Dataset: BRCA1/BRCA2 cancer variant dataset
+	•	Test Set:
+	•	BRCA1: 2,077 coding variants + 1,125 noncoding variants
+	•	BRCA2: Additional recently published BRCA2 dataset
+	•	Results: Evo 2 outperformed all competing models in BRCA1/BRCA2 variant classification, particularly in non-SNV variant prediction
+
+2. Comparison with Baselines
+
+Top competing models:
+	1.	AlphaMissense – Strong in coding SNV prediction, but weak in noncoding and non-SNV variants
+	2.	GPN-MSA – Competitive in protein-based prediction, but Evo 2 excelled in BRCA1 classification
+	3.	Nucleotide Transformer – Inferior performance in gene function prediction
+	4.	Evo 1 (previous version) – Evo 2 greatly improved long-range genomic modeling
+
+3. Zero-shot vs Supervised Fine-tuning
+	•	Zero-shot Evo 2 showed competitive results
+	•	Fine-tuned Evo 2 on BRCA1 achieved AUROC 0.94, AUPRC 0.84, setting a new benchmark
+
+Conclusion
+
+Evo 2 outperformed competing models in variant prediction, splicing analysis, and long-range genomic inference, making it a powerful tool for computational biology and genomics.
+ 
+
+
+
+<br/>
+# 예제  
+
+
+
+1. 훈련 데이터 예시 (Training Data Example)
+
+Evo 2는 9.3조 개의 DNA 염기 서열을 학습했으며, 데이터셋에는 다양한 생물 종의 유전체 정보가 포함됨.
+아래는 훈련 데이터의 형식 예시:
+
+>Human_chr1_12345
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+>Mouse_chr2_67890
+GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+>Yeast_chr3_23456
+CGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG
+
+	•	각 서열(sequence)은 유전체(GENOME)에서 특정 위치를 나타냄
+	•	인간(Human), 쥐(Mouse), 효모(Yeast) 등 다양한 종의 염기서열 데이터를 포함
+
+2. 학습 데이터 예시 (Model Input Example for Training)
+
+Evo 2는 긴 컨텍스트 창(최대 100만 bp)을 활용하여 데이터를 학습함.
+아래는 모델이 처리하는 입력 예시:
+
+Context Window (1M bp):
+---ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC---
+---GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC---
+---CGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG---
+
+	•	초기 단계에서는 짧은 8,192 bp 시퀀스로 학습한 후, 점진적으로 1M bp까지 확장
+	•	유전자 조절 요소(전사인자 결합 부위, 비코딩 영역 등)를 포함
+
+3. 모델 인퍼런스 예시 (Model Inference Example)
+
+(1) 변이 기능 예측 (Variant Effect Prediction)
+
+Evo 2는 유전자 변이가 기능적으로 중요한지 예측할 수 있음.
+
+입력(Input):
+
+DNA Sequence:
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+Variant Position: 10
+Reference Base: C
+Mutated Base: T
+
+출력(Output - Functional Impact Prediction):
+
+Prediction: Pathogenic (ClinVar Score: 0.92)
+Explanation: Mutation at position 10 alters TF binding site, affecting gene regulation.
+
+	•	특정 위치의 돌연변이가 병원성(Pathogenic)인지 여부를 예측
+
+(2) BRCA1 유전자 변이 예측 (BRCA1 Variant Prediction)
+
+입력(Input):
+
+BRCA1 DNA Sequence:
+AGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT
+Variant: C → G at position 50
+
+출력(Output - Classification):
+
+Prediction: Likely Pathogenic (AUROC 0.94)
+Confidence Score: 0.89
+
+	•	Evo 2는 BRCA1 변이가 질병과 관련된지 예측 가능
+
+(3) 새로운 유전체 서열 생성 (Genome Sequence Generation)
+
+Evo 2는 특정 종의 새로운 유전체 서열을 생성할 수 있음.
+
+입력(Input - Prompt for Generation):
+
+Generate a mitochondrial DNA sequence similar to human mtDNA.
+
+출력(Output - Generated Sequence):
+
+>Generated_mtDNA_001
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+
+	•	새로운 미토콘드리아 DNA 서열을 자연스럽게 생성 가능
+
+
+
+1. Training Data Example
+
+Evo 2 was trained on 9.3 trillion DNA base pairs from multiple species.
+Below is an example format of training data:
+
+>Human_chr1_12345
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+>Mouse_chr2_67890
+GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+>Yeast_chr3_23456
+CGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG
+
+	•	Each sequence represents a genomic region from a specific species
+	•	Includes human, mouse, yeast, and other organisms
+
+2. Model Input Example for Training
+
+Evo 2 utilizes long-context training (up to 1M bp).
+Example of how the model processes input:
+
+Context Window (1M bp):
+---ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC---
+---GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC---
+---CGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAG---
+
+	•	Started training with 8,192 bp, then expanded to 1M bp
+	•	Includes regulatory elements like transcription factor binding sites
+
+3. Model Inference Examples
+
+(1) Variant Effect Prediction
+
+Evo 2 predicts whether a genetic mutation is functionally significant.
+
+Input:
+
+DNA Sequence:
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+Variant Position: 10
+Reference Base: C
+Mutated Base: T
+
+Output (Functional Impact Prediction):
+
+Prediction: Pathogenic (ClinVar Score: 0.92)
+Explanation: Mutation at position 10 alters TF binding site, affecting gene regulation.
+
+	•	Predicts whether a mutation is pathogenic or benign
+
+(2) BRCA1 Variant Prediction
+
+Input:
+
+BRCA1 DNA Sequence:
+AGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCT
+Variant: C → G at position 50
+
+Output (Classification):
+
+Prediction: Likely Pathogenic (AUROC 0.94)
+Confidence Score: 0.89
+
+	•	Evo 2 predicts BRCA1 variants associated with breast cancer risk
+
+(3) Genome Sequence Generation
+
+Evo 2 can generate new genomic sequences.
+
+Input (Prompt for Generation):
+
+Generate a mitochondrial DNA sequence similar to human mtDNA.
+
+Output (Generated Sequence):
+
+>Generated_mtDNA_001
+ATGCGTACGTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+GTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGCTAGC
+
+	•	Generates coherent mitochondrial DNA sequences
+
+Conclusion
+
+Evo 2 can:
+	1.	Predict variant effects (e.g., ClinVar, BRCA1)
+	2.	Analyze transcription factor binding sites
+	3.	Generate novel genome sequences
+
+These capabilities make Evo 2 a powerful tool for genomics and bioinformatics.
+
+
+
+
+
+
+
+
+
+<br/>  
+# 요약   
+
+
+
+
+Evo 2는 StripedHyena 2 아키텍처를 기반으로 한 대규모 생물학적 모델로, 최대 100만 bp의 긴 컨텍스트 창을 학습할 수 있도록 설계되었다. 훈련 데이터로는 박테리아, 진핵생물, 미토콘드리아 등을 포함하는 OpenGenome2 데이터셋에서 9.3조 개의 DNA 염기 서열을 사용했다. 모델은 ClinVar, SpliceVarDB, BRCA1/BRCA2 변이 예측 등 다양한 벤치마크에서 평가되었으며, 기존 생물학적 모델보다 우수한 AUROC와 AUPRC 성능을 기록했다. Evo 2는 변이의 기능적 영향을 예측하고, 특정 유전적 특징을 학습하며, 유전체 서열을 자연스럽게 생성할 수 있다. 특히 Zero-shot 방식에서도 강력한 성능을 보이며, 추가적인 미세 조정을 통해 변이 예측 정확도를 더욱 향상시킬 수 있다.
+
+
+
+Evo 2 is a large-scale biological model built on the StripedHyena 2 architecture, designed to learn genomic sequences up to 1 million bp. The model was trained on 9.3 trillion DNA base pairs from the OpenGenome2 dataset, covering bacteria, eukaryotes, and mitochondria. It was evaluated on various benchmarks, including ClinVar, SpliceVarDB, and BRCA1/BRCA2 variant prediction, achieving superior AUROC and AUPRC scores over competing models. Evo 2 can predict variant effects, learn genetic features, and generate naturalistic genome sequences. It performs well in zero-shot settings and further improves accuracy through fine-tuning.
+
+ 
+<br/>  
+# 기타  
+
+
+
+1. 피규어 및 다이어그램
+	•	Figure 1: Evo 2 모델 개요
+Evo 2의 StripedHyena 2 아키텍처와 학습 과정 개요를 보여줌. 모델은 컨볼루션 연산자와 어텐션 메커니즘을 결합하여 긴 DNA 시퀀스를 효율적으로 처리하도록 설계됨.
+	•	Figure 2: 훈련 데이터 분포
+OpenGenome2 데이터셋의 생물 도메인별 분포를 나타내며, 박테리아, 고세균, 진핵생물, 미토콘드리아 등 모든 생물 영역을 포함하고 있음. Evo 2는 기존 모델보다 훨씬 다양한 생물 데이터를 학습함.
+	•	Figure 3: 컨텍스트 확장 및 학습 단계
+Evo 2는 처음에는 8,192bp 시퀀스로 학습을 시작하고, 점진적으로 최대 100만 bp까지 확장하면서 더 긴 유전체 패턴을 학습함. 컨텍스트 확장 방식이 기존 모델과 비교하여 얼마나 효율적인지 시각적으로 표현함.
+	•	Figure 4: 변이 예측 성능 비교
+Evo 2와 기존 변이 예측 모델(AlphaMissense, GPN-MSA, Nucleotide Transformer)의 AUROC 및 AUPRC 성능을 비교하는 그래프. Evo 2가 모든 변이 예측 태스크에서 최고 성능을 달성했음을 보여줌.
+	•	Figure 5: BRCA1/BRCA2 변이 예측 결과
+BRCA1과 BRCA2 유전자 변이에 대한 Evo 2의 예측 결과를 시각화한 그래프. ClinVar에서 제공하는 병원성 여부(benign vs pathogenic)와 모델 예측이 어떻게 일치하는지 확인할 수 있음.
+
+2. 테이블 (Tables)
+	•	Table 1: Evo 2 훈련 데이터 세부 정보
+OpenGenome2 데이터셋의 생물 도메인별 DNA 서열 수, 총 염기쌍(bp) 수, 종(species) 수 등을 정리한 표. Evo 2는 기존 모델보다 훨씬 다양한 생물 종의 데이터를 포함함.
+	•	Table 2: 변이 예측 성능 비교
+Evo 2, AlphaMissense, GPN-MSA, Nucleotide Transformer 등의 AUROC 및 AUPRC 값을 비교한 테이블. Evo 2가 모든 벤치마크에서 최고 성능을 기록했음을 보여줌.
+	•	Table 3: Zero-shot vs Fine-tuned 성능 비교
+Evo 2의 Zero-shot 평가 결과(사전 학습된 모델을 바로 사용)와 Fine-tuning(추가 학습) 결과를 비교한 표. Zero-shot 상태에서도 높은 성능을 보이며, 추가적인 미세 조정을 통해 AUROC 및 AUPRC가 더욱 향상됨.
+
+3. 어펜딕스 (Appendix)
+	•	Appendix A: OpenGenome2 데이터셋 상세 정보
+훈련 데이터에 포함된 생물학적 도메인(박테리아, 진핵생물 등)에 대한 추가 정보 제공.
+	•	Appendix B: 모델 하이퍼파라미터 설정
+Evo 2의 학습에 사용된 하이퍼파라미터(학습률, 배치 크기, 최적화 알고리즘 등)를 설명함.
+	•	Appendix C: 추가 변이 예측 결과
+본문에서 다루지 않은 추가적인 ClinVar 및 SpliceVarDB 변이 예측 결과를 포함.
+
+
+
+1. Figures & Diagrams
+	•	Figure 1: Evo 2 Model Overview
+Shows the StripedHyena 2 architecture, combining convolutional operators with attention mechanisms to efficiently process long genomic sequences.
+	•	Figure 2: Training Data Distribution
+Displays the distribution of sequences across biological domains in the OpenGenome2 dataset, covering bacteria, archaea, eukaryotes, and mitochondria. Evo 2 trains on a far more diverse dataset than previous models.
+	•	Figure 3: Context Expansion & Training Stages
+Illustrates how Evo 2 progressively increases sequence length from 8,192 bp to 1M bp, allowing it to learn long-range genomic patterns more effectively.
+	•	Figure 4: Variant Prediction Performance Comparison
+Graph comparing Evo 2’s AUROC and AUPRC scores against competing models (AlphaMissense, GPN-MSA, Nucleotide Transformer). Evo 2 achieves the best performance across all benchmarks.
+	•	Figure 5: BRCA1/BRCA2 Variant Predictions
+Visual representation of Evo 2’s predictions for BRCA1 and BRCA2 variants, showing how its classification aligns with ClinVar pathogenicity labels.
+
+2. Tables
+	•	Table 1: Evo 2 Training Data Details
+Summarizes the number of DNA sequences, total base pairs, and species count across biological domains in the OpenGenome2 dataset. Evo 2 includes a broader range of species than previous models.
+	•	Table 2: Variant Prediction Performance Comparison
+AUROC and AUPRC scores comparing Evo 2, AlphaMissense, GPN-MSA, and Nucleotide Transformer. Evo 2 outperforms all models in variant prediction tasks.
+	•	Table 3: Zero-shot vs Fine-tuned Performance
+Comparison of zero-shot and fine-tuned results for Evo 2, showing high baseline performance and even better accuracy after fine-tuning.
+
+3. Appendix
+	•	Appendix A: OpenGenome2 Dataset Details
+Additional details about biological domains included in the training data.
+	•	Appendix B: Model Hyperparameters
+Lists Evo 2’s hyperparameter settings, including learning rate, batch size, and optimization techniques.
+	•	Appendix C: Additional Variant Prediction Results
+Contains extended ClinVar and SpliceVarDB results not covered in the main text.
+
+
+
+<br/>
+# refer format:     
+
+
+
+@article{Brixi2025,
+  author = {Garyk Brixi and Matthew G. Durrant and Jerome Ku and Michael Poli and Greg Brockman and Daniel Chang and Gabriel A. Gonzalez and Samuel H. King and David B. Li and Aditi T. Merchant and Mohsen Naghipourfar and Eric Nguyen and Chiara Ricci-Tam and David W. Romero and Gwanggyu Sun and Ali Taghibakshi and Anton Vorontsov and Brandon Yang and Myra Deng and Liv Gorton and Nam Nguyen and Nicholas K. Wang and Etowah Adams and Stephen A. Baccus and Steven Dillmann and Stefano Ermon and Daniel Guo and Rajesh Ilango and Ken Janik and Amy X. Lu and Reshma Mehta and Mohammad R.K. Mofrad and Madelena Y. Ng and Jaspreet Pannu and Christopher Ré and Jonathan C. Schmok and John St. John and Jeremy Sullivan and Kevin Zhu and Greg Zynda and Daniel Balsam and Patrick Collison and Anthony B. Costa and Tina Hernandez-Boussard and Eric Ho and Ming-Yu Liu and Thomas McGrath and Kimberly Powell and Dave P. Burke and Hani Goodarzi and Patrick D. Hsu and Brian L. Hie},
+  title = {Genome modeling and design across all domains of life with Evo 2},
+  journal = {bioRxiv},
+  year = {2025},
+  month = {February},
+  doi = {10.1101/2025.02.18.638918},
+  url = {https://doi.org/10.1101/2025.02.18.638918}
+}
+
+
+
+
+
+
+
+Garyk Brixi, Matthew G. Durrant, Jerome Ku, Michael Poli, Greg Brockman, Daniel Chang, Gabriel A. Gonzalez, Samuel H. King, David B. Li, Aditi T. Merchant, Mohsen Naghipourfar, Eric Nguyen, Chiara Ricci-Tam, David W. Romero, Gwanggyu Sun, Ali Taghibakshi, Anton Vorontsov, Brandon Yang, Myra Deng, Liv Gorton, Nam Nguyen, Nicholas K. Wang, Etowah Adams, Stephen A. Baccus, Steven Dillmann, Stefano Ermon, Daniel Guo, Rajesh Ilango, Ken Janik, Amy X. Lu, Reshma Mehta, Mohammad R.K. Mofrad, Madelena Y. Ng, Jaspreet Pannu, Christopher Ré, Jonathan C. Schmok, John St. John, Jeremy Sullivan, Kevin Zhu, Greg Zynda, Daniel Balsam, Patrick Collison, Anthony B. Costa, Tina Hernandez-Boussard, Eric Ho, Ming-Yu Liu, Thomas McGrath, Kimberly Powell, Dave P. Burke, Hani Goodarzi, Patrick D. Hsu, and Brian L. Hie. “Genome Modeling and Design Across All Domains of Life with Evo 2.” bioRxiv, February 21, 2025. https://doi.org/10.1101/2025.02.18.638918.
+
