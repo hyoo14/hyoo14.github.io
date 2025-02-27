@@ -71,13 +71,14 @@ o
 이미 clip, llm 다 씀 for med ai..wow  
 contrastive learning, generation for aug 등 생각할만한 거 다 하는 느낌..  
 bio도 금방일듯  
+federated learning 좀 흥미로웠네(학습한 피처만 보내는거..중앙으로..병원등 개인정보땜에)   
 
 
 Thursday, February 27, 2025  
 * class    
 * research  
 o   
-
+unlearning-> 잊게 만드는거.. 요즘 많이 다루는 분야인듯(이것도 개인정보 관련)  
 
 
 
