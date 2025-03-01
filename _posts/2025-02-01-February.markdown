@@ -86,7 +86,11 @@ Friday, February 28, 2025
 * research  
 o   
 diffusion기반(랜덤기반) 디엔에이?   
-co-scientist? multi agent..llms with other colab
+co-scientist? multi agent..llms with other apis(collaborator)..별건아닌거같아..  
+
+
+
+
 
 
 

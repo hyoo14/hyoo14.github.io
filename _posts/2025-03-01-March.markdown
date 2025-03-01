@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "March"
+date:   2025-03-01 09:33:53 -0400
+categories: study
+---
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+March week1     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Ideation(with conference?)   
+
+** LLM app for gene  
+** fair vllm?   
+
+*class  
+**FCV   
+**DAI    
+
+*waiting  
+** advAttack_verification and geneLMs     
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+Saturday, March 01, 2025  
+* class    
+* research  
+o
+
+* 학회에서의 인사이트들?  
+
+이미 clip, llm 다 씀 for med ai..wow  
+contrastive learning, generation for aug 등 생각할만한 거 다 하는 느낌..  
+bio도 금방일듯  
+federated learning 좀 흥미로웠네(학습한 피처만 보내는거..중앙으로..병원등 개인정보땜에)   
+
+
+
+unlearning-> 잊게 만드는거.. 요즘 많이 다루는 분야인듯(이것도 개인정보 관련)  
+
+
+   
+diffusion기반(랜덤기반) 디엔에이?   
+co-scientist? multi agent..llms with other apis(collaborator)..별건아닌거같아..  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
