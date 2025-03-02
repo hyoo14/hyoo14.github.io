@@ -84,6 +84,8 @@ co-scientist? multi agent..llms with other apis(collaborator)..별건아닌거�
 평소같으면 전혀 안 찾아볼 것들 보게되는 것도 아주 굿  
 
 
+그래프네트워크랑 언어모델이랑(트랜스포머)를 함께 사용하는 접근법도 아주 많네..!   
+
 
 
 
