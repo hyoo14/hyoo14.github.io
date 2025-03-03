@@ -105,6 +105,10 @@ fidelity는 모델이 원래 데이터, 원본 모델, 혹은 목표 함수와 �
 
 
 
+vector quantization으로 토큰화하는거 진짜 신기하네.. 이걸로 protein 생성모델 만드는거 오오 신기  
+
+
+
 
 
 {% highlight ruby %}
