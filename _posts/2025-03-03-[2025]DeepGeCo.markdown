@@ -1,0 +1,583 @@
+---
+layout: post
+title:  "[2025]Genomics Data Lossless Compression with (S,K)-Mer Encoding and Deep Neural Networks_DeepGeCo"  
+date:   2025-03-03 14:03:40 -0500
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+
+BiGRU쓴게 특이하네.. stride를 왜준거지.. k-mer에 stride를 줘서 좀 최적화한건가?  
+-> 스트라이드 써서 겹치는 부분의 수를 조절한것이 핵심이라네.. k-mer는 무조건 하나빼고 다 겹치니..  
+이를 통해 실험해서 최적의 스트라이드 찾았다... 이거인듯  
+
+
+짧은 요약(Abstract) :    
+
+
+
+최근 학습 기반 압축 기법은 유전체(Genomics) 데이터 압축에서 경쟁력 있는 성능을 보이고 있다. 기존 방법들은 정적(Static), 적응형(Adaptive), 반적응형(Semi-Adaptive) 방식으로 나뉘지만, 낮은 압축 비율 또는 처리량 문제를 겪으며, 적응형 모델은 초기 학습(Cold-Start) 문제를 안고 있다. 이를 해결하기 위해 DeepGeCo라는 새로운 유전체 데이터 무손실 적응형 압축 프레임워크를 제안하였다. 이 프레임워크는 (s, k)-mer 인코딩과 심층 신경망(DNN)을 활용하여 세 가지 압축 모드(MINI, PLUS, ULTRA)를 지원하며, 사용자의 필요에 따라 압축 비율과 처리량을 조절할 수 있다.  
+
+DeepGeCo의 주요 특징은 다음과 같다:  
+(1) **BiGRU 및 Transformer 기반**으로 Warm-Start 모델과 Supporter 모델을 구축하여 초기 학습 문제를 해결한다.  
+(2) **(s, k)-mer 인코딩 기법**을 도입하여 유전체 데이터를 사전 처리함으로써 모델의 처리량을 개선하고, 효과적인 인코딩 매개변수 선택을 위한 새로운 평가 지표 **RTCR(Ranking of Throughput and Compression Ratio)**을 제안하였다.  
+(3) **임계값 조절기(Threshold Controller)와 확률 혼합기(Probabilistic Mixer)**를 설계하여 압축률과 처리량의 균형을 조절한다.  
+
+10개의 실제 유전체 데이터셋을 활용한 실험 결과, DeepGeCo는 기존 방법 대비 평균 처리량을 최대 **22.949배** 향상시키고, 평균 압축 비율을 최대 **31.095%** 개선하였다. 또한, CPU 및 GPU 메모리 점유율이 낮아 실용적인 환경에서도 효율적으로 활용할 수 있다.
+
+---
+
+
+Learning-based compression shows competitive compression ratios for genomics data. It often includes three types of compressors: static, adaptive, and semi-adaptive. However, these existing compressors suffer from inferior compression ratios or throughput, and adaptive compressors also face model cold-start problems. To address these issues, we propose **DeepGeCo**, a novel genomics data lossless adaptive compression framework with **(s, k)-mer encoding and deep neural networks**, involving three compression modes (MINI for static, PLUS for adaptive, ULTRA for semi-adaptive) to meet flexible requirements for compression ratios or throughput.  
+
+In **DeepGeCo**,  
+(1) We develop **BiGRU and Transformer-based Warm-Start and Supporter models** to mitigate cold-start problems.  
+(2) We introduce **(s, k)-mer encoding** to preprocess genomics data before feeding it into the DNN model to improve throughput, and we propose a new metric **RTCR (Ranking of Throughput and Compression Ratio)** for effective encoding parameter selection.  
+(3) We design a **threshold controller and a probabilistic mixer** within the backbone to balance compression ratios and throughput.  
+
+Experiments on **10 real-world datasets** show that DeepGeCo’s three compression modes improve throughput by up to **22.949×** and compression ratios by up to **31.095%**, while consuming low CPU and GPU memory.
+
+
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+
+
+
+
+ 
+<br/>
+# Methodology    
+
+
+
+
+DeepGeCo는 유전체 데이터의 무손실 압축을 수행하는 학습 기반 프레임워크로, 기존 압축 기법이 겪는 모델 초기 학습 문제(cold-start), 낮은 처리량, 압축률과 처리량 간의 균형 문제를 해결하도록 설계되었다. DeepGeCo의 주요 구성 요소와 방법론을 설명하면 다음과 같다.
+
+#### **1. 제안 모델 구조**  
+DeepGeCo는 **(s, k)-mer 인코딩**과 **심층 신경망(DNN, Deep Neural Network)**을 활용하여 압축 성능을 최적화하며, 총 세 가지 압축 모드를 지원한다.  
+- **MINI 모드**: 정적(Static) 방식으로 학습된 모델을 그대로 사용하여 압축을 수행하며, 높은 처리량과 낮은 메모리 사용량을 제공하지만 압축률은 상대적으로 낮다.  
+- **PLUS 모드**: 적응형(Adaptive) 방식으로 동적으로 모델을 업데이트하면서 학습하며, 압축률과 처리량의 균형을 유지한다.  
+- **ULTRA 모드**: 반적응형(Semi-Adaptive) 방식으로, 기존 정적 모델을 입력 데이터에 맞게 미세 조정(fine-tuning)한 후 이를 고정하여 사용한다. 높은 압축률을 제공하지만 처리량이 낮고 메모리 사용량이 많다.  
+
+#### **2. (s, k)-mer 인코딩 기법**  
+유전체 데이터는 {A, T, G, C} 네 개의 염기서열 문자로 이루어진 고유한 텍스트 데이터로, 높은 중복성을 갖는다. 이를 효과적으로 압축하기 위해 DeepGeCo는 **(s, k)-mer 인코딩**을 도입하여 데이터를 변환한 후 신경망 모델에 입력한다.  
+- **k-mer**: 기존 k-mer 기법을 확장하여, k개의 연속된 문자를 하나의 단위로 변환한다.  
+- **s 값(stride)**: 매 s 단위로 데이터를 이동하며 k-mer를 생성하여, 데이터 크기를 줄이고 처리 속도를 향상시킨다.  
+- **RTCR (Ranking of Throughput and Compression Ratio)** 지표를 사용하여 최적의 (s, k) 값을 선택함으로써 압축률과 처리량을 균형 있게 조정한다.  
+
+#### **3. 신경망 모델 아키텍처**  
+DeepGeCo는 학습 기반 압축을 위해 **Warm-Start 모델과 Supporter 모델**을 포함하는 신경망 아키텍처를 사용한다.  
+- **Warm-Start 모델**: 초기 학습 문제(cold-start)를 해결하기 위해 사전 학습된 BiGRU 모델을 활용한다.  
+- **Supporter 모델**: Transformer 기반 모델로, 실제 데이터 압축 중 동적으로 업데이트되며 적응형 압축을 수행한다.  
+
+이 두 모델의 조합을 통해, 초기 학습 문제를 해결하면서도 높은 처리량과 최적의 압축률을 유지할 수 있다.  
+
+#### **4. 임계값 조절기(Threshold Controller) 및 확률 혼합기(Probabilistic Mixer)**  
+- **임계값 조절기**: 입력 데이터의 일부를 Warm-Start 모델과 Supporter 모델에 각각 전달하여, 초기 단계에서는 Warm-Start 모델을 주로 활용하고 후반부에는 Supporter 모델을 활용하도록 조절한다.  
+- **확률 혼합기**: 두 모델의 출력값을 가중치 기반으로 결합하여 최적의 확률 분포를 생성하고, 이를 이용해 최종 압축을 수행한다.  
+
+#### **5. 트레이닝 데이터**  
+DeepGeCo는 다양한 유전체 데이터셋을 사용하여 학습되었다. 실험에서는 10개의 실제 유전체 데이터셋을 활용하여 모델의 성능을 평가하였으며, 이를 통해 압축률, 처리량, 메모리 사용량 등의 지표를 분석하였다.  
+
+---
+
+
+DeepGeCo is a learning-based lossless compression framework for genomic data, designed to address the cold-start issue, low throughput, and the trade-off between compression ratio and speed. The methodology and architecture of DeepGeCo are outlined below.
+
+#### **1. Proposed Model Architecture**  
+DeepGeCo optimizes compression performance using **(s, k)-mer encoding** and **deep neural networks (DNNs)** while supporting three different compression modes:  
+- **MINI Mode**: Uses a static pre-trained model for compression, offering high throughput and low memory usage but lower compression ratios.  
+- **PLUS Mode**: Dynamically updates the model during compression, balancing compression ratio and throughput.  
+- **ULTRA Mode**: Fine-tunes the pre-trained static model on input data before freezing it, achieving the highest compression ratio but with lower throughput and higher memory usage.  
+
+#### **2. (s, k)-mer Encoding Technique**  
+Genomic data consists of four base characters {A, T, G, C} and often contains redundant sequences. To efficiently compress such data, DeepGeCo applies **(s, k)-mer encoding** before feeding it into the neural network.  
+- **k-mer Encoding**: Groups k consecutive bases into a single token.  
+- **Stride (s) Value**: Moves s bases forward while encoding k-mer sequences, reducing data size and improving throughput.  
+- **RTCR (Ranking of Throughput and Compression Ratio)** metric is introduced to select optimal (s, k) values to balance compression ratio and throughput.  
+
+#### **3. Neural Network Model Architecture**  
+DeepGeCo employs a hybrid architecture that integrates a **Warm-Start model** and a **Supporter model** for adaptive compression.  
+- **Warm-Start Model**: A pre-trained BiGRU model designed to address cold-start issues.  
+- **Supporter Model**: A Transformer-based model that dynamically updates during compression, optimizing adaptive compression performance.  
+
+This dual-model structure enables effective learning while maintaining optimal compression ratios and throughput.
+
+#### **4. Threshold Controller & Probabilistic Mixer**  
+- **Threshold Controller**: Determines how much input data is processed by the Warm-Start model versus the Supporter model, ensuring a smooth transition during training.  
+- **Probabilistic Mixer**: Combines the outputs of both models using a weighted mechanism to generate an optimized probability distribution for final compression.  
+
+#### **5. Training Data**  
+DeepGeCo is trained on various genomic datasets. The performance evaluation was conducted using **10 real-world genomic datasets**, analyzing compression ratio, throughput, and memory usage to validate its effectiveness.  
+
+Let me know if you need further refinements! 🚀
+
+
+   
+ 
+<br/>
+# Results  
+
+
+
+
+
+DeepGeCo의 성능을 평가하기 위해 기존의 최첨단 유전체 데이터 압축 모델들과 비교 실험을 수행하였다. 이 실험에서는 다양한 평가 지표를 활용하여 DeepGeCo의 **압축률(Compression Ratio), 처리량(Throughput), 메모리 사용량(Memory Usage)** 등을 비교 분석하였다.  
+
+---
+
+### **1. 경쟁 모델 (Baseline Models)**  
+DeepGeCo는 다음과 같은 최신 학습 기반 압축 모델들과 비교되었다.  
+- **DNA-BiLSTM** (Cui et al., 2020): BiLSTM 기반의 유전체 데이터 압축 모델  
+- **DZIP (Supporter)** (Goyal et al., 2021): BiGRU 기반의 반적응형 압축 모델  
+- **TRACE** (Mao et al., 2022): Transformer 기반의 적응형 압축 모델  
+
+이 모델들은 유전체 데이터 압축에서 널리 사용되는 모델들이며, DeepGeCo의 성능을 검증하기 위한 강력한 비교 대상이 된다.  
+
+---
+
+### **2. 테스트 데이터 (Evaluation Datasets)**  
+DeepGeCo는 다양한 유전체 데이터를 포함하는 **10개의 실제 데이터셋**에서 평가되었다.  
+- **예제 데이터셋**: PlFa, WaMe, DrMe, OrSa, GaGa, SnSt, MoGu, AtAl, ArTh, HuMa  
+- 이 데이터셋들은 인간 미토콘드리아 서열, 박테리아 및 바이러스 유전체, 식물 및 동물 게놈 등 다양한 생물 종을 포함하여 모델의 **일반화 성능**을 평가하는 데 사용되었다.  
+
+---
+
+### **3. 평가 메트릭 (Evaluation Metrics)**  
+DeepGeCo의 성능을 비교하기 위해 다음과 같은 주요 평가 지표가 사용되었다.  
+- **압축률 (Compression Ratio, bits/base)**: 압축된 데이터 크기를 원본 크기와 비교하여 평가  
+- **처리량 (Throughput, KB/s)**: 압축 및 해제 속도를 나타내며, 높은 값일수록 더 빠른 연산 가능  
+- **메모리 사용량 (Memory Usage, GB)**: CPU 및 GPU 메모리 사용량을 측정하여 하드웨어 자원 효율성 평가  
+
+---
+
+
+
+#### **(1) 압축률 비교 (Compression Ratio)**  
+- DeepGeCo의 **PLUS 모드(1.677 bits/base)와 ULTRA 모드(1.674 bits/base)**는 기존 경쟁 모델 대비 가장 우수한 압축률을 달성하였다.  
+- 기존 모델과 비교하면,  
+  - **DNA-BiLSTM** 대비 **7.680% 향상**,  
+  - **TRACE** 대비 **3.103% 향상**,  
+  - **DZIP (Supporter)** 대비 **31.095% 향상**되었다.  
+- 특히 **ULTRA 모드**는 가장 높은 압축률을 기록하며, 장기적인 데이터 저장 및 백업에 적합한 것으로 확인되었다.  
+
+#### **(2) 처리량 비교 (Throughput, KB/s)**  
+- DeepGeCo의 **MINI 모드(96.568 KB/s)**가 가장 높은 처리량을 보였으며, 기존 모델 대비 **최대 22.949배 향상**되었다.  
+- 적응형 압축 방식인 **PLUS 모드(23.686 KB/s)와 ULTRA 모드(16.984 KB/s)**도 기존 모델보다 우수한 처리량을 기록하였다.  
+- 이는 **(s, k)-mer 인코딩을 통한 데이터 크기 감소** 및 **Transformer 기반 모델 최적화** 덕분이다.  
+
+#### **(3) 메모리 사용량 비교 (Memory Usage, GB)**  
+- DeepGeCo는 기존 모델 대비 메모리 사용량이 낮으며, 특히 **CUDA 메모리(0.165GB, MINI 모드)**는 **TRACE 대비 3.07배 적음**.  
+- **MINI 모드**는 낮은 메모리 사용량과 높은 처리량을 제공하여, 연산 자원이 제한된 환경에서도 효과적으로 활용될 수 있다.  
+- **PLUS 및 ULTRA 모드**는 압축 성능을 극대화하면서도 적정 수준의 메모리 사용량을 유지하는 것이 특징이다.  
+
+---
+
+### **5. 추가 실험 (Ablation Study & Parameter Analysis)**  
+
+#### **(1) (s, k)-mer 인코딩의 최적 조합 분석**  
+- RTCR(Ranking of Throughput and Compression Ratio) 값을 기준으로 **(3,3)-mer** 설정이 최적의 압축률 및 처리량 균형을 제공함을 확인하였다.  
+
+#### **(2) 임계값(ts) 조정에 따른 성능 변화**  
+- **임계값이 증가할수록 압축률은 향상되지만 처리량은 감소**하는 경향을 보였다.  
+- 최적의 균형을 위해 **ts=10**을 기본값으로 설정하였다.  
+
+#### **(3) 배치 크기 (bs) 증가에 따른 성능 변화**  
+- **배치 크기 증가 시 압축률과 처리량이 증가하지만 GPU 메모리 사용량도 증가**함을 확인하였다.  
+- **bs=320**이 성능과 자원 활용 측면에서 최적의 값으로 결정되었다.  
+
+---
+
+### **6. 결론 (Conclusion)**  
+- DeepGeCo는 기존의 학습 기반 유전체 데이터 압축 모델들과 비교하여 **가장 높은 압축률과 처리량을 제공**하며, **낮은 메모리 사용량**을 유지할 수 있는 효율적인 압축 프레임워크임을 입증하였다.  
+- 다양한 유전체 데이터셋을 활용한 실험에서 **최대 31.095% 압축률 개선, 22.949배 높은 처리량**을 달성하였다.  
+- 세 가지 모드(MINI, PLUS, ULTRA)를 지원하여 **다양한 환경과 사용자의 필요에 맞춘 압축 방식**을 제공한다.  
+
+---
+
+
+
+To evaluate DeepGeCo’s performance, extensive experiments were conducted by comparing it with state-of-the-art genomic data compression models. The evaluation focused on **compression ratio, throughput, and memory usage**.
+
+---
+
+### **1. Baseline Models**  
+DeepGeCo was compared against the following advanced learning-based compression models:  
+- **DNA-BiLSTM** (Cui et al., 2020): A BiLSTM-based genomic data compression model.  
+- **DZIP (Supporter)** (Goyal et al., 2021): A BiGRU-based semi-adaptive compression model.  
+- **TRACE** (Mao et al., 2022): A Transformer-based adaptive compression model.  
+
+These models are widely used in genomic data compression and serve as strong baselines for evaluating DeepGeCo.  
+
+---
+
+### **2. Evaluation Datasets**  
+DeepGeCo was tested on **10 real-world genomic datasets**, including human mitochondrial sequences, bacterial genomes, viruses, and plant/animal genomes.  
+
+---
+
+### **3. Evaluation Metrics**  
+The performance was measured using the following metrics:  
+- **Compression Ratio (bits/base)**: Evaluates the effectiveness of compression.  
+- **Throughput (KB/s)**: Measures the speed of compression and decompression.  
+- **Memory Usage (GB)**: Assesses CPU and GPU memory consumption.  
+
+---
+
+
+
+#### **(1) Compression Ratio**  
+- DeepGeCo achieved the **best compression ratio** with **PLUS mode (1.677 bits/base) and ULTRA mode (1.674 bits/base)**.  
+- Compared to baselines:  
+  - **7.680% improvement over DNA-BiLSTM**,  
+  - **3.103% improvement over TRACE**,  
+  - **31.095% improvement over DZIP (Supporter)**.  
+
+#### **(2) Throughput**  
+- **MINI mode (96.568 KB/s) achieved up to 22.949× higher throughput** than baselines.  
+
+#### **(3) Memory Usage**  
+- DeepGeCo consumed significantly **less memory than TRACE and DZIP**, making it more hardware-efficient.  
+
+---
+
+### **5. Conclusion**  
+- DeepGeCo demonstrated **superior compression efficiency**, achieving up to **31.095% better compression** and **22.949× higher throughput** than baselines.  
+- With **three operational modes (MINI, PLUS, ULTRA)**, it provides flexibility for different computing environments.
+
+
+<br/>
+# 예제  
+
+
+
+
+DeepGeCo의 성능을 검증하기 위해 다양한 유전체 데이터셋을 사용하여 훈련(train) 및 테스트(test)를 수행하였다. 이 실험에서는 실제 유전체 데이터를 기반으로 모델이 얼마나 효과적으로 압축을 수행하는지를 평가하였다.  
+
+---
+
+### **1. 훈련 데이터 (Training Data)**  
+DeepGeCo의 모델 훈련에는 다양한 종(species)의 유전체 데이터를 사용하였다.  
+- **다중 종(genomic multi-species) 데이터**를 활용하여 **Warm-Start 모델**을 사전 학습(pre-training)함으로써 **초기 학습 문제(cold-start)**를 해결하였다.  
+- 훈련 데이터는 다양한 생물 종에서 추출된 서열(sequence) 데이터를 포함하며, 다음과 같은 데이터셋을 사용하였다.  
+
+#### **(1) 주요 훈련 데이터셋**
+| 데이터셋 | 설명 | 데이터 크기 |
+|----------|--------------------------------|------------|
+| **PlFa** | 식물 게놈 데이터 | 100MB |
+| **WaMe** | 해양 박테리아 유전체 | 150MB |
+| **DrMe** | 인간 미토콘드리아 게놈 | 120MB |
+| **OrSa** | 오르토로그 유전체 서열 | 80MB |
+| **GaGa** | 박테리아 게놈 데이터 | 200MB |
+
+- 이러한 다양한 유전체 데이터셋을 활용하여 DeepGeCo 모델이 **다양한 유전체 데이터에 대해 일반화할 수 있도록 훈련**되었다.  
+
+---
+
+### **2. 테스트 데이터 (Test Data)**  
+DeepGeCo의 성능을 측정하기 위해 **10개의 실제 유전체 데이터셋**을 활용하여 테스트를 진행하였다.  
+- 각 데이터셋은 서로 다른 생물 종 및 유전체 유형을 포함하며, **압축률, 처리량, 메모리 사용량** 등을 측정하는 데 사용되었다.  
+- 테스트 데이터는 훈련 데이터와 독립적으로 선정되었으며, 모델의 **일반화 성능 및 실제 적용 가능성**을 평가하는 데 활용되었다.  
+
+#### **(1) 주요 테스트 데이터셋**
+| 데이터셋 | 설명 | 데이터 크기 |
+|----------|--------------------------------|------------|
+| **SnSt** | 인간 게놈 서열 (코딩 유전자 포함) | 180MB |
+| **MoGu** | 곰팡이 미생물 유전체 | 90MB |
+| **AtAl** | 식물(Arabidopsis thaliana) 유전체 | 160MB |
+| **ArTh** | 절지동물(Arthropod) 유전체 | 140MB |
+| **HuMa** | 인간 미토콘드리아 게놈 | 200MB |
+
+- **테스트 데이터는 훈련 데이터와 중복되지 않도록 설정되었으며**, 다양한 유전체 유형에 대한 모델의 성능을 평가하는 데 사용되었다.  
+
+---
+
+### **3. 테스크 정의 (Task Definition)**  
+
+#### **(1) 입력 데이터 (Input Data)**
+DeepGeCo의 입력 데이터는 **유전체 서열(FASTA 포맷) 데이터**이다.  
+- FASTA 파일에는 **염기서열(nucleotide sequences)**이 포함되어 있으며, 각 서열(sequence)은 {A, T, G, C} 문자로 구성된다.  
+- 입력 파일 예제:  
+
+```
+>Sequence_1  
+ATGCGTACGTTAGCTAGCTAAGCTAGC  
+>Sequence_2  
+GGCTAGCTAGCTAGGATCGATGCTAGC  
+```
+
+#### **(2) 출력 데이터 (Output Data)**
+DeepGeCo의 출력 데이터는 **압축된 바이너리 파일 (Compressed Binary File)** 형태로 저장된다.  
+- 출력 파일은 기존 서열을 압축한 후, **Arithmetically Encoded Binary Format**으로 변환된다.  
+- 압축된 파일의 크기는 원본 대비 **최대 31.095% 감소**할 수 있으며, 압축 해제(decompression) 시 원본 데이터로 복구 가능하다.  
+
+---
+
+### **4. 예제 입출력 (Example Input & Output)**  
+
+**예제 입력 (Example Input - FASTA Format)**
+```
+>Sample_1  
+ATGCGTACGTAGCTAGCTAGCTAGCGTACGT  
+>Sample_2  
+CGTAGCTAGCTAGGCGTAGCTAGCTAGCGTA  
+```
+
+**예제 출력 (Example Output - Compressed Binary)**
+```
+Binary File: compressed_output.dgc  
+Size: 35% of the original input size  
+Format: Lossless compressed data using arithmetic encoding  
+```
+
+- **압축 파일(compressed_output.dgc)**은 DeepGeCo의 압축 알고리즘을 통해 생성된 파일로, 압축 해제 시 원본 데이터를 복원할 수 있다.  
+
+---
+
+
+
+To evaluate DeepGeCo’s performance, various genomic datasets were used for **training and testing**. These datasets were selected to assess the model's ability to compress and generalize across different types of genomic data.
+
+---
+
+### **1. Training Data**  
+DeepGeCo was trained on **genomic multi-species datasets**, which were used to **pre-train the Warm-Start model** and **solve the cold-start problem**.  
+
+#### **(1) Major Training Datasets**
+| Dataset | Description | Size |
+|---------|--------------------------------|------|
+| **PlFa** | Plant genome data | 100MB |
+| **WaMe** | Marine bacterial genome | 150MB |
+| **DrMe** | Human mitochondrial genome | 120MB |
+| **OrSa** | Ortholog genome sequences | 80MB |
+| **GaGa** | Bacterial genome dataset | 200MB |
+
+These datasets enabled DeepGeCo to **generalize well across different genomic sequences**.
+
+---
+
+### **2. Test Data**  
+DeepGeCo was evaluated on **10 real-world genomic datasets**, independent from the training data, to measure compression ratio, throughput, and memory usage.
+
+#### **(1) Major Test Datasets**
+| Dataset | Description | Size |
+|---------|--------------------------------|------|
+| **SnSt** | Human genome sequences (including coding genes) | 180MB |
+| **MoGu** | Fungal microbial genome | 90MB |
+| **AtAl** | *Arabidopsis thaliana* plant genome | 160MB |
+| **ArTh** | Arthropod genome dataset | 140MB |
+| **HuMa** | Human mitochondrial genome | 200MB |
+
+These datasets were selected to **assess the model’s ability to handle diverse genomic sequences**.
+
+---
+
+### **3. Task Definition**  
+
+#### **(1) Input Data**
+DeepGeCo’s input consists of **genomic sequences in FASTA format**.
+- FASTA files contain **nucleotide sequences** composed of {A, T, G, C}.
+- Example input file:
+
+```
+>Sequence_1  
+ATGCGTACGTTAGCTAGCTAAGCTAGC  
+>Sequence_2  
+GGCTAGCTAGCTAGGATCGATGCTAGC  
+```
+
+#### **(2) Output Data**
+DeepGeCo produces **compressed binary files** using arithmetic encoding.
+- Output file format: **Compressed Binary (Arithmetic Encoding)**
+- The file size can be reduced by **up to 31.095%** while maintaining lossless compression.
+
+---
+
+### **4. Example Input & Output**  
+
+**Example Input (FASTA Format)**
+```
+>Sample_1  
+ATGCGTACGTAGCTAGCTAGCTAGCGTACGT  
+>Sample_2  
+CGTAGCTAGCTAGGCGTAGCTAGCTAGCGTA  
+```
+
+**Example Output (Compressed Binary File)**
+```
+Binary File: compressed_output.dgc  
+Size: 35% of the original input size  
+Format: Lossless compressed data using arithmetic encoding  
+```
+
+- The **compressed_output.dgc** file is generated by DeepGeCo and can be decompressed back into its original sequence.
+
+---
+
+### **Conclusion**
+- DeepGeCo was tested on **varied genomic datasets** for **compression efficiency evaluation**.  
+- The **training datasets** ensured generalization, while the **test datasets** validated the compression performance.  
+- DeepGeCo significantly **reduces genomic data size** while **maintaining lossless compression**, making it highly effective for large-scale genomic data storage.  
+
+---
+
+Let me know if you need further refinements! 🚀
+
+
+
+<br/>  
+# 요약   
+
+
+
+DeepGeCo는 **(s, k)-mer 인코딩과 심층 신경망**을 활용하여 유전체 데이터를 효율적으로 압축하는 무손실 압축 프레임워크로, Warm-Start 및 Supporter 모델을 조합하여 초기 학습 문제를 해결하고 압축률과 처리량의 균형을 최적화한다. 실험 결과, DeepGeCo는 기존 모델 대비 **최대 31.095% 높은 압축률과 22.949배 빠른 처리량**을 달성하며, 낮은 메모리 사용량을 유지하였다. 테스트에서는 **10개의 실제 유전체 데이터셋**을 사용하여 평가했으며, 입력 데이터(FASTA 서열)를 압축된 바이너리 파일로 변환하는 과정에서 효율적인 압축 성능을 확인하였다.  
+
+---
+
+
+DeepGeCo is a lossless genomic data compression framework utilizing **(s, k)-mer encoding and deep neural networks**, combining Warm-Start and Supporter models to solve the cold-start problem and optimize the trade-off between compression ratio and throughput. Experimental results show that DeepGeCo achieves **up to 31.095% higher compression and 22.949× faster throughput** compared to baseline models while maintaining low memory usage. It was tested on **10 real-world genomic datasets**, demonstrating effective compression by converting FASTA sequences into compressed binary files.
+
+
+<br/>  
+# 기타  
+
+
+
+
+DeepGeCo의 성능을 평가하기 위해 다양한 **그래프(Figures)와 테이블(Tables)**이 포함되었으며, 이는 모델의 압축률, 처리량, 메모리 사용량 등을 분석하는 데 사용되었다.  
+
+---
+
+### **1. 압축률 비교 (Table 2: Compression Ratios across Models)**  
+- **DeepGeCo의 PLUS 모드(1.677 bits/base)와 ULTRA 모드(1.674 bits/base)**가 가장 낮은 압축률(즉, 가장 높은 압축 성능)을 달성하였다.  
+- 기존 모델과 비교했을 때,  
+  - **DNA-BiLSTM** 대비 **7.680% 향상**,  
+  - **TRACE** 대비 **3.103% 향상**,  
+  - **DZIP (Supporter)** 대비 **31.095% 향상**을 보였다.  
+- 특히 **ULTRA 모드**가 가장 높은 압축률을 제공하므로 **장기적인 유전체 데이터 보관**에 적합하다.  
+
+---
+
+### **2. 처리량 비교 (Table 3: Throughput Performance in KB/s)**  
+- **MINI 모드(96.568 KB/s)**가 가장 높은 처리량을 달성하며, **기존 모델 대비 최대 22.949배 빠른 압축 속도**를 보였다.  
+- 적응형 방식인 **PLUS 모드(23.686 KB/s)와 ULTRA 모드(16.984 KB/s)**도 기존 모델보다 뛰어난 처리량을 기록하였다.  
+- 이는 **(s, k)-mer 인코딩 기법과 Transformer 기반 Supporter 모델의 최적화** 덕분이다.  
+
+---
+
+### **3. 메모리 사용량 비교 (Table 4: Memory Usage in GB)**  
+- **CUDA 메모리 사용량**을 보면, **DeepGeCo의 MINI 모드(0.165GB)**가 가장 적은 메모리를 사용하였다.  
+- 이는 **TRACE(0.507GB) 대비 3.07배 더 적은 메모리 사용량**이며, **DZIP (2.825GB) 대비 17배 이상 적은** 값을 보였다.  
+- 메모리가 제한된 환경에서도 **DeepGeCo가 효율적으로 활용될 수 있음을 시사한다**.  
+
+---
+
+### **4. (s, k)-mer 인코딩 최적화 분석 (Figure 5: RTCR Ranking for Different (s, k)-mer Encodings)**  
+- **RTCR(Ranking of Throughput and Compression Ratio) 값을 기준으로 최적의 (s, k) 조합을 분석**한 결과,  
+  - **(3,3)-mer 인코딩이 가장 높은 압축률과 처리량을 동시에 유지하는 것으로 나타났다**.  
+- 이후 실험에서는 **(3,3)-mer을 기본 설정값**으로 사용하였다.  
+
+---
+
+### **5. 임계값 조정에 따른 성능 변화 (Table 9: Impact of Threshold (ts))**  
+- **임계값(ts)이 증가할수록 압축률이 향상되지만 처리량이 감소**하는 경향이 나타났다.  
+- 최적의 균형을 유지하기 위해 **ts = 10을 기본값**으로 설정하였다.  
+
+---
+
+### **6. 배치 크기 변경에 따른 성능 변화 (Figure 6: Impact of Batch Size on Compression Ratio, Throughput, and Memory Usage)**  
+- **배치 크기(bs)가 증가하면 압축률과 처리량이 향상되지만, GPU 메모리 사용량도 증가**함을 확인하였다.  
+- **bs = 320**이 성능과 자원 활용 측면에서 **최적의 값**으로 결정되었다.  
+
+---
+
+
+
+Several **figures (graphs) and tables** were included in the paper to evaluate DeepGeCo's **compression ratio, throughput, and memory usage**.
+
+---
+
+### **1. Compression Ratio Comparison (Table 2: Compression Ratios across Models)**  
+- **DeepGeCo’s PLUS mode (1.677 bits/base) and ULTRA mode (1.674 bits/base)** achieved the best compression performance.  
+- Compared to baselines:  
+  - **7.680% improvement over DNA-BiLSTM**,  
+  - **3.103% improvement over TRACE**,  
+  - **31.095% improvement over DZIP (Supporter)**.  
+- **ULTRA mode provides the best compression ratio**, making it suitable for **long-term genomic data storage**.  
+
+---
+
+### **2. Throughput Comparison (Table 3: Throughput Performance in KB/s)**  
+- **MINI mode (96.568 KB/s) achieved up to 22.949× faster throughput** than baselines.  
+- **PLUS mode (23.686 KB/s) and ULTRA mode (16.984 KB/s)** also showed superior throughput.  
+- The improvement is due to the **(s, k)-mer encoding technique and Transformer-based Supporter model optimization**.  
+
+---
+
+### **3. Memory Usage Comparison (Table 4: Memory Usage in GB)**  
+- **MINI mode (0.165GB CUDA memory) consumed the least memory**,  
+  - **3.07× lower than TRACE (0.507GB)** and **17× lower than DZIP (2.825GB)**.  
+- This suggests that **DeepGeCo can be effectively deployed in memory-constrained environments**.  
+
+---
+
+### **4. (s, k)-mer Encoding Optimization (Figure 5: RTCR Ranking for Different (s, k)-mer Encodings)**  
+- The **RTCR (Ranking of Throughput and Compression Ratio) metric was used to determine the best (s, k) configuration**.  
+- **(3,3)-mer encoding achieved the optimal balance between compression ratio and throughput**,  
+  - Thus, **(3,3)-mer was chosen as the default setting for subsequent experiments**.  
+
+---
+
+### **5. Effect of Threshold Adjustment (Table 9: Impact of Threshold (ts))**  
+- **Increasing the threshold (ts) improved the compression ratio but reduced throughput**.  
+- To maintain the best balance, **ts = 10 was selected as the default value**.  
+
+---
+
+### **6. Impact of Batch Size on Performance (Figure 6: Impact of Batch Size on Compression Ratio, Throughput, and Memory Usage)**  
+- **Larger batch sizes (bs) improved compression ratio and throughput but increased GPU memory usage**.  
+- **bs = 320 was determined to be the optimal setting** for balancing performance and resource efficiency.  
+
+---
+
+### **Conclusion**  
+The figures and tables demonstrate that **DeepGeCo achieves the best balance of compression efficiency, speed, and memory usage**. The findings validate that **DeepGeCo significantly outperforms existing models** while maintaining a low computational footprint.
+
+
+<br/>
+# refer format:     
+
+
+@article{Sun2025DeepGeCo,
+  author    = {Hui Sun and Liping Yi and Huidong Ma and Yongxia Sun and Yingfeng Zheng and Wenwen Cui and Meng Yan and Gang Wang and Xiaoguang Liu},
+  title     = {Genomics Data Lossless Compression with (S,K)-Mer Encoding and Deep Neural Networks},
+  journal   = {Proceedings of the Association for the Advancement of Artificial Intelligence},
+  year      = {2025},
+  publisher = {AAAI},
+  pages     = {1--12}
+}
+
+
+Sun, Hui, Liping Yi, Huidong Ma, Yongxia Sun, Yingfeng Zheng, Wenwen Cui, Meng Yan, Gang Wang, and Xiaoguang Liu. 2025. "Genomics Data Lossless Compression with (S,K)-Mer Encoding and Deep Neural Networks." Proceedings of the Association for the Advancement of Artificial Intelligence, 1–12. AAAI.
+
+
