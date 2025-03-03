@@ -15,6 +15,93 @@ categories: study
 {% highlight ruby %}
 
 
+March week2     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Ideation(with conference?)   
+
+** LLM app for gene  
+** fair vllm?   
+
+*class  
+**FCV   
+**DAI    
+
+*waiting  
+** advAttack_verification and geneLMs     
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, March 03, 2025  
+* class    
+* research  
+o
+
+
+* 학회에서의 인사이트들?  
+
+이미 clip, llm 다 씀 for med ai..wow  
+contrastive learning, generation for aug 등 생각할만한 거 다 하는 느낌..  
+bio도 금방일듯  
+federated learning 좀 흥미로웠네(학습한 피처만 보내는거..중앙으로..병원등 개인정보땜에)   
+
+
+
+unlearning-> 잊게 만드는거.. 요즘 많이 다루는 분야인듯(이것도 개인정보 관련)  
+
+
+   
+diffusion기반(랜덤기반) 디엔에이?   
+co-scientist? multi agent..llms with other apis(collaborator)..별건아닌거같아..  
+
+
+새로운 신기한거 많네 causal model들이나 hypergraph? heterophilly?   
+평소같으면 전혀 안 찾아볼 것들 보게되는 것도 아주 굿  
+
+
+그래프네트워크랑 언어모델이랑(트랜스포머)를 함께 사용하는 접근법도 아주 많네..!   
+
+트랜스포머에 모종의 확률의 추가하여 약간의 변화를 주는 방법도 많은듯    
+
+시퀀스랑 텍스트랑도 많이들 생각하는...  
+
+
+
+fidelity? 충실도?
+fidelity는 모델이 원래 데이터, 원본 모델, 혹은 목표 함수와 얼마나 잘 일치하는지를 나타내는 개념이며, 다양한 머신러닝 응용에서 중요한 품질 평가 기준이 됩니다.  
+->여러 메트릭을 포함하는 개념인듯.. comsine sim, KL divergence, robust accuracy, 등등  
+
+
+
+-여기서부터 이어서...
+이미지로부터 dna seq추출 신기  
+
+
+
+
+
+{% highlight ruby %}
+
+
 March week1     
 *research(ai/bio/nlp-papers/lectrues/projects)  
 ** Ideation(with conference?)   
