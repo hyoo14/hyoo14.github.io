@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "[2025]"  
+date:   2025-03-03 16:10:40 -0500
+categories: study
+---
+
+{% highlight ruby %}
+
+
+한줄 요약: 
+
+
+
+
+짧은 요약(Abstract) :    
+
+
+
+ 
+
+* Useful sentences :  
+
+
+{% endhighlight %}  
+
+<br/>
+
+[Paper link]()  
+[~~Lecture link~~]()   
+
+<br/>
+
+# 단어정리  
+*  
+
+
+
+
+
+
+
+ 
+<br/>
+# Methodology    
+
+
+
+
+
+   
+
+
+
+
+   
+ 
+<br/>
+# Results  
+
+
+
+
+ 
+<br/>
+# 예제  
+
+
+
+
+
+
+
+
+<br/>  
+# 요약   
+
+
+
+
+
+
+<br/>  
+# 기타  
+
+
+
+
+
+
+
+<br/>
+# refer format:     
+
+
