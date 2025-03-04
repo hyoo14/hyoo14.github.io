@@ -127,6 +127,7 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 * 테스크 인사이트??   
 ** Drug Target Discovery (유전자 발현 수준에서 특정 바이오마커를 찾는??)   
 ** Disease Trajectory Reconstruction Using EHRs(유전체 데이터(GWAS, RNA-seq)를 포함할 수도..유전자 변이나 발현 패턴이 질병 진행과 연관될 경우)   
+** identifying pathogen(병원체)   
 
 
 ** 좀 다르지만 생물학 문제(뭐 수능문제같은거)로 LLM평가해도 될 듯 ...   novelty랑 creativity랑 좀 더 depth한 개념들 갖고...   
