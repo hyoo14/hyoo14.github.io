@@ -57,6 +57,16 @@ Monday, March 03, 2025
 o
 
 
+
+Tuesday, March 04, 2025  
+* class    
+* research  
+o
+
+
+
+
+
 * 학회에서의 인사이트들?  
 
 이미 clip, llm 다 씀 for med ai..wow  
@@ -112,6 +122,20 @@ E(3)-동변량 그래프 신경망(EGNN) 라는 단백질 3d구조 기반의(기
 
 
 rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받아서 트랜스포머 써서 특정 테스크를 위한 파인튜닝하여 새로 임베딩 얻어서 사용하는... 그것도 인상적이었음     
+
+
+* 테스크 인사이트??   
+** Drug Target Discovery (유전자 발현 수준에서 특정 바이오마커를 찾는??)   
+** Disease Trajectory Reconstruction Using EHRs(유전체 데이터(GWAS, RNA-seq)를 포함할 수도..유전자 변이나 발현 패턴이 질병 진행과 연관될 경우)   
+
+
+** 좀 다르지만 생물학 문제(뭐 수능문제같은거)로 LLM평가해도 될 듯 ...   novelty랑 creativity랑 좀 더 depth한 개념들 갖고...   
+** 바로 위와 연관지어서 라우팅으로 생물과 화학을 나눈다던지, 또 연산부분은 나눈다던지 등..   
+
+
+** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
+** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
+** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
 
 
 {% highlight ruby %}
