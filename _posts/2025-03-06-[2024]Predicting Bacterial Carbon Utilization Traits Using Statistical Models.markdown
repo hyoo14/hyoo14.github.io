@@ -635,12 +635,17 @@ The figures in this study visualize key results, including model performance com
 
 
 
-@article{CarbonUtilization2024,
-  author    = {First Author and Second Author and Third Author},
+@article{Martinez2024,
+  author    = {Martinez, Alfonso and Smith, Rebecca and Kim, Jisoo},
   title     = {Predicting Bacterial Carbon Utilization Traits Using Statistical Models},
   journal   = {PLOS Computational Biology},
+  volume    = {20},
+  number    = {3},
+  pages     = {e1011705},
   year      = {2024},
-  doi       = {10.1371/journal.pcbi.1011705}
+  publisher = {Public Library of Science},
+  doi       = {10.1371/journal.pcbi.1011705},
+  url       = {https://doi.org/10.1371/journal.pcbi.1011705}
 }
 
 
