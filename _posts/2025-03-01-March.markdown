@@ -92,6 +92,14 @@ o
 
 
 
+Sunday, March 09, 2025  
+* class    
+* research  
+o
+
+
+
+
 ** ppt 및 코드, 할말 정리?  
 ** coco metric, 다른 metric, 파인튜닝여부?  
 
