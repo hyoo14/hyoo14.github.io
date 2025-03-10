@@ -10,6 +10,62 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+March week3     
+*research(ai/bio/nlp-papers/lectrues/projects)  
+** Ideation(with conference?)   
+
+** LLM app for gene  
+** fair vllm?   
+
+*class  
+**FCV   
+**DAI    
+
+*waiting  
+** advAttack_verification and geneLMs     
+
+* future...research    
+** upload zenodo    
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, March 10, 2025  
+* class    
+* research  
+o    
+
+
+** coco metric, 다른 metric, 파인튜닝여부?     
+
+이후 ** bionlp 준비? ** 생성형테스크, **마이크로바이옴테스크?      
+
+
+** 이전꺼 살리는거 고려하자(다 bionlp에 내버리자)    
+
+
+
+
+
 
 
 {% highlight ruby %}
