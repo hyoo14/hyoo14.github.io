@@ -62,6 +62,14 @@ Tuesday, March 11, 2025
 o    
 
 
+Wednesday, March 12, 2025  
+* class    
+* research  
+o    
+
+
+
+
 ** coco metric, 다른 metric, 파인튜닝여부?     
 
 이후 ** bionlp 준비? ** 생성형테스크, **마이크로바이옴테스크?      
