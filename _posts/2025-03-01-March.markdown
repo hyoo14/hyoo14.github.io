@@ -82,6 +82,15 @@ Friday, March 14, 2025
 o    
 
 
+Saturday, March 15, 2025  
+* class    
+* research  
+o    
+
+
+
+
+
 
 
 ** coco metric, 다른 metric, 파인튜닝여부?     
