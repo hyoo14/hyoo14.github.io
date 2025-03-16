@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[2024]Machine Learning-Based Funct_test_test"  
-date:   2025-03-15 22:12:40 -0500
+date:   2025-03-15 00:12:40 -0500
 categories: study
 ---
 
