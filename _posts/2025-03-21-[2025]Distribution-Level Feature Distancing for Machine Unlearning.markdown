@@ -11,8 +11,10 @@ categories: study
 한줄 요약: 
 
 
-
-
+성능보존하면서 언러닝하도록 보존과 비보존 분포를 멀어지게..?  
+Optimal Transport 사용  
+클래시피케이션 점수로 모니터링  
+신기한 신분야   
 
 짧은 요약(Abstract) :    
 
