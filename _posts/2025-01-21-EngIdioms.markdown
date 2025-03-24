@@ -85,10 +85,28 @@ categories: study
 Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 철학, 시간, 자연, 예술 같은 주제를 다루며, 일정한 **운율(rhyme)**과 **구조(form)**를 따르는 것이 특징이에요.
 
 
+“And I don’t see why you can’t just teach us history”
+→ “왜 그냥 우리에게 역사만 가르쳐줄 수 없는 건지 모르겠어요.”
+
+
+“instead of always harping on the past.”
+→ “맨날 과거 이야기를 되풀이하는 대신에요.”
+
+⸻
+
+여기서 **“harping on the past”**는
+직역하면 “과거를 계속 되풀이하다”이고,
+의역하면 “과거 얘기만 질리도록 반복하다”는 의미예요.
+
+즉, 말 전체를 자연스럽게 정리하면:
+→ “과거 얘기만 질리도록 하지 말고 그냥 역사만 가르쳐주면 안 돼요?”
+
+
 * verdigris: 푸른 녹  
 * absurd: 터무니 없는  
 * gasp: 놀란 반응, 숨 들이키는(놀라서)  
 * artichoke: 지중해 음식 꽃  
 * sonnet: 정형시   
+* harp: 되풀이하다  
 
   
