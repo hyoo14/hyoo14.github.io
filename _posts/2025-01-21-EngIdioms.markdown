@@ -53,4 +53,15 @@ categories: study
 
 
 
+
+“Seem fixated on your verdigris”
+→ “당신의 녹청색에 집착하는 듯해요”
+(verdigris는 구리가 산화되면서 생기는 푸른 녹을 말합니다.
+
+“And since folks here, to an absurd degree”
+→ “그리고 이곳 사람들은, 터무니없을 정도로”
+
+* verdigris: 푸른 녹  
+* absurd: 터무니 없는  
+
   
