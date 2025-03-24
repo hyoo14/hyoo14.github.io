@@ -61,7 +61,17 @@ categories: study
 “And since folks here, to an absurd degree”
 → “그리고 이곳 사람들은, 터무니없을 정도로”
 
+
+”(Galinda gasps)”
+→ ”(갈린다가 숨을 헉 하고 들이쉼)”
+
+여기서 **“gasps”**는 놀라거나 충격을 받아서 갑자기 숨을 들이쉬는 소리를 의미합니다. 그래서 이 표현은 보통 놀람, 충격, 두려움 등의 반응을 묘사할 때 사용돼요.
+
+
 * verdigris: 푸른 녹  
 * absurd: 터무니 없는  
+* gasp: 놀란 반응, 숨 들이키는(놀라서)  
+* 
+* 
 
   
