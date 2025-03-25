@@ -102,11 +102,77 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 → “과거 얘기만 질리도록 하지 말고 그냥 역사만 가르쳐주면 안 돼요?”
 
 
+	1.	Toes clenched.
+→ 발가락을 꼭 움켜쥔다.
+(긴장, 두려움, 분노 등 감정 표현일 수 있어요.)
+
+⸻
+
+	2.	(rattling)
+→ (달그락거리는 소리)
+(무언가 흔들리거나 부딪치며 나는 소리, 예: 창문, 상자, 사물 등이 흔들릴 때.)
+
+⸻
+
+	3.	Or looked down upon or…
+→ 혹은 깔보거나, 아니면…
+(누군가를 무시하거나 얕잡아보는 것을 의미)
+
+⸻
+
+	4.	…told to stop jabbering…
+→ …지껄이지 말라고 들은 적 있거나…
+(jabbering은 빠르고 의미 없이 말하는 걸 뜻해요, 약간 비하하는 어조.)
+
+
+1.	”…the sky’s the limit.”
+→ ”…하늘이 한계라는 말이야.”
+(직역은 이렇지만, 실제 의미는 “무한한 가능성이 있다”, **“제한이 없다”**는 긍정적인 표현이에요.)
+→ 자연스럽게: “가능성은 무한하다는 거지.”
+
+⸻
+
+	2.	“Yesterday, a badger acquaintance, a solicitor,”
+→ “어제, 오소리 지인 한 명이었는데, 변호사였어,”
+(badger는 동물이지만, 여기선 동물 캐릭터가 등장하는 이야기일 가능성이 커요.)
+
+⸻
+
+	3.	“was sacked, just for arguing a case.”
+→ “사건 하나 변호했다고 해고당했어.”
+(sacked는 해고되었다는 뜻의 구어체 표현)
+
+
+1.	“You’ll find if you make it discouraging enough,”
+→ “충분히 낙담하게 만들면,”
+	2.	“you can keep anyone silent.”
+→ “누구든지 입을 다물게 할 수 있어.”
+
+→ 두 문장을 자연스럽게 연결하면:
+“충분히 낙담하게 만들면 누구든지 침묵하게 만들 수 있다는 걸 알게 될 거야.”
+
+⸻
+
+	3.	“blended with the foliage.”
+→ “나뭇잎들과 하나가 되었어.”
+(foliage는 잎, 나뭇잎 무리를 의미하며, 여기선 ‘풍경 속에 섞여 사라짐’ 같은 뉘앙스도 가능해요.)
+
+
 * verdigris: 푸른 녹  
 * absurd: 터무니 없는  
 * gasp: 놀란 반응, 숨 들이키는(놀라서)  
 * artichoke: 지중해 음식 꽃  
 * sonnet: 정형시   
 * harp: 되풀이하다  
+* clench: 꼭 움켜쥐다  
+* rattling: 달그락 소리   
+* look down upon: 깔보다  
+* jabbering: 빠르고 의미없는.. 지껄이는.. 비하어조  
+* badger: 오소리  
+* acquaintance: 지인  
+* solicitor: 변호사  
+* sack: 해고되다  
+* arguing: 변호하다  
+* foliage: 나뭇잎  
 
   
