@@ -60,6 +60,15 @@ o
 
 
 
+Tuesday, March 25, 2025  
+* class    
+* research  
+o    
+
+
+
+
+
 
 {% highlight ruby %}
 
