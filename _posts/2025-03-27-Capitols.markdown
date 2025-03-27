@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Capitols"
+date:   2025-03-27 00:02:10 +0900
+categories: "mountain"
+---
+
+Maybe it is time to resume my refreshing stuffs.  
+Collecting stamps regarding the great architectures and summarizing what I see and feel.   
+
+## Map from the memory  
+
+<iframe src="https://hyoo14.github.io/my-map/map.html" width="100%" height="600"></iframe>
+
