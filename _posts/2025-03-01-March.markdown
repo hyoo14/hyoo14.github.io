@@ -16,6 +16,63 @@ categories: study
 March week5       
 *research(ai/bio/nlp-papers/lectrues/projects)  
 
+** advAttack_verification and geneLMs ->rebuttal      
+
+
+** LLM app for gene  
+
+** upload zenodo    
+
+** Ideation(with conference?)-please keep the ideas...      
+
+** fair vllm?   
+
+*class  
+**FCV   
+**DAI    
+
+
+
+* future...research    
+
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+Monday, March 31, 2025  
+* class    
+* research  
+o    
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+March week5       
+*research(ai/bio/nlp-papers/lectrues/projects)  
+
 ** LLM app for gene  
 
 ** upload zenodo    
