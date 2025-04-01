@@ -1,0 +1,149 @@
+---
+layout: post
+title:  "April"
+date:   2025-04-01 14:59:53 -0400
+categories: study
+---
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+April week1       
+*research(ai/bio/nlp-papers/lectrues/projects)  
+
+** advAttack_verification and geneLMs ->rebuttal      
+
+
+** LLM app for gene  
+
+** upload zenodo    
+
+** Ideation(with conference?)-please keep the ideas...      
+
+** fair vllm?   
+
+*class  
+**FCV   
+**DAI    
+
+
+
+* future...research    
+
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+Tuesday, April 01, 2025  
+* class    
+* research  
+o    
+
+
+
+
+
+
+
+* 학회에서의 인사이트들?  
+
+이미 clip, llm 다 씀 for med ai..wow  
+contrastive learning, generation for aug 등 생각할만한 거 다 하는 느낌..  
+bio도 금방일듯  
+federated learning 좀 흥미로웠네(학습한 피처만 보내는거..중앙으로..병원등 개인정보땜에)   
+
+
+
+unlearning-> 잊게 만드는거.. 요즘 많이 다루는 분야인듯(이것도 개인정보 관련)  
+
+
+   
+diffusion기반(랜덤기반) 디엔에이?   
+co-scientist? multi agent..llms with other apis(collaborator)..별건아닌거같아..  
+
+
+새로운 신기한거 많네 causal model들이나 hypergraph? heterophilly?   
+평소같으면 전혀 안 찾아볼 것들 보게되는 것도 아주 굿  
+
+
+그래프네트워크랑 언어모델이랑(트랜스포머)를 함께 사용하는 접근법도 아주 많네..!   
+
+트랜스포머에 모종의 확률의 추가하여 약간의 변화를 주는 방법도 많은듯    
+
+시퀀스랑 텍스트랑도 많이들 생각하는...  
+
+
+
+fidelity? 충실도?
+fidelity는 모델이 원래 데이터, 원본 모델, 혹은 목표 함수와 얼마나 잘 일치하는지를 나타내는 개념이며, 다양한 머신러닝 응용에서 중요한 품질 평가 기준이 됩니다.  
+->여러 메트릭을 포함하는 개념인듯.. comsine sim, KL divergence, robust accuracy, 등등  
+
+
+
+-여기서부터 이어서...
+이미지로부터 dna seq추출 신기(사실은 seq분류였음)  
+
+
+
+이미 rna모델은 엄청 많이 다루네.. 미생물로 확장해서 소타보다 강함을 보이거나
+
+
+
+특이한 테스크로 프리트레인하거나 뭐 k mer에 스트라이드를  줘서 최적화하거나...    
+
+
+
+vector quantization으로 토큰화하는거 진짜 신기하네.. 이걸로 protein 생성모델 만드는거 오오 신기  
+
+
+E(3)-동변량 그래프 신경망(EGNN) 라는 단백질 3d구조 기반의(기울기 등 space정보 포함) 벡터롤 또 얻어서 PLM 벡터랑 합쳐서 뭐 예측 모델에 사용하기도 하네.. 이것도 특이....    
+
+
+rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받아서 트랜스포머 써서 특정 테스크를 위한 파인튜닝하여 새로 임베딩 얻어서 사용하는... 그것도 인상적이었음     
+
+
+* 테스크 인사이트??   
+** Drug Target Discovery (유전자 발현 수준에서 특정 바이오마커를 찾는??)   
+** Disease Trajectory Reconstruction Using EHRs(유전체 데이터(GWAS, RNA-seq)를 포함할 수도..유전자 변이나 발현 패턴이 질병 진행과 연관될 경우)   
+** identifying pathogen(병원체)   
+
+
+** 좀 다르지만 생물학 문제(뭐 수능문제같은거)로 LLM평가해도 될 듯 ...   novelty랑 creativity랑 좀 더 depth한 개념들 갖고...   
+** 바로 위와 연관지어서 라우팅으로 생물과 화학을 나눈다던지, 또 연산부분은 나눈다던지 등..   
+
+
+** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
+** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
+** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+
+
+
