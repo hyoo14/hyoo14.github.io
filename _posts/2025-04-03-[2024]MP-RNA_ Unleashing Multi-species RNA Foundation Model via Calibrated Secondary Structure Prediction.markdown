@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[2024]MP-RNA: Unleashing Multi-species RNA Foundation Model via Calibrated Secondary Structure Prediction"  
-date:   2025-04-03 10:56:40 -0500
+date:   2025-04-03 01:56:40 -0500
 categories: study
 ---
 
