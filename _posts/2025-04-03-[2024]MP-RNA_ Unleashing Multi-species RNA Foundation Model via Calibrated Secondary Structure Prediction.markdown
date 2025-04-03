@@ -558,9 +558,7 @@ All tables bold the best-performing results to highlight MP-RNA’s superiority.
 
 
 
-Heng Yang and Ke Li. 2024. MP-RNA: Unleashing Multi-species RNA Foundation Model via Calibrated Secondary Structure Prediction. In Findings of the Association for Computational Linguistics: EMNLP 2024, pages 5278–5296, Miami, USA. Association for Computational Linguistics.   
-
-
+Elnaggar, A., Heinzinger, M., Dallago, C., Rehawi, G., Wang, Y., Jones, L., Gibbs, T., Feher, T., Angerer, C., Steinegger, M., Bhowmik, D., & Rost, B. (2022). ProtTrans: Toward understanding the language of life through self-supervised learning. IEEE Transactions on Pattern Analysis and Machine Intelligence, 44(10), 7112–7127. https://doi.org/10.1109/TPAMI.2021.3095381   
 
    
 
