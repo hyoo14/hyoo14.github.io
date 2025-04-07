@@ -18,7 +18,7 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 * Massachusetts State Capitol (Boston)
 
-<img src="assets/img/capitols/boston_outside.jpg"  width="300" />
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/boston_outside.jpg"  width="300" />
 
 
 * Rhde Island State Capitol (Providence)
