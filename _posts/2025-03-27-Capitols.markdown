@@ -18,18 +18,54 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 * Massachusetts State Capitol (Boston)
 
-<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/boston_outside.jpg?raw=true"  width="300" />
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/boston_outside.jpg?raw=true"  width="100" />
 
 
-* Rhde Island State Capitol (Providence)
+* Rhode Island State Capitol (Providence)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/providence_outside.jpg?raw=true"  width="100" />
+
+
 * Connecticut State Capitol (Hartford)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/hartford_outside.jpg?raw=true"  width="100" />
+
+
 * New Jersey State Capitol (Trenton)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/trenton_outside.jpg?raw=true"  width="100" />
+
+
 * Delaware State Capitol (Dover)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/dover_outside.jpg?raw=true"  width="100" />
+
+
+
 
 
 * Maryland State Capitol (Annapolis)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/anapolis_outside.jpg?raw=true"  width="100" />
+
+
+
 * U.S. Capitol (Washington D.C.)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/dc_outside.jpg?raw=true"  width="100" />
+
+
 
 
 * South Carolina State Capitol (Columbia)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/columbia_outside.jpg?raw=true"  width="100" />
+
+
+
 * Texas State Capitol (Austin)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/austin_outside.jpg?raw=true"  width="100" />
+
+
+
