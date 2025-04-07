@@ -12,3 +12,24 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 <iframe src="https://hyoo14.github.io/my-map/map.html" width="100%" height="600"></iframe>
 
+
+## List of visit place  
+
+
+* Massachusetts State Capitol (Boston)
+
+<img src="assets/img/capitols/boston_outside.jpg"  width="300" />
+
+
+* Rhde Island State Capitol (Providence)
+* Connecticut State Capitol (Hartford)
+* New Jersey State Capitol (Trenton)
+* Delaware State Capitol (Dover)
+
+
+* Maryland State Capitol (Annapolis)
+* U.S. Capitol (Washington D.C.)
+
+
+* South Carolina State Capitol (Columbia)
+* Texas State Capitol (Austin)
