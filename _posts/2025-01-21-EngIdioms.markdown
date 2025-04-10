@@ -31,6 +31,8 @@ categories: study
 * overhaul: 점검 및 개선  
 * pike: 스타벅스의 기본 드립 커피 메뉴인 Pike Place Roast  
 * whistleblowing: 내부고발  
+* level off: 평평해지다, 더 이상 증가하거나 감소하지 않고 일정해지다   
+* 
 
 
 
@@ -174,5 +176,10 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 * sack: 해고되다  
 * arguing: 변호하다  
 * foliage: 나뭇잎  
+* blithe smile: 명랑한 미소
+* spurned: 퇴짜 맞다  
+* Filling out our student body: 학생 수 채우다  
+* hideous: 끔찍한, 흉측한  
+* quarrel: 싸우다, 다투다  
 
   
