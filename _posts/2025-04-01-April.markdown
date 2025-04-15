@@ -74,9 +74,10 @@ o
 * find mapping seqs with sample meta -> huge.. a lot of sequences... hard to handle  
 * seq norm way -> kraken -> tax abundance bag    
 * zenodo-ing  
-
 * if possible, make model using seqs + meta (ing->but getting emb takes toooo much time.... is it possible? )...  
 * refine and share rf and xgb  
+-->use llm for meta   
+
 
 
 
