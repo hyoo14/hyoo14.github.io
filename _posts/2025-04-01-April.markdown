@@ -70,6 +70,14 @@ Tuesday, April 15, 2025
 o    
 
 
+Wednesday, April 16, 2025  
+* class    
+* research  
+o    
+
+
+
+
 
 * find mapping seqs with sample meta -> huge.. a lot of sequences... hard to handle  
 * seq norm way -> kraken -> tax abundance bag    
