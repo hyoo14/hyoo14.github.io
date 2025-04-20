@@ -31,6 +31,12 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/hartford_outside.jpg?raw=true"  width="100" />
 
 
+* New York State Capitol (Albany)
+
+<img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/albany_outside.jpg?raw=true"  width="100" />
+
+
+
 * New Jersey State Capitol (Trenton)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/trenton_outside.jpg?raw=true"  width="100" />
