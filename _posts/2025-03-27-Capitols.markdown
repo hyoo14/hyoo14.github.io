@@ -20,31 +20,49 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/boston_outside.jpg?raw=true"  width="100" />
 
+It seems smaller than I expected. Massachusetts is historical and comparably big state with big city like Boston.  
+It is actually located in Boston but, not that magnificiant as Boston.  
+생각보다 작았다..   
+
 
 * Rhode Island State Capitol (Providence)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/providence_outside.jpg?raw=true"  width="100" />
+
+It is bigger than I expected. It seems okay.  
+생각보다 컸다.  
 
 
 * Connecticut State Capitol (Hartford)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/hartford_outside.jpg?raw=true"  width="100" />
 
+It looks really beautiful outside.  
+외관이 매우 아름다웠다.  
 
 * New York State Capitol (Albany)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/albany_outside.jpg?raw=true"  width="100" />
 
+New York is New York even it is not the city but the state capitol.  
+뉴욕은 역시 뉴욕  
 
 
 * New Jersey State Capitol (Trenton)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/trenton_outside.jpg?raw=true"  width="100" />
 
+It seems better than I expected.  
+It is a good complex with nice mixture of buildings.    
+생각보다 괜찮았다.  
+
 
 * Delaware State Capitol (Dover)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/dover_outside.jpg?raw=true"  width="100" />
+
+It was built in the great depression.  
+대공황때 지었다고 한다.  
 
 
 
@@ -54,12 +72,17 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/anapolis_outside.jpg?raw=true"  width="100" />
 
+It is nice with cherry blossom. I can feel the history of Maryland there.  
+역사가 있는 꽤 좋음.  
+
 
 
 * U.S. Capitol (Washington D.C.)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/dc_outside.jpg?raw=true"  width="100" />
 
+National Capital.  
+수도는 역시 수도  
 
 
 
@@ -67,11 +90,16 @@ Collecting stamps regarding the great architectures and summarizing what I see a
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/columbia_outside.jpg?raw=true"  width="100" />
 
+Pretty big with nice palm trees.  
+꽤 크고 야자수가 인상적.  
 
 
 * Texas State Capitol (Austin)
 
 <img src="https://github.com/hyoo14/hyoo14.github.io/blob/main/assets/img/capitols/austin_outside.jpg?raw=true"  width="100" />
+
+It is a massive structure, but inside is not impressive.  
+많이 큰데 내부가 소박.  
 
 
 
