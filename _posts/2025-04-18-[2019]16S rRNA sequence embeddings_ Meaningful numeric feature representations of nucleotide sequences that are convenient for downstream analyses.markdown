@@ -11,7 +11,8 @@ categories: study
 한줄 요약: 
 
 
-rRNA 워드투백 제안  
+16rRNA 워드투백 제안  
+근데 핵심은 기존 OTU 대신에, k-mer 임베딩을 기반으로 한 OTU-유사 구조, 즉 "pseudo-OTU"라는 개념을 만들어 사용  
 
 
 짧은 요약(Abstract) :    
