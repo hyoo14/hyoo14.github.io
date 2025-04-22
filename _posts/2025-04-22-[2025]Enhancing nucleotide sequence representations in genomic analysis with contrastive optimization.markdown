@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2020]Enhancing nucleotide sequence representations in genomic analysis with contrastive optimization"  
+title:  "[2025]Enhancing nucleotide sequence representations in genomic analysis with contrastive optimization"  
 date:   2025-04-22 11:51:40 -0400
 categories: study
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[2020]SCORPIO: Leveraging Large Language Models for Metagenomic Analysis"  
+title:  "[2023]SCORPIO: Leveraging Large Language Models for Metagenomic Analysis"  
 date:   2025-04-22 11:46:40 -0400
 categories: study
 ---
