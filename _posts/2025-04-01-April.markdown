@@ -66,10 +66,17 @@ o
 
 
 
+Tuesday, April 22, 2025  
+* class    
+* research  
+o    
 
-* align with meta, OTU, and seqs  
+
+
+
+* align with meta, OTU, and seqs    
+* OTU based prediction->not practical  
   
-* OTU based prediction  
 * meta + LLM prediction  
 ----------------------------   
 * OTU + meta + LLM   
