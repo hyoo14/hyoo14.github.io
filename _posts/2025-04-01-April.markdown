@@ -66,11 +66,18 @@ o
 
 
 
+Tuesday, April 29, 2025  
+* class    
+* research  
+o    
+
+
+
 
 * align with meta, OTU, and seqs    
 
 * OTU based prediction->not practical-->maybe add tree number for xgb and rf       
-* meta + LLM prediction--> gemma,llama,qwen?  
+* meta + LLM prediction--> gemma,llama,qwen?  --> not practical i think..   
 * predict soil?   
 * pedict diabetes?  
 * dif gen lm? 
