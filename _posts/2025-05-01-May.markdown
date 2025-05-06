@@ -69,6 +69,14 @@ o
 
 
 
+Tuesday, May 06, 2025  
+* class    
+* research  
+o    
+
+
+
+
 * align with meta, OTU, and seqs    
 * meta + LLM prediction--> gemma,llama,qwen?  --> not practical i think..   
 ** with small sample->OK..   
