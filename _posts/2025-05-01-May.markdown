@@ -84,6 +84,9 @@ Thursday, May 15, 2025
 * research  
 o    
 
+exp describe      
+ref      
+git..        
 
 
 Friday, May 16, 2025  
@@ -98,11 +101,15 @@ Saturday, May 17, 2025
 o    
 
 
+Sunday, May 18, 2025  
+* class    
+* research  
+o    
 
 
-익스페리먼트서술    
-참고문헌    
-깃헙      
+
+
+
 
 
 
