@@ -32,7 +32,9 @@ categories: study
 * pike: 스타벅스의 기본 드립 커피 메뉴인 Pike Place Roast  
 * whistleblowing: 내부고발  
 * level off: 평평해지다, 더 이상 증가하거나 감소하지 않고 일정해지다   
-* 
+* break your time: 시간을 방해하다  
+* I'm on top of it: 내가 그 일을 잘 파악하고 있고, 문제없이 처리하고 있어요  
+* I'm down on it: 것에 대해 부정적으로 생각하고 있어  
 
 
 
