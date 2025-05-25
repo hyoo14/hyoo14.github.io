@@ -107,31 +107,38 @@ test 10 times? and format genbio and add exps(TODO)
 https://www.sciencebase.gov/catalog/item/5fe22dead34e30b9123f09b5   
 
 
-
-
-
 [now]   
-* algorithm for adv--> supplementary(TEST and Experiments)    
-  
 
+
+
+* test 10 times? and format genbio and add exps(TODO)   (2)
+https://www.sciencebase.gov/catalog/item/5fe22dead34e30b9123f09b5   
+* cam red (2)  
+** include zenodo / acknowledgement    
+* subsidy  
+
+
+
+
+
+
+
+[others..later]
 
 * meta analysis  
 ** Replicate these experiments 10 times
 ** predict percentage different
-** how close to predict(concentration), swap PAA and CL
+** how close to predict(concentration), swap PAA and CL  
 
-
+* candi  
 
 * set attention?
 ** OTU based prediction->not practical-->maybe add tree number for xgb and rf       
 
 
-* others..later
 ** pedict diabetes?  
 ** dif gen lm?  
 ** OTU + meta + LLM    
-
-
 
 
 
