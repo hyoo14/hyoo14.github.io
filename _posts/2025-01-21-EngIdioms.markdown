@@ -35,6 +35,7 @@ categories: study
 * break your time: 시간을 방해하다  
 * I'm on top of it: 내가 그 일을 잘 파악하고 있고, 문제없이 처리하고 있어요  
 * I'm down on it: 것에 대해 부정적으로 생각하고 있어  
+* bread-and-butter pitch: 주무기, 핵심 기술  
 
 
 
