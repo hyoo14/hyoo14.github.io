@@ -81,10 +81,16 @@ Wednesday, May 28, 2025
 o    
 
 
-[now]
-* subsidy  
-* candi
+Thursday, May 29, 2025  
+* class    
+* research  
+o    
 
+
+[now]
+
+* candi
+* subsidy  
 * meta analysis  
 ** how close to predict(concentration), swap PAA and CL  
 ** make ppt  
