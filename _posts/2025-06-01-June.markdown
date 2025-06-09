@@ -16,6 +16,76 @@ categories: study
 {% highlight ruby %}
 
 
+June week3       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+** upload zenodo    
+
+*class->candiexam   
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+*** qiita + norm? -> meta + emb (->llm)  
+*** unlearning?  
+
+** fair vllm?   
+
+
+** LLM app for gene (wait?)    
+** advAttack_verification and geneLMs (wait?) 
+
+
+ 
+
+
+
+
+* future...research    
+
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, June 09, 2025  
+* class    
+* research  
+o    
+
+
+Tuesday, June 10, 2025  
+* class    
+* research  
+o    
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
 June week2       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 ** upload zenodo    
