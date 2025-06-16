@@ -79,9 +79,6 @@ o
 * paper update with interpretable concept  
 * book chapter  
 * plan trip  
-----  
-next week  
-----  
 * additional test for ari  
 
 subsidy?  
