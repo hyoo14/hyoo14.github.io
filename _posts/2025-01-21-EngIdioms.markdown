@@ -38,6 +38,7 @@ categories: study
 * bread-and-butter pitch: 주무기, 핵심 기술  
 * Keep me a prize: 나도 챙겨줘? 이런 느낌?   
 * luck charm: 부적, 행운의 부적  
+* crystal clear: 매우 분명한, 아주 명확한, 더할 나위 없이 이해하기 쉬운  
 
 
 
