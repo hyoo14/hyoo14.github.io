@@ -190,5 +190,7 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 * contraband: 밀수품  
 *  contravene: 위반하다, 반하다  
+* moron: 바보  
+* tagalong: 졸졸 따라 다니는 사람, 주도성 없이 붙어가는 느낌  
 
   
