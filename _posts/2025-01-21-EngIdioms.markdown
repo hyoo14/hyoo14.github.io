@@ -192,6 +192,15 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 *  contravene: 위반하다, 반하다  
 * moron: 바보  
 * tagalong: 졸졸 따라 다니는 사람, 주도성 없이 붙어가는 느낌  
-* came this: 됐다, 도달했다  
+* came this: 됐다, 도달했다   
+* backwater site: 변두리  
+* glimpse: 흘끗봄  
+* reconnaissance: 정찰  
+* anticlimactic: 김빠지는  
+* ambush: 매복, 기습  
+* formidable: 무서운, 위협적인    
+* preach: 설교  
+* hideous: 불쾌한  
+ 
 
   
