@@ -187,4 +187,8 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 * hideous: 끔찍한, 흉측한  
 * quarrel: 싸우다, 다투다  
 
+
+* contraband: 밀수품  
+*  contravene: 위반하다, 반하다  
+
   
