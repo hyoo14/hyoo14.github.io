@@ -69,7 +69,7 @@ o
 
 
 
-* tSNE
+* tSNE, UMAP  
 * MCP for science    
 
 
