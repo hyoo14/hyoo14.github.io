@@ -69,6 +69,12 @@ o
 
 
 
+Tuesday, July 08, 2025  
+* research  
+o    
+
+
+
 * tSNE, UMAP  
 * MCP for science    
 
