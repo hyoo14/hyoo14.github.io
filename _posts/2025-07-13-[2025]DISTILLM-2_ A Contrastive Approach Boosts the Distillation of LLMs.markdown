@@ -289,6 +289,69 @@ DISTILLM-2 improves LLM distillation by applying a contrastive learning scheme�
 # 기타  
 
 
+
+
+#### 1. **Figure 1: 손실 함수별 효과 시각화**
+
+* (a) Toy 데이터에서는 KL은 중심부(고확률 영역)를 끌어올리는 효과, RKL은 꼬리(저확률 영역)를 억제하는 효과를 가짐.
+* (b) 실제 모델 실험에서는 CALD(SKL+SRKL)의 손실 조합이 KL/RKL 단독보다 빠른 수렴과 낮은 NLL을 보임.
+* **인사이트**: 서로 다른 손실을 응답 유형에 맞게 적용하면 정렬 효과가 극대화됨.
+
+#### 2. **Table 2–4: 다양한 테스크에서의 성능 비교**
+
+* DISTILLM-2는 Instruction-following, MATH, HumanEval, MBPP 등 모든 테스크에서 기존 증류 방법(DistiLLM, GKD 등)보다 높은 정확도(pass\@1, WR 등)를 보임.
+* 특히 Gemma-2-2B 기준 평균 +4.53% 향상됨.
+* **결론**: 제안된 대조 손실 및 커리큘럼 기반 학습 방식이 범용적인 성능 향상으로 이어짐.
+
+#### 3. **Table 5: 구성 요소별 성능 향상 분석 (Ablation)**
+
+* 대조 손실 도입, β 증가, 커리큘럼 α 조절을 하나씩 적용할수록 성능이 단계적으로 상승.
+* **인사이트**: DISTILLM-2의 각 설계 요소가 실제로 기여함을 실증함.
+
+#### 4. **Figure 2: 데이터 구성 전략 실험**
+
+* Speculative decoding이나 더 강력한 LLM의 응답을 사용할 때 성능이 반드시 향상되는 것은 아님.
+* **결론**: 손실 함수의 설계에 따라 오히려 단순한 교사/학생 응답을 쓰는 것이 가장 효과적일 수 있음.
+
+#### 5. **Table 6–10: 확장성 평가 (멀티모달, 선호 정렬, 양자화, 추론속도 등)**
+
+* DISTILLM-2는 VQA, 양자화 모델 성능 회복, speculative decoding 속도 향상 등 다양한 응용에서 기존보다 우수한 성능을 보임.
+* **결론**: 이 접근법은 단순한 텍스트 모델 증류에 그치지 않고 다양한 도메인에 일반화 가능함.
+
+---
+
+
+
+#### 1. **Figure 1: Visualization of Loss Dynamics**
+
+* (a) On toy data, KL boosts high-probability regions ("pull-up"), while RKL suppresses low-probability regions ("push-down").
+* (b) In real model training, CALD (SKL+SRKL) converges faster and achieves lower NLL than standalone KL/RKL.
+* **Insight**: Using asymmetric losses tailored to response types improves model alignment.
+
+#### 2. **Tables 2–4: Task-wise Performance Comparison**
+
+* DISTILLM-2 outperforms all prior distillation methods across instruction-following, math, and code generation benchmarks.
+* For instance, Gemma-2-2B shows an average gain of +4.53% over GKD.
+* **Conclusion**: The contrastive and curriculum-based techniques contribute to broad performance improvements.
+
+#### 3. **Table 5: Component-wise Ablation Study**
+
+* Each added component (contrastive loss, increasing β, curriculum α) leads to step-wise performance gains.
+* **Insight**: The improvement is cumulative and attributable to each design choice in DISTILLM-2.
+
+#### 4. **Figure 2: Data Curation Trade-offs**
+
+* Replacing teacher/student outputs with speculative decoding or higher-quality responses doesn't always improve performance.
+* **Conclusion**: Loss design matters more than raw response quality—teacher/student outputs are optimally paired with SKL/SRKL.
+
+#### 5. **Tables 6–10: Broader Application Scenarios**
+
+* DISTILLM-2 enhances performance not only in LLM distillation but also in VQA, quantized models, and speculative decoding speed.
+* **Conclusion**: The framework generalizes well across modalities and deployment settings.
+
+
+
+
 <br/>
 # refer format:     
 
