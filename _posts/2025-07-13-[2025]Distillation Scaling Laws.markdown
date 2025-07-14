@@ -321,6 +321,88 @@ This paper introduces a **distillation scaling law** that predicts student model
 # 기타  
 
 
+
+
+####  주요 피규어 & 인사이트
+
+1. **Figure 1**:
+
+   * 학생 모델의 cross-entropy 성능이 **교사의 cross-entropy 성능과 상관관계를 가짐**을 시각화.
+   * **교사가 너무 성능이 좋을 경우 오히려 학생 성능 저하** 현상이 관찰됨 → 이를 **capacity gap**이라고 정의.
+
+2. **Figure 2–4 (IsoFLOP 실험)**:
+
+   * 동일 계산량(FLOPs) 내에서 다양한 학생/교사 조합을 실험.
+   * **교사 성능이 일정 수준 이하일 경우 증류 효과 존재**, 그러나 일정 성능 이상에서는 오히려 학생 학습에 방해됨.
+   * 특히 **Figure 4**는 교사가 너무 크면 오히려 학생 성능이 하락하는 구간을 보여주며, 이로부터 **증류에 최적 교사 규모가 존재**한다는 결론 도출.
+
+3. **Figure 6–8 (실용 시나리오 분석)**:
+
+   * 증류가 언제 **지도 학습보다 효율적인지**, compute 예산 및 학생 규모에 따라 시각적으로 표현.
+   * Figure 8에서는 **학생 규모가 클수록 지도 학습이 유리한 전환점이 더 늦게 나타남**을 보여줌 → 소형 모델일수록 증류 효과가 상대적으로 큼.
+
+4. **Table 2 & 3**:
+
+   * Table 2는 compute 비용 계산 시 어떤 항목(교사 훈련/출력 등)을 포함할지에 따른 4가지 시나리오를 구분.
+   * Table 3은 compute 예산이 작을 때는 **교사 훈련에 집중**, 클수록 **학생 훈련/교사 활용에 균형적으로 분배해야 함**을 시사.
+
+####  어펜딕스 인사이트
+
+* **Appendix B.3**:
+
+  * **Capacity gap**의 기초 이론 설명 → 교사와 학생 사이의 학습능력 차이로 인해 성능 역전 현상이 발생함.
+
+* **Appendix F**:
+
+  * 실제 **스케일링 법칙 계수 추정 절차** 제공 → 학습데이터 기반으로 수치적으로 법칙을 피팅하는 방법을 상세히 설명.
+
+* **Appendix G**:
+
+  * λ, τ 등의 하이퍼파라미터 조정 실험 → λ=1, τ=1인 pure distillation이 통계적으로 최적임을 검증.
+
+---
+
+
+####  Key Figures & Insights
+
+1. **Figure 1**:
+
+   * Visualizes how student model cross-entropy correlates with teacher performance.
+   * Reveals the **“capacity gap”**—when the teacher is too strong, student performance actually degrades.
+
+2. **Figures 2–4 (IsoFLOP Experiments)**:
+
+   * Show experiments under fixed compute budgets with various student-teacher configurations.
+   * Students perform better when teachers are of **moderate quality**, but degrade when teachers are too strong.
+   * **Figure 4** illustrates the **capacity gap** clearly and leads to the conclusion that **there is an optimal teacher size for each student**.
+
+3. **Figures 6–8 (Practical Scenario Analysis)**:
+
+   * Illustrate under what conditions **distillation outperforms supervised learning**, depending on compute budget and student size.
+   * Figure 8 shows that for **larger students, the crossover point where supervised learning becomes better occurs at higher compute budgets**, suggesting that **distillation is more beneficial for smaller models**.
+
+4. **Table 2 & 3**:
+
+   * Table 2 categorizes four compute scenarios depending on whether teacher pretraining and/or inference costs are counted.
+   * Table 3 concludes that **for small budgets, teacher training dominates**, whereas for larger budgets, **resources should be split between student training and teacher inference more evenly**.
+
+#### Appendix Insights
+
+* **Appendix B.3**:
+
+  * Theorizes the **capacity gap** as a learning capacity mismatch between teacher and student—not just a size difference.
+
+* **Appendix F**:
+
+  * Provides the **fitting procedure** for scaling law coefficients based on empirical data.
+
+* **Appendix G**:
+
+  * Validates that **pure distillation settings (λ = 1, τ = 1)** are statistically optimal in their setup.
+
+
+
+
 <br/>
 # refer format:     
 
