@@ -367,6 +367,101 @@ For instance, on Dolly-15K, a prompt like "Who wrote Picture of Dorian Grey?" ma
 # 기타  
 
 
+
+
+####  주요 테이블 및 인사이트:
+
+1. **Table 1** – 다양한 손실 함수(SKLD, SRKLD, KLD, JSD 등)의 성능 비교
+
+   * DISTILLM에서 제안한 **SRKL 손실 함수가 모든 태스크에서 가장 높은 ROUGE-L 점수**를 기록함.
+   * → **Skew 손실이 기존 손실보다 일반화에 효과적**임을 실증.
+
+2. **Table 2** – 오프폴리시 전략의 효과
+
+   * DISTILLM의 **Adaptive + Off-policy** 전략이 다른 접근(On-policy, Mixed)보다 **더 높은 성능과 일관성**을 보임.
+   * → 학습 효율을 극대화하면서도 성능 저하 없이 SGO를 활용할 수 있음.
+
+3. **Table 4 & 5** – 다른 기존 증류 기법에 오프폴리시를 적용한 경우 성능 저하 발생 vs. DISTILLM은 안정 유지
+
+   * → DISTILLM은 **자체 구성 요소 간의 시너지**가 있음을 입증.
+
+####  주요 피규어:
+
+1. **Figure 1** – 잘못된 학생 출력(SGO)에 대해 교사 모델이 부정확한 피드백을 주는 사례
+
+   * → SGOs만 활용하는 on-policy 방식의 한계를 보여줌.
+
+2. **Figure 2 & 7** – SGOs의 생성 길이/빈도에 따른 계산 비용
+
+   * → **DISTILLM의 adaptive 방식이 최대 3\~4배 속도 향상**을 달성함을 수치로 표현.
+
+3. **Figure 3 & 8** – SKL 손실의 그래디언트 안정성과 skew 계수 α의 선택
+
+   * → α = 0.1일 때 **최적의 안정성과 일반화 성능**을 보여줌.
+
+####  어펜딕스:
+
+* **Appendix B.1, B.2** – SKL 손실 함수의 수학적 안정성과 L2 norm 경계에 대한 이론적 증명 제공
+* **Appendix E.1–E.4** – 다양한 세부 ablation 실험: α 값 변화, SGO 사용 비율, 미세 조정 여부 등
+
+  * → DISTILLM은 **세밀한 튜닝 없이도 강건한 성능 유지** 가능
+
+####  결론적 인사이트:
+
+* DISTILLM은 단순한 구성 두 가지(SKL, Adaptive off-policy)를 도입했지만,
+  이들의 **결합 효과가 기존 모든 증류 기법을 능가하는 성능과 효율을 만들어낸다**.
+* 이 프레임워크는 **사전 튜닝 없이도 적용 가능하고**, SGO의 잡음을 효과적으로 제어하며
+  **실제 LLM 증류의 표준이 될 수 있는 가능성**을 보여준다.
+
+---
+
+####  Key Tables & Insights:
+
+1. **Table 1** – Comparison of loss functions (KLD, JSD, SKL, SRKL)
+
+   * DISTILLM's **SRKL loss consistently achieves the highest ROUGE-L scores** across all tasks.
+   * → Shows **superior generalization** of skewed losses compared to traditional objectives.
+
+2. **Table 2** – Effectiveness of off-policy strategy
+
+   * **Adaptive + Off-policy (DISTILLM)** significantly outperforms on-policy and mixed approaches in performance and stability.
+   * → Demonstrates **optimal utilization of student-generated outputs (SGO)** without added training cost.
+
+3. **Table 4 & 5** – Applying off-policy to other distillation methods reduces their performance, unlike DISTILLM
+
+   * → Proves the **strong synergy of DISTILLM’s two components**.
+
+####  Key Figures:
+
+1. **Figure 1** – Example of incorrect SGO misguiding the teacher
+
+   * → Highlights limitations of relying solely on SGOs in on-policy methods.
+
+2. **Figures 2 & 7** – Training time analysis with respect to SGO frequency and response length
+
+   * → DISTILLM achieves **up to 3–4× training speedup** with better compute efficiency.
+
+3. **Figures 3 & 8** – Gradient stability and skew α value tuning for SKL
+
+   * → α = 0.1 yields the **best trade-off between convergence stability and generalization**.
+
+####  Appendix Insights:
+
+* **Appendix B.1, B.2** – Theoretical proofs on **gradient stability and L2 error bounds** of SKL
+* **Appendix E.1–E.4** – Comprehensive ablation studies: skew α tuning, SGO ratio, student initialization
+
+  * → DISTILLM remains **robust without extensive hyperparameter tuning**.
+
+####  Overall Takeaways:
+
+* Although DISTILLM only introduces **two simple components (SKL, adaptive off-policy)**,
+  their **combination yields superior performance and efficiency** over all existing KD methods.
+* It works **without prior fine-tuning**, effectively controls noisy SGOs, and
+  demonstrates **a strong candidate for standard KD in LLM compression**.
+
+
+
+
 <br/>
 # refer format:     
 
