@@ -67,6 +67,14 @@ Monday, July 14, 2025
 o    
 
 
+
+Tuesday, July 15, 2025  
+* research  
+o    
+
+
+
+
 * what to listen  
 * print  
 * prepare post talk    
@@ -80,6 +88,10 @@ o
 
 * new 학회  
 ** distilation 흠: contrastiv learning처럼 skew KL 과 reverse skew KL을 사용한 티처-스튜던트 디스틸레이션 효과적, 스케일로우 성립..?     
+
+** transformer와 graph모델을 동시에 잘 사용하자(특히 여러 접근방법 많다).. 근데 생각해보니 이미 전에도 보았두아.ㅎ.ㅎ  
+
+** uncertainty quantification은 엔트로피를 이용하거나, 같은 질문에 대한 반복적인 대답이 얼마나 유지되는지, 컨피던스 스코어, 어텐션 맵 기반 스코어링(어텐션스코어)로 측정되며 그 외에 신뢰도 측정을 위해 여러 모델들의 답과 얼마나 겹치는지, 정답지와 비교, 외부 문서 없이도 잘 하는지 등을 본다.  
 
 
 * 학회에서의 인사이트들?  
