@@ -15,7 +15,7 @@ categories: study
 {% highlight ruby %}
 
 
-August week1       
+August week2       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 ** upload zenodo    
 
@@ -62,30 +62,15 @@ MAYBE FUTURE WORKS
 
 
 
-Friday, August 01, 2025  
-* research  
-o    
-
-
-Saturday, August 02, 2025  
-* research  
-o    
-
-
-Sunday, August 03, 2025  
+Monday, August 04, 2025  
 * research  
 o    
 
 
 
-
-
-
-
-
-
-  
-* update for 3ai  
+Tuesday, August 05, 2025  
+* research  
+o    
 
 
 * MCP for science->for paper?      
@@ -201,5 +186,85 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+August week1       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+** upload zenodo    
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+*** qiita + norm? -> meta + emb (->llm)  
+*** unlearning?  
+
+** fair vllm?   
+
+
+** LLM app for gene (wait?)    
+** advAttack_verification and geneLMs (wait?) 
+
+
+ 
+
+
+
+
+* future...research    
+
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Friday, August 01, 2025  
+* research  
+o    
+
+
+Saturday, August 02, 2025  
+* research  
+o    
+
+
+Sunday, August 03, 2025  
+* research  
+o    
+
+
+
+
+
+
+
+
+
+  
+* update for 3ai  
 
 
