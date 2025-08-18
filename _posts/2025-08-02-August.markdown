@@ -15,7 +15,7 @@ categories: study
 {% highlight ruby %}
 
 
-August week3       
+August week4       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 ** upload zenodo    
 
@@ -62,48 +62,9 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, August 11, 2025  
+Monday, August 18, 2025  
 * research  
 o    
-
-
-
-Tuesday, August 12, 2025  
-* research  
-o    
-
-
-* MCP for science->for paper?      
---> MCP는 아니지만.. 무튼뭐..   
-
-
-Wednesday, August 13, 2025  
-* research  
-o    
-
-
-Thursday, August 14, 2025  
-* research  
-o    
-
-
-Friday, August 15, 2025  
-* research  
-o    
-
-
-Saturday, August 16, 2025  
-* research  
-o    
-
-
-
-Sunday, August 17, 2025  
-* research  
-o    
-
-
-
 
 
 
@@ -215,6 +176,108 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+August week3       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+** upload zenodo    
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+*** qiita + norm? -> meta + emb (->llm)  
+*** unlearning?  
+
+** fair vllm?   
+
+
+** LLM app for gene (wait?)    
+** advAttack_verification and geneLMs (wait?) 
+
+
+ 
+
+
+
+
+* future...research    
+
+** iterative alignment algo  
+** paper focus: E-NLP(??description?)    
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+(check nucl with blast--->check real nicl whether sim or not)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, August 11, 2025  
+* research  
+o    
+
+
+
+Tuesday, August 12, 2025  
+* research  
+o    
+
+
+* MCP for science->for paper?      
+--> MCP는 아니지만.. 무튼뭐..   
+
+
+Wednesday, August 13, 2025  
+* research  
+o    
+
+
+Thursday, August 14, 2025  
+* research  
+o    
+
+
+Friday, August 15, 2025  
+* research  
+o    
+
+
+Saturday, August 16, 2025  
+* research  
+o    
+
+
+
+Sunday, August 17, 2025  
+* research  
+o    
+
+
+
 
 
 
