@@ -15,7 +15,7 @@ categories: study
 {% highlight ruby %}
 
 
-September week1       
+September week2       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 ** diffusion+text for bio(WA)    
@@ -56,51 +56,13 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, September 01, 2025  
+Monday, September 08, 2025  
 * research  
 o    
 
 
 
 
-Tuesday, September 02, 2025  
-* research  
-o    
-
-
-
-Wednesday, September 03, 2025  
-* research  
-o    
-
-
-
-Thursday, September 04, 2025  
-* research  
-o    
-
-
-
-Friday, September 05, 2025  
-* research  
-o    
-
-
-
-Saturday, September 06, 2025  
-* research  
-o    
-
-
-
-Sunday, September 07, 2025  
-* research  
-o    
-
-
-
-
-     
 
 
 * acmbcb-pseudo-OTU COMPARISON(later)      
@@ -209,6 +171,104 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week1       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+** diffusion+text for bio(WA)    
+** fair vllm bench(WA)    
+
+** ssl for dna?(IC?)  
+
+** Label bias(EA)
+** diffusion+text for mov(EA)  
+** plan biosyn(EA)
+
+** qiita -> emb (JofBio?)  
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, September 01, 2025  
+* research  
+o    
+
+
+
+
+Tuesday, September 02, 2025  
+* research  
+o    
+
+
+
+Wednesday, September 03, 2025  
+* research  
+o    
+
+
+
+Thursday, September 04, 2025  
+* research  
+o    
+
+
+
+Friday, September 05, 2025  
+* research  
+o    
+
+
+
+Saturday, September 06, 2025  
+* research  
+o    
+
+
+
+Sunday, September 07, 2025  
+* research  
+o    
+
+
+
+
+     
 
 
 
