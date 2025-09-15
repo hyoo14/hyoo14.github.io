@@ -15,22 +15,25 @@ categories: study
 {% highlight ruby %}
 
 
-September week2       
+September week3       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
-** diffusion+text for bio(WA)    
-** fair vllm bench(WA)    
 
+** fair vllm bench+Label bias(WA)    
+
+** diffusion+text for bio(WA->IC or EA?)    
+** plan biosyn(EA)
 ** ssl for dna?(IC?)  
 
 ** Label bias(EA)
 ** diffusion+text for mov(EA)  
-** plan biosyn(EA)
 
-** qiita -> emb (JofBio?)  
+
+** qiita -> emb (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
 
 MAYBE FUTURE WORKS
 ** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
 ** unlearning?  
 
 ** LLM app for gene (wait?)   
@@ -56,45 +59,7 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, September 08, 2025  
-* research  
-o    
-
-
-
-Tuesday, September 09, 2025  
-* research  
-o    
-
-
-
-
-Wednesday, September 10, 2025  
-* research  
-o    
-
-
-
-Thursday, September 11, 2025  
-* research  
-o    
-
-
-
-Friday, September 12, 2025  
-* research  
-o    
-
-
-
-
-Saturday, September 13, 2025  
-* research  
-o    
-
-
-
-Sunday, September 14, 2025  
+Monday, September 15, 2025  
 * research  
 o    
 
@@ -103,8 +68,7 @@ o
 
 
 
-* acmbcb-pseudo-OTU COMPARISON(later)      
-* dif gen lm?(future..?)    
+
 
 
 * new 학회  
@@ -206,6 +170,100 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week2       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+** diffusion+text for bio(WA)    
+** fair vllm bench(WA)    
+
+** ssl for dna?(IC?)  
+
+** Label bias(EA)
+** diffusion+text for mov(EA)  
+** plan biosyn(EA)
+
+** qiita -> emb (JofBio?)  
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, September 08, 2025  
+* research  
+o    
+
+
+
+Tuesday, September 09, 2025  
+* research  
+o    
+
+
+
+
+Wednesday, September 10, 2025  
+* research  
+o    
+
+
+
+Thursday, September 11, 2025  
+* research  
+o    
+
+
+
+Friday, September 12, 2025  
+* research  
+o    
+
+
+
+
+Saturday, September 13, 2025  
+* research  
+o    
+
+
+
+Sunday, September 14, 2025  
+* research  
+o    
+
 
 
 
