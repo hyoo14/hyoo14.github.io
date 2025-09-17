@@ -69,6 +69,11 @@ Tuesday, September 16, 2025
 o    
 
 
+Wednesday, September 17, 2025  
+* research  
+o    
+
+
 
 
 
