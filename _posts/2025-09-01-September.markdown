@@ -20,12 +20,13 @@ September week4
 
 ** plan biosyn(EA? or AC)
 ** diffusion+text for bio(EA? or IC (or AC or EC))    
+** bias additionally audio
+** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
 *** additionally for MOVIE?(EA? no time.. i guess)
 
 
-** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
-
 ** ssl for dna?(PA?)  
+
 ** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
 ** robust dna(PA?)
 
@@ -58,57 +59,9 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, September 22, 2025  
+Monday, September 29, 2025  
 * research  
 o    
-
-
-
-Tuesday, September 23, 2025  
-* research  
-o    
-
-
-
-Wednesday, September 24, 2025  
-* research  
-o    
-
-
-
-Thursday, September 25, 2025  
-* research  
-o    
-
-
-
-Friday, September 26, 2025  
-* research  
-o    
-
-
-
-Saturday, September 27, 2025  
-* research  
-o    
-
-
-
-Sunday, September 28, 2025  
-* research  
-o    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -215,6 +168,113 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week4       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+** plan biosyn(EA? or AC)
+** diffusion+text for bio(EA? or IC (or AC or EC))    
+*** additionally for MOVIE?(EA? no time.. i guess)
+
+
+** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
+
+** ssl for dna?(PA?)  
+** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
+** robust dna(PA?)
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Monday, September 22, 2025  
+* research  
+o    
+
+
+
+Tuesday, September 23, 2025  
+* research  
+o    
+
+
+
+Wednesday, September 24, 2025  
+* research  
+o    
+
+
+
+Thursday, September 25, 2025  
+* research  
+o    
+
+
+
+Friday, September 26, 2025  
+* research  
+o    
+
+
+
+Saturday, September 27, 2025  
+* research  
+o    
+
+
+
+Sunday, September 28, 2025  
+* research  
+o    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
