@@ -250,5 +250,23 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 
 
+| 단어              | 품사        | 기본 뜻                                                   | 예문                                                              |
+| --------------- | --------- | ------------------------------------------------------ | --------------------------------------------------------------- |
+| **scallops**    | 명사        | ① 가리비(요리용 조개살)<br>② 물결무늬(장식)                           | *Grilled scallops are delicious.* → 구운 가리비는 맛있다.                |
+| **curing**      | 명사/동명사    | ① (의학) 치료<br>② (음식) 염장·보존<br>③ (재료) 굳히기                | *Curing meat prevents it from spoiling.* → 고기를 절이면 부패를 막을 수 있다. |
+| **dankest**     | 형용사 (최상급) | ① 가장 눅눅한<br>② (속어) 가장 멋진, 쩌는                           | *That was the dankest meme ever!* → 그건 진짜 쩌는 밈이었어!              |
+| **firm**        | 명사/형용사/동사 | ① 회사<br>② 단단한, 확고한<br>③ 단단하게 하다                        | *She works for a law firm.* → 그녀는 법률회사에서 일한다.                   |
+| **sear**        | 동사        | ① (요리) 겉을 빠르게 굽다<br>② (불·열로) 그을리다<br>③ (감정적으로) 마음을 찌르다 | *Sear the steak on both sides.* → 스테이크를 양쪽 면 모두 구워라.            |
+| **scales off**  | 동사구       | (비늘·페인트 등이) 벗겨지다, 떨어져 나가다                              | *The paint scaled off the wall.* → 페인트가 벽에서 벗겨졌다.               |
+| **for sole**    | 전치사구      | “오로지 ~만을 위한, 유일한” 의미<br>(보통 *for sole use/purpose* 형태) | *This room is for sole use by the manager.* → 이 방은 관리자만 사용한다.   |
+| **stand out**   | 동사구       | ① 두드러지다, 눈에 띄다<br>② 독립적이다, 뚜렷하다                        | *She stands out in the crowd.* → 그녀는 사람들 속에서 눈에 띈다.             |
+| **intimidated** | 형용사       | 겁먹은, 위축된                                               | *She felt intimidated by his tone.* → 그녀는 그의 말투에 겁먹었다.          |
+| **earthy**      | 형용사       | ① 흙 같은, 자연스러운<br>② 소박한, 꾸밈없는<br>③ (속어) 거친, 야한          | *She has an earthy sense of humor.* → 그녀는 솔직하고 소박한 유머 감각을 지녔다.  |
+
+
+
+
+
+
 
   
