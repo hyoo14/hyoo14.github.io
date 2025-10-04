@@ -203,4 +203,52 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 * hideous: 불쾌한  
  
 
+
+
+| 표현                                       | 뜻                                | 예시/설명                                       |
+| ---------------------------------------- | -------------------------------- | ------------------------------------------- |
+| **honing the skill**                     | 기술을 갈고닦다                         | She’s honing her writing skills.            |
+| **disbursed**                            | (자금 등을) 지급하다, 지출하다               | Funds were disbursed to students.           |
+| **the precision over here**              | 여기의 정확도/정밀도                      | Look at the precision over here.            |
+| **they were done with me**               | 그들이 나와 끝났다 / 더 이상 나를 원치 않는다      | After the project, they were done with me.  |
+| **I’m doing a little light score on it** | 대충/가볍게 평가하고 있다                   | I’m just doing a little light score on it.  |
+| **crippling**                            | 치명적인, 무력하게 만드는                   | crippling debt → 감당 못할 빚                    |
+| **straining**                            | 애쓰는, 무리하는 / 거르는                  | He was straining to lift the box.           |
+| **a little stuffy**                      | (공간) 답답한 / (사람·분위기) 딱딱한          | It’s a little stuffy in here.               |
+| **I have her little stuffy**             | 그녀의 인형을 가지고 있다                   | “stuffy” = 어린이식으로 봉제인형(stuffed toy)         |
+| **weed out**                             | 걸러내다, 솎아내다                       | The company is weeding out weak workers.    |
+| **plant this out**                       | (묘목을) 밖에 옮겨 심다                   | Plant this out in the garden.               |
+| **pipeable**                             | 배관으로 흘려보낼 수 있는                   | pipeable material                           |
+| **dud**                                  | 불발탄 / 실패작                        | The movie was a dud.                        |
+| **pfft**                                 | 비웃음·무시·별거 아님을 나타내는 소리            | “Pfft, that was nothing.”                   |
+| **kryptonite**                           | 치명적인 약점                          | Time management is my kryptonite.           |
+| **sensible**                             | 분별력 있는, 합리적인                     | a sensible decision                         |
+| **Maldon**                               | 영국 도시 / 유명한 바다소금 브랜드             | Maldon Sea Salt                             |
+| **coriander**                            | 고수 (영국식: 전체 / 미국식: 씨앗)           | coriander seeds = 고수 씨앗                     |
+| **chutney**                              | 인도식 과일·채소 소스                     | mango chutney                               |
+| **a (huge) shot in the dark**            | 아무 근거 없는 시도, 모험                  | It’s a huge shot in the dark, but I’ll try. |
+| **they should be scared**                | 그들은 무서워해야 한다 / 두려워하는 게 당연하다      | They should be scared after what they did.  |
+| **curd**                                 | 응유(치즈 덩어리) / 요거트(인도식) / 레몬커드(크림) | lemon curd tart                             |   
+
+
+
+* apex : 정점, 최고의  
+
+
+
+| 표현                     | 뜻                                          | 예문                                                                                      |
+| ---------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------- |
+| **best alum**          | 최고의 졸업생, 가장 성공한 출신자                        | *She was honored as the best alum of the year.* → 그녀는 올해 최고의 동문으로 선정되었다.                |
+| **grueling test**      | 매우 힘들고 고된 시험                               | *The students took a grueling test that lasted for five hours.* → 학생들은 5시간짜리 고된 시험을 봤다. |
+| **demanding faculty**  | 까다롭고 요구가 많은 교수진                            | *He studied under a very demanding faculty.* → 그는 매우 까다로운 교수진 밑에서 공부했다.                 |
+| **I can be a phantom** | 나는 유령 같은 존재가 될 수 있다 (보이지 않게, 조용히 행동할 수 있다) | *I can be a phantom in this city.* → 나는 이 도시에서 유령처럼 살 수 있다.                             |
+| **bloodbath**          | 피비린내 나는 학살 / (비유) 압도적 패배                   | *The battle turned into a bloodbath.* → 그 전투는 피비린내 나는 학살로 변했다.                          |
+| **directly off**       | ~에서 바로 옆에, 바로 연결된                          | *The kitchen is directly off the living room.* → 주방은 거실 바로 옆에 있다.                       |
+| **conundrum**          | 어려운 문제, 난제, 수수께끼 같은 상황                     | *He faced a moral conundrum.* → 그는 도덕적 난제에 직면했다.                                        |
+| **stand out**          | 눈에 띄다, 두각을 나타내다                            | *She really stands out among her peers.* → 그녀는 동료들 사이에서 정말 두드러진다.                       |
+  
+
+
+
+
   
