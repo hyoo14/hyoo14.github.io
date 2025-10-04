@@ -267,6 +267,36 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 
 
+| 표현                                 | 뜻                                                 | 자연스러운 한국어 해석          |
+| ---------------------------------- | ------------------------------------------------- | --------------------- |
+| **switching gears**                | change the topic or focus                         | 주제·방향을 바꾸다            |
+| **scallop**                        | ① 가리비 ② 얇게 썰다 ③ 물결무늬 가장자리                         | 가리비 / 얇게 썬 / 물결 모양의   |
+| **portlikker (potlikker)**         | southern term for vegetable broth                 | 채소 삶은 국물 (남부식 육수)     |
+| **whimsical**                      | playfully imaginative, quirky                     | 기발한, 엉뚱한, 환상적인        |
+| **rustic**                         | simple, rural, unrefined                          | 시골풍의, 소박한, 투박한        |
+| **we had some misses**             | we had some failures / things didn’t go perfectly | 몇 번은 잘 안 됐어, 실패도 있었어  |
+| **tyrant**                         | cruel or oppressive ruler                         | 폭군, 독재자               |
+| **don’t freak out**                | don’t panic or overreact                          | 놀라지 마, 진정해            |
+| **insecure**                       | lacking confidence / unstable                     | 자신이 없는, 불안한 / 불안정한    |
+| **intimidated**                    | feeling afraid or smaller due to someone          | (누군가 때문에) 위축된, 겁먹은    |
+| **in the weeds**                   | overwhelmed with details or work                  | 일에 파묻혀 있다, 정신없다       |
+| **imposter syndrome**              | feeling undeserving of success                    | 가짜 같은 느낌, 자기 의심       |
+| **gave it steroids / on steroids** | made something stronger or more extreme           | 훨씬 강화했다, 업그레이드했다      |
+| **meringue**                       | dessert made of whipped egg whites and sugar      | 머랭 (달걀흰자 거품 디저트)      |
+| **lackluster**                     | dull, uninspired                                  | 활기 없는, 밋밋한, 기대 이하의    |
+| **stoked on**                      | very excited about                                | ~에 신나 있다, 들떠 있다       |
+| **accountability**                 | responsibility and answerability                  | 책임, 책임감, 결과에 대한 의무    |
+| **excelled**                       | did very well, was outstanding                    | 뛰어났다, 잘했다             |
+| **amongst (among)**                | among, in the middle of                           | ~사이에, ~가운데            |
+| **right by**                       | right next to / beside                            | 바로 옆에, 곁에             |
+| **stand out**                      | be noticeable or distinctive                      | 돋보이다, 눈에 띄다           |
+| **nerve-racking**                  | extremely stressful or tense                      | 신경이 곤두서는, 긴장되는, 조마조마한 |   
+
+
+
+
+
+
 
 
   
