@@ -294,6 +294,21 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 
 
+| 단어 / 표현                                | 뜻                          | 예시 문장                                                         |
+| -------------------------------------- | -------------------------- | ------------------------------------------------------------- |
+| **don’t scorch**                       | 태우지 마라 / 그을리지 마라           | Don’t scorch the garlic. → 마늘을 태우지 마.                         |
+| **stubborn**                           | 고집 센, 완고한                  | He’s too stubborn to admit it. → 그는 너무 고집이 세.                 |
+| **time is ticking / clock is ticking** | 시간이 흘러가고 있다 / 서둘러야 한다      | The clock is ticking — hurry up! → 시간이 가고 있어, 서둘러!            |
+| **brat**                               | 버릇없는 아이, 응석받이              | Stop being a brat. → 버릇없게 굴지 마.                               |
+| **tamarind curry**                     | 타마린드(새콤한 열매)를 넣은 커리        | Tamarind curry has a tangy flavor. → 타마린드 커리는 새콤한 맛이 있다.      |
+| **go big or go home**                  | 할 거면 제대로 해라 / 중途半端하게 하지 마라 | Go big or go home! → 제대로 하자!                                  |
+| **have broken down to**                | ~로 나뉘다 / 세분되다 / 정리되다       | The data have broken down to three parts. → 데이터가 세 부분으로 나뉘었다. |
+| **break down a fish**                  | 생선을 손질하다 / 해체하다            | I’ve never broken down a fish. → 생선 손질은 안 해봤어.                |
+| **I’m chilling**                       | 그냥 쉬는 중이야 / 여유롭게 있어        | I’m just chilling at home. → 그냥 집에서 쉬고 있어.                    |
+| **queso fresco**                       | 신선한 멕시코식 생치즈               | Queso fresco is great on tacos. → 타코에 케소 프레스코가 잘 어울려.         |
+
+
+
 
 
 
