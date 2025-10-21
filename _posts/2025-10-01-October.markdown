@@ -65,6 +65,15 @@ Monday, October 20, 2025
 o    
 
 
+Tuesday, October 21, 2025  
+* research  
+o    
+
+** image gen     
+** query gen  
+---
+** bio plan extend for more rules and make auto marker(web based)  
+
 
 
 
