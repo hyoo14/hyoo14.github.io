@@ -331,6 +331,45 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 
 
+| 표현                                                                             | 기본 뜻                                       | 자연스러운 해석 / 뉘앙스                                               |
+| ------------------------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------------------ |
+| **can either make or break you**                                               | 성공시킬 수도, 망칠 수도 있다                          | 어떤 상황이 인생을 좌우할 정도로 중요함                                       |
+| **either / neither**                                                           | either = 긍정의 선택, neither = 부정의 선택          | “either A or B” (A나 B 중 하나) / “neither A nor B” (A도 B도 아님)   |
+| **me too / me either / me neither**                                            | me too = 긍정 동의 / me either·neither = 부정 동의 | “I like it.” → “Me too.” / “I don’t like it.” → “Me either.” |
+| **kudos**                                                                      | 칭찬, 존경                                     | “잘했어!”, “대단하다!” 와 같은 의미                                      |
+| **basted it**                                                                  | (요리 중) 기름이나 소스를 계속 끼얹다                     | “고기를 굽다 보면 국물을 끼얹는 동작”                                       |
+| **you’re up**                                                                  | 네 차례야                                      | “이제 네가 할 차례야”                                                |
+| **thing was gas**                                                              | (속어) 최고였어, 진짜 재밌었어                         | “That thing was amazing!” 같은 의미                              |
+| **ten out of ten**                                                             | 10점 만점에 10점                                | 완벽함, 매우 훌륭함                                                  |
+| **velvety**                                                                    | 벨벳처럼 부드러운                                  | 질감·소리·맛 등이 부드럽고 매끄러움                                         |
+| **goofiness**                                                                  | 엉뚱함, 바보스러움                                 | 귀엽게 덜 진지한 성격을 표현                                             |
+| **empanadas**                                                                  | (라틴 요리) 속이 들어간 튀김 만두                       | 보통 고기·치즈·야채를 넣은 반달형 요리                                       |
+| **tostones**                                                                   | 두 번 튀긴 플랜틴 바나나                             | 카리브 해 지역의 대표 음식                                              |
+| **repurposing**                                                                | 재활용, 용도 변경                                 | “다른 용도로 다시 쓰다”                                               |
+| **stewed**                                                                     | 푹 익힌, 조린                                   | “stewed beef” = 조린 소고기                                       |
+| **get my corn out of my husk and trim**                                        | 옥수수를 껍질 벗기고 손질하다                           | 요리 맥락에서는 **비유 아님**, 실제 행동                                    |
+| **queso fresco**                                                               | 신선한 멕시코 흰 치즈                               | 순하고 부서지는 식감, 타코·샐러드에 사용                                      |
+| **tostones / tostonas**                                                        | 플랜틴(바나나) 튀김                                | 두 번 튀겨 바삭한 카리브식 요리                                           |
+| **red mole**                                                                   | 멕시코 전통 매콤한 붉은 소스                           | 고추·견과류·초콜릿 등이 들어감                                            |
+| **on the hot seat**                                                            | 곤란한 상황에 처한                                 | 비판, 압박, 책임을 받는 자리                                            |
+| **confit a chicken**                                                           | 닭고기를 기름에 천천히 익히다                           | 프랑스식 조리법 (콩피)                                                |
+| **nutmeg**                                                                     | 육두구 (향신료)                                  | 따뜻하고 달콤한 향의 향신료                                              |
+| **allspice**                                                                   | 자메이카 피멘타 열매 향신료                            | 계피·정향·육두구 향이 섞인 듯한 풍미                                        |
+| **masa tempura**                                                               | 옥수수가루 템푸라 반죽                               | 멕시코식 옥수수 반죽 튀김옷                                              |
+| **elote**                                                                      | 멕시코식 구운 옥수수                                | 마요네즈, 치즈, 라임, 고춧가루를 얹은 길거리 간식                                |
+| **cilantro**                                                                   | 고수잎 (coriander leaves)                     | 멕시코·아시아 요리에 자주 사용                                            |
+| **Tex-Mex inspired**                                                           | 텍사스-멕시코식 퓨전에서 영감을 받은                       | 미국식 멕시코 요리 스타일                                               |
+| **really hard to follow**                                                      | 따라가기 어렵다, 이해하기 힘들다                         | 복잡하거나 설명이 어려움                                                |
+| **but more so being in that kitchen**                                          | 하지만 그보다 주방에 있는 게 더                         | “특히 그 공간에 있었던 게 더 인상 깊었다”                                    |
+| **knowing how you were feeling about things midway through**                   | 중간쯤 네 기분이 어땠는지 알고 있어서                      | “그때 얼마나 힘들었는지 알고 있어서”                                        |
+| **then seeing you stick it out**                                               | 네가 끝까지 버티는 걸 보니까                           | “포기하지 않고 해내는 걸 보니까”                                          |
+| **keep your head down and just push**                                          | 조용히 집중해서 밀고 나가라                            | “잡생각 말고 묵묵히 끝까지 해”                                           |
+| **we’re not supposed to be**                                                   | 우리가 그러면 안 된다 / 그런 존재가 아니다                  | 뒤에 문맥에 따라 “여기 있으면 안 돼”, “이러면 안 돼” 등                          |
+| **we’re not supposed to be perfect, but know what to do when it doesn’t work** | 완벽할 필요는 없지만, 안 될 때 대처할 줄 알아야 한다            | 완벽보다 회복력·대처력을 강조                                             |
+| **supposed to be**                                                             | ~하기로 되어 있다 / ~해야 한다 / ~일 줄 알았다             | 규칙, 기대, 정체성에 따라 다르게 해석됨                                      |
+
+
+
 
 
   
