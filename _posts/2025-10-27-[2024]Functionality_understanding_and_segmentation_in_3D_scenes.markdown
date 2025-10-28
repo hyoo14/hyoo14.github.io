@@ -7,7 +7,8 @@ categories: study
 
 {% highlight ruby %}
 
-한줄 요약: 이 논문에서는 3D 장면에서 기능 이해 및 분할을 위한 Fun3DU라는 새로운 방법을 제안합니다.
+한줄 요약: 이 논문에서는 3D 장면에서 기능 이해 및 분할을 위한 Fun3DU라는 새로운 방법을 제안합니다.  (LLM + VLM, -> LLama3.1 9B + Molmo(clip+vicuna) )  
+추가적으로 sementation을 위한 모델들 사용  
 
 
 짧은 요약(Abstract) :
@@ -16,6 +17,42 @@ categories: study
 
 
 The abstract of this paper discusses functionality understanding and segmentation in 3D scenes. Functionality understanding involves interpreting natural language descriptions to locate functional interactive objects (such as handles and buttons) in a 3D environment. This task is highly challenging as it requires both world knowledge and spatial perception. For instance, given a task like "turn on the ceiling light," an AI agent must locate the switch, which is not explicitly mentioned in the task description. To date, no dedicated methods have been developed for this problem. In this paper, we introduce Fun3DU, the first approach designed for functionality understanding in 3D scenes. Fun3DU leverages pre-trained vision and language models to interpret task descriptions and segment functional objects without requiring training. We evaluate Fun3DU on SceneFun3D, the only dataset available for benchmarking this task, and demonstrate that it significantly outperforms existing 3D segmentation methods.
+
+
+짧은 질문(Questions) :  
+
+Training-free 접근의 한계에 대해 어떻게 생각하시나요?
+— 완전 사전학습 모델에 의존하는 만큼, unseen scene이나 domain shift 환경에서의 일반화 성능은 어떻게 보장하나요?
+
+LLM이 functional object와 contextual object를 구분하는 과정에서 오류가 생기면, 파이프라인 전체에 어떤 영향을 주나요?
+— 예를 들어 잘못된 reasoning이 segmentation 단계까지 전파될 수 있지 않나요?
+
+Molmo + SAM 조합을 선택한 이유가 구체적으로 뭔가요?
+— LLaVA나 GroundingDINO 같은 다른 VLM을 써봤을 때 차이가 있었나요?
+
+View-selection의 KL-divergence 기반 점수 설계는 어떤 실험적 근거로 선택했나요?
+— 단순히 mask confidence 기반보다 실제로 얼마나 개선됐는지 수치적으로 설명해주실 수 있나요?
+
+Fun3DU가 LLM reasoning과 VLM segmentation을 결합했다고 했는데, 두 모듈 간의 불일치(conflict)는 어떻게 조정하나요?
+— 예를 들어 LLM이 ‘handle’을 예측했지만 VLM이 이를 인식하지 못할 때 어떻게 처리하나요?
+
+
+
+What are the main limitations of adopting a completely training-free approach?
+— Since Fun3DU fully relies on pre-trained models, how can it generalize to unseen scenes or domains with different object distributions?
+
+How does an error in the LLM’s reasoning affect the overall pipeline?
+— For instance, if the LLM misidentifies the functional or contextual object, does that error propagate to the segmentation stage?
+
+Why did you specifically choose the Molmo + SAM combination?
+— Did you compare it with other VLMs such as LLaVA or Grounding DINO, and if so, what motivated this choice?
+
+What motivated the use of KL-divergence for the view-selection score?
+— How much quantitative improvement did it bring compared to simpler metrics like mask confidence or entropy?
+
+How do you resolve conflicts between the LLM’s predictions and the VLM’s segmentation outputs?
+— For example, when the LLM predicts a “handle” but the VLM fails to detect it, how is this disagreement handled?
+  
 
 
 * Useful sentences :
