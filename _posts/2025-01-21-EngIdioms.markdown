@@ -370,6 +370,31 @@ Sonnet(소네트)**는 14행으로 구성된 정형시입니다. 주로 사랑, 
 
 
 
+| 번호 | 영어 표현 | 뜻 (한국어) | 예문 |
+|------|------------|--------------|------|
+| 1 | not supposed to be | ~하면 안 된다 / 원래 ~이 아니다 | You’re not supposed to be here. → 너 여기 있으면 안 돼. |
+| 2 | supposed to do | ~해야 한다 / ~하기로 되어 있다 | You’re supposed to do your homework. → 숙제를 해야 해. |
+| 3 | supposed to | (규칙·계획·기대·추측에 따라) ~해야 한다 / ~인 것으로 여겨진다 | The train is supposed to leave at 7. → 기차는 7시에 출발하기로 되어 있어. |
+| 4 | We’re not supposed to be perfect engineers, but know what to do when it doesn’t work. | 완벽할 필요는 없지만, 잘 안 될 때 어떻게 해야 하는지는 알아야 한다. | (완벽함보다 문제 해결 능력이 중요하다는 의미) |
+| 5 | capable of | ~할 능력이 있는 / ~할 수 있는 | She’s capable of solving the problem. → 그녀는 그 문제를 해결할 능력이 있다. |
+| 6 | capable | 유능한 / 할 수 있는 | He’s a capable leader. → 그는 유능한 리더다. |
+| 7 | would say | ~라고 말하겠다 / 내 생각엔 ~이다 (완곡한 표현) | I would say he’s kind. → 내 생각엔 그는 친절한 것 같아. |
+| 8 | has the palate | 미각이 있다 / 미식가적 감각이 있다 | She has the palate of a wine expert. → 그녀는 와인 전문가 같은 미각을 가졌다. |
+| 9 | is second guessing | (자신의 결정을) 다시 의심하다 / 확신하지 못하다 | He keeps second-guessing himself. → 그는 자꾸 자기 판단을 의심한다. |
+| 10 | tostada | (멕시코 음식) 바삭하게 구운 또르티야 위에 재료를 올린 음식 | I ordered a chicken tostada. → 치킨 토스타다를 주문했어. |
+| 11 | have rinsed | (이미) 헹궜다 / 씻어냈다 | I have rinsed the dishes. → 설거지를 헹궜어. |
+| 12 | feel validating | 인정받는 느낌이 들다 / 내 감정이 존중받는다고 느끼다 | It feels validating when someone understands you. → 누군가가 널 이해해줄 때 인정받는 느낌이 들어. |
+| 13 | Excellence heard, I got you | “좋아, 네 말 잘 들었어. 알겠어, 맡겨!” | 이해했음을 긍정적으로 표현하는 구어체 |
+| 14 | in such fashion | 그런 방식으로 / 그런 식으로 | Don’t behave in such fashion again. → 그런 식으로 행동하지 마. |
+| 15 | fell short | (기대·목표에) 미치지 못하다 / 부족했다 | The project fell short of expectations. → 프로젝트가 기대에 못 미쳤다. |
+| 16 | pick yourself back up | 다시 일어서다 / 재기하다 / 기운을 되찾다 | It’s okay to fall—just pick yourself back up. → 넘어져도 괜찮아, 다시 일어나면 돼. |
+| 17 | find out | 알아내다 / 알게 되다 / 발견하다 | I just found out the truth. → 나는 진실을 알게 됐어. |
+| 18 | the bar’s getting set higher | 기준이 점점 높아지고 있다 / 기대치가 올라가고 있다 | The bar’s getting set higher every year. → 매년 기준이 더 높아지고 있다. |
+| 19 | no room for error | 실수할 여지가 없다 / 오차가 허용되지 않는다 | There’s no room for error in this job. → 이 일에서는 실수하면 안 된다. |
+  
+
+  
+
 
 
   
