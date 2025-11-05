@@ -80,6 +80,17 @@ Tuesday, November 04, 2025
 o   
 
 
+Wednesday, November 05, 2025   
+* research  
+o   
+
+** run qvlm qimage  
+** abs sub? add ks or not?  
+** multiple cases for ssl and measuring uncertainty  
+** code for vs cluster?  
+
+
+
 
 
 
