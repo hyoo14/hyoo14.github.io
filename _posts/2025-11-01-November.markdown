@@ -15,7 +15,7 @@ categories: study
 {% highlight ruby %}
 
 
-November week2       
+November week3       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 ** plan biosyn(EA? or AC)
@@ -63,56 +63,10 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, November 03, 2025   
+Monday, November 10, 2025   
 * research  
 o   
 
-
-** aud_bias    
-*** audio-flamingo?    
-*** 2 closed model simple examples    
-** bio_plan_bench..?  
-*** agent for correction? use llm for check up and correct?  
-
-
-Tuesday, November 04, 2025   
-* research  
-o   
-
-
-Wednesday, November 05, 2025   
-* research  
-o   
-
-** run qvlm qimage  
-** abs sub? add ks or not?  
-** multiple cases for ssl and measuring uncertainty  
-** code for vs cluster?  
-
-
-Thursday, November 06, 2025   
-* research  
-o   
-
-
-** code for vs cluster?  + idea?  
-
-
-
-Friday, November 07, 2025   
-* research  
-o   
-
-
-
-Saturday, November 08, 2025   
-* research  
-o   
-
-
-Sunday, November 09, 2025   
-* research  
-o   
 
 
 
@@ -220,6 +174,119 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+November week2       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+** plan biosyn(EA? or AC)
+** diffusion+text for bio(EA? or IC (or AC or EC))    
+** bias additionally audio
+** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
+*** additionally for MOVIE?(EA? no time.. i guess)
+
+
+** ssl for dna?(PA?)  
+
+** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
+** robust dna(PA?)
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+Monday, November 03, 2025   
+* research  
+o   
+
+
+** aud_bias    
+*** audio-flamingo?    
+*** 2 closed model simple examples    
+** bio_plan_bench..?  
+*** agent for correction? use llm for check up and correct?  
+
+
+Tuesday, November 04, 2025   
+* research  
+o   
+
+
+Wednesday, November 05, 2025   
+* research  
+o   
+
+** run qvlm qimage  
+** abs sub? add ks or not?  
+** multiple cases for ssl and measuring uncertainty  
+** code for vs cluster?  
+
+
+Thursday, November 06, 2025   
+* research  
+o   
+
+
+** code for vs cluster?  + idea?  
+
+
+
+Friday, November 07, 2025   
+* research  
+o   
+
+
+
+Saturday, November 08, 2025   
+* research  
+o   
+
+
+Sunday, November 09, 2025   
+* research  
+o   
 
 
 
