@@ -15,20 +15,25 @@ categories: study
 {% highlight ruby %}
 
 
-November week3       
+November week4       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
-** plan biosyn(EA? or AC)
+* active  
+** plan biosyn(AC)   
+** db for chem(IC or BI)   
+** bias additionally audio(AC)    
+** additionally for MOVIE?(AC)   
+** ssl for dna?(BI?)  
+
+
+* wait  
 ** diffusion+text for bio(EA? or IC (or AC or EC))    
-** bias additionally audio
 ** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
-*** additionally for MOVIE?(EA? no time.. i guess)
-
-
-** ssl for dna?(PA?)  
-
 ** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
 ** robust dna(PA?)
+
+
+
 
 
 MAYBE FUTURE WORKS
@@ -63,42 +68,11 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, November 17, 2025   
+Monday, November 24, 2025   
 * research  
 o   
 
 
-
-Tuesday, November 18, 2025   
-* research  
-o   
-
-
-
-Wednesday, November 19, 2025   
-* research  
-o   
-
-
-Thursday, November 20, 2025   
-* research  
-o   
-
-
-Friday, November 21, 2025   
-* research  
-o   
-
-
-
-Saturday, November 22, 2025   
-* research  
-o   
-
-
-Sunday, November 23, 2025   
-* research  
-o   
 
 
 
@@ -207,6 +181,100 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+November week3       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+** plan biosyn(EA? or AC)
+** diffusion+text for bio(EA? or IC (or AC or EC))    
+** bias additionally audio
+** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
+*** additionally for MOVIE?(EA? no time.. i guess)
+
+
+** ssl for dna?(PA?)  
+
+** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
+** robust dna(PA?)
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+Monday, November 17, 2025   
+* research  
+o   
+
+
+
+Tuesday, November 18, 2025   
+* research  
+o   
+
+
+
+Wednesday, November 19, 2025   
+* research  
+o   
+
+
+Thursday, November 20, 2025   
+* research  
+o   
+
+
+Friday, November 21, 2025   
+* research  
+o   
+
+
+
+Saturday, November 22, 2025   
+* research  
+o   
+
+
+Sunday, November 23, 2025   
+* research  
+o   
 
 
 
