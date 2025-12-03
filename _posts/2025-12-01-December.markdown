@@ -80,6 +80,12 @@ Tuesday, December 02, 2025
 o   
 
 
+Wednesday, December 03, 2025   
+* research  
+o   
+
+
+
 * priority    
 ** APIs with tests(plan/bias)    
 ** SSL  
