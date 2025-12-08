@@ -15,7 +15,7 @@ categories: study
 {% highlight ruby %}
 
 
-December week1       
+December week2       
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
@@ -68,50 +68,20 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, December 01, 2025   
+Monday, December 08, 2025   
 * research  
 o   
 
 
 
 
-Tuesday, December 02, 2025   
-* research  
-o   
-
-
-Wednesday, December 03, 2025   
-* research  
-o   
-
-
-Thursday, December 04, 2025   
-* research  
-o   
-
-
-Friday, December 05, 2025   
-* research  
-o   
-
-
-Saturday, December 06, 2025   
-* research  
-o   
-
-
-Sunday, December 07, 2025   
-* research  
-o   
-
-
-
-
-* priority    
-** APIs with tests(plan/bias)    
-** SSL  
+* priority      
+** math    
+** movie mem       
 ** chemdb    
-** movie mem    
+** SSL    
+** APIs with tests(plan/bias)      
+** prep reb  
 
 
 
@@ -228,5 +198,111 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+December week1       
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+** plan biosyn(AC)   
+** db for chem(IC or BI)   
+** bias additionally audio(AC)    
+** additionally for MOVIE?(AC)   
+** ssl for dna?(BI?)  
+
+
+* wait  
+** diffusion+text for bio(EA? or IC (or AC or EC))    
+** fair vllm bench+Label bias(additionally EA?, WA->CV(some updates?))    
+** qiita -> emb -> setT(PA?)  (JofBio?) (acmbcb-pseudo-OTU COMPARISON(later for bio journal?)      )  
+** robust dna(PA?)
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+Monday, December 01, 2025   
+* research  
+o   
+
+
+
+
+Tuesday, December 02, 2025   
+* research  
+o   
+
+
+Wednesday, December 03, 2025   
+* research  
+o   
+
+
+Thursday, December 04, 2025   
+* research  
+o   
+
+
+Friday, December 05, 2025   
+* research  
+o   
+
+
+Saturday, December 06, 2025   
+* research  
+o   
+
+
+Sunday, December 07, 2025   
+* research  
+o   
+
+
+
+
+* priority    
+** APIs with tests(plan/bias)    
+** SSL  
+** chemdb    
+** movie mem    
 
 
