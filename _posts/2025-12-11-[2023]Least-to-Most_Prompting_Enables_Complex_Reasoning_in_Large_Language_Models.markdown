@@ -235,7 +235,7 @@ These results demonstrate that Least-to-Most Prompting is an effective method fo
 
 ### 시카고 스타일
 
-Denny Zhou, Nathanael Schärli, Le Hou, Jason Wei, Nathan Scales, Xuezhi Wang, Dale Schuurmans, Claire Cui, Olivier Bousquet, Quoc Le, and Ed Chi. "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." In *Proceedings of the International Conference on Learning Representations (ICLR).
+Denny Zhou, Nathanael Schärli, Le Hou, Jason Wei, Nathan Scales, Xuezhi Wang, Dale Schuurmans, Claire Cui, Olivier Bousquet, Quoc Le, and Ed Chi. "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models." In *Proceedings of the International Conference on Learning Representations (ICLR) 2023.
 ---
 
 
