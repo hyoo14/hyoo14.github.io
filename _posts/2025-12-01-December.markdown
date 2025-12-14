@@ -83,6 +83,7 @@ Wednesday, December 10, 2025
 * research  
 o   
 
+** math->not good..      
 
 Thursday, December 11, 2025   
 * research  
@@ -101,10 +102,15 @@ o
 
 
 
+Sunday, December 14, 2025   
+* research  
+o   
+
+
 
 
 * priority      
-** math    
+
 ** movie mem       
 ** chemdb    
 ** SSL    
