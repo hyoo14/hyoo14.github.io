@@ -75,13 +75,15 @@ o
 
 * priority      
 
-** movie mem       
-** med voice bias  
-** plan  
-** SSL new data  
+** APIs with tests(bias)    
+** APIs with tests(plan)      
+** dataset(movie mem)       
+** dataset(bias)  
 
-** APIs with tests(plan/bias)      
-** prep reb  
+
+
+** SSL new data  
+** prep rebu    
 
 
 
