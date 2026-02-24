@@ -20,6 +20,27 @@ categories: study
 This paper emphasizes the importance of recognizing whether the output of large language models (LLMs) can be grounded in evidence, which is central to many tasks in natural language processing (NLP). Current approaches to this kind of fact-checking involve verifying each piece of a model's generation against potential evidence using an LLM, but this process can be very computationally expensive. In this work, we show how to build small fact-checking models that achieve GPT-4-level performance at 400 times lower cost. We do this by constructing synthetic training data with GPT-4, which involves creating realistic yet challenging instances of factual errors through a structured generation procedure. Training on this data teaches models to check each fact in the claim and recognize the synthesis of information across sentences. For evaluation, we unify datasets from recent work on fact-checking and grounding LLM generations into a new benchmark, LLM-AGGRE FACT. Our best system, MiniCheck-FT5 (770M parameters), outperforms all systems of comparable size and reaches GPT-4 accuracy. We release LLM-AGGRE FACT, code for data synthesis, and models.
 
 
+
+데이터셋은:
+
+[GPT로 학습용 synthetic 데이터 생성]
+
+사람 문장(Claim)->GPT로 그 문장을 atomic fact->GPT-4로 “두 문장을 합쳐야만 성립하는 문장”을 생성->일부 문장을 일부러 빼서 “틀린 케이스”도 생성->(문서, 주장, 맞음/틀림) 데이터셋 만듬
+
+실제 인간 문서를 사용->GPT-4로 요약 문장 생성->문장 일부를 제거해서 일부러 틀린 claim 생성->이것도 (doc, claim, label) 데이터 만듬  
+
+
+
+더 짧은 요약:
+
+GPT를 여러 번 호출해서 fact-check 하지 말고,
+
+GPT로 생성한 synthetic data로 작은 fact-checker를 fine-tune 해서
+
+한 번의 classifier inference로 fact-check 하자.
+
+
+
 * Useful sentences :
 
 
