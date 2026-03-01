@@ -21,10 +21,12 @@ March week1
 * active  
 ** 1. int prep     
 ** 2. fair vllm bench+Label bias(?doc contact and new format)     
-** 3. plan biosyn test(arr_m or col)       
-** 4. additionally for MOVIE?(arr_m or col)        
+** 3. diffusion+text for bio(TM, additional human eval)    
 
-** diffusion+text for bio(TM)    
+** 4. plan biosyn test(arr_m or col)       
+** 5. additionally for MOVIE?(arr_m or col)        
+
+
 ** ssl for dna(NAR_g)   
 ** gene robust(NAR_g)    
 
