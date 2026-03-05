@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[2025]BioGeoFormer: A deep learning approach to classify unknown genes associated with critical biogeochemical cycles"
-date:   2026-03-05 11:21:11 -0000
+title:  "[2025]BioGeoFormer_ A deep learning approach to classify unknown genes associated with critical biogeochemical cycles"
+date:   2026-03-05 11:21:11 -0500
 categories: study
 ---
 
