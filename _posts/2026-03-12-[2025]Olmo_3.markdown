@@ -1,0 +1,974 @@
+---
+layout: post
+title:  "[2025]Olmo 3"
+date:   2026-03-12 19:23:13 -0000
+categories: study
+---
+
+{% highlight ruby %}
+
+한줄 요약: Olmo 3는 pretraining→midtraining→long-context extension으로 Base를 만든 뒤 SFT·DPO(Delta Learning)·RLVR(OlmoRL)로 Think/Instruct/RL-Zero를 후학습하며, Olmo 3.1 Think 32B가 “가장 강한 fully-open thinking 모델”이고 Instruct는 “짧고 직접적 응답/함수호출 최적화”를 달성했다고 보고합니다.  
+
+
+짧은 요약(Abstract) :
+
+
+
+이 논문은 **Olmo 3**라는 새로운 공개 언어모델(LLM) 제품군을 소개합니다. Olmo 3는 **70억(7B)** 및 **320억(32B)** 파라미터 규모로 제공되며, 다음과 같은 능력을 목표로 설계되었습니다:
+
+- **장문(롱 컨텍스트) 추론**
+- **함수 호출(function calling)**
+- **코딩**
+- **지시문 수행(instruction following)**
+- **일반 대화(chat)**
+- **지식 회상(knowledge recall)**
+
+특히 이 릴리스의 핵심은 단순히 “최종 모델 가중치만 공개”하는 것이 아니라, 모델을 만드는 전 과정인 **model flow(모델 플로우)** 전체를 공개한다는 점입니다. 즉, 모델 개발의 전 생애주기에서 사용된:
+
+- 모든 단계(stage)  
+- 모든 체크포인트(checkpoint)  
+- 모든 데이터 포인트(data point)  
+- 모든 의존성(dependency)  
+
+을 포함해 완전하게 공개하여, 연구자들이 각 단계에서 개입하거나 분석해 **무한한 커스터마이징**을 할 수 있도록 한다고 주장합니다.
+
+또한 대표 모델인 **Olmo 3.1 Think 32B**를 “현재까지 공개된(fully-open) thinking 모델 중 가장 강력한 모델”이라고 소개합니다.
+
+---
+
+
+
+They introduce **Olmo 3**, a family of state-of-the-art, fully-open language models at the 7B and 32B parameter scales. **Olmo 3** model construction targets long-context reasoning, function calling, coding, instruction following, general chat, and knowledge recall. This release includes the entire model flow, i.e., the full lifecycle of the family of models, including every stage, checkpoint, data point, and dependency used to build it. Our flagship model, **Olmo 3.1 Think 32B**, is the strongest fully-open thinking model released to-date.
+
+
+
+
+* Useful sentences :
+
+
+{% endhighlight %}
+
+<br/>
+
+[Paper link]()
+[~~Lecture link~~]()
+
+<br/>
+
+# 단어정리
+*
+
+
+<br/>
+# Methodology
+
+
+
+## 1) Olmo 3 전체 “메서드(방법론)” 개요: Model Flow(모델 플로우)
+
+Olmo 3는 단순히 “최종 가중치(weight)만 공개”하는 것이 아니라, **모델의 전체 생애주기(데이터 → 코드 → 중간 체크포인트 → 후처리까지)를 전부 공개**하는 것을 핵심 방법론으로 내세웁니다. 논문은 이를 **model flow**라고 부르며, 학습 전 단계 개입(커스터마이즈)을 가능하게 한다고 설명합니다.  
+- 근거: Abstract 및 §1 Introduction, Figure 1, Figure 2  
+- 요점: “fully-open” = 최종 모델뿐 아니라 **각 단계의 체크포인트 + 실제 학습에 사용된 데이터 믹스 + 소스 풀 + 도구/코드**까지 공개
+
+이 model flow는 크게 두 덩어리로 나뉩니다(그림 2):
+1. **Base model training**: Pretraining → Midtraining → Long-context extension  
+2. **Post-training**: Think / Instruct / RL-Zero 계열로 분화(SFT→DPO→RLVR 등)
+
+---
+
+## 2) 모델(아키텍처) 메서드: OLMo 2를 기반으로 한 Dense Transformer + 장문 컨텍스트 설계
+
+### 2.1 기본 아키텍처
+- **Decoder-only Transformer**(Vaswani et al., 2017 계열) 채택  
+- 7B / 32B 두 스케일의 **dense 모델**
+- 토크나이저는 **OLMo 2와 동일**(OpenAI cl100k 기반)  
+- 근거: §3.2, Table 33, Tokenizer 단락
+
+### 2.2 컨텍스트/어텐션 메서드(장문을 위해 구조적으로 바꾼 부분)
+Olmo 3 Base는 프리트레인/미드트레인에서 **컨텍스트 길이를 8192로 확장**(OLMo 2의 4096 → 8192). (§3.2)
+
+또한 학습/추론 비용을 제어하면서 긴 문맥을 다루기 위해 **Sliding Window Attention(SWA)** 패턴을 도입합니다.
+- 핵심: “각 토큰이 과거 전체가 아니라 **4096 토큰 윈도우**만 주로 보도록”
+- 구현: **4개 레이어 중 3개 레이어는 SWA**, 그리고 **마지막 레이어는 항상 full attention**
+- 근거: §3.2 Modeling and Architecture
+
+### 2.3 Long-context extension에서의 RoPE 확장 메서드
+컨텍스트를 8K에서 **최대 65K로 확장**할 때, RoPE 확장 전략으로 여러 방법을 실험하고 최종적으로:
+- **YaRN(Peng et al., 2023)을 “full attention 레이어에만” 적용**  
+- SWA 레이어에는 positional embedding 조정을 하지 않음
+- 근거: §3.6.4, Figure 13a
+
+---
+
+## 3) Base 모델 학습 메서드(데이터/커리큘럼/평가): 3단계(Pretrain → Midtrain → Long-context)
+
+Olmo 3 Base는 “한 번에 끝까지 프리트레인”이 아니라, 능력 목표에 맞춘 **커리큘럼형 3단계 학습**이 핵심입니다.  
+- 근거: §2.1, §3.4~§3.6
+
+### 3.1 Stage 1: Pretraining (Dolma 3 Mix, 약 5.9T 토큰)
+**Dolma 3 Mix**라는 프리트레인 데이터 믹스를 구축해 학습합니다. (표 4)
+
+#### (1) 데이터 소스 구성(대분류)
+- Common Crawl 웹페이지(대부분)
+- **olmOCR science PDFs**: 새로 공개한 학술 PDF 대규모 OCR 텍스트(중요한 “신규 소스”)
+- Stack-Edu(GitHub 코드)
+- arXiv(LaTeX 포함)
+- FineMath(수학 웹)
+- Wikipedia/Wikibooks
+- 근거: §3.4, Table 4
+
+#### (2) 프리트레인 데이터에서의 “특별한 기법/툴링” 3가지 핵심 novelty
+논문이 프리트레인에서 강조하는 새 기법은 아래 3개입니다(§3.4 서두 bullet):
+1) **Trillion-token 스케일의 빠르고 확장 가능한 글로벌 디듀플리케이션**  
+   - Duplodocus(러스트 기반) 등 도구 개발  
+   - 웹 데이터에 대해 **Exact → MinHash fuzzy → Substring(접미사 배열 기반) dedup** 3단계 적용  
+   - 근거: §3.4.1 Deduplication, duplodocus 언급
+
+2) **학술 PDF 신규 대규모 소스(olmOCR science PDFs)**  
+   - PDF를 olmOCR로 선형화 텍스트로 변환해 학습 가능하게 함  
+   - 근거: §3.4 “olmOCRscience PDFs” novelty, §3.4.2
+
+3) **데이터 선택 최적화 2가지**  
+   - **token-constrained mixing**(토큰 예산/반복 제한을 포함한 믹싱 최적화)  
+   - **quality-aware upsampling**(품질 상위 구간을 더 반복해 토큰을 배분)  
+   - 근거: §3.4 “Two new methods…”, §3.4.4, Figure 9, Figure 10
+
+즉 Olmo 3의 프리트레인 메서드는 “그냥 많은 웹을 긁어 훈련”이 아니라:
+- **중복 제거를 공격적으로 한 뒤**
+- **주제(topic)·품질(quality) 분류를 하고**
+- **토큰 예산 제약 하에서 최적 믹스를 찾고**
+- **품질 기반 업샘플링으로 고품질을 반복**
+하는 파이프라인입니다.
+
+---
+
+### 3.2 Stage 2: Midtraining (Dolma 3 Dolmino Mix, 100B 토큰)
+프리트레인 다음에 100B 토큰 규모로 **능력 부스팅용 midtraining**을 합니다. (표 5)
+
+#### (1) Midtraining의 “방법론 프레임워크” (경량 실험 + 통합 테스트)
+Midtraining은 데이터 실험을 효율적으로 하려는 방법론이 핵심입니다:
+- **microanneal**: 특정 후보 데이터 + 웹 베이스라인을 섞어 10B 정도 짧게 “anneal”해서 효과를 빠르게 측정  
+- 그 다음 유망한 것들을 모아 **integration test(100B full anneal)**로 실제 혼합 시 상호작용까지 검증  
+- 그리고 midtrained 체크포인트를 빠르게 SFT해 **post-trainability**까지 확인  
+- 근거: §3.5.1, Figure 11
+
+#### (2) Midtraining의 데이터 설계 특징
+Dolma 3 Dolmino Mix는 수학/코드/QA뿐 아니라 **instruction 데이터와 thinking traces를 의도적으로 포함**해, 이후 Think/Instruct/RL-Zero를 “잘 먹히게” 하는 베이스를 깔아둡니다.
+- 근거: §2.1 Midtraining bullet, §3.5.2(“More intentional inclusion… instruction … thinking traces”)
+
+또한 표 5를 보면 midtraining은:
+- Math(synth), Code(FIM 포함), Python synth, QA synth, Thinking synth, Instruction synth, HQ PDFs, STEM web 등으로 구성됩니다.
+- 근거: Table 5
+
+#### (3) Decontamination(오염 제거) 메서드
+Midtraining(및 long-context extension)에서는 평가셋 오염을 줄이기 위해 **decon** 패키지로 n-gram 기반 매칭/클러스터 확장으로 오염 문서를 제거합니다.
+- 근거: §3.5.3 Decontamination (decon 2-phase: detection + cluster expansion)
+
+---
+
+### 3.3 Stage 3: Long-context Extension (Dolma 3 Longmino Mix, 50B/100B)
+Olmo 3의 장문 컨텍스트는 별도 확장 단계에서 달성합니다.
+- 7B: 50B 토큰
+- 32B: 100B 토큰
+- 목표: **최대 65,536 컨텍스트** 지원
+- 근거: §3.6, Table 11
+
+#### (1) 데이터 전략
+- **olmOCR science PDFs의 “긴 문서”**가 backbone  
+- 여기에 midtraining의 “짧은 고품질 데이터”를 섞어서 짧은 작업 성능 하락을 방지  
+- 실험 결과 34% long + 66% short가 단기 성능 하락을 덜 만든다고 설명  
+- 근거: §3.6.3 “Interleaving long- and short-context data”
+
+#### (2) Synthetic augmentation(CWE/REX)
+긴 문서만으로는 장문 이해/추출 능력에 대한 “감독 신호”가 부족하므로, PDF에 대해 **합성 집계(aggregation) 과제**를 삽입하는 방식으로 synthetic data를 만듭니다:
+- CWE(Common Word Extraction): 특정 단어 출현 횟수 세기형 QA
+- REX(Rewriting Expressions): 특정 표현/개념을 다양한 스타일(대화, 퀴즈, 토론 등)로 재서술/종합하도록 하는 과제
+- 생성 모델: OLMo 2 Instruct 32B 사용
+- 근거: §3.6.2, Table 11(“olmOCR PDFs + synthCWE/REX”), Figure 13c
+
+#### (3) 학습 레시피(장문 학습 테크닉)
+- **Document packing(best-fit)**: 긴 문서 길이 분포에 맞추고 padding 낭비를 줄임  
+- **Intra-document masking**: 같은 문서 토큰끼리만 서로 보게 하여 cross-document “스푸리어스” 신호 방지  
+- **8-way context parallelism(CP)**로 65K 학습을 수행  
+- 근거: §3.6.4, §3.6.4 “LC training infrastructure”
+
+---
+
+## 4) 평가/개발 의사결정 메서드: OlmoBaseEval(클러스터링 + proxy metric + SNR 개선)
+
+Olmo 3는 “벤치마크 점수 몇 개”로 데이터 결정을 하는 대신, **작은 모델에서도 신호를 얻기 위한 평가 설계 자체를 메서드로 제시**합니다.
+
+핵심 3요소:
+1) **Task clustering**: 유사 역량을 평가하는 벤치들을 묶어 macro-average로 보아 노이즈 감소  
+2) **Proxy metrics(Base Easy, BPB)**: 작은 모델에서 pass@1이 랜덤에 가까운 영역에서는 BPB 같은 연속 지표로 의사결정  
+3) **Signal-to-noise 개선**: 너무 noisy한 태스크 제거/샘플 수 확대/생성 설정 튜닝  
+- 근거: §3.3, §3.3.1~§3.3.3, Figure 5~7
+
+---
+
+## 5) Post-training 메서드: Think / Instruct / RL-Zero (SFT → DPO → RLVR)
+
+Olmo 3의 post-training은 계열별 목표가 분명합니다.
+
+### 5.1 Olmo 3 Think: “생각 흔적(thinking trace)”를 먼저 생성한 뒤 답
+- 목표: **장문 추론(extended reasoning)**
+- 학습 단계: **SFT → DPO(Delta Learning) → RLVR(OlmoRL)**
+- 근거: §2.2, §4, Figure 2
+
+#### (1) SFT 데이터(“Dolci Think SFT”)
+- 다양한 도메인(math/code/chat/safety/IF/science)의 프롬프트를 모으고  
+- reasoning trace를 합성/정제한 뒤  
+- filtering(라이선스, 불완전 chain, 도메인 정확성 검증, 모델 아이덴티티 제거, 반복 제거, 중국어 비중 제거 등)  
+- mix 실험 후 최종 믹스 결정  
+- 근거: §4.2.1, Figure 15, Table 17
+
+#### (2) DPO: Delta Learning 기반 선호학습
+논문이 강조하는 메서드 포인트:
+- “좋은 답(chosen)을 그대로 SFT로 더 학습하면 오히려 성능이 떨어질 수 있다”
+- 대신 **chosen vs rejected의 ‘품질 격차(delta)’가 크게 나도록** pair를 구성해 DPO를 하면 이득  
+- chosen: Qwen 3 32B thinking  
+- rejected: Qwen 3 0.6B thinking (더 약한 모델)
+- 근거: §4.3, §4.3.1, Table 21
+
+#### (3) RLVR: OlmoRL (GRPO 기반 + 효율/안정화 개선)
+OlmoRL은 GRPO를 베이스로 다음을 결합한 RL 인프라/알고리즘입니다:
+- zero-gradient group filtering
+- active sampling
+- token-level loss
+- no KL loss
+- clip higher
+- truncated importance sampling
+- advantage 계산에서 std 정규화 제거  
+또한 verifier를 math/code/IF/chat까지 확장:
+- 수학: SymPy 등 rule 기반 정답 판정
+- 코드: 테스트 케이스 실행(서버리스 실행도 언급)
+- IF: 제약조건 함수로 검증
+- 챗: LLM-judge(참조 답변 유/무 모두)
+- 근거: §4.4.1(알고리즘), Figure 16(검증기), §4.4.3(인프라), Table 23(속도 개선)
+
+---
+
+### 5.2 Olmo 3 Instruct: “짧고 직접적인 응답 + 함수호출”
+- 목표: **추론 흔적을 노출하지 않고**, 일반 챗/도구사용에 최적화, 응답 지연 감소  
+- 근거: §1, §2.2, §5
+
+핵심 메서드:
+1) **Think SFT로 warm-start 후 Instruct SFT** (Table 29에서 이득을 보였다고 명시)
+2) DPO에서 **multi-turn 선호 데이터** + **길이 편향(length bias) 제어**로 “짧고 쓸만한 답” 유도
+3) RLVR로 core capability를 더 다듬되, brevity 유지  
+- 근거: §5.2.2(Think SFT warm-start), §5.3.1~§5.3.3(length control), §5.4
+
+또한 function calling 데이터셋을 크게 강조:
+- **실제 MCP 서버 상호작용 기반 궤적(Science QA, Web Search)**
+- **시뮬레이션 환경(SimFC)**으로 함수 다양성/상호작용 패턴 확장
+- 도구 정의는 OpenAPI spec, 함수 호출은 pythonic code block + special token 확장
+- 근거: §5.2.1, Table 27
+
+---
+
+### 5.3 Olmo 3 RL-Zero: Base에서 바로 RLVR
+- 목표: “Base 데이터가 RLVR 성능에 미치는 영향”을 연구 가능하게  
+- 방법: Olmo 3 Base에서 바로 RLVR을 수행하는 **완전 오픈 RL 벤치** 제공  
+- 추가로 pretrain/midtrain 데이터와 평가 오염을 피하기 위해 **decontamination을 더 강하게 적용**  
+- 근거: §2.2 RL-Zero 소개, §6
+
+---
+
+
+
+## Method overview (OLMo 3)
+OLMo 3 introduces a fully open “model flow” release: all stages, intermediate checkpoints, training data mixes/pools, and code dependencies are released (Abstract, §1; Fig. 1–2). The pipeline is split into **base training** (pretraining → midtraining → long-context extension) and **post-training** (Think / Instruct / RL-Zero).
+
+## Architecture
+A dense decoder-only Transformer (Vaswani et al., 2017), closely following OLMo 2, with:
+- 8,192-token context during pretraining/midtraining (vs 4,096 in OLMo 2)  
+- Sliding Window Attention (SWA) of 4,096 tokens in 3/4 layers, with the last layer full attention  
+- RoPE extended to 65K during long-context extension using **YaRN applied to full-attention layers only**  
+(§3.2, §3.6.4; Table 33)
+
+## Base training recipe
+### Stage 1: Pretraining on **Dolma 3 Mix** (~5.9T tokens)
+Key data/processing novelties:
+1) Trillion-scale global deduplication (Exact + MinHash fuzzy + substring dedup; Duplodocus tool)  
+2) A large new academic PDF source (**olmOCR science PDFs**)  
+3) Token selection optimization via **token-constrained mixing** + **quality-aware upsampling**  
+(§3.4; Table 4; Fig. 9–10)
+
+### Stage 2: Midtraining on **Dolma 3 Dolmino Mix** (100B tokens)
+A two-part methodology:
+- Distributed lightweight **microanneal** loops for individual sources  
+- Centralized **integration tests** on candidate 100B mixes + SFT tests for post-trainability  
+Includes instruction data and thinking traces to prime post-training, and performs **decontamination** using the `decon` toolkit.  
+(§3.5.1–3.5.3; Fig. 11; Table 5)
+
+### Stage 3: Long-context extension to 65K on **Dolma 3 Longmino Mix**
+Backbone: long olmOCR PDFs + synthetic augmentation (CWE/REX). Key training techniques:
+- Mixing long/short data to preserve short-context performance  
+- Best-fit document packing, intra-document masking, context parallelism  
+(§3.6; Table 11; Fig. 13)
+
+## Evaluation methodology (OlmoBaseEval)
+Improves development signal via:
+- Task clustering, proxy BPB metrics for small models, signal-to-noise optimization  
+(§3.3; Fig. 5–7)
+
+## Post-training
+### OLMo 3 Think: SFT → DPO (Delta Learning) → RLVR (OlmoRL)
+- DPO uses **high-contrast chosen/rejected pairs** (e.g., Qwen3-32B vs Qwen3-0.6B) to push capabilities beyond imitation saturation  
+- OlmoRL extends GRPO with multiple stabilizing/efficiency improvements and multi-domain verifiers (math/code/IF/chat)  
+(§4.2–4.4; Fig. 16–17; Table 21–23)
+
+### OLMo 3 Instruct
+Optimized for concise, direct responses and function calling:
+- Warm-start from Think SFT, multi-turn preference data, length-bias control, RL refinement  
+- Function-calling trajectories from real MCP tools + simulated environments (SimFC), unified OpenAPI format  
+(§5.2–5.4; Table 27; Table 29)
+
+### OLMo 3 RL-Zero
+Runs RLVR directly from the base model with strong decontamination to study how base data affects RL outcomes.  
+(§6)
+
+---
+
+
+
+<br/>
+# Results
+
+아래는 **제공하신 Olmo 3 논문 발췌문 중 “결과(경쟁모델, 테스트데이터, 메트릭, 비교)”에 해당하는 부분을 정리한 것입니다. 
+---
+
+## 1) 이 논문에서 “결과(Results)”는 무엇을 의미하나?
+
+논문은 Olmo 3를 단일 모델로만 내놓는 것이 아니라, **모델 생애주기 전체(model flow)**를 공개하며 그 과정에서 나온 여러 변형을 함께 평가합니다.
+
+- **Base 모델(Olmo 3 Base, 7B/32B)**: 사전학습/중간학습/롱컨텍스트 확장까지 포함하는 기반 모델
+- **Think(추론형, reasoning trace 생성)**: SFT → DPO → RLVR로 “생각(think)” 출력 후 최종 답을 내는 모델
+- **Instruct(대화/도구사용/짧고 직접적인 응답 지향)**: Think와 달리 내부 thinking trace를 출력하지 않도록 최적화
+- **RL-Zero**: Base에서 바로 RLVR을 수행해 “사전학습 데이터가 RL 성능에 미치는 영향” 연구가 가능하도록 만든 계열
+
+이 중 질문의 “결과”는 크게 두 축으로 제공됩니다.
+
+1. **Base 모델 결과**: OlmoBaseEval 중심의 base capability 비교 (Table 2, 3) + 롱컨텍스트 벤치(RULER/HELMET; Table 12)
+2. **Post-training 결과(Think/Instruct)**: 수학/추론/코딩/IF/지식/대화/툴사용 등을 포함한 post-train eval suite 비교 (Table 1, 14, 15, 25, 26)
+
+---
+
+## 2) Base 모델 결과: 경쟁모델, 테스트데이터(벤치), 메트릭, 비교
+
+### 2.1 Base 모델 평가에 쓰인 벤치마크/메트릭(=테스트데이터)
+논문은 base 모델 개발을 위해 **OlmoBaseEval**이라는 평가 묶음을 만듭니다. 핵심은 “개별 벤치 점수”가 아니라 **유사 능력별 task cluster 평균**(Math/Code/MCQA/GenQA 등)을 본다는 점입니다.
+
+발췌문에서 Base 결과는 주로 다음으로 제시됩니다.
+
+- **OlmoBaseEval Math / Code / MC STEM / MC Non-STEM / GenQA** 등의 **클러스터 평균**
+- 각 클러스터를 구성하는 대표 벤치 예:
+  - Math: GSM8K, GSM Symbolic, MATH 등
+  - Code: HumanEval, MBPP, BigCodeBench, DS-1000, DeepSeek LeetCode 등
+  - MCQA: ARC, MMLU STEM/Humanities/Social Sci/Other, MedQA/MedMCQA, SciQ 등
+  - GenQA: DROP, Jeopardy, NaturalQs, SQuAD, CoQA 등
+- “Held-out” 벤치도 별도로 둠: **MMLU Pro, DeepMind Math, LBPP, BBH** (본문: §3.3.4)
+
+### 2.2 Base 32B 경쟁모델 비교 (Table 2 핵심)
+Table 2는 **Olmo 3 Base 32B**를 다음과 같은 **fully-open 모델들과 open-weight 모델들**과 비교합니다.
+
+- Fully-open 쪽 예: Marin 32B, Apertus 70B, LLM360 K2V2 70B, OLMo 2 32B 등
+- Open-weight 쪽 예: Qwen 2.5 32B, Gemma 3 27B, Mistral 3.1 24B, Llama 3.1 70B 등
+
+비교 포인트(논문 서술 요약, §3.1 + Table 2):
+- 논문은 **“Olmo 3 Base는 32B fully-open 중 최고”**라고 주장합니다.
+- 특히 **Math/Code composite에서 fully-open 대비 두 자릿수 개선**, open-weight 강자(Qwen 등)와 격차를 줄였다고 서술합니다.
+- 반면 MCQA/GenQA 영역은 fully-open 내 상위권(예: Marin/OLMo2와 비슷한 군)이나, 일부 open-weight 최상위에 비해 뒤처질 수 있음을 같이 언급합니다.
+
+Table 2에서 직접 보이는 예(일부):
+- OlmoBaseEval Math: **Olmo 3 32B 61.9**, Marin 32B 49.3, Apertus 70B 39.7, OLMo 2 32B 53.9, Qwen2.5 32B 64.7
+- OlmoBaseEval Code: **Olmo 3 32B 39.7**, Marin 32B 30.8, Apertus 70B 23.3, OLMo 2 32B 20.5, Qwen2.5 32B 48.3
+- MMLU: **Olmo 3 32B 70.8(STEM)/78.3(Humanities)/84.0(Social Sci)** 등(표 전반에 상세)
+
+### 2.3 Base 7B 경쟁모델 비교 (Table 3 핵심)
+Table 3은 **Olmo 3 Base 7B**를 fully-open 7~8B급(예: Marin 8B, Apertus 8B, OLMo 2 7B) 및 open-weight 7~9B급(Qwen3 8B, Nemotron Nano 9B, Gemma2 9B, Llama3.1 8B 등)과 비교합니다.
+
+논문 서술 요지(§3.1 + Table 3):
+- 7B에서도 **fully-open 내 Math/Code 최강**이라고 주장
+- Qwen/Nemotron 같은 open-weight 최상위 강자에는 일부 지표에서 뒤처질 수 있으나, fully-open 기준 “큰 격차”로 앞선다는 프레이밍
+
+Table 3 일부 예:
+- OlmoBaseEval Math: **Olmo 3 7B 54.7** vs OLMo2 7B 41.7, Marin 8B 39.6, Qwen3 8B 67.2
+- OlmoBaseEval Code: **Olmo 3 7B 30.7** vs OLMo2 7B 10.4, Marin 8B 21.4, Qwen3 8B 46.1
+- MATH: Olmo 3 7B 40.0, Qwen3 8B 51.6 등
+
+---
+
+## 3) Long-context 결과: RULER/HELMET로 비교 (Table 12)
+
+### 3.1 테스트데이터(벤치마크)
+논문은 장문맥을 다음 두 벤치로 평가합니다.
+
+- **RULER** (Hsieh et al., 2024): “개발(dev)용” long-context synthetic 중심 평가
+- **HELMET** (Yen et al., 2025): “held-out(미리 안 보고 최종 확인)” long-context 종합 평가
+
+(본문 §3.6 “Overall results… Table 12”)
+
+### 3.2 경쟁모델 및 비교 (Table 12)
+Table 12는 base 모델 long-context 성능을 비교하며, 최소 32K 이상 컨텍스트 지원하는 모델만 포함합니다.
+
+예시(발췌에서 보이는 비교 구도):
+- 7B급: Llama 3.1 8B, Qwen 2.5 7B, Granite 3.3 8B, Qwen3 8B(32K까지만), MiMo 7B(32K까지만), Nemotron Nano 9B, Apertus 8B, **Olmo 3 7B**
+- 32B급: Qwen2.5 32B, Gemma3 27B, Mistral Small 3.1 24B, Apertus 70B, **Olmo 3 32B**
+
+메트릭은 각 컨텍스트 길이(4K/8K/16K/32K/65K)별 평균 점수.
+
+Olmo 3의 핵심 주장(§3.6 서술):
+- Olmo 3는 **최대 65K 컨텍스트** 지원
+- 비교 모델(Qwen2.5 32B, Mistral Small 3.1 24B, Gemma3 27B 등)과 **경쟁 가능한 수준**이라고 기술
+- 확장 토큰 예산은 7B는 50B, 32B는 100B로 비교적 짧은 확장이라 강조
+
+---
+
+## 4) Think(추론형) 결과: SFT/DPO/RL 단계를 포함한 경쟁 비교 (Table 1, 14, 15)
+
+### 4.1 Think 평가 suite(테스트데이터/벤치)
+Think/Instruct 등 post-trained 모델은 §4.1.1 및 Table 16에 나온 벤치로 평가합니다. 범주가 명확합니다:
+
+- Math: MATH, AIME 2024/2025, OMEGA
+- Reasoning: BigBenchHard, ZebraLogic, AGI Eval English
+- Coding: HumanEvalPlus, MBPP+, LiveCodeBench v3
+- IF: IFEval, IFBench
+- Knowledge & QA: MMLU, PopQA, GPQA
+- Chat: AlpacaEval 2 LC
+(안전(safety)도 별도로 포함되며 Table 14/15/1에 “Safety”가 있음)
+
+중요한 평가 설정: **reasoning model의 <think>…</think>는 채점 전에 제거**(Table 16 설명)
+
+### 4.2 32B Think: “가장 강한 fully-open thinking model” 주장 근거 (Table 1 + Table 14)
+- Table 1은 “flagship: **Olmo 3.1 Think 32B**”를 여러 모델과 비교한 스냅샷.
+- 경쟁군: (Fully-open) OLMo2 Instruct 32B, Apertus Instruct 70B, LLM360 K2-V2 Instruct 70B  
+  (Open-weight) Qwen3 32B, Qwen3 VL 32B Think, Qwen2.5 32B, Gemma 3/2 27B, DS-R1 32B 등
+
+논문이 직접 말하는 비교(§2.3 Results + Table 1 주변):
+- “To the best of our knowledge, **Olmo 3 Think is the strongest fully-open thinking model** to date.”
+- “Qwen 3 32B thinking과 reasoning benchmark에서 경쟁적이며, **6x fewer tokens**로 훈련”했다고 주장(§1)
+
+또한 Table 14는 Olmo 3 Think 32B의 **SFT → DPO → RL** 단계별 점수 변화를 보여주며,
+- 최종 **Think 3.1**이 3.0보다 AIME, ZebraLogic, IFEval/IFBench 등에서 크게 상승했다고 서술(§4.1.2)
+
+예: Table 14에서
+- AIME 2024: Think 3.0 76.8 → Think 3.1 80.6
+- IFBench: Think 3.0 47.6 → Think 3.1 68.1
+- (반면 AlpacaEval은 5점 하락했다고 텍스트로 언급)
+
+### 4.3 7B Think 경쟁 비교 (Table 15)
+Table 15는 7B Think를 다음과 비교:
+- OpenThinker3 7B, Nemotron Nano 9B v2, DS-R1 Qwen 7B, Qwen3 8B, Qwen3 VL 8B Think, OR Nemotron 7B 등
+
+논문은 “Olmo 3 Think-7B가 여러 강한 open-weight thinking 모델보다 낫다”는 식으로 포지셔닝하며,
+- 특히 math/coding/IF 등에서 단계별 개선(SFT→DPO→최종)도 같이 제시합니다.
+
+---
+
+## 5) Instruct 결과: 일반 대화 + function calling까지 포함 (Table 25, 26)
+
+### 5.1 Instruct 평가에서 Think 대비 추가되는 “툴 사용” 벤치
+§5.1과 Table 25/26에서 Instruct는 Think의 벤치에 더해:
+- Tool Use: **SimpleQA, LitQA2, BFCL**(Berkeley Function Calling Leaderboard)
+
+이게 “테스트데이터(벤치)” 측면에서 Think와 가장 큰 차이입니다.
+
+### 5.2 32B Instruct 경쟁 비교 (Table 25)
+Table 25는 **Olmo 3.1 32B Instruct**를 비교합니다:
+- Apertus 70B, Qwen3 32B(no thinking), Qwen3 VL 32B Instruct, Qwen2.5 32B, Gemma3/2 27B, OLMo2 32B 등
+
+논문 주장(§5.1):
+- “Olmo 3.1 Instruct 32B가 동급 다수 오픈 모델을 상회”
+- IFBench 39.7, AIME 2025 57.9 등 특정 지표 강조
+
+### 5.3 7B Instruct 경쟁 비교 (Table 26)
+Table 26은 **Olmo 3 Instruct 7B** vs Qwen3 8B, Qwen3 VL 8B Inst, Qwen2.5 7B, OLMo2 7B Inst, Apertus 8B Inst, Granite 3.3 8B Inst
+
+Instruct는 “짧고 직접적인 응답” 및 “function calling 최적화”를 명시적으로 목표로 둡니다(§1, §2.2, §5 서술).
+
+---
+
+
+
+## 1) What “Results” mean in this paper
+The paper evaluates a *family* of fully-open models across the entire “model flow” (data, code, intermediate checkpoints), not just final weights. It reports results for:
+- **Olmo 3 Base (7B/32B)**: pretrained + midtrained + long-context extended foundations
+- **Olmo 3 Think**: reasoning models trained with **SFT → DPO → RLVR**
+- **Olmo 3 Instruct**: shorter, more direct responses; tool/function calling emphasis
+- **Olmo 3 RL-Zero**: RLVR trained directly from Base to study how pretraining data affects RL
+
+## 2) Base-model results (benchmarks/metrics, competitors, comparisons)
+### Benchmarks / metrics (OlmoBaseEval)
+Base development uses **OlmoBaseEval**, reporting macro-averages over capability clusters:
+- **Math, Code, MCQA STEM, MCQA Non-STEM, GenQA**, plus held-out benchmarks (MMLU Pro, DeepMind Math, LBPP, BBH).
+
+### 32B Base comparison (Table 2)
+Compares **Olmo 3 Base 32B** to fully-open models (Marin 32B, Apertus 70B, OLMo 2 32B, etc.) and open-weight models (Qwen 2.5 32B, Gemma 3 27B, Mistral 3.1 24B, Llama 3.1 70B, etc.).  
+The paper claims Olmo 3 Base is the **best fully-open 32B base model**, especially strong on Math/Code composites.
+
+### 7B Base comparison (Table 3)
+Compares **Olmo 3 Base 7B** to fully-open 7–8B (Marin 8B, Apertus 8B, OLMo 2 7B) and open-weight (Qwen3 8B, Nemotron Nano 9B, Gemma2 9B, etc.).  
+Claim: strongest **fully-open** 7B-class on Math/Code.
+
+## 3) Long-context results (Table 12)
+Benchmarks:
+- **RULER** (dev suite)
+- **HELMET** (held-out evaluation)
+Models compared include Llama 3.1 8B, Qwen 2.5 7B/32B, Gemma 3 27B, Mistral Small 3.1 24B, Apertus, etc.  
+Olmo 3 supports **up to 65K** context and is reported as competitive with strong open-weight baselines.
+
+## 4) Think results (Tables 1, 14, 15)
+Post-training eval suite (Table 16) covers:
+- Math (MATH, AIME 2024/2025, OMEGA)
+- Reasoning (BBH, ZebraLogic, AGI Eval)
+- Coding (HumanEvalPlus, MBPP+, LiveCodeBench)
+- Instruction following (IFEval, IFBench)
+- Knowledge/QA (MMLU, PopQA, GPQA)
+- Chat (AlpacaEval 2 LC)
+
+Table 1/Table 14 position **Olmo 3.1 Think 32B** as the strongest **fully-open** thinking model, competitive with Qwen 3 32B while trained on fewer tokens; Table 15 provides 7B Think comparisons.
+
+## 5) Instruct results (Tables 25, 26)
+Instruct evaluation adds tool-use benchmarks:
+- **SimpleQA, LitQA2, BFCL**  
+Table 25 compares **Olmo 3.1 32B Instruct** to Apertus 70B, Qwen3 32B (no-thinking), Qwen3 VL 32B Instruct, Qwen2.5 32B, Gemma 3 27B, etc.  
+Table 26 provides 7B comparisons.
+
+---
+
+
+
+<br/>
+# 예제
+
+
+
+
+## 1) 베이스모델 학습(Pretraining/Midtraining) 단계의 “데이터 구성” 예시
+
+### 1.1 (Pretraining) Dolma 3 Mix: 어떤 종류의 입력 텍스트를 학습했나? (Table 4)
+논문은 프리트레인 데이터를 “문서 텍스트”로 학습한다고 보고, **소스별 토큰/문서 수와 비율**을 표로 제시합니다.
+
+- **Common Crawl 웹페이지 텍스트**
+- **olmOCR science PDFs (학술 PDF를 OCR/추출하여 선형 텍스트화)**
+- **Stack-Edu GitHub 코드**
+- **arXiv LaTeX 논문**
+- **FineMath (수학 웹페이지)**
+- **Wikipedia/Wikibooks**
+
+즉, 이 단계에서 모델 입력은 전형적으로:
+- “웹페이지 본문 텍스트”  
+- “PDF에서 뽑아낸 학술 문서 텍스트(길고 구조적일 수 있음)”  
+- “코드 파일 텍스트”  
+- “LaTeX 수식/증명 포함 문서 텍스트”
+같은 형태입니다.
+
+> 관련 부분: §3.4 및 **Table 4** (“Composition of Dolma 3 Mix …”)
+
+---
+
+### 1.2 (Midtraining) Dolma 3 Dolmino Mix: “태스크 데이터(수학/코드/QA/Instruction/Thinking traces)”를 섞는 예시 (Table 5)
+미드트레인은 프리트레인과 달리, **의도적으로 ‘태스크 지향 데이터’와 ‘생각(추론) 트레이스’**를 포함합니다. 논문은 소스들을 크게 다음처럼 나눠 보여줍니다.
+
+- **Math (synthetic)**: TinyMATH, CraneMath, MegaMatt, Dolmino Math 등
+- **Code**: StackEdu(FIM), CraneCode 등
+- **QA (synthetic)**: Reddit-to-Flashcards, Wiki-to-RCQA, Nemotron Synth QA 등
+- **Thinking traces (synthetic/filtered)**: Meta-reasoning, Program-verifiable, OMR rewrites, OpenThoughts2, QWQ traces 등
+- **Instruction (synthetic)**: Tulu3 SFT, Flan subset 등
+- **High-quality Web/PDF**: HQ subset의 Common Crawl, HQ subset의 olmOCR PDFs, STEM-heavy crawl 등
+
+이 단계에서 중요한 점은 “데이터가 단순 텍스트가 아니라, 문제-풀이/질문-답/지시-응답/생각-답 같은 구조를 갖는 샘플”이 많이 들어간다는 것입니다.
+
+> 관련 부분: §3.5 및 **Table 5** (“Composition of the midtraining data (Dolma 3 Dolmino Mix)”)
+
+---
+
+## 2) “Thinking 모델(Olmo 3 Think)” 관련: 입력/출력 형식과 태스크 예시
+
+### 2.1 추론(thinking) 출력이 있는 모델의 전형적 출력 구조: `<think>...</think>` + 최종답
+논문은 post-training(특히 Think)에서 **“중간 thinking trace를 생성한 뒤 최종 답을 출력”**하도록 학습한다고 명시합니다.
+
+또한 평가 시에는:
+- **`<think>...</think>` 구간은 정답 채점(Answer scorer) 전에 제거(strip)** 한다고 밝힙니다.
+
+> 관련 부분: §4 서두(Think 설명), 그리고 **Table 16** 캡션:  
+> “All evaluation generations have thinking traces (text between `<think>...</think>`) stripped before passing to the answer scorer.”
+
+즉, (개념적 예시)
+- **모델 출력(원문)**:  
+  - `<think>...긴 추론...</think>\n정답: ...`
+- **채점기 입력(스트립 후)**:  
+  - `정답: ...`
+
+---
+
+### 2.2 (RLVR) 보상 설계 예시: “검증 가능한 태스크 vs 비검증 태스크” (Figure 16)
+논문은 강화학습(RLVR)에서 “도메인별 verifier(검증기)”를 다르게 둡니다. **Figure 16**이 매우 구체적으로 “입력 프롬프트/예측/보상/정답 비교 방식”을 예시 형태로 보여줍니다.
+
+#### (a) Instruction Following(정밀 지시 준수) 예시
+- **프롬프트**:  
+  “How can I detect and handle counterfeit money?  
+  - There should be exactly 2 paragraphs  
+  - Paragraphs should be separated with ***  
+  - Use all lowercase  
+  - Include the keyword ‘coast’”
+- **모델 예측(Prediction)**: 예시 문장(조건 일부 충족/일부 실패 가능)
+- **보상(Reward)**:  
+  “# satisfied constraints / #constraints”로 계산  
+  (또는 모든 조건 만족하면 1, 아니면 0)
+
+즉 **테스크 자체가 ‘형식/제약 조건을 얼마나 지켰는가’를 코드로 검사 가능**하도록 설계되어 있습니다.
+
+> 관련 부분: §4.4.1 “Verifiers” 항목 + **Figure 16**
+
+#### (b) Math(수학) 예시
+- **프롬프트**: 수학 문제(예: “Steve guesses randomly … probability …”)
+- **정답(Gold Answer)**: 0.5 같은 값
+- **검증**:  
+  - “Equivalence checker(동치성 검사)”로 예측 답과 정답이 같은지 판단  
+  - 맞으면 1, 틀리면 0의 보상
+
+> 관련 부분: §4.4.1 “Math verifier” + **Figure 16**
+
+#### (c) Code(코드) 예시
+- **프롬프트**:  
+  “Given an integer n … trailing zeroes in n! … def fun(n: int) -> int: …”
+- **모델 예측**: 파이썬 함수 코드
+- **테스트케이스(예시)**:
+  - `assert fun(1) == 0`
+  - `assert fun(5) == 1`
+  - `assert fun(25) == 6`
+  - `assert fun(100) == 24`
+- **보상**:
+  - (실험에 따라) “통과한 테스트 비율” 또는 “전부 통과하면 1 아니면 0”
+
+> 관련 부분: §4.4.1 “Code verifier” + **Figure 16**
+
+#### (d) General Chat(일반 대화) 예시
+- (참조 답이 있는 경우) 모델 답 vs 레퍼런스 답을 **LLM-as-a-judge**가 점수 [0,1]로 평가
+- (참조 답이 없는 경우) 답변 품질을 judge가 직접 [0,1]로 평가
+
+> 관련 부분: §4.4.1 “Chat—reference / Chat—open-ended” + **Figure 16**, 그리고 LLM judge 프롬프트는 부록 **Figure 40**
+
+---
+
+## 3) “RL-Zero” 관련: 실제 학습 프롬프트 템플릿(수학) 예시 (Appendix Figure 37)
+
+논문 부록에는 **RL-Zero의 수학 도메인 프롬프트 템플릿**을 그대로 제공합니다.
+
+### 3.1 RL-Zero Math Prompt 템플릿(입력 프롬프트 예시)
+(논문 그대로의 구조 요약)
+- “Solve the following math problem step by step.”
+- “The last line of your response should be the answer in form: `Answer: $Answer`”
+- `{Math Question}` 자리에는 실제 문제 텍스트가 들어감
+- 마지막 줄에 “Answer:” 뒤로 정답만 두도록 강제
+
+> 관련 부분: Appendix **Figure 37** “RL-Zero Prompt for Math Task.”
+
+이건 곧 **트레이닝 인풋(프롬프트) 형태**를 매우 구체적으로 규정하는 예시입니다.
+
+---
+
+## 4) 툴/함수호출(Function calling) 학습: “시뮬레이션 상호작용” 프롬프트 예시 (Figure 42, 43)
+
+Olmo 3 Instruct에서는 함수호출/툴유즈를 위해 **데이터를 새로 만들고**, 그 생성 프롬프트(메타 프롬프트)를 부록에 제공합니다.
+
+### 4.1 시뮬레이션된 멀티턴 함수호출 상호작용 생성 프롬프트 (Figure 42)
+핵심 요구사항(논문 프롬프트 내용):
+- API가 JSON으로 주어짐
+- “user / assistant / environment” 역할이 등장하는 **대화 리스트**를 파이썬 dict로 생성
+- assistant가 함수 호출할 땐 `"content"` 대신 `"function_calls"` 필드로 표시
+- 최소 5번 이상의 함수 호출 포함
+- 매 턴 끝에 assistant는 텍스트로 사용자에게 설명/응답
+
+또한 예시를 들어:
+- 사용자가 “How many users with the name Yoda exist?” 질문
+- assistant가 `get_user_info(prefix='Yoda')` 같은 호출
+- environment가 `{"results": [{"id": 23}]}` 같은 JSON 결과를 반환
+- assistant가 자연어로 요약
+
+> 관련 부분: §5.2.1 + Appendix **Figure 42**
+
+### 4.2 “툴로는 해결 불가한 요청에 대한 거절(refusal) 생성 프롬프트” (Figure 43)
+핵심 요구사항:
+- API와 “비슷한 도메인”이지만 API로는 처리 불가능한 요청을 만들기
+- assistant는 기능을 환각하지 말고, **왜 불가능한지 API 함수 기준으로 간결하고 정확하게 거절**
+- environment output은 필요 없음
+- user/assistant 대화 형태로 짧게
+
+> 관련 부분: §5.2.1 + Appendix **Figure 43**
+
+이 둘은 “훈련 데이터 자체”라기보다, **훈련 데이터를 만들기 위한 생성 프롬프트**의 구체 예시입니다. 하지만 질문하신 “구체적인 인풋/아웃풋, 테스크” 관점에서는, *모델이 학습할 멀티턴 tool-use 트래젝토리*의 형식을 사실상 규정합니다.
+
+---
+
+## 5) (Decontamination) “오염 예시”로 제시된 학습문서/평가문항 포맷 (Appendix A.5)
+
+논문은 decontamination을 설명하면서 **훈련 문서가 평가셋을 베끼는 대표적 형태**를 코드/JSON 스타일로 예시합니다.
+
+### 5.1 지식 QA 오염 예시 (Figure 33)
+- **Eval**:  
+  `{"question": "...Eiffel Tower...", "answer": "1889"}`
+- **Training Document**:  
+  `{"text": "Welcome to 1000 facts. 1. What year ... A: 1889"}`
+
+즉, 평가 문항이 거의 그대로 훈련 텍스트로 들어간 케이스.
+
+### 5.2 수학/추론 오염 예시 (Figure 34)
+- **Eval**: 방정식 문제 + 해설식 답변
+- **Training Document**: “Here’s a math problem solution: …” 형태로 해설이 그대로 포함
+
+### 5.3 RC(지문+질문) 오염 예시 (Figure 35)
+- Eval에 passage + question + answer가 있고,
+- training document에 passage/QA가 그대로 포함되는 형태
+
+> 관련 부분: Appendix **A.5.2** 및 Figure 33~35
+
+---
+
+
+## 1) Base model training data examples (source types)
+- **Pretraining (Dolma 3 Mix, Table 4):** web pages (Common Crawl), academic PDFs converted with **olmOCR**, GitHub code (Stack-Edu), arXiv LaTeX, FineMath pages, Wikipedia/Wikibooks.  
+These are primarily *raw document texts* used as LM training sequences.
+
+- **Midtraining (Dolma 3 Dolmino Mix, Table 5):** task-like data sources for **math/code/QA/instruction/thinking traces** plus high-quality web/PDF subsets. This stage includes structured examples such as Q&A pairs, instruction-response, and reasoning traces.
+
+## 2) Thinking model format and evaluation handling
+- OLMo 3 Think is trained to produce a **thinking trace** followed by a final answer. During evaluation, the paper states that **text inside `<think>...</think>` is stripped before scoring** (Table 16 note).
+
+## 3) RLVR verifier/reward examples (Figure 16)
+The paper provides concrete examples of prompts, predictions, and rewards:
+
+- **Instruction Following:** constraints like “exactly 2 paragraphs”, “separated with ***”, “all lowercase”, include keyword “coast”; reward based on constraint satisfaction.
+- **Math:** equivalence checking against a gold answer (binary reward).
+- **Code:** unit-test based verification with asserts like `assert fun(25) == 6`; reward based on pass rate or all-pass binary.
+- **General chat:** LLM-as-a-judge scoring in [0,1], either with a reference answer or open-ended.
+
+## 4) RL-Zero math prompt template (Appendix Figure 37)
+A concrete RL-Zero math prompt template is shown, requiring:
+- step-by-step solution
+- final line formatted exactly as `Answer: $Answer`
+
+## 5) Function-calling / tool-use synthetic interaction prompts (Appendix Figure 42, 43)
+- **Figure 42:** a meta-prompt to generate multi-turn, multi-step tool-use trajectories with `user/assistant/environment` roles, where tool calls appear in a `function_calls` field.
+- **Figure 43:** a meta-prompt to generate *refusals* when a user request is related to the API but not solvable using it.
+
+## 6) Decontamination contamination examples (Appendix A.5.2)
+Figures 33–35 show toy examples of eval items and corresponding contaminated training documents:
+- knowledge QA (Eiffel Tower year)
+- math reasoning solution leakage
+- passage-based QA leakage
+
+---
+
+
+
+<br/>
+# 요약
+
+Olmo 3는 pretraining→midtraining→long-context extension으로 Base를 만든 뒤 SFT·DPO(Delta Learning)·RLVR(OlmoRL)로 Think/Instruct/RL-Zero를 후학습하며, Olmo 3.1 Think 32B가 “가장 강한 fully-open thinking 모델”이고 Instruct는 “짧고 직접적 응답/함수호출 최적화”를 달성했다고 보고합니다. 긴 문맥은 olmOCR science PDFs 기반 Longmino(+CWE/REX 합성 집계 태스크)로 65K까지 확장, DPO는 Qwen3-32B(선호) vs Qwen3-0.6B(비선호)로 대비쌍을 만들고, RLVR은 수학 정답검증·코드 테스트·IF 제약검사·채팅 LLM-judge 보상으로 학습합니다. 또한 비용 예시로 32B Think 체크포인트까지 약 56일(1024 H100 기준) 및 시간/단계별(프리트레인 약 47일, 포스트트레인 약 9일) 경과를 제시합니다.
+
+
+
+
+Olmo 3 builds a Base model via pretraining→midtraining→long-context extension, then post-trains into Think/Instruct/RL-Zero using SFT, DPO (with Delta Learning), and RLVR under the OlmoRL framework. The paper claims Olmo 3.1 Think 32B is the strongest fully-open thinking model to date, while Olmo 3 Instruct targets shorter, more direct responses and function calling. Long-context is extended to 65K using Longmino built from olmOCR science PDFs plus synthetic aggregation tasks (CWE/REX); DPO pairs Qwen3-32B (chosen) vs Qwen3-0.6B (rejected); and RLVR uses verifiers for math correctness, code unit tests, instruction constraints, and LLM-as-judge chat rewards, with a reported ~56-day wall-clock training path to the 32B Think checkpoint on 1024 H100s.
+
+<br/>
+# 기타
+
+
+
+---
+
+## 1) 다이어그램/피규어: 결과 & 인사이트
+
+### Figure 1 (모델 플로우 vs 오픈-웨이트)
+- **결과**: “Fully-open model flow”는 최종 가중치뿐 아니라 **중간 체크포인트/데이터/코드**까지 공개해, 중간 단계 성능(베이지 구간)을 연구할 수 있음을 시각화. Olmo 3 Think 32B가 Qwen 3 32B(오픈 웨이트)와 경쟁적이며, **Olmo 3 Base 32B는 fully-open 베이스 중 최상**이라고 주장.
+- **인사이트**: 논문의 핵심 기조인 *“endpoint(가중치) 공개”가 아니라 “flow(전 과정) 공개”*가 연구/재현/오염추적에 본질적으로 유리하다는 메시지를 첫 그림에서 고정합니다.
+
+### Figure 2 (Olmo 3 전체 파이프라인)
+- **결과**: Base(Pretrain→Midtrain→Long context) 후에 Think/Instruct/RL-Zero로 분기되는 전체 개발 흐름을 제시.
+- **인사이트**: Olmo 3의 기여는 단일 모델이 아니라 **레시피+데이터+RL 인프라까지 포함한 “모델 계열/개발 공정”**이라는 점을 구조적으로 강조합니다.
+
+### Figure 8 (Dolma 3 Mix 데이터 큐레이션 파이프라인)
+- **결과**: CommonCrawl/Science PDF(olmOCR)/Github 코드 등 소스별 **추출→필터→중복제거→토픽&퀄리티 분류→믹싱→퀄리티 업샘플링** 단계를 도식화.
+- **인사이트**: 단순히 “데이터 많이”가 아니라, *대규모에서의 dedup + 토픽/퀄리티 기반 제어*가 핵심 성능 레버라는 주장(특히 STEM upweight)을 뒷받침.
+
+### Figure 9 (Constrained data mixing 효과)
+- **결과**: (좌) 자연 분포 vs 학습된 믹스 분포 차이를 보여주고, (우) 그 결과로 여러 벤치에서 **BPB(bits-per-byte) 개선**이 나타남을 제시.
+- **인사이트**: “토큰 예산이 고정된 상황에서 **어떤 도메인을 얼마나 섞는가**가 성능을 크게 바꾼다”를 실험적으로 정당화. 특히 **STEM/소프트웨어 개발 도메인**이 올라가는 것이 핵심.
+
+### Figure 10 (Quality-aware upsampling 곡선)
+- **결과**: 상위 퀄리티 구간을 더 많이 반복(최대 7x), 하위 40% discard 같은 형태의 **비선형 업샘플링** 예시.
+- **인사이트**: flat filtering(상위 x%만)보다, **최상위 퀄리티를 ‘반복’해 토큰 효율을 올리는 방식**이 낫다는 관점(“중복은 나쁘다”가 아니라 “좋은 중복만 남긴다”).
+
+### Figure 11 (Midtraining 데이터 개발 프레임워크)
+- **결과**: “분산 탐색(microanneal)”로 후보 소스 빠르게 평가 + “중앙 통합 테스트(100B anneal)”로 조합 효과 검증 + “SFT 테스트”로 post-trainability 확인 + “decontamination”까지 포함.
+- **인사이트**: Midtraining은 단순 추가 학습이 아니라, **데이터 제품 개발 프로세스(탐색→통합→후속단계 영향 확인)**로 접근했다는 점이 핵심.
+
+### Figure 13 (롱컨텍스트 레시피 핵심 구성요소 5가지)
+- **결과**: RULER 점수로 (a) YaRN을 **full-attn 레이어에만** 적용하는 게 최적, (b) olmOCR PDFs가 유리, (c) 합성(CWE/REX) 주입이 유리, (d) document packing이 유리, (e) 확장 토큰 예산이 커질수록 특히 긴 길이에서 점수 상승.
+- **인사이트**: Long-context는 “RoPE 스케일링만”이 아니라 **데이터(긴 문서 + 합성 집계 태스크), 학습 인스턴스 구성(packing/masking), 토큰 예산**이 성패를 좌우.
+
+### Figure 16 (Verifiers & reward design; RLVR)
+- **결과**: RL에서 도메인별 verifier를 달리함(수학=동치성/정답검증, 코드=테스트케이스, IF=제약검사, 챗=LLM judge 등).
+- **인사이트**: “verifiable reward”를 수학에 한정하지 않고 **코드/IF/일반챗으로 확장**했다는 것이 OlmoRL의 핵심 기여 중 하나.
+
+### Figure 17 (OlmoRL 인프라: async + continuous batching)
+- **결과**: static batching 대비 continuous batching이 **빈 슬롯 낭비를 제거**. 비동기 actor-learner 구조로 롤아웃 병목을 완화.
+- **인사이트**: reasoning 모델은 출력이 길고 분산이 커서 RL에서 **inference가 병목**인데, 시스템 최적화(continuous batching, inflight updates)가 “알고리즘만큼” 성능/비용을 좌우한다.
+
+### Figure 23 (DPO: 데이터 크기 & 길이 바이어스)
+- **결과**: DPO 데이터 크기는 벤치마다 최적점이 다르고(예: AlpacaEval/ZebraLogic은 75~100K 근처에서 포화/하락, AIME는 더 많은 데이터에서 계속 상승), 그리고 chosen이 rejected보다 긴 **length bias**가 큼.
+- **인사이트**: (1) DPO는 “많을수록 좋음”이 아니며 **early stopping/데이터 사이즈 스윕**이 중요, (2) 길이 바이어스를 제어하지 않으면 **과도한 장황함**을 학습할 수 있어, Instruct 모델에서는 길이 제약이 실사용 품질에 중요.
+
+### Figure 24~27 (RL-Zero 결과/검증)
+- **Figure 24 결과**: Base에서 RL만으로도 도메인별 reward가 상승하고, 수학(AIME) 성능이 초반 급상승 후 완만.
+- **Figure 26 결과**: active sampling이 non-zero advantage 배치를 유지해 학습 안정화.
+- **Figure 27 결과**: 랜덤(스퓨리어스) 보상으로 RL하면 성능 향상이 없어서, **decontamination이 잘 되었음**을 뒷받침.
+- **인사이트**: RL-Zero는 (a) base+RL 연구를 위한 **통제된 실험장**, (b) 데이터 오염 여부를 “스퓨리어스 리워드 negative control”로 검증하는 좋은 방법론을 제공.
+
+---
+
+## 2) 테이블: 결과 & 인사이트
+
+### Table 1 (Olmo 3.1 Think 32B: 핵심 벤치 성능 스냅샷)
+- **결과**: MATH/AIME/BBH/코딩/IFEval 등 전반 강함. “fully-open thinking model 중 최강” 주장 근거.
+- **인사이트**: 논문 초반 메시지(“flagship”)를 정량적으로 고정. 또한 **Think 모델은 IFBench도 크게 개선**(후반 Table 24와도 연결).
+
+### Table 4 (Dolma 3 Mix 구성)
+- **결과**: 6T mix에서 CommonCrawl 76.1%, olmOCR science PDFs 13.6%, Stack-Edu code 6.89%, FineMath 2.56% 등.
+- **인사이트**: fully-open에서 장문/과학 PDF를 **큰 비중(13.6%)**으로 넣은 점이 Olmo 3의 차별점(롱컨텍스트+STEM 지향과 연결).
+
+### Table 5 (Midtraining: Dolma 3 Dolmino Mix 구성)
+- **결과**: 100B mix에 수학/코드/QA/추론트레이스/인스트럭션/고품질 웹+PDF가 혼합. 특히 합성 reasoning/IF/QA 데이터가 다수 포함.
+- **인사이트**: midtraining을 “능력 부스팅+post-train 준비”로 설계했다는 증거. 또한 이후 RL-Zero/Think 학습을 위해 **thinking traces를 일부러 포함**.
+
+### Table 6 (Midtraining mix 라운드별 향상)
+- **결과**: Round 1→3→5로 OlmoBaseEval과 SFT 후 성능이 전반 개선.
+- **인사이트**: “분산 탐색+통합 테스트” 프레임워크가 실제로 mix 품질을 끌어올렸다는 근거.
+
+### Table 7 (도메인 편향 mix의 트레이드오프)
+- **결과**: math-code-thinking을 올리면 math/code는 크게 오르지만 MCQA/GenQA가 하락, GenQA 편향 mix는 반대로 math/code가 하락.
+- **인사이트**: midtraining은 **멀티목표 최적화**이며, 최종 mix는 균형점을 택했다는 주장 근거.
+
+### Table 10 (midtraining에서 instruction/thinking 포함 효과)
+- **결과**: instruction+thinking traces 포함한 full mix가 모든 base eval 클러스터에서 더 좋음.
+- **인사이트**: thinking/instruct 데이터는 post-training만이 아니라 **base capability에도 도움**(“미리 깔아두면 이득”).
+
+### Table 11 & 12 (Long-context 데이터와 성능)
+- **Table 11 결과**: Longmino mix는 long PDF(길이별 버킷) + synth(CWE/REX) + midtraining mix(66%)로 구성.
+- **Table 12 결과**: RULER/HELMET에서 Olmo 3가 동급 오픈 베이스 모델들과 경쟁적.
+- **인사이트**: 긴 문서 풀(olmOCR) 자체가 핵심 자산이며, 짧은 확장(50B/100B)에도 **65K 컨텍스트**를 달성했다는 주장 근거.
+
+### Table 14/15 (Think: SFT→DPO→RL)
+- **결과**: Think 32B/7B에서 단계 진행에 따라 전반 상승. 3.1 Think는 추가 RL로 AIME/ZebraLogic/IFBench 크게 상승(알파카는 약간 하락).
+- **인사이트**: (1) RL은 특히 IFBench 같은 특정 능력에 큰 부스트, (2) RL을 길게 하면 향상 여지, (3) 다만 chat 선호(AlpacaEval) 같은 지표는 trade-off 가능.
+
+### Table 21/22 (Delta learning DPO의 의미)
+- **결과**: chosen(상위 모델 출력)만으로 SFT를 더 하면 성능이 오히려 하락하지만, chosen vs rejected를 대비시킨 **DPO(delta learning)**는 크게 개선. 또한 RL 전에 DPO가 더 좋은 초기화.
+- **인사이트**: “이제 모방학습(SFT)은 포화될 수 있고, **대비학습(선호학습)**이 새로운 신호를 준다”는 핵심 결론.
+
+### Table 23 (OlmoRL 인프라 개선 속도)
+- **결과**: continuous batching+threading+inflight updates로 tokens/sec 및 MFU/MBU가 크게 상승(최종 항목이 가장 큼).
+- **인사이트**: RL 성능/비용은 알고리즘뿐 아니라 **서빙/롤아웃 시스템 최적화가 결정적**.
+
+### Table 24 (IF 개선 요약)
+- **결과**: Think와 Instruct 모두 RL 단계에서 IFEval/IFBench가 유의미하게 상승(특히 Think 32B 3.1에서 IFBench 큰 폭 상승).
+- **인사이트**: verifiable IF reward가 실제 unseen 벤치(IFBench)로 일반화되는 것을 강조.
+
+### Table 31 (Tools 필요성: No-tools vs Tools)
+- **결과**: SimpleQA는 tools로 모두 크게 상승. LitQA2는 Olmo 3 Instruct 7B가 tools 사용 시 큰 상승(∆+13.8)인데, 일부 Qwen은 tool이 있어도 이득이 작거나 오히려 감소.
+- **인사이트**: Olmo 3 Instruct는 “도구를 주면 실제로 쓰도록” 학습된 반면, 다른 모델은 parametric knowledge에 의존하거나 tool-use 안정성이 낮을 수 있음을 시사.
+
+### Table 32 (선호 신호 조합의 효과)
+- **결과**: OLMo 2 preference 데이터보다, delta-aware GPT pairs와 delta-learning heuristic이 더 낫고, 둘을 합치면 가장 좋음.
+- **인사이트**: 선호학습 품질은 “judge 모델 최신화”만으로 해결되지 않으며, **contrast(델타) 설계가 핵심**. 또한 신호를 섞는 것이 상호보완적.
+
+---
+
+## 3) 어펜딕스(부록): 결과 & 인사이트 포인트
+
+### Appendix A.2 / A.2.4 / A.2.5 (프리트레인 데이터: dedup + mixing + upsampling 검증)
+- **결과(표/서술)**:
+  - 웹 dedup 3단계(Exact→MinHash→Substring)로 대규모 중복 제거.
+  - Table 39/40 등에서 **quality-aware upsampling이 flat filtering보다 성능 유리**.
+- **인사이트**: “중복 제거”와 “상위 품질 반복”은 모순이 아니라 결합 전략(나쁜 중복 제거 후 좋은 중복만 제한적으로 재도입).
+
+### Appendix A.4 (OlmoBaseEval 설계)
+- **결과**: Base Easy(BPB)와 Base Main(pass@k 등)의 역할 분리, task clustering, SNR 분석, held-out 구성.
+- **인사이트**: 작은 모델/중간 체크포인트에서 의사결정을 가능하게 하는 **평가 설계 자체가 연구 기여**라는 관점.
+
+### Appendix A.5 (decon: decontamination 도구 상세)
+- **결과**: n-gram 기반 탐지→클러스터 확장→IDF 가중 overlap→QA/Passage 고려 등 구체적 구현.
+- **인사이트**: midtraining/long-context에서 “끝부분에 가까울수록 암기/오염 영향이 크다”는 전제를 두고, 도구/프로토콜을 체계화.
+
+### Appendix A.6~A.8 (SFT/DPO/RL 하이퍼파라미터 & 안전/평가 상세)
+- **결과**: SFT는 OLMo-core로 8x throughput, DPO는 데이터 사이즈/early stop 중요, RL은 rollout 병목이 지배적이라 actor/learner 비율이 큼.
+- **인사이트**: post-training은 “학습”이라기보다 **실험/스윕/평가 비용이 큰 엔지니어링 문제**이며, 시스템 설계가 성패를 좌우.
+
+---
+
+
+
+## Figures/Diagrams
+- **Fig. 1**: Shows “fully-open model flow” (data+code+intermediate checkpoints), arguing Olmo 3 Think is competitive and Olmo 3 Base 32B is the strongest fully-open base.
+- **Fig. 2**: Depicts the end-to-end pipeline: Base (3 stages) → Think/Instruct/RL-Zero branches, emphasizing *process openness*.
+- **Fig. 8**: Pretraining data curation pipeline (extraction→filtering→dedup→topic/quality classification→mixing→upsampling).
+- **Fig. 9**: Constrained mixing reweights domains (notably STEM/software) and improves downstream BPB metrics vs natural distribution.
+- **Fig. 10**: Quality-aware upsampling curve: discard low-quality buckets, repeat top-quality buckets (up to ~7x).
+- **Fig. 11**: Midtraining framework: distributed microanneals + centralized integration tests + SFT post-trainability checks + decontamination.
+- **Fig. 13**: Long-context recipe ablations on RULER: YaRN on full-attn only, olmOCR PDFs, synthetic augmentation (CWE/REX), document packing, and larger token budgets all matter.
+- **Fig. 16**: RLVR verifiers per domain (math/code/IF/chat), extending verifiable rewards beyond math.
+- **Fig. 17**: OlmoRL async architecture + continuous batching reduces wasted inference and improves throughput.
+- **Fig. 23**: DPO dataset size has task-dependent optima; preference data exhibits strong length bias.
+- **Fig. 24–27**: RL-Zero improves rewards; active sampling stabilizes; random-reward negative control shows no gains → evidence of successful decontamination.
+
+## Tables
+- **Table 1**: Flagship Olmo 3.1 Think 32B results—best fully-open thinking model claim.
+- **Table 4**: Dolma 3 Mix composition (notably ~13.6% olmOCR science PDFs).
+- **Table 5**: Midtraining mix composition includes synthetic math/code/QA/IF/reasoning traces to bootstrap post-training.
+- **Table 6–7**: Midtraining mixes improve over rounds; domain-skewed mixes reveal strong tradeoffs.
+- **Table 10**: Adding instruction + thinking traces improves base performance across clusters.
+- **Table 11–12**: Long-context pool/mix and RULER/HELMET performance; Olmo 3 is competitive with peers.
+- **Table 14–15, 21–22**: Post-training stages show gains; delta-learning DPO helps when further SFT would hurt; DPO is better RL initialization.
+- **Table 23–24**: RL infra improvements significantly speed training; RL yields major instruction-following gains.
+- **Table 31–32**: Tools materially improve LitQA2/SimpleQA for Olmo; combining preference signals (delta-heuristic + delta-aware GPT-judge) works best.
+
+## Appendices
+- **A.2/A.2.5**: Dedup + mixing + quality upsampling validated; “remove bad repetition, reintroduce good repetition” framing.
+- **A.4**: OlmoBaseEval design (Easy BPB vs Main), clustering, SNR and held-out suite.
+- **A.5**: Decontamination tooling details (ngram/IDF overlap, QA/passage handling).
+- **A.6–A.8**: Training hyperparams; evaluation/safety protocols; RL is inference-bottlenecked so systems work is critical.
+
+---
+
+
+
+<br/>
+# refer format:
+
+## 1) BibTeX
+
+```bibtex
+@article{olmo3_2025,
+  title        = {Olmo 3},
+  author       = {{Olmo Team}},
+  year         = {2025},
+  eprint       = {2512.13961},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.CL},
+  note         = {arXiv:2512.13961v1},
+  url          = {https://arxiv.org/abs/2512.13961}
+}
+```
+
+---
+
+## 2) 시카고 스타일(Chicago) 참고문헌 형식 (줄글)
+
+
+Olmo Team. 2025. “Olmo 3.” *arXiv* (cs.CL). December 15, 2025. https://arxiv.org/abs/2512.13961.
+
+---
