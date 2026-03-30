@@ -17,7 +17,7 @@ categories: study
 {% highlight ruby %}
 
 
-March week5         
+March week6         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active      
@@ -70,42 +70,11 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, March 23, 2025   
+Monday, March 30, 2026   
 * research  
 o   
 
-
-Tuesday, March 24, 2025   
-* research  
-o   
-
-
-Wednesday, March 25, 2025   
-* research  
-o   
-
-
-Thursday, March 26, 2025   
-* research  
-o   
-
-
-Friday, March 27, 2025   
-* research  
-o   
-
-
-Saturday, March 28, 2025   
-* research  
-o   
-
-
-Sunday, March 29, 2025   
-* research  
-o   
-
-
-
+   
 
 * priority      
         
@@ -233,6 +202,122 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+{% highlight ruby %}
+
+
+March week5         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active      
+** 1. fair vllm bench+Label bias(COL, doc contact and new format-ing)     
+** 2. plan biosyn test(col)       
+** 3. additionally for MOVIE?(col)        
+** 4. ssl for dna(NAR_g) and gene robust(NAR_g)    
+
+
+
+* todo  
+  
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+
+Monday, March 23, 2026   
+* research  
+o   
+
+
+Tuesday, March 24, 2026   
+* research  
+o   
+
+
+Wednesday, March 25, 2026   
+* research  
+o   
+
+
+Thursday, March 26, 2026   
+* research  
+o   
+
+
+Friday, March 27, 2026   
+* research  
+o   
+
+
+Saturday, March 28, 2026   
+* research  
+o   
+
+
+Sunday, March 29, 2026   
+* research  
+o   
+
+
+
+
+* priority      
+        
+** APIs with tests(plan)      
+** APIs with tests(movie mem)       
+** med(new format)  
+** gssl(writing?) and dna robustness(new format to where?)      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% highlight ruby %}
 
 
@@ -289,37 +374,37 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, March 16, 2025   
+Monday, March 16, 2026   
 * research  
 o   
 
 
-Tuesday, March 17, 2025   
+Tuesday, March 17, 2026   
 * research  
 o   
 
 
-Wednesday, March 18, 2025   
+Wednesday, March 18, 2026   
 * research  
 o   
 
 
-Thursday, March 19, 2025   
+Thursday, March 19, 2026   
 * research  
 o   
 
 
-Friday, March 20, 2025   
+Friday, March 20, 2026   
 * research  
 o   
 
 
-Saturday, March 21, 2025   
+Saturday, March 21, 2026   
 * research  
 o   
 
 
-Sunday, March 22, 2025   
+Sunday, March 22, 2026   
 * research  
 o   
 
@@ -425,37 +510,37 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, March 09, 2025   
+Monday, March 09, 2026   
 * research  
 o   
 
 
-Tuesday, March 10, 2025   
+Tuesday, March 10, 2026   
 * research  
 o   
 
 
-Wednesday, March 11, 2025   
+Wednesday, March 11, 2026   
 * research  
 o   
 
 
-Thursday, March 12, 2025   
+Thursday, March 12, 2026   
 * research  
 o   
 
 
-Friday, March 13, 2025   
+Friday, March 13, 2026   
 * research  
 o   
 
 
-Saturday, March 14, 2025   
+Saturday, March 14, 2026   
 * research  
 o   
 
 
-Sunday, March 15, 2025   
+Sunday, March 15, 2026   
 * research  
 o   
 
@@ -560,38 +645,38 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, March 02, 2025   
+Monday, March 02, 2026   
 * research  
 o   
 
 
-Tuesday, March 03, 2025   
+Tuesday, March 03, 2026   
 * research  
 o   
 
 
-Wednesday, March 04, 2025   
+Wednesday, March 04, 2026   
 * research  
 o   
 
 
 
-Thursday, March 05, 2025   
+Thursday, March 05, 2026   
 * research  
 o   
 
 
-Friday, March 06, 2025   
+Friday, March 06, 2026   
 * research  
 o   
 
 
-Saturday, March 07, 2025   
+Saturday, March 07, 2026   
 * research  
 o   
 
 
-Sunday, March 08, 2025   
+Sunday, March 08, 2026   
 * research  
 o   
 
@@ -686,7 +771,7 @@ MAYBE FUTURE WORKS
 
 
 
-Sunday, March 01, 2025   
+Sunday, March 01, 2026   
 * research  
 o   
 
