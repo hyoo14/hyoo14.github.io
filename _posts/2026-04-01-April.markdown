@@ -76,14 +76,21 @@ Wednesday, April 01, 2026
 * research  
 o   
 
+
+
+Thursday, April 02, 2026   
+* research  
+o   
+
+
    
 
 * priority      
         
-** APIs with tests(plan)      
-** APIs with tests(movie mem)       
+** bidir_aug(rebut tm)     
 ** med(new format)  
-** gssl(writing?) and dna robustness(new format to where?)      
+** dna robustness(new format to where?)      
+** gssl(code test and expand?)    
 
 
 
