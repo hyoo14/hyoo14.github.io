@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Heritages"
-date:   2026-04-05 00:23:10 +0900
+date:   2026-04-05 00:23:10 -0500
 categories: "mountain"
 ---
 
