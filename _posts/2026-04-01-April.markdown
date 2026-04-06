@@ -14,18 +14,24 @@ categories: study
 
 
 
+
+
 {% highlight ruby %}
 
 
-April week1         
+April week2         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active      
-** 1. fair vllm bench+Label bias(COL, doc contact and new format-ing)     
-** 2. plan biosyn test(col)       
-** 3. additionally for MOVIE?(col)        
-** 4. ssl for dna(NAR_g) and gene robust(NAR_g)    
+** 1. bidir_aug(rebut tm)     
+** 2. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
+** 3. gene robust(NAR_g)   
+** 4. gssl review paper(mdb)   
+** 5. ssl for dna(NAR_g) git code test and expand with microbiome data    
 
+* wait  
+** 1. plan biosyn test(col)       
+** 2. additionally for MOVIE?(col)        
 
 
 * todo  
@@ -71,32 +77,7 @@ MAYBE FUTURE WORKS
 
 
 
-
-Wednesday, April 01, 2026   
-* research  
-o   
-
-
-
-Thursday, April 02, 2026   
-* research  
-o   
-
-
-Friday, April 03, 2026   
-* research  
-o   
-
-
-
-Saturday, April 04, 2026   
-* research  
-o   
-
-
-
-
-Sunday, April 05, 2026   
+Monday, April 06, 2026   
 * research  
 o   
 
@@ -107,10 +88,14 @@ o
 
 * priority      
         
-** bidir_aug(rebut tm)     
-** med(new format)  
-** dna robustness(new format to where?)      
-** gssl(code test and expand?)    
+** bidir_aug(rebut tm)       
+** review paper    
+** dna robustness(new format)       
+** gssl(code test and expand)   
+** med(new format)   
+
+
+    
 
 
 
@@ -225,6 +210,119 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+April week1         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active      
+** 1. fair vllm bench+Label bias(COL, doc contact and new format-ing)     
+** 2. plan biosyn test(col)       
+** 3. additionally for MOVIE?(col)        
+** 4. ssl for dna(NAR_g) and gene robust(NAR_g)    
+
+
+
+* todo  
+  
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+Wednesday, April 01, 2026   
+* research  
+o   
+
+
+
+Thursday, April 02, 2026   
+* research  
+o   
+
+
+Friday, April 03, 2026   
+* research  
+o   
+
+
+
+Saturday, April 04, 2026   
+* research  
+o   
+
+
+
+
+Sunday, April 05, 2026   
+* research  
+o   
+
+
+   
+   
+   
+
+* priority      
+        
+** bidir_aug(rebut tm)     
+** med(new format)  
+** dna robustness(new format to where?)      
+** gssl(code test and expand?)    
+
+
 
 
 
