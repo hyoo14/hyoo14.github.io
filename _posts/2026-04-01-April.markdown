@@ -107,6 +107,7 @@ o
 ** gssl(code test and expand)->reform repo for making available for new data     
 ** med(new format) ALSO with bn and other workshops     
 
+** camera paper(3) revise  
 
 ** review paper    
 ** dna robustness(new format)       
