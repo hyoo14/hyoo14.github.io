@@ -104,10 +104,13 @@ o
 * priority      
         
 ** bidir_aug(rebut tm)       
+** gssl(code test and expand)->reform repo for making available for new data     
+** med(new format) ALSO with bn and other workshops     
+
+
 ** review paper    
 ** dna robustness(new format)       
-** gssl(code test and expand)   
-** med(new format)   
+
 
 
     
