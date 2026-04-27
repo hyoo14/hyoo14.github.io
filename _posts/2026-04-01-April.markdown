@@ -97,7 +97,6 @@ o
    
 
 * priority (todo)      
-** gssl(code test and expand)->little add and upload         
 ** dna robustness(new format)->contact, update, upload        
 ** prop exam prepare(also link to neurips session)->update ssl and big story       
 *** neu(5/4)         
@@ -368,6 +367,22 @@ o
 
 
 
+
+For Next Week:
+
+* priority (todo)      
+** gssl(code test and expand)->little add and upload         
+** dna robustness(new format)->contact, update, upload        
+** prop exam prepare(also link to neurips session)->update ssl and big story       
+*** neu(5/4)         
+** med(new format)                    
+*** sterea workshop(5/11)      
+*** neu(5/4) or emn(5/25)     
+
+
+
+
+** review paper(5/1, ing)      
 
 
 
