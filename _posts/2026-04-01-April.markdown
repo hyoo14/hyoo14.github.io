@@ -44,6 +44,7 @@ April week5
 ** 1. plan biosyn test(col)       
 ** 2. additionally for MOVIE?(col)        
 ** 3. bidir_aug(rebut tm)     
+** 4. gssl(ngb)             
 
 
 
@@ -91,6 +92,15 @@ MAYBE FUTURE WORKS
 Monday, April 27, 2026   
 * research  
 o   
+
+
+
+
+
+Tuesday, April 28, 2026   
+* research  
+o   
+
 
 
    
