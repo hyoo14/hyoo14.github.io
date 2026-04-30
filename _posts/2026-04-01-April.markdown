@@ -45,7 +45,7 @@ April week5
 ** 2. additionally for MOVIE?(col)        
 ** 3. bidir_aug(rebut tm)     
 ** 4. gssl(ngb)             
-
+** 5. dna robustness(tcb)
 
 
 
@@ -118,7 +118,7 @@ o
    
 
 * priority (todo)      
-** dna robustness(new format)->contact, update, upload        
+          
 ** prop exam prepare(also link to neurips session)->update ssl and big story       
 *** neu(5/4)         
 ** med(new format)                    
