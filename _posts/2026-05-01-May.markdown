@@ -107,17 +107,20 @@ o
    
 
 * priority (todo)      
-          
-** prop exam prepare(also link to neurips session)->update ssl and big story       
+
+** review paper(5/1, ing)      
 *** neu(5/4)         
 ** med(new format)                    
+** SSL present prepare(5/4)  
+          
+** prop exam prepare(also link to neurips session)->update ssl and big story       
 *** sterea workshop(5/11)      
 *** neu(5/4) or emn(5/25)     
 
 
 
 
-** review paper(5/1, ing)      
+
 
 
 
