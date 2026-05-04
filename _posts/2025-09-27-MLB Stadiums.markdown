@@ -30,6 +30,10 @@ Yankee Stadium, built with marble stone, looks massive and grand. However, it st
 공동 3등은 시티즌스뱅크파크와 양키스타디움이다. 양키스타디움은 대리석 느낌의 꽤나 웅장하고 클래식하지만 새로 지은 느낌도 꽤나 났다. 
 
 
+Citi Field looks good. The main concourse feels upscale, and the overall design is nice.  
+뉴욕은 춥다. 양키스타디움이 힙하다면 여기는 좀 다른.. 멋짐이 있다.  
+
+
 Busch Staidum, with its red brick exterior, looks surprisingly new. Sine it is the off-season, I cannot really feel the usual game day atmosphere, but the neighborhood around the stadium is lovely, and I can really sense how much St. Louis loves baseball.  
 부쉬 스타디움은 생각보다 신식이었다. 붉은 벽돌로 만든 외관이 괜찮았지만 새것의 느낌이 많이 났다. 내부를 자세히 보진 못 했고 경기가 진행중일 때 간 것은 아니지만 경기장 자체는 쏘쏘.. 주변에 빌리지가 잘 조성되어있어 야구 열기를 간접적으로 느낄 수는 있었다.  
 
