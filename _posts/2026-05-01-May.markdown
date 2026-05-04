@@ -34,10 +34,8 @@ May week2
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active      
-** 1. ssl for dna(NAR_g) add another optional input part and submit    
-** 2. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
-** 3. gene robust(NAR_g) reinforcement and submit    
-** 4. gssl review paper(mdb) wait for review by advisor     
+** 1. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
+** 2. gssl review paper(mdb) wait for review by advisor     
 
 
 
