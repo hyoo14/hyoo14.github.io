@@ -26,10 +26,11 @@ categories: study
 
 
 
+
 {% highlight ruby %}
 
 
-May week1         
+May week2         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active      
@@ -92,17 +93,7 @@ MAYBE FUTURE WORKS
 
 
 
-Friday, May 01, 2026   
-* research  
-o   
-
-
-Saturday, May 02, 2026   
-* research  
-o   
-
-
-Sunday, May 03, 2026   
+Monday, May 04, 2026   
 * research  
 o   
 
@@ -115,7 +106,6 @@ o
 
 * priority (todo)      
 
-** review paper(5/1, ing)      
 *** neu(5/4)         
 ** med(new format)                    
 ** SSL present prepare(5/4)  
@@ -250,6 +240,127 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+May week1         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active      
+** 1. ssl for dna(NAR_g) add another optional input part and submit    
+** 2. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
+** 3. gene robust(NAR_g) reinforcement and submit    
+** 4. gssl review paper(mdb) wait for review by advisor     
+
+
+
+* wait  
+** 1. plan biosyn test(col)       
+** 2. additionally for MOVIE?(col)        
+** 3. bidir_aug(rebut tm)     
+** 4. gssl(ngb)             
+** 5. dna robustness(tcb)
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Friday, May 01, 2026   
+* research  
+o   
+
+
+Saturday, May 02, 2026   
+* research  
+o   
+
+
+Sunday, May 03, 2026   
+* research  
+o   
+
+
+
+
+
+   
+   
+
+* priority (todo)      
+
+** review paper(5/1, ing)      
+*** neu(5/4)         
+** med(new format)                    
+** SSL present prepare(5/4)  
+          
+** prop exam prepare(also link to neurips session)->update ssl and big story       
+*** sterea workshop(5/11)      
+*** neu(5/4) or emn(5/25)     
+
+
+
+
+
+
+
+
+
+    
 
 
 
