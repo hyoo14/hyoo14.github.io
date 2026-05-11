@@ -27,10 +27,15 @@ categories: study
 
 
 
+
+
+
+
+
 {% highlight ruby %}
 
 
-May week2         
+May week3         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active      
@@ -92,42 +97,10 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, May 04, 2026   
+Monday, May 11, 2026   
 * research  
 o   
 
-
-
-Tuesday, May 05, 2026   
-* research  
-o   
-
-
-Wednesday, May 06, 2026   
-* research  
-o   
-
-
-Thursday, May 07, 2026   
-* research  
-o   
-
-
-Friday, May 08, 2026   
-* research  
-o   
-
-
-
-Saturday, May 09, 2026   
-* research  
-o   
-
-
-
-Sunday, May 10, 2026   
-* research  
-o   
 
 
    
@@ -269,6 +242,143 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+May week2         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active      
+** 1. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
+** 2. gssl review paper(mdb) wait for review by advisor     
+
+
+
+* wait  
+** 1. plan biosyn test(col)       
+** 2. additionally for MOVIE?(col)        
+** 3. bidir_aug(rebut tm)     
+** 4. gssl(ngb)             
+** 5. dna robustness(tcb)  
+** 6. prop originated 3 biomm eval(neu)
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+Monday, May 04, 2026   
+* research  
+o   
+
+
+
+Tuesday, May 05, 2026   
+* research  
+o   
+
+
+Wednesday, May 06, 2026   
+* research  
+o   
+
+
+Thursday, May 07, 2026   
+* research  
+o   
+
+
+Friday, May 08, 2026   
+* research  
+o   
+
+
+
+Saturday, May 09, 2026   
+* research  
+o   
+
+
+
+Sunday, May 10, 2026   
+* research  
+o   
+
+
+   
+   
+
+* priority (todo)      
+** github  
+
+** sterea workshop(5/11)      
+** med(new format!): emn(5/25)   
+** prop exam prepare->update ssl for her data? ask profs to review before exam         
+
+** camera   
+** volunteer  
+
+
+
+
+
+
+
+
+
+    
 
 
 
