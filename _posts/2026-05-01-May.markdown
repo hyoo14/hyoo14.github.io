@@ -41,16 +41,18 @@ May week3
 * active      
 ** 1. fair vllm bench+Label bias(EMN, doc contact and new format-ing)     
 ** 2. gssl review paper(mdb) wait for review by advisor     
-
+** 3. bidir_aug(cam tm 5/23)     
+** 4. clinic_bias(cam bion 5/18)  
 
 
 * wait  
 ** 1. plan biosyn test(col)       
 ** 2. additionally for MOVIE?(col)        
-** 3. bidir_aug(rebut tm)     
-** 4. gssl(ngb)             
-** 5. dna robustness(tcb)  
-** 6. prop originated 3 biomm eval(neu)
+** 3. gssl(ngb)             
+** 4. dna robustness(tcb)  
+** 5. prop originated 3 biomm eval(neu)  
+** 6. streacult_clinic(streocult)
+
 
 
 
@@ -103,18 +105,24 @@ o
 
 
 
+Tuesday, May 12, 2026   
+* research  
+o   
+
+
+
+
    
    
 
 * priority (todo)      
 ** github  
 
-** sterea workshop(5/11)      
 ** med(new format!): emn(5/25)   
 ** prop exam prepare->update ssl for her data? ask profs to review before exam         
 
-** camera   
-** volunteer  
+** camera(2)    
+** volunteer(2, including dandifund)    
 
 
 
