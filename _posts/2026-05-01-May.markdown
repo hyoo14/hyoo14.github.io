@@ -171,9 +171,11 @@ o
    
 
 * priority (todo)      
-** med(new format!): emn(5/25)  (contact ks and doc)    
-** survey for arousal trak (format and 5)    
-** prop exam prepare->update ssl for her data? ask profs to review before exam (share)           
+** emn(5/25): med(dataset collect finish and test and write) (inner 5/19)   
+            : survey for arousal trajectory (inner 5/19)        
+** prop exam update and share to profs, share and talk to profs as many as possible    
+** prepare demo(5/20)  
+** little update ssl review paper(5/20)             
 
 ** github (more models update, inner due 5/20)    
 
