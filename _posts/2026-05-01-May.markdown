@@ -148,7 +148,18 @@ o
 
 
 
+* priority (todo)      
+** emn(5/25): med(dataset collect finish and test and write) (inner 5/19)   
+            : survey for arousal trajectory (inner 5/19)        
+** prop exam update and share to profs, share and talk to profs as many as possible    
+         
 
+** github (more models update, inner due 5/20)    
+
+
+*later  
+** prepare demo(5/20)  
+** little update ssl review paper(5/20)    
 
 
 
