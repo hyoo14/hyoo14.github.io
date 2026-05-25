@@ -19,6 +19,126 @@ categories: study
 
 
 
+{% highlight ruby %}
+
+
+May week5         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active   
+** 1. plan biosyn test rebut(col)       
+** 2. additionally for MOVIE rebut(col)    
+** 3. prop exam  
+** 4. fair vllm bench+Label bias(EMN)     
+** 5. gssl review paper(mdb)   
+     
+
+
+* wait  
+        
+** 1. gssl(ngb)             
+** 2. dna robustness(tcb)  
+** 3. prop originated 3 biomm eval(neu)  
+** 4. streacult_clinic(streocult)   
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+** 2. clinic_bias(cam bion 5/18)  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+** advAttack_verification and geneLMs (wait?) 
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
+Monday, May 25, 2026   
+* research  
+o   
+
+
+Tuesday, May 26, 2026   
+* research  
+o   
+
+
+
+
+* priority (todo)      
+** emn(5/25): med(dataset collect finish and test and write) (inner 5/19)   
+            : survey for arousal trajectory (inner 5/19)        
+** prop exam update and share to profs, share and talk to profs as many as possible    
+** rebut for col: bio plan    
+                : v mem  
+** github (more models update, inner due 5/20)    
+
+
+*later  
+** prepare demo(5/20)  
+** little update ssl review paper(5/20)    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -281,121 +401,6 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-{% highlight ruby %}
-
-
-May week5         
-*research(ai/bio/nlp-papers/lectrues/projects)       
-
-* active   
-** 1. plan biosyn test rebut(col)       
-** 2. additionally for MOVIE rebut(col)    
-** 3. prop exam  
-** 4. fair vllm bench+Label bias(EMN)     
-** 5. gssl review paper(mdb)   
-     
-
-
-* wait  
-        
-** 1. gssl(ngb)             
-** 2. dna robustness(tcb)  
-** 3. prop originated 3 biomm eval(neu)  
-** 4. streacult_clinic(streocult)   
-
-
-* closing?  
-** 1. bidir_aug(cam tm 5/23)     
-** 2. clinic_bias(cam bion 5/18)  
-
-
-
-
-
-
-
-
-
-
-MAYBE FUTURE WORKS
-** Ideation(with conference?)-please keep the ideas...      
-* dif gen lm?(future..?)    
-** unlearning?  
-
-** LLM app for gene (wait?)   
-*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
-** advAttack_verification and geneLMs (wait?) 
- 
-** Aug focus(B)  
-** deep hierarchy    
-(future pro+nu)  
-** generative benchmark  
-(gf+rm+dc--->nucl)  
-** using drug bank web or db(good for using)  
-
-
-## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
-## math? code? (lecture/assignment/project)      
-
-
-
-{% endhighlight %}  
-<br/>
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    
-
-
-
-
-
-Monday, May 25, 2026   
-* research  
-o   
-
-
-
-
-* priority (todo)      
-** emn(5/25): med(dataset collect finish and test and write) (inner 5/19)   
-            : survey for arousal trajectory (inner 5/19)        
-** prop exam update and share to profs, share and talk to profs as many as possible    
-** rebut for col: bio plan    
-                : v mem  
-** github (more models update, inner due 5/20)    
-
-
-*later  
-** prepare demo(5/20)  
-** little update ssl review paper(5/20)    
-
-
-
-    
 
 
 
