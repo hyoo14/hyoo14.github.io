@@ -40,6 +40,8 @@ May week5
 ** 2. dna robustness(tcb)  
 ** 3. prop originated 3 biomm eval(neu)  
 ** 4. streacult_clinic(streocult)   
+** 5. med bias(emp)  
+** 6. arouasal, crm(emp)  
 
 
 * closing?  
@@ -125,9 +127,24 @@ o
 ** little update ssl review paper(June)    
 
 
+Wednesday, May 27, 2026   
+* research  
+o   
+
 
     
+* priority (todo)      
+** prop exam email to ta  
+** prop exam update and share to profs, share and talk to profs as many as possible    
+** rebut for col: bio plan    
+                : v mem  
+** github (more models update, inner due 5/20)    
 
+
+*later  
+** upload presentation pak diap(5/31)  
+** prepare demo(June)  
+** little update ssl review paper(June)    
 
 
 
