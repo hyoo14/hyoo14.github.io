@@ -142,7 +142,8 @@ o
 
 
 *later  
-** upload presentation pak diap(5/31)  
+** upload presentation pak diap(5/31)   
+** upload presentation ac 3? bn 1?(6/01)   
 ** prepare demo(June)  
 ** little update ssl review paper(June)    
 
