@@ -145,6 +145,8 @@ o
 
 
 
+
+
     
 * priority (todo)      
 ** prop exam update and share to profs, share and talk to profs as many as possible    
@@ -159,6 +161,10 @@ o
 ** prepare demo(June)  
 ** little update ssl review paper(June)    
 
+
+Saturday, May 30, 2026   
+* research  
+o   
 
 
 
