@@ -106,8 +106,9 @@ o
     
 * priority (todo)      
 ** upload presentation pak diap(6/01)   
-** rebut for col: bio plan    
+** rebut for col    
                 : v mem  
+                : bio plan
 ** github (more models update, inner due 5/20)    
 ** upload presentation ac 3? bn 1?(6/04)  
 
