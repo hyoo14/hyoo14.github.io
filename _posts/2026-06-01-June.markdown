@@ -147,7 +147,6 @@ o
 
 
 
-
 * priority (todo)      
 ** for acl, scholarship inquire mail  
 
@@ -171,6 +170,48 @@ o
 ** prepare demo(June)  
 ** little update ssl review paper(June)    
 ** revision tcb robust  
+
+
+
+
+
+
+
+Sunday, June 14, 2026   
+* research  
+o   
+
+
+
+
+* priority (todo)      
+
+** submit pakdd update    
+** submit and register strea  
+
+
+** github (more models update, inner due 6/13)    
+
+** prop exam after paper.. 
+
+** rebut for col    
+                : v mem  
+                : bio plan  
+
+
+*later  
+
+
+** pak diap script and present(6/11)   
+** prepare demo(June)  
+** little update ssl review paper(June)    
+** revision tcb robust  
+
+
+
+
+* wait
+** for acl, scholarship inquire mail  
 
 
 
