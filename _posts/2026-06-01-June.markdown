@@ -149,8 +149,11 @@ o
 
 
 * priority (todo)      
+** for acl, scholarship inquire mail  
+
 ** submit pakdd update    
 ** submit and register strea  
+
 
 ** github (more models update, inner due 6/13)    
 
