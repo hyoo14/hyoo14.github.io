@@ -151,7 +151,13 @@ Friday, June 26, 2026
 o   
 
 
+Saturday, June 27, 2026   
+* research  
+o   
+
+
 * priority (todo)      
+** printing  
 ** prop exam after paper.. 
 ** revision tcb robust  
 ** revision nar ssl  
