@@ -135,6 +135,12 @@ o
 
 
 
+* acl2026  
+** pre-reasoning-improvement(CoT계열) + post-training with human feedback(강화학습)  
+*** 이게 reasoning의 현황(근황)..인듯    
+
+** agent는.. 뭐 LLM이라고 생각하기는 했었지만.. LLM백본에 observation + action = Agent로 생각하면 될 듯... 
+
 
 * pak 학회!    
 ** embedding statistics embedding data science is future?   
