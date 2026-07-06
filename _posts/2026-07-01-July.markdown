@@ -141,7 +141,7 @@ o
 ** agent는.. 뭐 LLM이라고 생각하기는 했었지만.. LLM백본에 observation + action = Agent로 생각하면 될 듯... 
 
 ** interpretability, explainable, uncertainty, confident even in genomic foundation model   
-(fidelity, faithfulness 다 관련된.. 아직 해결이 안된)  
+(fidelity, faithfulness 다 관련된.. 아직 해결이 안된..usefulness랑 상충되기도 할 수 있믄..capability)  
 
 * pak 학회!    
 ** embedding statistics embedding data science is future?   
