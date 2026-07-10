@@ -119,6 +119,8 @@ o
 
 
 
+
+
 * priority (todo)      
 ** reviews(5+2)   
 ** volunteer(2)   
@@ -145,6 +147,37 @@ o
 
 
 
+Friday, July 10, 2026   
+* research  
+o   
+
+
+
+
+
+* priority (todo)      
+** rebuttal(3)    
+
+** prop exam after paper..(new2)   
+
+** next venues..(2)  
+
+** revision tcb robust  
+** revision nar ssl  
+
+
+*later  
+** little update ssl review paper(June)    
+
+
+
+* wait  
+** submit pakdd update    
+** rebut for col    
+                : v mem  
+                : bio plan  
+** reimburse and wait for travel funding(seach everyday?)    
+** propose new topic for HK group  
 
 
 
