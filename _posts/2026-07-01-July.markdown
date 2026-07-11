@@ -155,7 +155,10 @@ o
 
 
 
+
+
 * priority (todo)      
+** apply reward(2)-inquire change     
 ** rebuttal(3)    
 
 ** prop exam after paper..(new2)   
