@@ -1,0 +1,215 @@
+---
+layout: post
+title:  "[2026]Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge"
+date:   2026-07-14 00:58:56 -0000
+categories: study
+---
+
+{% highlight ruby %}
+
+한줄 요약: 이 논문에서는 다중 홉 질문 응답을 위한 지식 주입 방법으로 비지도 미세 조정, 지도 미세 조정, 검색 증강 생성(RAG)을 비교하였다.
+
+
+짧은 요약(Abstract) :
+
+
+이 논문은 다중 홉 질문 응답(multi-hop question answering)에서의 파라메트릭(매개변수 기반) 방법과 비파라메트릭(비매개변수 기반) 방법인 RAG(검색 보강 생성)를 비교합니다. 다중 홉 질문 응답은 여러 개의 지원 지식을 통합하여 올바른 답변에 도달해야 하므로 대규모 언어 모델(LLM)의 추론 능력을 평가하는 데 널리 사용됩니다. 기존 연구들은 주로 사실 회상(factual recall)과 단일 홉 질문 응답(single-hop question answering)에 대해 비교했지만, 다중 홉 설정에서의 성능은 불확실합니다. 이 연구에서는 비지도 학습(계속적인 사전 훈련), 지도 학습(지도된 데이터로 훈련), RAG를 세 가지 방법으로 평가하며, 두 개의 벤치마크 데이터셋(QASC와 2024 이벤트 데이터셋)을 사용하여 실험을 진행합니다. 결과적으로 비지도 학습은 제한적인 개선만을 제공하는 반면, RAG는 특히 최신 정보에 의존하는 질문에 대해 상당한 개선을 보여주며, 지도 학습이 가장 높은 정확도를 달성하는 것으로 나타났습니다. 이 연구는 다중 홉 질문 응답에서 지식 주입 메커니즘의 차이를 강조하고, 외부 또는 조합 지식이 필요한 경우 검색 기반 방법의 중요성을 강조합니다.
+
+
+
+This paper systematically compares parametric (fine-tuning) and non-parametric (retrieval-augmented generation, RAG) methods for multi-hop question answering, which is widely used to evaluate the reasoning capabilities of large language models (LLMs) as it requires integrating multiple pieces of supporting knowledge to arrive at a correct answer. While prior work has compared fine-tuning and RAG for factual recall and single-hop question answering, it remains unclear how these approaches perform in multi-hop settings that require compositional reasoning over temporally novel knowledge. In particular, prior comparisons often do not control for model scale, evaluation format, or knowledge freshness, making it difficult to isolate the effect of knowledge injection mechanisms. In this paper, we evaluate unsupervised fine-tuning (continual pretraining), supervised fine-tuning, and RAG across three 7B-parameter open-source LLMs on two benchmarks: the Question Answering Science Challenge (QASC) and a newly constructed dataset of over 10,000 multi-hop questions derived from Wikipedia events in 2024, designed to test knowledge beyond the models’ pretraining cutoff. Our results show that unsupervised fine-tuning provides only limited gains over base models, suggesting that continual pretraining alone is insufficient for improving multi-hop reasoning accuracy. In contrast, RAG yields substantial and consistent improvements, particularly when answering questions that rely on temporally novel information. Supervised fine-tuning achieves the highest overall accuracy across models and datasets. These findings highlight fundamental differences in how knowledge injection mechanisms support multi-hop question answering and underscore the importance of retrieval-based methods when external or compositional knowledge is required.
+
+
+* Useful sentences :
+
+
+{% endhighlight %}
+
+<br/>
+
+[Paper link]()
+[~~Lecture link~~]()
+
+<br/>
+
+# 단어정리
+*
+
+
+<br/>
+# Methodology
+
+
+
+이 논문에서는 다중 홉 질문 응답(multi-hop question answering) 문제를 해결하기 위해 세 가지 주요 지식 주입 방법을 비교합니다: 비지도 학습(unsupervised fine-tuning), 지도 학습(supervised fine-tuning), 그리고 검색 증강 생성(retrieval-augmented generation, RAG)입니다. 이 방법들은 각각 모델의 파라미터에 지식을 주입하는 방식과 추론 시 외부 지식을 동적으로 활용하는 방식을 다릅니다.
+
+1. **비지도 학습 (Unsupervised Fine-Tuning)**: 이 방법은 모델을 비라벨 텍스트로 추가 학습시켜 새로운 정보를 주입합니다. 연구자들은 QASC 데이터셋과 2024 이벤트 데이터셋을 사용하여 모델을 훈련시켰습니다. 비지도 학습은 모델이 새로운 지식을 내재화하는 데 한계가 있으며, 특히 희소하거나 시간적으로 새로운 사실을 효과적으로 학습하는 데 어려움을 겪습니다.
+
+2. **지도 학습 (Supervised Fine-Tuning)**: 이 방법은 질문-답변 쌍과 같은 라벨이 있는 데이터를 사용하여 모델을 훈련시킵니다. 지도 학습은 다중 홉 질문 응답에서 성능을 크게 향상시키는 것으로 나타났습니다. 이 방법은 모델이 특정 작업에 맞춰 조정되도록 하여, 질문에 대한 정확한 답변을 선택하는 데 도움을 줍니다.
+
+3. **검색 증강 생성 (Retrieval-Augmented Generation, RAG)**: RAG는 외부 지식 코퍼스에서 관련 문서를 검색하여 모델의 예측을 보강하는 비파라메트릭 방법입니다. 이 방법은 모델이 훈련 시에 내재화하지 못한 최신 정보를 활용할 수 있게 해줍니다. RAG는 특히 시간적으로 새로운 정보가 필요한 질문에 대해 성능을 크게 향상시키는 것으로 나타났습니다.
+
+이 연구는 세 가지 방법의 성능을 QASC 데이터셋과 2024 이벤트 데이터셋에서 비교하였으며, 지도 학습이 가장 높은 정확도를 달성하는 반면, 비지도 학습은 제한적인 개선만을 보였고, RAG는 특히 최신 정보에 대한 접근이 필요한 경우에 효과적임을 보여주었습니다. 이러한 결과는 다중 홉 질문 응답을 위한 지식 주입 방법 선택에 대한 실질적인 지침을 제공합니다.
+
+
+
+
+This paper systematically compares three main knowledge injection methods for addressing the multi-hop question answering problem: unsupervised fine-tuning, supervised fine-tuning, and retrieval-augmented generation (RAG). These methods differ in how they inject knowledge into the model's parameters and how they dynamically utilize external knowledge during inference.
+
+1. **Unsupervised Fine-Tuning**: This method involves further training the model on unlabeled text to inject new information. The researchers used the QASC dataset and the 2024 Events dataset to train the models. Unsupervised fine-tuning has limitations in internalizing new knowledge, particularly struggling to learn sparse or temporally novel facts effectively.
+
+2. **Supervised Fine-Tuning**: This method uses labeled data, such as question-answer pairs, to train the model. Supervised fine-tuning has been shown to significantly improve performance in multi-hop question answering. This approach helps the model to be tailored for specific tasks, enabling it to select the correct answer to questions accurately.
+
+3. **Retrieval-Augmented Generation (RAG)**: RAG is a non-parametric method that enhances the model's predictions by retrieving relevant documents from an external knowledge corpus. This method allows the model to leverage up-to-date information that it could not internalize during training. RAG has been shown to substantially improve performance, especially for questions requiring access to temporally novel information.
+
+The study compares the performance of these three methods on the QASC dataset and the 2024 Events dataset, revealing that supervised fine-tuning achieves the highest accuracy, while unsupervised fine-tuning provides only limited improvements, and RAG is particularly effective when external, up-to-date knowledge is required. These findings offer practical guidance for selecting knowledge injection approaches when deploying large language models for multi-hop question answering tasks.
+
+
+<br/>
+# Results
+
+
+
+이 논문에서는 다중 홉 질문 응답(multi-hop question answering)에서의 지식 주입 방법을 비교하기 위해 세 가지 접근 방식을 평가했습니다: 비지도 학습(unsupervised fine-tuning), 지도 학습(supervised fine-tuning), 그리고 검색 증강 생성(retrieval-augmented generation, RAG)입니다. 연구는 두 가지 데이터셋, 즉 QASC(Question Answering Science Challenge)와 2024 Events 데이터셋을 사용하여 수행되었습니다.
+
+1. **경쟁 모델**: 연구에서는 세 가지 오픈 소스 대형 언어 모델(LLM)을 사용했습니다. 이 모델들은 각각 약 70억 개의 파라미터를 가지고 있으며, Mistral-7B, LLaMA-7B, LLaMA-7B-Instruct입니다. Mistral-7B와 LLaMA-7B는 기본 사전 훈련 모델로, LLaMA-7B-Instruct는 지침 조정(instruction tuning)을 통해 자연어 프롬프트를 더 잘 따르도록 훈련되었습니다.
+
+2. **테스트 데이터**: 
+   - **QASC 데이터셋**: 과학 분야의 다중 홉 질문을 포함하며, 각 질문은 8개의 선택지 중 하나가 정답입니다. 이 데이터셋은 모델의 추론 능력을 평가하기 위해 선택되었습니다.
+   - **2024 Events 데이터셋**: 2024년에 발생한 사건을 기반으로 한 10,000개 이상의 다중 홉 질문으로 구성되어 있으며, 이 데이터셋은 모델의 사전 훈련 컷오프 이후의 지식을 평가하기 위해 설계되었습니다.
+
+3. **메트릭**: 모델의 성능은 정확도(accuracy)로 평가되었습니다. 정확도는 모델이 예측한 답변이 실제 정답과 일치하는 비율로 정의됩니다. 
+
+4. **비교 결과**:
+   - **비지도 학습**: 비지도 학습은 기본 모델에 비해 한정된 개선만을 보였으며, 다중 홉 추론 정확도를 향상시키는 데 충분하지 않음을 나타냈습니다.
+   - **RAG**: RAG는 모든 모델에서 성능을 약 30% 이상 향상시켰으며, 특히 2024 Events 데이터셋에서 두 배 이상의 정확도를 기록했습니다. 이는 외부의 최신 지식이 필요할 때 RAG의 효과성을 강조합니다.
+   - **지도 학습**: 지도 학습은 모든 데이터셋에서 가장 높은 정확도를 달성했으며, 이는 작업에 특화된 감독의 강력한 효과를 보여줍니다.
+
+결론적으로, 이 연구는 다중 홉 질문 응답에서 지식 주입 메커니즘의 차이를 체계적으로 비교하였으며, RAG와 지도 학습이 특히 효과적임을 강조했습니다. 이러한 결과는 대형 언어 모델을 다중 홉 질문 응답 작업에 배포할 때 지식 주입 접근 방식을 선택하는 데 실질적인 지침을 제공합니다.
+
+---
+
+
+
+
+This paper systematically compares knowledge injection methods for multi-hop question answering, evaluating three approaches: unsupervised fine-tuning, supervised fine-tuning, and retrieval-augmented generation (RAG). The study was conducted using two datasets: the Question Answering Science Challenge (QASC) and the 2024 Events dataset.
+
+1. **Competing Models**: The study utilized three open-source large language models (LLMs), each with approximately 7 billion parameters: Mistral-7B, LLaMA-7B, and LLaMA-7B-Instruct. Mistral-7B and LLaMA-7B are base pretrained models, while LLaMA-7B-Instruct has been instruction-tuned to better follow natural language prompts.
+
+2. **Test Data**: 
+   - **QASC Dataset**: This dataset includes multi-hop questions from the science domain, with each question having one correct answer among eight options. It was chosen to evaluate the model's reasoning capabilities.
+   - **2024 Events Dataset**: This dataset consists of over 10,000 multi-hop questions derived from events that occurred in 2024, designed to assess performance on knowledge beyond the models' pretraining cutoff.
+
+3. **Metrics**: Model performance was evaluated using accuracy, defined as the proportion of questions for which the predicted answer matches the ground truth.
+
+4. **Comparison Results**:
+   - **Unsupervised Fine-Tuning**: This approach showed only limited improvements over base models, indicating that continual pretraining alone is insufficient for enhancing multi-hop reasoning accuracy.
+   - **RAG**: RAG significantly improved performance, yielding over 30 percentage points increase across all models, and more than doubling accuracy on the 2024 Events dataset. This highlights the effectiveness of retrieval-based methods when external, up-to-date knowledge is required.
+   - **Supervised Fine-Tuning**: This method achieved the highest overall accuracy across models and datasets, underscoring the strong effect of task-specific supervision.
+
+In conclusion, this study provides a controlled comparison of knowledge injection mechanisms for multi-hop question answering, emphasizing the effectiveness of RAG and supervised fine-tuning. These findings offer practical guidance for selecting knowledge injection approaches when deploying large language models for multi-hop question answering tasks.
+
+
+<br/>
+# 예제
+
+
+
+이 논문에서는 다중 홉 질문 응답(multi-hop question answering) 시스템의 성능을 평가하기 위해 두 가지 데이터셋을 사용했습니다: QASC 데이터셋과 2024 이벤트 데이터셋입니다. 각 데이터셋은 모델이 여러 개의 정보를 통합하여 올바른 답변을 도출해야 하는 질문들로 구성되어 있습니다.
+
+#### 1. QASC 데이터셋
+- **트레이닝 데이터**: QASC 데이터셋은 과학 분야의 질문들로 구성되어 있으며, 각 질문은 8개의 선택지 중 하나가 정답입니다. 예를 들어, "물리학에서 뉴턴의 제1법칙은 무엇인가?"라는 질문이 있을 수 있으며, 선택지는 "A. 운동의 법칙", "B. 작용과 반작용의 법칙", "C. 에너지 보존 법칙", "D. 열역학 제1법칙" 등입니다.
+- **테스트 데이터**: 테스트 데이터는 모델이 훈련 중에 보지 못한 질문들로 구성되어 있으며, 모델이 얼마나 잘 일반화할 수 있는지를 평가합니다. 예를 들어, "화학에서 산과 염기의 정의는 무엇인가?"라는 질문이 있을 수 있습니다.
+
+#### 2. 2024 이벤트 데이터셋
+- **트레이닝 데이터**: 이 데이터셋은 2024년에 발생한 사건들에 대한 질문들로 구성되어 있으며, 각 질문은 4개의 선택지 중 하나가 정답입니다. 예를 들어, "2024년 미국 대선에서 승리한 후보는 누구인가?"라는 질문이 있을 수 있으며, 선택지는 "A. 후보 A", "B. 후보 B", "C. 후보 C", "D. 후보 D"입니다.
+- **테스트 데이터**: 이 데이터는 2024년의 사건들에 대한 질문으로, 모델이 훈련 중에 접하지 못한 최신 정보를 포함하고 있습니다. 예를 들어, "2024년 7월에 발생한 주요 사건은 무엇인가?"라는 질문이 있을 수 있습니다.
+
+이러한 데이터셋을 통해 모델은 다양한 과학적 및 최신 사건에 대한 질문에 답변할 수 있는 능력을 평가받습니다. 모델은 주어진 질문에 대해 적절한 정보를 통합하여 올바른 답변을 선택해야 합니다.
+
+
+
+
+In this paper, two datasets were used to evaluate the performance of multi-hop question answering systems: the QASC dataset and the 2024 Events dataset. Each dataset consists of questions that require the model to integrate multiple pieces of information to arrive at the correct answer.
+
+#### 1. QASC Dataset
+- **Training Data**: The QASC dataset consists of questions from the field of science, where each question has one correct answer among eight options. For example, a question might be "What is Newton's first law in physics?" with options like "A. Law of motion", "B. Law of action and reaction", "C. Law of conservation of energy", "D. First law of thermodynamics".
+- **Test Data**: The test data consists of questions that the model has not seen during training, allowing for the evaluation of how well the model can generalize. An example question could be "What is the definition of acids and bases in chemistry?".
+
+#### 2. 2024 Events Dataset
+- **Training Data**: This dataset consists of questions about events that occurred in 2024, with each question having one correct answer among four options. For example, a question might be "Who won the U.S. presidential election in 2024?" with options like "A. Candidate A", "B. Candidate B", "C. Candidate C", "D. Candidate D".
+- **Test Data**: This data includes questions about events from 2024, incorporating the latest information that the model has not encountered during training. An example question could be "What was a major event that occurred in July 2024?".
+
+Through these datasets, the model is evaluated on its ability to answer a variety of scientific and current event questions. The model must integrate the given information to select the appropriate answer.
+
+<br/>
+# 요약
+
+이 논문에서는 다중 홉 질문 응답을 위한 지식 주입 방법으로 비지도 미세 조정, 지도 미세 조정, 검색 증강 생성(RAG)을 비교하였다. 실험 결과, RAG는 특히 최신 정보에 대한 질문에서 성능을 크게 향상시켰으며, 지도 미세 조정이 가장 높은 정확도를 기록하였다. 예를 들어, 2024 이벤트 데이터셋에서 RAG는 모든 모델에서 정확도를 두 배 이상 증가시켰다.
+
+---
+
+This paper systematically compares unsupervised fine-tuning, supervised fine-tuning, and retrieval-augmented generation (RAG) as knowledge injection methods for multi-hop question answering. The results show that RAG significantly improves performance, especially for questions requiring temporally novel information, while supervised fine-tuning achieves the highest overall accuracy. For instance, on the 2024 Events dataset, RAG more than doubled accuracy across all models.
+
+<br/>
+# 기타
+
+
+
+1. **다이어그램 (Figure 1)**:
+   - **설명**: 이 다이어그램은 다양한 지식 주입 메커니즘(비모수적 및 모수적 방법) 간의 비교를 보여줍니다. 훈련 시와 추론 시 지식이 어떻게 주입되는지를 시각적으로 나타내며, 각 방법의 차이를 강조합니다.
+   - **인사이트**: 이 다이어그램은 연구의 주요 초점인 지식 주입 메커니즘의 차이를 명확히 이해하는 데 도움을 줍니다. 특히, 비모수적 방법인 RAG가 추론 시 외부 지식을 동적으로 주입할 수 있는 반면, 모수적 방법은 모델의 파라미터에 지식을 내재화하는 방식임을 강조합니다.
+
+2. **테이블 1 (QASC Dataset Results)**:
+   - **설명**: QASC 데이터셋에 대한 다양한 모델의 정확도 결과를 보여줍니다. 기본 모델, RAG, 비지도 및 지도 파인튜닝을 비교합니다.
+   - **인사이트**: RAG와 지도 파인튜닝이 기본 모델에 비해 상당한 성능 향상을 보여주며, 비지도 파인튜닝은 한정적인 개선만을 제공함을 나타냅니다. 이는 다중 홉 질문 응답에서 RAG와 지도 파인튜닝의 중요성을 강조합니다.
+
+3. **테이블 2 (2024 Events Dataset Results)**:
+   - **설명**: 2024 이벤트 데이터셋에 대한 모델의 성능을 비교한 결과입니다. 기본 모델, RAG, 비지도 및 지도 파인튜닝의 정확도를 보여줍니다.
+   - **인사이트**: RAG가 모든 모델에서 정확도를 두 배 이상 향상시키는 것을 보여주며, 이는 최신 정보에 대한 접근이 다중 홉 질문 응답에서 얼마나 중요한지를 강조합니다. 지도 파인튜닝이 가장 높은 성능을 보이는 것도 주목할 만합니다.
+
+4. **어펜딕스**:
+   - **설명**: 어펜딕스는 연구에서 사용된 데이터셋, 모델 아키텍처, 실험 설정 및 추가적인 결과를 포함합니다.
+   - **인사이트**: 어펜딕스는 연구의 재현성을 높이고, 다른 연구자들이 동일한 방법론을 사용하여 결과를 검증할 수 있도록 합니다. 또한, 다양한 설정에서의 성능을 비교할 수 있는 기초 자료를 제공합니다.
+
+---
+
+
+
+
+1. **Diagram (Figure 1)**:
+   - **Description**: This diagram illustrates the comparison between different knowledge injection mechanisms (parametric and non-parametric methods). It visually represents how knowledge is injected during training and inference, highlighting the differences between each method.
+   - **Insight**: The diagram aids in understanding the key focus of the research, which is the differences in knowledge injection mechanisms. It emphasizes that the non-parametric method, RAG, can dynamically inject external knowledge during inference, while parametric methods encode knowledge within the model's parameters.
+
+2. **Table 1 (QASC Dataset Results)**:
+   - **Description**: This table presents the accuracy results of various models on the QASC dataset, comparing the base model, RAG, unsupervised fine-tuning, and supervised fine-tuning.
+   - **Insight**: The results show that RAG and supervised fine-tuning provide significant performance improvements over the base model, while unsupervised fine-tuning yields only limited gains. This highlights the importance of RAG and supervised fine-tuning in multi-hop question answering.
+
+3. **Table 2 (2024 Events Dataset Results)**:
+   - **Description**: This table compares the performance of models on the 2024 Events dataset, showing the accuracy of the base model, RAG, unsupervised fine-tuning, and supervised fine-tuning.
+   - **Insight**: RAG demonstrates more than double the accuracy across all models, underscoring the importance of access to up-to-date information in multi-hop question answering. The highest performance achieved by supervised fine-tuning is also noteworthy.
+
+4. **Appendix**:
+   - **Description**: The appendix includes details on the datasets used, model architectures, experimental setups, and additional results.
+   - **Insight**: The appendix enhances the reproducibility of the research and allows other researchers to validate the findings using the same methodologies. It also provides foundational data for comparing performance across various settings.
+
+<br/>
+# refer format:
+### BibTeX 형식
+
+```bibtex
+@inproceedings{yang2026fine,
+  title={Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge},
+  author={Zhuoyi Yang and Yurun Song and Kyler Harris and Iftekhar Ahmed and Ian G. Harris},
+  booktitle={Proceedings of the Fifth Workshop on Generation, Evaluation and Metrics (GEM)},
+  pages={384--392},
+  year={2026},
+  publisher={Association for Computational Linguistics},
+  month={July}
+}
+```
+
+### 시카고 스타일
+
+Zhuoyi Yang, Yurun Song, Kyler Harris, Iftekhar Ahmed, and Ian G. Harris. "Fine-Tuning vs. RAG for Multi-Hop Question Answering with Novel Knowledge." In *Proceedings of the Fifth Workshop on Generation, Evaluation and Metrics (GEM)*, 384–392. USA: Association for Computational Linguistics, July 2026.
+    
