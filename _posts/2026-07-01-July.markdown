@@ -111,6 +111,11 @@ Thursday, July 16, 2026
 o   
 
 
+Friday, July 17, 2026   
+* research  
+o   
+
+
 
 
 * priority (todo)      
@@ -142,6 +147,11 @@ o
 
 
 * acl2026  
+** 약간 정리를 대강 하다가 생각난거는 에이전트에게 페르소나를 주입(일종의 정치나 등 이론을 주입해서), 어떻게 행동하는지, 또 의도대로 행동하도록, 또 정치나 이론에 맞는다면  
+그걸 평가 및 mitigation하는 방향으로 가는게 좋은 논문거리네  
+
+** uncertainty도 엄청 많긴한데.. 뭐 confidence(softmax logit값) 을 사용하는 경우가 많았고 이를 좀 더 이론이나 여러개, 연속적으로 사용, 활용하는 느낌.. 또는 반복통해(repeatitive) 얼마나 일정하게 나오나 등으로도 평가   
+
 ** pre-reasoning-improvement(CoT계열) + post-training with human feedback(강화학습)  
 *** 이게 reasoning의 현황(근황)..인듯    
 
