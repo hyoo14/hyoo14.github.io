@@ -14,6 +14,10 @@ categories: "mountain"
 
 
 
+Petco Park is also one of my favorite stadiums. I really love the atmosphere, both inside the ballpark and throughout the surrounding area. One of my favorite things about the park is the variety of food options, reflecting different cultures. You can find Japanese curry fries and curry rice, as well as a wide selection of authentic tacos.  
+아무래도 구장이 있는 도시와 또 구장이 포함되는 파크 구역까지 포함하면 펫코파크가 내가 가본 곳 중에 제일 좋지 않나 싶다. 공동 1등느낌.       
+
+
 Camden Yards at Orioles Park is my favorite. The harmony between the old brick buildings and the stadium is truly amazing. They complement each other really well.  
 캠든야드 앳 오리올스 파크가 가장 멋지고 클래식하고 그 오래된 브릭 건물과 경기장의 조화 어찌보면 이질적이지만 어찌보면 너무 잘 어우러진 공원 및 경기장 같았다.  
 나의 1등  
