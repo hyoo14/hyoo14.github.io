@@ -10,16 +10,15 @@ categories: study
 
 
 
-
-
 {% highlight ruby %}
 
 
-July week4         
+July week5         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
 
+** 0. Rebuttal(1)  
 ** 1. prop exam after paper    
 ** 2. gssl revision(ngb, due 8/1)
 ** 3. new propose for HK group  
@@ -87,45 +86,16 @@ MAYBE FUTURE WORKS
 
 
 
-
-
-Monday, July 20, 2026   
-* research  
-o   
-
-
-Tuesday, July 21, 2026   
-* research  
-o   
-
-
-Wednesday, July 22, 2026   
-* research  
-o   
-
-
-Thursday, July 23, 2026   
-* research  
-o   
-
-
-Friday, July 24, 2026   
-* research  
-o   
-
-
-Saturday, July 25, 2026   
-* research  
-o   
-
-
-Sunday, July 26, 2026   
+Monday, July 27, 2026   
 * research  
 o   
 
 
 
 * priority (todo)      
+** Rebuttal(1)  
+
+
 ** apply reward(2)-inquire change     
 
 ** prop exam after paper..(new2 including HK group)   
@@ -279,6 +249,153 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+July week4         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+
+** 1. prop exam after paper    
+** 2. gssl revision(ngb, due 8/1)
+** 3. new propose for HK group  
+
+** 4. dna robustness revision(tcb, due 8/1)              
+** 5. gssl review paper(mdb)   
+     
+
+
+* wait          
+
+** 1. prop originated 3 biomm eval(neu)  
+** 2. plan biosyn test rebut(col)       
+** 3. additionally for MOVIE rebut(col)    
+** 4. med bias(emp)  
+** 5. arouasal, crm(emp)  
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+** 2. clinic_bias(cam bion 5/18)  
+
+** 3. clinic_bias(biowork 7/3)  
+** 4. clinic_cultural_bias(stereawork 7/3)  
+** 5. clini(find 7/5)
+** 6. dyna(find 7/5)  
+
+** 7. rebuttal(3) and reviews_rebuttal(5+2)   
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+Monday, July 20, 2026   
+* research  
+o   
+
+
+Tuesday, July 21, 2026   
+* research  
+o   
+
+
+Wednesday, July 22, 2026   
+* research  
+o   
+
+
+Thursday, July 23, 2026   
+* research  
+o   
+
+
+Friday, July 24, 2026   
+* research  
+o   
+
+
+Saturday, July 25, 2026   
+* research  
+o   
+
+
+Sunday, July 26, 2026   
+* research  
+o   
+
+
+
+* priority (todo)      
+** apply reward(2)-inquire change     
+
+** prop exam after paper..(new2 including HK group)   
+
+** revision nar ssl  
+
+** next venues..(2) 
+		: v mem    
+                : bio plan      
+** revision tcb robust  
+
+** reimburse and wait for travel funding(seach everyday?)    
+
+
+*later  
+** little update ssl review paper(June)    
+
+
+
+* wait  
+               
 
 
 
