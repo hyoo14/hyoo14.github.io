@@ -13,7 +13,7 @@ categories: study
 {% highlight ruby %}
 
 
-August week1         
+August week2         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
@@ -78,14 +78,7 @@ MAYBE FUTURE WORKS
 <br/>
 
 
-
-
-Saturday, August 01, 2026   
-* research  
-o   
-
-
-Sunday, August 02, 2026   
+Monday, August 03, 2026   
 * research  
 o   
 
@@ -242,6 +235,113 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+August week1         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+
+** 0. Code    
+** 0. prop originated 3 biomm eval Rebuttal(neu) 
+** 1. plan biosyn test new venue(eacl?)         
+** 2. dna robustness revision(tcb, due 8/10)          
+** 3. additionally for MOVIE new venue(naacl?)     
+** 4. new propose for HK group and others(2)      
+** 5. gssl review paper(mdb)   
+     
+
+
+* wait          
+
+
+** 1. med bias(emp)  
+** 2. arouasal, crm(emp)  
+** 3. prop exam after paper    
+** 4. gssl revision(ngb, due 8/1)
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+Saturday, August 01, 2026   
+* research  
+o   
+
+
+Sunday, August 02, 2026   
+* research  
+o   
+
+
+
+
+* priority (todo)      
+** prep cod and sel  
+** next venues..(2) 
+		: v mem    
+                : bio plan      
+** revision tcb robust  
+** prop exam after paper..(new2 including HK group)    
+
+
+*later  
+** little update ssl review paper(June)    
+
+
+* wait  
+** Rebuttal(1)  
+** apply reward(2)-inquire change     
+** revision nar ssl  
+** reimburse and wait for travel funding(seach everyday?)    
+               
 
 
 
