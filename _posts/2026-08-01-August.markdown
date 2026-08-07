@@ -123,9 +123,15 @@ o
 
 
 
+Friday, August 07, 2026   
+* research  
+o   
+
+
 
 * priority (todo)      
 ** revision tcb robust  
+** int  
 ** next venues..(2) 
 		: v mem    
         : bio plan      
