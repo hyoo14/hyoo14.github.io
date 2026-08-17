@@ -11,10 +11,13 @@ categories: study
 
 
 
+
+
+
 {% highlight ruby %}
 
 
-August week3         
+August week4         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
@@ -82,41 +85,7 @@ MAYBE FUTURE WORKS
 
 
 
-
-Monday, August 10, 2026   
-* research  
-o   
-
-
-
-Tuesday, August 11, 2026   
-* research  
-o   
-
-
-
-Wednesday, August 12, 2026   
-* research  
-o   
-
-
-
-Thursday, August 13, 2026   
-* research  
-o   
-
-
-Friday, August 14, 2026   
-* research  
-o   
-
-
-Saturday, August 15, 2026   
-* research  
-o   
-
-
-Sunday, August 16, 2026   
+Monday, August 17, 2026   
 * research  
 o   
 
@@ -271,6 +240,148 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
 
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+August week3         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+
+** 0. int      
+** 2. dna robustness revision(tcb, due 8/10)          
+** 1. plan biosyn test new venue(tm?)         
+** 3. additionally for MOVIE new venue(naacl?)     
+** 4. new propose for HK group and others(2)      
+** 5. gssl review paper(mdb)   
+     
+
+
+* wait          
+
+
+** 1. med bias(emp)  
+** 2. arouasal, crm(emp)  
+** 3. prop exam after paper    
+** 4. gssl revision(ngb, due 8/1)
+** 0. prop originated 3 biomm eval Rebuttal(neu) 
+
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+Monday, August 10, 2026   
+* research  
+o   
+
+
+
+Tuesday, August 11, 2026   
+* research  
+o   
+
+
+
+Wednesday, August 12, 2026   
+* research  
+o   
+
+
+
+Thursday, August 13, 2026   
+* research  
+o   
+
+
+Friday, August 14, 2026   
+* research  
+o   
+
+
+Saturday, August 15, 2026   
+* research  
+o   
+
+
+Sunday, August 16, 2026   
+* research  
+o   
+
+
+
+
+
+* priority (todo)      
+** revision tcb robust  
+** int  
+** next venues..(2) 
+		: v mem    
+        : bio plan      
+** prop exam after paper..(new2 including HK group)    
+
+
+*later  
+** little update ssl review paper(June)    
+
+
+* wait  
+** Rebuttal(1)  
+** apply reward(2)-inquire change     
+** revision nar ssl  
+** reimburse and wait for travel funding(seach everyday?)    
+** prep cod and sel                 
 
 
 
