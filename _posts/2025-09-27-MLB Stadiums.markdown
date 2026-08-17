@@ -29,6 +29,9 @@ I like the classic style and atmosphere of Coors Field. It feels like it really 
 
 
 
+PNC park is really accessible from the downtown like Coors Field or Petco Park. I think the view from inside is the best.     
+공동 2등에 놓고 싶은 PNC 파크.. 주변도 예뻤고 야구장 안에서 보는 뷰도 쩐다.   
+
 
 Yankee Stadium, built with marble stone, looks massive and grand. However, it still feels a bit too new.   
 공동 3등은 시티즌스뱅크파크와 양키스타디움이다. 양키스타디움은 대리석 느낌의 꽤나 웅장하고 클래식하지만 새로 지은 느낌도 꽤나 났다. 
