@@ -108,6 +108,11 @@ Thursday, September 02, 2026
 o   
 
 
+Friday, September 03, 2026   
+* research  
+o   
+
+
 
 
 * priority (todo)      
