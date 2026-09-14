@@ -16,18 +16,19 @@ categories: study
 
 
 
+
 {% highlight ruby %}
 
 
-September week2         
+September week3         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
 
 
 ** 1. int / cod        
-** 2. derma med bias new venue(e indus?)                    
-** 3. new propose for HK group and others(2)        
+** 2. new propose for HK group and others(icl)        
+** 3. derma med bias new venue(a cam)                    
 ** 4. plan biosyn test new venue(na?)           
 ** 5. new dynasift(na?)   
 ** 6. gssl review paper(mdb)     
@@ -43,7 +44,7 @@ September week2
 ** 3. prop originated 3 biomm eval Rebuttal(neu)  
 ** 4. additionally for MOVIE new venue(w)       
 ** 5. dna robustness revision(tcb, due 8/28)     
-** 6. derma med bias new venue(aac)   
+
 
 
 
@@ -90,53 +91,17 @@ MAYBE FUTURE WORKS
 
 
 
-
-
-Monday, September 07, 2026   
-* research  
-o   
-
-
-
-Tuesday, September 08, 2026   
-* research  
-o   
-
-
-
-Wednesday, September 09, 2026   
-* research  
-o   
-
-
-Thursday, September 10, 2026   
-* research  
-o   
-
-
-
-Friday, September 11, 2026   
-* research  
-o   
-
-
-Saturday, September 12, 2026   
-* research  
-o   
-
-
-
-Sunday, September 13, 2026   
+Monday, September 14, 2026   
 * research  
 o   
 
 
 * priority (todo)      
 
-** int  
-** next venues..(1) 
-        : dema bias(e indus?)           
-** prop exam after paper to submission(new2 including HK group)        
+** code    
+** prop exam after paper to submission(including HK group, icl)        
+** dema bias(a cam r)               
+
 ** next venues..(2)  
 		: bio plan(na)  
 		: new dyna(na)  
@@ -144,7 +109,7 @@ o
 
 
 *later  
-** little update ssl review paper(June)    
+** little update ssl review paper(?)     
 
 
 * wait  
@@ -286,6 +251,155 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week2         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+
+
+** 1. int / cod        
+** 2. derma med bias new venue(e indus?)                    
+** 3. new propose for HK group and others(2)        
+** 4. plan biosyn test new venue(na?)           
+** 5. new dynasift(na?)   
+** 6. gssl review paper(mdb)     
+     
+
+
+* wait          
+
+
+
+** 1. arouasal, crm(ea)  
+** 2. gssl revision(ngb)
+** 3. prop originated 3 biomm eval Rebuttal(neu)  
+** 4. additionally for MOVIE new venue(w)       
+** 5. dna robustness revision(tcb, due 8/28)     
+** 6. derma med bias new venue(aac)   
+
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+** 2. prop exam after paper    
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+
+
+Monday, September 07, 2026   
+* research  
+o   
+
+
+
+Tuesday, September 08, 2026   
+* research  
+o   
+
+
+
+Wednesday, September 09, 2026   
+* research  
+o   
+
+
+Thursday, September 10, 2026   
+* research  
+o   
+
+
+
+Friday, September 11, 2026   
+* research  
+o   
+
+
+Saturday, September 12, 2026   
+* research  
+o   
+
+
+
+Sunday, September 13, 2026   
+* research  
+o   
+
+
+* priority (todo)      
+
+** int  
+** next venues..(1) 
+        : dema bias(e indus?)           
+** prop exam after paper to submission(new2 including HK group)        
+** next venues..(2)  
+		: bio plan(na)  
+		: new dyna(na)  
+
+
+
+*later  
+** little update ssl review paper(June)    
+
+
+* wait  
+** Rebuttal(1)  
+** apply reward(1)-submitted   
+** apply reward(1)-wait notice(seach everyday?)   
+** revision nar ssl    
+** revision tcb robust  
+
+
+        
 
 
 
