@@ -198,7 +198,7 @@ Ops Academy가 시작된 시점은 2023년 1월 1일이며, 프로그램 효과�
 기본 ROI 개념은 다음과 같다.
 
 ROI(%) =
-frac{text{프로그램 순편익}}{text{프로그램 비용}}
+frac(text(프로그램 순편익))(text(프로그램 비용))
 times 100
 
 
@@ -382,7 +382,7 @@ The basic ROI formula was:
 
 
 ROI(%) =
-frac{text{Net program benefits}}{text{Program costs}}
+frac(text(Net program benefits))(text(Program costs))
 times 100
 
 

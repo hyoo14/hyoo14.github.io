@@ -2044,7 +2044,7 @@ The full appendix contents and detailed numerical results were not included in t
              Corrado, Christopher and Patel, Naisargi Manishkumar and
              Snigdha, Kirti and Saeedi, Sirwe and Smith, David and
              Baro, Nicholas and Schultz, Timothy},
-  title   = {{Med.ai ASK}: An Agentic System for Biomedical Question Answering},
+  title   = {Med.ai ASK: An Agentic System for Biomedical Question Answering},
   journal = {Journal of the American Medical Informatics Association},
   year    = {2026},
   volume  = {33},
