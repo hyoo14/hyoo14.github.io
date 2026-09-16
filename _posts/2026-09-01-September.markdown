@@ -102,6 +102,14 @@ o
 
 
 
+Wednesday, September 16, 2026   
+* research  
+o   
+
+
+
+
+
 * priority (todo)      
 
 ** code    
