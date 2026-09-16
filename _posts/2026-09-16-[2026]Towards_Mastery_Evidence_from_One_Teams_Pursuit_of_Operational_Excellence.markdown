@@ -380,11 +380,11 @@ The study also considered the return on investment of the training program.
 
 The basic ROI formula was:
 
-[
+
 ROI(%) =
 frac{text{Net program benefits}}{text{Program costs}}
 times 100
-]
+
 
 Potential costs included:
 

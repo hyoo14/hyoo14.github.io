@@ -833,7 +833,7 @@ Med.ai ASK는 질문·정답 데이터로 별도 파인튜닝(fine-tuning)되지
 
 또는
 
-> “What is the five-year mortality rate of [특정 질환]?”
+> “What is the five-year mortality rate of 특정 질환?”
 
 질문은 다음과 같은 형태일 수 있다.
 
@@ -1156,7 +1156,7 @@ Examples include:
 
 or
 
-> “What is the five-year mortality rate of [a specific disease]?”
+> “What is the five-year mortality rate of a specific disease?”
 
 The questions may be:
 
