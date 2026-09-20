@@ -122,6 +122,11 @@ Saturday, September 19, 2026
 o   
 
 
+Sunday, September 20, 2026   
+* research  
+o   
+
+
 
 
 
