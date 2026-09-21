@@ -17,21 +17,25 @@ categories: study
 
 
 
+
+
 {% highlight ruby %}
 
 
-September week3         
+September week4         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
 
 
-** 1. int / cod        
-** 2. new propose for HK group and others(icl)        
-** 3. derma med bias new venue(a cam)                    
-** 4. plan biosyn test new venue(na?)           
-** 5. new dynasift(na?)   
+        
+** 1. new propose for HK group and others(icl)        
+** 2. derma med bias new venue(a cam)                    
+** 3. plan biosyn test new venue(na?)           
+** 4. new dynasift(na?)   
+** 5. int  
 ** 6. gssl review paper(mdb)     
+
      
 
 
@@ -40,10 +44,10 @@ September week3
 
 
 ** 1. arouasal, crm(ea)  
-** 2. gssl revision(ngb)
+** 2. gssl revision(ngb)  
 ** 3. prop originated 3 biomm eval Rebuttal(neu)  
-** 4. additionally for MOVIE new venue(w)       
-** 5. dna robustness revision(tcb, due 8/28)     
+** 4. additionally for MOVIE new venue(w)         
+** 5. dna robustness revision(tcb)       
 
 
 
@@ -90,39 +94,10 @@ MAYBE FUTURE WORKS
 <br/>
 
 
-
-Monday, September 14, 2026   
-* research  
-o   
+  
 
 
-Tuesday, September 15, 2026   
-* research  
-o   
-
-
-
-Wednesday, September 16, 2026   
-* research  
-o   
-
-
-Thursday, September 17, 2026   
-* research  
-o   
-
-
-Friday, September 18, 2026   
-* research  
-o   
-
-
-Saturday, September 19, 2026   
-* research  
-o   
-
-
-Sunday, September 20, 2026   
+Monday, September 21, 2026   
 * research  
 o   
 
@@ -132,10 +107,9 @@ o
 
 * priority (todo)      
 
-** code    
-** prop exam after paper to submission(including HK group, icl)        
-** dema bias(a cam r)               
 
+** prop exam after paper to submission(including HK group, icl)        
+** dema bias(a cam r)              
 ** next venues..(2)  
 		: bio plan(na)  
 		: new dyna(na)  
@@ -285,6 +259,155 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+September week3         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+
+
+** 1. int / cod        
+** 2. new propose for HK group and others(icl)        
+** 3. derma med bias new venue(a cam)                    
+** 4. plan biosyn test new venue(na?)           
+** 5. new dynasift(na?)   
+** 6. gssl review paper(mdb)     
+     
+
+
+* wait          
+
+
+
+** 1. arouasal, crm(ea)  
+** 2. gssl revision(ngb)
+** 3. prop originated 3 biomm eval Rebuttal(neu)  
+** 4. additionally for MOVIE new venue(w)       
+** 5. dna robustness revision(tcb, due 8/28)     
+
+
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+** 2. prop exam after paper    
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+
+Monday, September 14, 2026   
+* research  
+o   
+
+
+Tuesday, September 15, 2026   
+* research  
+o   
+
+
+
+Wednesday, September 16, 2026   
+* research  
+o   
+
+
+Thursday, September 17, 2026   
+* research  
+o   
+
+
+Friday, September 18, 2026   
+* research  
+o   
+
+
+Saturday, September 19, 2026   
+* research  
+o   
+
+
+Sunday, September 20, 2026   
+* research  
+o   
+
+
+
+
+
+* priority (todo)      
+
+** code    
+** prop exam after paper to submission(including HK group, icl)        
+** dema bias(a cam r)               
+
+** next venues..(2)  
+		: bio plan(na)  
+		: new dyna(na)  
+
+
+
+*later  
+** little update ssl review paper(?)     
+
+
+* wait  
+** Rebuttal(1)  
+** apply reward(1)-submitted   
+** apply reward(1)-wait notice(seach everyday?)   
+** revision nar ssl    
+** revision tcb robust  
+
+
+        
 
 
 
