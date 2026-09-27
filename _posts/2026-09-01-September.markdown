@@ -127,6 +127,11 @@ Saturday, September 26, 2026
 o   
 
 
+Sunday, September 27, 2026   
+* research  
+o   
+
+
 
 
 * priority (todo)      
