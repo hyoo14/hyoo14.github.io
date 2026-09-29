@@ -1690,7 +1690,7 @@ The tables and appendices support five main conclusions:
 ```bibtex
 @article{deng2026jev,
   author       = {Deng, Boyuan and Fan, Shuyi and Zhang, Hongyang and Xie, Xinhong},
-  title        = {{Jev} for Scientific Decisions: Evaluating Semantic Choices and Their Consequences},
+  title        = {Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences},
   journal      = {arXiv preprint arXiv:2609.24965 [cs.CL]},
   year         = {2026},
   month        = sep,
