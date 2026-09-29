@@ -79,15 +79,15 @@ The study therefore argues that scientific model evaluation should not focus onl
 
 이를 식으로 표현하면 다음과 같다.
 
-\[
-\hat r=f(e,Q), \qquad (\hat z,\hat y)=g(e,\hat r)
-\]
+ [
+ hat r=f(e,Q),  qquad ( hat z, hat y)=g(e, hat r)
+ ]
 
-- \(e\): 제공된 증거와 기록  
-- \(Q\): 과학적 선택 질문  
-- \(\hat r\): 모델이 선택한 관계  
-- \(\hat z\): 프로그램이 계산한 과학적 결과  
-- \(\hat y\): 최종 주장 라벨  
+-  (e ): 제공된 증거와 기록  
+-  (Q ): 과학적 선택 질문  
+-  ( hat r ): 모델이 선택한 관계  
+-  ( hat z ): 프로그램이 계산한 과학적 결과  
+-  ( hat y ): 최종 주장 라벨  
 
 ---
 
@@ -247,11 +247,11 @@ The workflow is:
 
 Formally:
 
-\[
-\hat r=f(e,Q), \qquad (\hat z,\hat y)=g(e,\hat r)
-\]
+ [
+ hat r=f(e,Q),  qquad ( hat z, hat y)=g(e, hat r)
+ ]
 
-where \(e\) is the supplied evidence, \(Q\) is the set of questions, \(\hat r\) is the model-selected relation, \(\hat z\) is the derived scientific output, and \(\hat y\) is the final claim label.
+where  (e ) is the supplied evidence,  (Q ) is the set of questions,  ( hat r ) is the model-selected relation,  ( hat z ) is the derived scientific output, and  ( hat y ) is the final claim label.
 
 ---
 
