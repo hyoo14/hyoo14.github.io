@@ -23,14 +23,14 @@ September week5
 
 * active  
         
- 
-** 1. derma med bias new venue(a cam)                    
+
+** 0. int(always?)     
+** 1. derma med bias new venue(a cam and register)                
 ** 2. plan biosyn test new venue(na?)           
 ** 3. new dynasift(na?)   
-** 4. int  
-** 5. prop originated 3 biomm eval Rebuttal(where?)  
-** 6. jev? (?)  
-** 7. gssl review paper(?)     
+** 4. jev? (na?)  
+** 5. prop originated 3 biomm eval Rebuttal(tm?)  
+** 6. gssl review paper(?)      
 
      
 
@@ -100,6 +100,13 @@ o
 Tuesday, September 29, 2026   
 * research  
 o   
+
+
+Wednesday, September 30, 2026   
+* research  
+o   
+
+
 
 
 
