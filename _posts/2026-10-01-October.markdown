@@ -15,21 +15,24 @@ categories: study
 
 
 
+
 {% highlight ruby %}
 
 
-October week1         
+October week2         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
         
 
 ** 0. int(always?)     
-** 1. derma med bias new venue(a cam and register)                
-** 2. plan biosyn test new venue(na?)           
-** 3. new dynasift(na?)   
-** 4. jev? (na?)  
-** 5. prop originated 3 biomm eval Rebuttal(tm?)  
+      
+** 1. plan biosyn test new venue(na?)           
+** 2. new dynasift(na?)   
+** 3. jev? (na?)  
+** 4. prop originated 3 biomm eval Rebuttal(tm?)   
+
+** 5. thesis prep(next week start?)   
 ** 6. gssl review paper(?)      
 
      
@@ -37,10 +40,9 @@ October week1
 
 * wait          
 
-
-
-** 1. arouasal, crm(ea)  
-** 2. gssl revision(ngb)  
+** 0. derma med bias new venue(subsidy wait 10/7, 10/14, or register)          
+** 1. gssl revision(ngb, fee?)     
+** 2. arouasal, crm(ea)  
 ** 3. additionally for MOVIE new venue(w)         
 ** 4. dna robustness revision(tcb)       
 ** 5. new propose for HK group and others(icl)       
@@ -91,23 +93,7 @@ MAYBE FUTURE WORKS
 
 
   
-
-Thursday, October 01, 2026   
-* research  
-o   
-
-
-Friday, October 02, 2026   
-* research  
-o   
-
-
-Saturday, October 03, 2026   
-* research  
-o   
-
-
-Sunday, October 04, 2026   
+Monday, October 05, 2026   
 * research  
 o   
 
@@ -118,12 +104,14 @@ o
 
 * priority (todo)      
 
-** dema bias(a cam r)              
+     
 ** next venues..(2)  
 		: bio plan(na)  
+		: jev(na)    
 		: new dyna(na)  
-** biommeval.. (where?)  
-** jev?  
+** biommeval.. (tm)  
+** dema bias(subsidy wait 10/7, 10/14)         
+
 
 
 *later  
@@ -265,6 +253,142 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** 또 좀 다르지만 t-SNE 대체재 또는 보완재로 UMAP, NCVis, It-SNE, 그리고 PaCMAP(with Differential Expression of Genes Between Clusters), LocalMAP      
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week1         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+        
+
+** 0. int(always?)     
+** 1. derma med bias new venue(a cam and register)                
+** 2. plan biosyn test new venue(na?)           
+** 3. new dynasift(na?)   
+** 4. jev? (na?)  
+** 5. prop originated 3 biomm eval Rebuttal(tm?)  
+** 6. gssl review paper(?)      
+
+     
+
+
+* wait          
+
+
+
+** 1. arouasal, crm(ea)  
+** 2. gssl revision(ngb)  
+** 3. additionally for MOVIE new venue(w)         
+** 4. dna robustness revision(tcb)       
+** 5. new propose for HK group and others(icl)       
+
+
+
+
+* closing?  
+** 1. bidir_aug(cam tm 5/23)     
+** 2. prop exam after paper    
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+  
+
+Thursday, October 01, 2026   
+* research  
+o   
+
+
+Friday, October 02, 2026   
+* research  
+o   
+
+
+Saturday, October 03, 2026   
+* research  
+o   
+
+
+Sunday, October 04, 2026   
+* research  
+o   
+
+
+
+
+
+
+* priority (todo)      
+
+** dema bias(a cam r)              
+** next venues..(2)  
+		: bio plan(na)  
+		: new dyna(na)  
+** biommeval.. (where?)  
+** jev?  
+
+
+*later  
+** little update ssl review paper(?)     
+
+
+* wait  
+** apply volunteer and d and i-submitted   
+** revision nar ssl    
+** revision tcb robust  
+** prop exam after paper to submission(including HK group, icl)        
+
+
+        
 
 
 
