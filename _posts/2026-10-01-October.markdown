@@ -97,6 +97,10 @@ Tuesday, October 20, 2026
 o   
 
 
+Wednesday, October 21, 2026   
+* research  
+o   
+
 
 * priority (todo)      
 ** int and apply  
