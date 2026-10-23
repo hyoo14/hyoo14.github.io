@@ -107,6 +107,11 @@ Thursday, October 22, 2026
 * research  
 o   
 
+
+Friday, October 23, 2026   
+* research  
+o   
+
 * priority (todo)      
 ** int and apply  
 ** present and thesis  
