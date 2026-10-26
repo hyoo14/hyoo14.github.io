@@ -9,23 +9,22 @@ categories: study
 
 
 
-
-
 {% highlight ruby %}
 
 
-October week4         
+October week5         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
         
 
-** 0. int(always?)         
+        
 ** 1. thesis prep  
+** 2. int(if needed?) 
 
 
-** 2. gssl review paper(?)      
-** 3. vmem(?)  
+** 3. gssl review paper(?)      
+** 4. vmem(?)  
 
      
 
@@ -87,46 +86,18 @@ MAYBE FUTURE WORKS
   
 
 
-Monday, October 19, 2026   
-* research  
-o   
-
-
-Tuesday, October 20, 2026   
-* research  
-o   
-
-
-Wednesday, October 21, 2026   
-* research  
-o   
 
 
 
-Thursday, October 22, 2026   
-* research  
-o   
-
-
-Friday, October 23, 2026   
-* research  
-o   
-
-
-Saturday, October 24, 2026   
-* research  
-o   
-
-
-Sunday, October 25, 2026   
+Monday, October 26, 2026   
 * research  
 o   
 
 
 * priority (todo)      
-** int and apply  
+  
 ** present and thesis  
-     
+** int and app(if needed)  
 
 
 *later  
@@ -271,6 +242,146 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 ** interpretable neural networks..ProtoPNet? 이건 잘 모르겠군 도입하기가 ㅎㅎ  
 ** 연관해서 causual 연구들도 관련이 있을듯... 분야가 확실히 많더라   
 
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+October week4         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+        
+
+** 0. int(always?)         
+** 1. thesis prep  
+
+
+** 2. gssl review paper(?)      
+** 3. vmem(?)  
+
+     
+
+
+* wait          
+
+** 1. arouasal, crm(ea)  
+** 2. additionally for MOVIE new venue(w)         
+** 3. dna robustness revision(tcb)       
+** 4. new propose for HK group and others(icl 11/5)           
+** 5. plan, dyna2, jev(na3 11/24)           
+** 6. prop originated 3 biomm eval Rebuttal(tm)      
+
+
+
+* closing?  
+** 1. dna aug ssl(nargb)     
+** 2. derma bias(aa)    
+
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+  
+
+
+Monday, October 19, 2026   
+* research  
+o   
+
+
+Tuesday, October 20, 2026   
+* research  
+o   
+
+
+Wednesday, October 21, 2026   
+* research  
+o   
+
+
+
+Thursday, October 22, 2026   
+* research  
+o   
+
+
+Friday, October 23, 2026   
+* research  
+o   
+
+
+Saturday, October 24, 2026   
+* research  
+o   
+
+
+Sunday, October 25, 2026   
+* research  
+o   
+
+
+* priority (todo)      
+** int and apply  
+** present and thesis  
+     
+
+
+*later  
+** little update ssl review paper(?)     
+
+
+* wait  
+** revision tcb robust  
+** prop exam after paper to submission(including HK group, icl)        
+** next venues..(2)  
+		: bio plan(na)  
+		: jev(na)    
+		: new dyna(na)  
+
+
+        
 
 
 
