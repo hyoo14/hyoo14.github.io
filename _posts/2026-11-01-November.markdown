@@ -24,15 +24,16 @@ November week3
 
 
 ** 3. new propose for HK group and others rebuttal (icl 11/17)        
+** 4. review arr act(11/17)
 
 
-** 4. dna robustness revision(tcb)       
+** 5. dna robustness revision(tcb)       
 
-** 5. prop originated 3 biomm eval Rebuttal(resubmit)      
-** 6. vmem(?)  
+** 6. prop originated 3 biomm eval Rebuttal(resubmit)      
+** 7. vmem(?)  
 
 
-** 7. gssl review paper(?)      
+** 8. gssl review paper(?)      
 
      
 
@@ -102,9 +103,10 @@ o
 
 * priority (todo)      
   
-** present and thesis  
-** int and app(if needed)  
-** rebuttal neurodegeneration agent (icl 11/17)        
+** present and thesis   
+** int and app(if needed)    
+** rebuttal neurodegeneration agent (icl 11/17)          
+** review arr act 10 papers (11/17)    
 
 
 *later  
