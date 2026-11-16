@@ -12,7 +12,7 @@ categories: study
 {% highlight ruby %}
 
 
-November week3         
+November week4         
 *research(ai/bio/nlp-papers/lectrues/projects)       
 
 * active  
@@ -20,11 +20,14 @@ November week3
 
         
 ** 1. thesis prep  
-** 2. int(if needed?)   
+** 2. review arr act(11/16)
+
 
 
 ** 3. new propose for HK group and others rebuttal (icl 11/17)        
-** 4. review arr act(11/17)
+
+** 4. int(if needed?)   
+
 
 
 ** 5. dna robustness revision(tcb)       
@@ -95,37 +98,7 @@ MAYBE FUTURE WORKS
 
 
 
-Monday, November 09, 2026   
-* research  
-o   
-
-
-Tuesday, November 10, 2026   
-* research  
-o   
-
-
-Wednesday, November 11, 2026   
-* research  
-o   
-
-
-Thursday, November 12, 2026   
-* research  
-o   
-
-
-Friday, November 13, 2026   
-* research  
-o   
-
-
-Saturday, November 14, 2026   
-* research  
-o   
-
-
-Sunday, November 15, 2026   
+Monday, November 16, 2026   
 * research  
 o   
 
@@ -134,6 +107,7 @@ o
 * priority (todo)      
   
 ** present and thesis   
+
 ** int and app(if needed)    
 ** rebuttal neurodegeneration agent (icl 11/17)          
 ** review arr act 10 papers (11/17)    
@@ -293,6 +267,166 @@ rna LM + protein LM도 있는데 각각의 임베딩을 다시 입력으로 받�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+{% highlight ruby %}
+
+
+November week3         
+*research(ai/bio/nlp-papers/lectrues/projects)       
+
+* active  
+        
+
+        
+** 1. thesis prep  
+** 2. int(if needed?)   
+
+
+** 3. new propose for HK group and others rebuttal (icl 11/17)        
+** 4. review arr act(11/17)
+
+
+** 5. dna robustness revision(tcb)       
+
+** 6. prop originated 3 biomm eval Rebuttal(resubmit)      
+** 7. vmem(?)  
+
+
+** 8. gssl review paper(?)      
+
+     
+
+
+* wait          
+
+** 1. arouasal, crm(ea)  
+** 2. plan, dyna2, jev(na3 11/24)           
+
+
+
+
+* closing?  
+** 1. dna aug ssl(nargb)     
+** 2. derma bias(aa)    
+
+
+
+
+* prepare present  
+
+
+
+
+
+
+
+
+
+
+MAYBE FUTURE WORKS
+** Ideation(with conference?)-please keep the ideas...      
+* dif gen lm?(future..?)    
+** unlearning?  
+
+** LLM app for gene (wait?)   
+*** (check nucl with blast--->check real nicl whether sim or not)    (??description?)
+ 
+** Aug focus(B)  
+** deep hierarchy    
+(future pro+nu)  
+** generative benchmark  
+(gf+rm+dc--->nucl)  
+** using drug bank web or db(good for using)  
+
+
+## eng v/q/w first and..  ( reading/listening/speaking/writing(paper)   )  
+## math? code? (lecture/assignment/project)      
+
+
+
+{% endhighlight %}  
+<br/>
+
+
+  
+
+
+
+
+
+Monday, November 09, 2026   
+* research  
+o   
+
+
+Tuesday, November 10, 2026   
+* research  
+o   
+
+
+Wednesday, November 11, 2026   
+* research  
+o   
+
+
+Thursday, November 12, 2026   
+* research  
+o   
+
+
+Friday, November 13, 2026   
+* research  
+o   
+
+
+Saturday, November 14, 2026   
+* research  
+o   
+
+
+Sunday, November 15, 2026   
+* research  
+o   
+
+
+
+* priority (todo)      
+  
+** present and thesis   
+** int and app(if needed)    
+** rebuttal neurodegeneration agent (icl 11/17)          
+** review arr act 10 papers (11/17)    
+
+
+*later  
+
+** revision tcb robust  
+
+** prop originated 3 biomm eval Rebuttal(resubmit)       
+** vmem(resubmit)     
+
+** little update ssl review paper(?)     
+
+
+* wait  
+
+** next venues..(2)  
+		: bio plan(na)  
+		: jev(na)    
+		: new dyna(na)  
+
+
+        
 
 
 
