@@ -43,6 +43,9 @@ RePAIR uses two training phases:
 
 Experiments on three QA benchmarks demonstrate that RePAIR outperforms standard RAG and critic-guided baselines while reducing redundant actions.
 
+
+{% endhighlight %}
+
 * Useful sentences :
 
 - **"Is explicit error categorization essential for effective RAG improvement?"**
@@ -53,6 +56,8 @@ Experiments on three QA benchmarks demonstrate that RePAIR outperforms standard 
 - **"RePAIR treats error categorization as a latent process."**
   - RePAIR는 오류 분류를 명시적으로 수행하는 대신, 수정 정책 안에서 암묵적으로 처리한다.
 - **핵심 인사이트:** 오류의 이름을 정확하게 맞히는 것보다, 실제 답변 품질을 높이는 행동을 선택하는 것이 중요하다.
+
+
 
 [Paper link](https://aclanthology.org/2026.acl-short.14/)
 

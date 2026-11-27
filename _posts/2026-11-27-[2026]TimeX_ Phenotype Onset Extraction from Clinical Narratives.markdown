@@ -34,6 +34,8 @@ A case study involving four rare disease cohorts further demonstrated that pheno
 
 The findings suggest that narrative-based temporal extraction can improve disease trajectory characterization and potentially support earlier diagnosis.
 
+{% endhighlight %}
+
 # **Useful sentences :**
 
 - **"Documentation time is not necessarily phenotype onset time."**
